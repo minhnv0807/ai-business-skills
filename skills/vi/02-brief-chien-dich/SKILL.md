@@ -36,6 +36,20 @@ Hoi user toi da 4 cau truoc khi bat dau:
 
 ---
 
+### Khi dùng skill / repo khác
+
+| Tình huống | Use |
+|------------|-----|
+| Single TVC 1-page brief (1 clip, 1 channel mix) | **`opa-prd --mode=creative`** (OPA KIT) — 10-section lightweight |
+| Full campaign brief (multi-creative, multi-channel, 14-21 ngày) | **02-brief-chien-dich** (this skill) |
+| Content calendar dài hạn (3-6 tháng) | **`01-lich-noi-dung`** |
+| Ad copy actual text production | **`05-copy-quang-cao`** |
+| Workflow chain 7 skills launch campaign | **`campaign-launch`** workflow (workflows/vi/) |
+
+> Note: `opa-prd` ở OPA KIT focus 1-page brief lightweight cho fast handoff sang AI agents (Seedance, Kling, Claude). Skill này (`02-brief-chien-dich`) focus full campaign với multiple touch points.
+
+---
+
 ## Phan 1 — Context (Boi canh)
 
 ### 1.1 Tong quan

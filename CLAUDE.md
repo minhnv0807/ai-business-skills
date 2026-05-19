@@ -61,6 +61,37 @@ Workflows phuc vu cluster Global (skills/en/):
 - `personal-brand-monthly-global` = 13 → 03 → 23 → 27 → 26 → 04(personal) → 07 → 28 → 14 (all global)
 - `dropshipping-launch-global` = 29 → 12 → 04 → 05 → 21 → 13 → 17 (all global)
 
+## Cross-repo routing — OPA KIT companion
+
+ai-business-skills là **post-build marketing**. Cho tech build / PRD / deploy / pipeline, routing sang OPA KIT companion repo (cùng owner OPA):
+
+| User yêu cầu | Route sang |
+|--------------|-----------|
+| "Viết PRD cho sản phẩm / feature" | **`opa-prd --mode=product`** (OPA KIT) |
+| "Brief TVC 1-page" / "creative brief lightweight" | **`opa-prd --mode=creative`** (OPA KIT) — 10 sections |
+| "PRD cho buổi học / module khóa" | **`opa-prd --mode=lesson`** (OPA KIT) |
+| "Build end-to-end project" / "ship feature" | **`opa-pipeline`** (OPA KIT) |
+| "Track progress dự án" / "ước tính cost token" | **`opa-tracker`** (OPA KIT) |
+| "Deploy lên server / production" | **`opa-deploy`** (OPA KIT) |
+| "Vẽ diagram workflow / funnel / journey" | **`opa-diagram`** (OPA KIT) — 6 diagram types |
+
+### Khi nào STAY trong ai-business-skills
+
+- Full marketing campaign brief (multi-creative) → **02-brief-chien-dich**
+- Ad copy actual text → **05-copy-quang-cao**
+- Content calendar → **01-lich-noi-dung**
+- Email marketing → **14-email-marketing**
+- Ads performance audit → **21-audit-ads-performance**
+- Personal brand strategy → modules **personal-branding/** (22-28)
+- Marketing strategy top-level → agent **mkt-strategist**
+
+### Install OPA Suite (cả 2 repo)
+
+```bash
+git clone https://github.com/minhnv0807/opa-kit.git
+cd opa-kit && bash install-opa-suite.sh
+```
+
 ## Cau truc skill
 
 ```markdown

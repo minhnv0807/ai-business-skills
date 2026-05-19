@@ -30,6 +30,21 @@ related:
 
 ---
 
+### Khi dùng `opa-prd` (OPA KIT) thay thế
+
+Skill này (`20-brief-client-intake`) focus marketing intake cho agency relationship — discovery khách hàng mới của agency. **KHÔNG** dùng cho:
+
+| Tình huống | Use |
+|------------|-----|
+| Full product PRD (tech SaaS, feature spec) | **`opa-prd --mode=product`** (OPA KIT) — 12 sections, Deep Modules, GTM |
+| Course / lesson module PRD | **`opa-prd --mode=lesson`** — Bloom-anchored learning PRD |
+| Single creative brief TVC | **`opa-prd --mode=creative`** — 1-page |
+| Marketing campaign intake (multi-creative) | **`02-brief-chien-dich`** (this repo) |
+
+`opa-prd` là PRD authoring chuyên sâu cho tech + creative + lesson, plain Vietnamese cho non-tech clients fill. Install OPA KIT: `https://github.com/minhnv0807/opa-kit`.
+
+---
+
 ## Khi nao dung skill nay?
 
 | Tinh huong | Dung skill 20? |

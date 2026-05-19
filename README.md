@@ -184,6 +184,41 @@ Copy `.md` files as Custom Instructions or context. Each file is a standalone pr
 
 ---
 
+## 🤝 Companion repo
+
+ai-business-skills focus **post-build marketing**. Cho **build pipeline** (PRD → code → deploy), use companion repo cùng owner:
+
+### [`OPA KIT`](https://github.com/minhnv0807/opa-kit)
+
+8 tech skills cover 6-phase shipping pipeline: SEED → PLAN → BUILD → REVIEW → SHIP. Bao gồm:
+- `opa-prd` — PRD authoring 3 modes (Product full / Creative 1-page / Lesson module)
+- `opa-pipeline` — end-to-end build pipeline với CEO/PM/Engineer/Reviewer modes
+- `opa-tracker` — progress tracking + token cost + model recommendation
+- `opa-deploy` — Coolify-first deploy với manual confirm gate
+- `opa-diagram` — Mermaid diagrams (workflow, journey, funnel, C4, ERD, state)
+
+**Workflow chain typical:**
+
+```
+OPA KIT (build)                  →    ai-business-skills (market)
+─────────────────────────            ─────────────────────────
+opa-prd → opa-pipeline → ship  →    00-ke-hoach-mkt
+                                →    02-brief-chien-dich
+                                →    campaign-launch workflow
+                                →    03-danh-gia-hieu-suat
+```
+
+**Install cả 2 cùng lúc:**
+
+```bash
+git clone https://github.com/minhnv0807/opa-kit.git
+cd opa-kit && bash install-opa-suite.sh
+```
+
+Script tự install cả OPA KIT + ai-business-skills. Xem `references/companion-skills.md` trong OPA KIT cho full ecosystem map.
+
+---
+
 ## 60 Skills (29 VN + 30 Global + 1 foundation per cluster)
 
 ### VN Cluster (29 skills)
