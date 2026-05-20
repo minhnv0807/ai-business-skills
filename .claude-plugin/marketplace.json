@@ -5,14 +5,14 @@
     "url": "https://opa.business"
   },
   "metadata": {
-    "description": "Bo skill marketing toan dien cho AI agent — 62 skills (31 VN + 30 Global + 1 foundation per cluster) — adds design master skill (8 design types: personal brand, business logo, campaign visual, marketing day-to-day, editorial, infographic, web mockup hybrid, quote graphic). Chien luoc, noi dung, hieu suat, van hanh, personal brand, AI avatar, dropshipping, thiet ke. Thi truong Viet Nam 2025-2026 + Global (US/EU/SEA/LATAM).",
-    "version": "2.6.0",
+    "description": "Bo skill marketing toan dien cho AI agent — 63 skills (31 VN + 31 Global + 1 foundation per cluster) — adds design master skill EN global version (8 design types: personal brand, business logo, campaign visual, marketing day-to-day, editorial, infographic, web mockup hybrid, quote graphic). Chien luoc, noi dung, hieu suat, van hanh, personal brand, AI avatar, dropshipping, thiet ke. Thi truong Viet Nam 2025-2026 + Global (US/EU/SEA/LATAM).",
+    "version": "2.7.0",
     "repository": "https://github.com/minhnv0807/ai-business-skills"
   },
   "plugins": [
     {
       "name": "ai-business-skills",
-      "description": "62 skills marketing toan dien (31 VN + 30 Global + 1 foundation per cluster) — tu lap ke hoach, brief chien dich, viet script TikTok, copy quang cao, den phan tich hieu suat, email marketing, personal brand strategy, AI avatar production, dropshipping mastery, va design master (8 design types: personal brand, business logo, campaign visual, marketing day-to-day, editorial, infographic, web mockup hybrid, quote graphic). Ho tro 4 regions (US/EU/SEA/LATAM) + VN. Tich hop voi Claude Code, Claude Pro, ChatGPT, Gemini, Copilot, Cursor. Dung foundation skills `product-marketing-context`, `22-personal-brand-context` (VN) va `product-marketing-context-global`, `22-personal-brand-context-global` (Global) de tranh lap lai thong tin.",
+      "description": "63 skills marketing toan dien (31 VN + 31 Global + 1 foundation per cluster) — tu lap ke hoach, brief chien dich, viet script TikTok, copy quang cao, den phan tich hieu suat, email marketing, personal brand strategy, AI avatar production, dropshipping mastery, va design master EN global (8 design types: personal brand, business logo, campaign visual, marketing day-to-day, editorial, infographic, web mockup hybrid, quote graphic — bilingual VN + Global). Ho tro 4 regions (US/EU/SEA/LATAM) + VN. Tich hop voi Claude Code, Claude Pro, ChatGPT, Gemini, Copilot, Cursor. Dung foundation skills `product-marketing-context`, `22-personal-brand-context` (VN) va `product-marketing-context-global`, `22-personal-brand-context-global` (Global) de tranh lap lai thong tin.",
       "source": ".",
       "strict": false,
       "skills": [
@@ -78,7 +78,8 @@
         "./modules/personal-branding/en/26-thought-leadership-content-global",
         "./modules/personal-branding/en/27-personal-brand-monetize-global",
         "./modules/personal-branding/en/28-community-building-global",
-        "./modules/dropshipping/en/29-dropshipping-mastery-global"
+        "./modules/dropshipping/en/29-dropshipping-mastery-global",
+        "./skills/en/30-design-master-global"
       ]
     }
   ]

@@ -25,6 +25,24 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## v2.7.0 — Design Master EN Global (2026-05-20)
+
+### Added
+- **EN mirror `30-design-master-global`** — global English version of `30-thiet-ke-master` (VN):
+  - All 8 design types translated and adapted for global market (US/EU/SEA/LATAM)
+  - All 11 reference docs in English
+  - All 16 templates in English with global brand examples (Lattéa coffee chain, Lumière Studio, AI Income Mastery, Mark Chen founder persona)
+  - 4 worked examples in English (personal avatar, Lattéa fall campaign poster, AI Income Mastery quote graphic, global roadmap infographic)
+- Bilingual coverage complete: VN clients fill via `30-thiet-ke-master`, global clients via `30-design-master-global`
+- Marketplace skill count: 62 → 63 (added EN design master)
+
+### Notes
+- Both VN and EN versions share same architecture (router + 8 modes + 3-tier API)
+- Brand examples differ: VN uses BHOP/AI Kiếm Tiền/Minh, EN uses Lattéa/AI Income Mastery/Mark Chen
+- Cross-skill references aligned: EN refs link to `02-campaign-brief-global`, `05-ad-copy-global`, etc.
+
+---
+
 ## v2.6.0 — Design Master Skill (2026-05-20)
 
 ### Added
