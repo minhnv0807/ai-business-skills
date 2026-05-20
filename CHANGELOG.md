@@ -25,6 +25,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## v2.6.0 — Design Master Skill (2026-05-20)
+
+### Added
+- **NEW skill `30-thiet-ke-master`** (VN only — EN version coming v2.7.0):
+  - Master design router covering 8 design types: personal-brand, business-logo, business-campaign, marketing-day-to-day, editorial, infographic, web-mockup (hybrid), quote-graphic
+  - 3-tier API support: Free (prompt fallback 5 platforms: DALL-E 3, MidJourney v6, Leonardo.ai, Imagen 3, Bing), Pro (OPENAI_API_KEY direct gpt-image-2), Enterprise (Open Design dispatcher)
+  - Auto-detect brand identity từ project (logo, palette, font) — required cho business modes
+  - Logo design: multi-variant 3-5 directions với human review disclaimer (AI-gen logo brainstorm only, not final ship)
+  - Web mockup: hybrid approach — gen hero image + recommend HTML skills (`web-prototype`, `saas-landing`, `mobile-app`, `dashboard`, `frontend-design:frontend-design`)
+  - Quote graphic: hybrid background image + HTML text overlay (text accuracy)
+  - Infographic: icons-heavy + 2-3 large numbers strategy (text minimal due to AI limitations)
+- 16 prompt templates (per format)
+- 11 reference docs (per mode + utility)
+- 4 worked examples (personal avatar, BHOP campaign poster, AI Kiếm Tiền quote graphic, OPA roadmap infographic)
+
+### Cross-references
+- Input từ: `02-brief-chien-dich`, `prd.md` (opa-prd output), `22-personal-brand-context`
+- Output cho: `01-lich-noi-dung`, `05-copy-quang-cao`, downstream marketing chain
+- Routes to: `web-prototype` family for full mockups, Canva templates for text-heavy infographics
+
+---
+
 ## [2.5.0] - 2026-05-08
 
 ### Added
