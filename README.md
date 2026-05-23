@@ -4,32 +4,22 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/v2.5-Global%20Ready-6d28d9?style=for-the-badge&labelColor=1e1033" alt="v2.5"/>
-  <img src="https://img.shields.io/badge/Skills-60-6d28d9?style=for-the-badge&labelColor=1e1033" alt="60 Skills"/>
+  <img src="https://img.shields.io/badge/v2.7.0-Design%20Master-6d28d9?style=for-the-badge&labelColor=1e1033" alt="v2.7.0"/>
+  <img src="https://img.shields.io/badge/Skills-63-6d28d9?style=for-the-badge&labelColor=1e1033" alt="63 Skills"/>
   <img src="https://img.shields.io/badge/Agents-5-be185d?style=for-the-badge&labelColor=1e1033" alt="5 Agents"/>
   <img src="https://img.shields.io/badge/Workflows-15-0f766e?style=for-the-badge&labelColor=1e1033" alt="15 Workflows"/>
-  <img src="https://img.shields.io/badge/Market-Vietnam%202025--2026-f97316?style=for-the-badge&labelColor=1e1033" alt="Vietnam Market"/>
+  <img src="https://img.shields.io/badge/Regions-VN%20%2B%20Global-f97316?style=for-the-badge&labelColor=1e1033" alt="VN + Global"/>
   <img src="https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge&labelColor=1e1033" alt="MIT License"/>
   <a href="https://www.opa.business/donate"><img src="https://img.shields.io/badge/%E2%9D%A4%EF%B8%8F%20Sponsor-Donate-ff69b4?style=for-the-badge&labelColor=1e1033" alt="Donate"/></a>
 </p>
 
+<h1 align="center">ai-business-skills</h1>
+
 <p align="center">
-  <a href="https://www.opa.business/donate">
-    <img src="https://img.shields.io/badge/%E2%98%95%20Buy%20Me%20a%20Coffee-Support%20Open%20Source-ff5e5b?style=for-the-badge" alt="Support this project"/>
-  </a>
+  <strong>Fullstack marketing skills cho AI agent — 63 skills bilingual (VN + Global).</strong>
   <br/>
-  <sub><b>💖 60 skills, ~28K+ lines, 100% free & MIT — if it saves you time, consider supporting <a href="https://www.opa.business/donate">opa.business/donate</a></b></sub>
+  <sub>Run by Linh framework | Vietnamese-first + Global (US/EU/SEA/LATAM) | Over Powers Agency</sub>
 </p>
-
-> **🌍 v2.5.0 (2026-05-08)** — Global Marketing Cluster.
-> 30 new global skills (US/EU/SEA/LATAM), Dropshipping flagship, 5 agents now universal. Zero breaking changes.
-> [Read release notes →](docs/release-notes/v2.5.0.md) ·
-> [Quick start →](docs/getting-started-global.md)
-
-> **🆕 v2.4.0 (2026-05-08)** — Personal Brand + AI Avatar Cluster.
-> 7 new skills, 1 agent, 3 workflows. Zero breaking changes.
-> [Read release notes →](docs/release-notes/v2.4.0.md) ·
-> [Quick start →](docs/getting-started-personal-brand.md)
 
 <p align="center">
   <a href="https://github.com/minhnv0807/ai-business-skills/stargazers"><img src="https://img.shields.io/github/stars/minhnv0807/ai-business-skills?style=flat-square&color=yellow" alt="Stars"/></a>
@@ -37,773 +27,487 @@
   <a href="https://github.com/minhnv0807/ai-business-skills/issues"><img src="https://img.shields.io/github/issues/minhnv0807/ai-business-skills?style=flat-square&color=red" alt="Issues"/></a>
   <a href="https://github.com/minhnv0807/ai-business-skills/pulls"><img src="https://img.shields.io/github/issues-pr/minhnv0807/ai-business-skills?style=flat-square&color=green" alt="PRs"/></a>
   <a href="https://github.com/minhnv0807/ai-business-skills/commits/master"><img src="https://img.shields.io/github/last-commit/minhnv0807/ai-business-skills?style=flat-square&color=violet" alt="Last commit"/></a>
-  <a href="https://github.com/minhnv0807/ai-business-skills/actions/workflows/validate.yml"><img src="https://img.shields.io/github/actions/workflow/status/minhnv0807/ai-business-skills/validate.yml?style=flat-square&label=validate" alt="CI"/></a>
 </p>
 
-<p align="center">
-  <a href="docs/getting-started.md"><b>Getting Started</b></a> &middot;
-  <a href="docs/skill-map.md"><b>Skill Map</b></a> &middot;
-  <a href="docs/workflow-guide.md"><b>Workflows</b></a> &middot;
-  <a href="docs/mcp-setup-guide.md"><b>MCP Setup</b></a> &middot;
-  <a href="docs/faq.md"><b>FAQ</b></a> &middot;
-  <a href="CONTRIBUTING.md"><b>Contributing</b></a> &middot;
-  <a href="CHANGELOG.md"><b>Changelog</b></a> &middot;
-  <a href="https://www.opa.business/donate"><b>💖 Donate</b></a>
-</p>
-
-<h1 align="center">AI Business Skills</h1>
-
-<p align="center">
-  <strong>Turn any AI into a professional marketing assistant — built for the Vietnamese market.</strong>
-  <br/>
-  <sub>Framework <b>Over Powers Agency</b> | Claude Code + ChatGPT + Gemini + Copilot + Cursor</sub>
-</p>
-
-<p align="center">
-  <sub>
-    Compliant with <a href="https://agentskills.io">Agent Skills Spec</a> |
-    Claude Code Plugin Marketplace |
-    Universal AI agent compatibility
-  </sub>
-</p>
-
-> **Note:** Skills content is written in Vietnamese (target: VN market 2025-2026). Docs available in both English and Vietnamese. Perfect for Vietnamese businesses or anyone marketing TO Vietnamese consumers.
+> **v2.7.0** — Design Master skill (8 design types: personal brand, business logo, campaign visual, day-to-day marketing, editorial, infographic, web mockup hybrid, quote graphic). Bilingual VN + Global. Zero breaking changes. [Changelog](CHANGELOG.md)
 
 ---
 
-## The Problem
-
-```
-You:    "Plan marketing for my spa business"
-AI:     *Generic 500-word response, no numbers, no KPIs, no timeline*
-
-You:    "Write Facebook ad copy"
-AI:     *One generic paragraph, no cold/warm/hot audience distinction*
-
-You:    "Monthly report"
-AI:     *Data dump, no insights, no action items*
-```
-
-## The Solution
-
-```
-You:    "Plan marketing for my spa"
-AI:     *2000+ word .md file — 5 sections, tables, 3-scenario KPIs,
-         budget allocation, weekly timeline, risk matrix*
-
-You:    "Write ad copy"
-AI:     *6 variations — 2 TOFU + 2 MOFU + 2 BOFU,
-         each with headline + primary text + CTA*
-
-You:    "Monthly report"
-AI:     *Insights first, data as evidence, root-cause analysis,
-         48h action plan + weekly plan + next month strategy*
-```
-
----
-
-## Foundation Skill — No Repeating Info
-
-Every skill starts by reading: **`.agents/product-marketing-context.md`** first.
-
-```
-One-time setup per project:
-> Set up product marketing context for [my product]
-  → AI creates .agents/product-marketing-context.md
-    with 12 sections (product, audience, persona,
-    competitors, positioning, pain points, differentiation, ...)
-
-Every time after:
-> Write Facebook ad copy
-  → AI reads context → writes immediately, no questions
-> Plan marketing for next month
-  → AI reads context → plans immediately, no questions
-```
-
-**Saves ~70% of time per conversation.**
-
----
-
-## Quick Start
-
-### Option 1: Claude Code Plugin (recommended)
-
-```bash
-# In Claude Code
-/plugin marketplace add minhnv0807/ai-business-skills
-/plugin install ai-business-skills
-```
-
-### Option 2: Clone + Install
+## ⚡ Quick start (30 giây)
 
 ```bash
 git clone https://github.com/minhnv0807/ai-business-skills.git
 cd ai-business-skills
+bash install.sh --global   # 63 skills → ~/.claude/skills/marketing/
 ```
 
-<table>
-<tr>
-<td><b>macOS / Linux</b></td>
-<td><b>Windows</b></td>
-</tr>
-<tr>
-<td>
-
-```bash
-chmod +x install.sh
-./install.sh --global
-```
-
-</td>
-<td>
+Windows:
 
 ```powershell
 .\install.ps1 -Global
 ```
 
-</td>
-</tr>
-</table>
+Test ngay trong Claude Code:
 
-### Option 3: Other AI agents (ChatGPT, Gemini, Cursor)
+> "Lập kế hoạch marketing cho khóa AI Kiếm Tiền — target 100 học viên đầu tiên trong 30 ngày"
 
-Copy `.md` files as Custom Instructions or context. Each file is a standalone prompt.
+→ Skill `00-ke-hoach-mkt` tự kích hoạt, output file `.md` chi tiết với benchmark VN 2025-2026, KPI 3 kịch bản, budget allocation, weekly timeline, risk matrix.
 
-### Use
-
-```
-# First time
-> Set up product marketing context for Luna Spa
-
-# Subsequent times — no need to repeat product info
-> Plan fullstack marketing for May
-> Write 30s TikTok script for new facial treatment
-> CPMess is 45K, ROAS 1.8x — audit and suggest optimization
-> Reverse-calculate budget for 200M VND revenue target
-```
+**Muốn cài full stack (build + market) cùng lúc?** Xem [companion OPA KIT](#-opa-suite--companion-repo) bên dưới.
 
 ---
 
-## 🤝 Companion repo
+## 🎯 Khi nào dùng ai-business-skills?
 
-ai-business-skills focus **post-build marketing**. Cho **build pipeline** (PRD → code → deploy), use companion repo cùng owner:
+✅ **Lập kế hoạch marketing toàn diện** — B2B SME VN / Global SMB / agency
+✅ **Brief campaign** — TVC, performance ads, content calendar 30 ngày
+✅ **Viết copy** — Facebook/TikTok ads, script video, email marketing, landing page brief
+✅ **Personal brand strategy + AI avatar production** — founder/coach/creator
+✅ **Phân tích đối thủ + insight khách hàng + audit ads** — diagnostic + 48h action plan
+✅ **Design master** — 8 loại thiết kế (logo, key visual, social post, infographic...) qua prompt-driven workflow
+✅ **Dropshipping mastery** (Global) — niche → product → store → ads → fulfillment → scale
 
-### [`OPA KIT`](https://github.com/minhnv0807/opa-kit)
+❌ **Build product code** → dùng companion [OPA KIT](https://github.com/minhnv0807/opa-kit) (`opa-pipeline`)
+❌ **Single PRD tech feature** → dùng `opa-prd` ở OPA KIT
+❌ **Deploy production** → dùng `opa-deploy` ở OPA KIT
 
-8 tech skills cover 6-phase shipping pipeline: SEED → PLAN → BUILD → REVIEW → SHIP. Bao gồm:
-- `opa-prd` — PRD authoring 3 modes (Product full / Creative 1-page / Lesson module)
-- `opa-pipeline` — end-to-end build pipeline với CEO/PM/Engineer/Reviewer modes
-- `opa-tracker` — progress tracking + token cost + model recommendation
-- `opa-deploy` — Coolify-first deploy với manual confirm gate
-- `opa-diagram` — Mermaid diagrams (workflow, journey, funnel, C4, ERD, state)
+---
 
-**Workflow chain typical:**
+## 📦 63 Skills (bilingual VN + Global)
+
+> Mỗi skill = 1 file `SKILL.md` với frontmatter triggers + workflow body. AI agent tự kích hoạt skill khi user nhắc trigger keyword.
+
+### Cluster 1: Marketing Core (24 VN + 24 Global)
+
+Foundation skill (`product-marketing-context` / `product-marketing-context-global`) đọc **1 lần** mỗi project → tránh hỏi lại sản phẩm/audience suốt session. Saves ~70% time.
+
+| # | Skill (VN) | Global mirror | Use case |
+|---|-----------|---------------|----------|
+| ★ | product-marketing-context | product-marketing-context-global | Foundation — đọc trước mọi skill |
+| 00 | 00-ke-hoach-mkt | 00-marketing-plan-global | Fullstack 7-section plan + SAVE framework |
+| 01 | 01-lich-noi-dung | 01-content-calendar-global | Monthly calendar + 1:9 repurposing matrix |
+| 02 | 02-brief-chien-dich | 02-campaign-brief-global | 9-section brief + RACI + risk mitigation |
+| 03 | 03-danh-gia-hieu-suat | 03-performance-eval-global | Diagnostic tree + 5 Whys + 48h action |
+| 04 | 04-script-video | 04-script-video-global | A/B scripts + 5 hooks + viral score |
+| 05 | 05-copy-quang-cao | 05-ad-copy-global | 6 variations × 3 funnel tiers |
+| 06 | 06-brief-ugc-egc | 06-ugc-egc-brief-global | Creator brief + legal + payment |
+| 07 | 07-bao-cao-marketing | 07-marketing-report-global | 5-min readable monthly report |
+| 08 | 08-nghien-cuu-doi-thu | 08-competitor-research-global | 3-tier competitor + SWOT + positioning map |
+| 09 | 09-insight-khach-hang | 09-customer-insight-global | Persona + JTBD + customer journey |
+| 10 | 10-tinh-kpi-nguoc | 10-reverse-kpi-global | Revenue → budget + 3 scenarios |
+| 11 | 11-thiet-lap-kenh | 11-channel-setup-global | Setup 7 channels + 30-day plan |
+| 12 | 12-brief-landing-page | 12-landing-page-brief-global | 7-section brief + A/B plan |
+| 13 | 13-phan-tich-du-lieu | 13-data-analysis-global | Meta/TikTok/GA4 → insights + anomaly |
+| 14 | 14-email-marketing | 14-email-marketing-global | Welcome/nurture/re-engage + automation |
+| 15 | 15-social-listening | 15-social-listening-global | Brand monitoring + crisis protocol |
+| 16 | 16-marketing-psychology | 16-marketing-psychology-global | 7 Cialdini principles + cultural adapt |
+| 17 | 17-pricing-strategy | 17-pricing-strategy-global | Tiers + charm/anchor/bundle + break-even |
+| 18 | 18-referral-program | 18-referral-program-global | 1-way/2-way/affiliate + anti-fraud |
+| 19 | 19-ab-test-setup | 19-ab-test-setup-global | Sample size + 8 test types + significance |
+| 20 | 20-brief-client-intake | 20-client-intake-brief-global | 20-industry intake (agency use) |
+| 21 | 21-audit-ads-performance | 21-ads-audit-global | 84 checkpoints + Health Score 0-100 |
+
+### Cluster 2: Personal Branding (7 VN + 7 Global)
+
+For founder / coach / creator building personal brand with AI avatar.
+
+| # | Skill (VN) | Global mirror | Use case |
+|---|-----------|---------------|----------|
+| 22 | 22-personal-brand-context ⭐ | 22-personal-brand-context-global | Foundation PB (3 variants: founder/coach/creator) |
+| 23 | 23-personal-brand-strategy | 23-personal-brand-strategy-global | 12-month strategy + niche + authority ladder |
+| 24 | 24-ai-avatar-production 🎬 | 24-ai-avatar-production-global | AI Avatar 3-tier tools + 4 workflows + QA Score |
+| 25 | 25-voice-clone-podcast 🎙️ | 25-voice-clone-podcast-global | Voice clone, podcast, audiobook, 1:10 repurpose |
+| 26 | 26-thought-leadership-content | 26-thought-leadership-content-global | Long-form: 3 structures, 6 hooks, 1:5 repurpose |
+| 27 | 27-personal-brand-monetize | 27-personal-brand-monetize-global | 3 funnels + pricing psych + VN tax 2026 |
+| 28 | 28-community-building | 28-community-building-global | Zalo/Telegram/Skool blueprint + 3-layer model |
+
+### Cluster 3: Regional flagship (skill 29 — diverges per region)
+
+| # | VN | Global |
+|---|----|--------|
+| 29 | `29-xuat-khau-b2b` — Export B2B playbook cho SME Việt | `29-dropshipping-mastery-global` 🚀 — Shopify + supplier + winning products + global ads + fulfillment SOP + scale to $10K/mo+ |
+
+### Cluster 4: Design Master (1 VN + 1 Global) ⭐ NEW v2.7.0
+
+| # | Skill | Coverage |
+|---|-------|----------|
+| 30 | `30-thiet-ke-master` (VN) / `30-design-master-global` (EN) | 8 design types: personal-brand · business-logo · business-campaign · marketing-day-to-day · editorial · infographic · web-mockup (hybrid) · quote-graphic. Auto-reads brand identity → composes prompt → generates via `gpt-image-2` API OR outputs paste-ready prompts cho 5 platforms (DALL-E 3, MidJourney, Leonardo, Imagen, Bing). |
+
+### 5 Marketing Agents (Universal mode — VN + Global auto-detect)
+
+> Agents auto-detect cluster (VN vs Global) via `.agents/` context file. No manual config.
+
+| Agent | Vai trò | Skills chính |
+|-------|---------|--------------|
+| [mkt-strategist](agents/mkt-strategist.md) | Chiến lược tổng | 00, 02, 08, 09, 16, 17 (+ `-global` mirrors) |
+| [content-producer](agents/content-producer.md) | Sản xuất nội dung | 01, 04, 05, 06 (+ `-global`) |
+| [performance-analyst](agents/performance-analyst.md) | Phân tích hiệu suất | 03, 07, 10, 13, 19 (+ `-global`) |
+| [channel-operator](agents/channel-operator.md) | Vận hành kênh | 11, 12, 14, 15, 18 (+ `-global`) |
+| [personal-brand-builder](agents/personal-brand-builder.md) | PB + AI Avatar | 22-28 (+ `-global`) |
+
+### 15 Workflows (multi-skill chains — 7 VN + 8 Global)
+
+**VN workflows (7):**
+- `campaign-launch` (14-21 ngày) — 08 → 09 → 00 → 02 → 01+04+05 → 06 → 11
+- `client-onboard` (5-7 ngày, agency) — 20 → 09 → 08 → 10 → 00 → 02 → 01
+- `monthly-cycle` (3-5 ngày) — 13 → 03 → 07 → 10 → 01
+- `content-production` (weekly) — review calendar → 04 → film → 05 → schedule
+- `personal-brand-launch` (30 ngày) — 22 → 23 → 24 → 26 → 27 → 28
+- `ai-avatar-batch` (5 ngày × 5h) — 30 AI Avatar videos, <$2/video
+- `personal-brand-monthly` (3-5 ngày) — 13 → 03 → 07 → review pillars
+
+**Global workflows (8):** mirrors above + `dropshipping-launch-global` (14-30 ngày): niche → product validation → store → ads → fulfillment → scale.
+
+---
+
+## 🌐 Cài đặt theo nền tảng AI
+
+Skills là **markdown files với frontmatter** — bất kỳ AI agent nào đọc được `.md` đều dùng được. Dưới đây là setup cho từng platform cụ thể.
+
+### Tier 1 — Native skill support (recommended)
+
+#### 1. Claude Code
+
+Cài qua install script:
+
+```bash
+git clone https://github.com/minhnv0807/ai-business-skills.git
+cd ai-business-skills
+
+bash install.sh --global    # → ~/.claude/skills/marketing/
+# hoặc
+bash install.sh --project   # → .claude/skills/marketing/ trong project hiện tại
+```
+
+Windows PowerShell:
+
+```powershell
+.\install.ps1 -Global
+```
+
+Hoặc cài qua Claude Code plugin marketplace:
+
+```
+/plugin marketplace add minhnv0807/ai-business-skills
+/plugin install ai-business-skills
+```
+
+**Use ngay sau cài:**
+
+```
+> Set up product marketing context cho Luna Spa
+> Lập kế hoạch marketing cho tháng 5
+> CPMess 45K, ROAS 1.8x — audit và đề xuất tối ưu
+```
+
+#### 2. OpenCode + Ollama Pro Cloud
+
+OpenCode hỗ trợ load skill markdown qua config. Pair với Ollama Cloud Pro (local + cloud routing) cho cost-efficient.
+
+**Setup:**
+
+```bash
+# Cài skills vào ~/.claude/skills/marketing/ trước (dùng bash install.sh --global)
+# Sau đó reference từ OpenCode config:
+```
+
+Sample `~/.opencode/config.json`:
+
+```json
+{
+  "skills": {
+    "root": "~/.claude/skills/marketing",
+    "auto_load": ["product-marketing-context", "00-ke-hoach-mkt", "30-thiet-ke-master"]
+  },
+  "providers": {
+    "ollama_cloud": {
+      "base_url": "https://ollama.com/api",
+      "api_key": "${OLLAMA_API_KEY}"
+    }
+  },
+  "routing": {
+    "strategy": ["00-ke-hoach-mkt", "23-personal-brand-strategy", "mkt-strategist"],
+    "strategy_model": "qwen2.5:72b",
+    "copy":     ["05-copy-quang-cao", "04-script-video", "14-email-marketing"],
+    "copy_model": "llama-3.3:70b",
+    "analytics": ["03-danh-gia-hieu-suat", "13-phan-tich-du-lieu", "21-audit-ads-performance"],
+    "analytics_model": "deepseek-r1"
+  }
+}
+```
+
+**Model backend mapping (recommended):**
+
+| Skill type | Model | Lý do |
+|-----------|-------|-------|
+| Strategic (00, 23, mkt-strategist) | `qwen2.5:72b` | Long-context reasoning + planning |
+| Copy generation (04, 05, 14, 26) | `llama-3.3:70b` | Creative writing, instruction-following |
+| Analytics (03, 13, 21) | `deepseek-r1` | Structured analysis + diagnostic chains |
+| Design (30) | `qwen2.5:72b` | Prompt composition + brand voice |
+
+**Cost note:** Ollama Cloud Pro ~$20/mo cho heavy use vs OpenAI/Anthropic API per-token (~$50-200/mo cho cùng workload).
+
+#### 3. OpenAI Codex CLI
+
+Reference skill markdown qua `--system-prompt-file` hoặc copy vào `~/.codex/skills/`:
+
+```bash
+# Cài skills vào ~/.claude/skills/marketing/ trước
+codex --system-prompt-file ~/.claude/skills/marketing/00-ke-hoach-mkt/SKILL.md \
+      "Lập kế hoạch marketing cho khóa AI Kiếm Tiền"
+```
+
+Skill `SKILL.md` works as system prompt fragment — frontmatter và body đều được Codex parse.
+
+---
+
+### Tier 2 — VS Code + AI extensions
+
+#### 4. VS Code + Cline (recommended cho VS Code users)
+
+Tạo `.clinerules` ở project root:
+
+```markdown
+# Cline rules — load ai-business-skills
+
+When user mentions marketing tasks, load skills from:
+- ~/.claude/skills/marketing/skills/vi/   (VN)
+- ~/.claude/skills/marketing/skills/en/   (Global)
+
+Auto-trigger on keywords:
+- "lập kế hoạch marketing" / "marketing plan" → 00-ke-hoach-mkt / 00-marketing-plan-global
+- "viết copy" / "ad copy" → 05-copy-quang-cao / 05-ad-copy-global
+- "thiết kế ảnh" / "design image" → 30-thiet-ke-master / 30-design-master-global
+
+Read foundation first: product-marketing-context/SKILL.md
+```
+
+#### 5. VS Code + Continue.dev
+
+`~/.continue/config.json`:
+
+```json
+{
+  "customCommands": [
+    {
+      "name": "marketing-plan",
+      "prompt": "{{{ input }}}\n\nFollow workflow in ~/.claude/skills/marketing/skills/vi/00-ke-hoach-mkt/SKILL.md",
+      "description": "Run marketing plan skill"
+    }
+  ]
+}
+```
+
+#### 6. Cursor / Roo Code / GitHub Copilot
+
+Paste skill content vào custom instructions:
+- **Cursor**: `.cursorrules` ở project root
+- **Roo Code**: System prompt settings
+- **Copilot**: `.github/copilot-instructions.md`
+
+Mẫu: paste frontmatter + workflow body của 3-5 skill thường dùng (vd `product-marketing-context` + `00-ke-hoach-mkt` + `05-copy-quang-cao` + `30-thiet-ke-master`).
+
+---
+
+### Tier 3 — Other CLIs + community agents
+
+#### 7. Aider, Codeium, Cody
+
+Load skill markdown qua `--context` hoặc paste vào chat:
+
+```bash
+aider --read ~/.claude/skills/marketing/skills/vi/00-ke-hoach-mkt/SKILL.md
+```
+
+#### 8. Openclaw, Hermes, community agents
+
+Skills là plain markdown — any agent đọc được `.md` dùng được. Point agent tới:
+
+```
+~/.claude/skills/marketing/skills/<vi|en>/<skill-name>/SKILL.md
+```
+
+Agent đọc frontmatter triggers + body workflow để output đúng cấu trúc.
+
+---
+
+### Tier 4 — Manual (any LLM, no framework)
+
+Không có framework? Vẫn dùng được — copy-paste vào ChatGPT / Claude.ai / Gemini / Bing:
+
+1. Mở `skills/vi/00-ke-hoach-mkt/SKILL.md` (hoặc skill cần dùng)
+2. Copy full content
+3. Paste vào chat: "Follow this workflow. My input: [your request]"
+4. AI sẽ đọc frontmatter triggers + workflow body và output đúng cấu trúc
+
+**Tip:** Paste foundation skill (`product-marketing-context`) trước → trả lời 12 câu setup → AI ghi nhớ context → các skill sau không hỏi lại.
+
+---
+
+## 🤝 OPA Suite — companion repo
+
+OPA Suite = **ai-business-skills** (this repo, marketing) + **[OPA KIT](https://github.com/minhnv0807/opa-kit)** (build pipeline).
+
+### [OPA KIT](https://github.com/minhnv0807/opa-kit) — 8 tech skills cho build pipeline
+
+- **`opa-prd`** — PRD authoring 3 modes (Product full / Creative 1-page / Lesson module)
+- **`opa-pipeline`** — 6-phase end-to-end shipping (CEO/PM/Engineer/Reviewer modes)
+- **`opa-tracker`** — progress tracking + token cost + model recommendation
+- **`opa-deploy`** — Coolify-first deploy với manual confirm gate
+- **`opa-diagram`** — Mermaid diagrams (workflow, journey, funnel, C4, ERD, state)
+- **`opa-judge`** — quality gate review
+- **`opa-para-pipeline`** — parallel multi-feature shipping
+
+### Workflow chain typical
 
 ```
 OPA KIT (build)                  →    ai-business-skills (market)
-─────────────────────────            ─────────────────────────
-opa-prd → opa-pipeline → ship  →    00-ke-hoach-mkt
-                                →    02-brief-chien-dich
-                                →    campaign-launch workflow
-                                →    03-danh-gia-hieu-suat
+─────────────────────────             ─────────────────────────
+opa-prd → opa-pipeline → ship    →    00-ke-hoach-mkt
+                                 →    02-brief-chien-dich
+                                 →    30-thiet-ke-master  (key visual + social posts)
+                                 →    campaign-launch workflow (14-21 ngày)
+                                 →    03-danh-gia-hieu-suat (audit sau 30 ngày)
 ```
 
-**Install cả 2 cùng lúc:**
+### Cài cả 2 cùng lúc
 
 ```bash
 git clone https://github.com/minhnv0807/opa-kit.git
 cd opa-kit && bash install-opa-suite.sh
 ```
 
-Script tự install cả OPA KIT + ai-business-skills. Xem `references/companion-skills.md` trong OPA KIT cho full ecosystem map.
+Script tự install OPA KIT + ai-business-skills. Xem `references/companion-skills.md` trong OPA KIT cho full ecosystem map.
 
 ---
 
-## 60 Skills (29 VN + 30 Global + 1 foundation per cluster)
+## 🛠️ Architecture — how skills work
 
-### VN Cluster (29 skills)
+```markdown
+---
+name: 00-ke-hoach-mkt
+description: Mô tả ngắn — dùng để AI quyết định có kích hoạt không
+category: strategy
+triggers:
+  - "lập kế hoạch marketing"
+  - "marketing plan"
+  - "kế hoạch tháng"
+output: file .md với cấu trúc 7 sections + KPI 3 scenarios
+related: [08-nghien-cuu-doi-thu, 09-insight-khach-hang, 10-tinh-kpi-nguoc]
+---
 
-<table>
-<tr><th>#</th><th>Skill</th><th>What it does</th><th>Category</th></tr>
-<tr><td><b>★</b></td><td><a href="skills/vi/product-marketing-context/SKILL.md"><b>Product Marketing Context</b></a></td><td><b>Foundation</b> — read first, avoids repeating info</td><td>
+# Skill Title
 
-![Foundation](https://img.shields.io/badge/-Foundation-be185d?style=flat-square)
+## Thu thập thông tin (grill pattern)
+[Hỏi tối đa 4 câu để fill blank — không hỏi nếu đã có context]
 
-</td></tr>
-<tr><td><code>00</code></td><td><a href="skills/vi/00-ke-hoach-mkt/SKILL.md"><b>Marketing Plan</b></a></td><td>Fullstack 7-section plan + SAVE framework + risk matrix</td><td>
+## Nguyên tắc
+[Rules quan trọng: insight trước số liệu, benchmark VN, không generic]
 
-![Strategy](https://img.shields.io/badge/-Strategy-6d28d9?style=flat-square)
+## Cấu trúc kết quả
+[Template output chi tiết — sections, tables, scenarios]
 
-</td></tr>
-<tr><td><code>01</code></td><td><a href="skills/vi/01-lich-noi-dung/SKILL.md"><b>Content Calendar</b></a></td><td>Monthly calendar + 1:9 repurposing matrix + AI scoring</td><td>
+## Checklist chất lượng
+[Quality gates trước khi giao file .md]
+```
 
-![Content](https://img.shields.io/badge/-Content-b45309?style=flat-square)
+**Skill chain** — nhiều skill tự gọi nhau:
+- `20-brief-client-intake` → 09 → 08 → 10 → 00 (full client onboarding)
+- `00-ke-hoach-mkt` → 08 → 09 → 10 (research before planning)
+- `02-brief-chien-dich` → 05 + 04 + 01 (campaign breaks into content)
+- `30-thiet-ke-master` reads context từ `22-personal-brand-context` hoặc `product-marketing-context` để compose prompt đúng brand voice
 
-</td></tr>
-<tr><td><code>02</code></td><td><a href="skills/vi/02-brief-chien-dich/SKILL.md"><b>Campaign Brief</b></a></td><td>9-section brief + RACI matrix + risk mitigation</td><td>
-
-![Strategy](https://img.shields.io/badge/-Strategy-6d28d9?style=flat-square)
-
-</td></tr>
-<tr><td><code>03</code></td><td><a href="skills/vi/03-danh-gia-hieu-suat/SKILL.md"><b>Performance Audit</b></a></td><td>Diagnostic tree + 5 Whys + 48h action plan</td><td>
-
-![Performance](https://img.shields.io/badge/-Performance-c2410c?style=flat-square)
-
-</td></tr>
-<tr><td><code>04</code></td><td><a href="skills/vi/04-script-video/SKILL.md"><b>Video Script</b></a></td><td>A/B scripts + 5 hook types + viral score + filming guide</td><td>
-
-![Content](https://img.shields.io/badge/-Content-b45309?style=flat-square)
-
-</td></tr>
-<tr><td><code>05</code></td><td><a href="skills/vi/05-copy-quang-cao/SKILL.md"><b>Ad Copy</b></a></td><td>6 variations, 3 funnel tiers + emotional triggers</td><td>
-
-![Content](https://img.shields.io/badge/-Content-b45309?style=flat-square)
-
-</td></tr>
-<tr><td><code>06</code></td><td><a href="skills/vi/06-brief-ugc-egc/SKILL.md"><b>UGC/EGC Brief</b></a></td><td>Creator brief + legal + payment + batch management</td><td>
-
-![Content](https://img.shields.io/badge/-Content-b45309?style=flat-square)
-
-</td></tr>
-<tr><td><code>07</code></td><td><a href="skills/vi/07-bao-cao-marketing/SKILL.md"><b>Marketing Report</b></a></td><td>5-min readable monthly report — insights first</td><td>
-
-![Performance](https://img.shields.io/badge/-Performance-c2410c?style=flat-square)
-
-</td></tr>
-<tr><td><code>08</code></td><td><a href="skills/vi/08-nghien-cuu-doi-thu/SKILL.md"><b>Competitor Research</b></a></td><td>3-tier competitor model + SWOT + positioning map + gaps</td><td>
-
-![Strategy](https://img.shields.io/badge/-Strategy-6d28d9?style=flat-square)
-
-</td></tr>
-<tr><td><code>09</code></td><td><a href="skills/vi/09-insight-khach-hang/SKILL.md"><b>Customer Insight</b></a></td><td>Persona + customer journey + JTBD + validation</td><td>
-
-![Strategy](https://img.shields.io/badge/-Strategy-6d28d9?style=flat-square)
-
-</td></tr>
-<tr><td><code>10</code></td><td><a href="skills/vi/10-tinh-kpi-nguoc/SKILL.md"><b>Reverse KPI Calculator</b></a></td><td>Revenue → budget + 3 scenarios + sensitivity analysis</td><td>
-
-![Performance](https://img.shields.io/badge/-Performance-c2410c?style=flat-square)
-
-</td></tr>
-<tr><td><code>11</code></td><td><a href="skills/vi/11-thiet-lap-kenh/SKILL.md"><b>Channel Setup A-Z</b></a></td><td>Setup 7 channels + 4-phase checklist + 30-day plan</td><td>
-
-![Operations](https://img.shields.io/badge/-Operations-1d4ed8?style=flat-square)
-
-</td></tr>
-<tr><td><code>12</code></td><td><a href="skills/vi/12-brief-landing-page/SKILL.md"><b>Landing Page Brief</b></a></td><td>7-section brief + conversion checklist + A/B plan</td><td>
-
-![Operations](https://img.shields.io/badge/-Operations-1d4ed8?style=flat-square)
-
-</td></tr>
-<tr><td><code>13</code></td><td><a href="skills/vi/13-phan-tich-du-lieu/SKILL.md"><b>Data Analysis</b></a></td><td>Meta/TikTok/GA4 → insights + trends + anomaly detection</td><td>
-
-![Operations](https://img.shields.io/badge/-Operations-1d4ed8?style=flat-square)
-
-</td></tr>
-<tr><td><code>14</code></td><td><a href="skills/vi/14-email-marketing/SKILL.md"><b>Email Marketing</b></a></td><td>Welcome/nurture/re-engage + automation + deliverability</td><td>
-
-![Operations](https://img.shields.io/badge/-Operations-1d4ed8?style=flat-square)
-
-</td></tr>
-<tr><td><code>15</code></td><td><a href="skills/vi/15-social-listening/SKILL.md"><b>Social Listening</b></a></td><td>Brand monitoring + sentiment + crisis protocol</td><td>
-
-![Content](https://img.shields.io/badge/-Content-b45309?style=flat-square)
-
-</td></tr>
-<tr><td><code>16</code></td><td><a href="skills/vi/16-marketing-psychology/SKILL.md"><b>Marketing Psychology</b></a> <sup>NEW</sup></td><td>7 Cialdini principles + VN cultural adaptation</td><td>
-
-![Strategy](https://img.shields.io/badge/-Strategy-6d28d9?style=flat-square)
-
-</td></tr>
-<tr><td><code>17</code></td><td><a href="skills/vi/17-pricing-strategy/SKILL.md"><b>Pricing Strategy</b></a> <sup>NEW</sup></td><td>Pricing tiers + charm/anchor/bundle + break-even</td><td>
-
-![Strategy](https://img.shields.io/badge/-Strategy-6d28d9?style=flat-square)
-
-</td></tr>
-<tr><td><code>18</code></td><td><a href="skills/vi/18-referral-program/SKILL.md"><b>Referral Program</b></a> <sup>NEW</sup></td><td>1-way/2-way/affiliate + VN channels + anti-fraud</td><td>
-
-![Operations](https://img.shields.io/badge/-Operations-1d4ed8?style=flat-square)
-
-</td></tr>
-<tr><td><code>19</code></td><td><a href="skills/vi/19-ab-test-setup/SKILL.md"><b>A/B Test Setup</b></a></td><td>Sample size + 8 what-to-test + significance analysis</td><td>
-
-![Performance](https://img.shields.io/badge/-Performance-c2410c?style=flat-square)
-
-</td></tr>
-<tr><td><code>20</code></td><td><a href="skills/vi/20-brief-client-intake/SKILL.md"><b>Client Intake Brief</b></a> <sup>NEW</sup></td><td>20-industry intake form + 11-section brief for agencies</td><td>
-
-![Operations](https://img.shields.io/badge/-Operations-1d4ed8?style=flat-square)
-
-</td></tr>
-<tr><td><code>21</code></td><td><a href="skills/vi/21-audit-ads-performance/SKILL.md"><b>Ads Health Audit</b></a> <sup>NEW</sup></td><td>84 checkpoints + Health Score (0-100) + Quality Gates</td><td>
-
-![Performance](https://img.shields.io/badge/-Performance-c2410c?style=flat-square)
-
-</td></tr>
-<tr><td><code>22</code></td><td><a href="modules/personal-branding/vi/22-personal-brand-context/SKILL.md"><b>Personal Brand Context</b></a> <sup>v2.4 ⭐</sup></td><td>Foundation skill for personal brand (3 variants: founder/coach/creator)</td><td>
-
-![Foundation](https://img.shields.io/badge/-Foundation-be185d?style=flat-square)
-
-</td></tr>
-<tr><td><code>23</code></td><td><a href="modules/personal-branding/vi/23-personal-brand-strategy/SKILL.md"><b>Personal Brand Strategy</b></a> <sup>v2.4</sup></td><td>12-month strategy: niche + positioning + content pillars + authority ladder</td><td>
-
-![Strategy](https://img.shields.io/badge/-Strategy-6d28d9?style=flat-square)
-
-</td></tr>
-<tr><td><code>24</code></td><td><a href="modules/personal-branding/vi/24-ai-avatar-production/SKILL.md"><b>AI Avatar Production</b></a> <sup>v2.4 🎬</sup></td><td>Deep-dive AI Avatar (3-tier tools, 4 workflows, QA Score 100)</td><td>
-
-![Content](https://img.shields.io/badge/-Content-b45309?style=flat-square)
-
-</td></tr>
-<tr><td><code>25</code></td><td><a href="modules/personal-branding/vi/25-voice-clone-podcast/SKILL.md"><b>Voice Clone & Podcast</b></a> <sup>v2.4 🎙️</sup></td><td>Audio AI: voice clone, podcast, audiobook, 1:10 repurpose</td><td>
-
-![Content](https://img.shields.io/badge/-Content-b45309?style=flat-square)
-
-</td></tr>
-<tr><td><code>26</code></td><td><a href="modules/personal-branding/vi/26-thought-leadership-content/SKILL.md"><b>Thought Leadership Content</b></a> <sup>v2.4</sup></td><td>Long-form text: 3 structures, 6 hooks, 1:5 repurpose</td><td>
-
-![Content](https://img.shields.io/badge/-Content-b45309?style=flat-square)
-
-</td></tr>
-<tr><td><code>27</code></td><td><a href="modules/personal-branding/vi/27-personal-brand-monetize/SKILL.md"><b>Personal Brand Monetize</b></a> <sup>v2.4</sup></td><td>3 funnel versions + pricing psychology + VN tax 2026</td><td>
-
-![Strategy](https://img.shields.io/badge/-Strategy-6d28d9?style=flat-square)
-
-</td></tr>
-<tr><td><code>28</code></td><td><a href="modules/personal-branding/vi/28-community-building/SKILL.md"><b>Community Building</b></a> <sup>v2.4</sup></td><td>Zalo/Telegram/Skool blueprint + 3-layer community</td><td>
-
-![Operations](https://img.shields.io/badge/-Operations-1d4ed8?style=flat-square)
-
-</td></tr>
-</table>
+**Personal Brand Mode auto-detect** (skill 04, 05):
+- `.agents/product-marketing-context.md` only → Mode A (sales/conversion)
+- `.agents/personal-brand-context.md` only → Mode B (authority/trust)
+- Both → skill hỏi 1 câu trước khi viết
+- Neither → suggest tạo context file
 
 ---
 
-## Personal Brand + AI Avatar Cluster (NEW v2.4.0)
+## 🌍 Bilingual coverage
 
-7 new skills for founder/coach/creator building personal brand with AI Avatar.
+| Cluster | VN | Global (EN) | Notes |
+|---------|----|----| ----- |
+| Marketing Core (00-21) | 22 + foundation | 22 + foundation | Full bilingual mirror |
+| Personal Branding (22-28) | 7 | 7 | Full bilingual mirror |
+| Regional flagship (29) | Export B2B 🇻🇳 | Dropshipping 🚀 | **Diverges by region** |
+| Design Master (30) ⭐ NEW v2.7.0 | 1 (`30-thiet-ke-master`) | 1 (`30-design-master-global`) | Full bilingual mirror — 8 design types |
 
-### Cluster Diagram
+**Global cluster covers 4 regions** with per-region variants (currency, privacy law, channels):
 
-```mermaid
-graph TD
-    A[22 personal-brand-context ⭐] --> B[23 personal-brand-strategy]
-    B --> C[24 ai-avatar-production 🎬]
-    B --> D[26 thought-leadership-content]
-    C --> E[25 voice-clone-podcast]
-    B --> F[27 personal-brand-monetize]
-    F --> G[28 community-building]
-```
+| Region | Currency | Privacy | Top Channels |
+|--------|----------|---------|--------------|
+| **US** | USD | CCPA / state laws | Meta, Google, TikTok, YouTube |
+| **EU** | EUR / GBP | GDPR | Meta, Google, LinkedIn, TikTok |
+| **SEA** | IDR / THB / SGD / PHP | PDPA (varies) | TikTok Shop, Shopee, Lazada, Meta |
+| **LATAM** | BRL / MXN / ARS | LGPD (BR) | Meta, TikTok, MercadoLibre, WhatsApp |
 
-### 30-Day Launch Timeline
-
-```mermaid
-gantt
-    title Personal Brand 30-Day Launch
-    dateFormat YYYY-MM-DD
-    section Week 1
-    Foundation (skill 22-23-24) :a1, 2026-01-01, 7d
-    section Week 2
-    First Content (skill 26-04) :a2, after a1, 7d
-    section Week 3
-    Amplify (engage + iterate)  :a3, after a2, 7d
-    section Week 4
-    Monetize (skill 27-28)      :a4, after a3, 7d
-```
-
-### 3-Tier Tools Matrix (Compact)
-
-| Tier | Cost/month | Tools | Best For |
-|------|-----------|-------|----------|
-| Free | $0 | Captions free, HeyGen trial | 1-5 videos/mo |
-| Pro | $30-100 | HeyGen Creator, ElevenLabs Pro | 10-30 videos/mo |
-| Enterprise | $200+ | Synthesia Enterprise, custom API | 30+ videos/mo |
-
-See: [examples/personal-brand-coach.md](examples/personal-brand-coach.md) ·
-[docs/getting-started-personal-brand.md](docs/getting-started-personal-brand.md)
+Skills with explicit per-region variants (`variants/01-us.md`, `02-eu.md`, `03-sea.md`, `04-latam.md`): 03, 10, 11, 14, 17, 18, 21, foundation.
 
 ---
 
-### Global Cluster (30 skills)
+## 📊 VN Benchmarks 2025-2026 (quick ref)
 
-<table>
-<tr><th>#</th><th>Skill</th><th>What it does</th><th>Category</th></tr>
-<tr><td><b>★</b></td><td><a href="skills/en/product-marketing-context-global/SKILL.md"><b>Product Marketing Context Global</b></a></td><td><b>Foundation</b> — global region + currency + tax + privacy law context</td><td>
+| Metric | Poor | Average | Good | Excellent |
+|--------|------|---------|------|-----------|
+| **Meta CPMess** | >40K | 25-40K | 18-25K | <18K |
+| **TikTok CPMess** | >45K | 28-45K | 20-28K | <20K |
+| **Lead→Booking** | <40% | 40-60% | 60-75% | >75% |
+| **Booking→Customer** | <25% | 25-40% | 40-55% | >55% |
+| **ROAS** | <2x | 2-4x | 4-7x | >7x |
+| **Email Open Rate** | <15% | 15-25% | 25-35% | >35% |
+| **Zalo OA Read Rate** | <40% | 40-60% | 60-80% | >80% |
 
-![Foundation](https://img.shields.io/badge/-Foundation-be185d?style=flat-square)
-
-</td></tr>
-<tr><td><code>00–21</code></td><td><a href="skills/en/"><b>Marketing 22 skills (global)</b></a></td><td>Mirror VN 00–21 with <code>-global</code> suffix — plan, calendar, brief, audit, copy, KPI, channels, A/B, intake, ads audit</td><td>
-
-![Strategy](https://img.shields.io/badge/-Strategy-6d28d9?style=flat-square) ![Content](https://img.shields.io/badge/-Content-b45309?style=flat-square) ![Performance](https://img.shields.io/badge/-Performance-c2410c?style=flat-square) ![Operations](https://img.shields.io/badge/-Operations-1d4ed8?style=flat-square)
-
-</td></tr>
-<tr><td><code>22–28</code></td><td><a href="modules/personal-branding/en/"><b>Personal Brand 7 skills (global)</b></a></td><td>Mirror VN 22–28 with <code>-global</code> suffix — context, strategy, AI Avatar, voice clone, thought leadership, monetize, community</td><td>
-
-![Foundation](https://img.shields.io/badge/-Foundation-be185d?style=flat-square) ![Strategy](https://img.shields.io/badge/-Strategy-6d28d9?style=flat-square) ![Content](https://img.shields.io/badge/-Content-b45309?style=flat-square) ![Operations](https://img.shields.io/badge/-Operations-1d4ed8?style=flat-square)
-
-</td></tr>
-<tr><td><code>29</code></td><td><a href="modules/dropshipping/en/29-dropshipping-mastery-global/SKILL.md"><b>Dropshipping Mastery</b></a> <sup>v2.5 🚀</sup></td><td><b>Flagship</b> — Shopify + supplier sourcing + winning products + global ads</td><td>
-
-![Strategy](https://img.shields.io/badge/-Strategy-6d28d9?style=flat-square)
-
-</td></tr>
-</table>
+Full benchmarks by industry: [`skills/vi/references/`](skills/vi/references/) · Global benchmarks: [`skills/en/references/`](skills/en/references/)
 
 ---
 
-## Global Cluster (NEW v2.5.0)
+## 🤝 Contributing
 
-30 new skills for marketers, founders, and dropshippers operating across **US / EU / SEA / LATAM** — currency, tax, privacy (GDPR/CCPA/PDPA/LGPD), and platform stacks per region.
-
-### Cluster Diagram
-
-```mermaid
-graph TD
-    G[★ product-marketing-context-global] --> M[Marketing 00–21 global]
-    G --> P[Personal Brand 22–28 global]
-    G --> D[29 dropshipping-mastery-global 🚀]
-    M --> US[US region]
-    M --> EU[EU region]
-    M --> SEA[SEA region]
-    M --> LATAM[LATAM region]
-    P --> US
-    P --> EU
-    P --> SEA
-    P --> LATAM
-    D --> US
-    D --> EU
-    D --> SEA
-    D --> LATAM
-```
-
-### 4-Region Overview
-
-| Region | Currency | Privacy | Top Channels | Notes |
-|--------|----------|---------|--------------|-------|
-| **US** | USD | CCPA / state laws | Meta, Google, TikTok, YouTube | Klaviyo + Shopify default stack |
-| **EU** | EUR / GBP | GDPR | Meta, Google, TikTok, LinkedIn | VAT/OSS, cookie consent mandatory |
-| **SEA** | IDR / THB / SGD / PHP | PDPA (varies) | TikTok Shop, Shopee, Lazada, Meta | Mobile-first, COD common |
-| **LATAM** | BRL / MXN / ARS | LGPD (BR) | Meta, TikTok, MercadoLibre, WhatsApp | High inflation FX hedging |
-
-### Dropshipping Flagship (skill 29)
-
-End-to-end dropshipping playbook: niche selection → winning product validation → supplier sourcing (CJ/Spocket/Zendrop) → Shopify setup → global Meta/TikTok ads → fulfillment SOP → scaling to $10K/mo+. Includes 4 region-specific scaling models.
-
-### 3-Tier Tools Matrix (Global)
-
-| Tier | Cost/month | Stack | Best For |
-|------|-----------|-------|----------|
-| Free | $0 | Shopify trial, Meta free, Canva free | Validation phase |
-| Pro | $200-500 | Shopify Basic, Klaviyo, Meta + TikTok ads | $1K-10K/mo stores |
-| Enterprise | $1000+ | Shopify Plus, Klaviyo, Triple Whale, agency creatives | $10K+/mo stores |
-
-See: [examples/personal-brand-coach-global.md](examples/personal-brand-coach-global.md) ·
-[examples/dropshipping-store-global.md](examples/dropshipping-store-global.md) ·
-[docs/getting-started-global.md](docs/getting-started-global.md) ·
-[docs/dropshipping-guide.md](docs/dropshipping-guide.md)
-
----
-
-## 5 Agents (Universal mode — VN + Global)
-
-> **v2.5 update:** All 5 agents now operate in **universal mode** — they auto-detect whether the project context is VN or Global and route to the matching skills (`00-...` or `00-...-global`).
-
-```
-                        ┌─────────────────────┐
-                        │   MKT STRATEGIST    │
-                        │ Planning + Strategy │
-                        │ VN + Global routing │
-                        └─────────┬───────────┘
-                                  │
-              ┌───────────────────┼───────────────────┐
-              │                   │                   │
-    ┌─────────▼─────────┐ ┌──────▼──────────┐ ┌──────▼──────────┐
-    │ CONTENT PRODUCER  │ │ PERF. ANALYST   │ │ CHANNEL OPERATOR│
-    │ Content + Scripts │ │ Data + Reports  │ │ Channels+Landing│
-    │ Universal         │ │ Universal       │ │ Universal       │
-    └───────────────────┘ └─────────────────┘ └─────────────────┘
-
-                        ┌──────────────────────────┐
-                        │ PERSONAL BRAND BUILDER   │
-                        │ Personal Brand + Avatar  │
-                        │ Universal (VN + Global)  │
-                        └──────────────────────────┘
-```
-
-| Agent | Mode | Main Skills (VN / Global) |
-|-------|------|---------------------------|
-| [MKT Strategist](agents/mkt-strategist.md) | Universal <sup>v2.5</sup> | 00, 02, 08, 09, 16, 17 (+ `-global` mirrors) |
-| [Content Producer](agents/content-producer.md) | Universal <sup>v2.5</sup> | 01, 04, 05, 06 (+ `-global` mirrors) |
-| [Performance Analyst](agents/performance-analyst.md) | Universal <sup>v2.5</sup> | 03, 07, 10, 13, 19 (+ `-global` mirrors) |
-| [Channel Operator](agents/channel-operator.md) | Universal <sup>v2.5</sup> | 11, 12, 14, 15, 18 (+ `-global` mirrors) |
-| [Personal Brand Builder](agents/personal-brand-builder.md) | Universal <sup>v2.5</sup> | 22, 23, 24, 25, 26, 27, 28 (+ `-global` mirrors) |
-
----
-
-## 15 Workflows (7 VN + 8 Global)
-
-### VN Workflows (7)
-
-#### Client Onboard — Agency (5-7 days) <sup>NEW</sup>
-```
-20 Brief Intake → 09 Insights → 08 Competitors → 10 KPIs → 00 Plan → 02 Brief → 01 Calendar
-```
-
-#### Campaign Launch (14-21 days)
-```
-08 Competitors → 09 Insights → 00 Plan → 02 Brief → 01+04+05 Content → 06 UGC → 11+12 Channels
-```
-
-#### Monthly Cycle (3-5 days)
-```
-13 Data → 03 Audit → 07 Report → 10 New KPIs → 01 New Calendar
-```
-
-#### Content Production (weekly)
-```
-Review calendar → 04 Script → Film/Edit → 05 Ad copy → Schedule posts
-```
-
-#### Personal Brand Launch (30 days) <sup>v2.4 NEW</sup>
-```
-22 Context → 23 Strategy → 24 AI Avatar → 26 Long-form → 27 Monetize → 28 Community
-```
-
-#### AI Avatar Batch (5 days × 5 hours) <sup>v2.4 NEW</sup>
-```
-30 AI Avatar videos in 5 days, <$2/video — production line workflow
-```
-
-#### Personal Brand Monthly (3-5 days) <sup>v2.4 NEW</sup>
-```
-13 Data → 03 Audit → 07 Report → review pillars → adjust personal brand
-```
-
-### Global Workflows (8) <sup>v2.5 NEW</sup>
-
-| Workflow | Duration | Pipeline |
-|----------|----------|----------|
-| [client-onboard-global](workflows/en/client-onboard-global.md) | 5-7 days | 20 Intake → 09 Insights → 08 Competitors → 10 KPIs → 00 Plan → 02 Brief → 01 Calendar (global) |
-| [campaign-launch-global](workflows/en/campaign-launch-global.md) | 14-21 days | 08 → 09 → 00 → 02 → 01+04+05 Content → 06 UGC → 11+12 Channels (global) |
-| [monthly-cycle-global](workflows/en/monthly-cycle-global.md) | 3-5 days | 13 Data → 03 Audit → 07 Report → 10 New KPIs → 01 New Calendar (global) |
-| [content-production-global](workflows/en/content-production-global.md) | weekly | Review calendar → 04 → 05 → schedule (global, 4 regions) |
-| [dropshipping-launch-global](modules/dropshipping/workflows/en/dropshipping-launch-global.md) <sup>🚀</sup> | 14-30 days | Niche → product validation → store → ads → fulfillment → scale |
-| [personal-brand-launch-global](modules/personal-branding/workflows/en/personal-brand-launch-global.md) | 30 days | 22 Context → 23 Strategy → 24 AI Avatar → 26 Long-form → 27 Monetize → 28 Community (global) |
-| [ai-avatar-batch-global](modules/personal-branding/workflows/en/ai-avatar-batch-global.md) | 5 days × 5h | 30 videos batch in 5 days, multi-language (EN/ES/PT/ID/TH) |
-| [personal-brand-monthly-global](modules/personal-branding/workflows/en/personal-brand-monthly-global.md) | 3-5 days | 13 Data → 03 Audit → 07 Report → review pillars → adjust (global) |
-
----
-
-## Vietnam Benchmarks 2025-2026
-
-<table>
-<tr><th>Metric</th><th>Poor</th><th>Average</th><th>Good</th><th>Excellent</th></tr>
-<tr><td><b>Meta CPMess</b></td><td>>40K VND</td><td>25-40K</td><td>18-25K</td><td>&lt;18K</td></tr>
-<tr><td><b>TikTok CPMess</b></td><td>>45K</td><td>28-45K</td><td>20-28K</td><td>&lt;20K</td></tr>
-<tr><td><b>Lead→Booking</b></td><td>&lt;40%</td><td>40-60%</td><td>60-75%</td><td>>75%</td></tr>
-<tr><td><b>Booking→Customer</b></td><td>&lt;25%</td><td>25-40%</td><td>40-55%</td><td>>55%</td></tr>
-<tr><td><b>ROAS</b></td><td>&lt;2x</td><td>2-4x</td><td>4-7x</td><td>>7x</td></tr>
-<tr><td><b>Email Open Rate</b></td><td>&lt;15%</td><td>15-25%</td><td>25-35%</td><td>>35%</td></tr>
-</table>
-
-> Full benchmarks by industry at [`references/benchmarks-vietnam.md`](references/benchmarks-vietnam.md)
-
----
-
-## Platform Compatibility
-
-| Platform | Support | How to use |
-|----------|---------|-----------|
-| **Claude Code** | Full | `/plugin install` or `install.sh --global` |
-| **Claude Pro** | Full | Upload to Project Knowledge |
-| **ChatGPT** | Partial | Upload `.md` as Custom GPT config |
-| **Gemini** | Partial | System prompt / context |
-| **Copilot** | Partial | `.github/copilot-instructions.md` |
-| **Cursor / Windsurf** | Partial | `.cursorrules` |
-| **Any AI agent** | Partial | Each `.md` is a standalone prompt |
-
----
-
-## Project Structure
-
-```
-ai-business-skills/
-│
-├── .claude-plugin/
-│   └── marketplace.json            # Claude Code plugin spec
-│
-├── .github/
-│   ├── ISSUE_TEMPLATE/              # Bug report + skill request
-│   └── PULL_REQUEST_TEMPLATE/       # New skill + skill update
-│
-├── skills/                              # Dual-edition (v3.0)
-│   ├── vi/                              # 🇻🇳 VN Edition — 23 skills + foundation
-│   │   ├── product-marketing-context/   # Foundation skill (★)
-│   │   ├── 00-21 marketing skills/      # 22 marketing skills (folders per skill)
-│   │   ├── 29-xuat-khau-b2b/            # Export B2B (community contribution)
-│   │   └── references/                  # 8 VN-specific references (benchmarks, hooks, MCP, etc.)
-│   │
-│   └── en/                              # 🌏 Global Edition — 22 marketing + foundation
-│       ├── product-marketing-context-global/  # Foundation (4 region variants: US/EU/SEA/LATAM)
-│       ├── 00-21 marketing skills (global)/   # Mirror VN 00-21 with -global suffix
-│       └── references/                  # 7 global references (legal, currency, dropship-tools, etc.)
-│
-├── modules/                             # NEW v3.0 — Topic modules (cross-language)
-│   ├── personal-branding/               # 🚀 Personal Brand module
-│   │   ├── vi/                          # 7 PB skills VN (22-28)
-│   │   ├── en/                          # 7 PB skills Global (22-28-global)
-│   │   └── workflows/{vi,en}/           # 3+3 PB workflows
-│   │
-│   └── dropshipping/                    # 🛒 Dropshipping module
-│       ├── en/29-dropshipping-mastery-global/  # Flagship (12 sections)
-│       └── workflows/en/dropshipping-launch-global.md
-│
-├── workflows/                           # Cross-cutting workflows (dual-edition)
-│   ├── vi/                              # 4 VN marketing workflows
-│   │   ├── campaign-launch.md
-│   │   ├── client-onboard.md
-│   │   ├── content-production.md
-│   │   └── monthly-cycle.md
-│   │
-│   └── en/                              # 4 Global marketing workflows
-│       ├── campaign-launch-global.md
-│       ├── client-onboard-global.md
-│       ├── content-production-global.md
-│       └── monthly-cycle-global.md
-│
-├── docs/                            # Documentation
-│   ├── best-practices.md
-│   ├── faq.md                      # FAQ + troubleshooting (v2.3)
-│   ├── getting-started.md
-│   ├── mcp-setup-guide.md          # MCP setup guide (v2.3)
-│   ├── skill-map.md                # System visualization (v2.3)
-│   ├── update-guide.md             # Maintenance guide (v2.3)
-│   ├── workflow-guide.md           # Workflow selection (v2.3)
-│   ├── personal-brand-guide.md     # v2.4 (8-chapter cam nang)
-│   ├── getting-started-personal-brand.md # v2.4 (5-min quickstart)
-│   ├── getting-started-global.md   # NEW v2.5
-│   ├── global-region-guide.md      # NEW v2.5
-│   ├── dropshipping-guide.md       # NEW v2.5
-│   ├── apac-roadmap.md             # NEW v2.5
-│   └── release-notes/
-│       ├── v2.4.0.md
-│       └── v2.5.0.md               # NEW v2.5
-│
-├── agents/                          # Agent personas (universal in v2.5)
-│   └── personal-brand-builder.md   # v2.4
-├── examples/                        # Sample outputs
-│   ├── personal-brand-coach.md     # v2.4
-│   ├── personal-brand-coach-global.md      # NEW v2.5
-│   └── dropshipping-store-global.md        # NEW v2.5
-│
-├── AGENTS.md                        # Universal agent spec
-├── CLAUDE.md                        # Claude-specific config
-├── CONTRIBUTING.md                  # How to contribute
-├── VERSIONS.md                      # Version tracking
-├── validate-skills.sh               # Bash validator
-├── validate-skills.ps1              # PowerShell validator
-├── install.sh                       # macOS/Linux installer
-├── install.ps1                      # Windows installer
-└── LICENSE                          # MIT
-```
-
----
-
-## Why Vietnamese content?
-
-Skills are written in Vietnamese because:
-
-1. **Target market is Vietnam** — benchmarks, channels (Zalo, Shopee, TikTok Shop), cultural psychology all specific to VN
-2. **Better AI output** — when skill prompts match target market language, AI outputs match too
-3. **Vietnamese customer language** — capturing exact phrases customers use makes copy resonate
-
-**If you want English skills:** The structure is language-agnostic. Fork the repo and translate skills to your target market. Keep the framework, swap the language.
-
----
-
-## Contributing
-
-See [`CONTRIBUTING.md`](CONTRIBUTING.md) before starting.
+See [`CONTRIBUTING.md`](CONTRIBUTING.md).
 
 ```bash
-# 1. Fork repo
-# 2. Create branch
 git checkout -b feature/new-skill
-
-# 3. Run validator before committing
-./validate-skills.sh
-
-# 4. Conventional Commits
+./validate-skills.sh             # validate frontmatter + structure
 git commit -m "feat(skill): add new-skill"
-
-# 5. Open PR with template
 ```
 
-Contributions welcome in any language — just make sure to specify target market in the skill description.
+Contributions welcome — bilingual VN/EN preferred, single language accepted. Add skill to `.claude-plugin/marketplace.json` plugins list.
 
 ---
 
-## Credits
+## 💖 Support
 
-- **Inspired by:** [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) — foundation skill concept + plugin spec
-- **Spec:** [Agent Skills Spec](https://agentskills.io)
-- **Framework:** Over Powers Agency — VN market 2025-2026
-
----
-
-## Star History
-
-<a href="https://star-history.com/#minhnv0807/ai-business-skills&Date">
- <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=minhnv0807/ai-business-skills&type=Date&theme=dark" />
-   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=minhnv0807/ai-business-skills&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=minhnv0807/ai-business-skills&type=Date" />
- </picture>
-</a>
-
-If you find this project useful, please star it — helps the repo appear in GitHub Trending.
-
----
-
-## 💖 Support This Project
-
-This project is **100% free and MIT-licensed**. If `ai-business-skills` saves you hours of marketing work or helps you grow your business, please consider supporting:
+Free + MIT-licensed. Saving you hours of marketing work? Support helps fund:
+- New region variants (APAC v2.8.0, India, MENA roadmap)
+- More industry-specific skills (SaaS, e-commerce verticals)
+- Bilingual docs + video tutorials
 
 <p align="center">
   <a href="https://www.opa.business/donate">
-    <img src="https://img.shields.io/badge/%E2%9D%A4%EF%B8%8F%20Donate-Support%20Over%20Powers%20Agency-ff69b4?style=for-the-badge&logo=heart&logoColor=white" alt="Donate"/>
+    <img src="https://img.shields.io/badge/%E2%9D%A4%EF%B8%8F%20Donate-opa.business%2Fdonate-ff69b4?style=for-the-badge&logo=heart&logoColor=white" alt="Donate"/>
   </a>
 </p>
 
-**Your support funds:**
-- 🌍 New region variants (APAC v2.6.0, India, MENA in v2.7.0+)
-- 🎯 More industry-specific skills (B2B export, SaaS, e-commerce verticals)
-- 📚 Bilingual docs & video tutorials
-- 🛠️ Maintenance & community support
-
-**Other ways to support:**
-- ⭐ Star this repo
-- 🐛 Report bugs or suggest features in [Issues](https://github.com/minhnv0807/ai-business-skills/issues)
-- 🤝 Submit PRs for new skills or improvements
-- 📣 Share with your network — tag [@OverPowersAgency](https://opa.business)
-
-→ [**opa.business/donate**](https://www.opa.business/donate)
+Or: ⭐ star this repo · 🐛 [Report bugs](https://github.com/minhnv0807/ai-business-skills/issues) · 🤝 Submit PRs · 📣 Share with [@OverPowersAgency](https://opa.business)
 
 ---
 
-## License
+## 📜 License
 
-MIT — free to use, modify, distribute.
+MIT — free to use, modify, distribute. See [LICENSE](LICENSE).
 
 ---
 
 <p align="center">
-  <strong>Framework:</strong> Over Powers Agency
+  <strong>Framework:</strong> Run by Linh — Over Powers Agency
   <br/>
-  <strong>Benchmark:</strong> Vietnam Market 2025-2026
+  <strong>Owner:</strong> <a href="https://opa.business">opa.business</a>
   <br/>
-  <strong>Compatible with:</strong> Claude Code &middot; ChatGPT &middot; Gemini &middot; Copilot &middot; Cursor &middot; any AI that reads Markdown
+  <strong>Companion:</strong> <a href="https://github.com/minhnv0807/opa-kit">OPA KIT</a> (build pipeline)
+  <br/>
+  <strong>Compatible with:</strong> Claude Code · ChatGPT · Gemini · Copilot · Cursor · OpenCode · Cline · any AI reading Markdown
 </p>
 
 <p align="center">
