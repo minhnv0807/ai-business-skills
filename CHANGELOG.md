@@ -9,6 +9,27 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## v3.1.0 — Design Master Bilingual + Multi-Platform Onboarding (2026-05-20)
+
+### Reconciled
+- Version bump from 2.7.0 → **3.1.0** to acknowledge prior v3.0.0 tag (folder structure rebuild) + add design master skills (VN + EN mirror) + multi-platform README rewrite. Skips premature 2.x → 3.x semver to align tags + marketplace.json.
+
+### Added (since v3.0.0)
+- **NEW skill `30-thiet-ke-master`** (VN) — Master design router 8 types (personal brand, business logo, business campaign, marketing day-to-day, editorial, infographic, web mockup hybrid, quote graphic). 3-tier API (Free prompt fallback / Pro OPENAI_API_KEY / Enterprise Open Design dispatcher). Brand identity auto-detection 7-layer search. Plain Vietnamese cho non-tech client fill.
+- **NEW skill `30-design-master-global`** (EN mirror) — Same architecture, brand examples adapted cho global market (Lattéa coffee chain, AI Income Mastery, Mark Chen founder persona).
+- **Cross-reference với OPA KIT companion repo** — README + CLAUDE.md + 2 skill SKILL.md updates pointing sang opa-prd / opa-pipeline / opa-deploy / opa-tracker / opa-diagram.
+- **Multi-platform README rewrite** — 4-tier install guide (Claude Code native / OpenCode + Ollama Pro Cloud / OpenAI Codex CLI / VS Code Cline+Continue+Cursor+Roo Code+Copilot / Aider+Openclaw+Hermes+community / manual). 30-second quick start. Size 37KB → 22KB (40% reduction).
+
+### Changed
+- `marketplace.json` skill count: 60 → 63 (added 30-thiet-ke-master + 30-design-master-global + reconcile)
+- `marketplace.json` metadata + plugin description updated với design master bilingual coverage
+
+### Notes
+- Bilingual VN + Global coverage hoàn tất cho design tooling
+- Hedging language trên platform configs uncertain (OpenCode schema illustrative, Codex CLI flag surface moving)
+
+## [Unreleased — prior]
+
 ### Added
 - **Skill `29-xuat-khau-b2b`** — Export B2B Marketing for Vietnamese exporters (CN, EU, US, JP, KR markets). 5 modules: export context, company profile (EN), email templates 3-variant, trade show prep, price analysis. Contributed by [@ttran87](https://github.com/ttran87).
 - **Reference `references/export-benchmarks-vn.md`** — FOB price benchmarks Q1/2026, VN export market share, certifications by market (HACCP/BRC/FDA/Halal/GACC/ASC/GlobalGAP), payment terms risk guide, 2026 seafood trade show calendar, email outreach benchmarks.
