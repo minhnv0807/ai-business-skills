@@ -1,6 +1,7 @@
 ---
 name: 20-brief-client-intake
 description: Tao brief khach hang dien cho agency (client intake form) — form thu thap thong tin dau vao chi tiet de agency lap ke hoach marketing chinh xac. Co 20 variants chuyen biet theo nganh — moi variant la full brief toi uu hoa cho dac thu nganh do.
+argument-hint: "<industry + scope + budget>"
 metadata:
   version: 1.0.0
   category: operations

@@ -1,6 +1,7 @@
 ---
 name: 02-brief-chien-dich
 description: Brief chien dich marketing — 9 phan day du tu Context den Risk, bao gom creative direction, RACI, budget allocation theo phase, va auto-trigger cac skill lien quan.
+argument-hint: "<brand + campaign objective + timeline>"
 metadata:
   version: 2.0.0
   category: strategy

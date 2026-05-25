@@ -3,6 +3,7 @@ name: 30-thiet-ke-master
 description: |
   Master design skill cho ai-business-skills — 8 loại thiết kế (personal brand, business logo, campaign visual, marketing day-to-day, editorial, infographic, web mockup, quote graphic). Tự đọc brand identity (logo + palette + font) từ project context, compose prompt phù hợp brand voice, gen ảnh qua gpt-image-2 nếu có API hoặc fallback prompt cho 5 platform (DALL-E 3, MidJourney, Leonardo, Imagen, Bing). Phân biệt rõ thiết kế cá nhân vs thương hiệu, biết khi nào route sang HTML skills cho web mockup.
   Triggers — "thiết kế ảnh", "làm logo", "ảnh poster", "banner campaign", "social post", "infographic", "key visual", "hero web mockup", "ảnh truyền thông", "avatar cá nhân", "monogram", "quote graphic", "prompt MidJourney", "prompt DALL-E". KHÔNG dùng cho — UI wireframe full interactive (dùng web-prototype/saas-landing thay), video creation (dùng 04-script-video + Seedance/Kling), animation (dùng motion-frames).
+argument-hint: "<design type + brand + format>"
 metadata:
   version: 1.0.0
   category: design

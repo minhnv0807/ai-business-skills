@@ -1,6 +1,7 @@
 ---
 name: 07-bao-cao-marketing
 description: Bao cao marketing theo nguyen tac "doc 5 phut, biet lam gi tiep" — nhan dinh truoc, so lieu minh hoa, de xuat co thoi han va nguoi phu trach
+argument-hint: "<period + channels + metrics>"
 metadata:
   version: 2.0.0
   category: operations

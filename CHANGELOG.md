@@ -9,6 +9,22 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## v3.2.0 — Anthropic Pattern Alignment (2026-05-20)
+
+### Added (additive, non-breaking)
+- **`.mcp.json`** at plugin root — declares 10 HTTP MCP servers (Slack, Canva, Figma, HubSpot, Amplitude, Notion, Ahrefs, SimilarWeb, Klaviyo, Supermetrics). Follows Anthropic `knowledge-work-plugins/marketing/.mcp.json` pattern.
+- **`CONNECTORS.md`** at plugin root — documents tool placeholder mapping (`~~marketing automation`, `~~design`, `~~SEO`, etc.). Skills are tool-agnostic; users swap connectors in `.mcp.json` without rewriting skills.
+- **`argument-hint`** frontmatter field in 10 top skills + mkt-strategist agent — enables slash command UX with inline argument prompts (e.g., `/00-ke-hoach-mkt <sản phẩm + objective>`).
+
+### Why
+Aligned with Anthropic's `knowledge-work-plugins` pattern (https://github.com/anthropics/knowledge-work-plugins) for consistency across Claude Code ecosystem. Users familiar with Anthropic plugins find ai-business-skills format predictable.
+
+### Compatibility
+- ✅ 100% backward compat — all skills work identically
+- ✅ Marketplace skill count unchanged (63)
+- ✅ Workflow chains unchanged (campaign-launch, client-onboard, etc.)
+- 📦 New: tool-agnostic placeholder syntax enables connector swapping
+
 ## v3.1.0 — Design Master Bilingual + Multi-Platform Onboarding (2026-05-20)
 
 ### Reconciled

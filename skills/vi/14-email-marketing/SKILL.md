@@ -1,6 +1,7 @@
 ---
 name: 14-email-marketing
 description: Thiet lap va van hanh email marketing — welcome series, nurture, promotion, re-engage — toi uu cho thi truong Viet Nam
+argument-hint: "<audience + objective + sequence type>"
 metadata:
   version: 2.0.0
   category: operations

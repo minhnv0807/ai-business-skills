@@ -5,8 +5,8 @@
     "url": "https://opa.business"
   },
   "metadata": {
-    "description": "Bo skill marketing toan dien cho AI agent — 63 skills (31 VN + 31 Global + 1 foundation per cluster) — adds design master skill EN global version (8 design types: personal brand, business logo, campaign visual, marketing day-to-day, editorial, infographic, web mockup hybrid, quote graphic). Chien luoc, noi dung, hieu suat, van hanh, personal brand, AI avatar, dropshipping, thiet ke. Thi truong Viet Nam 2025-2026 + Global (US/EU/SEA/LATAM).",
-    "version": "3.1.0",
+    "description": "Bo skill marketing toan dien cho AI agent — 63 skills (31 VN + 31 Global + 1 foundation per cluster) — adds design master skill EN global version (8 design types: personal brand, business logo, campaign visual, marketing day-to-day, editorial, infographic, web mockup hybrid, quote graphic). Chien luoc, noi dung, hieu suat, van hanh, personal brand, AI avatar, dropshipping, thiet ke. Thi truong Viet Nam 2025-2026 + Global (US/EU/SEA/LATAM). Anthropic-pattern aligned (.mcp.json + CONNECTORS.md)",
+    "version": "3.2.0",
     "repository": "https://github.com/minhnv0807/ai-business-skills"
   },
   "plugins": [

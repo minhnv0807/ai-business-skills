@@ -379,6 +379,12 @@ cd opa-kit && bash install-opa-suite.sh
 
 Script tự install OPA KIT + ai-business-skills. Xem `references/companion-skills.md` trong OPA KIT cho full ecosystem map.
 
+### 🧬 Compatible with Anthropic `knowledge-work-plugins`
+
+ai-business-skills follows Anthropic's [knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) structure (`.mcp.json` connectors, `CONNECTORS.md` placeholders, `argument-hint` slash commands). Compatible với Cowork ecosystem + Claude Code marketplace.
+
+**Companion repo `OPA KIT`** also Anthropic-aligned cho consistent OPA Suite UX.
+
 ---
 
 ## 🛠️ Architecture — how skills work

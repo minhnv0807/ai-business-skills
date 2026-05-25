@@ -1,6 +1,7 @@
 ---
 name: 00-ke-hoach-mkt
 description: Ke hoach Fullstack Marketing — master skill tong hop chien luoc, noi dung, trien khai, hieu suat, va timeline. Goi cac skill con de hoan thien output.
+argument-hint: "<sản phẩm + objective + target user>"
 metadata:
   version: 2.0.0
   category: strategy

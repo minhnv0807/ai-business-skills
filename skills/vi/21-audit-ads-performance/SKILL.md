@@ -1,6 +1,7 @@
 ---
 name: 21-audit-ads-performance
 description: Audit toan dien tai khoan quang cao — cho diem Health Score 0-100, liet ke Quick Wins, phat hien vi pham Quality Gates, de xuat action plan theo muc do uu tien. Ho tro Meta Ads, TikTok Ads, Google Ads, Zalo Ads.
+argument-hint: "<platform + account + period>"
 metadata:
   version: 1.2.0
   category: performance
