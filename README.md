@@ -18,7 +18,7 @@
 <p align="center">
   <strong>Fullstack marketing skills cho AI agent — 63 skills bilingual (VN + Global).</strong>
   <br/>
-  <sub>Run by Linh framework | Vietnamese-first + Global (US/EU/SEA/LATAM) | Over Powers Agency</sub>
+  <sub>Vietnamese-first + Global (US/EU/SEA/LATAM) | Over Powers Agency</sub>
 </p>
 
 <p align="center">
@@ -507,7 +507,7 @@ MIT — free to use, modify, distribute. See [LICENSE](LICENSE).
 ---
 
 <p align="center">
-  <strong>Framework:</strong> Run by Linh — Over Powers Agency
+  <strong>Framework:</strong> Over Powers Agency
   <br/>
   <strong>Owner:</strong> <a href="https://opa.business">opa.business</a>
   <br/>
