@@ -12,6 +12,7 @@ personal-brand
 ## Prompt structure
 
 ```
+[Input roles — style reference path if any, face reference path if any, logo/palette asset if any]
 [Subject + composition — portrait close-up 3/4 angle, eye-level, character matches role + values]
 [Lighting + mood — natural daylight warm OR studio key+rim professional, mood matching brand tone]
 [Palette + textures — muted sophisticated, brand-aligned colors, fabric/skin texture realistic]
@@ -22,11 +23,11 @@ personal-brand
 ## Filled example
 
 ```
-Portrait close-up of Vietnamese male founder, mid-30s, 3/4 angle composition centered with rule of thirds, eye-level direct gaze, confident yet approachable expression. Wearing simple linen button-up earth tone, AI marketing strategist character vibe — thoughtful, creative, grounded.
+Use the uploaded face reference as the identity source and the uploaded style reference only for composition, lighting, and mood. Portrait close-up of Vietnamese male founder, mid-30s, 3/4 angle composition centered with rule of thirds, eye-level direct gaze, confident yet approachable expression. Preserve facial structure, hairstyle, skin tone, natural proportions, and recognizable silhouette. Wearing simple linen button-up earth tone, AI marketing strategist character vibe — thoughtful, creative, grounded.
 
 Warm afternoon daylight from window-left, soft fill from right, subtle rim light separating subject from background. Mood — professional warmth, creative casual, no corporate stiffness.
 
-Palette warm brown #2B1810, cream #F5EBE0, muted ochre accent, natural skin tones. Background soft-blurred bookshelf or warm wood texture suggesting reading/study space.
+Palette warm brown #2B1810, cream #F5EBE0, muted ochre accent, natural skin tones. If brand colors are uploaded, replace the accent color with the provided brand palette. Background soft-blurred bookshelf or warm wood texture suggesting reading/study space.
 
 Photographic realistic, 85mm portrait lens, f/2.0 shallow DOF, natural skin texture preserved, editorial portrait quality like Monocle Magazine.
 

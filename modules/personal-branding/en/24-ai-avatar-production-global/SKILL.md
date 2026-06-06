@@ -1,8 +1,8 @@
 ---
 name: 24-ai-avatar-production-global
-description: "AI Avatar production pipeline for global markets — 3-tier tools (Free/Pro/Enterprise), 4 workflows (single avatar, translate, batch, hybrid), voice clone, anti-detection, QA Score 100. Has 4 region variants for DISCLOSURE LAW (US FTC, EU AI Act, SEA per country, LATAM mixed). Tools: HeyGen, Synthesia, ElevenLabs, Captions, Rask AI. Trigger: 'AI avatar', 'HeyGen', 'Synthesia', 'avatar AI video', 'talking head AI', 'AI video translate', 'batch AI video'."
+description: "AI Avatar production pipeline for global markets — 3-tier tools (Free/Pro/Enterprise), 4 workflows (single avatar, translate, batch, hybrid), reference image intake for avatar prompts, face/style/logo/palette replacement workflows, voice clone, anti-detection, QA Score 100. Has 4 region variants for DISCLOSURE LAW (US FTC, EU AI Act, SEA per country, LATAM mixed). Tools: HeyGen, Synthesia, ElevenLabs, Captions, Rask AI. Trigger: 'AI avatar', 'HeyGen', 'Synthesia', 'avatar AI video', 'talking head AI', 'AI video translate', 'batch AI video', 'avatar reference image', 'AI avatar prompt', 'replace avatar face'."
 metadata:
-  version: 1.0.0
+  version: 1.1.0
   category: content
 license: MIT
 triggers:
@@ -13,6 +13,9 @@ triggers:
   - "talking head AI"
   - "AI video translate"
   - "batch AI video"
+  - "avatar reference image"
+  - "AI avatar prompt"
+  - "replace avatar face"
 related:
   - 25-voice-clone-podcast-global
   - 04-script-video-global
@@ -77,6 +80,7 @@ Ask up to 4 questions before starting:
 4. **Videos per month target?** 1-5 / 10-30 / 30+?
 
 > Based on the 4 answers, auto-select Tier + Workflow.
+> If the user has already uploaded reference images, do not ask a long intake form first; classify the images, create the setup/prompt, then ask only for missing assets.
 
 ---
 
@@ -257,6 +261,61 @@ Before recording / uploading photo or video for an AI avatar:
 
 ---
 
+## Reference Image -> Avatar Prompt Director
+
+Use this when the user drops one or more reference images and wants to create an avatar, replace a face, adapt brand colors, add a logo, or create the prompt before uploading assets into a tool.
+
+### Classify Input Images
+
+| Image type | Role | Requirement |
+|------------|------|-------------|
+| **Style ref** | Mood, lighting, background, outfit, camera angle | Do not use as identity unless requested |
+| **Face ref** | Identity preservation / face replacement | 1-3 clear face images, no filter, front + 3/4 angle |
+| **Selfie video** | Better custom avatar / natural lipsync | 30s-2 min, looking at camera, speaking naturally |
+| **Logo/palette** | Personal/company brand adaptation | PNG/SVG logo + 2-4 hex colors |
+| **Product/location** | Prop or avatar environment | Clear product label or location/background image |
+
+### Multiple Images = Multiple Flows
+
+```markdown
+## Avatar Flows
+
+| Flow | Input image | Role | Suggested tool | Missing assets |
+|------|-------------|------|----------------|----------------|
+| A | style-01 | style/background | Design Master -> HeyGen | face ref, logo |
+| B | face-01 | identity | HeyGen custom avatar | script, voice sample |
+```
+
+- If every image is a different style direction, create a separate prompt for each flow.
+- If images support one avatar, group by role: style + face + logo + palette + product.
+- Ask for each next asset explicitly: face image, selfie video, logo, hex colors, script, voice sample.
+
+### Prompt Setup Output
+
+```markdown
+## Avatar Prompt Setup — Flow A
+
+- Style ref:
+- Face ref:
+- Brand assets:
+- Target platform:
+- Tool route:
+
+## Copy-Paste Visual Prompt
+[English prompt for avatar/source image generation]
+
+## Upload Next
+- Face/selfie video:
+- Logo:
+- Brand colors:
+- Voice sample:
+- Script:
+```
+
+For a static personal avatar only, route to `30-design-master-global` personal-brand mode. For talking-head video, continue this workflow.
+
+---
+
 ## Anti-detection for FB / IG / TikTok / YouTube
 
 ### 5 detection signals and fixes
@@ -381,4 +440,4 @@ Placement: video description, first 3 seconds on-screen text, OR platform "AI-ge
 
 ---
 
-*Global Skill 24 (AI Avatar Production) | Over Powers Agency | v1.0.0*
+*Global Skill 24 (AI Avatar Production) | Over Powers Agency | v1.1.0*
