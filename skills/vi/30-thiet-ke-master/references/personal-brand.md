@@ -11,6 +11,7 @@ Thiết kế hình ảnh cá nhân — founder, creator, freelancer, coach. Stak
 - Personal website hero image
 - Quote graphic cho "guru post" cá nhân (visual layer — text qua quote-graphic mode)
 - AI avatar static (1 ảnh tĩnh — KHÔNG phải video; nếu cần video dùng `24-ai-avatar-production`)
+- Reference-to-avatar prompt — user dua anh style/mood va muon bien thanh avatar ca nhan co mat, mau, logo rieng
 
 **Wrong mode — chuyển ngay**:
 - Logo cho công ty → `business-logo`
@@ -28,6 +29,42 @@ Cần ít nhất 3 trong 4 inputs:
 - **Position keyword** ngành/vai trò (vd "AI marketing strategist", "fitness coach", "indie developer")
 
 Nếu user không cung cấp style hint → grill 3 câu trước khi gen: ngành/vai trò, 3 adjectives, màu yêu thích.
+
+## Reference image intake
+
+Khi user dua anh, phan loai tung anh truoc khi viet prompt:
+
+| Loai anh | Dung de lam gi | Yeu cau ro |
+|----------|----------------|------------|
+| **Style reference** | Lay bo cuc, lighting, mood, palette, lens | Co the la anh bat ky; khong dung de preserve mat neu user khong noi |
+| **Face reference** | Thay mat / giu identity | 1-3 anh mat ro, anh sang tot, khong filter, uu tien front + 3/4 |
+| **Logo/mark** | Gan nhan brand ca nhan, monogram, watermark | PNG nen trong/SVG; neu chua co dung text placeholder |
+| **Palette reference** | Lay mau brand ca nhan | Hex code uu tien; neu chi co anh, trich mau chinh va hoi user confirm |
+| **Environment reference** | Dung phong/boi canh/san khau/office | Ghi ro subject se dung o vi tri nao trong boi canh |
+
+Neu user upload nhieu anh:
+- Tao **Flow A/B/C** neu moi anh la mot style direction rieng.
+- Gop chung neu anh co vai tro khac nhau cho cung 1 output: style ref + face ref + logo + palette.
+- Voi moi flow, ghi: `Anh nao dung lam style`, `anh nao dung lam face`, `asset nao con thieu`, `prompt rieng`, `negative prompt rieng`.
+
+## Personal brand prompt director output
+
+```markdown
+## Luong personal brand
+
+| Flow | Style ref | Face ref | Brand asset | Output |
+|------|-----------|----------|-------------|--------|
+| A | [path/none] | [path/needed] | [logo/palette/needed] | avatar/profile visual |
+
+## Copy-paste prompt — Flow A
+[English prompt preserving the referenced subject identity and applying the chosen style]
+
+## Can upload them
+- Face reference:
+- Logo/monogram:
+- Brand colors:
+- Outfit/background:
+```
 
 ## Section anti-patterns
 
@@ -57,5 +94,5 @@ Negatives bắt buộc: "no extra fingers, no warped face, no logo placeholders,
 1. Vai trò + ngành 1-line (vd "AI marketing strategist", "fitness coach", "indie developer")?
 2. 3-5 adjectives mô tả personal brand voice (vd "warm + analytical + bold")?
 3. Color preference (neutral b/w + 1 accent? hoặc 2-3 brand colors hex)?
-4. Có ảnh gốc reference không? (path file để model match resemblance)
+4. Có ảnh reference nào không? Ghi rõ: style ref, face ref, logo, palette, hay background.
 5. Format cần: avatar profile (1:1), keynote cover (16:9), quote post (1:1), story (9:16)?

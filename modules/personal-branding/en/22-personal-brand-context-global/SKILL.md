@@ -1,8 +1,8 @@
 ---
 name: 22-personal-brand-context-global
-description: "Foundation skill for global personal brand cluster. Creates `.agents/personal-brand-context-global.md` with region-specific personal brand context. 4 region variants (US/EU/SEA/LATAM); each covers founder/coach/creator inside. Reads BEFORE other PB skills (23-28 global). Trigger: 'global personal brand', 'international personal brand', 'US founder brand', 'EU coach brand', 'creator economy global'."
+description: "Foundation skill for global personal brand cluster. Creates `.agents/personal-brand-context-global.md` with region-specific personal brand context plus visual identity and visual asset inventory (style refs, face refs, logo, palette, background). 4 region variants (US/EU/SEA/LATAM); each covers founder/coach/creator inside. Reads BEFORE other PB skills (23-28 global). Trigger: 'global personal brand', 'international personal brand', 'US founder brand', 'EU coach brand', 'creator economy global', 'personal brand reference image', 'personal visual identity'."
 metadata:
-  version: 1.0.0
+  version: 1.1.0
   category: foundation
 license: MIT
 triggers:
@@ -11,6 +11,8 @@ triggers:
   - "US founder brand"
   - "EU coach brand"
   - "creator economy global"
+  - "personal brand reference image"
+  - "personal visual identity"
 related:
   - product-marketing-context-global
   - 23-personal-brand-strategy-global
@@ -45,7 +47,7 @@ related:
 
 ### 30-second pre-read
 
-This skill produces ONE region-tagged file (`.agents/personal-brand-context-global.md`) with 12 sections describing WHO YOU ARE in marketing terms. Pick 1 of 4 region variants (US/EU/SEA/LATAM) — the variant tunes currency, primary platforms, regulations, cultural defaults, and gives examples for ALL THREE audience types (founder/coach/creator) inside ONE file. Every other PB skill (23-28) reads this file before working — like a medical chart every doctor reads first.
+This skill produces ONE region-tagged file (`.agents/personal-brand-context-global.md`) with 13+ sections describing WHO YOU ARE in marketing terms, including which images/assets are style refs, face refs, logos, palettes, and backgrounds. Pick 1 of 4 region variants (US/EU/SEA/LATAM) — the variant tunes currency, primary platforms, regulations, cultural defaults, and gives examples for ALL THREE audience types (founder/coach/creator) inside ONE file. Every other PB skill (23-28) reads this file before working — like a medical chart every doctor reads first.
 
 ### 3 common errors
 
@@ -63,6 +65,7 @@ This skill produces ONE region-tagged file (`.agents/personal-brand-context-glob
 - Answer ONCE at brand setup
 - Every PB skill reads it automatically -> straight to work
 - Region defaults (currency, platforms, regulations) propagate everywhere
+- Reference images, face refs, logos, palettes, and backgrounds are labeled once and reused correctly
 - Story arc + brand voice stay consistent across content, ads, AI avatar, scripts
 - Save ~70% of session-setup time
 
@@ -76,7 +79,7 @@ Step 1: Check existing file
     |-- missing -> Step 2
 Step 2: Choose region variant (US / EU / SEA / LATAM)
 Step 3: Declare primary role (Founder / Coach / Creator)
-Step 4: Collect info per variant (12 sections, role-specific defaults)
+Step 4: Collect info per variant (13+ sections, role-specific defaults)
 Step 5: Create file `.agents/personal-brand-context-global.md`
 ```
 
@@ -145,7 +148,8 @@ After choosing region + role, read the matching variant file in `variants/` and 
 4. **Move to next section**
 
 **Notes:**
-- Every variant has 12 sections (matches VN structure)
+- Every variant has 13+ sections (matches VN structure plus Visual Asset Inventory)
+- Visual Asset Inventory is required so design/avatar skills know which image is style, face, logo, palette, or background
 - All 4 variants share the same skeleton; DEFAULTS, EXAMPLES, and REGIONAL NOTES change per region
 - Inside each section, role-specific guidance is split for Founder / Coach / Creator
 - Region cues: currency, platform list, regulation pointer, cultural notes, regional examples
@@ -173,7 +177,7 @@ Save to `.agents/personal-brand-context-global.md` (create the `.agents/` folder
 
 ---
 
-[12 sections following the chosen variant + role]
+[13+ sections following the chosen variant + role, including Visual Asset Inventory]
 ```
 
 ---
@@ -189,6 +193,7 @@ In every global PB skill (23-personal-brand-strategy-global, 24-ai-avatar-produc
 
 Check whether `.agents/personal-brand-context-global.md` exists:
 - **Yes** -> Read everything; pull region / role / niche / audience / voice / story. Do NOT re-ask.
+- Also pull visual identity + visual asset inventory for design/avatar prompts. Do NOT re-ask image roles if the file already labels them.
 - **No**  -> Suggest user run `22-personal-brand-context-global` first.
   If user wants to continue anyway, ask 2-3 minimum questions about identity + region.
 ```
@@ -207,7 +212,8 @@ Before finishing:
 - [ ] File saved at `.agents/personal-brand-context-global.md`
 - [ ] Region variant tagged at the top (US / EU / SEA / LATAM)
 - [ ] Primary role declared (Founder / Coach / Creator)
-- [ ] All 12 sections completed (or at least core: 1, 2, 3, 4, 5, 6, 7, 11, 12)
+- [ ] All 13+ sections completed (or at least core: 1, 2, 3, 4, 5, 6, 7, 8A, 11, 12)
+- [ ] Visual Asset Inventory completed: style refs, face refs, logo, palette, background, missing assets
 - [ ] Currency format matches region ($ / € / S$ / R$ / etc.)
 - [ ] Story arc (section 5) has 3 chapters: Origin / Turning point / Current — NOT just "I am good at X"
 - [ ] Brand voice (section 7) has BOTH a sample line you would say AND a line you would NEVER say
@@ -225,4 +231,4 @@ Before finishing:
 - `23-personal-brand-strategy-global` — Reads this file first
 - `24-ai-avatar-production-global` — Needs brand voice + visual identity from this file
 
-*Global PB Foundation Skill | Over Powers Agency | v1.0.0*
+*Global PB Foundation Skill | Over Powers Agency | v1.1.0*

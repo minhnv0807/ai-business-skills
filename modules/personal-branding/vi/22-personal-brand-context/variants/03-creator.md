@@ -181,6 +181,27 @@
 
 ---
 
+## SECTION 8A — VISUAL ASSET INVENTORY
+
+> Kho anh/asset de cac skill design va AI avatar biet anh nao dung lam style, mat, logo, palette, background. Neu chua co file, ghi "Can upload".
+
+| Asset | File/link | Vai tro | Ghi chu |
+|-------|-----------|---------|---------|
+| **Style reference 1:** | | □ Thumbnail □ Lighting □ Mood □ Outfit | |
+| **Style reference 2:** | | □ Bo cuc □ Background □ Mau sac □ Lens | |
+| **Face reference:** | | □ Identity □ Avatar □ Profile □ Thumbnail face | Nen co 1-3 anh mat ro, khong filter |
+| **Logo / channel mark:** | | □ Logo □ Monogram □ Watermark | PNG nen trong/SVG neu co |
+| **Brand colors:** | | Hex: _____ / _____ / _____ | Neu lay tu anh, can user confirm |
+| **Background/location:** | | □ Studio □ Room □ Outdoor □ Mobile setup □ Khac | |
+| **Product/prop:** | | □ San pham review □ Mic □ Camera □ Laptop □ Khac | |
+
+**Asset con thieu can upload tiep:**
+- ___________
+- ___________
+- ___________
+
+---
+
 ## SECTION 9 — ANTI-PERSONAS
 
 > Ai KHONG phai audience cua ban — de AI khong tao content nham nguoi va brand de tranh nham hop tac.
@@ -346,4 +367,4 @@
 
 ---
 
-*Variant 03-creator | Skill 22 | Over Powers Agency | v1.0.0*
+*Variant 03-creator | Skill 22 | Over Powers Agency | v1.1.0*
