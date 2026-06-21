@@ -1,11 +1,11 @@
 ---
 name: 30-thiet-ke-master
 description: |
-  Master design skill cho ai-business-skills — 8 loại thiết kế (personal brand, business logo, campaign visual, marketing day-to-day, editorial, infographic, web mockup, quote graphic). Tự đọc brand identity (logo + palette + font) từ project context, compose prompt phù hợp brand voice, gen ảnh qua gpt-image-2 nếu có API hoặc fallback prompt cho 5 platform (DALL-E 3, MidJourney, Leonardo, Imagen, Bing). Phân biệt rõ thiết kế cá nhân vs thương hiệu, biết khi nào route sang HTML skills cho web mockup.
-  Triggers — "thiết kế ảnh", "làm logo", "ảnh poster", "banner campaign", "social post", "infographic", "key visual", "hero web mockup", "ảnh truyền thông", "avatar cá nhân", "monogram", "quote graphic", "prompt MidJourney", "prompt DALL-E". KHÔNG dùng cho — UI wireframe full interactive (dùng web-prototype/saas-landing thay), video creation (dùng 04-script-video + Seedance/Kling), animation (dùng motion-frames).
+  Master design skill cho ai-business-skills — 8 loại thiết kế (personal brand, business logo, campaign visual, marketing day-to-day, editorial, infographic, web mockup, quote graphic). Tự đọc brand identity (logo + palette + font) từ project context, compose prompt phù hợp brand voice, gen ảnh qua gpt-image-2 nếu có API hoặc fallback prompt cho 5 platform (DALL-E 3, MidJourney, Leonardo, Imagen, Bing). Có Prompt Director mode: nhận ảnh reference, phân tích style/composition, tạo master prompt copy-paste-ready, hỏi đúng asset còn thiếu (mặt, màu thương hiệu, logo, sản phẩm), xử lý nhiều ảnh thành nhiều luồng prompt riêng. Phân biệt rõ thiết kế cá nhân vs thương hiệu, biết khi nào route sang HTML skills cho web mockup.
+  Triggers — "thiết kế ảnh", "làm logo", "ảnh poster", "banner campaign", "social post", "infographic", "key visual", "hero web mockup", "ảnh truyền thông", "avatar cá nhân", "monogram", "quote graphic", "prompt MidJourney", "prompt DALL-E", "ảnh reference", "prompt master", "đổi màu thương hiệu", "thêm logo". KHÔNG dùng cho — UI wireframe full interactive (dùng web-prototype/saas-landing thay), video creation (dùng 04-script-video + Seedance/Kling), animation (dùng motion-frames).
 argument-hint: "<design type + brand + format>"
 metadata:
-  version: 1.0.0
+  version: 1.1.0
   category: design
 triggers:
   - "thiết kế ảnh"
@@ -22,6 +22,10 @@ triggers:
   - "prompt MidJourney"
   - "prompt DALL-E"
   - "ảnh truyền thông"
+  - "ảnh reference"
+  - "prompt master"
+  - "đổi màu thương hiệu"
+  - "thêm logo"
 license: MIT
 related:
   - 02-brief-chien-dich
@@ -35,6 +39,8 @@ related:
 Master design skill xử lý 8 loại thiết kế cho ai-business-skills. Một cửa cho cả thiết kế cá nhân (founder, creator) lẫn thương hiệu (logo, campaign, marketing hàng ngày). Tự đọc brand identity từ project context, compose prompt đúng brand voice, và route sang đúng tool: gen trực tiếp qua gpt-image-2, fallback prompt cho 5 nền tảng phổ biến, hoặc dispatch qua Open Design infrastructure.
 
 Toàn bộ skill viết tiếng Việt phổ thông để client có thể đọc, hiểu và fill cùng. Tên field tiếng Anh giữ nguyên để AI parsing không bị phá.
+
+Khi user đưa ảnh reference hoặc xin prompt tạo ảnh/video/storyboard, skill hoạt động như Prompt Director: phân loại intent, phân tích ảnh thành các prompt layer, xuất prompt tiếng Anh copy-paste-ready, rồi nêu rõ cần upload thêm asset nào cho từng ảnh.
 
 ---
 
@@ -90,6 +96,9 @@ Ba lớp phát hiện type theo thứ tự ưu tiên:
 | "infographic", "roadmap visual", "process flow", "comparison chart", "data viz" | infographic |
 | "hero web", "landing hero image", "app screen mockup" | web-mockup |
 | "quote", "quote graphic", "guru post", "motivational post" | quote-graphic |
+| "ảnh reference", "giống ảnh này", "prompt master", "same style", "same composition" | giữ type hiện tại + bật Prompt Director reference mode |
+| "đổi màu", "màu thương hiệu", "brand color", "thêm logo", "replace logo" | giữ type hiện tại + bật Prompt Director brand adaptation |
+| "nhìn AI quá", "chưa giống", "sửa prompt", "màu sai", "font khó đọc" | giữ type hiện tại + bật Prompt Director diagnosis |
 
 ### Layer 2 — Explicit flag
 
@@ -110,6 +119,42 @@ In ra transparency line trước khi tiếp tục:
 
 ---
 
+## Prompt Director mode
+
+Bật mode này khi user đưa ảnh reference, xin master prompt, muốn đổi mặt/màu/logo, hoặc feedback ảnh ra chưa đúng. Load `references/prompt-director.md` trước khi compose prompt.
+
+Nguyên tắc xử lý:
+- **Không hỏi form dài trước.** Nếu đủ input, tạo prompt ngay và chỉ ghi phần còn thiếu ở cuối.
+- **Ảnh reference = style/composition source**, không tự xem đó là ảnh mặt/logo trừ khi user nói rõ.
+- **Asset thay thế phải hỏi rõ theo loại:** face reference, logo file, brand palette hex, product image, background/location, exact text.
+- **Nhiều ảnh = nhiều luồng.** Đặt tên `Flow A/B/C`, nêu vai trò từng ảnh, prompt riêng, negative prompt riêng, và danh sách asset cần upload cho từng flow.
+- **Prompt cuối cho image/video model mặc định tiếng Anh**; phần giải thích và yêu cầu bổ sung dùng tiếng Việt.
+
+Output nhanh khi có reference image:
+
+```markdown
+## Luồng ảnh
+
+| Flow | Ảnh đầu vào | Vai trò | Output |
+|------|-------------|---------|--------|
+| A | [file/path] | style/composition reference | master prompt |
+
+## Copy-paste prompt — Flow A
+[English prompt]
+
+## Negative prompt / Avoid
+[English avoid list]
+
+## Cần upload thêm để cá nhân hóa Flow A
+- Face reference:
+- Logo:
+- Brand colors:
+- Exact text:
+- Product/background:
+```
+
+---
+
 ## Workflow runtime — 5 bước
 
 ### Step 1 — DETECT design type
@@ -121,6 +166,7 @@ Chạy 3-layer cascade ở trên. Print `[detect type: ...]` trước khi sang S
 Load theo nhu cầu (lazy):
 
 - `CONVENTIONS.md` — load 1 lần đầu session
+- `references/prompt-director.md` — load khi có ảnh reference, master prompt, đổi mặt/màu/logo, nhiều ảnh, hoặc feedback sửa prompt
 - `references/<type>.md` — load đúng file cho type vừa detect (vd `references/business-logo.md`)
 - `references/brand-identity-source.md` — load khi type bắt đầu bằng `business-*`
 - `references/fallback-prompt-format.md` — load khi Tier Free (xem Step 5)
@@ -276,6 +322,7 @@ Nếu **không chắc 2/3 câu trên** → quay lại Step 3, re-read brand iden
 | Khi cần | Load file |
 |---------|-----------|
 | Hiểu format frontmatter, output location, prompt rule chung | `CONVENTIONS.md` |
+| Ảnh reference, master prompt, đổi mặt/màu/logo, prompt diagnosis | `references/prompt-director.md` |
 | Compose prompt cho 1 trong 8 types | `references/<type>.md` (vd `references/business-logo.md`) |
 | Business mode — tìm brand identity source | `references/brand-identity-source.md` |
 | Tier Free — format prompt cho 5 platforms | `references/fallback-prompt-format.md` |

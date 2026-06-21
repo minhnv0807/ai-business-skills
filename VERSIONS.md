@@ -29,13 +29,14 @@
 | 19-ab-test-setup | 1.0.0 | 2026-04-24 | performance |
 | 20-brief-client-intake | 1.0.0 | 2026-04-24 | operations |
 | 21-audit-ads-performance | 1.2.0 | 2026-05-03 | performance |
-| 22-personal-brand-context | 1.0.0 | 2026-05-08 | foundation |
+| 22-personal-brand-context | 1.1.0 | 2026-06-06 | foundation |
 | 23-personal-brand-strategy | 1.0.0 | 2026-05-08 | strategy |
-| 24-ai-avatar-production | 1.0.0 | 2026-05-08 | content |
+| 24-ai-avatar-production | 1.1.0 | 2026-06-06 | content |
 | 25-voice-clone-podcast | 1.0.0 | 2026-05-08 | content |
 | 26-thought-leadership-content | 1.0.0 | 2026-05-08 | content |
 | 27-personal-brand-monetize | 1.0.0 | 2026-05-08 | strategy |
 | 28-community-building | 1.0.0 | 2026-05-08 | operations |
+| 30-thiet-ke-master | 1.1.0 | 2026-06-06 | design |
 | product-marketing-context-global | 1.0.0 | 2026-05-08 | foundation (global) |
 | 00-marketing-plan-global | 1.0.0 | 2026-05-08 | strategy (global) |
 | 01-content-calendar-global | 1.0.0 | 2026-05-08 | content (global) |
@@ -59,20 +60,39 @@
 | 19-ab-test-setup-global | 1.0.0 | 2026-05-08 | performance (global) |
 | 20-client-intake-brief-global | 1.0.0 | 2026-05-08 | operations (global) |
 | 21-ads-audit-global | 1.0.0 | 2026-05-08 | performance (global) |
-| 22-personal-brand-context-global | 1.0.0 | 2026-05-08 | foundation (global) |
+| 22-personal-brand-context-global | 1.1.0 | 2026-06-06 | foundation (global) |
 | 23-personal-brand-strategy-global | 1.0.0 | 2026-05-08 | strategy (global) |
-| 24-ai-avatar-production-global | 1.0.0 | 2026-05-08 | content (global) |
+| 24-ai-avatar-production-global | 1.1.0 | 2026-06-06 | content (global) |
 | 25-voice-clone-podcast-global | 1.0.0 | 2026-05-08 | content (global) |
 | 26-thought-leadership-content-global | 1.0.0 | 2026-05-08 | content (global) |
 | 27-personal-brand-monetize-global | 1.0.0 | 2026-05-08 | strategy (global) |
 | 28-community-building-global | 1.0.0 | 2026-05-08 | operations (global) |
 | 29-dropshipping-mastery-global | 1.0.0 | 2026-05-08 | strategy (global) — FLAGSHIP |
+| 30-design-master-global | 1.1.0 | 2026-06-06 | design (global) |
 
 ## Changelog
 
 ### 2026-06-14 - 15-social-listening-global v2.5.1
 
 - Added an optional TweetClaw X/Twitter evidence packet for repeatable public-source capture before sentiment, crisis, and action decisions.
+
+### 2026-06-06 — v2.6.0
+
+**Prompt Director upgrade for Design + Personal Brand**
+
+**Upgraded skills:**
+- `30-thiet-ke-master` 1.1.0: Added Prompt Director mode for reference images, master prompts, prompt diagnosis, brand color/logo adaptation, and multi-image flow routing.
+- `30-design-master-global` 1.1.0: Global equivalent of Prompt Director mode with English prompt-output defaults.
+- `22-personal-brand-context` 1.1.0: Added Visual Asset Inventory to classify style refs, face refs, logo/mark, palette, background, and missing assets.
+- `22-personal-brand-context-global` 1.1.0: Added the same asset inventory across US/EU/SEA/LATAM variants.
+- `24-ai-avatar-production` 1.1.0: Added reference-image-to-avatar prompt setup, face/style/logo/palette replacement workflow, and multi-flow avatar routing.
+- `24-ai-avatar-production-global` 1.1.0: Global equivalent for avatar reference intake and prompt setup.
+
+**New references:**
+- `skills/vi/30-thiet-ke-master/references/prompt-director.md`
+- `skills/en/30-design-master-global/references/prompt-director.md`
+
+**Behavior change:** Future agents can accept one or many reference images, identify each image role, generate copy-paste-ready prompts, and ask for the exact next asset per flow (face image, logo, brand colors, product/background, exact text).
 
 ### 2026-05-08 — v2.5.0
 

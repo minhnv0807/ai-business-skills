@@ -1,8 +1,8 @@
 ---
 name: 22-personal-brand-context
-description: "Khi nguoi dung muon tao hoac cap nhat tai lieu goc ve personal brand — dinh vi ca nhan, niche, story arc, content pillars, audience ca nhan, brand voice, monetization muc tieu. Cung dung khi nguoi dung nhac 'personal brand', 'thuong hieu ca nhan', 'ho so ca nhan', 'founder context', 'coach context', 'creator context', 'ICP cho ca nhan'. Foundation skill — chay TRUOC moi skill personal brand khac (23-28). Tao file `.agents/personal-brand-context.md` voi 12 sections."
+description: "Khi nguoi dung muon tao hoac cap nhat tai lieu goc ve personal brand — dinh vi ca nhan, niche, story arc, content pillars, audience ca nhan, brand voice, visual identity, visual asset inventory (anh style ref, face ref, logo, palette), monetization muc tieu. Cung dung khi nguoi dung nhac 'personal brand', 'thuong hieu ca nhan', 'ho so ca nhan', 'founder context', 'coach context', 'creator context', 'ICP cho ca nhan', 'anh reference ca nhan', 'visual identity ca nhan'. Foundation skill — chay TRUOC moi skill personal brand khac (23-28). Tao file `.agents/personal-brand-context.md` voi 13+ sections."
 metadata:
-  version: 1.0.0
+  version: 1.1.0
   category: foundation
 license: MIT
 triggers:
@@ -14,6 +14,8 @@ triggers:
   - "coach context"
   - "creator context"
   - "ICP cho ca nhan"
+  - "anh reference ca nhan"
+  - "visual identity ca nhan"
 related:
   - product-marketing-context
   - 23-personal-brand-strategy
@@ -46,7 +48,7 @@ related:
 
 ### Doc nhanh 30 giay
 
-Skill nay tao 1 file goc (`.agents/personal-brand-context.md`) voi 12+ sections mo ta BAN LA AI trong goc nhin marketing. Tat ca skill personal brand khac (23-28) se doc file nay truoc khi lam viec — giong nhu "ho so y te" ma moi bac si doc truoc khi kham.
+Skill nay tao 1 file goc (`.agents/personal-brand-context.md`) voi 13+ sections mo ta BAN LA AI trong goc nhin marketing, gom ca kho asset hinh anh de cac skill design/avatar biet anh nao dung lam style, mat, logo, palette. Tat ca skill personal brand khac (23-28) se doc file nay truoc khi lam viec — giong nhu "ho so y te" ma moi bac si doc truoc khi kham.
 
 ### 3 loi thuong gap
 
@@ -66,6 +68,7 @@ Skill nay tao 1 file goc (`.agents/personal-brand-context.md`) voi 12+ sections 
 **Sau khi co file `.agents/personal-brand-context.md`:**
 - Tra loi 1 lan, tat ca skill doc chung 1 file
 - Brand voice nhat quan xuyen suot
+- Anh reference, face reference, logo, palette duoc ghi ro vai tro
 - Story arc duoc giu nguyen, khong bi bien dang qua cac skill
 - Tiet kiem 70% thoi gian setup moi session
 
@@ -133,14 +136,15 @@ Sau khi chon variant, doc file variant tuong ung trong `variants/` va di qua tun
 4. **Chuyen section tiep**
 
 **Luu y quan trong:**
-- Moi variant co 12-14 sections (10 sections chung + 2-4 sections dac biet)
+- Moi variant co 13-15 sections (10 sections chung + Visual Asset Inventory + 2-4 sections dac biet)
+- Section Visual Asset Inventory bat buoc ghi ro anh nao la style ref, face ref, logo, palette, background
 - Sections 1-10 giong nhau ve cau truc nhung KHAC ve noi dung goi y
 - Sections 11+ la sections DUY NHAT cho tung variant
 
 Xem chi tiet tung variant:
-- `variants/01-founder.md` — 13 sections (them: Conflict brand ca nhan vs cong ty)
-- `variants/02-coach.md` — 14 sections (them: Phuong phap doc quyen + Hoc vien thanh cong)
-- `variants/03-creator.md` — 14 sections (them: Niche giai tri/giao duc/lifestyle + Brand deal floor price)
+- `variants/01-founder.md` — 14 sections (them: Visual Asset Inventory + Conflict brand ca nhan vs cong ty)
+- `variants/02-coach.md` — 15 sections (them: Visual Asset Inventory + Phuong phap doc quyen + Hoc vien thanh cong)
+- `variants/03-creator.md` — 15 sections (them: Visual Asset Inventory + Niche giai tri/giao duc/lifestyle + Brand deal floor price)
 
 ---
 
@@ -159,7 +163,7 @@ Format file:
 
 ---
 
-[Noi dung 12-14 sections theo variant da chon]
+[Noi dung 13-15 sections theo variant da chon, bao gom Visual Asset Inventory]
 ```
 
 ---
@@ -175,6 +179,7 @@ Trong moi skill personal brand (23-28), them doan nay vao buoc "Thu thap thong t
 
 Kiem tra co file `.agents/personal-brand-context.md` khong:
 - **Co** → Doc toan bo, lay thong tin ca nhan/audience/voice/story. Khong hoi lai.
+- Lay them visual identity + visual asset inventory de dung cho design/avatar prompt. Khong hoi lai anh nao dung lam gi neu file da ghi ro.
 - **Khong** → De nghi user chay skill `22-personal-brand-context` truoc.
   Neu user muon tiep tuc, hoi 2-3 cau toi thieu ve ban than ho.
 ```
@@ -191,9 +196,10 @@ Kiem tra co file `.agents/personal-brand-context.md` khong:
 Truoc khi ket thuc:
 
 - [ ] File luu vao `.agents/personal-brand-context.md`
-- [ ] Du 12 sections toi thieu (hoac 14 neu variant Coach/Creator)
+- [ ] Du 13 sections toi thieu (hoac 15 neu variant Coach/Creator)
 - [ ] Co story arc ro rang (section 5) — KHONG chi la "toi gioi X"
 - [ ] Co brand voice cu the (section 7) — co vi du cau noi + cau KHONG nen noi
+- [ ] Co Visual Asset Inventory — phan loai style ref, face ref, logo, palette, background va asset con thieu
 - [ ] Co North Star 12 thang (section 3) — cu the, do luong duoc
 - [ ] Co KPI ca nhan (section 12) — co so cu the, khong chung chung
 - [ ] Da xac nhan voi user tat ca thong tin
@@ -209,4 +215,4 @@ Truoc khi ket thuc:
 
 ---
 
-*Skill 22 | Over Powers Agency | v1.0.0*
+*Skill 22 | Over Powers Agency | v1.1.0*

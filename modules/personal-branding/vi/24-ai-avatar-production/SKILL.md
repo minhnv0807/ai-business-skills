@@ -1,8 +1,8 @@
 ---
 name: 24-ai-avatar-production
-description: "Pipeline AI Avatar production deep dive — 3 tier tools (Free/Pro/Enterprise), 4 workflow (single avatar / translate da ngon ngu / batch production / hybrid real+AI), voice clone protocol, anti-detection cho FB/IG/TikTok VN, ethics & disclosure VN (Nghi dinh 147/2024), QA Score 100 diem. Tools: HeyGen, Synthesia, ElevenLabs, Captions, Rask AI, Vbee. Trigger: 'tao avatar AI', 'video AI HeyGen', 'voice clone ElevenLabs', 'lipsync Captions', 'AI video translate', 'talking head AI', 'batch video AI', 'pipeline AI avatar'."
+description: "Pipeline AI Avatar production deep dive — 3 tier tools (Free/Pro/Enterprise), 4 workflow (single avatar / translate da ngon ngu / batch production / hybrid real+AI), reference image intake de tao prompt avatar, face/style/logo/palette replacement workflow, voice clone protocol, anti-detection cho FB/IG/TikTok VN, ethics & disclosure VN (Nghi dinh 147/2024), QA Score 100 diem. Tools: HeyGen, Synthesia, ElevenLabs, Captions, Rask AI, Vbee. Trigger: 'tao avatar AI', 'video AI HeyGen', 'voice clone ElevenLabs', 'lipsync Captions', 'AI video translate', 'talking head AI', 'batch video AI', 'pipeline AI avatar', 'anh reference avatar', 'prompt avatar AI', 'thay mat avatar'."
 metadata:
-  version: 1.0.0
+  version: 1.1.0
   category: content
 license: MIT
 triggers:
@@ -14,6 +14,9 @@ triggers:
   - "talking head AI"
   - "batch video AI"
   - "pipeline AI avatar"
+  - "anh reference avatar"
+  - "prompt avatar AI"
+  - "thay mat avatar"
 related:
   - 25-voice-clone-podcast
   - 04-script-video
@@ -84,6 +87,7 @@ Hoi toi da 4 cau truoc khi bat dau:
 4. **So luong video mong muon/thang?** 1-5 / 10-30 / 30+?
 
 > Dua tren 4 cau tra loi, tu dong chon Tier + Workflow phu hop.
+> Neu user da upload anh reference, khong hoi them form dai; phan loai anh truoc, tao prompt/setup, roi chi hoi asset con thieu.
 
 ---
 
@@ -300,6 +304,61 @@ Truoc khi quay/upload video hoac anh cho AI avatar:
 
 ---
 
+## 9A. Reference Image -> Avatar Prompt Director
+
+Dung khi user nem 1 hoac nhieu anh reference va muon tao avatar, thay mat, doi mau brand, them logo, hoac tao prompt truoc khi upload vao tool.
+
+### Phan loai anh dau vao
+
+| Loai anh | Vai tro | Yeu cau |
+|----------|---------|---------|
+| **Style ref** | Lay mood, lighting, background, outfit, goc may | Khong dung lam mat neu user khong noi ro |
+| **Face ref** | Giu identity / thay mat | 1-3 anh mat ro, khong filter, front + 3/4 |
+| **Video selfie** | Tao custom avatar/lipsync tu nhien hon | 30s-2 phut, nhin camera, noi tu nhien |
+| **Logo/palette** | Gan brand ca nhan/cong ty | Logo PNG/SVG + 2-4 mau hex |
+| **Product/location** | Lam prop/boi canh cho avatar | Anh ro nhan san pham hoac boi canh can dung |
+
+### Nhieu anh = nhieu luong
+
+```markdown
+## Luong avatar
+
+| Flow | Anh dau vao | Vai tro | Tool goi y | Asset con thieu |
+|------|-------------|---------|------------|-----------------|
+| A | style-01 | style/background | 30-thiet-ke-master -> HeyGen | face ref, logo |
+| B | face-01 | identity | HeyGen custom avatar | script, voice sample |
+```
+
+- Neu moi anh la 1 style khac, tao prompt rieng cho tung Flow.
+- Neu nhieu anh cung phuc vu 1 avatar, gop lai theo vai tro: style + face + logo + palette + product.
+- Yeu cau ro tung asset tiep theo: anh mat, video selfie, logo, ma hex, script, voice sample.
+
+### Prompt setup output
+
+```markdown
+## Avatar prompt setup — Flow A
+
+- Style ref:
+- Face ref:
+- Brand assets:
+- Target platform:
+- Tool route:
+
+## Copy-paste visual prompt
+[English prompt for avatar/source image generation]
+
+## Upload next
+- Face/video selfie:
+- Logo:
+- Brand colors:
+- Voice sample:
+- Script:
+```
+
+Neu chi can anh avatar tinh, route sang `30-thiet-ke-master` personal-brand mode. Neu can talking-head video, tiep tuc workflow nay.
+
+---
+
 ## 10. Anti-detection cho FB/IG/TikTok VN
 
 ### 5 dau hieu AI bi detect va cach fix
@@ -401,3 +460,5 @@ hoac tag "AI Generated" cua nen tang (neu co).
 
 > **Skill chain:** Skill nay thuong duoc goi cung `04-script-video` (viet script)
 > va `25-voice-clone-podcast` (clone giong noi). Xem CLAUDE.md de biet workflow day du.
+>
+> *Skill 24 | Over Powers Agency | v1.1.0*

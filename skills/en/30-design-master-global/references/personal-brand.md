@@ -11,6 +11,7 @@ Visual identity for individuals — founders, creators, freelancers, coaches. Lo
 - Personal website hero image
 - Quote graphic for a personal "guru post" (visual layer only — text comes from `quote-graphic` mode)
 - Static AI avatar (a single still image — NOT video; for video use a dedicated AI avatar production skill)
+- Reference-to-avatar prompt — the user provides style/mood references and wants a personalized avatar using their face, colors, or logo
 
 **Wrong fit — switch modes**:
 - Company logo → `business-logo`
@@ -28,6 +29,42 @@ At least 3 of the 4 inputs below:
 - **Position keyword** — industry or role (e.g. "AI marketing strategist", "fitness coach", "indie developer")
 
 If the user gives no style hints, grill 3 questions before generating: role/industry, 3 adjectives, and preferred colors.
+
+## Reference Image Intake
+
+When the user provides images, classify every image before drafting the prompt:
+
+| Image type | Use it for | Clear requirement |
+|------------|------------|-------------------|
+| **Style reference** | Composition, lighting, mood, palette, lens | Can be any image; do not preserve its face unless requested |
+| **Face reference** | Face replacement / identity preservation | 1-3 clear face images, good lighting, no filter, preferably front + 3/4 angle |
+| **Logo/mark** | Personal brand mark, monogram, watermark | Transparent PNG/SVG; if unavailable, use a text placeholder |
+| **Palette reference** | Personal brand colors | Hex codes preferred; if only an image is available, extract main colors and ask user to confirm |
+| **Environment reference** | Room, stage, office, location | State where the subject should sit/stand within the scene |
+
+If the user uploads multiple images:
+- Create **Flow A/B/C** when each image is a separate style direction.
+- Group images when they serve different roles for one output: style ref + face ref + logo + palette.
+- For each flow, state: `which image is style`, `which image is face`, `missing assets`, `separate prompt`, `separate negative prompt`.
+
+## Personal Brand Prompt Director Output
+
+```markdown
+## Personal Brand Flows
+
+| Flow | Style ref | Face ref | Brand asset | Output |
+|------|-----------|----------|-------------|--------|
+| A | [path/none] | [path/needed] | [logo/palette/needed] | avatar/profile visual |
+
+## Copy-Paste Prompt — Flow A
+[English prompt preserving the referenced subject identity and applying the selected style]
+
+## Upload Next
+- Face reference:
+- Logo/monogram:
+- Brand colors:
+- Outfit/background:
+```
 
 ## Section anti-patterns
 
@@ -57,5 +94,5 @@ Required negatives: "no extra fingers, no warped face, no logo placeholders, no 
 1. Role + industry, one line (e.g. "AI marketing strategist", "fitness coach", "indie developer")?
 2. 3-5 adjectives describing the personal brand voice (e.g. "warm + analytical + bold")?
 3. Color preference — neutral b/w + 1 accent, or 2-3 brand colors in hex?
-4. Reference photo available? (file path so the model can match resemblance)
+4. Any reference images? Label them as style ref, face ref, logo, palette, or background.
 5. Format needed: profile avatar (1:1), keynote cover (16:9), quote post (1:1), or story (9:16)?

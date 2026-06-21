@@ -1,10 +1,10 @@
 ---
 name: 30-design-master-global
 description: |
-  Master design skill for ai-business-skills — covers 8 design categories (personal brand, business logo, campaign visual, day-to-day marketing, editorial, infographic, web mockup, quote graphic). Auto-reads brand identity (logo + palette + typography) from project context, composes prompts aligned with brand voice, and generates images via gpt-image-2 (OpenAI's image model) when an API key is available — otherwise outputs paste-ready prompts for 5 platforms (DALL-E 3, MidJourney, Leonardo, Imagen, Bing/Copilot Designer). Clearly separates personal vs. brand work, and routes web mockup requests to dedicated HTML skills when appropriate.
-  Triggers — "design image", "create logo", "campaign visual", "social post design", "infographic", "key visual", "hero web mockup", "marketing visual", "personal avatar", "monogram", "quote graphic", "MidJourney prompt", "DALL-E prompt", "brand mockup". DO NOT USE for — full interactive web UI (use web-prototype/saas-landing instead), video creation (use 04-script-video-global + Seedance/Kling), animation (use motion-frames).
+  Master design skill for ai-business-skills — covers 8 design categories (personal brand, business logo, campaign visual, day-to-day marketing, editorial, infographic, web mockup, quote graphic). Auto-reads brand identity (logo + palette + typography) from project context, composes prompts aligned with brand voice, and generates images via gpt-image-2 (OpenAI's image model) when an API key is available — otherwise outputs paste-ready prompts for 5 platforms (DALL-E 3, MidJourney, Leonardo, Imagen, Bing/Copilot Designer). Includes Prompt Director mode: accepts reference images, analyzes style/composition, creates copy-paste-ready master prompts, asks for the exact missing assets (face, brand colors, logo, product), and handles multiple images as separate optimized prompt flows. Clearly separates personal vs. brand work, and routes web mockup requests to dedicated HTML skills when appropriate.
+  Triggers — "design image", "create logo", "campaign visual", "social post design", "infographic", "key visual", "hero web mockup", "marketing visual", "personal avatar", "monogram", "quote graphic", "MidJourney prompt", "DALL-E prompt", "brand mockup", "reference image", "master prompt", "brand color adaptation", "add logo". DO NOT USE for — full interactive web UI (use web-prototype/saas-landing instead), video creation (use 04-script-video-global + Seedance/Kling), animation (use motion-frames).
 metadata:
-  version: 1.0.0
+  version: 1.1.0
   category: design
 triggers:
   - "design image"
@@ -21,6 +21,10 @@ triggers:
   - "DALL-E prompt"
   - "brand mockup"
   - "marketing visual"
+  - "reference image"
+  - "master prompt"
+  - "brand color adaptation"
+  - "add logo"
 license: MIT
 related:
   - 02-campaign-brief-global
@@ -34,6 +38,8 @@ related:
 A single master skill that handles 8 design categories for ai-business-skills. One door for both personal work (founder, creator) and brand work (logo, campaign, day-to-day marketing). Reads brand identity from the project context, composes prompts in the right brand voice, and routes the request to the right tool: direct generation via gpt-image-2, paste-ready prompts for 5 popular platforms, or dispatch via Open Design infrastructure.
 
 The skill is written in plain professional English so a non-designer client can read it, understand it, and fill it in alongside the AI. Frontmatter field names stay in English (do not translate) to keep AI parsing intact.
+
+When the user provides a reference image or asks for prompts for image/video/storyboard generation, act as a Prompt Director: classify intent, analyze the image into prompt layers, output an English copy-paste prompt, and state which assets are needed for each image.
 
 ---
 
@@ -89,6 +95,9 @@ Three layers of type detection, in priority order:
 | "infographic", "roadmap visual", "process flow", "comparison chart", "data viz" | infographic |
 | "hero web", "landing hero image", "app screen mockup" | web-mockup |
 | "quote", "quote graphic", "guru post", "motivational post" | quote-graphic |
+| "reference image", "same style", "same composition", "master prompt", "based on this image" | keep detected type + activate Prompt Director reference mode |
+| "change color", "brand color", "add logo", "replace logo", "match brand guideline" | keep detected type + activate Prompt Director brand adaptation |
+| "too AI-looking", "not realistic", "wrong color", "wrong angle", "revise prompt" | keep detected type + activate Prompt Director diagnosis |
 
 ### Layer 2 — Explicit flag
 
@@ -109,6 +118,42 @@ Print a transparency line before continuing:
 
 ---
 
+## Prompt Director mode
+
+Activate this mode when the user provides reference images, asks for a master prompt, wants face/color/logo replacement, or gives feedback on a failed result. Load `references/prompt-director.md` before composing the prompt.
+
+Rules:
+- **Do not start with a long questionnaire.** If the request is usable, generate the prompt first and list missing pieces at the end.
+- **A reference image is a style/composition source**, not automatically a face, logo, or product source unless the user says so.
+- **Ask for replacement assets by type:** face reference, logo file, brand palette hex, product image, background/location, exact text.
+- **Multiple images = multiple flows.** Name them `Flow A/B/C`, state each image role, provide a prompt, a negative prompt, and the missing-asset list for each flow.
+- **Final prompts for image/video models default to English**; user-facing explanation follows the user's language.
+
+Reference-image output skeleton:
+
+```markdown
+## Image flows
+
+| Flow | Input image | Role | Output |
+|------|-------------|------|--------|
+| A | [file/path] | style/composition reference | master prompt |
+
+## Copy-paste prompt — Flow A
+[English prompt]
+
+## Negative prompt / Avoid
+[English avoid list]
+
+## Upload next to personalize Flow A
+- Face reference:
+- Logo:
+- Brand colors:
+- Exact text:
+- Product/background:
+```
+
+---
+
 ## Runtime workflow — 5 steps
 
 ### Step 1 — DETECT design type
@@ -120,6 +165,7 @@ Run the 3-layer cascade above. Print `[detect type: ...]` before moving to Step 
 Load lazily, as needed:
 
 - `CONVENTIONS.md` — load once per session
+- `references/prompt-director.md` — load for reference images, master prompts, face/color/logo replacement, multiple images, or prompt feedback
 - `references/<type>.md` — load the file matching the type just detected (e.g. `references/business-logo.md`)
 - `references/brand-identity-source.md` — load whenever the type starts with `business-*`
 - `references/fallback-prompt-format.md` — load when the tier is Free (see Step 5)
@@ -275,6 +321,7 @@ If you can't confidently answer 2 out of 3 → go back to Step 3, re-read the br
 | When you need... | Load this file |
 |------------------|----------------|
 | To understand frontmatter format, output location, general prompt rules | `CONVENTIONS.md` |
+| Reference images, master prompts, face/color/logo replacement, prompt diagnosis | `references/prompt-director.md` |
 | To compose a prompt for one of the 8 types | `references/<type>.md` (e.g. `references/business-logo.md`) |
 | To find the brand identity source for business mode | `references/brand-identity-source.md` |
 | To format prompts for 5 platforms on the Free tier | `references/fallback-prompt-format.md` |
