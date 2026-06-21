@@ -44,7 +44,14 @@ for skill_dir in "$SKILLS_DIR"/*/; do
     fi
 
     # Extract frontmatter
-    frontmatter=$(sed -n '/^---$/,/^---$/p' "$skill_file" | head -n -1 | tail -n +2)
+    frontmatter=$(awk '
+      /^---$/ {
+        markers += 1
+        if (markers == 2) { exit }
+        next
+      }
+      markers == 1 { print }
+    ' "$skill_file")
 
     if [[ -z "$frontmatter" ]]; then
         echo -e "${RED}FAIL $skill_name${NC} — Missing YAML frontmatter"

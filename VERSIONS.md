@@ -53,7 +53,7 @@
 | 12-landing-page-brief-global | 1.0.0 | 2026-05-08 | operations (global) |
 | 13-data-analysis-global | 1.0.0 | 2026-05-08 | operations (global) |
 | 14-email-marketing-global | 1.0.0 | 2026-05-08 | operations (global) |
-| 15-social-listening-global | 1.0.0 | 2026-05-08 | content (global) |
+| 15-social-listening-global | 2.5.1 | 2026-06-14 | operations (global) |
 | 16-marketing-psychology-global | 1.0.0 | 2026-05-08 | strategy (global) |
 | 17-pricing-strategy-global | 1.0.0 | 2026-05-08 | strategy (global) |
 | 18-referral-program-global | 1.0.0 | 2026-05-08 | operations (global) |
@@ -71,6 +71,10 @@
 | 30-design-master-global | 1.1.0 | 2026-06-06 | design (global) |
 
 ## Changelog
+
+### 2026-06-14 - 15-social-listening-global v2.5.1
+
+- Added an optional TweetClaw X/Twitter evidence packet for repeatable public-source capture before sentiment, crisis, and action decisions.
 
 ### 2026-06-06 — v2.6.0
 

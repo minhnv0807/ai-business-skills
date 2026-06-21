@@ -2,7 +2,7 @@
 name: 15-social-listening-global
 description: Monitor brand, competitors, and industry trends across social media — early crisis detection and content opportunity discovery
 metadata:
-  version: 2.5.0
+  version: 2.5.1
   category: operations
   language: en
 triggers:
@@ -318,6 +318,14 @@ Each week, surface the 20 hottest topics/trends in your niche to:
 2. Check TikTok comments (latest 3 videos)
 3. Search brand on Twitter/X (filter: past 24h)
 4. Check Google Business Profile reviews
+
+**Optional X/Twitter evidence packet:** Use [TweetClaw](https://github.com/Xquik-dev/tweetclaw) when the team already has approved access and needs repeatable public X/Twitter capture before analysis. Keep the packet as source evidence; this skill still assigns sentiment, crisis level, and recommended actions.
+
+| Field | Include |
+|-------|---------|
+| Query/window | Brand, competitor, crisis phrase, date range |
+| Public posts | URL, handle, visible text, reply or quote context |
+| Signals | Public counts, media notes, capture time, collection limit |
 
 **Weekly (30–45 min):**
 1. Search brand on TikTok, Reddit, Facebook Groups
