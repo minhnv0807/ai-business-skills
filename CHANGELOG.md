@@ -9,6 +9,36 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## v3.4.0 — AI Marketing OS Expansion (2026-07-08)
+
+### Added
+- **NEW skill `34-ai-marketing-os`** (VN) and **`34-ai-marketing-os-global`** (EN) — Brand Hub/source of truth, role-based AI agents/projects, skill chains, second brain, data loops, MCP/connectors, SOP cadence, governance, and 30-60-90 rollout planning.
+- **2 new reference playbooks** under the new skill folders, synthesizing the RBL community-share documents into reusable OS-level guidance.
+
+### Changed
+- `marketplace.json` skill count: 70 -> 72.
+- README, README.vi, CONNECTORS, llms, VERSIONS, and agent routing updated with AI Marketing OS coverage.
+- RBL role skill samples were consolidated into workflow guidance instead of imported as duplicate skills, preserving the existing skill architecture.
+
+### Compatibility
+- Zero breaking changes. Existing skill names, paths, workflows, and agents remain valid.
+
+## v3.3.0 — Growth Expansion (2026-06-30)
+
+### Added
+- **NEW skill `31-offer-design`** (VN) and **`31-offer-design-global`** (EN) — offer packaging, value stack, bonuses, guarantees, scarcity/urgency, upsell/downsell, and offer ladder. Designed to sit between pricing, copywriting, landing page, and sales enablement.
+- **NEW skill `32-seo-growth`** (VN) and **`32-seo-growth-global`** (EN) — SEO audit, AI SEO/GEO, schema, programmatic SEO, directory submissions, and backlink planning.
+- **NEW skill `33-b2b-lead-gen`** (VN) and **`33-b2b-lead-gen-global`** (EN) — prospecting, cold outreach, lead scoring, sales enablement, CRM handoff, and RevOps basics.
+- **6 new reference playbooks** under the new skill folders to keep `SKILL.md` files concise and under the 500-line spec guideline.
+
+### Changed
+- `marketplace.json` skill count: 63 → 70.
+- README and README.vi updated with Growth Expansion coverage.
+- `VERSIONS.md` now includes the existing `29-xuat-khau-b2b` row for parity with the actual skill tree.
+
+### Compatibility
+- Zero breaking changes. Existing skill names, paths, workflows, and agents remain valid.
+
 ## v3.2.0 — Anthropic Pattern Alignment (2026-05-20)
 
 ### Added (additive, non-breaking)

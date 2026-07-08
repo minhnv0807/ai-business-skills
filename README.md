@@ -4,8 +4,8 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/v2.7.0-Design%20Master-6d28d9?style=for-the-badge&labelColor=1e1033" alt="v2.7.0"/>
-  <img src="https://img.shields.io/badge/Skills-63-6d28d9?style=for-the-badge&labelColor=1e1033" alt="63 Skills"/>
+  <img src="https://img.shields.io/badge/v3.4.0-AI%20Marketing%20OS-6d28d9?style=for-the-badge&labelColor=1e1033" alt="v3.4.0"/>
+  <img src="https://img.shields.io/badge/Skills-72-6d28d9?style=for-the-badge&labelColor=1e1033" alt="72 Skills"/>
   <img src="https://img.shields.io/badge/Agents-5-be185d?style=for-the-badge&labelColor=1e1033" alt="5 Agents"/>
   <img src="https://img.shields.io/badge/Workflows-15-0f766e?style=for-the-badge&labelColor=1e1033" alt="15 Workflows"/>
   <img src="https://img.shields.io/badge/Regions-VN%20%2B%20Global-f97316?style=for-the-badge&labelColor=1e1033" alt="VN + Global"/>
@@ -16,7 +16,7 @@
 <h1 align="center">ai-business-skills</h1>
 
 <p align="center">
-  <strong>Fullstack marketing skills cho AI agent — 63 skills bilingual (VN + Global).</strong>
+  <strong>Fullstack marketing skills cho AI agent — 72 skills bilingual (VN + Global).</strong>
   <br/>
   <sub>Vietnamese-first + Global (US/EU/SEA/LATAM) | Over Powers Agency</sub>
 </p>
@@ -29,7 +29,7 @@
   <a href="https://github.com/minhnv0807/ai-business-skills/commits/master"><img src="https://img.shields.io/github/last-commit/minhnv0807/ai-business-skills?style=flat-square&color=violet" alt="Last commit"/></a>
 </p>
 
-> **v2.7.0** — Design Master skill (8 design types: personal brand, business logo, campaign visual, day-to-day marketing, editorial, infographic, web mockup hybrid, quote graphic). Bilingual VN + Global. Zero breaking changes. [Changelog](CHANGELOG.md)
+> **v3.4.0** — AI Marketing OS expansion: Brand Hub, role-based agents/projects, skill chains, connectors/MCP, second brain, data loops, SOPs. Bilingual VN + Global. Zero breaking changes. [Changelog](CHANGELOG.md)
 
 ---
 
@@ -38,7 +38,7 @@
 ```bash
 git clone https://github.com/minhnv0807/ai-business-skills.git
 cd ai-business-skills
-bash install.sh --global   # 63 skills → ~/.claude/skills/marketing/
+bash install.sh --global   # 72 skills -> ~/.claude/skills/marketing/
 ```
 
 Windows:
@@ -66,6 +66,8 @@ Test ngay trong Claude Code:
 ✅ **Phân tích đối thủ + insight khách hàng + audit ads** — diagnostic + 48h action plan
 ✅ **Design master** — 8 loại thiết kế (logo, key visual, social post, infographic...) qua prompt-driven workflow
 ✅ **Dropshipping mastery** (Global) — niche → product → store → ads → fulfillment → scale
+✅ **Offer + SEO + B2B growth** — offer design, AI SEO/GEO, prospecting, cold outreach, sales handoff
+✅ **AI Marketing OS** — Brand Hub, role-based agents/projects, skill chains, second brain, data loops, SOPs
 
 ❌ **Build product code** → dùng companion [OPA KIT](https://github.com/minhnv0807/opa-kit) (`opa-pipeline`)
 ❌ **Single PRD tech feature** → dùng `opa-prd` ở OPA KIT
@@ -73,11 +75,11 @@ Test ngay trong Claude Code:
 
 ---
 
-## 📦 63 Skills (bilingual VN + Global)
+## 📦 72 Skills (bilingual VN + Global)
 
 > Mỗi skill = 1 file `SKILL.md` với frontmatter triggers + workflow body. AI agent tự kích hoạt skill khi user nhắc trigger keyword.
 
-### Cluster 1: Marketing Core (24 VN + 24 Global)
+### Cluster 1: Marketing Core (22 numbered + foundation per cluster)
 
 Foundation skill (`product-marketing-context` / `product-marketing-context-global`) đọc **1 lần** mỗi project → tránh hỏi lại sản phẩm/audience suốt session. Saves ~70% time.
 
@@ -133,16 +135,25 @@ For founder / coach / creator building personal brand with AI avatar.
 |---|-------|----------|
 | 30 | `30-thiet-ke-master` (VN) / `30-design-master-global` (EN) | 8 design types: personal-brand · business-logo · business-campaign · marketing-day-to-day · editorial · infographic · web-mockup (hybrid) · quote-graphic. Auto-reads brand identity → composes prompt → generates via `gpt-image-2` API OR outputs paste-ready prompts cho 5 platforms (DALL-E 3, MidJourney, Leonardo, Imagen, Bing). |
 
+### Cluster 5: Growth + AI Marketing OS (4 VN + 4 Global) ⭐ NEW v3.4.0
+
+| # | Skill | Coverage |
+|---|-------|----------|
+| 31 | `31-offer-design` / `31-offer-design-global` | Package the thing being sold: value stack, guarantee, bonus, scarcity, upsell/downsell, and offer ladder. |
+| 32 | `32-seo-growth` / `32-seo-growth-global` | SEO audit, AI SEO/GEO, schema, programmatic SEO, directory submissions, and backlink plan. |
+| 33 | `33-b2b-lead-gen` / `33-b2b-lead-gen-global` | Prospecting, cold outreach, lead scoring, sales enablement, CRM handoff, and RevOps basics. |
+| 34 | `34-ai-marketing-os` / `34-ai-marketing-os-global` | Brand Hub/source of truth, role-based AI agents/projects, skill chains, second brain, data loops, SOPs, and governance. |
+
 ### 5 Marketing Agents (Universal mode — VN + Global auto-detect)
 
 > Agents auto-detect cluster (VN vs Global) via `.agents/` context file. No manual config.
 
 | Agent | Vai trò | Skills chính |
 |-------|---------|--------------|
-| [mkt-strategist](agents/mkt-strategist.md) | Chiến lược tổng | 00, 02, 08, 09, 16, 17 (+ `-global` mirrors) |
+| [mkt-strategist](agents/mkt-strategist.md) | Chiến lược tổng | 00, 02, 08, 09, 16, 17, 31, 32, 33, 34 (+ `-global` mirrors) |
 | [content-producer](agents/content-producer.md) | Sản xuất nội dung | 01, 04, 05, 06 (+ `-global`) |
-| [performance-analyst](agents/performance-analyst.md) | Phân tích hiệu suất | 03, 07, 10, 13, 19 (+ `-global`) |
-| [channel-operator](agents/channel-operator.md) | Vận hành kênh | 11, 12, 14, 15, 18 (+ `-global`) |
+| [performance-analyst](agents/performance-analyst.md) | Phân tích hiệu suất | 03, 07, 10, 13, 19, 32, 34 (+ `-global`) |
+| [channel-operator](agents/channel-operator.md) | Vận hành kênh | 11, 12, 14, 15, 18, 34 (+ `-global`) |
 | [personal-brand-builder](agents/personal-brand-builder.md) | PB + AI Avatar | 22-28 (+ `-global`) |
 
 ### 15 Workflows (multi-skill chains — 7 VN + 8 Global)
@@ -439,6 +450,7 @@ related: [08-nghien-cuu-doi-thu, 09-insight-khach-hang, 10-tinh-kpi-nguoc]
 | Personal Branding (22-28) | 7 | 7 | Full bilingual mirror |
 | Regional flagship (29) | Export B2B 🇻🇳 | Dropshipping 🚀 | **Diverges by region** |
 | Design Master (30) ⭐ NEW v2.7.0 | 1 (`30-thiet-ke-master`) | 1 (`30-design-master-global`) | Full bilingual mirror — 8 design types |
+| Growth + AI Marketing OS (31-34) ⭐ NEW v3.4.0 | 4 | 4 | Offer design, SEO/GEO growth, B2B lead gen, AI Marketing OS |
 
 **Global cluster covers 4 regions** with per-region variants (currency, privacy law, channels):
 

@@ -36,7 +36,12 @@
 | 26-thought-leadership-content | 1.0.0 | 2026-05-08 | content |
 | 27-personal-brand-monetize | 1.0.0 | 2026-05-08 | strategy |
 | 28-community-building | 1.0.0 | 2026-05-08 | operations |
+| 29-xuat-khau-b2b | 1.0.0 | 2026-05-20 | strategy |
 | 30-thiet-ke-master | 1.1.0 | 2026-06-06 | design |
+| 31-offer-design | 1.0.0 | 2026-06-30 | strategy |
+| 32-seo-growth | 1.0.0 | 2026-06-30 | performance |
+| 33-b2b-lead-gen | 1.0.0 | 2026-06-30 | operations |
+| 34-ai-marketing-os | 1.0.0 | 2026-07-08 | operations |
 | product-marketing-context-global | 1.0.0 | 2026-05-08 | foundation (global) |
 | 00-marketing-plan-global | 1.0.0 | 2026-05-08 | strategy (global) |
 | 01-content-calendar-global | 1.0.0 | 2026-05-08 | content (global) |
@@ -69,8 +74,50 @@
 | 28-community-building-global | 1.0.0 | 2026-05-08 | operations (global) |
 | 29-dropshipping-mastery-global | 1.0.0 | 2026-05-08 | strategy (global) — FLAGSHIP |
 | 30-design-master-global | 1.1.0 | 2026-06-06 | design (global) |
+| 31-offer-design-global | 1.0.0 | 2026-06-30 | strategy (global) |
+| 32-seo-growth-global | 1.0.0 | 2026-06-30 | performance (global) |
+| 33-b2b-lead-gen-global | 1.0.0 | 2026-06-30 | operations (global) |
+| 34-ai-marketing-os-global | 1.0.0 | 2026-07-08 | operations (global) |
 
 ## Changelog
+
+### 2026-07-08 — v3.4.0
+
+**AI Marketing OS Expansion — adapted from the new RBL community-share documents and aligned with agent skills, connectors/MCP, source-of-truth, and role-based AI workflow patterns.**
+
+**New skills:**
+- `34-ai-marketing-os` and `34-ai-marketing-os-global`: Brand Hub/source of truth, role-based AI agents/projects, skill chains, second brain, data loops, MCP/connectors, SOP cadence, governance, and 30-60-90 rollout planning.
+
+**New references:**
+- `skills/vi/34-ai-marketing-os/references/ai-marketing-os-playbook.md`
+- `skills/en/34-ai-marketing-os-global/references/ai-marketing-os-playbook.md`
+
+**Docs/manifest:**
+- Marketplace skill count updated to 72.
+- README/README.vi, CONNECTORS, llms, and agent routing updated for AI Marketing OS.
+- Existing skill set left intact; RBL role skill samples were consolidated into OS-level workflow guidance instead of imported as duplicate skills.
+
+### 2026-06-30 — v3.3.0
+
+**Growth Expansion — inspired by SaaS/growth skill patterns, adapted to this repo's bilingual VN + Global structure.**
+
+**New skills:**
+- `31-offer-design` and `31-offer-design-global`: Offer packaging, value stack, bonuses, guarantees, scarcity/urgency, upsell/downsell, and offer ladder.
+- `32-seo-growth` and `32-seo-growth-global`: SEO audit, AI SEO/GEO, schema, programmatic SEO, directory submissions, and backlink planning.
+- `33-b2b-lead-gen` and `33-b2b-lead-gen-global`: Prospecting, cold outreach, lead scoring, sales enablement, CRM handoff, and RevOps basics.
+
+**New references:**
+- `skills/vi/31-offer-design/references/offer-framework.md`
+- `skills/en/31-offer-design-global/references/offer-framework.md`
+- `skills/vi/32-seo-growth/references/seo-growth-playbook.md`
+- `skills/en/32-seo-growth-global/references/seo-growth-playbook.md`
+- `skills/vi/33-b2b-lead-gen/references/b2b-lead-gen-playbook.md`
+- `skills/en/33-b2b-lead-gen-global/references/b2b-lead-gen-playbook.md`
+
+**Docs/manifest:**
+- Marketplace skill count updated to 70.
+- README/README.vi updated for Growth Expansion.
+- Versions table now includes existing `29-xuat-khau-b2b` for parity with installed skill files.
 
 ### 2026-06-06 — v2.6.0
 

@@ -4,8 +4,8 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/v2.5-Global%20Ready-6d28d9?style=for-the-badge&labelColor=1e1033" alt="v2.5"/>
-  <img src="https://img.shields.io/badge/Skills-60-6d28d9?style=for-the-badge&labelColor=1e1033" alt="60 Skills"/>
+  <img src="https://img.shields.io/badge/v3.4-AI%20Marketing%20OS-6d28d9?style=for-the-badge&labelColor=1e1033" alt="v3.4"/>
+  <img src="https://img.shields.io/badge/Skills-72-6d28d9?style=for-the-badge&labelColor=1e1033" alt="72 Skills"/>
   <img src="https://img.shields.io/badge/Agents-5-be185d?style=for-the-badge&labelColor=1e1033" alt="5 Agents"/>
   <img src="https://img.shields.io/badge/Workflows-15-0f766e?style=for-the-badge&labelColor=1e1033" alt="15 Workflows"/>
   <img src="https://img.shields.io/badge/Market-Vietnam%202025--2026-f97316?style=for-the-badge&labelColor=1e1033" alt="Vietnam Market"/>
@@ -18,8 +18,11 @@
     <img src="https://img.shields.io/badge/%E2%98%95%20Moi%20Toi%20Mot%20Coffee-Ung%20ho%20Open%20Source-ff5e5b?style=for-the-badge" alt="Ung ho du an"/>
   </a>
   <br/>
-  <sub><b>💖 60 skills, ~28K+ dong, 100% mien phi & MIT — neu giup ban tiet kiem thoi gian, hay ung ho tai <a href="https://www.opa.business/donate">opa.business/donate</a></b></sub>
+  <sub><b>💖 72 skills, 100% mien phi & MIT — neu giup ban tiet kiem thoi gian, hay ung ho tai <a href="https://www.opa.business/donate">opa.business/donate</a></b></sub>
 </p>
+
+> **🆕 v3.4.0 (2026-07-08)** — AI Marketing OS Expansion.
+> Them 2 skill moi: AI Marketing OS VN + Global — Brand Hub, role-based agents/projects, skill chains, connectors/MCP, second brain, data loops, SOPs. Zero breaking changes.
 
 > **🌍 v2.5.0 (2026-05-08)** — Cum Marketing Toan Cau.
 > 30 skills global moi (US/EU/SEA/LATAM), Dropshipping flagship, 5 agents universal. Zero breaking changes.
@@ -162,9 +165,9 @@ Copy file `.md` lam Custom Instructions hoac context. Moi file la 1 prompt doc l
 
 ---
 
-## 60 Skills (29 VN + 30 Global + 1 foundation moi cum)
+## 72 Skills (36 VN + 36 Global)
 
-### Cum VN (29 skills)
+### Cum VN (36 skills)
 
 <table>
 <tr><th>#</th><th>Skill</th><th>Lam gi</th><th>Category</th></tr>
@@ -318,6 +321,36 @@ Copy file `.md` lam Custom Instructions hoac context. Moi file la 1 prompt doc l
 ![Operations](https://img.shields.io/badge/-Operations-1d4ed8?style=flat-square)
 
 </td></tr>
+<tr><td><code>29</code></td><td><a href="skills/vi/29-xuat-khau-b2b/SKILL.md"><b>Xuat Khau B2B</b></a></td><td>Export B2B playbook cho SME Viet</td><td>
+
+![Strategy](https://img.shields.io/badge/-Strategy-6d28d9?style=flat-square)
+
+</td></tr>
+<tr><td><code>30</code></td><td><a href="skills/vi/30-thiet-ke-master/SKILL.md"><b>Thiet Ke Master</b></a></td><td>Router thiet ke 8 loai: logo, key visual, social post, infographic...</td><td>
+
+![Design](https://img.shields.io/badge/-Design-9333ea?style=flat-square)
+
+</td></tr>
+<tr><td><code>31</code></td><td><a href="skills/vi/31-offer-design/SKILL.md"><b>Offer Design</b></a> <sup>v3.3 NEW</sup></td><td>Value stack + bonus + guarantee + scarcity + upsell/downsell</td><td>
+
+![Strategy](https://img.shields.io/badge/-Strategy-6d28d9?style=flat-square)
+
+</td></tr>
+<tr><td><code>32</code></td><td><a href="skills/vi/32-seo-growth/SKILL.md"><b>SEO Growth</b></a> <sup>v3.3 NEW</sup></td><td>SEO audit + AI SEO/GEO + schema + pSEO + directory submissions</td><td>
+
+![Performance](https://img.shields.io/badge/-Performance-c2410c?style=flat-square)
+
+</td></tr>
+<tr><td><code>33</code></td><td><a href="skills/vi/33-b2b-lead-gen/SKILL.md"><b>B2B Lead Gen</b></a> <sup>v3.3 NEW</sup></td><td>Prospecting + cold email + lead scoring + sales handoff</td><td>
+
+![Operations](https://img.shields.io/badge/-Operations-1d4ed8?style=flat-square)
+
+</td></tr>
+<tr><td><code>34</code></td><td><a href="skills/vi/34-ai-marketing-os/SKILL.md"><b>AI Marketing OS</b></a> <sup>v3.4 NEW</sup></td><td>Brand Hub + role-based agents/projects + skill chain + second brain + data loop + SOP</td><td>
+
+![Operations](https://img.shields.io/badge/-Operations-1d4ed8?style=flat-square)
+
+</td></tr>
 </table>
 
 ---
@@ -367,7 +400,7 @@ Xem them: [examples/personal-brand-coach.md](examples/personal-brand-coach.md) �
 
 ---
 
-### Cum Global (30 skills)
+### Cum Global (36 skills)
 
 <table>
 <tr><th>#</th><th>Skill</th><th>Lam gi</th><th>Category</th></tr>
@@ -391,13 +424,23 @@ Xem them: [examples/personal-brand-coach.md](examples/personal-brand-coach.md) �
 ![Strategy](https://img.shields.io/badge/-Strategy-6d28d9?style=flat-square)
 
 </td></tr>
+<tr><td><code>30</code></td><td><a href="skills/en/30-design-master-global/SKILL.md"><b>Design Master Global</b></a></td><td>Global mirror cho 8 loai thiet ke marketing</td><td>
+
+![Design](https://img.shields.io/badge/-Design-9333ea?style=flat-square)
+
+</td></tr>
+<tr><td><code>31-34</code></td><td><a href="skills/en/"><b>Growth + AI Marketing OS Global</b></a> <sup>v3.4 NEW</sup></td><td>Offer Design + SEO/GEO Growth + B2B Lead Gen + AI Marketing OS global mirrors</td><td>
+
+![Strategy](https://img.shields.io/badge/-Strategy-6d28d9?style=flat-square) ![Performance](https://img.shields.io/badge/-Performance-c2410c?style=flat-square) ![Operations](https://img.shields.io/badge/-Operations-1d4ed8?style=flat-square)
+
+</td></tr>
 </table>
 
 ---
 
 ## Cum Global (NEW v2.5.0)
 
-30 skill moi cho marketer, founder, dropshipper hoat dong tren **US / EU / SEA / LATAM** — tien te, thue, luat privacy (GDPR/CCPA/PDPA/LGPD), va tool stack theo region.
+36 skill Global cho marketer, founder, dropshipper, SaaS/growth team hoat dong tren **US / EU / SEA / LATAM** — tien te, thue, luat privacy (GDPR/CCPA/PDPA/LGPD), va tool stack theo region.
 
 ### Cluster Diagram
 
@@ -476,10 +519,10 @@ Xem them: [examples/personal-brand-coach-global.md](examples/personal-brand-coac
 
 | Agent | Mode | Skills chinh (VN / Global) |
 |-------|------|----------------------------|
-| [MKT Strategist](agents/mkt-strategist.md) | Universal <sup>v2.5</sup> | 00, 02, 08, 09, 16, 17 (+ mirror `-global`) |
+| [MKT Strategist](agents/mkt-strategist.md) | Universal <sup>v3.4</sup> | 00, 02, 08, 09, 16, 17, 31, 32, 33, 34 (+ mirror `-global`) |
 | [Content Producer](agents/content-producer.md) | Universal <sup>v2.5</sup> | 01, 04, 05, 06 (+ mirror `-global`) |
-| [Performance Analyst](agents/performance-analyst.md) | Universal <sup>v2.5</sup> | 03, 07, 10, 13, 19 (+ mirror `-global`) |
-| [Channel Operator](agents/channel-operator.md) | Universal <sup>v2.5</sup> | 11, 12, 14, 15, 18 (+ mirror `-global`) |
+| [Performance Analyst](agents/performance-analyst.md) | Universal <sup>v3.4</sup> | 03, 07, 10, 13, 19, 32, 34 (+ mirror `-global`) |
+| [Channel Operator](agents/channel-operator.md) | Universal <sup>v3.4</sup> | 11, 12, 14, 15, 18, 34 (+ mirror `-global`) |
 | [Personal Brand Builder](agents/personal-brand-builder.md) | Universal <sup>v2.5</sup> | 22, 23, 24, 25, 26, 27, 28 (+ mirror `-global`) |
 
 ---

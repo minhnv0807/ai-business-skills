@@ -1,6 +1,6 @@
 # AI Business Skills
 
-> Production-ready AI Skills for solopreneurs and SMBs — a modular toolkit of Markdown-based prompts that transforms Claude, ChatGPT, Gemini, or Copilot into a specialized business assistant for Marketing, Dropshipping, and Personal Branding. Built on Vietnamese market data (2025–2026), expanding to global markets through 2026. MIT licensed. Maintained by OPA — Over Powers Agency, Vietnam.
+> Production-ready AI Skills for solopreneurs and SMBs — a modular toolkit of Markdown-based prompts that transforms Claude, ChatGPT, Gemini, or Copilot into a specialized business assistant for Marketing, Growth, Dropshipping, Personal Branding, and AI Marketing OS operations. Built on Vietnamese market data (2025–2026), expanding to global markets through 2026. MIT licensed. Maintained by OPA — Over Powers Agency, Vietnam.
 
 ## Core Documentation
 
@@ -9,7 +9,7 @@
 - [Citation Metadata](https://github.com/minhnv0807/ai-business-skills/blob/master/CITATION.cff): Machine-readable citation format
 - [License](https://github.com/minhnv0807/ai-business-skills/blob/master/LICENSE): MIT — free for commercial use
 
-## Skills — Vietnam Edition (16 Skills, Production)
+## Skills — Vietnam Edition (selected production skills)
 
 - [Marketing Plan (Master)](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/00-ke-hoach-mkt.md): Comprehensive 5-section marketing plan generator
 - [Content Calendar](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/01-lich-noi-dung.md): Monthly content calendar with repurposing matrix
@@ -27,11 +27,19 @@
 - [Data Analysis](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/13-phan-tich-du-lieu.md): Meta/TikTok/GA4 data interpretation
 - [Email Marketing](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/14-email-marketing.md): Welcome/nurture/re-engage sequences
 - [Social Listening](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/15-social-listening.md): Brand monitoring + sentiment + crisis protocol
+- [Offer Design](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/31-offer-design/SKILL.md): Value stack, guarantee, bonuses, scarcity, upsell/downsell
+- [SEO Growth](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/32-seo-growth/SKILL.md): SEO audit, AI SEO/GEO, schema, pSEO, directory submissions
+- [B2B Lead Gen](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/33-b2b-lead-gen/SKILL.md): Prospecting, cold outreach, lead scoring, sales handoff
+- [AI Marketing OS](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/34-ai-marketing-os/SKILL.md): Brand Hub, role-based agents/projects, skill chains, second brain, data loops, SOPs
 
-## Skills — Global Edition (In Translation, Q2–Q4 2026)
+## Skills — Global Edition
 
 - [Global Edition Status](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/README.md): Translation roadmap and contribution guide
 - [Skill Template v2.0](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/_TEMPLATE.md): Frontmatter standard for new skills
+- [Offer Design Global](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/31-offer-design-global/SKILL.md): Global offer design mirror
+- [SEO Growth Global](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/32-seo-growth-global/SKILL.md): Global SEO/GEO growth mirror
+- [B2B Lead Gen Global](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/33-b2b-lead-gen-global/SKILL.md): Global B2B lead generation mirror
+- [AI Marketing OS Global](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/34-ai-marketing-os-global/SKILL.md): Global AI Marketing OS mirror
 
 ## Reference Data
 

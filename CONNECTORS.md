@@ -19,6 +19,7 @@ Plugins are **tool-agnostic** — they describe workflows in terms of categories
 | Email marketing | `~~email marketing` | Klaviyo | Mailchimp, Brevo, Customer.io, ConvertKit |
 | Marketing analytics | `~~marketing analytics` | Supermetrics | Google Analytics, Looker, Tableau |
 | AI image generation | `~~ai image` | gpt-image-2 (OpenAI) | Midjourney, Leonardo, Flux, Imagen 3 |
+| AI orchestration | `~~AI orchestration` | Claude Projects, ChatGPT Projects, NotebookLM | Custom GPTs, Gemini Gems, internal agents |
 
 ## Customizing for your stack
 
@@ -37,6 +38,10 @@ Edit `.mcp.json` to swap connectors with your specific tools. Skills will auto-a
 | 15-social-listening | ~~SEO, ~~chat |
 | 21-audit-ads-performance | ~~marketing analytics, ~~marketing automation |
 | 30-thiet-ke-master | ~~ai image, ~~design |
+| 31-offer-design | ~~knowledge base, ~~marketing analytics |
+| 32-seo-growth | ~~SEO, ~~marketing analytics, ~~knowledge base |
+| 33-b2b-lead-gen | ~~marketing automation, ~~email marketing, ~~knowledge base |
+| 34-ai-marketing-os | ~~knowledge base, ~~marketing analytics, ~~design, ~~email marketing, ~~AI orchestration |
 
 ## OPA Suite cross-references
 
