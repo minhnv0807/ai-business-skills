@@ -52,6 +52,61 @@
 
 ---
 
+## Ban do nhanh trong 60 giay
+
+Repo nay co 3 tang de doc cho de: **context** giu thong tin san pham, **skills** lam tung viec marketing, va **agents/workflows** noi nhieu skill thanh mot quy trinh hoan chinh.
+
+```mermaid
+flowchart LR
+    UserRequest["Ban dua yeu cau marketing"] --> Context["Foundation context<br/>.agents/*.md"]
+    Context --> Router{"Du an VN hay Global?"}
+    Router --> VN["Cum VN<br/>36 skills"]
+    Router --> Global["Cum Global<br/>36 skills"]
+    VN --> Agents["5 agents universal"]
+    Global --> Agents
+    Agents --> Workflows["15 workflows"]
+    Workflows --> Output["Ke hoach, copy, brief,<br/>bao cao, SOP, dashboard"]
+
+    classDef user fill:#3b82f6,stroke:#1e40af,color:#fff
+    classDef system fill:#64748b,stroke:#334155,color:#fff
+    classDef admin fill:#f59e0b,stroke:#b45309,color:#fff
+    classDef cmsdev fill:#6d28d9,stroke:#4c1d95,color:#fff
+    classDef db fill:#10b981,stroke:#047857,color:#fff
+
+    class UserRequest user
+    class Context,Router system
+    class VN,Global db
+    class Agents cmsdev
+    class Workflows,Output admin
+```
+
+### Chon dung skill theo nhu cau
+
+```mermaid
+flowchart TD
+    Start["Ban can lam gi?"] --> Strategy{"Chien luoc / offer?"}
+    Start --> Content{"Noi dung / creative?"}
+    Start --> Data{"Audit / du lieu?"}
+    Start --> Ops{"Kenh / van hanh?"}
+    Start --> PB{"Personal brand?"}
+    Start --> OS{"Xay he thong AI marketing?"}
+
+    Strategy --> S00["00 ke hoach MKT<br/>10 KPI nguoc<br/>31 offer design"]
+    Content --> S01["01 lich noi dung<br/>04 script video<br/>05 copy ads<br/>30 thiet ke master"]
+    Data --> S03["03 danh gia hieu suat<br/>13 phan tich du lieu<br/>21 audit ads<br/>32 SEO growth"]
+    Ops --> S11["11 thiet lap kenh<br/>12 brief landing page<br/>14 email<br/>33 B2B lead gen"]
+    PB --> S22["22 PB context<br/>23 PB strategy<br/>24 AI avatar<br/>27 monetize"]
+    OS --> S34["34 AI Marketing OS<br/>Brand Hub + agents + SOP"]
+
+    classDef user fill:#3b82f6,stroke:#1e40af,color:#fff
+    classDef system fill:#64748b,stroke:#334155,color:#fff
+    classDef cmsdev fill:#6d28d9,stroke:#4c1d95,color:#fff
+
+    class Start user
+    class Strategy,Content,Data,Ops,PB,OS system
+    class S00,S01,S03,S11,S22,S34 cmsdev
+```
+
 ## The Problem
 
 ```
@@ -495,26 +550,27 @@ Xem them: [examples/personal-brand-coach-global.md](examples/personal-brand-coac
 
 > **Cap nhat v2.5:** Tat ca 5 agent gio chay o **universal mode** — tu dong nhan dien project la VN hay Global va route den skill tuong ung (`00-...` hoac `00-...-global`).
 
-```
-                        ┌─────────────────────┐
-                        │   MKT STRATEGIST    │
-                        │ Ke hoach + Chien luoc│
-                        │ VN + Global routing │
-                        └─────────┬───────────┘
-                                  │
-              ┌───────────────────┼───────────────────┐
-              │                   │                   │
-    ┌─────────▼─────────┐ ┌──────▼──────────┐ ┌──────▼──────────┐
-    │ CONTENT PRODUCER  │ │ PERF. ANALYST   │ │ CHANNEL OPERATOR│
-    │ Noi dung + Script │ │ Data + Bao cao  │ │ Kenh + Landing  │
-    │ Universal         │ │ Universal       │ │ Universal       │
-    └───────────────────┘ └─────────────────┘ └─────────────────┘
+```mermaid
+flowchart TD
+    Context[".agents context<br/>VN or Global"] --> Strategist["MKT Strategist<br/>Ke hoach + chien luoc"]
+    Context --> Content["Content Producer<br/>Noi dung + script"]
+    Context --> Performance["Performance Analyst<br/>Du lieu + bao cao"]
+    Context --> Channel["Channel Operator<br/>Kenh + landing + email"]
+    Context --> Personal["Personal Brand Builder<br/>PB + AI Avatar"]
 
-                        ┌──────────────────────────┐
-                        │ PERSONAL BRAND BUILDER   │
-                        │ Personal Brand + Avatar  │
-                        │ Universal (VN + Global)  │
-                        └──────────────────────────┘
+    Strategist --> Growth["31 offer<br/>32 SEO<br/>33 B2B lead gen<br/>34 AI Marketing OS"]
+    Content --> Creative["01 calendar<br/>04 video<br/>05 ads copy<br/>06 UGC"]
+    Performance --> Metrics["03 audit<br/>07 report<br/>10 KPI<br/>13 data"]
+    Channel --> OpsLoop["11 channel<br/>12 landing<br/>14 email<br/>15 listening"]
+    Personal --> PBLoop["22-28 PB system"]
+
+    classDef system fill:#64748b,stroke:#334155,color:#fff
+    classDef cmsdev fill:#6d28d9,stroke:#4c1d95,color:#fff
+    classDef admin fill:#f59e0b,stroke:#b45309,color:#fff
+
+    class Context system
+    class Strategist,Content,Performance,Channel,Personal cmsdev
+    class Growth,Creative,Metrics,OpsLoop,PBLoop admin
 ```
 
 | Agent | Mode | Skills chinh (VN / Global) |
@@ -617,74 +673,73 @@ Review lich → 04 Script → Quay/Dung → 05 Copy ads → Len lich dang
 ai-business-skills/
 │
 ├── .claude-plugin/
-│   └── marketplace.json            # Claude Code plugin spec
+│   └── marketplace.json              # Claude Code plugin spec: 72 skills
 │
 ├── .github/
-│   ├── ISSUE_TEMPLATE/              # Bug report + skill request
-│   └── PULL_REQUEST_TEMPLATE/       # New skill + skill update
+│   ├── ISSUE_TEMPLATE/                # Bug report + skill request
+│   └── PULL_REQUEST_TEMPLATE/         # New skill + skill update
 │
-├── skills/                              # Dual-edition (v3.0)
-│   ├── vi/                              # 🇻🇳 VN Edition — 23 skill + foundation
+├── skills/                              # Dual-edition skill library
+│   ├── vi/                              # VN Edition — 36 skills
 │   │   ├── product-marketing-context/   # Foundation skill (★)
-│   │   ├── 00-21 marketing skills/      # 22 marketing skill (folder per skill)
-│   │   ├── 29-xuat-khau-b2b/            # Export B2B (community contribution)
-│   │   └── references/                  # 8 reference VN (benchmarks, hooks, MCP, etc.)
+│   │   ├── 00-21 marketing core/        # Plan, copy, KPI, ads, email, report
+│   │   ├── 29-xuat-khau-b2b/            # Regional flagship for Vietnam
+│   │   ├── 30-thiet-ke-master/          # Design master router
+│   │   ├── 31-34 growth + AI OS/        # Offer, SEO, B2B lead gen, AI Marketing OS
+│   │   └── references/                  # Benchmarks, hooks, tools, legal refs
 │   │
-│   └── en/                              # 🌏 Global Edition — 22 marketing + foundation
+│   └── en/                              # Global Edition — 36 skills
 │       ├── product-marketing-context-global/  # Foundation (4 region variants: US/EU/SEA/LATAM)
-│       ├── 00-21 marketing skills (global)/   # Mirror VN 00-21 voi suffix -global
-│       └── references/                  # 7 reference global (legal, currency, dropship-tools, etc.)
+│       ├── 00-21 marketing core global/        # Mirror VN 00-21 with -global suffix
+│       ├── 30-design-master-global/            # Design master global
+│       ├── 31-34 growth + AI OS global/        # Offer, SEO/GEO, B2B, AI Marketing OS
+│       └── references/                         # Legal, currency, channel, benchmark refs
 │
-├── modules/                             # NEW v3.0 — Topic modules (cross-language)
-│   ├── personal-branding/               # 🚀 Module Personal Brand
-│   │   ├── vi/                          # 7 PB skill VN (22-28)
-│   │   ├── en/                          # 7 PB skill Global (22-28-global)
-│   │   └── workflows/{vi,en}/           # 3+3 PB workflows
+├── modules/                             # Topic modules outside core marketing
+│   ├── personal-branding/               # Personal Brand module
+│   │   ├── vi/                          # 7 PB skills VN (22-28)
+│   │   ├── en/                          # 7 PB skills Global (22-28-global)
+│   │   └── workflows/{vi,en}/           # PB launch, avatar batch, monthly loop
 │   │
-│   └── dropshipping/                    # 🛒 Module Dropshipping
+│   └── dropshipping/                    # Dropshipping module
 │       ├── en/29-dropshipping-mastery-global/  # Flagship (12 sections)
 │       └── workflows/en/dropshipping-launch-global.md
 │
-├── workflows/                           # Workflow xuyen-tang (dual-edition)
-│   ├── vi/                              # 4 workflow marketing VN
+├── workflows/                           # Multi-skill workflow chains
+│   ├── vi/                              # Marketing VN workflows
 │   │   ├── campaign-launch.md
 │   │   ├── client-onboard.md
 │   │   ├── content-production.md
 │   │   └── monthly-cycle.md
 │   │
-│   └── en/                              # 4 workflow marketing Global
+│   └── en/                              # Marketing Global workflows
 │       ├── campaign-launch-global.md
 │       ├── client-onboard-global.md
 │       ├── content-production-global.md
 │       └── monthly-cycle-global.md
 │
-├── agents/                          # Agent personas (universal trong v2.5)
-│   └── personal-brand-builder.md   # v2.4
-├── examples/                        # Sample outputs
-│   ├── personal-brand-coach.md     # v2.4
-│   ├── personal-brand-coach-global.md      # NEW v2.5
-│   └── dropshipping-store-global.md        # NEW v2.5
+├── agents/                              # 5 universal agents
+│   ├── mkt-strategist.md
+│   ├── content-producer.md
+│   ├── performance-analyst.md
+│   ├── channel-operator.md
+│   └── personal-brand-builder.md
 │
-├── docs/                            # Documentation
-│   ├── personal-brand-guide.md     # v2.4 (8-chapter cam nang)
-│   ├── getting-started-personal-brand.md # v2.4 (5-min quickstart)
-│   ├── getting-started-global.md   # NEW v2.5
-│   ├── global-region-guide.md      # NEW v2.5
-│   ├── dropshipping-guide.md       # NEW v2.5
-│   ├── apac-roadmap.md             # NEW v2.5
-│   └── release-notes/
-│       ├── v2.4.0.md
-│       └── v2.5.0.md               # NEW v2.5
+├── examples/                            # Sample outputs
+├── docs/                                # Guides + release notes
+├── references/                          # Shared references across skills
+├── CONNECTORS.md                        # Tool connector abstraction
+├── llms.txt                             # AI-readable repo index
 │
-├── AGENTS.md                        # Universal agent spec
-├── CLAUDE.md                        # Claude-specific config
-├── CONTRIBUTING.md                  # How to contribute
-├── VERSIONS.md                      # Version tracking
-├── validate-skills.sh               # Bash validator
-├── validate-skills.ps1              # PowerShell validator
-├── install.sh                       # macOS/Linux installer
-├── install.ps1                      # Windows installer
-└── LICENSE                          # MIT
+├── AGENTS.md                            # Universal agent spec
+├── CLAUDE.md                            # Claude-specific config
+├── CONTRIBUTING.md                      # How to contribute
+├── VERSIONS.md                          # Version tracking
+├── validate-skills.sh                   # Bash validator
+├── validate-skills.ps1                  # PowerShell validator
+├── install.sh                           # macOS/Linux installer
+├── install.ps1                          # Windows installer
+└── LICENSE                              # MIT
 ```
 
 ---

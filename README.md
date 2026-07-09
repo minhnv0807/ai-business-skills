@@ -33,6 +33,71 @@
 
 ---
 
+## 🧭 System map — read this first
+
+ai-business-skills turns one marketing request into a routed workflow: context first, then the right skill cluster, then an agent/workflow when the job spans multiple steps.
+
+```mermaid
+flowchart LR
+    UserRequest["User asks a marketing task"] --> Context["Foundation context<br/>.agents/*.md"]
+    Context --> ModeRouter{"VN or Global?"}
+    ModeRouter --> VN["VN cluster<br/>36 skills"]
+    ModeRouter --> Global["Global cluster<br/>36 skills"]
+    VN --> Agents["5 universal agents"]
+    Global --> Agents
+    Agents --> Workflows["15 multi-skill workflows"]
+    Workflows --> Output["Plan, copy, brief,<br/>report, SOP, dashboard"]
+
+    classDef user fill:#3b82f6,stroke:#1e40af,color:#fff
+    classDef system fill:#64748b,stroke:#334155,color:#fff
+    classDef admin fill:#f59e0b,stroke:#b45309,color:#fff
+    classDef cmsdev fill:#6d28d9,stroke:#4c1d95,color:#fff
+    classDef db fill:#10b981,stroke:#047857,color:#fff
+
+    class UserRequest user
+    class Context,ModeRouter system
+    class VN,Global db
+    class Agents cmsdev
+    class Workflows,Output admin
+```
+
+| Layer | What it gives you | Start here |
+|-------|-------------------|------------|
+| Context | Product, audience, positioning, proof, objections | `product-marketing-context` |
+| Skills | Single jobs like plan, copy, SEO, report, offer, SOP | `skills/vi/` or `skills/en/` |
+| Agents | Role-based routing for strategy, content, performance, channels, personal brand | `agents/` |
+| Workflows | Multi-step campaigns and monthly operating loops | `workflows/` |
+| OS | Brand Hub, second brain, data loop, governance | `34-ai-marketing-os` |
+
+### Pick the right entry point
+
+```mermaid
+flowchart TD
+    Start["What do you need?"] --> Strategy{"Strategy or offer?"}
+    Start --> Content{"Content or creative?"}
+    Start --> Data{"Audit or data?"}
+    Start --> Ops{"Channel or ops?"}
+    Start --> Brand{"Personal brand?"}
+    Start --> OS{"AI marketing system?"}
+
+    Strategy --> S00["00 plan<br/>10 reverse KPI<br/>31 offer design"]
+    Content --> S01["01 calendar<br/>04 video script<br/>05 ad copy<br/>30 design master"]
+    Data --> S03["03 performance eval<br/>13 data analysis<br/>21 ads audit<br/>32 SEO growth"]
+    Ops --> S11["11 channel setup<br/>12 landing brief<br/>14 email<br/>33 B2B lead gen"]
+    Brand --> S22["22 context<br/>23 strategy<br/>24 AI avatar<br/>27 monetize"]
+    OS --> S34["34 AI Marketing OS<br/>Brand Hub + agents + SOPs"]
+
+    classDef user fill:#3b82f6,stroke:#1e40af,color:#fff
+    classDef system fill:#64748b,stroke:#334155,color:#fff
+    classDef admin fill:#f59e0b,stroke:#b45309,color:#fff
+    classDef cmsdev fill:#6d28d9,stroke:#4c1d95,color:#fff
+    classDef db fill:#10b981,stroke:#047857,color:#fff
+
+    class Start user
+    class Strategy,Content,Data,Ops,Brand,OS system
+    class S00,S01,S03,S11,S22,S34 cmsdev
+```
+
 ## ⚡ Quick start (30 giây)
 
 ```bash
@@ -371,14 +436,22 @@ OPA Suite = **ai-business-skills** (this repo, marketing) + **[OPA KIT](https://
 
 ### Workflow chain typical
 
-```
-OPA KIT (build)                  →    ai-business-skills (market)
-─────────────────────────             ─────────────────────────
-opa-prd → opa-pipeline → ship    →    00-ke-hoach-mkt
-                                 →    02-brief-chien-dich
-                                 →    30-thiet-ke-master  (key visual + social posts)
-                                 →    campaign-launch workflow (14-21 ngày)
-                                 →    03-danh-gia-hieu-suat (audit sau 30 ngày)
+```mermaid
+flowchart LR
+    PRD["opa-prd<br/>Product brief"] --> Build["opa-pipeline<br/>Build + ship"]
+    Build --> Launch["00 marketing plan"]
+    Launch --> Brief["02 campaign brief"]
+    Brief --> Creative["30 design master<br/>Key visual + social posts"]
+    Brief --> Campaign["campaign-launch<br/>14-21 days"]
+    Campaign --> Audit["03 performance eval<br/>30-day audit"]
+
+    classDef system fill:#64748b,stroke:#334155,color:#fff
+    classDef cmsdev fill:#6d28d9,stroke:#4c1d95,color:#fff
+    classDef admin fill:#f59e0b,stroke:#b45309,color:#fff
+
+    class PRD,Build system
+    class Launch,Brief,Creative cmsdev
+    class Campaign,Audit admin
 ```
 
 ### Cài cả 2 cùng lúc
