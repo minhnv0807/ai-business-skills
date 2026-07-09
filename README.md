@@ -118,8 +118,6 @@ Test ngay trong Claude Code:
 
 → Skill `00-ke-hoach-mkt` tự kích hoạt, output file `.md` chi tiết với benchmark VN 2025-2026, KPI 3 kịch bản, budget allocation, weekly timeline, risk matrix.
 
-**Muốn cài full stack (build + market) cùng lúc?** Xem [companion OPA KIT](#-opa-suite--companion-repo) bên dưới.
-
 ---
 
 ## 🎯 Khi nào dùng ai-business-skills?
@@ -134,9 +132,9 @@ Test ngay trong Claude Code:
 ✅ **Offer + SEO + B2B growth** — offer design, AI SEO/GEO, prospecting, cold outreach, sales handoff
 ✅ **AI Marketing OS** — Brand Hub, role-based agents/projects, skill chains, second brain, data loops, SOPs
 
-❌ **Build product code** → dùng companion [OPA KIT](https://github.com/minhnv0807/opa-kit) (`opa-pipeline`)
-❌ **Single PRD tech feature** → dùng `opa-prd` ở OPA KIT
-❌ **Deploy production** → dùng `opa-deploy` ở OPA KIT
+❌ **Build product code** — repo này tập trung vào marketing/business skills
+❌ **Write technical PRD/specs** — dùng tool tài liệu kỹ thuật riêng nếu cần
+❌ **Deploy production infrastructure** — dùng workflow DevOps riêng nếu cần
 
 ---
 
@@ -420,54 +418,9 @@ Không có framework? Vẫn dùng được — copy-paste vào ChatGPT / Claude.
 
 ---
 
-## 🤝 OPA Suite — companion repo
-
-OPA Suite = **ai-business-skills** (this repo, marketing) + **[OPA KIT](https://github.com/minhnv0807/opa-kit)** (build pipeline).
-
-### [OPA KIT](https://github.com/minhnv0807/opa-kit) — 8 tech skills cho build pipeline
-
-- **`opa-prd`** — PRD authoring 3 modes (Product full / Creative 1-page / Lesson module)
-- **`opa-pipeline`** — 6-phase end-to-end shipping (CEO/PM/Engineer/Reviewer modes)
-- **`opa-tracker`** — progress tracking + token cost + model recommendation
-- **`opa-deploy`** — Coolify-first deploy với manual confirm gate
-- **`opa-diagram`** — Mermaid diagrams (workflow, journey, funnel, C4, ERD, state)
-- **`opa-judge`** — quality gate review
-- **`opa-para-pipeline`** — parallel multi-feature shipping
-
-### Workflow chain typical
-
-```mermaid
-flowchart LR
-    PRD["opa-prd<br/>Product brief"] --> Build["opa-pipeline<br/>Build + ship"]
-    Build --> Launch["00 marketing plan"]
-    Launch --> Brief["02 campaign brief"]
-    Brief --> Creative["30 design master<br/>Key visual + social posts"]
-    Brief --> Campaign["campaign-launch<br/>14-21 days"]
-    Campaign --> Audit["03 performance eval<br/>30-day audit"]
-
-    classDef system fill:#64748b,stroke:#334155,color:#fff
-    classDef cmsdev fill:#6d28d9,stroke:#4c1d95,color:#fff
-    classDef admin fill:#f59e0b,stroke:#b45309,color:#fff
-
-    class PRD,Build system
-    class Launch,Brief,Creative cmsdev
-    class Campaign,Audit admin
-```
-
-### Cài cả 2 cùng lúc
-
-```bash
-git clone https://github.com/minhnv0807/opa-kit.git
-cd opa-kit && bash install-opa-suite.sh
-```
-
-Script tự install OPA KIT + ai-business-skills. Xem `references/companion-skills.md` trong OPA KIT cho full ecosystem map.
-
-### 🧬 Compatible with Anthropic `knowledge-work-plugins`
+## 🧬 Compatible with Anthropic `knowledge-work-plugins`
 
 ai-business-skills follows Anthropic's [knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) structure (`.mcp.json` connectors, `CONNECTORS.md` placeholders, `argument-hint` slash commands). Compatible với Cowork ecosystem + Claude Code marketplace.
-
-**Companion repo `OPA KIT`** also Anthropic-aligned cho consistent OPA Suite UX.
 
 ---
 
@@ -595,8 +548,6 @@ MIT — free to use, modify, distribute. See [LICENSE](LICENSE).
   <strong>Framework:</strong> Over Powers Agency
   <br/>
   <strong>Owner:</strong> <a href="https://opa.business">opa.business</a>
-  <br/>
-  <strong>Companion:</strong> <a href="https://github.com/minhnv0807/opa-kit">OPA KIT</a> (build pipeline)
   <br/>
   <strong>Compatible with:</strong> Claude Code · ChatGPT · Gemini · Copilot · Cursor · OpenCode · Cline · any AI reading Markdown
 </p>
