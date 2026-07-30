@@ -245,7 +245,7 @@ flowchart TD
 ### Luu Y Phap Ly
 - Voice clone nguoi khac can xin phep bang van ban
 - Su dung hinh anh nguoi that lam avatar can consent
-- Xem chi tiet: `skills/references/ai-video-disclosure-vn.md`
+- Xem chi tiet: `skills/vi/references/ai-video-disclosure-vn.md`
 
 ---
 

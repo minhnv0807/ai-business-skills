@@ -3,7 +3,7 @@ name: 02-brief-chien-dich
 description: Brief chien dich marketing — 9 phan day du tu Context den Risk, bao gom creative direction, RACI, budget allocation theo phase, va auto-trigger cac skill lien quan.
 argument-hint: "<brand + campaign objective + timeline>"
 metadata:
-  version: 2.0.0
+  version: 2.1.0
   category: strategy
 triggers:
   - "brief chien dich"
@@ -12,6 +12,9 @@ triggers:
   - "brief ra mat san pham"
   - "viet brief"
   - "creative brief"
+  - "timeline campaign"
+  - "phan cong task campaign"
+  - "ai lam gi trong chien dich"
 output: File .md brief chien dich 9 phan — Context, Objectives, Target, Core Message, Creative Direction, Channel System, Timeline, Deliverables, Risks
 related:
   - 00-ke-hoach-mkt
@@ -20,6 +23,10 @@ related:
   - 05-copy-quang-cao
   - 06-brief-ugc-egc
   - 09-insight-khach-hang
+  - 41-campaign-asset-list
+  - 62-marketing-review
+  - 63-campaign-retrospective
+  - 64-team-brief
 ---
 
 # Brief Chien Dich
@@ -322,6 +329,100 @@ Kiem tra xem insight co that su la insight hay chi la observation:
 
 ---
 
+## Khau chuyen brief → timeline phan cong
+
+Brief xong chua trien khai duoc. Phai chuyen thanh **bang task co owner va dependency** — day la khau hay bi bo qua nhat va cung la ly do chinh khien chien dich tre.
+
+> Timeline khong phai cai lich. No la cong cu quan ly **dependency**: viec A phai xong thi viec B moi lam duoc. Nhin timeline phat hien duoc nut that TRUOC khi no xay ra, khong doi den deadline moi biet tre.
+
+### Nguyen tac lap timeline
+
+1. **Bat dau tu ngay launch, lui nguoc lai.** Khong tinh xuoi tu hom nay.
+2. **Moi task co dung 1 owner.** Khong ghi "ca team cung lam" — viec khong ai chiu trach nhiem la viec khong ai lam.
+3. **Chua 1 ngay buffer truoc launch** cho viec phat sinh.
+4. **Task nao co dependency phai ghi ro phu thuoc vao task nao** — thieu cot nay, timeline chi la danh sach viec.
+
+### Phase 1 — Chuan bi (truoc launch)
+
+| # | Task | Owner | Thoi luong | Phu thuoc vao | Deadline | Gate duyet |
+|---|------|-------|-----------|--------------|---------|-----------|
+| 1.1 | Chot offer + landing page | Lead + Dev | 3 ngay | Brief duoc duyet | | Lead duyet |
+| 1.2 | Setup tracking + verify | Performance | 1 ngay | Landing page live | | Xanh moi qua |
+| 1.3 | Brief cho team content | Lead | 0.5 ngay | Brief xong | | `64-team-brief` |
+| 1.4 | Chot danh sach asset can lam | Lead + Designer | 0.5 ngay | Brief content | | `41-campaign-asset-list` |
+| 1.5 | San xuat content dot 1 | Content + Designer | 5 ngay | Nhan brief | | |
+| 1.6 | Review content | Lead | 1 ngay | Content ban nhap | | `62-marketing-review` |
+| 1.7 | Sua va chot ban cuoi | Content + Designer | 1 ngay | Feedback review | | Lead duyet |
+| 1.8 | Brief cho team ads | Lead | 0.5 ngay | Content duoc duyet | | |
+| 1.9 | Setup ads + copy | Performance | 2 ngay | Brief + creative | | Pre-launch check |
+
+### Phase 2 — Teasing
+
+| # | Task | Owner | Kenh | Ngay dang |
+|---|------|-------|------|----------|
+| 2.1 | Bai teasing 1 (goc noi dau) | Content + Designer | Facebook, TikTok | |
+| 2.2 | Bai teasing 2 (giao duc / insight) | Content | Facebook | |
+| 2.3 | Bat ads cho tep warm | Performance | Meta | |
+| 2.4 | Email / Zalo ham nong truoc launch | Lead | Email, Zalo OA | |
+| 2.5 | Seeding vao group | Content | Group Facebook | |
+| 2.6 | Bai teasing 3 (he lo) | Content + Designer | Facebook, TikTok | |
+
+### Phase 3 — Launch (chi tiet theo gio)
+
+| Ngay | Gio | Hoat dong | Owner | Kenh |
+|------|-----|----------|-------|------|
+| D-day | 08:00 | Dang bai cong bo chinh thuc | Content | Tat ca |
+| D-day | 09:00 | Bat ads BOFU | Performance | Meta, TikTok |
+| D-day | 12:00 | Broadcast Zalo OA | Lead | Zalo OA |
+| D+1 | 08:00 | Email follow-up lead chua mua | Lead | Email |
+| D+2 | | Dang social proof (review khach dau tien) | Content | Facebook |
+| D+3 | | Bao cao giua chang → Lead quyet dinh | Performance | — |
+| D+5 | | Day urgency | Content | Tat ca |
+| D+7 | | Nhac lan cuoi (email + bai dang) | Lead + Content | Email + Social |
+| D+7 | 23:59 | Dong offer | Lead | — |
+
+### Phase 4 — Sau launch
+
+| # | Hoat dong | Owner | Moc | Skill |
+|---|----------|-------|-----|-------|
+| 4.1 | Keo data va tong hop so lieu | Performance | D+8 | `13-phan-tich-du-lieu` |
+| 4.2 | Viet bao cao chien dich | Lead | D+9 | `07-bao-cao-marketing` |
+| 4.3 | Thu thap phan hoi khach hang | Lead | D+10 | |
+| 4.4 | Hop rut kinh nghiem voi team | Lead | D+10 | `63-campaign-retrospective` |
+| 4.5 | Setup camp evergreen (neu can) | Performance | D+14 | `57-next-ads-plan` |
+
+### Checklist truoc launch (D-1)
+
+**Content**
+- [ ] Toan bo caption, script, creative da duoc duyet (`62-marketing-review`)
+- [ ] Hinh anh dung kich thuoc tung nen tang (`50-asset-resize`)
+- [ ] Hashtag va link UTM da dien day du
+- [ ] Bai da len lich hoac co nguoi truc dang
+
+**Performance**
+- [ ] Pixel / tracking da verify xanh — **khong chay ads khi chua xanh**
+- [ ] Ads da setup xong, dang o trang thai Paused cho bat
+- [ ] Ngan sach dung theo plan
+- [ ] Landing page tai nhanh, form hoat dong dung
+- [ ] UTM day du tren tat ca link ads
+
+**Van hanh**
+- [ ] Co nguoi truc inbox trong ngay launch
+- [ ] Co kich ban tra loi comment / inbox thuong gap
+- [ ] Lead lien lac duoc trong suot ngay launch
+
+### Escalation — khi nao bao Lead ngay lap tuc
+
+| Tinh huong | Hanh dong |
+|-----------|----------|
+| Tracking khong fire | Bao ngay — **khong bat ads** |
+| Ads bi tu choi | Bao ngay |
+| CPL ngay dau > 2x target | Bao, cho quyet dinh — khong tu tang ngan sach |
+| Comment tieu cuc lan rong | Bao ngay → `66-crisis-playbook` |
+| Landing page loi / form hong | Bao ngay, tam dung ads lien quan |
+
+---
+
 ## Auto-trigger cac skill lien quan
 
 Khi brief hoan thanh, tu dong de xuat chay:
@@ -333,6 +434,10 @@ Khi brief hoan thanh, tu dong de xuat chay:
   |-- [Tiep theo 2] 04-script-video    → Viet script dua tren creative direction
   |-- [Tiep theo 3] 01-lich-noi-dung   → Len lich dang bai dua tren timeline + kenh
   |-- [Tiep theo 4] 06-brief-ugc-egc   → Brief cho UGC creators dua tren deliverables
+  |-- [Tiep theo 5] 41-campaign-asset-list → Chot danh sach asset thiet ke can lam
+  |-- [Tiep theo 6] 64-team-brief      → Chuyen brief thanh viec giao cho tung nguoi
+  |-- [Trong khi chay] 62-marketing-review → Gate duyet content va ads truoc launch
+  |-- [Sau chien dich] 63-campaign-retrospective → Hop rut kinh nghiem D+10
 ```
 
 ---
@@ -354,3 +459,9 @@ Truoc khi giao brief, kiem tra:
 - [ ] Benchmark su dung so lieu Vietnam 2025–2026
 - [ ] Tone of voice nhat quan voi thuong hieu
 - [ ] Tat ca deadline kha thi — khong bi chen nhau
+- [ ] Da chuyen brief thanh bang task theo phase, co cot Owner va Phu thuoc vao
+- [ ] Moi task co dung 1 owner — khong co task ghi "ca team"
+- [ ] Timeline duoc tinh lui tu ngay launch, co 1 ngay buffer truoc launch
+- [ ] Cac gate duyet duoc ghi ro (review content, verify tracking, pre-launch check)
+- [ ] Co checklist D-1 du 3 nhom: Content, Performance, Van hanh
+- [ ] Co quy tac escalation — nhung tinh huong phai bao Lead ngay

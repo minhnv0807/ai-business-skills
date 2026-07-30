@@ -2,7 +2,7 @@
 name: 09-insight-khach-hang
 description: Xay dung chan dung khach hang sau — Consumer vs Shopper, JTBD, hanh trinh mua hang, insight validation, internal monologue
 metadata:
-  version: 2.0.0
+  version: 2.1.0
   category: strategy
 triggers:
   - "insight khach hang"
@@ -11,6 +11,9 @@ triggers:
   - "khach hang dang nghi gi"
   - "persona"
   - "customer journey"
+  - "pain map"
+  - "objection khach hang"
+  - "ngon ngu khach hang"
 output: File .md gom persona chi tiet, insight theo 4 giai doan, JTBD, hanh trinh khach hang, va phan tang hanh vi
 related:
   - 08-nghien-cuu-doi-thu
@@ -18,6 +21,9 @@ related:
   - 05-copy-quang-cao
   - 02-brief-chien-dich
   - 04-script-video
+  - 35-brand-voice
+  - 36-content-brief
+  - 51-audience-research
 ---
 
 # Insight Khach Hang
@@ -284,6 +290,150 @@ Vuot qua demographics — phan loai theo hanh vi thuc te:
 
 ---
 
+## 5 nac thang nhu cau — tam ly hanh trinh mua
+
+Truoc khi viet persona, xac dinh tep dang o nac nao. Sai nac = content khong bao gio cham:
+
+| Nac | Trang thai | Cau noi noi tam | Cach marketing | Ngan sach nen phan bo |
+|-----|-----------|----------------|----------------|----------------------|
+| 1 | Khong co nhu cau | "Minh on ma" | Khong target — dot tien | 0% |
+| 2 | Gap van de, chua nhan ra | "Toi thay bat on nhung khong biet tai sao" | Educate — dat ten van de | TOFU |
+| 3 | Nhan ra nhung chua cap bach | "Toi biet minh can lam gi do nhung chua gap" | Agitate — khuech dai hau qua neu khong lam | TOFU/MOFU |
+| 4 | Muon giai quyet, chua chon | "Toi muon fix no nhung khong biet chon ai" | Compare — khac biet hoa, chung minh | MOFU |
+| 5 | San sang mua | "Toi san sang mua — chi can dung offer" | Close — offer ro rang, giam friction | BOFU/Retarget |
+
+**Quy tac:** mot chien dich chi keo khach len duoc 1 nac moi lan. Dung ky vong content nac 2 chot don ngay — no chi keo tu nac 2 len nac 3.
+
+---
+
+## Persona 3 tang theo do nong
+
+Khac voi phan tang hanh vi (theo lich su mua), tang nay chia theo **do nong trong hanh trinh** — dung de phan bo content va ngan sach ads.
+
+| Tang | Ten | Ho dang o dau | Cau noi noi tam mau | Can gi de len tang tren | Loai content |
+|------|-----|--------------|--------------------|------------------------|--------------|
+| **Tang 1** | Hot prospect | Sap mua, dang so sanh nha cung cap | "Cho nay voi cho kia cai nao chac an hon" | Chi con 1 objection cuoi — go no ra | Offer, guarantee, bang gia, FAQ, review khach giong ho |
+| **Tang 2** | Warm prospect | Biet co giai phap, dang can nhac co lam khong | "Co nen bo tien vao viec nay khong" | Bang chung ket qua + giam rui ro | Case study, so sanh, behind-the-scenes, quy trinh |
+| **Tang 3** | Cold prospect | Moi nhan ra van de, chua biet giai phap ten gi | "Sao dao nay minh thay te the nhi" | Dat ten cho noi dau cua ho | Edu content, story, "ban co dang gap...?" |
+
+### Template dien tung tang
+
+```
+TANG [1/2/3] — [Hot / Warm / Cold]
+- Ho dang o dau trong hanh trinh: [...]
+- Cau noi noi tam: "[Viet dung ngon ngu khach hang — KHONG viet nhu copywriter]"
+- Trigger mua: [Dieu gi khien ho quyet dinh ngay hom nay]
+- Objection cuoi cung: [...]
+- Pain chua duoc dat ten (chi Tang 3): [...]
+- Content phai tao cho tang nay: [3 angle]
+```
+
+**Lay so lam moc:** neu 80% tep dang o Tang 3 ma budget do het vao BOFU retarget → sai. Kiem tra ty trong tang truoc khi lam media plan (`54-media-plan`).
+
+---
+
+## Pain Map va Objection List
+
+### Pain Map — do sau noi dau
+
+| Pain | Do sau (1-5) | Khach dang tu giai quyet bang cach nao | Content angle khai thac |
+|------|-------------|--------------------------------------|------------------------|
+| | | | |
+
+- Do sau 1-2: khach song chung duoc → khong ban duoc, chi lam content reach.
+- Do sau 3: khach tim giai phap khi tien loi → can trigger.
+- Do sau 4-5: khach dang chu dong tim → uu tien do vao BOFU va SEO/Search.
+- **Cot "dang tu giai quyet bang cach nao" quan trong nhat** — do chinh la doi thu that su cua ban (co the la "khong lam gi ca").
+
+### Objection List
+
+| Objection (loi khach noi) | Ly do that dang sau | Cach xu ly trong content | Ai xu ly (content / sale / offer) |
+|--------------------------|--------------------|--------------------------|----------------------------------|
+| "Dat qua" | Chua thay gia tri, khong phai het tien | Entry offer nho de thay ket qua truoc | Offer |
+| "De suy nghi da" | So chon sai, khong ai bao dam | Guarantee + review khach giong ho | Content |
+| "Khong co thoi gian" | Chua du uu tien | Cho thay chi phi cua viec tri hoan | Content |
+| "So bi ep mua them" | Mat kiem soat | Bang gia minh bach, cam ket khong upsell | Offer + quy trinh sale |
+
+**Quy tac:** moi objection phai duoc gan cho 1 nguoi xu ly. Objection lien tuc quay lai o khau sale = loi cua content, khong phai loi cua sale.
+
+---
+
+## Ngan hang ngon ngu khach hang (Customer Language Bank)
+
+Insight chi co gia tri khi copy dung lai duoc **dung tu khach hang dung**. Tao ngan hang ngon ngu de skill `05-copy-quang-cao`, `04-script-video`, `37-caption-social` lay ra dung nguyen van.
+
+| Loai cau | Cau khach noi (nguyen van, giu chinh ta doi thoai) | Nguon | Dung o dau |
+|----------|--------------------------------------------------|-------|-----------|
+| Cau mo ta noi dau | "..." | Comment bai X ngay .. | Hook TOFU |
+| Cau mo ta mong muon | "..." | Review 5 sao | Benefit MOFU |
+| Cau nghi ngo / objection | "..." | Inbox | Body BOFU, FAQ |
+| Cau sau khi dung | "..." | Review 4-5 sao | Social proof |
+| Tu long khach hay dung | "..." | Group nganh | Toan bo copy |
+
+### Nguyen tac ngon ngu
+
+1. **Chep nguyen van, khong dich lai.** Khach viet "da minh cu sam sam" thi giu nguyen — dung sua thanh "lan da thieu suc song".
+2. **Uu tien cau dai.** Comment dai = khach dang thuc su ke chuyen, do la mo insight.
+3. **Cam tu marketing.** Neu cau trong bank nghe giong slogan → do la ban tu viet, khong phai khach noi. Bo.
+4. **Moi cau phai co nguon.** Khong ghi duoc nguon = gia dinh, khong duoc vao bank.
+
+---
+
+## Quy trinh thu thap insight tu review/comment that
+
+Chay quy trinh nay truoc khi dien persona — persona khong co du lieu goc la persona bia.
+
+### Buoc 1 — Thu gom mau (30-60 phut)
+
+| Nguon | So mau toi thieu | Uu tien |
+|-------|-----------------|---------|
+| Comment tren bai cua ban + 3 doi thu | 50 comment | Comment hoi va comment phan nan |
+| Inbox/tin nhan 30 ngay gan nhat | 30 hoi thoai | Cau hoi dau tien khach nhan |
+| Review Google/Shopee/Fanpage | 20 review | Review 3 sao (co ca khen va che) |
+| Group Facebook nganh | 10 bai | Bai hoi y kien, bai than |
+| Phong van khach cu | 3-5 nguoi | Khach da mua va khach da churn |
+
+### Buoc 2 — Gan tag
+
+Doc tung mau, gan 1 trong 5 tag: `PAIN` · `WANT` · `OBJECTION` · `TRIGGER` (dieu khien ho quyet dinh) · `NGON-NGU` (cach dien dat dang giu lai).
+
+### Buoc 3 — Dem tan suat
+
+| Tag | Chu de | So lan xuat hien | % tren tong mau |
+|-----|--------|-----------------|----------------|
+| PAIN | | | |
+| OBJECTION | | | |
+
+Chu de xuat hien >=20% tong mau = chu de chinh, phai co content rieng. <5% = bo qua vong nay.
+
+### Buoc 4 — Viet lai thanh insight
+
+Moi chu de chinh viet thanh 1 cau theo cong thuc: `Insight = Hanh vi quan sat duoc + Ly do that dang sau`. Sau do chay qua bo 3 tieu chi TRUE / TENSION / ACTIONABLE o tren.
+
+### Buoc 5 — Kiem tra do manh
+
+| Dau hieu insight YEU | Dau hieu insight MANH |
+|---------------------|----------------------|
+| Ai trong nganh cung noi duoc | Chi dung voi tep cua ban |
+| Khong tao duoc content angle nao cu the | Tao duoc >=3 content angle khac nhau |
+| Khach doc thay "ok, biet roi" | Khach doc thot len "sao no hieu minh vay" |
+| Chi mo ta demographic | Mo ta tam ly va mau thuan |
+
+**Tan suat cap nhat:** chay lai Buoc 1-3 moi quy, hoac ngay sau moi dot ra mat san pham/offer moi.
+
+---
+
+## Dinh vi tu insight — tranh loi dinh vi theo dich vu
+
+| Cach dinh vi | Vi du | Van de |
+|-------------|-------|--------|
+| Theo dich vu (SAI) | "Chung toi tri mun, nam, tre hoa" | Qua rong, doi thu nao cung noi duoc, khong tao khac biet |
+| Theo van de tam ly lon nhat (DUNG) | "Giup ban hieu dung tinh trang cua minh truoc khi ton tien sai cach" | Rong du de cover nhieu dich vu, manh du de lam content |
+
+Insight dinh vi phai dat 3 dieu: **rong** (cover duoc danh muc san pham), **manh** (khac biet ro voi doi thu), **actionable** (ra duoc huong content cu the). Chuyen tiep sang `58-positioning` de viet statement day du.
+
+---
+
 ## Cross-reference
 
 - Can biet doi thu dang nham vao ai? → Dung `08-nghien-cuu-doi-thu`
@@ -291,6 +441,10 @@ Vuot qua demographics — phan loai theo hanh vi thuc te:
 - Can xay hanh trinh khach hang day du? → Dung `02-brief-chien-dich`
 - Can tinh ngan sach theo phan khuc khach hang? → Dung `10-tinh-kpi-nguoc`
 - Can ke hoach tong the? → Dung `00-ke-hoach-mkt`
+- Can chuyen ngon ngu khach hang thanh tone of voice? → Dung `35-brand-voice`
+- Can dua persona vao brief content? → Dung `36-content-brief`
+- Can dung persona de build tep target ads? → Dung `51-audience-research`
+- Can viet cau dinh vi tu insight? → Dung `58-positioning`
 
 ---
 
@@ -308,3 +462,10 @@ Truoc khi giao bao cao, kiem tra:
 - [ ] Phan tang hanh vi vuot qua demographics — co hanh dong cu the cho tung phan khuc
 - [ ] Khong co gia dinh thieu co so — moi ket luan phai co nguon hoac bang chung
 - [ ] Output dan den hanh dong cu the (content, ads, san pham), khong chi mo ta
+- [ ] Da xac dinh tep dang o nac nhu cau nao (1-5) va ty trong tung nac
+- [ ] Persona 3 tang (Hot/Warm/Cold) co du cau noi noi tam, trigger, objection cuoi
+- [ ] Pain Map co cot "khach dang tu giai quyet bang cach nao" — khong de trong
+- [ ] Moi objection duoc gan cho 1 nguoi xu ly (content / sale / offer)
+- [ ] Ngan hang ngon ngu khach hang co it nhat 10 cau nguyen van kem nguon
+- [ ] Da chay quy trinh thu thap 5 buoc — khong dien persona tu tri nho
+- [ ] Insight chinh tao duoc >=3 content angle khac nhau

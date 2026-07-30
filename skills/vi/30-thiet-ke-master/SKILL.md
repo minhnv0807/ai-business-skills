@@ -5,7 +5,7 @@ description: |
   Triggers — "thiết kế ảnh", "làm logo", "ảnh poster", "banner campaign", "social post", "infographic", "key visual", "hero web mockup", "ảnh truyền thông", "avatar cá nhân", "monogram", "quote graphic", "prompt MidJourney", "prompt DALL-E", "ảnh reference", "prompt master", "đổi màu thương hiệu", "thêm logo". KHÔNG dùng cho — UI wireframe full interactive (dùng web-prototype/saas-landing thay), video creation (dùng 04-script-video + Seedance/Kling), animation (dùng motion-frames).
 argument-hint: "<design type + brand + format>"
 metadata:
-  version: 1.1.0
+  version: 1.2.0
   category: design
 triggers:
   - "thiết kế ảnh"
@@ -32,6 +32,10 @@ related:
   - 05-copy-quang-cao
   - 22-personal-brand-context
   - 24-ai-avatar-production
+  - 41-campaign-asset-list
+  - 42-brief-hinh-anh
+  - 46-brand-guideline
+  - 47-design-review
 ---
 
 # Master Thiết Kế — 30-thiet-ke-master
@@ -334,3 +338,26 @@ Nếu **không chắc 2/3 câu trên** → quay lại Step 3, re-read brand iden
 ## Plain Vietnamese policy
 
 Skill này dùng tiếng Việt phổ thông xuyên suốt — client có thể đọc, hiểu, fill cùng AI. Technical terms (gpt-image-2, DALL-E 3, MidJourney, CTR, CPM) giữ nguyên + giải thích lần đầu. Examples dùng OPA brands realistic (BHOP cafe, Lumière agency, AI Kiếm Tiền course).
+
+---
+
+## Chuyển sang skill design chuyên biệt (41-50)
+
+Skill này **tạo ra ảnh/prompt**. Khi việc cần làm là **quy trình sản xuất visual theo campaign** (lập danh sách asset, viết brief giao designer, duyệt thiết kế, resize hàng loạt), chuyển sang các skill dưới đây:
+
+| Việc cần làm | Skill |
+|--------------|-------|
+| Liệt kê toàn bộ asset campaign cần thiết kế + deadline + owner | `41-campaign-asset-list` |
+| Viết brief ảnh static / banner / thumbnail giao designer | `42-brief-hinh-anh` |
+| Viết brief carousel (logic chuỗi slide) | `43-brief-carousel` |
+| Viết brief cho editor dựng video | `44-brief-video-editor` |
+| Direction cho designer làm trên Canva | `45-brief-canva` |
+| Xây brand guideline (palette, typography, logo, component) | `46-brand-guideline` |
+| Duyệt thiết kế, chấm điểm, feedback | `47-design-review` |
+| Brief gấp khi campaign đang chạy (creative fatigue) | `48-quick-visual-brief` |
+| Code email HTML responsive | `49-html-email-template` |
+| Resize asset winner sang đa kích thước | `50-asset-resize` |
+
+**Timeline chuẩn của designer theo campaign:** T-14 lập asset list → T-7 concept MVP 30 phút để duyệt hướng → T-5 asset phức tạp (landing page, email) → T-3 asset trung bình (carousel, banner set) → T-1 asset nhanh (static, story) → launch day standby quick asset → D+1 đánh dấu winner/loser rồi resize winner.
+
+Agent phụ trách cả pipeline này: `agents/design-producer.md`.

@@ -2,7 +2,7 @@
 name: 13-phan-tich-du-lieu
 description: Doc data marketing tho va bien thanh insight hanh dong — phan tich theo kenh, chien dich, creative, doi tuong, thoi gian
 metadata:
-  version: 2.0.0
+  version: 2.1.1
   category: performance
 triggers:
   - "phan tich du lieu"
@@ -12,12 +12,18 @@ triggers:
   - "phan tich Meta Ads"
   - "phan tich TikTok Ads"
   - "xem bao cao GA4"
+  - "ra quyet dinh tu data"
+  - "decision log"
+  - "nhin so xong khong biet lam gi"
 output: File .md chua bao cao insight co cau truc — descriptive, diagnostic, predictive, prescriptive — voi bang bieu va de xuat cu the
 related:
   - 03-danh-gia-hieu-suat
   - 07-bao-cao-marketing
   - 10-tinh-kpi-nguoc
   - 12-brief-landing-page
+  - 21-audit-ads-performance
+  - 39-content-audit
+  - 40-next-content-plan
 ---
 
 # Phan Tich Du Lieu Marketing
@@ -56,6 +62,26 @@ Hoi user toi da 4 cau:
 | So sanh, khong doc tuyet doi | Luon so sanh voi: tuan truoc (WoW), thang truoc (MoM), hoac benchmark nganh |
 | Flag bat thuong | Bat ky chi so nao thay doi > 20% so voi ky truoc → danh dau de dieu tra |
 | De xuat co thoi han | Moi de xuat phai co: lam gi, khi nao, ai lam, do bang gi |
+
+### Metric phu phiem vs metric hanh dong
+
+Khong phai so nao cung dang dua vao bao cao. Phan loai truoc khi phan tich — bao cao 50 chi so thi khong ai ra duoc quyet dinh nao.
+
+| | **Metric phu phiem (vanity)** | **Metric hanh dong (actionable)** |
+|---|---|---|
+| Vi du | Reach, Impression, Like, Follower, View, So bai dang | CPL/CPMess, CTR, CVR tung buoc, Close rate, ROAS, CAC, LTV, Frequency, Watch time % |
+| Dac diem | Chi tang, hiem khi giam; khong gan voi tien | Gan truc tiep voi doanh thu hoac chi phi |
+| Doc xong lam duoc gi | Thuong la khong lam gi — chi de bao cao cho dep | Ra duoc 1 quyet dinh cu the: tang / giam / doi / dung |
+| Khi nao van huu ich | Khi so sanh voi chinh minh ky truoc, hoac lam mau so cho ti le (VD: Share / Reach) | Luon huu ich |
+
+**Quy tac chon chi so:** moi ky bao cao chi giu **3-4 chi so chinh + 5-6 chi so ho tro**. Nhieu hon la loang, khong ai hanh dong.
+
+**Cau hoi loc:** "Neu con so nay xau di 30%, minh se lam gi khac di?" — khong tra loi duoc = metric phu phiem, bo khoi bao cao chinh.
+
+**3 loi doc so hay gap:**
+1. Chi track lead, khong track sale → 1,000 lead nhung 10 khach ma khong biet nghen o ads hay o sale. Phai track full funnel: impression → lead → sale → mua lai.
+2. Benchmark voi nganh thay vi voi chinh minh → CPL 25K (nganh 15K) nen tat camp, trong khi thang truoc chinh minh la 30K, tuc la dang tot len.
+3. Doc so tuyet doi khong doc trend → 1 ngay xau khong noi len gi; toi thieu 5-7 ngay voi chi so performance.
 
 ---
 
@@ -207,173 +233,19 @@ Engagement giam
 
 ## Phan tich nhom (Cohort Analysis)
 
-### Template cohort theo thang
-
-| Cohort (thang tham gia) | Thang 1 | Thang 2 | Thang 3 | Thang 6 | Thang 12 |
-|--------------------------|---------|---------|---------|---------|----------|
-| T1/2025 (100 khach) | 100% | [X%] con hoat dong | [X%] | [X%] | [X%] |
-| T2/2025 (120 khach) | 100% | [X%] | [X%] | [X%] | — |
-| T3/2025 (95 khach) | 100% | [X%] | [X%] | — | — |
-
-**Cach doc:**
-- Ti le giam deu qua cac thang → Churn tu nhien, can chuong trinh retention
-- Ti le giam manh o thang 2 → Trai nghiem dau tien kem, can cai thien onboarding
-- Ti le on dinh tu thang 3 → Da dat "retention floor", tap trung vao nhom nay
-
-### Cohort theo nguon traffic
-
-| Nguon | So khach | CAC | LTV 90 ngay | LTV:CAC |
-|-------|---------|-----|------------|---------|
-| Meta Ads | [X] | [X] | [X] | [X:1] |
-| TikTok Ads | [X] | [X] | [X] | [X:1] |
-| Organic | [X] | [X] | [X] | [X:1] |
-| Referral | [X] | [X] | [X] | [X:1] |
+> Template cohort theo thang (kem 3 quy tac doc duong retention) va template cohort theo nguon traffic (CAC, LTV 90 ngay, LTV:CAC): doc `references/cohort-va-attribution.md` muc "Phan tich nhom (Cohort Analysis)".
 
 ---
 
 ## Attribution Model
 
-### So sanh 3 mo hinh
-
-| Mo hinh | Cach tinh | Dung khi |
-|---------|----------|----------|
-| Last Click | 100% credit cho diem cham cuoi | Mac dinh, don gian, pheu ngan |
-| First Click | 100% credit cho diem cham dau | Danh gia kenh TOFU, xay awareness |
-| Linear | Chia deu cho moi diem cham | Pheu dai, nhieu kenh, can cai nhin cong bang |
-
-**Template so sanh attribution:**
-
-| Kenh | Last Click | First Click | Linear | Nhan xet |
-|------|-----------|-------------|--------|----------|
-| Meta Ads | [X don] | [X don] | [X don] | [Vai tro chinh: TOFU/BOFU?] |
-| TikTok Ads | [X don] | [X don] | [X don] | [Vai tro chinh?] |
-| Google Search | [X don] | [X don] | [X don] | [Vai tro chinh?] |
-| Organic | [X don] | [X don] | [X don] | [Vai tro chinh?] |
-
-**Khuyen nghi:**
-- Pheu ngan (1–3 ngay): dung Last Click
-- Pheu trung binh (7–14 ngay): dung Linear
-- Pheu dai (30+ ngay): dung First Click cho TOFU, Last Click cho BOFU
+> Bang so sanh 3 mo hinh (Last Click, First Click, Linear) kem template doi chieu don theo tung kenh va khuyen nghi chon mo hinh theo do dai pheu: doc `references/cohort-va-attribution.md` muc "Attribution Model".
 
 ---
 
 ## Template ket qua
 
-```markdown
-# Bao Cao Phan Tich Du Lieu — [Ten thuong hieu/Chien dich]
-Khung thoi gian: [Tu ngay] — [Den ngay]
-Nguon du lieu: [Meta Ads / TikTok Ads / GA4 / Google Sheets / ...]
-Ngay phan tich: [YYYY-MM-DD]
-
----
-
-## 1. Tom tat (Executive Summary)
-
-**3 insight quan trong nhat:**
-1. [Insight 1 — viet dang nhan dinh, khong liet ke so]
-2. [Insight 2]
-3. [Insight 3]
-
-**Trang thai tong:** [Xanh = on dinh | Vang = can theo doi | Do = can hanh dong gap]
-
----
-
-## 2. Descriptive — Da xay ra gi?
-
-### Tong quan chi so
-
-| Chi so | Ky nay | Ky truoc | Thay doi | Benchmark nganh | Trang thai |
-|--------|--------|---------|----------|----------------|-----------|
-| Spend | [X] | [X] | [+/- %] | — | [icon] |
-| Impression | [X] | [X] | [+/- %] | — | [icon] |
-| Click | [X] | [X] | [+/- %] | — | [icon] |
-| CTR | [X%] | [X%] | [+/- %] | [X%] | [icon] |
-| Lead | [X] | [X] | [+/- %] | — | [icon] |
-| CPL | [X] | [X] | [+/- %] | [X] | [icon] |
-| ROAS | [Xx] | [Xx] | [+/- %] | [Xx] | [icon] |
-
-### Hieu suat theo kenh
-
-| Kenh | Spend | Lead | CPL | ROAS | % Ngan sach | Nhan xet |
-|------|-------|------|-----|------|------------|----------|
-| Meta Ads | [X] | [X] | [X] | [Xx] | [X%] | [1 cau] |
-| TikTok Ads | [X] | [X] | [X] | [Xx] | [X%] | [1 cau] |
-| Google Ads | [X] | [X] | [X] | [Xx] | [X%] | [1 cau] |
-
-### Top 5 chien dich
-
-| Chien dich | Spend | Lead | CPL | ROAS | Nhan xet |
-|-----------|-------|------|-----|------|----------|
-| 1. [Ten] | [X] | [X] | [X] | [Xx] | [1 cau] |
-| 2. [Ten] | [X] | [X] | [X] | [Xx] | [1 cau] |
-| 3. [Ten] | [X] | [X] | [X] | [Xx] | [1 cau] |
-| 4. [Ten] | [X] | [X] | [X] | [Xx] | [1 cau] |
-| 5. [Ten] | [X] | [X] | [X] | [Xx] | [1 cau] |
-
-### Top 3 creative
-
-| Creative | Format | Hook rate | CTR | CPL | Thoi gian chay | Nhan xet |
-|----------|--------|----------|-----|-----|----------------|----------|
-| 1. [Ten/Mo ta] | [Video/Image/Carousel] | [X%] | [X%] | [X] | [X ngay] | [1 cau] |
-| 2. [Ten/Mo ta] | [Format] | [X%] | [X%] | [X] | [X ngay] | [1 cau] |
-| 3. [Ten/Mo ta] | [Format] | [X%] | [X%] | [X] | [X ngay] | [1 cau] |
-
----
-
-## 3. Diagnostic — Tai sao?
-
-### Dieu tot — tai sao thanh cong?
-- [Nguyen nhan 1 + bang chung so lieu]
-- [Nguyen nhan 2 + bang chung so lieu]
-
-### Dieu chua tot — tai sao chua dat?
-- [Nguyen nhan 1 + bang chung so lieu + giai phap]
-- [Nguyen nhan 2 + bang chung so lieu + giai phap]
-
-### Bat thuong can chu y
-- [Chi so bat thuong 1 — mo ta + nguyen nhan kha nang + de xuat dieu tra]
-- [Chi so bat thuong 2]
-
----
-
-## 4. Predictive — Du bao
-
-### Du bao tuan/thang toi (3 kich ban)
-
-| Chi so | Xau | Co so | Tot |
-|--------|-----|-------|-----|
-| Spend | [X] | [X] | [X] |
-| Lead | [X] | [X] | [X] |
-| CPL | [X] | [X] | [X] |
-| ROAS | [Xx] | [Xx] | [Xx] |
-| Revenue | [X] | [X] | [X] |
-
-### Yeu to anh huong du bao
-- [Yeu to 1: mua vu, doi thu, thay doi thuat toan, ...]
-- [Yeu to 2]
-
----
-
-## 5. Prescriptive — Can lam gi?
-
-### Hanh dong ngay (trong 48h)
-| # | Hanh dong | Ai lam | Deadline | Do bang |
-|---|----------|--------|----------|---------|
-| 1 | [Mo ta cu the] | [Vai tro] | [Ngay] | [Chi so] |
-| 2 | [Mo ta cu the] | [Vai tro] | [Ngay] | [Chi so] |
-
-### Hanh dong tuan nay
-| # | Hanh dong | Ai lam | Deadline | Do bang |
-|---|----------|--------|----------|---------|
-| 1 | [Mo ta cu the] | [Vai tro] | [Ngay] | [Chi so] |
-| 2 | [Mo ta cu the] | [Vai tro] | [Ngay] | [Chi so] |
-
-### Hanh dong thang nay
-| # | Hanh dong | Ai lam | Deadline | Do bang |
-|---|----------|--------|----------|---------|
-| 1 | [Mo ta cu the] | [Vai tro] | [Ngay] | [Chi so] |
-| 2 | [Mo ta cu the] | [Vai tro] | [Ngay] | [Chi so] |
-```
+> Khung markdown day du 5 muc theo dung thu tu doc data (Tom tat · Descriptive · Diagnostic · Predictive · Prescriptive), gom bang tong quan chi so, hieu suat theo kenh, top 5 chien dich, top 3 creative, du bao 3 kich ban va 3 bang hanh dong theo moc thoi gian: doc `references/template-bao-cao-phan-tich.md` va copy nguyen khung de dien so lieu.
 
 ---
 
@@ -390,6 +262,131 @@ Khi phan tich, tu dong kiem tra cac tinh huong sau:
 | Frequency > 4 | Audience da bao hoa | Mo rong audience hoac doi kenh |
 | Spend < 70% ngan sach | Audience qua hep hoac bid qua thap | Mo rong audience, tang bid |
 | 1 kenh chiem > 60% spend | Phu thuoc 1 kenh — rui ro cao | Phan bo lai, test kenh moi |
+
+---
+
+## Tu data den quyet dinh — quy trinh 4 buoc
+
+Data khong tu ra quyet dinh. Ba cau hoi duy nhat can tra loi: **(1) Dang xay ra gi? (2) Tai sao? (3) Minh lam gi tiep?**
+
+### Buoc 1 — Data snapshot
+
+| Chi so | Target | Thuc te | Trang thai | vs ky truoc |
+|--------|--------|---------|-----------|-------------|
+| Doanh thu | | | | |
+| Lead | | | | |
+| CPL | | | | |
+| ROAS | | | | |
+
+Flag ngay chi so bat thuong — tot hon HOAC xau hon dang ke so voi baseline. Tot bat thuong cung phai dieu tra: co the do tracking sai.
+
+### Buoc 2 — Chan doan bang 5-Why
+
+Chi ap dung cho chi so da flag. Dung dung o Why 1 — nguyen nhan goc thuong nam o Why 3-4 va thuong khac han trieu chung ban dau.
+
+```
+Trieu chung : [Chi so X tang/giam Y%]
+Why 1       : [Ly do nhin thay ngay]
+Why 2       : [Dao sau vao ly do 1]
+Why 3       : [...]
+Why 4       : [...]
+Nguyen nhan goc: [...]
+```
+
+### Buoc 3 — Nhan dien pattern
+
+| Pattern | Y nghia | Hanh dong |
+|---------|---------|----------|
+| CPM tang nhung CTR giu nguyen | Tep dang bao hoa, khong phai creative hong | Mo rong targeting |
+| Organic ER cao nhung ads CTR thap | Message tot chua duoc dua vao paid | Dua content organic thang len ads |
+| Email open rate giam | Subject line kem hoac list met | A/B test subject, lam sach list |
+| Cuoi tuan tot hon ngay thuong | Tep hoat dong cuoi tuan | Doi lich va tang ngan sach cuoi tuan |
+| Lead nhieu nhung close rate giam | Van de o chat luong lead hoac o sale | Siet tieu chi lead, xem lai kich ban tu van |
+| Creative moi luon thua creative cu | Cach viet brief dang loi, khong phai nguoi lam | Xem lai `36-content-brief` |
+
+### Buoc 4 — Decision matrix
+
+| Tinh huong | Nguong | Quyet dinh | Thoi han |
+|-----------|--------|-----------|---------|
+| CPL < 70% target, on dinh >= 5 ngay | CPL < 70% | Tang ngan sach +30% | Ngay |
+| CPL 70-100% target | On track | Giu nguyen, theo doi | — |
+| CPL 100-150% target | Canh bao | Audit creative + tep | Trong 48h |
+| CPL > 150% target sau 5 ngay | Nghiem trong | Pause + dieu tra | Ngay |
+| ROAS > 5x va frequency < 2 | Rat tot | Scale ngan sach | Ngay |
+| Frequency 2.0-2.5 | Bat dau fatigue | Chuan bi creative moi | Trong tuan |
+| Frequency > 2.5 | Fatigue | Pause creative do | Ngay |
+| Close rate giam vs tuan truoc | — | Van de o sale, KHONG phai o ads | Trong tuan |
+
+### Nguyen tac ra quyet dinh
+
+1. **Toi thieu 5-7 ngay du lieu** voi chi so performance. Khong quyet dinh tu 1-2 ngay.
+2. **Doi 1 bien moi lan.** Doi tep + creative + ngan sach cung luc = khong hoc duoc gi.
+3. **"Chua du data" khong phai ly do de khong quyet dinh.** Quyet dinh voi data hien co, dat moc review lai.
+4. **Quyet dinh sai co ghi chep** van tot hon **khong quyet dinh vi so sai**.
+
+---
+
+## Decision Log va Learning Log
+
+Hai bang nay la tai san tich luy. Sau 3-6 thang, pattern trong log dang gia hon bat ky benchmark nganh nao.
+
+### Decision Log — ghi ngay khi ra quyet dinh
+
+| # | Quyet dinh | Can cu (data nao dan den) | Hanh dong cu the | Nguoi chiu trach nhiem | Deadline | Expected impact | Ngay review lai |
+|---|-----------|--------------------------|-----------------|----------------------|---------|----------------|----------------|
+| 1 | | | | | | | |
+| 2 | | | | | | | |
+
+**Bat buoc 7 cot — thieu cot nao thi quyet dinh do khong tinh:**
+- **Can cu**: chi so nao, ky nao, lech bao nhieu. Khong duoc ghi "thay no khong on".
+- **Expected impact**: du doan so se thay doi the nao (VD: "CPL giam tu 30K ve 24K trong 14 ngay"). Ghi truoc, khong ghi sau.
+- **Ngay review lai**: mac dinh sau 5-7 ngay voi quyet dinh ve ads, 30 ngay voi quyet dinh ve offer/gia.
+
+### Learning Log — dien vao dung ngay review
+
+| Ngay | Quyet dinh | Ly do luc do | Ket qua thuc te | Khop du doan? | Bai hoc |
+|------|-----------|-------------|----------------|--------------|---------|
+| | | | | Dung / Lech / Nguoc | |
+
+**Cach dung:** moi thang doc lai Learning Log, dem so quyet dinh **Nguoc** du doan. Nhieu quyet dinh nguoc trong cung 1 chu de = gia dinh nen dang sai, phai sua o `10-tinh-kpi-nguoc` hoac `09-insight-khach-hang`, khong phai sua tiep o tang ads.
+
+---
+
+## Doc data content (organic)
+
+3 cau hoi phai tra loi moi tuan:
+
+1. Content nao dang tot nhat? → **Nhan ban pattern**, khong nhan ban noi dung.
+2. Content nao dang kem? → Dung hoac sua.
+3. Format / goc nhin nao nen test tiep? → Dua vao `40-next-content-plan`.
+
+### Content Win / Lose
+
+**Mot content duoc tinh la WIN khi dat >= 2 trong 3 tieu chi:**
+1. ER cao hon trung binh kenh toi thieu 2 lan
+2. Dan den hanh dong cu the (DM, click, share, luu)
+3. Nhan phan hoi tich cuc tu **dung tep** (khong phai tu nguoi ngoai tep)
+
+Moi thang: lay Top 5 content WIN → tim pattern chung (format / goc nhin / pillar / hook / khung gio) → nhan ban pattern do.
+
+### Chi so organic dang doc
+
+| Kenh | Chi so quan trong nhat | Nguong tot |
+|------|----------------------|-----------|
+| TikTok / Reels | Watch time % (thuat toan xep hang chu yeu dua vao day) | > 50% |
+| TikTok / Reels | Completion rate | > 30% |
+| TikTok / Reels | Share / views | > 1% |
+| Facebook / Threads | Engagement rate | > 3% |
+| Facebook / Threads | Comment that (co noi dung) | Quan trong hon Like |
+
+### Gan content voi doanh thu (cach lam cho SME)
+
+1. **UTM** tren moi link → biet traffic tu content nao.
+2. **Hoi truc tiep** trong form: "Ban biet den chung toi qua dau?"
+3. **Cohort**: khach inbox sau khi xem video nao — doi chieu ngay inbox voi ngay dang.
+4. **Tuong quan**: content nao dang len thi DM tang trong 24-48h sau.
+
+Khong co he thong attribution hoan hao cho SME — dung 2-3 cach tren cung luc va doc theo xu huong, khong doc theo con so tuyet doi.
 
 ---
 
@@ -416,3 +413,10 @@ Khi phan tich, tu dong kiem tra cac tinh huong sau:
 - [ ] Khong liet ke so lieu ma khong co nhan dinh di kem
 - [ ] Nguon du lieu va khung thoi gian ghi ro rang
 - [ ] So lieu da doi chieu cheo — spend tren platform khop voi spend thuc te
+- [ ] Bao cao chi giu 3-4 chi so chinh + 5-6 chi so ho tro — khong liet ke 50 so
+- [ ] Moi chi so trong bao cao chinh deu tra loi duoc "neu xau di 30% thi lam gi khac"
+- [ ] Chi so da flag deu da chay 5-Why den nguyen nhan goc
+- [ ] Co Decision Log du 7 cot, gom expected impact va ngay review lai
+- [ ] Khong ra quyet dinh tu duoi 5 ngay du lieu performance
+- [ ] Moi hanh dong de xuat chi doi 1 bien
+- [ ] Da doi chieu voi chinh minh ky truoc, khong chi doi chieu benchmark nganh

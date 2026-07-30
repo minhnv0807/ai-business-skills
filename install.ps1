@@ -30,7 +30,7 @@ Write-Host "Installing to: $Target" -ForegroundColor Green
 Write-Host ""
 
 # Create directories
-$dirs = @("", "references", "workflows", "agents")
+$dirs = @("", "references", "workflows", "agents", "knowledge")
 foreach ($d in $dirs) {
     $path = Join-Path $Target $d
     if (-not (Test-Path $path)) {
@@ -44,6 +44,7 @@ $sources = @(
     @{ From = "references\*"; To = "references" },
     @{ From = "workflows\*"; To = "workflows" },
     @{ From = "agents\*"; To = "agents" },
+    @{ From = "knowledge\*"; To = "knowledge" },
     @{ From = "CLAUDE.md"; To = "" }
 )
 

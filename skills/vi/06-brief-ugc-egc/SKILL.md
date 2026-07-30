@@ -2,7 +2,7 @@
 name: 06-brief-ugc-egc
 description: Tao brief chi tiet cho UGC (khach hang), EGC (nhan vien), KOC (creator tra phi) — gom huong dan quay, do/don't, quyen su dung, quan ly batch
 metadata:
-  version: 2.0.0
+  version: 2.1.0
   category: content
 triggers:
   - "brief creator"
@@ -12,12 +12,18 @@ triggers:
   - "brief KOC"
   - "brief seeding"
   - "quan ly creator"
+  - "tim KOC"
+  - "tra phi creator"
+  - "do luong KOC"
 output: file .md gom brief chi tiet theo loai (UGC/EGC/KOC), tieu chi chon creator, huong dan quay, hop dong quyen, bang quan ly batch
 related:
   - 04-script-video
   - 05-copy-quang-cao
   - 01-lich-noi-dung
   - 03-danh-gia-hieu-suat
+  - 38-seeding-plan
+  - 44-brief-video-editor
+  - 67-agency-vendor-brief
 ---
 
 # Brief UGC / EGC / KOC
@@ -290,12 +296,107 @@ Ban chinh giup trong 24h nha — cam on nhieu!"
 
 ---
 
+## He thong UGC / Creator — 5 khau
+
+Brief chi la 1 trong 5 khau. Thieu khau nao he thong cung dut: tim duoc creator ma khong duyet duoc, duyet duoc ma khong do duoc hieu qua thi lan sau khong biet re-book ai.
+
+```
+1 TIM  →  2 BRIEF  →  3 DUYET  →  4 TRA PHI  →  5 DO LUONG  →  (re-book hoac dung)
+```
+
+### Khau 1 — TIM creator
+
+| Loai | Nguon tim | Tieu chi loc |
+|------|----------|-------------|
+| UGC (khach that) | Danh sach khach da mua, review 4-5 sao, khach hay comment/inbox | Da dung san pham that, co ket qua ke duoc, san long quay mat hoac chi quay tay |
+| FGC (founder) | Chinh founder / nguoi dung dau | Co cau chuyen that, xuat hien deu duoc | 
+| KOC (creator nho, tra phi) | TikTok/Instagram theo hashtag nganh, group nganh, danh sach KOC cua agency | **ER >= 3%** · tep follower khop ICP · phong cach content hop brand · da tung review nganh tuong tu |
+| KOL (creator lon) | Agency, nen tang trung gian | Reach rong nhung chi phi cao va ROI kho do — chi dung khi muc tieu la do phu |
+
+**3 so phai kiem truoc khi chot 1 KOC:** ER thuc te (khong tin so follower), ty le comment that / comment chung chung, va do trung tep voi khach hien co (trung qua nhieu = tra tien de tiep can nguoi da biet minh).
+
+### Khau 2 — BRIEF
+
+Dung template brief chi tiet o tren. Rieng voi **UGC la khach hang that**, dung gui brief 5 trang — gui tin nhan ngan:
+
+```
+Chao [Ten],
+Cam on ban da tin tuong [Thuong hieu]. Khong can hoan hao — chi can that la du.
+
+Ban co the chia se ve:
+- Van de ban gap TRUOC khi dung [san pham]?
+- Trai nghiem thuc te khi dung?
+- Ket qua sau khi dung?
+
+Format: video 30-60s quay doc 9:16, hoac 2-3 tam anh + caption 3-5 cau tu nhien
+Khi dang: tag @[thuong hieu] + hashtag #[...]
+Cam on ban: [voucher / duoc len trang chinh / tang san pham]
+```
+
+**Nguyen tac brief:** du chi tiet de creator khong phai hoi lai, nhung **khong viet script cung**. Creator hieu tep cua ho hon minh — minh chi dat hang rao (key message, dieu khong duoc noi, tone), khong doc tung cau.
+
+### Khau 3 — DUYET
+
+| Buoc | Viec | Thoi han chuan |
+|------|------|---------------|
+| 3.1 | Creator nop ban tho (chua edit hoac edit so) | Theo deadline trong brief |
+| 3.2 | Brand phan hoi | Trong 2 ngay lam viec — cham hon la mat da creator |
+| 3.3 | Creator sua | Toi da **2 lan sua** — ghi ro trong brief tu dau |
+| 3.4 | Duyet ban cuoi | 1 ngay |
+| 3.5 | Creator dang | Trong 3 ngay ke tu khi duyet |
+
+**Dieu khoan bat buoc ghi trong brief truoc khi quay:**
+- Preview cho brand truoc khi dang **it nhat 2 ngay**
+- **Khong xoa bai** trong toi thieu [3-6] thang
+- Co **disclosure** (#ad / #quangcao / danh dau noi dung tai tro) theo quy dinh nen tang va phap luat
+- Ghi ro brand duoc dung lai video de chay ads hay khong, trong bao lau
+
+**Phan hoi sua the nao:** ghi theo timestamp va noi ro can gi, khong ghi cam tinh. Vi du: `[0:05] them text overlay ten san pham` — khong phai "video chua hay lam".
+
+### Khau 4 — TRA PHI
+
+| Mo hinh | Cach lam | Phu hop |
+|--------|---------|---------|
+| Tang san pham / dich vu | Doi lay noi dung, khong tra tien mat | UGC, KOC rat nho |
+| Phi co dinh | Tra tron goi theo so video | KOC, KOL — de kiem soat ngan sach |
+| Co dinh + thuong theo hieu suat | Phi nen + thuong theo view/click/don | KOC da hop tac >= 2 lan |
+| Hoa hong (affiliate) | Tra theo don ban duoc | Khi da co he thong tracking ma giam gia rieng |
+
+**Ky luat thanh toan:** thanh toan dung han la yeu to giu creator tot quan trong hon gia. Chot ro moc thanh toan trong brief (VD: 50% khi duyet ban cuoi, 50% trong 7 ngay sau khi dang).
+
+### Khau 5 — DO LUONG
+
+| Chi so | Cach do | Dung de |
+|--------|--------|---------|
+| View / Reach that | Screenshot analytics tu creator (khong lay so tren giao dien cong khai) | Doi chieu voi cam ket |
+| ER tren bai tai tro | (Like + comment + share) / reach | So voi ER thuong ngay cua creator — giam manh = tep khong quan tam noi dung tai tro |
+| Traffic ve | Link UTM rieng cho tung creator | Do dong gop that |
+| Lead / don | Ma giam gia rieng tung creator + cau hoi "biet den qua dau" trong form | Tinh chi phi tren 1 lead theo creator |
+| Chi phi / ket qua | Tong chi phi / so lead (hoac view) | So sanh creator voi nhau va voi ads |
+| Do dung lai duoc | Video co dung lam creative cho ads duoc khong | KOC cho ra video chay ads tot co gia tri gap doi |
+
+**Quyet dinh sau do luong:**
+
+| Ket qua | Hanh dong |
+|---------|----------|
+| Chi phi/lead thap hon ads dang chay | Re-book, tang so luong video, dam phan goi dai han |
+| Ngang ads | Re-book 1 lan nua de xac nhan, chua tang ngan sach |
+| Cao hon ads dang chay | Dung hop tac, tru khi muc tieu la do phu thuong hieu chu khong phai lead |
+| Video hay nhung it view | Xin quyen dung lai lam creative ads — noi dung tot, van de o kenh phan phoi |
+
+**Ghi lai tat ca vao bang theo doi creator** (o tren) de quy sau khong phai tim lai tu dau.
+
+---
+
 ## Lien ket skill lien quan
 
 - **04-script-video** — Script chi tiet cho creator tham khao khi quay
 - **05-copy-quang-cao** — Dung video UGC/KOC lam creative cho ads — can copy di kem
 - **01-lich-noi-dung** — Xep lich dang video creator vao lich noi dung tong
 - **03-danh-gia-hieu-suat** — Danh gia hieu suat creator de quyet dinh re-book
+- **38-seeding-plan** — Khi noi dung creator duoc dung de seeding vao group/cong dong
+- **44-brief-video-editor** — Khi video creator can dung lai truoc khi dang hoac chay ads
+- **67-agency-vendor-brief** — Khi thue agency/nen tang trung gian quan ly nhieu KOC
 
 ---
 

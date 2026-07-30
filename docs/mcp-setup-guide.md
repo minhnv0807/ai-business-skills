@@ -3,7 +3,7 @@
 > **Muc dich:** Huong dan TUNG BUOC de ket noi Claude/ChatGPT voi tai khoan Meta Ads, Google Ads, TikTok Ads.
 > Sau khi setup, AI co the tu dong pull data thay vi ban phai paste so lieu.
 >
-> **Reference ky thuat day du:** `skills/references/mcp-ads-integration.md`
+> **Reference ky thuat day du:** `skills/vi/references/mcp-ads-integration.md`
 
 ---
 

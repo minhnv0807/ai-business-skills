@@ -2,7 +2,7 @@
 name: 03-danh-gia-hieu-suat
 description: Danh gia hieu suat marketing — audit performance ads va organic, chan doan root cause, de xuat toi uu voi action plan 48h va checklist hang tuan.
 metadata:
-  version: 2.2.0
+  version: 2.3.1
   category: performance
 triggers:
   - "danh gia chien dich"
@@ -12,6 +12,8 @@ triggers:
   - "CPMess cao qua"
   - "ROAS thap"
   - "toi uu ads"
+  - "so dang xau"
+  - "chan doan root cause"
 output: File .md gom diagnostic, root cause analysis, benchmark comparison, 48h action plan, va weekly optimization checklist
 related:
   - 07-bao-cao-marketing
@@ -20,6 +22,8 @@ related:
   - 05-copy-quang-cao
   - 04-script-video
   - 21-audit-ads-performance
+  - 55-scaling-ads
+  - 57-next-ads-plan
   - references/quality-gates-vn
 ---
 
@@ -39,7 +43,7 @@ Hoi user toi da 4 cau truoc khi bat dau:
 ### Auto-pull data qua MCP (neu co ket noi)
 
 > Neu user da setup MCP server, pull data tu dong thay vi yeu cau paste.
-> Xem huong dan: `skills/references/mcp-ads-integration.md`
+> Xem huong dan: `skills/vi/references/mcp-ads-integration.md`
 > **Meta Official MCP:** `https://mcp.facebook.com/ads` — setup 5 phut qua `claude.ai/settings/integrations`
 
 | Nen tang | MCP khuyen dung | Data pull |
@@ -110,7 +114,7 @@ Health Score = Σ(Check_pass × W_severity × W_category) / Σ(Check_total × W_
 
 ### 10 Quality Gates — Bat buoc kiem tra truoc moi de xuat
 
-> **Reference:** `skills/references/quality-gates-vn.md` — 10 hard rules KHONG bao gio vi pham.
+> **Reference:** `skills/vi/references/quality-gates-vn.md` — 10 hard rules KHONG bao gio vi pham.
 
 | Gate | Quy tac | Nguong vi pham | Hanh dong bat buoc |
 |------|---------|---------------|-------------------|
@@ -131,131 +135,38 @@ Health Score = Σ(Check_pass × W_severity × W_category) / Σ(Check_total × W_
 
 ## Phan 1 — Diagnostic Decision Tree
 
+### Quy trinh chan doan 5 layer (chay TRUOC khi doc cay trieu chung)
+
+So xau la trieu chung, khong phai benh. Dao tung layer tu tren xuong, moi layer phai sach truoc khi di tiep — dung thay creative khi van de nam o tracking.
+
+**Layer 1 — Tracking va chat luong data.** Pixel co fire dung khong (dung Pixel Helper)? Conversion event dang do dung thu can do hay dang do PageView? UTM day du chua? Co event trung lap khong?
+→ Neu tracking sai: fix tracking truoc, khong lam gi khac. Moi so lieu phia sau deu vo nghia.
+
+**Layer 2 — Delivery va dau gia.** CPM co tang khong? Frequency dang o dau (>3.5 canh bao, >5 phai tat)? Co dang trong learning phase khong (khong dung vao adset trong learning)?
+→ CPM tang + frequency cao = audience bao hoa → mo rong tep hoac doi creative.
+→ CPM tang + frequency thap = CPM thi truong tang theo mua → cho hoac chinh bid, khong doi creative.
+
+**Layer 3 — Creative va hook.** CTR co giam khong? Hook rate (3s view) co giam khong? Creative nay chay bao lau roi?
+→ CTR giam + creative cu = creative fatigue → refresh (goi `48-quick-visual-brief`).
+→ CTR thap ngay tu ngay dau = hook chua du manh hoac sai audience — khong phai fatigue.
+
+**Layer 4 — Landing page va offer.** CTR on nhung CPL cao? LP load qua 3 giay? Form qua 4 truong? Thong diep ads va LP co khop khong?
+→ CTR on ma CPL cao gan nhu luon la van de LP hoac offer, khong phai creative.
+
+**Layer 5 — Chat luong audience.** Lead nhieu nhung close rate thap? Tep qua rong hay qua hep?
+→ Lead nhieu ma khong chot duoc = van de chat luong lead → them cau hoi loc, hoac doi tep.
+
+Sau khi xac dinh layer co van de, ghi ro: root cause co kha nang nhat · bang chung ung ho (2-3 data point) · gia thuyet da loai tru · muc do tu tin (cao/trung binh/thap — neu thap thi can test them truoc khi hanh dong lon).
+
 ### Cay chan doan: Tu trieu chung den nguyen nhan
 
-```
-[CPMess CAO]
-  |-- CTR thap (<1%)?
-  |     |-- Hook yeu → Viet lai 3s dau
-  |     |-- Targeting sai → Thu hep/mo rong audience
-  |     |-- Creative cu (>7 ngay) → Lam creative moi
-  |
-  |-- CTR binh thuong (1–3%) nhung CPMess van cao?
-  |     |-- CPM tang (mua cao diem) → Giam budget, doi gio chay
-  |     |-- Audience qua nho → Mo rong audience, test LAL moi
-  |     |-- Bid cao → Chuyen sang lowest cost
-  |
-  |-- CTR cao (>3%) nhung CPMess van cao?
-        |-- Landing page/inbox khong chuyen doi → Fix landing page
-        |-- CTA khong ro → Viet lai CTA cu the hon
-```
-
-```
-[ROAS THAP (<2x)]
-  |-- CPMess tot nhung it don?
-  |     |-- Funnel bi leak → Kiem tra tung buoc: Mess→Lead→Booking→Customer
-  |     |-- Sales cham → Cai thien response time, script chot
-  |     |-- San pham/gia khong phu hop → Review offer
-  |
-  |-- CPMess cao + it don?
-  |     |-- Quay lai cay [CPMess CAO] tren
-  |
-  |-- Nhieu don nhung AOV thap?
-        |-- Cross-sell/Upsell yeu → Them combo, goi lon hon
-        |-- Khach mua hang re → Dieu chinh targeting, loai deal hunter
-```
-
-```
-[LEAD CHAT LUONG KEM]
-  |-- Nhieu mess nhung it lead qualified?
-  |     |-- Targeting qua broad → Thu hep, dung LAL tu khach tot
-  |     |-- Content hut sai nguoi → Dieu chinh hook + CTA
-  |     |-- Gia tri chua ro → Tang giao duc truoc khi CTA
-  |
-  |-- Lead qualified nhung khong booking?
-  |     |-- Follow-up cham (>2h) → Response trong 15 phut
-  |     |-- Script chot yeu → Viet lai script, training sales
-  |     |-- Gia qua cao → Bundle, tra gop, trial
-  |
-  |-- Booking nhung khong show?
-        |-- Khong co nhac hen → Tu dong nhac truoc 24h + 2h
-        |-- Khach chua du trust → Tang nurture truoc booking
-        |-- Qua nhieu lua chon → Don gian hoa booking flow
-```
-
-```
-[CREATIVE KHONG HIEU QUA]
-  |-- Video view thap?
-  |     |-- Hook 3s khong du manh → Test 5 hook khac nhau
-  |     |-- Thumbnail khong hap dan → A/B test thumbnail
-  |     |-- Audio/nhac sai mood → Doi nhac trending
-  |
-  |-- View tot nhung engagement thap?
-  |     |-- Noi dung khong cho gia tri → Tang tips, how-to
-  |     |-- Khong co CTA trong video → Them CTA bang loi + text
-  |
-  |-- Engagement tot nhung khong chuyen doi?
-        |-- CTA khong ro → "Nhan tin ngay" cu the hon
-        |-- Qua nhieu CTA → 1 video = 1 CTA duy nhat
-        |-- Chua du trust → Bo sung testimonial/review
-```
+> 4 cay chan doan dang ASCII cho 4 trieu chung ([CPMess CAO], [ROAS THAP <2x], [LEAD CHAT LUONG KEM], [CREATIVE KHONG HIEU QUA]) — moi cay phan nhanh theo dieu kien va chi thang hanh dong tuong ung: doc `references/cay-chan-doan-va-checklist-tuan.md` muc "Cay chan doan: Tu trieu chung den nguyen nhan".
 
 ---
 
 ## Phan 2 — Vietnam Benchmark Table 2025–2026
 
-> Nguon: `references/benchmarks-vietnam.md` — cap nhat Q1/2025.
-
-### Paid Ads
-
-| Chi so | Kem | Trung binh | Tot | Xuat sac | Data cua ban |
-|--------|-----|------------|-----|----------|-------------|
-| **Meta — CPMess** | >40K | 25–40K | 18–25K | <18K | [so] |
-| **Meta — CPC** | >8K | 4–8K | 2–4K | <2K | [so] |
-| **Meta — CPM** | >120K | 60–120K | 30–60K | <30K | [so] |
-| **Meta — CTR** | <0.8% | 0.8–1.5% | 1.5–3% | >3% | [so]% |
-| **Meta — CPL** | >150K | 85–150K | 50–85K | <50K | [so] |
-| **TikTok — CPMess** | >45K | 28–45K | 20–28K | <20K | [so] |
-| **TikTok — CPV (6s)** | >200d | 100–200d | 50–100d | <50d | [so] |
-| **TikTok — CTR** | <0.5% | 0.5–1.2% | 1.2–2.5% | >2.5% | [so]% |
-| **TikTok — VCR** | <15% | 15–30% | 30–50% | >50% | [so]% |
-| **Google — CPC** | >15K | 7–15K | 3–7K | <3K | [so] |
-| **Google — CTR** | <1.5% | 1.5–3% | 3–6% | >6% | [so]% |
-| **Google — Conv rate** | <2% | 2–5% | 5–10% | >10% | [so]% |
-
-### Funnel Conversion
-
-| Buoc | Trung binh | Tot | Data cua ban | Gap |
-|------|-----------|-----|-------------|-----|
-| Impression → Click | 1–2% | 3%+ | [so]% | |
-| Click → Mess/Lead | 15–25% | 30%+ | [so]% | |
-| Mess → Lead qualified | 50–60% | 70%+ | [so]% | |
-| Lead → Booking | 50–60% | 70%+ | [so]% | |
-| Booking → Customer | 30–40% | 50%+ | [so]% | |
-| Customer → Re-purchase (90 ngay) | 15–25% | 35%+ | [so]% | |
-
-### Organic Content
-
-| Chi so | Kem | Trung binh | Tot | Data cua ban |
-|--------|-----|------------|-----|-------------|
-| **TikTok — View/video** (1K followers) | <500 | 500–2K | 2K–10K | [so] |
-| **TikTok — Engagement rate** | <2% | 2–5% | 5–10% | [so]% |
-| **TikTok — Save rate** | <0.5% | 0.5–2% | 2–5% | [so]% |
-| **FB — Reach/post** (10K like) | <300 | 300–800 | 800–2K | [so] |
-| **FB — Engagement rate** | <1% | 1–3% | 3–6% | [so]% |
-| **Zalo OA — Read rate** | <30% | 40–60% | 60–80% | [so]% |
-| **Email — Open rate** | <12% | 15–25% | 25–35% | [so]% |
-| **Email — Click rate** | <1% | 1–3% | 3–5% | [so]% |
-
-### Benchmark theo nganh
-
-| Nganh | CPMess | Lead->Booking | Booking->Customer | AOV | Re-purchase |
-|-------|--------|---------------|-------------------|-----|-------------|
-| Beauty & Spa | 20–35K | 55–65% | 60–75% | 300K–1.5M | 20–35% (60 ngay) |
-| F&B | 15–25K | -- | 40–55% (Lead→Order) | 80K–250K | 25–40% (30 ngay) |
-| Education | 80–200K (CPL) | -- | 5–15% (Lead→Enroll) | 2M–10M | -- |
-| E-commerce (Thoi trang) | 3–8K (CPC) | -- | 1–3% (Conv rate) | 250K–800K | -- |
-| BDS | 150–500K (CPL) | 10–20% (Lead→Meeting) | 5–15% (Meeting→Deal) | 500M–5B | -- |
+> 4 bang benchmark day du (Paid Ads 12 chi so Meta/TikTok/Google chia 4 muc Kem/TB/Tot/Xuat sac · Funnel Conversion 6 buoc · Organic Content 8 chi so · Benchmark theo 5 nganh) — moi bang co san cot "Data cua ban" de dien: doc `references/benchmark-vietnam-2025-2026.md`.
 
 ---
 
@@ -389,43 +300,30 @@ Khi gap van de, hoi "Tai sao?" 5 lan de tim nguyen nhan goc:
 
 ---
 
-## Phan 8 — Weekly Optimization Checklist
+## Phan 8 — Nhip kiem tra hang ngay va hang tuan
 
-### Thu 2 — Review tuan truoc
+### Daily check — 15 phut moi sang
 
-- [ ] So sanh KPI tuan nay vs tuan truoc (WoW)
-- [ ] Xac dinh top 3 creative tot nhat (CTR, CPMess, ROAS)
-- [ ] Xac dinh bottom 3 creative can tat hoac sua
-- [ ] Check frequency moi ad set — co vuot 2.5 khong?
-- [ ] Check audience overlap — co vuot 20% khong?
+Ba viec, khong hon. Muc tieu la bat van de trong ngay, khong phai phan tich sau:
 
-### Thu 3 — Creative & Content
+1. **CPL vs target** → quyet dinh scale hay pause theo decision rules trong `references/benchmarks-vietnam.md` (muc "Decision rules theo target").
+2. **Frequency** → neu vuot 2.5 thi chuan bi creative moi; vuot 3.5 thi brief gap qua `48-quick-visual-brief`.
+3. **Pace spend** → dang tieu dung tien do hay overspend? Overspend som trong ngay thuong keo CPL len vao khung gio dat.
 
-- [ ] Lam 3–5 creative moi dua tren winning elements
-- [ ] Test hook moi cho video ads
-- [ ] Kiem tra UGC pipeline — co content moi khong?
-- [ ] Review content organic — bai nao co ER cao?
+Nguyen tac khi kiem tra hang ngay: chi thay MOT bien moi lan. Doi nhieu thu cung luc thi khong biet cai nao co tac dung. Va 3 ngay data chua du de ket luan — toi thieu 5-7 ngay sau khi sua moi danh gia lai.
 
-### Thu 4 — Ads Optimization
+### Sau khi sua — ke hoach theo doi
 
-- [ ] Toi uu bid/budget cho ad set tot
-- [ ] Pause ad set co CPA > 2x target
-- [ ] Test audience moi (LAL, interest, broad)
-- [ ] Kiem tra landing page load speed + conv rate
+| Chi so | Baseline truoc khi sua | Muc tieu sau sua | Kiem tra ngay |
+|--------|------------------------|------------------|---------------|
+| [chi so chinh] | | | D+3 |
+| [chi so chinh] | | | D+7 |
 
-### Thu 5 — Funnel & Sales
+Neu sau 7 ngay khong cai thien: dung tiep tuc tinh chinh nho — quay lai Layer 1 de chan doan lai, hoac chuyen huong (doi offer, doi tep, doi kenh).
 
-- [ ] Kiem tra Mess→Lead conversion rate
-- [ ] Kiem tra Lead→Booking conversion rate
-- [ ] Review response time inbox (target <15 phut)
-- [ ] Review script chot — can update khong?
+### Weekly Optimization Checklist
 
-### Thu 6 — Report & Plan
-
-- [ ] Tong hop data tuan (bang WoW)
-- [ ] Xac dinh 3 hanh dong uu tien tuan sau
-- [ ] Cap nhat lich noi dung tuan sau
-- [ ] Bao cao cho stakeholder
+> Checklist chia theo tung ngay Thu 2 → Thu 6 (Review tuan truoc · Creative & Content · Ads Optimization · Funnel & Sales · Report & Plan), moi ngay 4-5 muc tick: doc `references/cay-chan-doan-va-checklist-tuan.md` muc "Weekly Optimization Checklist".
 
 ---
 
@@ -468,6 +366,11 @@ Khi gap van de, hoi "Tai sao?" 5 lan de tim nguyen nhan goc:
 | Viet lai script video | `04-script-video` |
 | Len ke hoach lai toan bo | `00-ke-hoach-mkt` |
 | Review doi thu (neu nghi doi thu chay deal) | `08-nghien-cuu-doi-thu` |
+| Sau khi fix xong, muon scale winner | `55-scaling-ads` |
+| Can creative thay the gap trong ngay | `48-quick-visual-brief` |
+| Van de nam o tracking (Layer 1) | `53-tracking-setup` |
+| Van de nam o audience (Layer 5) | `51-audience-research`, `56-retargeting-plan` |
+| Lap plan ads ky sau tu ket qua chan doan | `57-next-ads-plan` |
 | Tra cuu 10 Quality Gates va 6 copy frameworks | `references/quality-gates-vn`, `references/copy-frameworks-vn` |
 
 ---
@@ -479,7 +382,11 @@ Truoc khi giao danh gia, kiem tra:
 - [ ] 10 Quality Gates da kiem tra — bat ky vi pham = CRITICAL, fix truoc toan bo de xuat
 - [ ] Health Score da uoc tinh (neu co du data) — neu < 60 thi focus fix truoc khi toi uu
 - [ ] Data cua user da dien day du vao bang benchmark
+- [ ] Da chay quy trinh 5 layer (tracking → delivery → creative → landing/offer → audience) truoc khi ket luan
+- [ ] Root cause co bang chung data, co ghi muc do tu tin, va co gia thuyet da loai tru
 - [ ] Diagnostic decision tree da chay — xac dinh dung nhanh nguyen nhan
+- [ ] Khong de xuat tang budget khi CPL dang xau; khong de xuat doi creative khi loi nam o tracking
+- [ ] Moi de xuat chi thay 1 bien mot lan, co moc do lai D+3 va D+7
 - [ ] 5 Whys da thuc hien — tim duoc nguyen nhan goc, khong dung o trieu chung
 - [ ] So sanh voi benchmark Vietnam 2025–2026 — co cot "Data cua ban" va "Gap"
 - [ ] Creative fatigue da kiem tra — frequency, CTR, thoi gian chay

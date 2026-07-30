@@ -8,27 +8,27 @@
 |-------|---------|--------------|----------|
 | product-marketing-context | 1.1.0 | 2026-05-02 | foundation |
 | 00-ke-hoach-mkt | 2.0.0 | 2026-04-24 | strategy |
-| 01-lich-noi-dung | 2.1.0 | 2026-05-02 | content |
-| 02-brief-chien-dich | 2.0.0 | 2026-04-24 | strategy |
-| 03-danh-gia-hieu-suat | 2.2.0 | 2026-05-03 | performance |
-| 04-script-video | 2.2.0 | 2026-05-08 | content |
-| 05-copy-quang-cao | 2.3.0 | 2026-05-08 | content |
-| 06-brief-ugc-egc | 2.0.0 | 2026-04-24 | content |
-| 07-bao-cao-marketing | 2.0.0 | 2026-04-24 | performance |
-| 08-nghien-cuu-doi-thu | 2.2.0 | 2026-05-03 | strategy |
-| 09-insight-khach-hang | 2.0.0 | 2026-04-24 | strategy |
-| 10-tinh-kpi-nguoc | 2.0.0 | 2026-04-24 | performance |
-| 11-thiet-lap-kenh | 2.0.0 | 2026-04-24 | operations |
-| 12-brief-landing-page | 2.0.0 | 2026-04-24 | operations |
-| 13-phan-tich-du-lieu | 2.0.0 | 2026-04-24 | operations |
-| 14-email-marketing | 2.0.0 | 2026-04-24 | operations |
+| 01-lich-noi-dung | 2.2.0 | 2026-07-30 | content |
+| 02-brief-chien-dich | 2.1.0 | 2026-07-30 | strategy |
+| 03-danh-gia-hieu-suat | 2.3.1 | 2026-07-30 | performance |
+| 04-script-video | 2.3.0 | 2026-07-30 | content |
+| 05-copy-quang-cao | 2.4.1 | 2026-07-30 | content |
+| 06-brief-ugc-egc | 2.1.0 | 2026-07-30 | content |
+| 07-bao-cao-marketing | 2.1.1 | 2026-07-30 | performance |
+| 08-nghien-cuu-doi-thu | 2.3.1 | 2026-07-30 | strategy |
+| 09-insight-khach-hang | 2.1.0 | 2026-07-30 | strategy |
+| 10-tinh-kpi-nguoc | 2.1.0 | 2026-07-30 | performance |
+| 11-thiet-lap-kenh | 2.0.1 | 2026-07-30 | operations |
+| 12-brief-landing-page | 2.1.1 | 2026-07-30 | operations |
+| 13-phan-tich-du-lieu | 2.1.1 | 2026-07-30 | operations |
+| 14-email-marketing | 2.1.1 | 2026-07-30 | operations |
 | 15-social-listening | 2.1.0 | 2026-05-02 | content |
 | 16-marketing-psychology | 1.0.0 | 2026-04-24 | strategy |
 | 17-pricing-strategy | 1.0.0 | 2026-04-24 | strategy |
 | 18-referral-program | 1.0.0 | 2026-04-24 | operations |
-| 19-ab-test-setup | 1.0.0 | 2026-04-24 | performance |
+| 19-ab-test-setup | 1.1.0 | 2026-07-30 | performance |
 | 20-brief-client-intake | 1.0.0 | 2026-04-24 | operations |
-| 21-audit-ads-performance | 1.2.0 | 2026-05-03 | performance |
+| 21-audit-ads-performance | 1.3.1 | 2026-07-30 | performance |
 | 22-personal-brand-context | 1.1.0 | 2026-06-06 | foundation |
 | 23-personal-brand-strategy | 1.0.0 | 2026-05-08 | strategy |
 | 24-ai-avatar-production | 1.1.0 | 2026-06-06 | content |
@@ -37,11 +37,44 @@
 | 27-personal-brand-monetize | 1.0.0 | 2026-05-08 | strategy |
 | 28-community-building | 1.0.0 | 2026-05-08 | operations |
 | 29-xuat-khau-b2b | 1.0.0 | 2026-05-20 | strategy |
-| 30-thiet-ke-master | 1.1.0 | 2026-06-06 | design |
+| 30-thiet-ke-master | 1.2.0 | 2026-07-30 | design |
 | 31-offer-design | 1.0.0 | 2026-06-30 | strategy |
 | 32-seo-growth | 1.0.0 | 2026-06-30 | performance |
 | 33-b2b-lead-gen | 1.0.0 | 2026-06-30 | operations |
-| 34-ai-marketing-os | 1.0.0 | 2026-07-08 | operations |
+| 34-ai-marketing-os | 1.1.0 | 2026-07-30 | operations |
+| 35-brand-voice | 1.0.0 | 2026-07-30 | content |
+| 36-content-brief | 1.0.0 | 2026-07-30 | content |
+| 37-caption-social | 1.0.0 | 2026-07-30 | content |
+| 38-seeding-plan | 1.0.0 | 2026-07-30 | content |
+| 39-content-audit | 1.0.0 | 2026-07-30 | content |
+| 40-next-content-plan | 1.0.0 | 2026-07-30 | content |
+| 41-campaign-asset-list | 1.0.0 | 2026-07-30 | operations |
+| 42-brief-hinh-anh | 1.0.0 | 2026-07-30 | content |
+| 43-brief-carousel | 1.0.0 | 2026-07-30 | content |
+| 44-brief-video-editor | 1.0.0 | 2026-07-30 | content |
+| 45-brief-canva | 1.0.0 | 2026-07-30 | operations |
+| 46-brand-guideline | 1.0.0 | 2026-07-30 | strategy |
+| 47-design-review | 1.0.0 | 2026-07-30 | operations |
+| 48-quick-visual-brief | 1.0.0 | 2026-07-30 | operations |
+| 49-html-email-template | 1.0.0 | 2026-07-30 | operations |
+| 50-asset-resize | 1.0.0 | 2026-07-30 | operations |
+| 51-audience-research | 1.0.0 | 2026-07-30 | performance |
+| 52-account-structure | 1.0.0 | 2026-07-30 | performance |
+| 53-tracking-setup | 1.0.0 | 2026-07-30 | performance |
+| 54-media-plan | 1.0.0 | 2026-07-30 | performance |
+| 55-scaling-ads | 1.0.0 | 2026-07-30 | performance |
+| 56-retargeting-plan | 1.0.0 | 2026-07-30 | performance |
+| 57-next-ads-plan | 1.0.0 | 2026-07-30 | performance |
+| 58-positioning | 1.0.0 | 2026-07-30 | strategy |
+| 59-go-to-market | 1.0.0 | 2026-07-30 | strategy |
+| 60-launch-playbook | 1.0.0 | 2026-07-30 | strategy |
+| 61-budget-planning | 1.0.0 | 2026-07-30 | strategy |
+| 62-marketing-review | 1.0.0 | 2026-07-30 | operations |
+| 63-campaign-retrospective | 1.0.0 | 2026-07-30 | operations |
+| 64-team-brief | 1.0.0 | 2026-07-30 | operations |
+| 65-team-performance-review | 1.0.0 | 2026-07-30 | operations |
+| 66-crisis-playbook | 1.0.0 | 2026-07-30 | operations |
+| 67-agency-vendor-brief | 1.0.0 | 2026-07-30 | operations |
 | product-marketing-context-global | 1.0.0 | 2026-05-08 | foundation (global) |
 | 00-marketing-plan-global | 1.0.0 | 2026-05-08 | strategy (global) |
 | 01-content-calendar-global | 1.0.0 | 2026-05-08 | content (global) |
@@ -78,12 +111,92 @@
 | 32-seo-growth-global | 1.0.0 | 2026-06-30 | performance (global) |
 | 33-b2b-lead-gen-global | 1.0.0 | 2026-06-30 | operations (global) |
 | 34-ai-marketing-os-global | 1.0.0 | 2026-07-08 | operations (global) |
+| 35-brand-voice-global | 1.0.0 | 2026-07-30 | content (global) |
+| 36-content-brief-global | 1.0.0 | 2026-07-30 | content (global) |
+| 37-social-caption-global | 1.0.0 | 2026-07-30 | content (global) |
+| 38-community-seeding-global | 1.0.0 | 2026-07-30 | content (global) |
+| 39-content-audit-global | 1.0.0 | 2026-07-30 | content (global) |
+| 40-next-content-plan-global | 1.0.0 | 2026-07-30 | content (global) |
+| 41-campaign-asset-list-global | 1.0.0 | 2026-07-30 | operations (global) |
+| 42-image-brief-global | 1.0.0 | 2026-07-30 | content (global) |
+| 43-carousel-brief-global | 1.0.0 | 2026-07-30 | content (global) |
+| 44-video-editor-brief-global | 1.0.0 | 2026-07-30 | content (global) |
+| 45-design-tool-brief-global | 1.0.0 | 2026-07-30 | operations (global) |
+| 46-brand-guideline-global | 1.0.0 | 2026-07-30 | strategy (global) |
+| 47-design-review-global | 1.0.0 | 2026-07-30 | operations (global) |
+| 48-quick-visual-brief-global | 1.0.0 | 2026-07-30 | operations (global) |
+| 49-html-email-template-global | 1.0.0 | 2026-07-30 | operations (global) |
+| 50-asset-resize-global | 1.0.0 | 2026-07-30 | operations (global) |
+| 51-audience-research-global | 1.0.0 | 2026-07-30 | performance (global) |
+| 52-account-structure-global | 1.0.0 | 2026-07-30 | performance (global) |
+| 53-tracking-setup-global | 1.0.0 | 2026-07-30 | performance (global) |
+| 54-media-plan-global | 1.0.0 | 2026-07-30 | performance (global) |
+| 55-scaling-ads-global | 1.0.0 | 2026-07-30 | performance (global) |
+| 56-retargeting-plan-global | 1.0.0 | 2026-07-30 | performance (global) |
+| 57-next-ads-plan-global | 1.0.0 | 2026-07-30 | performance (global) |
+| 58-positioning-global | 1.0.0 | 2026-07-30 | strategy (global) |
+| 59-go-to-market-global | 1.0.0 | 2026-07-30 | strategy (global) |
+| 60-launch-playbook-global | 1.0.0 | 2026-07-30 | strategy (global) |
+| 61-budget-planning-global | 1.0.0 | 2026-07-30 | strategy (global) |
+| 62-marketing-review-global | 1.0.0 | 2026-07-30 | operations (global) |
+| 63-campaign-retrospective-global | 1.0.0 | 2026-07-30 | operations (global) |
+| 64-team-brief-global | 1.0.0 | 2026-07-30 | operations (global) |
+| 65-team-performance-review-global | 1.0.0 | 2026-07-30 | operations (global) |
+| 66-crisis-playbook-global | 1.0.0 | 2026-07-30 | operations (global) |
+| 67-agency-vendor-brief-global | 1.0.0 | 2026-07-30 | operations (global) |
 
 ## Changelog
 
+### 2026-07-30 — v3.6.0
+
+**Role SOP Packs Go Global — 33 English mirrors complete bilingual parity for the four role clusters.**
+
+**New skills (33, Global cluster):**
+- Content system: `35-brand-voice-global` through `40-next-content-plan-global`.
+- Design production: `41-campaign-asset-list-global` through `50-asset-resize-global`.
+- Performance ops: `51-audience-research-global` through `57-next-ads-plan-global`.
+- Leader ops: `58-positioning-global` through `67-agency-vendor-brief-global`.
+
+**Adaptation, not translation:** frameworks and process steps carry over unchanged; currency rebased to USD against `references/benchmarks-global.md`; channels swapped to the global stack; compliance shifted to FTC/GDPR/CCPA/CAN-SPAM. Community seeding rebuilt around Reddit/Discord/Slack norms.
+
+**Docs/manifest:**
+- Marketplace skill count 105 → 138; version 3.6.0.
+
+### 2026-07-30 — v3.5.0
+
+**Role SOP Deep Integration — four role packs (Leader, Content, Designer, Performance) adapted from community-shared fullstack marketing documents, plus a foundation knowledge library.**
+
+**New skills (33, VN cluster):**
+- Content system: `35-brand-voice`, `36-content-brief`, `37-caption-social`, `38-seeding-plan`, `39-content-audit`, `40-next-content-plan`.
+- Design production: `41-campaign-asset-list`, `42-brief-hinh-anh`, `43-brief-carousel`, `44-brief-video-editor`, `45-brief-canva`, `46-brand-guideline`, `47-design-review`, `48-quick-visual-brief`, `49-html-email-template`, `50-asset-resize`.
+- Performance ops: `51-audience-research`, `52-account-structure`, `53-tracking-setup`, `54-media-plan`, `55-scaling-ads`, `56-retargeting-plan`, `57-next-ads-plan`.
+- Leader ops: `58-positioning`, `59-go-to-market`, `60-launch-playbook`, `61-budget-planning`, `62-marketing-review`, `63-campaign-retrospective`, `64-team-brief`, `65-team-performance-review`, `66-crisis-playbook`, `67-agency-vendor-brief`.
+
+**New knowledge library:**
+- `knowledge/` — 10 foundation thinking files + `knowledge/trien-khai/` implementation notes, sized for role-based AI project upload.
+
+**New agent and workflows:**
+- Agent `design-producer` (visual & production).
+- Workflows `content-engine`, `performance-loop`, `design-pipeline`, `leader-cadence`.
+
+**New references:**
+- `references/marketing-templates-library.md`, `references/ai-tool-orchestration.md`.
+
+**Enriched skills (SOP-level detail added, no structural breaks):**
+- `01` 2.1→2.2 · `02` 2.0→2.1 · `03` 2.2→2.3 · `04` 2.2→2.3 · `05` 2.3→2.4 · `06` 2.0→2.1 · `07` 2.0→2.1 · `08` 2.2→2.3 · `09` 2.0→2.1 · `10` 2.0→2.1 · `12` 2.0→2.1 · `13` 2.0→2.1 · `14` 2.0→2.1 · `19` 1.0→1.1 · `21` 1.2→1.3 · `30` 1.1→1.2 · `34` 1.0→1.1.
+
+**Progressive disclosure (patch releases, 14 new per-skill reference files):**
+- `03` →2.3.1 · `05` →2.4.1 · `07` →2.1.1 · `08` →2.3.1 · `11` →2.0.1 · `12` →2.1.1 · `13` →2.1.1 · `14` →2.1.1 · `21` →1.3.1. Every SKILL.md now sits under the 500-line spec guideline with detail moved into `references/`; no content removed.
+
+**Docs/manifest:**
+- Marketplace skill count 72 → 105; version 3.5.0.
+- `34-ai-marketing-os` bumped to 1.1.0 with Brand Hub → skill mapping and five role-project deployment guidance.
+- Legacy personal attribution removed across docs; source-specific brand assets generalized into Brand Hub placeholders.
+- Corrected stale reference paths (`skills/references/` → `skills/vi/references/`) across docs, skills, and workflows.
+
 ### 2026-07-08 — v3.4.0
 
-**AI Marketing OS Expansion — adapted from the new RBL community-share documents and aligned with agent skills, connectors/MCP, source-of-truth, and role-based AI workflow patterns.**
+**AI Marketing OS Expansion — adapted from community-shared fullstack marketing documents and aligned with agent skills, connectors/MCP, source-of-truth, and role-based AI workflow patterns.**
 
 **New skills:**
 - `34-ai-marketing-os` and `34-ai-marketing-os-global`: Brand Hub/source of truth, role-based AI agents/projects, skill chains, second brain, data loops, MCP/connectors, SOP cadence, governance, and 30-60-90 rollout planning.
@@ -95,7 +208,7 @@
 **Docs/manifest:**
 - Marketplace skill count updated to 72.
 - README/README.vi, CONNECTORS, llms, and agent routing updated for AI Marketing OS.
-- Existing skill set left intact; RBL role skill samples were consolidated into OS-level workflow guidance instead of imported as duplicate skills.
+- Existing skill set left intact; community role skill samples were consolidated into OS-level workflow guidance instead of imported as duplicate skills.
 
 ### 2026-06-30 — v3.3.0
 
@@ -323,7 +436,7 @@
 
 ### 2026-04-23 — v1.1.0
 
-- Rebrand: Run By Linh → Over Powers Agency
+- Rebrand to Over Powers Agency (legacy personal attribution removed)
 - Redesign README with badges, diagrams, visual tables
 - Add star history chart
 

@@ -3,7 +3,7 @@ name: 14-email-marketing
 description: Thiet lap va van hanh email marketing — welcome series, nurture, promotion, re-engage — toi uu cho thi truong Viet Nam
 argument-hint: "<audience + objective + sequence type>"
 metadata:
-  version: 2.0.0
+  version: 2.1.1
   category: operations
 triggers:
   - "email marketing"
@@ -14,6 +14,9 @@ triggers:
   - "email sequence"
   - "Brevo"
   - "thiet lap email"
+  - "Zalo OA broadcast"
+  - "broadcast Zalo"
+  - "tin Zalo cham soc khach"
 output: File .md chua chien luoc email marketing day du — sequence template, automation flow, subject line, segmentation, A/B test, va KPI tracking
 related:
   - 01-lich-noi-dung
@@ -21,6 +24,8 @@ related:
   - 09-insight-khach-hang
   - 12-brief-landing-page
   - 15-social-listening
+  - 49-html-email-template
+  - 13-phan-tich-du-lieu
 ---
 
 # Email Marketing
@@ -253,192 +258,133 @@ Dang ky moi
 
 ---
 
+## Nhanh Zalo OA — kenh so huu thu hai
+
+O Viet Nam, Zalo OA doc cao hon email rat nhieu nhung **giay phep hep hon**: gui nhieu la mat follower, khong lay lai duoc. Coi Zalo la kenh "danh cho tin quan trong", email la kenh "danh cho noi dung dai".
+
+### Zalo OA vs Email — chon kenh cho tung loai tin
+
+| | **Email** | **Zalo OA** |
+|---|---|---|
+| Read / Open rate tham chieu | 15-25% TB · 25-35% tot | 40-60% TB · **60-80% tot** · >80% xuat sac |
+| Do dai phu hop | Dai — ke chuyen, giao duc, nhieu link | Rat ngan — 3-6 dong, 1 y duy nhat |
+| Tan suat an toan | 1-3 lan/tuan tuy sequence | **Toi da 2-3 lan/tuan, an toan nhat <= 2 lan/tuan** |
+| Chi phi | Gan nhu mien phi theo goi tool | Tinh theo tin gui — ~500d/tin (TB), ~300d (tot), <200d (xuat sac) |
+| Rui ro khi lam qua | Vao spam, unsubscribe | **Follower bam bo quan tam — mat vinh vien** |
+| Loai tin phu hop | Nurture, giao duc, newsletter, chuoi dai | Nhac lich, xac nhan don, uu dai gioi han, tin khan |
+
+### Gioi han va ky luat gui Zalo
+
+| Nguyen tac | Nguong | Ly do |
+|-----------|--------|-------|
+| Tan suat broadcast | <= 2 lan/tuan (tran 3) | Vuot nguong la ty le bo quan tam tang manh |
+| Ty le bo quan tam moi broadcast | < 5% | Vuot 5% → dung broadcast, xem lai noi dung va tep |
+| Read rate | >= 40% moi chap nhan duoc; muc tieu 60-80% | Duoi 40% = tep khong dung hoac tin khong lien quan |
+| Ca nhan hoa | Bat buoc co ten nguoi nhan hoac phan khuc ro | Broadcast chung chung cho ca list = tin spam |
+| Phan khuc | Phai chia tep theo hanh vi / lich su mua | Gui uu dai san pham A cho nguoi vua mua A la mat uy tin |
+
+> **Ve han muc va chi phi tin:** so tin va cach tinh phi thay doi theo goi OA va theo loai tin (broadcast vs tin cham soc vs ZNS). Kiem tra chinh sach hien hanh cua Zalo OA truoc khi lap ke hoach gui — dung gia dinh theo so cu.
+
+### Ty le noi dung broadcast
+
+| Loai noi dung | Ty trong | Vi du |
+|--------------|---------|-------|
+| Gia tri (huong dan, meo, kien thuc) | 40% | "3 dau hieu cho thay ban dang [van de]" |
+| Cau chuyen / cap nhat | 30% | Hau truong, cau chuyen khach hang, tin moi cua brand |
+| Bang chung xa hoi | 20% | Review, ket qua khach hang, con so |
+| Offer / ban hang | **10%** | Uu dai, deadline |
+
+Dao nguoc ty le nay (gui toan offer) la cach nhanh nhat de mat list Zalo.
+
+### Cau truc 1 tin Zalo OA
+
+```
+[Dong 1 — hook ngan, <= 40 ky tu, noi thang van de hoac loi ich]
+[2-4 dong noi dung — 1 y duy nhat, cau ngan, xuong dong ro rang]
+[1 CTA duy nhat — dong tu + loi ich cu the]
+[Link rut gon kem UTM]
+```
+
+**Quy tac viet tin Zalo:**
+1. **1 tin = 1 y = 1 CTA.** Khong nhoi 2 uu dai vao 1 tin.
+2. **Khong copy nguyen email sang Zalo.** Email 300 chu → tin Zalo 60-80 chu.
+3. **Ca nhan hoa ten nguoi nhan** ngay dong dau khi co the.
+4. **Link phai co UTM** (`utm_source=zalo&utm_medium=oa&utm_campaign=...`) — neu khong se khong tach duoc dong gop cua Zalo khoi organic.
+5. **Khong gui ngoai khung gio** — tin Zalo bat len man hinh khoa, gui sai gio la lam phien that su.
+
+### Khung gio gui Zalo tot (Viet Nam)
+
+| Khung | Phu hop |
+|-------|---------|
+| 7:00 - 8:30 sang | Nhac lich, tin can hanh dong trong ngay |
+| 11:30 - 12:30 trua | Offer, noi dung ngan de luot |
+| 20:00 - 21:30 toi | Noi dung ca nhan, cau chuyen, uu dai B2C |
+
+---
+
+## Sequence email + Zalo chay song song
+
+Khong chay 2 kenh doc lap. Ghep vao 1 lich duy nhat de tranh cham nhau va tan dung the manh tung kenh.
+
+### Mau sequence 14 ngay (nurture → chot)
+
+| Ngay | Email | Zalo OA | Ghi chu phoi hop |
+|------|-------|---------|-----------------|
+| D+0 | **E1 — Welcome**, gui tai lieu, set ky vong | Tin xac nhan ngan: "Da gui [tai lieu] vao email cua ban" | Zalo dam bao nguoi dung biet co email — tang open rate E1 |
+| D+2 | **E2 — Cau chuyen / ly do lam nghe** | — | Noi dung dai, chi hop email |
+| D+4 | **E3 — Kien thuc / meo huu ich** | Tin gia tri ngan trich tu E3 + link doc day du | Zalo keo nguoi chua mo email quay lai |
+| D+6 | **E4 — Bang chung xa hoi (case study)** | — | |
+| D+8 | **E5 — Xu ly objection lon nhat** | — | |
+| D+10 | **E6 — Chao offer (soft pitch)** | Tin thong bao offer, 1 CTA | Zalo lam nhiem vu "danh thuc" |
+| D+12 | **E7 — Push urgency + FAQ** | — | |
+| D+14 | **E8 — Nhac lan cuoi / breakup** | Tin nhac deadline (chi gui cho nguoi da click nhung chua mua) | Tin cuoi cua Zalo chi gui tep hep, khong broadcast ca list |
+
+**Luat phoi hop:**
+1. **Zalo khong gui trung ngay voi email quan trong** — tru ngay D+0 (xac nhan) va ngay chot deadline.
+2. **Tong tin Zalo trong 14 ngay: toi da 4 tin.** Vuot la vi pham tran 2 tin/tuan.
+3. **Tin Zalo o cuoi sequence chi gui cho tep da tuong tac** (da mo email hoac da click), khong broadcast toan bo.
+4. **Email lam viec nang (giai thich, thuyet phuc), Zalo lam viec nhac** — dung bat Zalo lam nhiem vu cua email.
+
+### Do luong 2 kenh chung
+
+| Chi so | Email | Zalo OA |
+|--------|-------|---------|
+| Do mo | Open rate | Read rate |
+| Do quan tam | CTR (>= 3%) | Ty le click / tin |
+| Do phien toai | Unsubscribe (< 0.5%/email) | Bo quan tam (< 5%/broadcast) |
+| Do dong gop | Lead / don gan UTM `utm_medium=email` | Lead / don gan UTM `utm_medium=oa` |
+
+Doi chieu 2 cot nay hang thang trong `13-phan-tich-du-lieu`. Kenh nao chi phi/lead thap hon thi tang ty trong o sequence sau — nhung khong pha tran tan suat Zalo.
+
+---
+
 ## Deliverability — Dam bao email vao Inbox
 
-### Checklist ky thuat bat buoc
-
-| Hang muc | Yeu cau | Cach kiem tra |
-|----------|---------|-------------|
-| SPF | Them record SPF vao DNS | MXToolbox.com |
-| DKIM | Ky so email bang DKIM key | MXToolbox.com |
-| DMARC | Them record DMARC vao DNS | MXToolbox.com |
-| Domain rieng | Gui email tu domain cua thuong hieu, khong dung @gmail.com | Cai dat trong Brevo |
-| Warm-up | Tang dan so luong gui: 50 → 100 → 200 → 500/ngay | Theo doi bounce rate |
-| List hygiene | Xoa email bounce, khong mo 6 thang | Chay moi quy |
-
-### Lich warm-up domain moi
-
-| Tuan | So email/ngay | Doi tuong gui | Muc dich |
-|------|-------------|--------------|---------|
-| Tuan 1 | 50–100 | Noi bo + khach hang than | Test ky thuat, xay reputation |
-| Tuan 2 | 100–300 | Subscriber moi nhat (engaged) | Tang reputation |
-| Tuan 3 | 300–500 | Mo rong them nhom Active | On dinh |
-| Tuan 4+ | 500–1000+ | Toan bo list (tru Cold) | Van hanh binh thuong |
-
-### Quy tac tranh spam
-
-- Khong mua list email — chi gui cho nguoi da dong y (opt-in)
-- Khong dung ALL CAPS trong subject line
-- Tranh tu spam: "Mien phi 100%", "Nhan ngay", qua nhieu dau "!!!"
-- Ti le text/image: toi thieu 60% text, toi da 40% image
-- Co link unsubscribe o cuoi moi email
-- Gi cung test truoc khi gui hang loat
+> Checklist ky thuat bat buoc (SPF, DKIM, DMARC, domain rieng, warm-up, list hygiene) + lich warm-up domain moi theo tuan + quy tac tranh spam: doc `references/deliverability-tool-va-kpi.md` muc "Deliverability — Dam bao email vao Inbox".
 
 ---
 
 ## Tool khuyen dung — Viet Nam
 
-| Tool | Free tier | Gia | Diem manh | Khi dung |
-|------|----------|-----|----------|---------|
-| **Brevo** (khuyen dung) | 300 email/ngay, unlimited contacts | Tu $9/thang | Automation manh, UI tieng Viet, server chau A | Mac dinh cho thi truong VN |
-| Mailchimp | 500 contacts, 1000 email/thang | Tu $13/thang | Template dep, tich hop nhieu | Khi can nhieu template |
-| Kit (ConvertKit) | 1000 subscribers | Tu $15/thang | Tot cho creator, landing page built-in | Personal brand, educator |
-
-### Setup Brevo co ban
-
-1. Tao tai khoan tai brevo.com
-2. Them domain gui email (SPF + DKIM + DMARC)
-3. Import contacts + phan nhom
-4. Tao Welcome automation
-5. Thiet ke email template (brand colors, logo)
-6. Test gui 50 email noi bo
-7. Bat dau warm-up theo lich o tren
+> Bang so sanh 3 tool (Brevo, Mailchimp, Kit) theo free tier, gia, diem manh, khi dung + 7 buoc setup Brevo co ban: doc `references/deliverability-tool-va-kpi.md` muc "Tool khuyen dung — Viet Nam".
 
 ---
 
 ## Tuan thu phap luat
 
-### PDPA Viet Nam (Nghi dinh 13/2023/ND-CP)
-
-| Yeu cau | Cach thuc hien |
-|---------|---------------|
-| Dong y (Consent) | Form dang ky co checkbox dong y nhan email (khong tick san) |
-| Quyen rut dong y | Link unsubscribe trong moi email, xu ly trong 24h |
-| Bao mat du lieu | Ma hoa danh sach email, khong chia se voi ben thu 3 |
-| Muc dich ro rang | Ghi ro "Dang ky nhan email ve [noi dung gi]" |
-| Quyen xoa du lieu | Cung cap cach de user yeu cau xoa toan bo du lieu |
-
-### Checklist compliance
-
-- [ ] Form dang ky co o tick dong y (khong tu dong tick)
-- [ ] Moi email co link Unsubscribe o footer
-- [ ] Co dia chi lien he/doanh nghiep trong footer
-- [ ] Khong gui email cho nguoi chua dong y
-- [ ] Xu ly unsubscribe trong vong 24h
-- [ ] Luu tru bang chung dong y (consent log)
+> Bang 5 yeu cau PDPA Viet Nam (Nghi dinh 13/2023/ND-CP) kem cach thuc hien + checklist compliance 6 diem: doc `references/deliverability-tool-va-kpi.md` muc "Tuan thu phap luat".
 
 ---
 
 ## KPI va Benchmark
 
-### Chi so theo doi hang tuan
-
-| KPI | Cong thuc | Benchmark VN | Kem | Tot | Xuat sac |
-|-----|----------|-------------|-----|-----|----------|
-| Open rate | So mo / So gui | 15–25% | <15% | 25–35% | >35% |
-| Click rate (CTR) | So click / So gui | 1–3% | <1% | 3–5% | >5% |
-| Click-to-open rate (CTOR) | So click / So mo | 10–15% | <10% | 15–25% | >25% |
-| Unsubscribe rate | So huy / So gui | 0.3–1% | >1% | 0.1–0.3% | <0.1% |
-| Bounce rate | So bounce / So gui | 1–3% | >3% | 0.5–1% | <0.5% |
-| Spam complaint | So complaint / So gui | 0.05–0.1% | >0.1% | <0.05% | <0.01% |
-
-### Chi so theo doi hang thang
-
-| KPI | Cong thuc | Muc tieu |
-|-----|----------|---------|
-| List growth rate | (Sub moi - Unsub) / Tong sub | >5%/thang |
-| Revenue per email | Doanh thu tu email / So email gui | Tang MoM |
-| Conv rate | So mua hang / So click | >2% |
-| Email ROI | (Revenue - Cost) / Cost | >30x |
+> Bang benchmark VN 6 KPI hang tuan (open rate, CTR, CTOR, unsubscribe, bounce, spam complaint) chia 4 muc Kem/TB/Tot/Xuat sac + 4 KPI hang thang kem cong thuc: doc `references/deliverability-tool-va-kpi.md` muc "KPI va Benchmark".
 
 ---
 
 ## Template ket qua
 
-```markdown
-# Chien Luoc Email Marketing — [Ten thuong hieu]
-Ngay tao: [YYYY-MM-DD]
-Tool: [Brevo / Mailchimp / Kit]
-So subscriber hien tai: [X]
-
----
-
-## 1. Muc tieu
-
-| Muc tieu | Chi so | Target | Thoi han |
-|----------|--------|--------|---------|
-| [Muc tieu 1] | [KPI] | [Con so] | [Thang/Quy] |
-| [Muc tieu 2] | [KPI] | [Con so] | [Thang/Quy] |
-
-## 2. Phan khuc doi tuong
-
-| Nhom | Tieu chi | So luong | Email phu hop |
-|------|---------|---------|--------------|
-| [Nhom 1] | [Tieu chi] | [X] | [Loai email] |
-| [Nhom 2] | [Tieu chi] | [X] | [Loai email] |
-| [Nhom 3] | [Tieu chi] | [X] | [Loai email] |
-
-## 3. Welcome Sequence
-
-### Email 1 — Chao mung
-- **Subject:** [50 ky tu]
-- **Preview:** [90 ky tu]
-- **Noi dung:** [Tom tat 2–3 cau]
-- **CTA:** [Hanh dong]
-- **Gui:** Ngay khi dang ky
-
-### Email 2 — Cau chuyen
-- **Subject:** [50 ky tu]
-- **Preview:** [90 ky tu]
-- **Noi dung:** [Tom tat 2–3 cau]
-- **CTA:** [Hanh dong]
-- **Gui:** +2 ngay
-
-### Email 3 — Social proof
-- **Subject:** [50 ky tu]
-- **Preview:** [90 ky tu]
-- **Noi dung:** [Tom tat 2–3 cau]
-- **CTA:** [Hanh dong]
-- **Gui:** +4 ngay
-
-## 4. Nurture Sequence
-
-| # | Ngay | Chu de | Subject line | CTA |
-|---|------|--------|-------------|-----|
-| 1 | +7 | [Chu de] | [Subject] | [CTA] |
-| 2 | +10 | [Chu de] | [Subject] | [CTA] |
-| 3 | +14 | [Chu de] | [Subject] | [CTA] |
-| 4 | +17 | [Chu de] | [Subject] | [CTA] |
-| 5 | +21 | [Chu de] | [Subject] | [CTA] |
-
-## 5. Lich gui email dinh ky
-
-| Ngay | Gio | Loai email | Doi tuong | Chu de |
-|------|-----|-----------|----------|-------|
-| Thu 3 | 8:30 AM | Nurture/Giao duc | Active | [Chu de tuan] |
-| Thu 5 | 8:00 PM | Promotion (neu co) | Engaged | [Offer] |
-
-## 6. Automation Flow
-
-[Mo ta flow bang text hoac so do]
-
-## 7. A/B Test Plan thang nay
-
-| Tuan | Yeu to test | Bien the A | Bien the B | Chi so do |
-|------|------------|-----------|-----------|-----------|
-| 1 | [Yeu to] | [A] | [B] | [Chi so] |
-| 2 | [Yeu to] | [A] | [B] | [Chi so] |
-
-## 8. Checklist thiet lap
-
-- [ ] Domain email da verify (SPF + DKIM + DMARC)
-- [ ] Template email da thiet ke (brand colors, logo, footer)
-- [ ] Welcome sequence da cai dat va test
-- [ ] Phan khuc doi tuong da tao
-- [ ] Unsubscribe link hoat dong
-- [ ] Test gui noi bo thanh cong
-- [ ] Warm-up plan da bat dau
-```
+> Khung markdown day du 8 muc (Muc tieu · Phan khuc doi tuong · Welcome Sequence · Nurture Sequence · Lich gui dinh ky · Automation Flow · A/B Test Plan · Checklist thiet lap): doc `references/template-ket-qua-email.md` va copy nguyen khung de dien noi dung.
 
 ---
 
@@ -450,6 +396,8 @@ So subscriber hien tai: [X]
 - **`12-brief-landing-page`** — landing page la dich den cua CTA trong email
 - **`13-phan-tich-du-lieu`** — phan tich hieu suat email marketing hang tuan/thang
 - **`15-social-listening`** — bat xu huong de tao noi dung email kip thoi
+- **`49-html-email-template`** — dung template HTML cho email (bo cuc, responsive, dark mode) sau khi chot noi dung
+- **`53-tracking-setup`** — chuan hoa UTM cho ca email va Zalo OA de tach duoc dong gop tung kenh
 
 ---
 
@@ -480,3 +428,14 @@ So subscriber hien tai: [X]
 - [ ] Cap nhat phan khuc dua tren hanh vi moi
 - [ ] Lam moi subject line dua tren ket qua A/B test
 - [ ] Kiem tra list growth rate
+
+### Rieng nhanh Zalo OA
+
+- [ ] Tan suat broadcast <= 2 lan/tuan (tran 3) — dem ca thang truoc khi len lich
+- [ ] Ty le noi dung dung chuan 40 gia tri / 30 cau chuyen / 20 bang chung / 10 offer
+- [ ] Moi tin <= 6 dong, 1 y, 1 CTA duy nhat — khong copy nguyen email sang Zalo
+- [ ] Tin da duoc ca nhan hoa hoac gui theo phan khuc, khong broadcast chung chung
+- [ ] Link co UTM `utm_medium=oa` de tach duoc dong gop
+- [ ] Gui trong khung gio (7:00-8:30 · 11:30-12:30 · 20:00-21:30)
+- [ ] Read rate >= 40%, muc tieu 60-80%; ty le bo quan tam < 5%/broadcast
+- [ ] Lich Zalo va lich email da ghep chung — khong cham nhau trong cung 1 ngay (tru D+0 va ngay chot)

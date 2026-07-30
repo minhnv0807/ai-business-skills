@@ -2,7 +2,7 @@
 name: 34-ai-marketing-os
 description: "Khi nguoi dung can thiet ke, audit, nang cap hoac van hanh AI Marketing OS cho team marketing: Brand Hub/source of truth, role-based AI agents/projects, skill chain, ChatGPT x Claude x NotebookLM workflow, MCP/connectors, Notion/Drive second brain, Meta Ads data loop, SOP, weekly review, handoff. Dung khi nhac 'AI marketing OS', 'he thong AI marketing', 'Brand Hub', 'Claude Project', 'AI workflow cho marketer', 'SOP AI team', 'MCP marketing', 'agent marketing', 'second brain marketing'."
 metadata:
-  version: 1.0.0
+  version: 1.1.0
   category: operations
 license: MIT
 triggers:
@@ -70,16 +70,18 @@ Neu maturity duoi 2, uu tien foundation truoc khi them automation.
 
 ### 2. Thiet ke Brand Hub
 
-Brand Hub toi thieu gom 6 file:
+Brand Hub toi thieu gom 6 file — moi file co skill tao ra no:
 
-1. Brand Guidelines: logo, mau, font, tone, voice, do/don't.
-2. Customer Insight: persona, pain, trigger, objection, customer language.
-3. Positioning & Offer: promise, proof, path, offer ladder.
-4. Content Pillar: pillar, angle, source content, platform rules.
-5. KPI Framework: revenue target, funnel KPI, benchmark, decision rules.
-6. Campaign Template: phase, budget split, asset list, approval flow.
+| File Brand Hub | Noi dung | Skill tao file |
+|----------------|----------|----------------|
+| Brand Guidelines | logo, mau, font, tone, visual do/don't | 46-brand-guideline |
+| Brand Voice | personality, tone, vocabulary, banned words, before/after | 35-brand-voice |
+| Customer Insight | persona 3 tang, pain, trigger, objection, customer language | 09-insight-khach-hang |
+| Positioning & Offer | promise, proof, path, offer ladder | 58-positioning + 31-offer-design |
+| KPI Framework | revenue target, funnel KPI, benchmark, decision rules | 10-tinh-kpi-nguoc |
+| Campaign Template | phase, budget split, asset list, approval flow | 02-brief-chien-dich + 41-campaign-asset-list |
 
-Moi lan mot file thay doi, cap nhat lai vao cac role workspace lien quan.
+Quy tac vang: moi lan mot file Brand Hub thay doi, cap nhat lai vao TAT CA role workspace lien quan — bo qua buoc nay, cac workspace dung thong tin cu va output lech nhau.
 
 ### 3. Map role workspace
 
@@ -87,11 +89,11 @@ Dung role de tach suy nghi:
 
 | Role | Viec chinh | Repo skill hay dung |
 |------|------------|---------------------|
-| CEO/Strategy | Huong di, market, offer, budget, KPI | 00, 08, 09, 10, 31 |
-| Leader/Campaign | Brief, timeline, asset, handoff, retro | 02, 07, 20, 34 |
-| Content | Calendar, script, copy, UGC, email | 01, 04, 05, 06, 14 |
-| Designer | Visual brief, brand system, landing page | 12, 30 |
-| Performance | Tracking, audit, report, data decision | 03, 07, 13, 19, 21 |
+| CEO/Strategy | Huong di, market, offer, budget, KPI | 00, 08, 09, 10, 31, 58, 59, 61 |
+| Leader/Campaign | Brief, timeline, review, handoff, retro, team ops | 02, 07, 20, 34, 60, 62-67 |
+| Content | Brand voice, calendar, brief, caption, script, copy, seeding | 35-40, 01, 04, 05, 06, 14 |
+| Designer | Asset list, brief visual, brand system, review, landing page | 41-50, 12, 30 |
+| Performance | Audience, media plan, tracking, structure, test, audit, scale | 51-57, 03, 13, 19, 21 |
 | Sales/RevOps | Lead quality, handoff, outreach | 18, 33 |
 
 Neu user dung Claude Projects, ChatGPT Projects/GPTs, NotebookLM, Notion, Drive, hay MCP, map tung tool vao role nay. Khong khoa vao mot vendor neu user chua chon stack.
@@ -105,7 +107,10 @@ Mac dinh 4 workflow:
 | Onboard brand/client | product-marketing-context -> 09 -> 08 -> 31 -> 10 -> 34 |
 | Launch campaign | 02 -> 31 -> 10 -> 01/04/05/06 -> 12 -> 21 -> 07 |
 | Weekly performance | 13 -> 03/21 -> 07 -> 34 update Brand Hub |
-| Content engine | 09 -> 01 -> 04/05/06 -> 15 -> 07 |
+| Content engine | 35 -> 09 -> 01 -> 36 -> 37/04/05/38 -> 42/43/44 -> 39 -> 40 |
+| Performance loop | 51 -> 10 -> 54 -> 53 -> 52 -> 19 -> 21 -> 55/56 -> 07 -> 57 |
+| Design pipeline | 41 -> 42/43/45 -> 47 -> 50 |
+| Leader cadence | 00 -> 61 -> 02 -> 62/47 -> 07 weekly -> 63 |
 
 Neu co data ky truoc, luon doc truoc khi tao plan moi.
 
@@ -129,7 +134,11 @@ Moi output quan trong can co owner, date, source, version, next action.
 | Monthly | Revenue, channel mix, offer, team load, Brand Hub changes | OS retro + updated roadmap |
 | Quarterly | Market, positioning, offer ladder, tool stack | Strategy refresh |
 
-### 7. Governance va rui ro
+### 7. Trien khai 5 role project
+
+Neu user dung Claude Projects (hoac ChatGPT Projects/GPTs tuong duong), chuyen OS thanh 5 project: Leader/CEO, Content, Designer, Performance, Knowledge Base. Moi project = custom instruction theo role + skill SOP + knowledge upload. Quy trinh 4 buoc: tao project theo role -> viet custom instruction -> upload skill + knowledge (gioi han ~20 file/project, uu tien skill hay dung) -> test trigger phrase. Chi tiet instruction mau, thu tu uu tien upload, va FAQ: doc `references/ai-marketing-os-playbook.md`. Kho knowledge nen tang de upload: thu muc `knowledge/` cua repo.
+
+### 8. Governance va rui ro
 
 Kiem tra:
 
@@ -172,11 +181,14 @@ Kiem tra:
 ## Lien ket skill
 
 - `product-marketing-context`: tao source context dau tien.
+- `35-brand-voice`, `46-brand-guideline`, `09-insight-khach-hang`, `58-positioning`, `10-tinh-kpi-nguoc`: tao 6 file Brand Hub.
 - `00-ke-hoach-mkt`: tao marketing plan dua vao OS.
 - `02-brief-chien-dich`: chuyen strategy thanh campaign.
 - `07-bao-cao-marketing`: tao weekly/monthly report cho data loop.
 - `13-phan-tich-du-lieu` va `21-audit-ads-performance`: doc data va tim bottleneck.
+- `39-content-audit`, `40-next-content-plan`, `57-next-ads-plan`, `63-campaign-retrospective`: vong lap data -> plan ky sau.
 - `31-offer-design`, `32-seo-growth`, `33-b2b-lead-gen`: growth modules dua vao OS.
+- Kho kien thuc nen tang: thu muc `knowledge/` (10 file tu duy + trien khai theo role).
 
 ## Checklist chat luong
 

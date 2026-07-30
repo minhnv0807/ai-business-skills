@@ -2,7 +2,7 @@
 name: 08-nghien-cuu-doi-thu
 description: Phan tich doi thu canh tranh 3 tang (truc tiep, gian tiep, thu cap) — dinh vi, SWOT, content benchmark, tim khoang trong thi truong
 metadata:
-  version: 2.2.0
+  version: 2.3.1
   category: strategy
 triggers:
   - "nghien cuu doi thu"
@@ -10,12 +10,17 @@ triggers:
   - "doi thu dang lam gi"
   - "competitive analysis"
   - "phan tich doi thu"
+  - "theo doi doi thu"
+  - "competitor snapshot"
+  - "doi thu moi noi"
 output: File .md gom ban do dinh vi, SWOT, content benchmark, khoang trong thi truong, va de xuat hanh dong
 related:
   - 09-insight-khach-hang
   - 00-ke-hoach-mkt
   - 02-brief-chien-dich
   - 05-copy-quang-cao
+  - 58-positioning
+  - 15-social-listening
   - references/mcp-ads-integration
 ---
 
@@ -32,7 +37,7 @@ Hoi user toi da 4 cau sau truoc khi bat dau:
 
 ### Auto-research qua MCP (neu co ket noi)
 
-> Xem huong dan setup: `skills/references/mcp-ads-integration.md`
+> Xem huong dan setup: `skills/vi/references/mcp-ads-integration.md`
 > **Meta Official MCP:** `https://mcp.facebook.com/ads` — setup 5 phut qua `claude.ai/settings/integrations`
 
 #### A. Facebook Ads Library MCP (Nghien cuu quang cao doi thu)
@@ -357,6 +362,18 @@ Voi moi doi thu, chon 5 bai/video co tuong tac cao nhat trong 30 ngay gan nhat:
 
 ---
 
+## Che do THEO DOI DINH KY (Competitor Watch)
+
+> Che do chay hang thang thay cho bao cao day du: nguyen tac 80/20, quy trinh 5 buoc (Watch List phan tang · Snapshot 3 mang Content/Paid Ads/Offer-gia voi cot "thay doi so voi ky truoc" · Ban do canh tranh 6 chieu · 3 nhom ket luan TOT/CHUA lam/SAI · Bang hanh dong) va 4 ky luat theo doi: doc `references/theo-doi-dinh-ky-va-nguon-du-lieu.md` muc "Che do THEO DOI DINH KY (Competitor Watch)".
+
+---
+
+## Nguon du lieu — uu tien nguon mien phi
+
+> Bang 8 nguon mien phi (Meta Ads Library, TikTok Creative Center, Google Trends, GSO, website doi thu, social profile, email/Zalo OA, comment & review) kem thoi gian can cho tung nguon, danh sach nguon co phi, va 5 cach lam thay khi thieu du lieu: doc `references/theo-doi-dinh-ky-va-nguon-du-lieu.md` muc "Nguon du lieu — uu tien nguon mien phi".
+
+---
+
 ## Cross-reference
 
 - Can hieu khach hang sau hon? → Dung `09-insight-khach-hang`
@@ -364,6 +381,8 @@ Voi moi doi thu, chon 5 bai/video co tuong tac cao nhat trong 30 ngay gan nhat:
 - Can viet copy khac biet doi thu? → Dung `05-copy-quang-cao`
 - Can tinh ngan sach canh tranh? → Dung `10-tinh-kpi-nguoc`
 - Can xay ke hoach MKT tong the? → Dung `00-ke-hoach-mkt`
+- Can viet cau dinh vi tu khoang trong tim duoc? → Dung `58-positioning`
+- Can theo doi thao luan va sentiment ve doi thu? → Dung `15-social-listening`
 
 ---
 
@@ -381,3 +400,12 @@ Truoc khi giao bao cao, kiem tra:
 - [ ] Competitive moat duoc danh gia ca doi thu va ban
 - [ ] Bang hanh dong co timeline va muc do khan cap
 - [ ] Khong co nhan dinh thieu co so — moi ket luan phai co du lieu hoac quan sat cu the
+
+### Rieng che do theo doi dinh ky
+
+- [ ] Co Watch List phan tang kem tan suat theo doi
+- [ ] Moi snapshot co cot "thay doi so voi ky truoc" — khong de trong
+- [ ] Da doc Ads Library: ghi ro ads da chay bao lau (dau hieu doi thu dang scale)
+- [ ] Co du 3 nhom ket luan: lam TOT, CHUA lam, lam SAI
+- [ ] Uu tien dung nguon mien phi truoc khi de xuat mua du lieu
+- [ ] Khong de xuat phan ung tuc thoi voi tung dong thai cua doi thu

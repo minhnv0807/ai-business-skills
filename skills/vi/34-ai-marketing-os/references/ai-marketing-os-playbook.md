@@ -1,14 +1,14 @@
 # AI Marketing OS Playbook
 
-Playbook nay tong hop tu bo tai lieu RBL share cong dong: knowledge foundation, SOP theo vai tro, template plan/dashboard, va skill mau. Dung de nang cap skill theo huong he thong, khong copy nguyen prompt le.
+Playbook nay tong hop tu bo tai lieu fullstack marketing cong dong chia se: knowledge foundation, SOP theo vai tro, template plan/dashboard, va skill mau. Dung de nang cap skill theo huong he thong, khong copy nguyen prompt le.
 
 ## Nguyen tac chon loc
 
 Tai lieu moi co 4 nhom:
 
-- RBL Knowledge foundation: fullstack brandformance, blueprint 8 thanh phan, content system, channel, Meta Ads, KPI, insight, offer, AI Marketing OS, business model.
-- Kien thuc trien khai: research, strategy, content, performance, report, timeline, benchmark, visual guideline.
-- RBL New Skill: skill mau cho Leader, Content, Designer, Performance.
+- Knowledge foundation: fullstack brandformance, blueprint 8 thanh phan, content system, channel, Meta Ads, KPI, insight, offer, AI Marketing OS, business model — da chuyen the vao `knowledge/`.
+- Kien thuc trien khai: research, strategy, content, performance, report, timeline, benchmark, visual guideline — da chuyen the vao `knowledge/trien-khai/`.
+- Bo SOP skill theo vai tro: Leader, Content, Designer, Performance.
 - Template MKT: one-page plan, annual/quarter/campaign tracker, dashboard, report, meeting/SLA, AI workflow docs.
 
 Quyet dinh import:
@@ -16,7 +16,7 @@ Quyet dinh import:
 - Import concept he thong: Brand Hub, role workspace, skill chain, data loop, second brain, cadence.
 - Import workflow reusable: research -> strategy -> plan -> execute -> measure -> review.
 - Import decision rules va dashboard pattern.
-- Khong import 62 skill mau thanh skill moi rieng vi repo da co skill tuong ung.
+- Tu v3.5.0, bo SOP theo vai tro da duoc trien khai day du: skill moi 35-67 (content system, design production, performance ops, leader ops) + lam giau cac skill hien co; phan trung lap voi skill cu duoc gop thay vi tao ban sao.
 - Khong khoa vao Claude/ChatGPT/NotebookLM neu user dung stack khac; map theo vai tro truoc.
 
 ## AI market fit 2026
@@ -78,6 +78,10 @@ Chain mau:
 | Brief campaign | 02-brief-chien-dich -> 31-offer-design -> 01/04/05/06 -> 12-brief-landing-page |
 | Danh gia chien dich | 13-phan-tich-du-lieu -> 03-danh-gia-hieu-suat -> 21-audit-ads-performance -> 07-bao-cao-marketing |
 | Next plan | report ky truoc -> bottleneck -> 00/02/01/21 tuy van de |
+| Content engine thang | 35-brand-voice -> 09 -> 01 -> 36-content-brief -> 37/04/05/38 -> 42/43/44 -> 39-content-audit -> 40-next-content-plan |
+| Performance loop | 51-audience-research -> 10 -> 54-media-plan -> 53-tracking-setup -> 52-account-structure -> 19 -> 21 -> 55/56 -> 07 -> 57-next-ads-plan |
+| Design pipeline | 41-campaign-asset-list -> 42/43/45 -> 47-design-review -> 50-asset-resize |
+| Leader cadence | 00 -> 61-budget-planning -> 02 -> 62-marketing-review/47 -> 07 weekly -> 63-campaign-retrospective |
 
 Rule: neu co output ky truoc, dung no lam input bat buoc.
 
@@ -120,7 +124,49 @@ Khi chua co connector, user co the paste export CSV/screenshot/summary. Khi co c
 
 Weekly review chi nen chot 1-3 quyet dinh. Neu co 10 action item, he thong dang thieu uu tien.
 
-## Framework core tu tai lieu RBL
+## Kien truc 5 role project (Claude Projects hoac tuong duong)
+
+Trien khai OS thanh 5 project theo role — moi project co custom instruction + skill (SOP) + knowledge rieng:
+
+| Project | Vai tro | Skill goi y (repo) | Knowledge goi y |
+|---------|---------|--------------------|-----------------|
+| Leader/CEO | Chien luoc, brief, review, bao cao CEO | 00, 02, 07, 08, 10, 31, 58-67 | knowledge/01, 02, 04, 06, 08, 10 |
+| Content | Content fullstack: caption, script, email, seeding | 35-40, 01, 04, 05, 06, 09, 14 | knowledge/03, 07 + trien-khai/k-c* |
+| Designer | Visual & production: brief anh/carousel/video, landing | 41-50, 12, 30 | output 46-brand-guideline + trien-khai/k-c3 |
+| Performance | Media buying: plan, test, audit, scale, report | 51-57, 03, 13, 19, 21, 10 | knowledge/05, 06 + trien-khai/k-p*, k-c6 |
+| Knowledge Base | Kho tu duy nen tang (khong phai project thuc thi) | — | knowledge/01-10 day du |
+
+Custom instruction cot loi tung role (tom tat, chinh theo brand):
+
+- **Leader:** tu duy muc tieu doanh thu -> KPI -> kenh -> content -> do luong; output .md giao team trien khai ngay; thang than, logic, co so lieu.
+- **Content:** viet theo Brand Voice da upload, tham chieu file brand voice truoc moi output; output .md san dang hoac san giao designer; co banned words list.
+- **Designer:** tuan thu brand guideline (mau, font, spacing); khong bat dau thiet ke khi chua co brief duyet; output brief .md hoac file .html xem duoc ngay.
+- **Performance:** luon tinh nguoc tu doanh thu -> CPL max -> budget; khong tang budget khi CPL dang xau; khong chay ads khi tracking chua verify.
+
+Quy trinh cai dat (Claude Projects; tool khac lam tuong tu):
+
+1. Tao project theo role, dat ten `[Brand] — Content`, `[Brand] — Performance`...
+2. Viet custom instruction theo role.
+3. Upload skill .md + knowledge .md vao Files. Gioi han ~20 file/project — uu tien skill hay dung nhat.
+4. Test trigger phrase tung skill; neu AI khong nhan dung skill, nhac ten skill truc tiep trong cau lenh.
+
+Thu tu uu tien upload khi bi gioi han file:
+
+- Content: brand voice -> insight -> content strategy/calendar -> content brief -> production (caption/script/ads/email) -> brief visual -> do luong.
+- Designer: asset list -> canva/image/carousel brief -> design review -> landing page -> con lai.
+- Performance: kpi calculator -> media plan -> tracking setup -> ads copy -> A/B test -> audit -> scaling -> con lai.
+- Leader: campaign brief -> timeline -> offer -> strategy -> design/ads review -> strategy report -> weekly report -> con lai.
+
+**Quy tac vang:** Brand Hub thay doi -> cap nhat file moi vao TAT CA project lien quan. Bo qua buoc nay, cac project dung thong tin cu va output lech nhau.
+
+FAQ trien khai:
+
+- AI khong dung dung skill: dung trigger phrase chinh xac hoac nhac ten skill ("Dung skill 36-content-brief de...").
+- AI khong nho giong brand: kiem tra file brand voice da upload dung project chua; AI doc toan bo file trong project truoc khi tra loi.
+- Co nen gop 1 project cho tat ca: khong khuyen khich — moi role can instruction rieng de output chuyen biet.
+- Knowledge co can update: co — review sau moi campaign hoac moi quy; xoa file cu tren project, upload ban moi.
+
+## Framework core
 
 ### Fullstack Brandformance
 

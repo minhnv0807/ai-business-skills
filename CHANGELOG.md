@@ -9,16 +9,65 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## v3.6.0 — Role SOP Packs Go Global (2026-07-30)
+
+### Added
+- **33 new Global skills (35-67, `skills/en/`)** — English mirrors of every Vietnamese role SOP pack, completing bilingual parity for the four role clusters:
+  - **Content system:** `35-brand-voice-global`, `36-content-brief-global`, `37-social-caption-global`, `38-community-seeding-global`, `39-content-audit-global`, `40-next-content-plan-global`.
+  - **Design production:** `41-campaign-asset-list-global`, `42-image-brief-global`, `43-carousel-brief-global`, `44-video-editor-brief-global`, `45-design-tool-brief-global`, `46-brand-guideline-global`, `47-design-review-global`, `48-quick-visual-brief-global`, `49-html-email-template-global`, `50-asset-resize-global`.
+  - **Performance ops:** `51-audience-research-global`, `52-account-structure-global`, `53-tracking-setup-global`, `54-media-plan-global`, `55-scaling-ads-global`, `56-retargeting-plan-global`, `57-next-ads-plan-global`.
+  - **Leader ops:** `58-positioning-global`, `59-go-to-market-global`, `60-launch-playbook-global`, `61-budget-planning-global`, `62-marketing-review-global`, `63-campaign-retrospective-global`, `64-team-brief-global`, `65-team-performance-review-global`, `66-crisis-playbook-global`, `67-agency-vendor-brief-global`.
+
+These are adaptations, not translations. Frameworks, process steps, and decision logic carry over unchanged; currency moves to USD against `references/benchmarks-global.md` medians, channels swap to the global stack (Klaviyo/Mailchimp instead of Zalo OA, Shopify/Amazon instead of Shopee/Lazada, Meta US/EU instead of Facebook VN), and compliance shifts to FTC, GDPR, CCPA, and CAN-SPAM.
+
+**Community seeding was rewritten, not translated.** Three tactics in the Vietnamese version do not survive US/EU regulation and were removed rather than localized: persona accounts (astroturfing), brand-written customer reviews (FTC 16 CFR Part 465 carries civil penalties), and staged "looking for recommendations" threads answered by your own accounts (conversation manipulation). They are replaced with a named-participant roster where team members post under real names with visible affiliation, permission-backed amplification of customer-authored stories, and disclosed answers in existing threads. The value-to-promotion ratio moved from 4:1 to Reddit's 9:1 norm, and `38-community-seeding-global/references/platform-rules.md` carries per-platform norms plus a regulatory table (FTC 255, FTC 465, EU UCPD/Omnibus, UK DMCC).
+
+### Changed
+- `marketplace.json` skill count 105 → 138; version 3.6.0.
+
+### Compatibility
+- Zero breaking changes. Vietnamese skills, agents, and workflows are untouched.
+
+## v3.5.0 — Role SOP Deep Integration (2026-07-30)
+
+### Added
+- **33 new VN skills (35-67)** — four role SOP packs adapted from community-shared fullstack marketing documents, normalized to this repo's skill spec:
+  - **Content system (35-40):** `35-brand-voice`, `36-content-brief`, `37-caption-social`, `38-seeding-plan`, `39-content-audit`, `40-next-content-plan`.
+  - **Design production (41-50):** `41-campaign-asset-list`, `42-brief-hinh-anh`, `43-brief-carousel`, `44-brief-video-editor`, `45-brief-canva`, `46-brand-guideline`, `47-design-review`, `48-quick-visual-brief`, `49-html-email-template`, `50-asset-resize`.
+  - **Performance ops (51-57):** `51-audience-research`, `52-account-structure`, `53-tracking-setup`, `54-media-plan`, `55-scaling-ads`, `56-retargeting-plan`, `57-next-ads-plan`.
+  - **Leader ops (58-67):** `58-positioning`, `59-go-to-market`, `60-launch-playbook`, `61-budget-planning`, `62-marketing-review`, `63-campaign-retrospective`, `64-team-brief`, `65-team-performance-review`, `66-crisis-playbook`, `67-agency-vendor-brief`.
+- **NEW `knowledge/` library (24 files)** — 10 foundation thinking files (brandformance, 8-part blueprint, content system, channel strategy, Meta Ads, KPI measurement, customer insight, brand/offer architecture, AI Marketing OS, business model flywheel) + 14 implementation files in `knowledge/trien-khai/` covering strategy, budget, research, persona, content framework, production, UGC, conversion content, analytics, creative strategy, reporting, and brand visual guidelines. Sized for upload into role-based AI projects; see `knowledge/README.md` for per-role upload priority.
+- **NEW agent `design-producer`** — visual & production role covering skills 41-50 plus 12 and 30.
+- **4 new VN workflows** — `content-engine`, `performance-loop`, `design-pipeline`, `leader-cadence`.
+- **2 new references** — `marketing-templates-library.md` (operational template structures: planning, tracking dashboard, audit, report, campaign, content calendar — mapped to the skill that regenerates each) and `ai-tool-orchestration.md` (multi-tool AI workflow for marketers, role-based project setup, information-gathering checklists).
+
+### Changed
+- `marketplace.json` skill count 72 → 105; version 3.5.0.
+- `34-ai-marketing-os` (v1.1.0): Brand Hub table now maps each file to the skill that produces it; role workspace and skill chains extended with the new packs; new section on deploying five role-based projects.
+- **17 existing skills enriched** with SOP-level detail (process steps, decision rules, quality gates, cross-references) without breaking their structure: `01` `02` `03` `04` `05` `06` `07` `08` `09` `10` `12` `13` `14` `19` `21` `30` `34`.
+- `references/benchmarks-vietnam.md` extended: frequency thresholds, TikTok VTR, Facebook Group and Instagram organic rates, reach-per-follower ratios, warn-vs-kill thresholds, target-relative decision rules for scale/pause/test, CPO and ROAS by industry, B2B benchmarks.
+- **Progressive disclosure applied** to the nine skills that exceeded the 500-line spec guideline: long lookup tables, platform-specific checklists, and extended templates moved into per-skill `references/` files, with a pointer line at the cut point. No content removed — every skill now loads a lean entry file and pulls detail only when needed.
+- CLAUDE.md, agents, and workflow docs updated with the new clusters and chains.
+
+### Fixed
+- Stale reference paths corrected across docs, skills, and workflows: `skills/references/` → `skills/vi/references/` (the folder moved in v3.0.0 but several links were never updated).
+
+### Removed
+- Legacy personal attribution purged from all documentation, playbooks, and adapted material. Source-specific brand assets (palette, fonts, business model) generalized into Brand Hub placeholders.
+
+### Compatibility
+- Zero breaking changes. All existing skill names, paths, workflows, and agents remain valid.
+
 ## v3.4.0 — AI Marketing OS Expansion (2026-07-08)
 
 ### Added
 - **NEW skill `34-ai-marketing-os`** (VN) and **`34-ai-marketing-os-global`** (EN) — Brand Hub/source of truth, role-based AI agents/projects, skill chains, second brain, data loops, MCP/connectors, SOP cadence, governance, and 30-60-90 rollout planning.
-- **2 new reference playbooks** under the new skill folders, synthesizing the RBL community-share documents into reusable OS-level guidance.
+- **2 new reference playbooks** under the new skill folders, synthesizing the community-shared fullstack marketing documents into reusable OS-level guidance.
 
 ### Changed
 - `marketplace.json` skill count: 70 -> 72.
 - README, README.vi, CONNECTORS, llms, VERSIONS, and agent routing updated with AI Marketing OS coverage.
-- RBL role skill samples were consolidated into workflow guidance instead of imported as duplicate skills, preserving the existing skill architecture.
+- Community role skill samples were consolidated into workflow guidance instead of imported as duplicate skills, preserving the existing skill architecture.
 
 ### Compatibility
 - Zero breaking changes. Existing skill names, paths, workflows, and agents remain valid.
@@ -318,7 +367,7 @@ Aligned with Anthropic's `knowledge-work-plugins` pattern (https://github.com/an
 ## [1.1.0] — 2026-04-23
 
 ### Changed
-- Rebrand: "Run By Linh" → "Over Powers Agency"
+- Rebrand to "Over Powers Agency" (legacy personal attribution removed)
 - Redesigned README with badges, diagrams, visual tables
 - Added star history chart
 

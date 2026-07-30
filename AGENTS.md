@@ -24,6 +24,8 @@ Repo cung hoat dong nhu **Claude Code Plugin Marketplace** — cai dat bang `/pl
 │       ├── scripts/              # Helper scripts (optional)
 │       └── evals/                # Quality tests (optional)
 ├── references/                   # Shared references across skills
+├── knowledge/                    # Foundation thinking (upload as AI project context)
+│   └── trien-khai/               # Implementation knowledge by role
 ├── workflows/                    # Multi-skill workflows
 ├── agents/                       # Agent personas/roles
 ├── examples/                     # Sample outputs
@@ -160,7 +162,7 @@ Same pattern for personal brand:
 
 This pattern allows ONE agent to serve BOTH clusters without code duplication.
 
-Used by: 5 agents (mkt-strategist, content-producer, performance-analyst, channel-operator, personal-brand-builder).
+Used by: 6 agents (mkt-strategist, content-producer, performance-analyst, channel-operator, design-producer, personal-brand-builder).
 
 ## Cai dat
 

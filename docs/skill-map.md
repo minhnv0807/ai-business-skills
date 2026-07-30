@@ -75,11 +75,54 @@
       ║   Skills with 4 region variants (US/EU/SEA/LATAM):                ║
       ║   foundation, 03, 10, 11, 14, 17, 18, 21, 22, 24, 27              ║
       ════════════════════════════════════════════════════════════════════
+
+      ┌──────────────────────────────────────────────────────────────────┐
+      │        ROLE SOP PACKS (v3.5.0) — skills/vi/35-67                 │
+      │                                                                  │
+      │  CONTENT SYSTEM (35-40)          DESIGN PRODUCTION (41-50)       │
+      │  35 brand-voice (nen tang)       41 campaign-asset-list          │
+      │  36 content-brief                42 brief-hinh-anh               │
+      │  37 caption-social               43 brief-carousel               │
+      │  38 seeding-plan                 44 brief-video-editor           │
+      │  39 content-audit                45 brief-canva                  │
+      │  40 next-content-plan            46 brand-guideline              │
+      │                                  47 design-review                │
+      │  PERFORMANCE OPS (51-57)         48 quick-visual-brief           │
+      │  51 audience-research            49 html-email-template          │
+      │  52 account-structure            50 asset-resize                 │
+      │  53 tracking-setup                                               │
+      │  54 media-plan                   LEADER OPS (58-67)              │
+      │  55 scaling-ads                  58 positioning                  │
+      │  56 retargeting-plan             59 go-to-market                 │
+      │  57 next-ads-plan                60 launch-playbook              │
+      │                                  61 budget-planning              │
+      │  KNOWLEDGE BASE: knowledge/      62 marketing-review             │
+      │  10 file tu duy nen tang         63 campaign-retrospective       │
+      │  + trien-khai/ theo vai tro      64 team-brief                   │
+      │                                  65 team-performance-review      │
+      │                                  66 crisis-playbook              │
+      │                                  67 agency-vendor-brief          │
+      └──────────────────────────────────────────────────────────────────┘
 ```
 
 ---
 
-## Bang tra nhanh — 60 Skills (29 VN + 30 Global + 1 foundation per cluster)
+## Role SOP packs — vong lap van hanh (v3.5.0)
+
+| Pack | Vong lap | Chain |
+|------|----------|-------|
+| Content system | Thang | 35 → 09 → 01 → 36 → [37\|04\|05\|38\|06\|14] → [42\|43\|44] → 39 → 07 → 40 → (lap lai 01) |
+| Design production | Theo campaign | 41 (T-14) → 45/12 concept (T-7) → 43/42 (T-5..T-1) → 47 review → 48 standby → 50 (D+1) |
+| Performance ops | Tuan / thang | 51 → 10 → 54 → 53 (verify) → 52 → 05 → 19 → 21 → 55/56 → 07 → 57 → (lap lai 54) |
+| Leader ops | Quy / campaign / tuan | 00 → 61 → 02 → 64 → 62/47 gate → 07 weekly → 63 retro → cap nhat Brand Hub (34) |
+
+**Kho kien thuc:** `knowledge/` — 10 file tu duy nen tang + `knowledge/trien-khai/`. Upload vao AI project theo vai tro; kien truc 5 role project xem skill `34-ai-marketing-os`.
+
+**Ban Global (v3.6.0):** ca 33 skill co mirror trong `skills/en/` voi hau to `-global`. Sau ten doi de doc tu nhien hon trong tieng Anh: `37-social-caption-global`, `38-community-seeding-global`, `42-image-brief-global`, `43-carousel-brief-global`, `44-video-editor-brief-global`, `45-design-tool-brief-global`.
+
+---
+
+## Bang tra nhanh — 138 Skills (69 VN + 69 Global)
 
 | # | Skill | Lam gi | Khi nao dung | Output |
 |---|-------|--------|-------------|--------|
@@ -113,6 +156,45 @@
 | 26 | thought-leadership-content | Long-form text | Can viet bai chieu sau | 3 structures + repurpose |
 | 27 | personal-brand-monetize | Kiem tien tu personal brand | Sau khi co audience | Offer ladder + funnel |
 | 28 | community-building | Xay community | Can grow community | Blueprint 3-lop |
+| 29 | xuat-khau-b2b | Export B2B cho SME Viet | Ban hang quoc te B2B | Company profile + email + trade show |
+| 30 | thiet-ke-master | Router 8 loai thiet ke | Can tao visual bang AI | Prompt hoac anh generated |
+| 31 | offer-design | Dong goi offer | Truoc khi ban / doi offer | Value stack + guarantee + ladder |
+| 32 | seo-growth | SEO + AI SEO/GEO | Traffic organic thap | Audit + schema + backlink plan |
+| 33 | b2b-lead-gen | Prospecting + outreach | Can pipeline B2B | Lead scoring + sequence + CRM handoff |
+| 34 | ai-marketing-os | He dieu hanh marketing AI | Team dung AI roi rac | Brand Hub + role project + SOP |
+| 35 | brand-voice | Brand Voice Document | Nen tang truoc moi content | Personality + tone + banned words |
+| 36 | content-brief | Brief tung bai content | Truoc khi viet | Angle + insight + key message + CTA |
+| 37 | caption-social | Caption organic | Dang bai hang ngay | Caption 2 variants + hashtag |
+| 38 | seeding-plan | Ke hoach seeding | Can lan toa cong dong | Group list + kich ban + lich |
+| 39 | content-audit | Audit content dinh ky | Cuoi thang | Winner/loser + insight |
+| 40 | next-content-plan | Plan content ky sau | Sau audit | Plan 70/20/10 tu data |
+| 41 | campaign-asset-list | Danh sach asset campaign | T-14 truoc launch | Asset list + deadline + owner |
+| 42 | brief-hinh-anh | Brief anh static/banner | Can visual | Layout + text + spec theo kenh |
+| 43 | brief-carousel | Brief carousel | Can chuoi slide | Logic slide + noi dung tung slide |
+| 44 | brief-video-editor | Brief cho editor | Sau khi co script | Storyboard + overlay + pacing |
+| 45 | brief-canva | Direction cho designer Canva | Giao viec designer | Template structure + do/don't |
+| 46 | brand-guideline | Brand guideline visual | 1 lan / khi rebrand | Logo + palette + typography |
+| 47 | design-review | Duyet thiet ke | Truoc khi ban giao | Feedback + diem so + verdict |
+| 48 | quick-visual-brief | Brief gap khi dang chay | Creative fatigue | Brief 1 trang + SLA |
+| 49 | html-email-template | Code email HTML | Can email responsive | File .html + checklist test |
+| 50 | asset-resize | Resize asset da kenh | Sau khi co winner | SOP + bang kich thuoc chuan |
+| 51 | audience-research | Nghien cuu tep target | Truoc khi chay ads | Audience profile + gia thuyet |
+| 52 | account-structure | Cau truc tai khoan ads | Setup campaign | Hierarchy + naming convention |
+| 53 | tracking-setup | Setup tracking | Truoc khi chay ads | Checklist verify pixel/CAPI/UTM |
+| 54 | media-plan | Media plan | Dau thang / dau campaign | Budget theo kenh + funnel + timeline |
+| 55 | scaling-ads | Scale ads | Khi co winner | Dieu kien scale + lich tang budget |
+| 56 | retargeting-plan | Retargeting + lookalike | Khi du warm audience | Phan tang + message + frequency cap |
+| 57 | next-ads-plan | Plan ads ky sau | Cuoi thang | Giu winner + thay loser + test moi |
+| 58 | positioning | Dinh vi thuong hieu | Dau project / pivot | Promise + Proof + Path |
+| 59 | go-to-market | GTM plan | Ra mat san pham moi | Beachhead + message + milestone |
+| 60 | launch-playbook | Playbook launch | Truoc launch lon | T-30 → D+7 checklist + war-room |
+| 61 | budget-planning | Phan bo ngan sach | Dau quy / dau nam | Budget theo kenh + nguong cat lo |
+| 62 | marketing-review | Duyet content + ads copy | Gate truoc khi chay | Checklist + verdict + feedback |
+| 63 | campaign-retrospective | Retro sau campaign | Trong 5 ngay sau khi ket thuc | Scorecard + bai hoc + action |
+| 64 | team-brief | Giao task + template hop | Phan cong cong viec | Brief co done criteria + agenda hop |
+| 65 | team-performance-review | Danh gia nhan su | Cuoi thang/quy | KPI scorecard + development plan |
+| 66 | crisis-playbook | Xu ly khung hoang | Khi co su co | Phan loai L1-L5 + response theo gio |
+| 67 | agency-vendor-brief | Brief + quan ly vendor | Thue agency/freelancer | SOW + milestone + danh gia vendor |
 
 ---
 
@@ -197,9 +279,9 @@
 
 ---
 
-## 15 Workflows (7 VN + 8 Global)
+## 19 Workflows (11 VN + 8 Global)
 
-### VN Workflows (7)
+### VN Workflows (11)
 
 | Workflow | Skills | Khi nao | Thoi gian |
 |----------|--------|---------|-----------|
@@ -207,6 +289,10 @@
 | **campaign-launch** | 08 → 09 → 00 → 02 → 01+04+05 → 06 → 11+12 | Launch chien dich | 14-21 ngay |
 | **monthly-cycle** | 13 → 03 → 07 → 10 → 01 | Cuoi thang | 3-5 ngay |
 | **content-production** | Review 01 → 04 → Quay → 05 → Dang | Hang tuan | 5 ngay |
+| **content-engine** ⭐ | 35 → 09 → 01 → 36 → [37\|04\|05\|38] → [42\|43\|44] → 39 → 07 → 40 | Vong lap content thang | Lap lai hang thang |
+| **performance-loop** ⭐ | 51 → 10 → 54 → 53 → 52 → 19 → 21 → 55/56 → 07 → 57 | Vong lap ads | Setup 3-5 ngay, lap hang tuan |
+| **design-pipeline** ⭐ | 41 → [42\|43\|45] → 47 → 50 | San xuat visual theo campaign | T-14 den D+1 |
+| **leader-cadence** ⭐ | 00 → 61 → 02 → 64 → 62/47 → 07 → 63 | Nhip quan ly marketing | Quy / campaign / tuan |
 | **personal-brand-launch** | 22 → 23 → 26 → 24 → 27 | Build personal brand tu 0 | 30-60 ngay |
 | **ai-avatar-batch** | 22 → 24 (×30) → 26 → 28 | Sx 30 video AI/thang | 7-10 ngay |
 | **monetize-personal-brand** | 27 → 28 → 14 → 18 | Kiem tien tu audience da co | 14-21 ngay |
@@ -259,7 +345,7 @@ User muon "Content hang thang"
 
 ## 5 Agent (Vai tro chuyen biet) — Universal Mode (v2.5.0)
 
-> **Universal Mode:** Tu v2.5.0, ca 5 agents tu dong nhan dien cluster qua `.agents/` directory.
+> **Universal Mode:** Tu v2.5.0, ca 6 agents tu dong nhan dien cluster qua `.agents/` directory. Tu v3.5.0 them agent `design-producer` (visual & production, skills 41-50).
 > - `product-marketing-context.md` ton tai → VN mode (skills/)
 > - `product-marketing-context-global.md` ton tai → Global mode (skills/en/)
 > - Ca 2 ton tai → agent HOI user chon cluster

@@ -3,7 +3,7 @@ name: 21-audit-ads-performance
 description: Audit toan dien tai khoan quang cao — cho diem Health Score 0-100, liet ke Quick Wins, phat hien vi pham Quality Gates, de xuat action plan theo muc do uu tien. Ho tro Meta Ads, TikTok Ads, Google Ads, Zalo Ads.
 argument-hint: "<platform + account + period>"
 metadata:
-  version: 1.2.0
+  version: 1.3.1
   category: performance
 triggers:
   - "audit tai khoan ads"
@@ -17,16 +17,25 @@ triggers:
   - "tai khoan chay kem qua"
   - "review tai khoan ads"
   - "account audit"
+  - "CPL cao"
+  - "ROAS thap"
+  - "ads khong ra so"
+  - "chan doan ads"
 output: File .md gom Health Score 0-100, danh sach Quick Wins, vi pham Quality Gates, chuyen sau theo nen tang, va action plan 7 ngay.
 related:
   - 03-danh-gia-hieu-suat
   - 05-copy-quang-cao
   - 10-tinh-kpi-nguoc
   - 00-ke-hoach-mkt
+  - 12-brief-landing-page
+  - 53-tracking-setup
+  - 55-scaling-ads
+  - 56-retargeting-plan
 references:
-  - skills/references/quality-gates-vn.md
-  - skills/references/copy-frameworks-vn.md
-  - skills/references/mcp-ads-integration.md
+  - references/checklist-audit-theo-nen-tang.md
+  - skills/vi/references/quality-gates-vn.md
+  - skills/vi/references/copy-frameworks-vn.md
+  - skills/vi/references/mcp-ads-integration.md
 ---
 
 # Audit Ads Performance — Health Score & Action Plan
@@ -48,7 +57,7 @@ Hoi toi da 4 cau truoc khi bat dau:
 
 ### Auto-pull data qua MCP (neu co ket noi)
 
-> **Reference:** `skills/references/mcp-ads-integration.md` — huong dan setup day du.
+> **Reference:** `skills/vi/references/mcp-ads-integration.md` — huong dan setup day du.
 > **Endpoint Meta Official:** `https://mcp.facebook.com/ads` — 29 tools, setup 5 phut qua `claude.ai/settings/integrations`
 
 Neu user da ket noi MCP server, co the pull data tu dong thay vi yeu cau paste:
@@ -120,6 +129,101 @@ breakdowns=age,gender
 
 ---
 
+## Quy trinh audit theo khau (SOP)
+
+Audit **tu tren xuong**, khong nhay coc. Sua creative khi tracking sai = tu lua minh bang so ao.
+
+```
+1 ACCOUNT  →  2 CAMPAIGN  →  3 ADSET  →  4 CREATIVE  →  5 LANDING  →  6 TRACKING
+   (nen)       (muc tieu)     (tep)      (noi dung)     (chuyen doi)   (do luong)
+
+Nhung khi CHAY thi doc nguoc: TRACKING truoc — so sai thi 5 khau tren deu vo nghia.
+```
+
+### Bang cac khau audit
+
+| # | Khau | Kiem gi | Thoi gian | Dau hieu hong |
+|---|------|---------|-----------|--------------|
+| 1 | **Account** | Trang thai tai khoan, han muc chi tieu, canh bao chinh sach, quyen truy cap, phuong thuc thanh toan, lich su reject | 10 phut | Tai khoan bi han che, nhieu ads reject, spending limit chan delivery |
+| 2 | **Campaign** | Objective co dung muc tieu kinh doanh khong, so luong campaign, budget phan bo (Testing 30% · Scale 50% · Retarget 15% · Lookalike 5%), naming convention | 15 phut | Objective sai (chay Traffic de mong ra don), qua nhieu campaign chia nho ngan sach |
+| 3 | **Adset** | Trung tep giua cac adset, ngan sach toi thieu/adset, learning phase, bid strategy, lich chay, exclusion list | 20 phut | Tep chong nhau tu dau gia lan nhau, adset ngan sach qua nho khong thoat learning |
+| 4 | **Creative** | So creative dang chay, do da dang (Andromeda), frequency, hook rate, ad fatigue, creative reserve | 20 phut | 1-2 creative chay ca thang, frequency > 3, tat ca creative cung 1 goc nhin |
+| 5 | **Landing** | Toc do tai, message match voi ads, above the fold, so field form, social proof, mobile | 15 phut | CTR tot nhung CPL cao = van de gan nhu chac chan o day |
+| 6 | **Tracking** | Pixel fire, event mapping, CAPI match rate, UTM, doi chieu GA4 vs Ads Manager | 20 phut | So Ads Manager lech GA4 > 20%, event trung hoac thieu |
+
+**Tong thoi gian audit day du: 1.5 - 2 gio.** Neu chi co 30 phut → chay Quick Health Check + khau 6 (Tracking) + khau 4 (Creative).
+
+### Quick Health Check — 6 chi so doc dau tien
+
+| Chi so | Thuc te | Tham chieu | Trang thai |
+|--------|---------|-----------|-----------|
+| CPM | | Meta 30–80K · TikTok 20–60K | Xanh / Vang / Do |
+| CTR | | Meta >= 1.5% · Google >= 3% | |
+| CPMess / CPL | | Target tu `10-tinh-kpi-nguoc` | |
+| ROAS | | >= Target ROAS da tinh | |
+| Frequency | | < 3 tot · > 4 fatigue | |
+| Hook Rate (video) | | >= 30% (3s view / impression) | |
+
+Xanh = dat; Vang = lech 1 den 1.5 lan nguong; Do = lech tren 1.5 lan nguong. Cham 2 o Do tro len → audit day du, khong sua vun vat.
+
+---
+
+## Chan doan: trieu chung → nguyen nhan → hanh dong
+
+CPL cao va ROAS thap la **trieu chung**, khong phai benh. Bang nay tra ve nguyen nhan goc theo dung khau.
+
+| Trieu chung | Nguyen nhan co the (theo thu tu kiem) | Khau lien quan | Hanh dong |
+|-------------|--------------------------------------|---------------|----------|
+| **CPM cao bat thuong** | Tep qua hep · bid strategy sai · ad relevance thap · dung mua cao diem (Tet, 11.11, 12.12) | Adset | Mo rong tep, doi bid, cai thien creative de tang relevance, chap nhan CPM mua vu va tinh lai KPI |
+| **CTR thap (< 1%)** | Hook khong du manh · creative sai format kenh · sai tang pheu · copy qua dai | Creative | Thay hook (khong phai thay tep), doi format dung kenh, doi chieu tang pheu, cat ngan copy |
+| **CTR tot nhung CPL cao** | Landing tai cham (> 3s) · LP khong khop message ads · form qua nhieu field · offer khong hap dan | Landing | Toi uu toc do, viet lai headline LP khop hook ads, giam field, sua offer |
+| **CPL tot nhung ROAS thap** | Chat luong lead thap · follow-up yeu / cham · offer chua thuyet phuc · friction o thanh toan | Ngoai ads | Siet tieu chi lead, sua kich ban va toc do reply, sua offer, don gian hoa checkout |
+| **Delivery thap / khong tieu tien** | Tep qua hep · ngan sach duoi nguong · dang learning phase · ad bi reject · spending limit tai khoan | Adset + Account | Mo tep, tang ngan sach adset len nguong toi thieu, cho het learning, kiem notification reject |
+| **Dang chay tot roi tut** | Ad fatigue (frequency > 3) · bao hoa tep · yeu to mua vu · tracking hong giua chung | Creative + Tracking | Thay creative, mo rong tep hoac lookalike, kiem lai pixel/CAPI truoc khi ket luan |
+| **Scale len la CPL vot** | Tang ngan sach qua nhanh (> 30%/lan) · reset learning · tep khong con du rong | Adset | Lui ve muc ngan sach cu, tang lai tu tu +20-30%/lan, cho 48h moi tang tiep — xem `55-scaling-ads` |
+| **So Ads Manager lech CRM** | Attribution window khac nhau · pixel duplicate · CAPI match rate thap · thieu UTM | Tracking | Thong nhat window, xoa event trung, tang match rate, chuan hoa UTM — xem `53-tracking-setup` |
+
+### Creative audit — 5 cau hoi
+
+| Yeu to | Cau hoi | Neu KHONG |
+|--------|---------|----------|
+| Hook 0-3s | Co chan duoc ngon tay dang luot khong? | Test hook moi (`04-script-video`, `05-copy-quang-cao`) |
+| Do lien quan | Co cham dung noi dau cua tep dang target khong? | Viet lai copy tu insight (`09-insight-khach-hang`) |
+| Bang chung | Co so lieu / testimonial that khong? | Bo sung proof, khong bia so |
+| CTA | Ro rang va cu the khong? | Thay CTA — 1 hanh dong duy nhat |
+| Ad fatigue | Frequency > 3 chua? | Refresh creative, chuan bi creative reserve |
+
+### Landing page audit — 6 diem
+
+- [ ] Toc do tai < 3 giay (do bang PageSpeed Insights, do o mang 4G khong phai wifi)
+- [ ] Message match: ads noi gi, headline LP phai noi dung dieu do
+- [ ] Above the fold: headline + CTA thay ngay khong can cuon
+- [ ] Form <= 4 field
+- [ ] Social proof hien thi trong man hinh dau hoac ngay duoi
+- [ ] Toi uu mobile — phan lon traffic ads o VN la mobile
+
+Chi tiet sua landing → `12-brief-landing-page`.
+
+### Tracking audit — 5 diem
+
+- [ ] Pixel dang fire dung (kiem bang Meta Pixel Helper hoac cong cu tuong duong)
+- [ ] Conversion event mapping dung (Lead / Purchase / Contact) — khong dung nham event
+- [ ] CAPI match rate >= 70%
+- [ ] UTM day du tren tat ca link, dung chuan naming
+- [ ] So GA4 doi chieu duoc voi Ads Manager (lech < 20% la chap nhan)
+
+Setup lai tu dau → `53-tracking-setup`.
+
+### Luat sua sau audit
+
+1. **Sua tu tren xuong theo khau** — tracking va account truoc, creative sau.
+2. **Moi lan chi doi 1 bien.** Doi 3 thu cung luc thi khong biet thu nao co tac dung.
+3. **Sau khi sua, cho 3-5 ngay moi danh gia.** Doc so sau 1 ngay la doc nhieu.
+4. **Adset CPL > 2x target sau 3 ngay → pause, khong cuu.** Ghi ly do vao log.
+5. **Sua xong va so on dinh >= 5 ngay → chuyen sang `55-scaling-ads`.** Chua on dinh thi khong scale.
+
+---
+
 ## He thong cho diem Health Score
 
 ### Cong thuc
@@ -149,212 +253,25 @@ Health Score = Σ(Check_pass × Weight_severity × Weight_category)
 
 ## Audit META ADS (50 Checks)
 
-> Trong so danh muc: Pixel/CAPI (30%) · Creative Diversity (25%) · Cau truc (20%) · Audience (15%) · Settings (10%)
-
-### Nhom 1 — Pixel & Tracking (30% trong so)
-
-| # | Check | Muc do | Cach kiem tra |
-|---|-------|--------|--------------|
-| M01 | Meta Pixel da cai tren tat ca trang web | Critical | Business Manager → Events Manager |
-| M02 | Purchase/Lead event dang fire chinh xac | Critical | Events Manager → Test Events |
-| M03 | Event Match Quality (EMQ) >= 6.0 | High | Events Manager → Bang diem EMQ |
-| M04 | Conversion API (CAPI) da setup | High | Cai thiet bat tay hoac qua partner |
-| M05 | Khong bi duplicate event (mua 1 tinh 2) | Critical | Events Manager → xem so luong/ngay |
-| M06 | Domain da verify | Medium | Business Manager → Brand Safety |
-| M07 | UTM parameter day du tren tat ca quang cao | Medium | URL Builder → kiem tra link |
-| M08 | Aggregated Event Measurement da cau hinh (neu can) | Medium | Events Manager → AEM |
-
-**Sub-score Tracking:** _____ / 10 diem (tinh theo trong so)
-
-### Nhom 2 — Creative Diversity (25% trong so)
-
-| # | Check | Muc do | Cach kiem tra |
-|---|-------|--------|--------------|
-| M09 | Co it nhat 10 creative thuc su khac biet | High | Ads Manager → Creative tab |
-| M10 | Khong co creative nao chay > 21 ngay lien tuc | High | Xem ngay bat dau creative |
-| M11 | Frequency < 3.5 (cold audience) | High | Ads Manager → Cot Frequency |
-| M12 | CTR creative lon nhat va nho nhat khong chenh > 3x | Medium | Sort by CTR |
-| M13 | Co ca 3 format: video, image, carousel | Medium | Creative library |
-| M14 | Video co am thanh / nhac nen (neu dung video) | High | Xem tung video |
-| M15 | Hook 3 giay dau gay chu y (HookRate > 25%) | High | TikTok-style: 3s view / Impression |
-| M16 | Co UGC hoac review-style creative (1+) | Medium | Kiem tra creative list |
-| M17 | Creative khong bi blur, mo, cua so sai | Low | Xem preview tung ad |
-
-**Sub-score Creative:** _____ / 10 diem
-
-### Nhom 3 — Cau truc tai khoan (20% trong so)
-
-| # | Check | Muc do | Cach kiem tra |
-|---|-------|--------|--------------|
-| M18 | So luong campaign phu hop (khong qua 3-5 campaign chu luc) | Medium | Campaign list |
-| M19 | Cac campaign co muc tieu ro rang, khong bi chong cheo | High | Xem Objective moi campaign |
-| M20 | Moi ad set co ngan sach it nhat 5x CPMess muc tieu/ngay | Critical | Tinh: ngan sach / CPMess muc tieu ≥ 5 |
-| M21 | Khong co > 5 ad set chay cung luc trong 1 campaign (chia nho qua) | High | Dem ad set |
-| M22 | Exclusion audience da thiet lap (loai khach cu, loai remarketing khoi cold) | High | Ad set → Exclusions |
-| M23 | Campaign retarget tach biet voi campaign cold | High | Kiem tra campaign objectives |
-| M24 | Budget Campaign-level hoac Ad Set-level (nhat quan) | Medium | Kiem tra Budget type |
-
-**Sub-score Structure:** _____ / 10 diem
-
-### Nhom 4 — Audience (15% trong so)
-
-| # | Check | Muc do | Cach kiem tra |
-|---|-------|--------|--------------|
-| M25 | Custom Audience (website, video, page) da cap nhat du lieu moi | High | Audiences → cap nhat ngay |
-| M26 | Lookalike audience duoc tao tu nguon chat luong (khach mua, khach nhắn tin) | High | LAL sources |
-| M27 | Khong dung age/gender restriction qua tat (tru khi co data ro) | Medium | Ad set targeting |
-| M28 | Co test Broad Targeting voi creative tot | Medium | Ad set → No detailed targeting |
-| M29 | Audience overlap giua cac ad set < 25% | High | Audience Overlap tool |
-
-**Sub-score Audience:** _____ / 10 diem
-
-### Nhom 5 — Settings (10% trong so)
-
-| # | Check | Muc do | Cach kiem tra |
-|---|-------|--------|--------------|
-| M30 | Bid strategy phu hop voi muc tieu (Lowest Cost neu moi, Cost Cap khi on dinh) | High | Kiem tra bid strategy |
-| M31 | Ad scheduling (lich chay) phu hop voi gio khach hang online | Medium | Ad Scheduling |
-| M32 | Placement dang su dung Advantage+ (khong lock cung 1 placement) | Medium | Placement settings |
-| M33 | Campaign spending limit da thiet lap (tranh chi qua) | Low | Campaign → Spending Limit |
-| M34 | Trang thai tai khoan: khong co Warning / Hạn chế | Critical | Account Quality |
-
-**Sub-score Settings:** _____ / 10 diem
-
-### Meta Health Score
-```
-Meta Score = (M_Tracking × 0.30) + (M_Creative × 0.25) + (M_Structure × 0.20) + (M_Audience × 0.15) + (M_Settings × 0.10)
-```
+> 5 nhom check M01-M34 (Pixel & Tracking, Creative Diversity, Cau truc tai khoan, Audience, Settings) — moi check co muc do nghiem trong + cach kiem tra, kem trong so tung nhom, o ghi sub-score va cong thuc Meta Health Score: doc `references/checklist-audit-theo-nen-tang.md` muc "Audit META ADS (50 Checks)".
 
 ---
 
 ## Audit TIKTOK ADS (30 Checks)
 
-> Trong so danh muc: Creative Quality (30%) · Technical Setup (25%) · Bidding/Learning (20%) · Cau truc (15%) · Settings (10%)
-
-### Nhom 1 — Creative Quality (30%)
-
-| # | Check | Muc do |
-|---|-------|--------|
-| T01 | Video co am thanh / nhac nen (khong im lang) | Critical |
-| T02 | 3 giay dau gay hook — co chu y hoac hanh dong | Critical |
-| T03 | Video dung ty le 9:16 (doc) | High |
-| T04 | Do phan giai >= 720p | High |
-| T05 | Co text overlay / caption | Medium |
-| T06 | CTA ro rang trong video (giong noi hoac text) | High |
-| T07 | Creative phu hop vibe TikTok (khong qua "quang cao lo") | High |
-| T08 | Co it nhat 3 creative hoan toan khac nhau | High |
-| T09 | Creative khong chay qua 10 ngay lien tuc | High |
-
-### Nhom 2 — Technical Setup (25%)
-
-| # | Check | Muc do |
-|---|-------|--------|
-| T10 | TikTok Pixel da cai va fire chinh xac | Critical |
-| T11 | Events API (CAPI) da setup | High |
-| T12 | ViewContent / AddToCart / Purchase events dang fire | High |
-| T13 | URL da co UTM parameter | Medium |
-| T14 | Khong duplicate event | Critical |
-
-### Nhom 3 — Bidding & Learning (20%)
-
-| # | Check | Muc do |
-|---|-------|--------|
-| T15 | Ad group ngan sach it nhat 5x CPA muc tieu/ngay | Critical |
-| T16 | Khong chinh sua ad group dang trong Learning Phase (0-7 ngay) | High |
-| T17 | Bid strategy phu hop (Lowest Cost khi moi, Target CPA khi on dinh) | High |
-| T18 | Khong chay > 5 ad group tren cung 1 audience cung luc | Medium |
-
-### Nhom 4 — Cau truc (15%)
-
-| # | Check | Muc do |
-|---|-------|--------|
-| T19 | Retarget tach campaign voi Cold | High |
-| T20 | Custom Audience tu web/app da thiet lap | High |
-| T21 | Exclusion audience dung (loai nguoi da mua) | Medium |
-| T22 | So ad group hoi ly — khong chia qua nho | Medium |
-
-### Nhom 5 — Settings (10%)
-
-| # | Check | Muc do |
-|---|-------|--------|
-| T23 | Tai khoan: khong co Warning / Han che | Critical |
-| T24 | Quoc gia target chinh xac (VN, khong target sai) | High |
-| T25 | Nganh hang comply TikTok Ads policy | High |
+> 5 nhom check T01-T25 (Creative Quality, Technical Setup, Bidding & Learning, Cau truc, Settings) kem trong so tung nhom va muc do nghiem trong: doc `references/checklist-audit-theo-nen-tang.md` muc "Audit TIKTOK ADS (30 Checks)".
 
 ---
 
 ## Audit GOOGLE ADS (35 Checks)
 
-> Trong so danh muc: Conversion Tracking (25%) · Cau truc / Quality Score (20%) · Keywords (20%) · Ads/Assets (20%) · Settings (15%)
-
-### Nhom 1 — Conversion Tracking (25%)
-
-| # | Check | Muc do |
-|---|-------|--------|
-| G01 | Conversion tracking da cai dat va fire | Critical |
-| G02 | Import GA4 goal vao Google Ads | High |
-| G03 | Chi count ENABLED conversion (khong tinh HIDDEN/REMOVED) | High |
-| G04 | Khong bi duplicate conversion | Critical |
-| G05 | Value-based bidding (neu co the) da thiet lap | Medium |
-
-### Nhom 2 — Cau truc & Quality Score (20%)
-
-| # | Check | Muc do |
-|---|-------|--------|
-| G06 | Ad group khong qua 20 keywords/group (best: 5-15) | High |
-| G07 | Quality Score trung binh >= 6/10 | High |
-| G08 | Moi ad group co it nhat 2 RSA (responsive search ads) | High |
-| G09 | Keyword match type mix phu hop (Broad Match + Smart Bidding, hoac Phrase/Exact) | High |
-| G10 | Khong dung ECPC (da deprecated March 2025) | Critical |
-
-### Nhom 3 — Keywords (20%)
-
-| # | Check | Muc do |
-|---|-------|--------|
-| G11 | Negative keywords list da thiet lap | High |
-| G12 | Wasted spend keywords (spend >200K, 0 conversion) da pause | Critical |
-| G13 | Search Term Report duoc review dinh ky | High |
-| G14 | Broad Match chi dung voi Smart Bidding | High |
-| G15 | Brand keywords co campaign tach biet | Medium |
-
-### Nhom 4 — Ads & Assets (20%)
-
-| # | Check | Muc do |
-|---|-------|--------|
-| G16 | RSA co it nhat 8/15 headline va 4/4 description da dien | High |
-| G17 | Asset strength >= "Good" tren moi RSA | Medium |
-| G18 | Sitelink extensions (it nhat 4) | Medium |
-| G19 | Callout extensions (it nhat 4) | Medium |
-| G20 | Call extension (neu la dich vu local) | High |
-| G21 | Dynamic Search Ads (DSA) cho website nhieu trang | Low |
-
-### Nhom 5 — Settings (15%)
-
-| # | Check | Muc do |
-|---|-------|--------|
-| G22 | Bid strategy phu hop voi muc tieu (Maximize Conv hoac Target CPA/ROAS) | High |
-| G23 | Location targeting chinh xac (khong target toan cau) | Critical |
-| G24 | Ad scheduling: tat quang cao ngoai gio lam viec (neu la B2B/dich vu) | Medium |
-| G25 | Google Analytics 4 da link voi Google Ads | High |
+> 5 nhom check G01-G25 (Conversion Tracking, Cau truc & Quality Score, Keywords, Ads & Assets, Settings) kem trong so tung nhom va muc do nghiem trong: doc `references/checklist-audit-theo-nen-tang.md` muc "Audit GOOGLE ADS (35 Checks)".
 
 ---
 
 ## Audit ZALO ADS (20 Checks)
 
-> Trong so danh muc: Setup & Technical (40%) · Content Quality (35%) · Audience (25%)
-
-| # | Check | Muc do |
-|---|-------|--------|
-| Z01 | Zalo OA da verify va du follow (> 1,000) | High |
-| Z02 | Zalo Official Account co rating > 4.0 | High |
-| Z03 | Tracking URL da thiet lap | Medium |
-| Z04 | Tin nhan broadcast co ca nhan hoa (khong spam chung) | High |
-| Z05 | Hinh anh quang cao dung ti le (4:3 hoac 1:1) | Medium |
-| Z06 | CTA ro rang trong noi dung | High |
-| Z07 | Database Zalo duoc phan khuc (theo hanh vi, lich su mua) | High |
-| Z08 | Frequency broadcast <= 2 lan/tuan (tranh unsub) | Critical |
-| Z09 | Unsubscribe rate < 5%/broadcast | High |
-| Z10 | Read rate > 40% (benchmark trung binh VN) | High |
+> Check Z01-Z10 (OA verify, rating, tracking URL, ca nhan hoa broadcast, ti le hinh, CTA, phan khuc database, frequency, unsub rate, read rate) kem trong so 3 danh muc: doc `references/checklist-audit-theo-nen-tang.md` muc "Audit ZALO ADS (20 Checks)".
 
 ---
 
@@ -375,7 +292,7 @@ Vi du:
 
 ## Quality Gates — Kiem tra truoc moi su
 
-Truoc khi di vao chi tiet audit, kiem tra 10 Quality Gates trong `skills/references/quality-gates-vn.md`:
+Truoc khi di vao chi tiet audit, kiem tra 10 Quality Gates trong `skills/vi/references/quality-gates-vn.md`:
 
 | Gate | Vi pham? | Muc do |
 |------|---------|--------|
@@ -470,6 +387,11 @@ Nguoi audit: [Agency]
 | Viet lai copy sau khi audit creative | `05-copy-quang-cao` |
 | Tinh lai ngan sach sau khi fix tracking | `10-tinh-kpi-nguoc` |
 | Lap ke hoach marketing moi sau audit | `00-ke-hoach-mkt` |
+| Sua landing page sau khi audit khau Landing | `12-brief-landing-page` |
+| Setup lai pixel/CAPI/UTM sau khi audit khau Tracking | `53-tracking-setup` |
+| Da fix xong va so on dinh >= 5 ngay — muon scale | `55-scaling-ads` |
+| Frequency cao / can nham lai nguoi da tuong tac | `56-retargeting-plan` |
+| Lap ke hoach ads ky sau tu ket qua audit | `57-next-ads-plan` |
 
 ---
 
@@ -485,3 +407,9 @@ Truoc khi giao audit:
 - [ ] Khong de xuat Scale khi chua qua Gate 1 + Gate 4
 - [ ] Khong de xuat chinh sua khi ad set dang Learning Phase (Gate 3)
 - [ ] Moi van de Critical duoc uu tien len dau action plan
+- [ ] Da chay Quick Health Check 6 chi so truoc khi di sau
+- [ ] Da audit du 6 khau: Account → Campaign → Adset → Creative → Landing → Tracking
+- [ ] Moi trieu chung duoc quy ve nguyen nhan goc theo dung khau — khong dung lai o "CPL cao"
+- [ ] Da kiem tracking truoc khi ket luan creative hoac tep co van de
+- [ ] Action plan chi doi 1 bien moi lan, co moc danh gia sau 3-5 ngay
+- [ ] Khong de xuat scale khi so chua on dinh >= 5 ngay

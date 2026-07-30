@@ -2,9 +2,9 @@
 
 > **Muc dich:** Giup ban chon DUNG workflow thay vi chay tung skill roi rac.
 > Workflow = chuoi skill tu dong chay lien tuc, output skill truoc la input skill sau.
-> **15 Workflows (7 VN + 8 Global)** — v2.5.0 added 8 global workflows.
+> **19 Workflows (11 VN + 8 Global)** — v2.5.0 added 8 global workflows; v3.5.0 added 4 VN role-loop workflows (`content-engine`, `performance-loop`, `design-pipeline`, `leader-cadence`).
 
-> **Agents auto-detect mode (v2.5.0):** Tat ca 5 agents tu dong nhan dien cluster qua `.agents/` directory.
+> **Agents auto-detect mode (v2.5.0):** Tat ca 6 agents tu dong nhan dien cluster qua `.agents/` directory.
 > - `product-marketing-context.md` → VN mode
 > - `product-marketing-context-global.md` → Global mode
 > - Ca 2 → agent HOI user chon
@@ -29,6 +29,18 @@ Ban dang o tinh huong nao?
 │   │
 │   ├─ Hang tuan can san xuat content
 │   │   └─ ✅ content-production (lap lai moi tuan)
+│   │
+│   ├─ Muon van hanh content thanh he thong khep kin (brand voice → audit → plan ky sau)
+│   │   └─ ✅ content-engine (vong lap thang) — v3.5
+│   │
+│   ├─ Muon van hanh ads thanh vong lap (plan → tracking → test → scale → next plan)
+│   │   └─ ✅ performance-loop (setup 3-5 ngay, lap hang tuan) — v3.5
+│   │
+│   ├─ Can san xuat visual cho campaign theo timeline
+│   │   └─ ✅ design-pipeline (T-14 den D+1) — v3.5
+│   │
+│   ├─ La leader, can nhip quan ly (ke hoach → budget → brief → duyet → report → retro)
+│   │   └─ ✅ leader-cadence (quy / campaign / tuan) — v3.5
 │   │
 │   ├─ Ads dang chay kem, can fix gap
 │   │   └─ ❌ Khong can workflow — chay skill 03 hoac 21 truc tiep
@@ -217,6 +229,67 @@ Thang 2+ (Duy tri):
   Ngay 28:  monthly-cycle
   Khi can:  03 hoac 21 (khi ads co van de)
 ```
+
+---
+
+## Role Loop Workflows (NEW v3.5.0)
+
+4 workflow van hanh theo vai tro — khac voi 4 workflow co ban o cho chung **lap lai lien tuc** va **lay data ky truoc lam input bat buoc cho ky sau**.
+
+### Khi nao dung role loop thay vi workflow co ban
+
+| Tinh huong | Workflow co ban | Role loop |
+|------------|-----------------|-----------|
+| Lam mot chien dich roi nghi | campaign-launch | — |
+| Van hanh content deu moi thang | content-production (san xuat tuan) | **content-engine** (ca vong: nen tang → san xuat → do luong → plan ky sau) |
+| Chay ads lien tuc, can ky luat scale/pause | 03 / 21 khi co van de | **performance-loop** (plan → tracking → test → audit → scale → next plan) |
+| Co designer hoac thue ngoai, nhieu asset moi campaign | — | **design-pipeline** (T-14 → D+1) |
+| Quan ly team, can nhip duyet va bao cao | monthly-cycle | **leader-cadence** (quy / campaign / tuan) |
+
+### 16. Content Engine (vong lap thang)
+
+```
+Nen tang (1 lan):  35 brand-voice → 09 insight → 08 doi thu → 01 content pillar
+Dau thang:         01 calendar → 36 content-brief
+Hang ngay/tuan:    37 caption | 04 script | 05 ads copy | 38 seeding | 06 UGC | 14 email
+Sau khi copy duyet: 42 brief anh | 43 carousel | 44 video editor → 47 design review
+Cuoi thang:        39 content-audit → 07 bao cao → 40 next-content-plan → quay lai 01
+```
+Quy tac: khong san xuat khi chua co brief; khong brief khi chua co calendar; plan thang moi phai dua tren audit, khong doan.
+
+### 17. Performance Loop (vong lap ads)
+
+```
+Research:  51 audience → 10 KPI nguoc → 54 media-plan
+Setup:     53 tracking (verify xanh) → 52 account-structure → 05 ads copy
+Test:      19 A/B test → 21 audit
+Optimize:  55 scaling / 56 retargeting
+Do luong:  07 bao cao → 57 next-ads-plan → quay lai 54
+```
+Hai luat cung: khong chay ads khi tracking chua verify; khong tang budget khi CPL dang xau.
+Nhip: daily 15 phut (CPL, frequency, pace) · weekly thu 2 (pull data 7 ngay, scale winner, pause loser) · monthly (report → next plan).
+
+### 18. Design Pipeline (T-14 den D+1)
+
+```
+T-14  41 asset-list (leader duyet scope)
+T-7   concept MVP 30 phut (45 canva-brief / 12 landing) → 47 design-review duyet huong
+T-5   asset phuc tap: 12 landing page, 49 html-email
+T-3   asset trung binh: 43 carousel, 42 banner set
+T-1   asset nhanh: 42 static post, story
+D-day 48 quick-visual-brief standby
+D+1   danh dau winner/loser → 50 asset-resize (chi resize winner)
+```
+
+### 19. Leader Cadence (quy / campaign / tuan)
+
+```
+Theo quy:      00 ke-hoach → 61 budget-planning → (58 positioning / 59 GTM / 60 launch neu co san pham moi)
+Theo campaign: 02 brief → 64 team-brief → gate duyet: 62 marketing-review + 47 design-review
+Theo tuan:     07 bao cao weekly (1 trang CEO) → 13 decision log
+Ket thuc:      63 campaign-retrospective → bai hoc cap nhat Brand Hub qua 34
+```
+Tinh huong dac biet: `66-crisis-playbook` (khung hoang) · `67-agency-vendor-brief` (thue ngoai) · `65-team-performance-review` (danh gia nhan su).
 
 ---
 

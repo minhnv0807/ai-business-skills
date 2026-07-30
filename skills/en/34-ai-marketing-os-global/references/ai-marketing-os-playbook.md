@@ -1,14 +1,14 @@
 # AI Marketing OS Playbook
 
-This playbook synthesizes the new RBL community-share documents: knowledge foundation files, role SOPs, planning/dashboard templates, and sample skills. Use it to upgrade the repository toward operating-system thinking instead of copying isolated prompts.
+This playbook synthesizes community-shared fullstack marketing documents: knowledge foundation files, role SOPs, planning/dashboard templates, and sample skills. Use it to upgrade the repository toward operating-system thinking instead of copying isolated prompts.
 
 ## Selection principles
 
 The source documents fall into 4 groups:
 
-- RBL Knowledge foundation: fullstack brandformance, 8-part blueprint, content system, channel strategy, Meta Ads, KPI, insight, offer architecture, AI Marketing OS, and business model.
+- Knowledge foundation: fullstack brandformance, 8-part blueprint, content system, channel strategy, Meta Ads, KPI, insight, offer architecture, AI Marketing OS, and business model (adapted into the repo `knowledge/` library, VN edition).
 - Implementation knowledge: research, strategy, content, performance, reporting, timeline, benchmarks, visual guideline.
-- RBL New Skill: sample skills for Leader, Content, Designer, and Performance roles.
+- Role SOP skill packs: sample skills for Leader, Content, Designer, and Performance roles.
 - Marketing templates: one-page plan, annual/quarter/campaign tracker, dashboard, report, meeting/SLA, AI workflow documents.
 
 Import decisions:
@@ -16,7 +16,7 @@ Import decisions:
 - Import reusable system concepts: Brand Hub, role workspaces, skill chains, data loop, second brain, cadence.
 - Import repeatable workflows: research -> strategy -> plan -> execute -> measure -> review.
 - Import decision rules and dashboard patterns.
-- Do not add every sample skill as a new repo skill because this repository already has equivalent skills.
+- Since v3.5.0 the role SOP packs are fully implemented as skills 35-67 in the Vietnam edition (content system, design production, performance ops, leader ops); overlapping samples were merged into existing skills instead of duplicated. English mirrors are on the roadmap.
 - Do not lock the workflow to Claude/ChatGPT/NotebookLM unless the user has chosen that stack; map by role first.
 
 ## AI market fit in 2026
@@ -120,7 +120,28 @@ If connectors are not available, users can paste CSV exports, screenshots, or su
 
 Weekly review should end with 1-3 decisions. If there are 10 action items, the system lacks prioritization.
 
-## Core RBL frameworks
+## Five role projects (Claude Projects or equivalent)
+
+Deploy the OS as 5 role-based projects — each with its own custom instructions + skill SOPs + knowledge files:
+
+| Project | Role | Focus |
+|---------|------|-------|
+| Leader/CEO | Strategy & management | Strategy, briefs, timeline, reviews, CEO reporting |
+| Content | Fullstack content | Brand voice, captions, scripts, email, seeding, visual briefs |
+| Designer | Visual & production | Asset lists, image/carousel briefs, design review, landing pages |
+| Performance | Media buying & ads | Media plan, tracking, A/B tests, audits, scaling, ROAS reports |
+| Knowledge Base | Foundational thinking | Brandformance mindset, funnels, KPI systems, offer architecture |
+
+Setup flow (Claude Projects; other tools work the same way):
+
+1. Create one project per role, named `[Brand] — Content`, `[Brand] — Performance`, etc.
+2. Write role-specific custom instructions (Leader: revenue -> KPI -> channel -> content -> measurement; Content: always reference the uploaded brand voice; Designer: never start design without an approved brief; Performance: reverse-calculate from revenue, never scale on bad CPL, never launch without verified tracking).
+3. Upload skill `.md` + knowledge `.md` files. Keep to ~20 files per project — prioritize the most-used skills.
+4. Test each skill's trigger phrases; if the AI misses, name the skill explicitly in the prompt.
+
+**Golden rule:** whenever a Brand Hub file changes, re-upload it to ALL affected projects — skipping this leaves projects running on stale context.
+
+## Core frameworks
 
 ### Fullstack Brandformance
 

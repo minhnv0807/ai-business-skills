@@ -4,10 +4,10 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/v3.4-AI%20Marketing%20OS-6d28d9?style=for-the-badge&labelColor=1e1033" alt="v3.4"/>
-  <img src="https://img.shields.io/badge/Skills-72-6d28d9?style=for-the-badge&labelColor=1e1033" alt="72 Skills"/>
-  <img src="https://img.shields.io/badge/Agents-5-be185d?style=for-the-badge&labelColor=1e1033" alt="5 Agents"/>
-  <img src="https://img.shields.io/badge/Workflows-15-0f766e?style=for-the-badge&labelColor=1e1033" alt="15 Workflows"/>
+  <img src="https://img.shields.io/badge/v3.6-Bilingual%20Role%20SOP-6d28d9?style=for-the-badge&labelColor=1e1033" alt="v3.6"/>
+  <img src="https://img.shields.io/badge/Skills-138-6d28d9?style=for-the-badge&labelColor=1e1033" alt="138 Skills"/>
+  <img src="https://img.shields.io/badge/Agents-6-be185d?style=for-the-badge&labelColor=1e1033" alt="6 Agents"/>
+  <img src="https://img.shields.io/badge/Workflows-19-0f766e?style=for-the-badge&labelColor=1e1033" alt="19 Workflows"/>
   <img src="https://img.shields.io/badge/Market-Vietnam%202025--2026-f97316?style=for-the-badge&labelColor=1e1033" alt="Vietnam Market"/>
   <img src="https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge&labelColor=1e1033" alt="MIT License"/>
   <a href="https://www.opa.business/donate"><img src="https://img.shields.io/badge/%E2%9D%A4%EF%B8%8F%20Ung%20ho-Donate-ff69b4?style=for-the-badge&labelColor=1e1033" alt="Donate"/></a>
@@ -18,10 +18,16 @@
     <img src="https://img.shields.io/badge/%E2%98%95%20Moi%20Toi%20Mot%20Coffee-Ung%20ho%20Open%20Source-ff5e5b?style=for-the-badge" alt="Ung ho du an"/>
   </a>
   <br/>
-  <sub><b>💖 72 skills, 100% mien phi & MIT — neu giup ban tiet kiem thoi gian, hay ung ho tai <a href="https://www.opa.business/donate">opa.business/donate</a></b></sub>
+  <sub><b>💖 138 skills, 100% mien phi & MIT — neu giup ban tiet kiem thoi gian, hay ung ho tai <a href="https://www.opa.business/donate">opa.business/donate</a></b></sub>
 </p>
 
-> **🆕 v3.4.0 (2026-07-08)** — AI Marketing OS Expansion.
+> **🆕 v3.6.0 (2026-07-30)** — Role SOP Packs Go Global.
+> Them 33 skill Global (35-67 `*-global`) — hoan tat parity song ngu cho ca 4 role pack. USD benchmark, kenh toan cau, compliance FTC/GDPR/CCPA. Zero breaking changes.
+
+> **v3.5.0 (2026-07-30)** — Role SOP Deep Integration.
+> Them 33 skill VN (35-67) cho 4 vai tro: Content system, Design production, Performance ops, Leader ops. Them kho `knowledge/` nen tang, agent `design-producer`, va 4 workflow vong lap. Zero breaking changes.
+
+> **v3.4.0 (2026-07-08)** — AI Marketing OS Expansion.
 > Them 2 skill moi: AI Marketing OS VN + Global — Brand Hub, role-based agents/projects, skill chains, connectors/MCP, second brain, data loops, SOPs. Zero breaking changes.
 
 > **🌍 v2.5.0 (2026-05-08)** — Cum Marketing Toan Cau.
@@ -60,11 +66,11 @@ Repo nay co 3 tang de doc cho de: **context** giu thong tin san pham, **skills**
 flowchart LR
     UserRequest["Ban dua yeu cau marketing"] --> Context["Foundation context<br/>.agents/*.md"]
     Context --> Router{"Du an VN hay Global?"}
-    Router --> VN["Cum VN<br/>36 skills"]
-    Router --> Global["Cum Global<br/>36 skills"]
-    VN --> Agents["5 agents universal"]
+    Router --> VN["Cum VN<br/>69 skills"]
+    Router --> Global["Cum Global<br/>69 skills"]
+    VN --> Agents["6 agents universal"]
     Global --> Agents
-    Agents --> Workflows["15 workflows"]
+    Agents --> Workflows["19 workflows"]
     Workflows --> Output["Ke hoach, copy, brief,<br/>bao cao, SOP, dashboard"]
 
     classDef user fill:#3b82f6,stroke:#1e40af,color:#fff
@@ -220,9 +226,11 @@ Copy file `.md` lam Custom Instructions hoac context. Moi file la 1 prompt doc l
 
 ---
 
-## 72 Skills (36 VN + 36 Global)
+## 138 Skills (69 VN + 69 Global)
 
-### Cum VN (36 skills)
+### Cum VN — Marketing core + Personal Brand (36 skills: ★, 00-34)
+
+> 33 skill Role SOP (35-67) nam o [muc rieng ben duoi](#role-sop-packs--33-skill-moi-35-67--v350).
 
 <table>
 <tr><th>#</th><th>Skill</th><th>Lam gi</th><th>Category</th></tr>
@@ -455,6 +463,69 @@ Xem them: [examples/personal-brand-coach.md](examples/personal-brand-coach.md) �
 
 ---
 
+### Role SOP packs — 33 skill (35-67) ⭐ v3.5.0, ban Global tu v3.6.0
+
+Bon bo SOP theo vai tro. Moi skill la quy trinh van hanh day du: cac khau, input bat buoc, decision rules, tieu chuan chat luong, timeline — khong phai prompt le.
+
+> **Song ngu day du:** moi skill duoi day co ban Global tuong ung trong `skills/en/` (hau to `-global`) — cung framework va quy trinh, nhung benchmark USD, kenh toan cau (Klaviyo/Shopify/Meta US thay Zalo/Shopee), va compliance FTC/GDPR/CCPA. Rieng seeding duoc viet lai theo chuan Reddit/Discord/Slack thay vi Facebook Group.
+
+**Content system (35-40)** — vong lap content thang:
+
+| # | Skill | Lam gi |
+|---|-------|--------|
+| 35 | [Brand Voice](skills/vi/35-brand-voice/SKILL.md) | Brand personality, tone, vocabulary, banned words, 5 vi du before/after — nen tang cho moi output content |
+| 36 | [Content Brief](skills/vi/36-content-brief/SKILL.md) | Brief tung bai: angle, insight goc, key message, CTA, format |
+| 37 | [Caption Social](skills/vi/37-caption-social/SKILL.md) | Caption organic Facebook/Instagram/TikTok (khac 05 la ads copy) |
+| 38 | [Seeding Plan](skills/vi/38-seeding-plan/SKILL.md) | Ke hoach seeding group/cong dong: chon group, kich ban, lich, do luong |
+| 39 | [Content Audit](skills/vi/39-content-audit/SKILL.md) | Audit dinh ky: winner/loser theo pillar, format, hook |
+| 40 | [Next Content Plan](skills/vi/40-next-content-plan/SKILL.md) | Plan ky sau tu data ky truoc — khong doan mo |
+
+**Design production (41-50)** — pipeline T-14 den D+1:
+
+| # | Skill | Lam gi |
+|---|-------|--------|
+| 41 | [Campaign Asset List](skills/vi/41-campaign-asset-list/SKILL.md) | Danh sach asset: loai, kich thuoc, kenh, deadline, owner, uu tien |
+| 42 | [Brief Hinh Anh](skills/vi/42-brief-hinh-anh/SKILL.md) | Brief anh static, banner, thumbnail theo kenh |
+| 43 | [Brief Carousel](skills/vi/43-brief-carousel/SKILL.md) | Logic chuoi slide: hook → value → CTA |
+| 44 | [Brief Video Editor](skills/vi/44-brief-video-editor/SKILL.md) | Storyboard, footage, text overlay, pacing (khac 04 la script loi thoai) |
+| 45 | [Brief Canva](skills/vi/45-brief-canva/SKILL.md) | Direction cho designer dung Canva: template, grid, do/don't |
+| 46 | [Brand Guideline](skills/vi/46-brand-guideline/SKILL.md) | Logo, palette, typography, spacing, tone visual — file Brand Hub |
+| 47 | [Design Review](skills/vi/47-design-review/SKILL.md) | Cham diem: dung brand, hierarchy, readability, CTA, hop kenh |
+| 48 | [Quick Visual Brief](skills/vi/48-quick-visual-brief/SKILL.md) | Brief gap khi campaign dang chay (creative fatigue) |
+| 49 | [HTML Email Template](skills/vi/49-html-email-template/SKILL.md) | Email HTML responsive: table-based, inline CSS, dark mode |
+| 50 | [Asset Resize](skills/vi/50-asset-resize/SKILL.md) | SOP resize da kich thuoc, safe zone, dat ten file |
+
+**Performance ops (51-57)** — vong lap ads:
+
+| # | Skill | Lam gi |
+|---|-------|--------|
+| 51 | [Audience Research](skills/vi/51-audience-research/SKILL.md) | Tep target, interest mapping, phan tang cold/warm/hot |
+| 52 | [Account Structure](skills/vi/52-account-structure/SKILL.md) | Campaign/adset/ad hierarchy, naming convention, CBO/ABO |
+| 53 | [Tracking Setup](skills/vi/53-tracking-setup/SKILL.md) | Pixel/CAPI, GA4, UTM, checklist verify — khong chay ads khi chua xanh |
+| 54 | [Media Plan](skills/vi/54-media-plan/SKILL.md) | Tinh nguoc doanh thu → CPL max → budget; split 30/50/15/5 |
+| 55 | [Scaling Ads](skills/vi/55-scaling-ads/SKILL.md) | Dieu kien scale, vertical +20-30%, horizontal — khong scale khi CPL xau |
+| 56 | [Retargeting Plan](skills/vi/56-retargeting-plan/SKILL.md) | Phan tang warm audience, message theo tang, frequency cap, LAL |
+| 57 | [Next Ads Plan](skills/vi/57-next-ads-plan/SKILL.md) | Plan ads ky sau tu report + audit + test log |
+
+**Leader ops (58-67)** — nhip quan ly:
+
+| # | Skill | Lam gi |
+|---|-------|--------|
+| 58 | [Positioning](skills/vi/58-positioning/SKILL.md) | Promise + Proof + Path, differentiation matrix, tagline direction |
+| 59 | [Go-To-Market](skills/vi/59-go-to-market/SKILL.md) | GTM plan: beachhead, message, kenh theo giai doan, go/no-go |
+| 60 | [Launch Playbook](skills/vi/60-launch-playbook/SKILL.md) | Timeline T-30 → D+7, checklist tung bo phan, war-room |
+| 61 | [Budget Planning](skills/vi/61-budget-planning/SKILL.md) | Phan bo theo kenh/funnel/thang, nguong cat lo, quy du phong |
+| 62 | [Marketing Review](skills/vi/62-marketing-review/SKILL.md) | Gate duyet content brief + ads copy, verdict approve/revise |
+| 63 | [Campaign Retrospective](skills/vi/63-campaign-retrospective/SKILL.md) | What worked/didn't/why co evidence, bai hoc → playbook |
+| 64 | [Team Brief](skills/vi/64-team-brief/SKILL.md) | Giao task: deliverable, deadline theo gio, definition of done + template hop |
+| 65 | [Team Performance Review](skills/vi/65-team-performance-review/SKILL.md) | KPI scorecard theo role, development plan 30/90 ngay |
+| 66 | [Crisis Playbook](skills/vi/66-crisis-playbook/SKILL.md) | Phan loai L1-L5, quy trinh 4 gio dau, template phan hoi, escalation |
+| 67 | [Agency Vendor Brief](skills/vi/67-agency-vendor-brief/SKILL.md) | Scope of work, revision rounds, payment milestone, IP, danh gia vendor |
+
+> **Kho kien thuc nen tang:** [`knowledge/`](knowledge/) — 10 file tu duy + `knowledge/trien-khai/`. Dung lam context upload cho AI project theo vai tro (Leader/Content/Designer/Performance). Kien truc 5 role project: skill [`34-ai-marketing-os`](skills/vi/34-ai-marketing-os/SKILL.md).
+
+---
+
 ### Cum Global (36 skills)
 
 <table>
@@ -546,9 +617,10 @@ Xem them: [examples/personal-brand-coach-global.md](examples/personal-brand-coac
 
 ---
 
-## 5 Agents (Universal mode — VN + Global)
+## 6 Agents (Universal mode — VN + Global)
 
-> **Cap nhat v2.5:** Tat ca 5 agent gio chay o **universal mode** — tu dong nhan dien project la VN hay Global va route den skill tuong ung (`00-...` hoac `00-...-global`).
+> **Cap nhat v2.5:** Tat ca agent chay o **universal mode** — tu dong nhan dien project la VN hay Global va route den skill tuong ung (`00-...` hoac `00-...-global`).
+> **v3.5:** them agent `design-producer` cho mang visual & production (skills 41-50).
 
 ```mermaid
 flowchart TD
@@ -556,12 +628,14 @@ flowchart TD
     Context --> Content["Content Producer<br/>Noi dung + script"]
     Context --> Performance["Performance Analyst<br/>Du lieu + bao cao"]
     Context --> Channel["Channel Operator<br/>Kenh + landing + email"]
+    Context --> Design["Design Producer<br/>Visual + production"]
     Context --> Personal["Personal Brand Builder<br/>PB + AI Avatar"]
 
-    Strategist --> Growth["31 offer<br/>32 SEO<br/>33 B2B lead gen<br/>34 AI Marketing OS"]
-    Content --> Creative["01 calendar<br/>04 video<br/>05 ads copy<br/>06 UGC"]
-    Performance --> Metrics["03 audit<br/>07 report<br/>10 KPI<br/>13 data"]
-    Channel --> OpsLoop["11 channel<br/>12 landing<br/>14 email<br/>15 listening"]
+    Strategist --> Growth["31 offer · 32 SEO · 33 B2B<br/>34 AI OS · 58-61 leader strategy"]
+    Content --> Creative["35 brand voice · 36 brief<br/>01 calendar · 04 video · 05 ads<br/>37-40 content system"]
+    Performance --> Metrics["03 audit · 07 report · 10 KPI<br/>13 data · 51-57 perf ops"]
+    Channel --> OpsLoop["11 channel · 12 landing<br/>14 email · 49 HTML · 66 crisis"]
+    Design --> DesignLoop["41 asset list · 42-45 brief<br/>46 guideline · 47 review · 50 resize"]
     Personal --> PBLoop["22-28 PB system"]
 
     classDef system fill:#64748b,stroke:#334155,color:#fff
@@ -569,23 +643,24 @@ flowchart TD
     classDef admin fill:#f59e0b,stroke:#b45309,color:#fff
 
     class Context system
-    class Strategist,Content,Performance,Channel,Personal cmsdev
-    class Growth,Creative,Metrics,OpsLoop,PBLoop admin
+    class Strategist,Content,Performance,Channel,Design,Personal cmsdev
+    class Growth,Creative,Metrics,OpsLoop,DesignLoop,PBLoop admin
 ```
 
 | Agent | Mode | Skills chinh (VN / Global) |
 |-------|------|----------------------------|
-| [MKT Strategist](agents/mkt-strategist.md) | Universal <sup>v3.4</sup> | 00, 02, 08, 09, 16, 17, 31, 32, 33, 34 (+ mirror `-global`) |
-| [Content Producer](agents/content-producer.md) | Universal <sup>v2.5</sup> | 01, 04, 05, 06 (+ mirror `-global`) |
-| [Performance Analyst](agents/performance-analyst.md) | Universal <sup>v3.4</sup> | 03, 07, 10, 13, 19, 32, 34 (+ mirror `-global`) |
-| [Channel Operator](agents/channel-operator.md) | Universal <sup>v3.4</sup> | 11, 12, 14, 15, 18, 34 (+ mirror `-global`) |
+| [MKT Strategist](agents/mkt-strategist.md) | Universal <sup>v3.5</sup> | 00, 02, 08, 09, 16, 17, 31-34, 58-61 (+ mirror `-global`) |
+| [Content Producer](agents/content-producer.md) | Universal <sup>v3.5</sup> | 01, 04, 05, 06, 35-40, 42-44 (+ mirror `-global`) |
+| [Performance Analyst](agents/performance-analyst.md) | Universal <sup>v3.5</sup> | 03, 07, 10, 13, 19, 21, 32, 34, 51-57 (+ mirror `-global`) |
+| [Channel Operator](agents/channel-operator.md) | Universal <sup>v3.5</sup> | 11, 12, 14, 15, 18, 34, 49, 66 (+ mirror `-global`) |
+| [Design Producer](agents/design-producer.md) <sup>NEW v3.5</sup> | Universal | 12, 30, 41-50 |
 | [Personal Brand Builder](agents/personal-brand-builder.md) | Universal <sup>v2.5</sup> | 22, 23, 24, 25, 26, 27, 28 (+ mirror `-global`) |
 
 ---
 
-## 15 Workflows (7 VN + 8 Global)
+## 19 Workflows (11 VN + 8 Global)
 
-### Workflow VN (7)
+### Workflow VN (11)
 
 #### Client Onboard — Agency (5-7 ngay) <sup>v2.3</sup>
 ```
@@ -607,7 +682,37 @@ flowchart TD
 Review lich → 04 Script → Quay/Dung → 05 Copy ads → Len lich dang
 ```
 
-#### Personal Brand Launch (30 ngay) <sup>v2.4 NEW</sup>
+#### Content Engine — vong lap content thang <sup>v3.5 NEW</sup>
+```
+35 Brand voice → 09 Insight → 01 Calendar → 36 Brief tung bai
+  → [37 Caption | 04 Script | 05 Ads copy | 38 Seeding | 06 UGC | 14 Email]
+  → [42 Brief anh | 43 Carousel | 44 Video editor]
+  → 39 Content audit → 07 Bao cao → 40 Next content plan → (quay lai 01)
+```
+
+#### Performance Loop — vong lap ads <sup>v3.5 NEW</sup>
+```
+51 Audience → 10 KPI nguoc → 54 Media plan → 53 Tracking (verify xanh)
+  → 52 Account structure → 05 Ads copy → 19 A/B test → 21 Audit
+  → 55 Scaling / 56 Retargeting → 07 Bao cao → 57 Next ads plan
+```
+
+#### Design Pipeline — T-14 den D+1 <sup>v3.5 NEW</sup>
+```
+T-14: 41 Asset list → T-7: concept MVP (45/12) → duyet
+T-5: asset phuc tap (12 landing, 49 email) → T-3: carousel/banner (43, 42)
+T-1: asset nhanh → Launch: 48 Quick visual standby → D+1: 50 Resize winner
+```
+
+#### Leader Cadence — nhip quan ly <sup>v3.5 NEW</sup>
+```
+Quy:      00 Ke hoach → 61 Budget → (58 Positioning / 59 GTM / 60 Launch)
+Campaign: 02 Brief → 64 Team brief → 62 Review copy / 47 Review design
+Tuan:     07 Bao cao weekly → 13 Decision log
+Ket thuc: 63 Retrospective → cap nhat Brand Hub
+```
+
+#### Personal Brand Launch (30 ngay) <sup>v2.4</sup>
 ```
 22 Context → 23 Strategy → 24 AI Avatar → 26 Long-form → 27 Monetize → 28 Community
 ```
@@ -649,7 +754,22 @@ Review lich → 04 Script → Quay/Dung → 05 Copy ads → Len lich dang
 <tr><td><b>Email Open Rate</b></td><td>&lt;15%</td><td>15-25%</td><td>25-35%</td><td>>35%</td></tr>
 </table>
 
-> Full benchmark theo nganh tai [`references/benchmarks-vietnam.md`](references/benchmarks-vietnam.md)
+> Full benchmark theo nganh tai [`references/benchmarks-vietnam.md`](references/benchmarks-vietnam.md) — bo sung v3.5.0: frequency, VTR, organic group/IG, nguong canh bao-tat, decision rules theo target, CPO/ROAS theo nganh, benchmark B2B.
+
+---
+
+## Reference — du lieu dung chung
+
+| File | Noi dung |
+|------|----------|
+| [`benchmarks-vietnam.md`](references/benchmarks-vietnam.md) | Benchmark VN 2025-2026: paid ads, organic, email, pheu, theo nganh, nguong quyet dinh |
+| [`benchmarks-global.md`](references/benchmarks-global.md) | Benchmark US/EU/SEA/LATAM |
+| [`kpi-formulas.md`](references/kpi-formulas.md) | Cong thuc KPI marketing |
+| [`channel-system.md`](references/channel-system.md) | He sinh thai kenh |
+| [`content-angles.md`](references/content-angles.md) | Goc noi dung theo tang pheu |
+| [`tool-stack.md`](references/tool-stack.md) | Bo cong cu theo nhom |
+| [`marketing-templates-library.md`](references/marketing-templates-library.md) ⭐ | Cau truc 28 template van hanh (planning, tracking dashboard, audit, report, campaign, content calendar) — kem bo cot chuan de skill xuat output dong nhat |
+| [`ai-tool-orchestration.md`](references/ai-tool-orchestration.md) ⭐ | Phoi hop nhieu AI tool: vai tro tung tool, quy trinh 9 buoc lap ke hoach, setup project theo vai tro, checklist cau hoi khai thac |
 
 ---
 
@@ -673,19 +793,27 @@ Review lich → 04 Script → Quay/Dung → 05 Copy ads → Len lich dang
 ai-business-skills/
 │
 ├── .claude-plugin/
-│   └── marketplace.json              # Claude Code plugin spec: 72 skills
+│   └── marketplace.json              # Claude Code plugin spec: 105 skills
 │
 ├── .github/
 │   ├── ISSUE_TEMPLATE/                # Bug report + skill request
 │   └── PULL_REQUEST_TEMPLATE/         # New skill + skill update
 │
+├── knowledge/                           # Kho tu duy nen tang (upload vao AI project)
+│   ├── 01-10 *.md                       # Brandformance, blueprint, pheu, kenh, KPI, insight, offer, OS
+│   └── trien-khai/                      # Kien thuc trien khai theo vai tro
+│
 ├── skills/                              # Dual-edition skill library
-│   ├── vi/                              # VN Edition — 36 skills
+│   ├── vi/                              # VN Edition — 69 skills
 │   │   ├── product-marketing-context/   # Foundation skill (★)
 │   │   ├── 00-21 marketing core/        # Plan, copy, KPI, ads, email, report
 │   │   ├── 29-xuat-khau-b2b/            # Regional flagship for Vietnam
 │   │   ├── 30-thiet-ke-master/          # Design master router
 │   │   ├── 31-34 growth + AI OS/        # Offer, SEO, B2B lead gen, AI Marketing OS
+│   │   ├── 35-40 content system/        # Brand voice, brief, caption, seeding, audit, next plan
+│   │   ├── 41-50 design production/     # Asset list, brief visual, guideline, review, resize
+│   │   ├── 51-57 performance ops/       # Audience, structure, tracking, media plan, scale, retarget
+│   │   ├── 58-67 leader ops/            # Positioning, GTM, launch, budget, review, retro, team, crisis
 │   │   └── references/                  # Benchmarks, hooks, tools, legal refs
 │   │
 │   └── en/                              # Global Edition — 36 skills
