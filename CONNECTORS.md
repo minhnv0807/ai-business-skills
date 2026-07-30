@@ -18,12 +18,15 @@ Plugins are **tool-agnostic** — they describe workflows in terms of categories
 | SEO | `~~SEO` | Ahrefs, SimilarWeb | Semrush, Moz, Ubersuggest |
 | Email marketing | `~~email marketing` | Klaviyo | Mailchimp, Brevo, Customer.io, ConvertKit |
 | Marketing analytics | `~~marketing analytics` | Supermetrics | Google Analytics, Looker, Tableau |
+| X data | `~~X data` | Xquik | X API |
 | AI image generation | `~~ai image` | gpt-image-2 (OpenAI) | Midjourney, Leonardo, Flux, Imagen 3 |
 | AI orchestration | `~~AI orchestration` | Claude Projects, ChatGPT Projects, NotebookLM | Custom GPTs, Gemini Gems, internal agents |
 
 ## Customizing for your stack
 
 Edit `.mcp.json` to swap connectors with your specific tools. Skills will auto-adapt because they reference categories (`~~marketing automation`) not specific products (HubSpot).
+
+Xquik uses OAuth discovery. Connect through your MCP client, complete OAuth there, and never add credentials to this file. See [Xquik MCP](https://docs.xquik.com/mcp/overview).
 
 ## Skills mapping (key skills only)
 
@@ -35,7 +38,7 @@ Edit `.mcp.json` to swap connectors with your specific tools. Skills will auto-a
 | 07-bao-cao-marketing | ~~marketing analytics, ~~product analytics |
 | 13-phan-tich-du-lieu | ~~marketing analytics, ~~product analytics |
 | 14-email-marketing | ~~email marketing, ~~marketing automation |
-| 15-social-listening | ~~SEO, ~~chat |
+| 15-social-listening / 15-social-listening-global | ~~X data, ~~SEO, ~~chat |
 | 21-audit-ads-performance | ~~marketing analytics, ~~marketing automation |
 | 30-thiet-ke-master | ~~ai image, ~~design |
 | 31-offer-design | ~~knowledge base, ~~marketing analytics |
