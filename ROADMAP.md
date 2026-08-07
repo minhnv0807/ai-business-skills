@@ -1,7 +1,7 @@
 # Roadmap
 
-> Public roadmap for `ai-business-skills` — 60 production-ready AI marketing skills for Claude Code, ChatGPT, Gemini & Copilot.
-> Last updated: 2026-05-12
+> Public roadmap for `ai-business-skills` — 138 production-ready AI marketing skills for Claude Code, ChatGPT, Gemini & Copilot.
+> Last updated: 2026-07-30
 
 ## 🎯 North Star
 Become the standard open-source AI marketing skill library for Vietnamese SMEs and global solo founders, with **150+ skills across 6+ regions** by end of 2026.
@@ -9,6 +9,21 @@ Become the standard open-source AI marketing skill library for Vietnamese SMEs a
 ---
 
 ## ✅ Shipped
+
+### v3.6.0 — Role SOP Packs Go Global *(2026-07-30)*
+- 33 English mirrors of skills 35-67 — full bilingual parity for all four role packs
+- USD benchmarks, global channel stack (Klaviyo/Shopify/Meta US), FTC/GDPR/CCPA compliance
+- Community seeding rebuilt for Reddit/Discord/Slack with anti-astroturfing guidance
+
+### v3.5.0 — Role SOP Deep Integration *(2026-07-30)*
+- 33 new VN skills (35-67) across four role packs: Content system, Design production, Performance ops, Leader ops
+- New `knowledge/` library — 24 foundation and implementation files for role-based AI project context
+- New agent `design-producer` (visual & production); 4 new VN workflows (content-engine, performance-loop, design-pipeline, leader-cadence)
+- New references: operational template library (28 template structures) and AI tool orchestration guide
+- Vietnam benchmarks extended: frequency, VTR, organic group/IG, warn-vs-kill thresholds, target-relative decision rules, CPO/ROAS by industry, B2B
+
+### v3.4.0 — AI Marketing OS *(2026-07-08)*
+- Brand Hub, role-based agents/projects, skill chains, second brain, data loops, MCP/connectors, SOP cadence
 
 ### v2.5.0 — Global Marketing Cluster *(2026-05-08)*
 - 30 new global skills (US / EU / SEA / LATAM)
@@ -89,10 +104,10 @@ Become the standard open-source AI marketing skill library for Vietnamese SMEs a
 |---|---|---|---|
 | Q1 2026 | 22 (VN) | v2.0 → v2.3 | Foundation + quality gates |
 | Q2 2026 | 38 (VN + Global) | v2.4, v2.5 | Personal brand + 4 regions |
-| Q3 2026 (planned) | 25+ | v2.6, v2.7 | APAC + India/MENA |
-| Q4 2026 (planned) | 30+ | v2.8, v3.0 | B2B + vertical packs |
+| Q3 2026 | 78 (VN + Global) | v3.1 → v3.6 | Design master, growth, AI Marketing OS, role SOP packs bilingual |
+| Q4 2026 (planned) | 15+ | v3.7, v4.0 | APAC region variants, B2B vertical pack |
 
-**Target: 150+ skills by end of 2026.**
+**Current: 138 skills. Target: 150+ by end of 2026.**
 
 ---
 

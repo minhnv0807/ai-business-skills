@@ -412,7 +412,7 @@ Review progress va cho 3 dieu chinh can lam NGAY trong tuan toi.
 
 - `docs/getting-started-personal-brand.md` — Cam nang 8 chuong cho nguoi moi
 - `modules/personal-branding/vi/22-personal-brand-context/README.md` — Huong dan skill 22 chi tiet
-- `skills/references/mcp-ads-integration.md` — Ket noi MCP ads (khi san sang chay ads)
+- `skills/vi/references/mcp-ads-integration.md` — Ket noi MCP ads (khi san sang chay ads)
 
 ### Video demo
 

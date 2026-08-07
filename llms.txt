@@ -1,6 +1,6 @@
 # AI Business Skills
 
-> Production-ready AI Skills for solopreneurs and SMBs — a modular toolkit of Markdown-based prompts that transforms Claude, ChatGPT, Gemini, or Copilot into a specialized business assistant for Marketing, Dropshipping, and Personal Branding. Built on Vietnamese market data (2025–2026), expanding to global markets through 2026. MIT licensed. Maintained by OPA — Over Powers Agency, Vietnam.
+> Production-ready AI Skills for solopreneurs and SMBs — a modular toolkit of Markdown-based prompts that transforms Claude, ChatGPT, Gemini, or Copilot into a specialized business assistant for Marketing, Growth, Dropshipping, Personal Branding, and AI Marketing OS operations. Built on Vietnamese market data (2025–2026), expanding to global markets through 2026. MIT licensed. Maintained by OPA — Over Powers Agency, Vietnam.
 
 ## Core Documentation
 
@@ -9,7 +9,7 @@
 - [Citation Metadata](https://github.com/minhnv0807/ai-business-skills/blob/master/CITATION.cff): Machine-readable citation format
 - [License](https://github.com/minhnv0807/ai-business-skills/blob/master/LICENSE): MIT — free for commercial use
 
-## Skills — Vietnam Edition (16 Skills, Production)
+## Skills — Vietnam Edition (selected production skills)
 
 - [Marketing Plan (Master)](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/00-ke-hoach-mkt.md): Comprehensive 5-section marketing plan generator
 - [Content Calendar](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/01-lich-noi-dung.md): Monthly content calendar with repurposing matrix
@@ -27,11 +27,41 @@
 - [Data Analysis](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/13-phan-tich-du-lieu.md): Meta/TikTok/GA4 data interpretation
 - [Email Marketing](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/14-email-marketing.md): Welcome/nurture/re-engage sequences
 - [Social Listening](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/15-social-listening.md): Brand monitoring + sentiment + crisis protocol
+- [Offer Design](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/31-offer-design/SKILL.md): Value stack, guarantee, bonuses, scarcity, upsell/downsell
+- [SEO Growth](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/32-seo-growth/SKILL.md): SEO audit, AI SEO/GEO, schema, pSEO, directory submissions
+- [B2B Lead Gen](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/33-b2b-lead-gen/SKILL.md): Prospecting, cold outreach, lead scoring, sales handoff
+- [AI Marketing OS](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/34-ai-marketing-os/SKILL.md): Brand Hub, role-based agents/projects, skill chains, second brain, data loops, SOPs
 
-## Skills — Global Edition (In Translation, Q2–Q4 2026)
+## Skills — Role SOP Packs (Vietnam Edition, 33 skills)
+
+Four role-based standard-operating-procedure packs. Each skill is a full operating process — steps, required inputs, decision rules, quality gates, timelines — not a single prompt.
+
+- **Content system (35-40):** [Brand Voice](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/35-brand-voice/SKILL.md) (personality, tone, vocabulary, banned words, before/after examples) · [Content Brief](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/36-content-brief/SKILL.md) · [Caption Social](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/37-caption-social/SKILL.md) (organic, distinct from paid ad copy) · [Seeding Plan](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/38-seeding-plan/SKILL.md) · [Content Audit](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/39-content-audit/SKILL.md) · [Next Content Plan](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/40-next-content-plan/SKILL.md) (data-driven, not guesswork)
+- **Design production (41-50):** [Campaign Asset List](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/41-campaign-asset-list/SKILL.md) · [Image Brief](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/42-brief-hinh-anh/SKILL.md) · [Carousel Brief](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/43-brief-carousel/SKILL.md) · [Video Editor Brief](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/44-brief-video-editor/SKILL.md) · [Canva Brief](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/45-brief-canva/SKILL.md) · [Brand Guideline](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/46-brand-guideline/SKILL.md) · [Design Review](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/47-design-review/SKILL.md) · [Quick Visual Brief](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/48-quick-visual-brief/SKILL.md) · [HTML Email Template](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/49-html-email-template/SKILL.md) · [Asset Resize](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/50-asset-resize/SKILL.md)
+- **Performance ops (51-57):** [Audience Research](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/51-audience-research/SKILL.md) · [Account Structure](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/52-account-structure/SKILL.md) · [Tracking Setup](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/53-tracking-setup/SKILL.md) · [Media Plan](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/54-media-plan/SKILL.md) · [Scaling Ads](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/55-scaling-ads/SKILL.md) · [Retargeting Plan](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/56-retargeting-plan/SKILL.md) · [Next Ads Plan](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/57-next-ads-plan/SKILL.md)
+- **Leader ops (58-67):** [Positioning](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/58-positioning/SKILL.md) · [Go-To-Market](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/59-go-to-market/SKILL.md) · [Launch Playbook](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/60-launch-playbook/SKILL.md) · [Budget Planning](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/61-budget-planning/SKILL.md) · [Marketing Review](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/62-marketing-review/SKILL.md) · [Campaign Retrospective](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/63-campaign-retrospective/SKILL.md) · [Team Brief](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/64-team-brief/SKILL.md) · [Team Performance Review](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/65-team-performance-review/SKILL.md) · [Crisis Playbook](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/66-crisis-playbook/SKILL.md) · [Agency Vendor Brief](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/67-agency-vendor-brief/SKILL.md)
+
+## Knowledge Library (Foundation Thinking)
+
+- [Knowledge Index](https://github.com/minhnv0807/ai-business-skills/blob/master/knowledge/README.md): Ten foundation files plus implementation notes, sized for upload into role-based AI projects (Leader, Content, Designer, Performance)
+
+## Skills — Global Edition
 
 - [Global Edition Status](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/README.md): Translation roadmap and contribution guide
 - [Skill Template v2.0](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/_TEMPLATE.md): Frontmatter standard for new skills
+- [Offer Design Global](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/31-offer-design-global/SKILL.md): Global offer design mirror
+- [SEO Growth Global](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/32-seo-growth-global/SKILL.md): Global SEO/GEO growth mirror
+- [B2B Lead Gen Global](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/33-b2b-lead-gen-global/SKILL.md): Global B2B lead generation mirror
+- [AI Marketing OS Global](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/34-ai-marketing-os-global/SKILL.md): Global AI Marketing OS mirror
+
+## Skills — Role SOP Packs, Global Edition (33 skills)
+
+English adaptations of the four role SOP packs — same frameworks and process logic, rebased to USD benchmarks, the global channel stack (Klaviyo/Mailchimp, Shopify/Amazon, Meta US/EU, TikTok Shop US/UK), and FTC/GDPR/CCPA/CAN-SPAM compliance.
+
+- **Content system:** [Brand Voice](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/35-brand-voice-global/SKILL.md) · [Content Brief](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/36-content-brief-global/SKILL.md) · [Social Caption](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/37-social-caption-global/SKILL.md) · [Community Seeding](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/38-community-seeding-global/SKILL.md) (Reddit/Discord/Slack norms, anti-astroturfing) · [Content Audit](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/39-content-audit-global/SKILL.md) · [Next Content Plan](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/40-next-content-plan-global/SKILL.md)
+- **Design production:** [Campaign Asset List](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/41-campaign-asset-list-global/SKILL.md) · [Image Brief](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/42-image-brief-global/SKILL.md) · [Carousel Brief](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/43-carousel-brief-global/SKILL.md) · [Video Editor Brief](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/44-video-editor-brief-global/SKILL.md) · [Design Tool Brief](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/45-design-tool-brief-global/SKILL.md) · [Brand Guideline](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/46-brand-guideline-global/SKILL.md) · [Design Review](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/47-design-review-global/SKILL.md) · [Quick Visual Brief](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/48-quick-visual-brief-global/SKILL.md) · [HTML Email Template](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/49-html-email-template-global/SKILL.md) · [Asset Resize](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/50-asset-resize-global/SKILL.md)
+- **Performance ops:** [Audience Research](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/51-audience-research-global/SKILL.md) · [Account Structure](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/52-account-structure-global/SKILL.md) · [Tracking Setup](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/53-tracking-setup-global/SKILL.md) (Pixel + CAPI, GA4, consent mode, iOS ATT) · [Media Plan](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/54-media-plan-global/SKILL.md) · [Scaling Ads](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/55-scaling-ads-global/SKILL.md) · [Retargeting Plan](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/56-retargeting-plan-global/SKILL.md) · [Next Ads Plan](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/57-next-ads-plan-global/SKILL.md)
+- **Leader ops:** [Positioning](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/58-positioning-global/SKILL.md) · [Go-To-Market](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/59-go-to-market-global/SKILL.md) · [Launch Playbook](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/60-launch-playbook-global/SKILL.md) · [Budget Planning](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/61-budget-planning-global/SKILL.md) · [Marketing Review](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/62-marketing-review-global/SKILL.md) · [Campaign Retrospective](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/63-campaign-retrospective-global/SKILL.md) · [Team Brief](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/64-team-brief-global/SKILL.md) · [Team Performance Review](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/65-team-performance-review-global/SKILL.md) · [Crisis Playbook](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/66-crisis-playbook-global/SKILL.md) · [Agency Vendor Brief](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/67-agency-vendor-brief-global/SKILL.md)
 
 ## Reference Data
 
@@ -41,6 +71,8 @@
 - [Content Angles](https://github.com/minhnv0807/ai-business-skills/blob/master/references/content-angles.md): Funnel-stage content angles
 - [KPI Formulas](https://github.com/minhnv0807/ai-business-skills/blob/master/references/kpi-formulas.md): Marketing KPI calculation reference
 - [Tool Stack](https://github.com/minhnv0807/ai-business-skills/blob/master/references/tool-stack.md): Recommended tools by category
+- [Marketing Templates Library](https://github.com/minhnv0807/ai-business-skills/blob/master/references/marketing-templates-library.md): Operational template structures (planning, tracking dashboard, audit, report, campaign, content calendar) mapped to the skill that regenerates each
+- [AI Tool Orchestration](https://github.com/minhnv0807/ai-business-skills/blob/master/references/ai-tool-orchestration.md): Multi-tool AI workflow for marketers, role-based project setup, information-gathering checklists
 
 ## Modules (Beyond Marketing)
 
@@ -53,12 +85,18 @@
 - [Content Producer](https://github.com/minhnv0807/ai-business-skills/blob/master/agents/content-producer.md): Scripts, copy, content calendars
 - [Performance Analyst](https://github.com/minhnv0807/ai-business-skills/blob/master/agents/performance-analyst.md): Data analysis, reporting, KPI math
 - [Channel Operator](https://github.com/minhnv0807/ai-business-skills/blob/master/agents/channel-operator.md): Channel setup, landing pages, email
+- [Design Producer](https://github.com/minhnv0807/ai-business-skills/blob/master/agents/design-producer.md): Asset lists, visual briefs, brand guidelines, design review, HTML email and landing pages
+- [Personal Brand Builder](https://github.com/minhnv0807/ai-business-skills/blob/master/agents/personal-brand-builder.md): Personal brand strategy, AI avatar, thought leadership, monetization
 
 ## Workflows (Multi-Skill Sequences)
 
 - [Campaign Launch (14-21 days)](https://github.com/minhnv0807/ai-business-skills/blob/master/workflows/vi/campaign-launch.md): End-to-end campaign workflow
 - [Monthly Cycle (3-5 days)](https://github.com/minhnv0807/ai-business-skills/blob/master/workflows/vi/monthly-cycle.md): Recurring monthly marketing cycle
 - [Content Production (weekly)](https://github.com/minhnv0807/ai-business-skills/blob/master/workflows/vi/content-production.md): Weekly content production flow
+- [Content Engine (monthly loop)](https://github.com/minhnv0807/ai-business-skills/blob/master/workflows/vi/content-engine.md): Brand voice foundation through production, visual briefs, audit, and data-driven next plan
+- [Performance Loop (ads cycle)](https://github.com/minhnv0807/ai-business-skills/blob/master/workflows/vi/performance-loop.md): Audience and media plan through tracking, testing, audit, scaling, and next ads plan
+- [Design Pipeline (T-14 to D+1)](https://github.com/minhnv0807/ai-business-skills/blob/master/workflows/vi/design-pipeline.md): Asset list, concept approval, production by complexity, review, and winner resize
+- [Leader Cadence (quarterly/campaign/weekly)](https://github.com/minhnv0807/ai-business-skills/blob/master/workflows/vi/leader-cadence.md): Plan, budget, brief, approval gates, weekly reporting, and retrospective
 
 ## Optional
 

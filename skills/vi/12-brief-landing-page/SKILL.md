@@ -2,7 +2,7 @@
 name: 12-brief-landing-page
 description: Tao brief landing page chuyen doi cao — 7 section, 1 page = 1 goal = 1 CTA, mobile-first, toi uu conversion
 metadata:
-  version: 2.0.0
+  version: 2.1.1
   category: content
 triggers:
   - "brief landing page"
@@ -11,12 +11,20 @@ triggers:
   - "brief cho lap trinh vien lam landing"
   - "landing page"
   - "trang dich"
+  - "code landing page"
+  - "build landing page HTML"
+  - "MVP landing page"
 output: File .md chua brief day du 7 section voi copy template, yeu cau ky thuat, A/B test plan, va tracking plan
 related:
   - 02-brief-chien-dich
   - 05-copy-quang-cao
   - 09-insight-khach-hang
   - 10-tinh-kpi-nguoc
+  - 41-campaign-asset-list
+  - 46-brand-guideline
+  - 47-design-review
+  - 49-html-email-template
+  - 53-tracking-setup
 ---
 
 # Brief Landing Page
@@ -217,193 +225,122 @@ Tai sao khac biet:
 
 ## Yeu cau ky thuat
 
-### Hieu suat
-
-| Chi so | Yeu cau |
-|--------|---------|
-| First Contentful Paint | < 1.5 giay |
-| Largest Contentful Paint | < 3 giay |
-| Cumulative Layout Shift | < 0.1 |
-| Time to Interactive | < 3.5 giay |
-| PageSpeed Score (Mobile) | > 80 |
-
-### Tich hop bat buoc
-
-| Tich hop | Chi tiet |
-|----------|---------|
-| Meta Pixel | Events: PageView, ViewContent, Lead, SubmitApplication |
-| Google Analytics 4 | Events: page_view, scroll (25/50/75/100%), form_start, form_submit |
-| Form → Google Sheets | Moi submission tu dong ghi vao Google Sheets |
-| Form → Zalo thong bao | Gui thong bao ve Zalo OA/Zalo Group khi co lead moi |
-| UTM tracking | Doc UTM params tu URL, luu kem voi form data |
-| TikTok Pixel | Neu chay TikTok Ads: PageView, SubmitForm |
-| Google Tag Manager | Quan ly tat ca pixel qua 1 container |
-
-### SEO Meta Tags
-
-```html
-<title>[Headline chinh] | [Ten thuong hieu]</title>
-<meta name="description" content="[Sub-headline — 150–160 ky tu]" />
-<meta property="og:title" content="[Headline chinh]" />
-<meta property="og:description" content="[Sub-headline ngan]" />
-<meta property="og:image" content="[URL hinh OG 1200x630]" />
-<meta property="og:type" content="website" />
-<meta name="robots" content="noindex, nofollow" />  <!-- Landing page khong can index -->
-```
-
-### Responsive
-
-| Breakpoint | Yeu cau |
-|-----------|---------|
-| Mobile (< 768px) | Layout 1 cot, font 16px+, CTA chiem full width |
-| Tablet (768–1024px) | Layout 1–2 cot, CTA noi bat |
-| Desktop (> 1024px) | Layout 2 cot cho section co hinh + text, max-width 1200px |
+> Bang nguong hieu suat (FCP, LCP, CLS, TTI, PageSpeed mobile), bang 7 tich hop bat buoc (Meta Pixel, GA4, Google Sheets, Zalo, UTM, TikTok Pixel, GTM), doan SEO meta tag mau, va bang 3 breakpoint responsive: doc `references/ky-thuat-tracking-va-ab-test.md` muc "Yeu cau ky thuat".
 
 ---
 
 ## Analytics Tracking Plan
 
-| Su kien | Trigger | Platform |
-|---------|---------|----------|
-| PageView | Tai trang | Meta Pixel + GA4 + TikTok Pixel |
-| ViewContent | Cuon qua Section 3 (Giai phap) | Meta Pixel |
-| Scroll depth 25% | Cuon 25% trang | GA4 |
-| Scroll depth 50% | Cuon 50% trang | GA4 |
-| Scroll depth 75% | Cuon 75% trang | GA4 |
-| Scroll depth 100% | Cuon het trang | GA4 |
-| FormStart | Click vao truong dau tien cua form | GA4 |
-| Lead | Submit form thanh cong | Meta Pixel + GA4 + TikTok Pixel |
-| ClickCTA | Click bat ky CTA button nao | GA4 (event label: vi tri section) |
-| ClickPhone | Click so dien thoai | GA4 |
-| ClickZalo | Click link Zalo | GA4 |
+> Bang 11 su kien can track (PageView, ViewContent, 4 moc scroll depth, FormStart, Lead, ClickCTA, ClickPhone, ClickZalo) kem trigger va platform tuong ung: doc `references/ky-thuat-tracking-va-ab-test.md` muc "Analytics Tracking Plan".
 
 ---
 
 ## A/B Test Plan
 
-Test theo thu tu uu tien — moi lan chi test 1 yeu to:
-
-### Vong 1 — Tac dong lon nhat
-
-| Yeu to test | Bien the A | Bien the B | Chi so do |
-|-------------|-----------|-----------|-----------|
-| Headline Hero | Tap trung loi ich | Tap trung noi dau | Conv rate form |
-| CTA copy | "Dat lich tu van mien phi" | "Nhan uu dai ngay" | Click rate CTA |
-
-### Vong 2 — Toi uu form
-
-| Yeu to test | Bien the A | Bien the B | Chi so do |
-|-------------|-----------|-----------|-----------|
-| So truong form | 2 truong (Ten + SĐT) | 3 truong (Ten + SĐT + Email) | Conv rate form |
-| Vi tri form | Giua trang (Section 5) | Tren dau trang (sau Hero) | Conv rate form |
-
-### Vong 3 — Tinh chinh
-
-| Yeu to test | Bien the A | Bien the B | Chi so do |
-|-------------|-----------|-----------|-----------|
-| Mau CTA button | Cam (#ff6b00) | Xanh (#155eef) | Click rate CTA |
-| Yeu to khan cap | Countdown timer | "Con X slot" text | Conv rate form |
-
-**Quy tac A/B test:**
-- Toi thieu 200 conversion moi bien the truoc khi ket luan
-- Chay toi thieu 7 ngay de loai yeu to ngay trong tuan
-- Chi so chinh: conversion rate form (khong phai bounce rate)
+> Lo trinh test 3 vong theo thu tu uu tien (Vong 1 headline + CTA copy · Vong 2 so truong + vi tri form · Vong 3 mau CTA + yeu to khan cap) kem bien the A/B va quy tac ket luan: doc `references/ky-thuat-tracking-va-ab-test.md` muc "A/B Test Plan".
 
 ---
 
 ## Template ket qua
 
-```markdown
-# Brief Landing Page — [Ten san pham/dich vu]
-Ngay tao: [YYYY-MM-DD]
-Muc tieu: [Thu lead / Dat lich / Mua hang]
-Nguon traffic: [Meta Ads / TikTok Ads / Google Ads / ...]
+> Khung markdown day du de copy: header + bang thong tin chung + o dien noi dung cho ca 7 section + checklist yeu cau ky thuat + 3 dong A/B test plan: doc `references/template-brief-landing-page.md`.
 
 ---
 
-## Thong tin chung
+## Khau BUILD — tu brief den trang HTML chay duoc
 
-| Hang muc | Chi tiet |
-|----------|---------|
-| San pham/Dich vu | [Ten] |
-| Doi tuong | [Mo ta ngan] |
-| Gia ban | [Gia] |
-| USP chinh | [3 diem khac biet] |
-| Muc tieu conversion rate | [X%] (benchmark: landing page VN 5–15%) |
+Brief xong moi la nua duong. Phan nay la khau bien brief thanh trang HTML that — dung khi tu build (Ladipage Custom HTML, file HTML tinh, hoac giao cho dev).
 
----
+> Tu duy: landing page khong phai de dep — de convert. Moi section phai co ly do ton tai. Bo di ma khong ai de y thi bo han.
 
-## Section 1 — Hero
+### Buoc 1 — Chon mode truoc khi viet dong code dau tien
 
-- **Headline:** [60 ky tu]
-- **Sub-headline:** [120 ky tu]
-- **CTA:** [25 ky tu]
-- **Visual:** [Mo ta hinh anh/video can dung]
-- **Trust badge:** [Liet ke 3–5 badge]
+| | **MVP** | **Production** |
+|---|---|---|
+| Muc tieu | Nguoi duyet xem va chot huong trong 15 phut | Trang that de chay ads |
+| Thoi gian | **30 phut** — vuot la dang over-engineer | 1-2 ngay |
+| Font | Font he thong (Arial / system-ui) | Font brand that |
+| Copy | Placeholder, dung do dai that | Copy that da duyet |
+| Anh | O mau xam co ghi kich thuoc | Anh that, da nen |
+| Pixel / tracking | Khong | Day du |
+| Responsive | Chi kiem tra khong vo layout | Hoan chinh 375px / 768px / 1440px |
 
-## Section 2 — Van de
+**Luat:** khong bao gio nhay thang vao Production. MVP truoc → duyet huong → moi build that. Sua bo cuc o MVP mat 5 phut, sua o Production mat nua ngay.
 
-- Pain point 1: [...]
-- Pain point 2: [...]
-- Pain point 3: [...]
-- Cau chuyen doi: [Cau noi chuyen tu van de sang giai phap]
+### Buoc 2 — Map section theo muc tieu (khong phai luc nao cung 7 section)
 
-## Section 3 — Giai phap
+| Muc tieu / loai traffic | Thu tu section |
+|------------------------|---------------|
+| **Lead gen — traffic lanh** | Hero → Van de → Giai phap → Bang chung → Form → FAQ → Final CTA |
+| **Traffic am (retarget, da biet brand)** | Offer → Khan cap → Bang chung → Form |
+| **Khoa hoc / su kien** | Hero → Gioi thieu → Noi dung chuong trinh → Nguoi day → Testimonial → Bang gia → FAQ → Form |
+| **Booking dich vu local** | Hero → Bang chung → Quy trinh → Bang gia → Form dat lich → FAQ |
 
-- Gioi thieu: [2–3 cau]
-- Buoc 1: [...]
-- Buoc 2: [...]
-- Buoc 3: [...]
-- USP: [3 diem]
+Traffic cang am, trang cang ngan. Bat nguoi da biet brand doc lai phan "van de" la ly do ho thoat.
 
-## Section 4 — Social Proof
+### Buoc 3 — Thu tu build cac khoi
 
-- Testimonial 1: [Ten, ket qua, hinh]
-- Testimonial 2: [Ten, ket qua, hinh]
-- Testimonial 3: [Ten, ket qua, hinh]
-- So lieu: [VD: 1,200+ khach | 4.8/5 sao | 5 nam kinh nghiem]
+Build theo dung thu tu nay, moi khoi xong moi sang khoi tiep:
 
-## Section 5 — Form
+| # | Khoi | Bat buoc | Noi dung toi thieu |
+|---|------|---------|-------------------|
+| 1 | **Hero** | Co | Pre-headline (nhan nho) · Headline theo loi ich (khong theo tinh nang) · Sub-headline 1-2 cau · CTA chinh · social proof ngan ("X nguoi da tham gia" / so sao) · anh that (khong dung anh stock chung chung) |
+| 2 | **Van de** | Co | 3 noi dau: icon + tieu de + 1 cau mo ta · cau chuyen tiep: "Neu ban gat dau voi it nhat 1 dieu tren..." |
+| 3 | **Giai phap** | Co | Tieu de "Day la cach [brand] giai quyet..." · 3-5 y co dau tick · anh minh hoa hoac demo that |
+| 4 | **Bang chung xa hoi** | Co | 2-3 the testimonial: avatar that + ten + vai tro + trich dan that · kem so lieu ("200+ hoc vien", "ROAS 4.2x") |
+| 5 | **Offer / bang gia** | Tuy | Ten goi + nhan "Pho bien nhat" · gia goc gach ngang + gia hien tai · danh sach bao gom · bonus · khan cap ("con X suat" / "uu dai den [ngay]") · CTA lon · cam ket ("hoan tien trong X ngay") |
+| 6 | **FAQ** | Nen co | 5-7 cau xu ly rao can cuoi, dang accordion |
+| 7 | **Final CTA** | Co | Nhac lai khan cap · form hoac nut CTA · tin hieu tin cay (logo, cam ket, hotline) |
 
-- Headline form: [...]
-- Truong: Ten, SĐT, [truong tuy chon]
-- CTA button: [...]
-- Khan cap: [Countdown / So luong gioi han]
-- Cam ket: [...]
+**Nen mau va typography:** doc tu brand hub — `[mau primary]`, `[mau secondary]`, `[font heading]`, `[font body]`. Neu chua co, chay `46-brand-guideline` truoc. Khong tu che bang mau.
 
-## Section 6 — FAQ
+### Buoc 4 — Form va tracking
 
-1. [Cau hoi] → [Tra loi]
-2. [Cau hoi] → [Tra loi]
-3. [Cau hoi] → [Tra loi]
-4. [Cau hoi] → [Tra loi]
-5. [Cau hoi] → [Tra loi]
-
-## Section 7 — Final CTA
-
-- Headline: [Tom tat gia tri]
-- CTA: [Giong Section 5]
-- Lien he: [SĐT + Zalo + Messenger]
-
----
-
-## Yeu cau ky thuat
-
-- [ ] Toc do tai < 3 giay (mobile)
-- [ ] Meta Pixel: PageView, ViewContent, Lead
-- [ ] GA4: page_view, scroll depth, form_start, form_submit
-- [ ] Form → Google Sheets (tu dong)
-- [ ] Form → Zalo thong bao (tu dong)
-- [ ] UTM tracking luu kem form data
-- [ ] OG meta tags day du
-- [ ] Responsive mobile-first
-
-## A/B Test Plan
-
-- Test 1: [Headline A vs B] — do: conv rate — thoi gian: 7 ngay
-- Test 2: [CTA copy A vs B] — do: click rate — thoi gian: 7 ngay
-- Test 3: [Form field A vs B] — do: conv rate — thoi gian: 7 ngay
+```html
+<form action="[WEBHOOK_URL]" method="POST">
+  <input type="hidden" name="source"     value="landing-[ten-chien-dich]">
+  <input type="hidden" name="utm_source" value="">
+  <input type="hidden" name="utm_medium" value="">
+  <input type="hidden" name="utm_campaign" value="">
+  <input type="text"  name="name"  placeholder="Ho va ten *" required>
+  <input type="tel"   name="phone" placeholder="So dien thoai *" required>
+  <input type="email" name="email" placeholder="Email">
+  <button type="submit">Dang ky ngay</button>
+</form>
 ```
+
+- UTM tu URL phai duoc **tu dong do vao hidden field** — khong co buoc nay thi khong biet lead den tu camp nao.
+- Fire event `Lead` (Meta Pixel) va event tuong ung GA4 **khi submit thanh cong**, khong phai khi bam nut.
+- Moi field them vao form = conversion giam. Toi da 3 field bat buoc.
+
+Chi tiet setup pixel/CAPI/UTM → `53-tracking-setup`.
+
+### Buoc 5 — Conversion checklist ky thuat (truoc khi go live)
+
+- [ ] Phan man hinh dau tien tai xong < 2 giay (do o mang 4G, khong do o wifi)
+- [ ] Anh co `loading="lazy"` — **tru anh hero**
+- [ ] Anh hero < 200KB, da nen, dung dinh dang toi uu
+- [ ] Kiem tra o be ngang 375px — khong co thanh cuon ngang
+- [ ] Headline + CTA thay ngay khong can cuon, ke ca tren mobile
+- [ ] Test submit form that — data ve dung noi nhan (Sheets / CRM / webhook)
+- [ ] Tat ca nut CTA va anchor scroll hoat dong
+- [ ] Meta Pixel fire dung event `Lead` khi submit (kiem bang Events Manager)
+- [ ] Da dien page title + meta description + OG image 1200x630
+- [ ] Khong co menu dieu huong, khong co link dan ra ngoai trang
+
+### Buoc 6 — Timeline chuan trong chien dich
+
+| Moc | Viec | Nguoi lam | Gate |
+|-----|------|----------|------|
+| **T-14** | Doc brief chien dich, chot landing page nam trong danh sach asset | Designer / Dev | `41-campaign-asset-list` |
+| **T-7** | Dung **MVP trong 30 phut** → gui duyet | Designer / Dev | Duyet huong trong 15 phut (`47-design-review`) |
+| **T-6** | Sua theo gop y MVP (1 vong) | Designer / Dev | |
+| **T-5** | Build ban Production day du (landing page la asset phuc tap — lam som nhat) | Designer / Dev | |
+| **T-3** | Gan tracking, test form, test toc do | Performance | `53-tracking-setup` |
+| **T-1** | Kiem tra cuoi cung theo conversion checklist | Performance + Lead | Pre-launch check |
+| **T-0** | Go live truoc khi bat ads | | **Khong bat ads truoc khi landing page da test xong** |
+
+**Luat:** landing page luon la asset lam som nhat trong chien dich, vi moi thu khac (ads, email, Zalo) deu tro ve day. Landing page tre = ca chien dich tre.
 
 ---
 
@@ -414,6 +351,12 @@ Nguon traffic: [Meta Ads / TikTok Ads / Google Ads / ...]
 - **`10-tinh-kpi-nguoc`** — tinh conversion rate can dat va ngan sach ads tuong ung
 - **`02-brief-chien-dich`** — landing page nam trong brief chien dich tong the
 - **`13-phan-tich-du-lieu`** — phan tich hieu suat landing page sau khi chay
+- **`41-campaign-asset-list`** — landing page la 1 dong trong danh sach asset cua chien dich
+- **`46-brand-guideline`** — lay mau, font, style token thay vi tu che bang mau
+- **`47-design-review`** — gate duyet MVP o T-7 va duyet ban Production
+- **`49-html-email-template`** — cung he token va cung cach dung HTML cho email
+- **`53-tracking-setup`** — gan pixel, CAPI, UTM cho landing page
+- **`21-audit-ads-performance`** — khi CTR tot ma CPL cao, van de thuong nam o landing page
 
 ---
 
@@ -455,3 +398,15 @@ Nguon traffic: [Meta Ads / TikTok Ads / Google Ads / ...]
 - [ ] Kiem tra hien thi OG khi share link
 - [ ] Chay thu Meta Pixel voi Events Manager
 - [ ] Link CTA va anchor scroll hoat dong dung
+
+### Khi tu build HTML
+
+- [ ] Da chon mode truoc khi build (MVP hay Production) — khong nhay thang vao Production
+- [ ] MVP hoan thanh trong 30 phut va da duoc duyet huong truoc khi build that
+- [ ] Thu tu section chon theo muc tieu va do am cua traffic — khong mac dinh 7 section
+- [ ] Mau va font lay tu brand hub (`[mau primary]`, `[font heading]`) — khong tu che
+- [ ] Form co hidden field tu dong bat UTM tu URL
+- [ ] Event `Lead` fire khi submit thanh cong, khong phai khi bam nut
+- [ ] Anh hero < 200KB; anh con lai co `loading="lazy"`
+- [ ] Kiem tra 375px khong co cuon ngang
+- [ ] Landing page hoan thanh truoc khi bat ads — khong chay ads vao trang chua test

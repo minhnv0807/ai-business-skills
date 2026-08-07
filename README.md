@@ -4,10 +4,10 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/v2.7.0-Design%20Master-6d28d9?style=for-the-badge&labelColor=1e1033" alt="v2.7.0"/>
-  <img src="https://img.shields.io/badge/Skills-63-6d28d9?style=for-the-badge&labelColor=1e1033" alt="63 Skills"/>
-  <img src="https://img.shields.io/badge/Agents-5-be185d?style=for-the-badge&labelColor=1e1033" alt="5 Agents"/>
-  <img src="https://img.shields.io/badge/Workflows-15-0f766e?style=for-the-badge&labelColor=1e1033" alt="15 Workflows"/>
+  <img src="https://img.shields.io/badge/v3.6.0-Bilingual%20Role%20SOP-6d28d9?style=for-the-badge&labelColor=1e1033" alt="v3.6.0"/>
+  <img src="https://img.shields.io/badge/Skills-138-6d28d9?style=for-the-badge&labelColor=1e1033" alt="138 Skills"/>
+  <img src="https://img.shields.io/badge/Agents-6-be185d?style=for-the-badge&labelColor=1e1033" alt="6 Agents"/>
+  <img src="https://img.shields.io/badge/Workflows-19-0f766e?style=for-the-badge&labelColor=1e1033" alt="19 Workflows"/>
   <img src="https://img.shields.io/badge/Regions-VN%20%2B%20Global-f97316?style=for-the-badge&labelColor=1e1033" alt="VN + Global"/>
   <img src="https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge&labelColor=1e1033" alt="MIT License"/>
   <a href="https://www.opa.business/donate"><img src="https://img.shields.io/badge/%E2%9D%A4%EF%B8%8F%20Sponsor-Donate-ff69b4?style=for-the-badge&labelColor=1e1033" alt="Donate"/></a>
@@ -16,7 +16,7 @@
 <h1 align="center">ai-business-skills</h1>
 
 <p align="center">
-  <strong>Fullstack marketing skills cho AI agent — 63 skills bilingual (VN + Global).</strong>
+  <strong>Fullstack marketing skills cho AI agent — 138 skills bilingual (VN + Global).</strong>
   <br/>
   <sub>Vietnamese-first + Global (US/EU/SEA/LATAM) | Over Powers Agency</sub>
 </p>
@@ -29,16 +29,82 @@
   <a href="https://github.com/minhnv0807/ai-business-skills/commits/master"><img src="https://img.shields.io/github/last-commit/minhnv0807/ai-business-skills?style=flat-square&color=violet" alt="Last commit"/></a>
 </p>
 
-> **v2.7.0** — Design Master skill (8 design types: personal brand, business logo, campaign visual, day-to-day marketing, editorial, infographic, web mockup hybrid, quote graphic). Bilingual VN + Global. Zero breaking changes. [Changelog](CHANGELOG.md)
+> **v3.6.0** — Bilingual Role SOP: 33 skill Global mirror hoàn tất parity cho 4 vai trò. Cộng v3.5.0 (33 skill VN + kho `knowledge/` + agent `design-producer` + 4 workflow vòng lặp). Zero breaking changes. [Changelog](CHANGELOG.md)
 
 ---
+
+## 🧭 System map — read this first
+
+ai-business-skills turns one marketing request into a routed workflow: context first, then the right skill cluster, then an agent/workflow when the job spans multiple steps.
+
+```mermaid
+flowchart LR
+    UserRequest["User asks a marketing task"] --> Context["Foundation context<br/>.agents/*.md"]
+    Context --> ModeRouter{"VN or Global?"}
+    ModeRouter --> VN["VN cluster<br/>69 skills"]
+    ModeRouter --> Global["Global cluster<br/>69 skills"]
+    VN --> Agents["6 universal agents"]
+    Global --> Agents
+    Agents --> Workflows["19 multi-skill workflows"]
+    Workflows --> Output["Plan, copy, brief,<br/>report, SOP, dashboard"]
+
+    classDef user fill:#3b82f6,stroke:#1e40af,color:#fff
+    classDef system fill:#64748b,stroke:#334155,color:#fff
+    classDef admin fill:#f59e0b,stroke:#b45309,color:#fff
+    classDef cmsdev fill:#6d28d9,stroke:#4c1d95,color:#fff
+    classDef db fill:#10b981,stroke:#047857,color:#fff
+
+    class UserRequest user
+    class Context,ModeRouter system
+    class VN,Global db
+    class Agents cmsdev
+    class Workflows,Output admin
+```
+
+| Layer | What it gives you | Start here |
+|-------|-------------------|------------|
+| Context | Product, audience, positioning, proof, objections | `product-marketing-context` |
+| Skills | Single jobs like plan, copy, SEO, report, offer, SOP | `skills/vi/` or `skills/en/` |
+| Agents | Role-based routing for strategy, content, design, performance, channels, personal brand | `agents/` |
+| Workflows | Multi-step campaigns and recurring operating loops | `workflows/` |
+| Knowledge | Foundation thinking to upload into role-based AI projects | `knowledge/` |
+| OS | Brand Hub, second brain, data loop, governance | `34-ai-marketing-os` |
+
+### Pick the right entry point
+
+```mermaid
+flowchart TD
+    Start["What do you need?"] --> Strategy{"Strategy or offer?"}
+    Start --> Content{"Content or creative?"}
+    Start --> Data{"Audit or data?"}
+    Start --> Ops{"Channel or ops?"}
+    Start --> Brand{"Personal brand?"}
+    Start --> OS{"AI marketing system?"}
+
+    Strategy --> S00["00 plan<br/>10 reverse KPI<br/>31 offer design"]
+    Content --> S01["01 calendar<br/>04 video script<br/>05 ad copy<br/>30 design master"]
+    Data --> S03["03 performance eval<br/>13 data analysis<br/>21 ads audit<br/>32 SEO growth"]
+    Ops --> S11["11 channel setup<br/>12 landing brief<br/>14 email<br/>33 B2B lead gen"]
+    Brand --> S22["22 context<br/>23 strategy<br/>24 AI avatar<br/>27 monetize"]
+    OS --> S34["34 AI Marketing OS<br/>Brand Hub + agents + SOPs"]
+
+    classDef user fill:#3b82f6,stroke:#1e40af,color:#fff
+    classDef system fill:#64748b,stroke:#334155,color:#fff
+    classDef admin fill:#f59e0b,stroke:#b45309,color:#fff
+    classDef cmsdev fill:#6d28d9,stroke:#4c1d95,color:#fff
+    classDef db fill:#10b981,stroke:#047857,color:#fff
+
+    class Start user
+    class Strategy,Content,Data,Ops,Brand,OS system
+    class S00,S01,S03,S11,S22,S34 cmsdev
+```
 
 ## ⚡ Quick start (30 giây)
 
 ```bash
 git clone https://github.com/minhnv0807/ai-business-skills.git
 cd ai-business-skills
-bash install.sh --global   # 63 skills → ~/.claude/skills/marketing/
+bash install.sh --global   # 138 skills -> ~/.claude/skills/marketing/
 ```
 
 Windows:
@@ -53,8 +119,6 @@ Test ngay trong Claude Code:
 
 → Skill `00-ke-hoach-mkt` tự kích hoạt, output file `.md` chi tiết với benchmark VN 2025-2026, KPI 3 kịch bản, budget allocation, weekly timeline, risk matrix.
 
-**Muốn cài full stack (build + market) cùng lúc?** Xem [companion OPA KIT](#-opa-suite--companion-repo) bên dưới.
-
 ---
 
 ## 🎯 Khi nào dùng ai-business-skills?
@@ -66,18 +130,20 @@ Test ngay trong Claude Code:
 ✅ **Phân tích đối thủ + insight khách hàng + audit ads** — diagnostic + 48h action plan
 ✅ **Design master** — 8 loại thiết kế (logo, key visual, social post, infographic...) qua prompt-driven workflow
 ✅ **Dropshipping mastery** (Global) — niche → product → store → ads → fulfillment → scale
+✅ **Offer + SEO + B2B growth** — offer design, AI SEO/GEO, prospecting, cold outreach, sales handoff
+✅ **AI Marketing OS** — Brand Hub, role-based agents/projects, skill chains, second brain, data loops, SOPs
 
-❌ **Build product code** → dùng companion [OPA KIT](https://github.com/minhnv0807/opa-kit) (`opa-pipeline`)
-❌ **Single PRD tech feature** → dùng `opa-prd` ở OPA KIT
-❌ **Deploy production** → dùng `opa-deploy` ở OPA KIT
+❌ **Build product code** — repo này tập trung vào marketing/business skills
+❌ **Write technical PRD/specs** — dùng tool tài liệu kỹ thuật riêng nếu cần
+❌ **Deploy production infrastructure** — dùng workflow DevOps riêng nếu cần
 
 ---
 
-## 📦 63 Skills (bilingual VN + Global)
+## 📦 138 Skills (bilingual VN + Global)
 
 > Mỗi skill = 1 file `SKILL.md` với frontmatter triggers + workflow body. AI agent tự kích hoạt skill khi user nhắc trigger keyword.
 
-### Cluster 1: Marketing Core (24 VN + 24 Global)
+### Cluster 1: Marketing Core (22 numbered + foundation per cluster)
 
 Foundation skill (`product-marketing-context` / `product-marketing-context-global`) đọc **1 lần** mỗi project → tránh hỏi lại sản phẩm/audience suốt session. Saves ~70% time.
 
@@ -133,25 +199,54 @@ For founder / coach / creator building personal brand with AI avatar.
 |---|-------|----------|
 | 30 | `30-thiet-ke-master` (VN) / `30-design-master-global` (EN) | 8 design types: personal-brand · business-logo · business-campaign · marketing-day-to-day · editorial · infographic · web-mockup (hybrid) · quote-graphic. Auto-reads brand identity → composes prompt → generates via `gpt-image-2` API OR outputs paste-ready prompts cho 5 platforms (DALL-E 3, MidJourney, Leonardo, Imagen, Bing). |
 
-### 5 Marketing Agents (Universal mode — VN + Global auto-detect)
+### Cluster 5: Growth + AI Marketing OS (4 VN + 4 Global) ⭐ NEW v3.4.0
+
+| # | Skill | Coverage |
+|---|-------|----------|
+| 31 | `31-offer-design` / `31-offer-design-global` | Package the thing being sold: value stack, guarantee, bonus, scarcity, upsell/downsell, and offer ladder. |
+| 32 | `32-seo-growth` / `32-seo-growth-global` | SEO audit, AI SEO/GEO, schema, programmatic SEO, directory submissions, and backlink plan. |
+| 33 | `33-b2b-lead-gen` / `33-b2b-lead-gen-global` | Prospecting, cold outreach, lead scoring, sales enablement, CRM handoff, and RevOps basics. |
+| 34 | `34-ai-marketing-os` / `34-ai-marketing-os-global` | Brand Hub/source of truth, role-based AI agents/projects, skill chains, second brain, data loops, SOPs, and governance. |
+
+### Cluster 6: Role SOP packs (33 VN skills) ⭐ NEW v3.5.0
+
+Bốn bộ SOP theo vai trò — mỗi bộ là quy trình vận hành đầy đủ với decision rules, tiêu chuẩn chất lượng, và timeline, không chỉ là prompt đơn lẻ.
+
+| Pack | Skills | Coverage |
+|------|--------|----------|
+| **Content system (35-40)** | `35-brand-voice` · `36-content-brief` · `37-caption-social` · `38-seeding-plan` · `39-content-audit` · `40-next-content-plan` | Brand voice document (nền tảng cho mọi output content) → brief từng bài → caption organic → seeding cộng đồng → audit cuối tháng → plan kỳ sau từ data |
+| **Design production (41-50)** | `41-campaign-asset-list` · `42-brief-hinh-anh` · `43-brief-carousel` · `44-brief-video-editor` · `45-brief-canva` · `46-brand-guideline` · `47-design-review` · `48-quick-visual-brief` · `49-html-email-template` · `50-asset-resize` | Asset list theo campaign → brief từng loại visual → brand guideline → review chấm điểm → asset gấp khi đang chạy → HTML email → resize winner |
+| **Performance ops (51-57)** | `51-audience-research` · `52-account-structure` · `53-tracking-setup` · `54-media-plan` · `55-scaling-ads` · `56-retargeting-plan` · `57-next-ads-plan` | Audience → media plan tính ngược từ doanh thu → tracking verify trước khi chạy → naming convention → scale winner → retarget theo tầng → plan kỳ sau |
+| **Leader ops (58-67)** | `58-positioning` · `59-go-to-market` · `60-launch-playbook` · `61-budget-planning` · `62-marketing-review` · `63-campaign-retrospective` · `64-team-brief` · `65-team-performance-review` · `66-crisis-playbook` · `67-agency-vendor-brief` | Positioning + GTM + launch → phân bổ ngân sách → gate duyệt output → retro → giao việc + đánh giá team → xử lý khủng hoảng → quản lý agency |
+
+**Bilingual:** cả 4 pack đều có bản Global (`skills/en/35-67 *-global`) từ v3.6.0 — cùng framework và quy trình, nhưng USD benchmark, kênh toàn cầu (Klaviyo/Shopify/Meta US), và compliance FTC/GDPR/CCPA. Community seeding được viết lại theo chuẩn Reddit/Discord/Slack thay vì Facebook Group VN.
+
+**Kho kiến thức nền tảng:** [`knowledge/`](knowledge/) — 10 file tư duy (brandformance, blueprint 8 thành phần, phễu 6 bước, chiến lược kênh, Meta Ads framework, hệ thống KPI, customer insight, brand/offer architecture, AI Marketing OS, business model) + `knowledge/trien-khai/`. Dùng làm context upload cho AI project theo vai trò.
+
+### 6 Marketing Agents (Universal mode — VN + Global auto-detect)
 
 > Agents auto-detect cluster (VN vs Global) via `.agents/` context file. No manual config.
 
 | Agent | Vai trò | Skills chính |
 |-------|---------|--------------|
-| [mkt-strategist](agents/mkt-strategist.md) | Chiến lược tổng | 00, 02, 08, 09, 16, 17 (+ `-global` mirrors) |
-| [content-producer](agents/content-producer.md) | Sản xuất nội dung | 01, 04, 05, 06 (+ `-global`) |
-| [performance-analyst](agents/performance-analyst.md) | Phân tích hiệu suất | 03, 07, 10, 13, 19 (+ `-global`) |
-| [channel-operator](agents/channel-operator.md) | Vận hành kênh | 11, 12, 14, 15, 18 (+ `-global`) |
+| [mkt-strategist](agents/mkt-strategist.md) | Chiến lược tổng + Leader strategy | 00, 02, 08, 09, 16, 17, 31-34, 58-61 (+ `-global` mirrors) |
+| [content-producer](agents/content-producer.md) | Sản xuất nội dung + content system | 01, 04, 05, 06, 35-40, 42-44 (+ `-global`) |
+| [performance-analyst](agents/performance-analyst.md) | Phân tích hiệu suất + performance ops | 03, 07, 10, 13, 19, 21, 32, 34, 51-57 (+ `-global`) |
+| [channel-operator](agents/channel-operator.md) | Vận hành kênh + crisis | 11, 12, 14, 15, 18, 34, 49, 66 (+ `-global`) |
+| [design-producer](agents/design-producer.md) ⭐ | Visual & production | 12, 30, 41-50 |
 | [personal-brand-builder](agents/personal-brand-builder.md) | PB + AI Avatar | 22-28 (+ `-global`) |
 
-### 15 Workflows (multi-skill chains — 7 VN + 8 Global)
+### 19 Workflows (multi-skill chains — 11 VN + 8 Global)
 
-**VN workflows (7):**
+**VN workflows (11):**
 - `campaign-launch` (14-21 ngày) — 08 → 09 → 00 → 02 → 01+04+05 → 06 → 11
 - `client-onboard` (5-7 ngày, agency) — 20 → 09 → 08 → 10 → 00 → 02 → 01
 - `monthly-cycle` (3-5 ngày) — 13 → 03 → 07 → 10 → 01
 - `content-production` (weekly) — review calendar → 04 → film → 05 → schedule
+- `content-engine` ⭐ (vòng lặp tháng) — 35 → 09 → 01 → 36 → [37|04|05|38] → [42|43|44] → 39 → 07 → 40
+- `performance-loop` ⭐ (vòng lặp ads) — 51 → 10 → 54 → 53 → 52 → 19 → 21 → 55/56 → 07 → 57
+- `design-pipeline` ⭐ (T-14 → D+1) — 41 → [42|43|45] → 47 → 50
+- `leader-cadence` ⭐ (quý/campaign/tuần) — 00 → 61 → 02 → 64 → 62/47 → 07 → 63
 - `personal-brand-launch` (30 ngày) — 22 → 23 → 24 → 26 → 27 → 28
 - `ai-avatar-batch` (5 ngày × 5h) — 30 AI Avatar videos, <$2/video
 - `personal-brand-monthly` (3-5 ngày) — 13 → 03 → 07 → review pillars
@@ -344,46 +439,9 @@ Không có framework? Vẫn dùng được — copy-paste vào ChatGPT / Claude.
 
 ---
 
-## 🤝 OPA Suite — companion repo
-
-OPA Suite = **ai-business-skills** (this repo, marketing) + **[OPA KIT](https://github.com/minhnv0807/opa-kit)** (build pipeline).
-
-### [OPA KIT](https://github.com/minhnv0807/opa-kit) — 8 tech skills cho build pipeline
-
-- **`opa-prd`** — PRD authoring 3 modes (Product full / Creative 1-page / Lesson module)
-- **`opa-pipeline`** — 6-phase end-to-end shipping (CEO/PM/Engineer/Reviewer modes)
-- **`opa-tracker`** — progress tracking + token cost + model recommendation
-- **`opa-deploy`** — Coolify-first deploy với manual confirm gate
-- **`opa-diagram`** — Mermaid diagrams (workflow, journey, funnel, C4, ERD, state)
-- **`opa-judge`** — quality gate review
-- **`opa-para-pipeline`** — parallel multi-feature shipping
-
-### Workflow chain typical
-
-```
-OPA KIT (build)                  →    ai-business-skills (market)
-─────────────────────────             ─────────────────────────
-opa-prd → opa-pipeline → ship    →    00-ke-hoach-mkt
-                                 →    02-brief-chien-dich
-                                 →    30-thiet-ke-master  (key visual + social posts)
-                                 →    campaign-launch workflow (14-21 ngày)
-                                 →    03-danh-gia-hieu-suat (audit sau 30 ngày)
-```
-
-### Cài cả 2 cùng lúc
-
-```bash
-git clone https://github.com/minhnv0807/opa-kit.git
-cd opa-kit && bash install-opa-suite.sh
-```
-
-Script tự install OPA KIT + ai-business-skills. Xem `references/companion-skills.md` trong OPA KIT cho full ecosystem map.
-
-### 🧬 Compatible with Anthropic `knowledge-work-plugins`
+## 🧬 Compatible with Anthropic `knowledge-work-plugins`
 
 ai-business-skills follows Anthropic's [knowledge-work-plugins](https://github.com/anthropics/knowledge-work-plugins) structure (`.mcp.json` connectors, `CONNECTORS.md` placeholders, `argument-hint` slash commands). Compatible với Cowork ecosystem + Claude Code marketplace.
-
-**Companion repo `OPA KIT`** also Anthropic-aligned cho consistent OPA Suite UX.
 
 ---
 
@@ -439,6 +497,7 @@ related: [08-nghien-cuu-doi-thu, 09-insight-khach-hang, 10-tinh-kpi-nguoc]
 | Personal Branding (22-28) | 7 | 7 | Full bilingual mirror |
 | Regional flagship (29) | Export B2B 🇻🇳 | Dropshipping 🚀 | **Diverges by region** |
 | Design Master (30) ⭐ NEW v2.7.0 | 1 (`30-thiet-ke-master`) | 1 (`30-design-master-global`) | Full bilingual mirror — 8 design types |
+| Growth + AI Marketing OS (31-34) ⭐ NEW v3.4.0 | 4 | 4 | Offer design, SEO/GEO growth, B2B lead gen, AI Marketing OS |
 
 **Global cluster covers 4 regions** with per-region variants (currency, privacy law, channels):
 
@@ -510,8 +569,6 @@ MIT — free to use, modify, distribute. See [LICENSE](LICENSE).
   <strong>Framework:</strong> Over Powers Agency
   <br/>
   <strong>Owner:</strong> <a href="https://opa.business">opa.business</a>
-  <br/>
-  <strong>Companion:</strong> <a href="https://github.com/minhnv0807/opa-kit">OPA KIT</a> (build pipeline)
   <br/>
   <strong>Compatible with:</strong> Claude Code · ChatGPT · Gemini · Copilot · Cursor · OpenCode · Cline · any AI reading Markdown
 </p>

@@ -57,6 +57,10 @@ cp -r "${SKILL_DIR}/workflows/"* "${TARGET}/workflows/" 2>/dev/null || true
 mkdir -p "${TARGET}/agents"
 cp -r "${SKILL_DIR}/agents/"* "${TARGET}/agents/" 2>/dev/null || true
 
+# Copy knowledge base
+mkdir -p "${TARGET}/knowledge"
+cp -r "${SKILL_DIR}/knowledge/"* "${TARGET}/knowledge/" 2>/dev/null || true
+
 # Copy CLAUDE.md
 cp "${SKILL_DIR}/CLAUDE.md" "${TARGET}/CLAUDE.md" 2>/dev/null || true
 

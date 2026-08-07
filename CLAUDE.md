@@ -37,6 +37,14 @@ Mot so skill goi skill khac tu dong:
 - `22-personal-brand-context` → goi `23-personal-brand-strategy` + `24-ai-avatar-production` (Phase 1 typical)
 - `26-thought-leadership-content` doc context → `04-script-video` (Personal Brand Mode) → `01-lich-noi-dung`
 - `27-personal-brand-monetize` → `14-email-marketing` + `18-referral-program`
+- `35-brand-voice` la nen tang content: moi skill content (01, 04, 05, 06, 36, 37, 38) doc brand voice truoc khi viet
+- `36-content-brief` doc `01-lich-noi-dung` + `35-brand-voice` → output feed `37-caption-social` / `04` / `05`
+- `39-content-audit` + `07-bao-cao-marketing` → `40-next-content-plan` → `01-lich-noi-dung` (vong lap content thang)
+- `41-campaign-asset-list` → goi `42-brief-hinh-anh` / `43-brief-carousel` / `45-brief-canva` → `47-design-review` → `50-asset-resize`
+- `54-media-plan` → goi `10-tinh-kpi-nguoc` + `51-audience-research`; truoc khi chay ads can `53-tracking-setup` verify xanh + `52-account-structure`
+- `21-audit-ads-performance` → `55-scaling-ads` / `56-retargeting-plan` → `57-next-ads-plan` (vong lap ads)
+- `02-brief-chien-dich` → them `41-campaign-asset-list` (asset scope) + `62-marketing-review` (gate duyet output)
+- `63-campaign-retrospective` → bai hoc cap nhat Brand Hub qua `34-ai-marketing-os`
 
 ### Workflow
 
@@ -48,6 +56,10 @@ Workflow = chuoi skill chay lien tuc:
 - `personal-brand-launch` = 22 → 23 → 24 → 25 → 26 → 04(personal) → 27 → 28 → 14
 - `ai-avatar-batch` = 23 → 26 → 04(personal) → 25 → 24(batch) → 01
 - `personal-brand-monthly` = 13 → 03(personal) → 23 → 27 → 26 → 04(personal) → 07(personal)
+- `content-engine` = 35 → 09 → 01 → 36 → [37|04|05|38|06|14] → [42|43|44] → 39 → 07 → 40 (vong lap thang)
+- `performance-loop` = 51 → 10 → 54 → 53 → 52 → 05 → 19 → 21 → 55/56 → 07 → 57
+- `design-pipeline` = 41 → [42|43|45] → 47 → 50 (timeline T-14 → D+1)
+- `leader-cadence` = 00 → 61 → 02 → 64 → 62/47 → 07(weekly) → 63
 
 ### Global Workflows (v2.5.0)
 
@@ -127,7 +139,7 @@ related:
 
 Khi user da ket noi MCP server cho nen tang quang cao, cac skill co the pull data tu dong thay vi yeu cau user paste.
 
-> **Reference day du:** `skills/references/mcp-ads-integration.md`
+> **Reference day du:** `skills/vi/references/mcp-ads-integration.md`
 
 | Nen tang | MCP chinh thuc | MCP community tot nhat |
 |----------|---------------|----------------------|
@@ -137,7 +149,7 @@ Khi user da ket noi MCP server cho nen tang quang cao, cac skill co the pull dat
 | Cross-platform | — | Adspirer ads-mcp (175+ tools) |
 | Doi thu research | — | facebook-ads-library-mcp (15+ tools) |
 
-**Skills ho tro MCP:** 03, 07, 08, 10, 21
+**Skills ho tro MCP:** 03, 07, 08, 10, 13, 21, 39, 51-57 (pull data ads/analytics truc tiep khi co connector)
 
 ## Personal Brand Mode (skill 04 + 05)
 
@@ -151,7 +163,7 @@ Khong can config thu cong — auto-detect.
 
 ## Agents Universal Mode (v2.5.0+)
 
-5 agents (mkt-strategist, content-producer, performance-analyst, channel-operator, personal-brand-builder) tu dong detect cluster (VN vs Global) dua tren `.agents/` context files:
+6 agents (mkt-strategist, content-producer, performance-analyst, channel-operator, design-producer, personal-brand-builder) tu dong detect cluster (VN vs Global) dua tren `.agents/` context files:
 - `product-marketing-context.md` only → MODE VN (skills/)
 - `product-marketing-context-global.md` only → MODE GLOBAL (skills/en/)
 - Both → ASK 1 question
@@ -163,15 +175,41 @@ Khong can manual config. Cung pattern ap dung cho Personal Brand:
 
 ## Agent chuyen biet
 
-Tat ca 5 agents la **universal** (v2.5.0+) — phuc vu CA hai cluster VN va Global thong qua auto-detect mode.
+Tat ca 6 agents la **universal** (v2.5.0+) — phuc vu CA hai cluster VN va Global thong qua auto-detect mode.
 
 | Agent | Vai tro | Skills chinh (VN / Global) |
 |-------|---------|-------------|
-| mkt-strategist | Chien luoc tong | 00, 02, 08, 09, 10 |
-| content-producer | San xuat noi dung | 01, 04, 05, 06 |
-| performance-analyst | Phan tich hieu suat | 03, 07, 10, 13 |
-| channel-operator | Van hanh kenh | 11, 12, 14, 15 |
+| mkt-strategist | Chien luoc tong + Leader strategy | 00, 02, 08, 09, 10, 31, 58-61 |
+| content-producer | San xuat noi dung + content system | 01, 04, 05, 06, 35-40, 42-44 |
+| performance-analyst | Phan tich hieu suat + performance ops | 03, 07, 10, 13, 19, 21, 51-57 |
+| channel-operator | Van hanh kenh + crisis | 11, 12, 14, 15, 49, 66 |
+| design-producer | Visual & production | 12, 30, 41-50 |
 | personal-brand-builder | Thuong hieu ca nhan + AI Avatar | 22, 23, 24, 25, 26, 27, 28 |
+
+## Role SOP clusters + Knowledge Base (v3.5.0)
+
+Skill 35-67 la 4 role pack SOP (tich hop tu tai lieu cong dong, da chuan hoa, khong mang attribution ca nhan):
+
+| Role pack | Skills moi | Ket hop skill cu | Vong lap chinh |
+|-----------|-----------|------------------|----------------|
+| Content system | 35-40 | 01, 04, 05, 06, 14 | content-engine |
+| Design production | 41-50 | 12, 30 | design-pipeline |
+| Performance ops | 51-57 | 03, 13, 19, 21 | performance-loop |
+| Leader ops | 58-67 | 00, 02, 07, 08, 31 | leader-cadence |
+
+**Song ngu (v3.6.0):** ca 4 pack co ban Global trong `skills/en/` voi hau to `-global`. Mot so ten khac VN de doc tu nhien hon: `37-social-caption-global` (thay caption-social), `38-community-seeding-global` (thay seeding-plan), `42-image-brief-global`, `43-carousel-brief-global`, `44-video-editor-brief-global`, `45-design-tool-brief-global`. Cac skill con lai giu nguyen so + ten tieng Anh + `-global`.
+
+Kho kien thuc nen tang: `knowledge/` (10 file tu duy + `knowledge/trien-khai/` 14 file trien khai) — dung lam context upload cho Claude Project theo role; xem `knowledge/README.md`. Trien khai 5 role project (Leader/Content/Designer/Performance/Knowledge): skill `34-ai-marketing-os`.
+
+Reference bo sung v3.5.0:
+- `references/marketing-templates-library.md` — cau truc 28 template van hanh (planning, tracking dashboard, audit, report, campaign, content calendar) + bo cot chuan de moi skill xuat bang dong nhat. Doc truoc khi xuat bat ky bang tracking/dashboard/plan nao.
+- `references/ai-tool-orchestration.md` — vai tro tung AI tool, quy trinh 9 buoc lap ke hoach, setup project theo vai tro, checklist cau hoi khai thac thong tin, anti-pattern.
+
+Decision rules nhanh (chi tiet trong skill 03/21/54/55):
+- Budget split ads: Testing 30% · Scale 50% · Retargeting 15% · Lookalike 5%.
+- Frequency > 2.5 → thay creative. CPL vuot target >25% + freq cao → PAUSE, khong do them tien.
+- Scale winner tung buoc +20-30%; KHONG tang budget khi CPL dang xau; KHONG chay ads khi tracking chua verify.
+- Designer timeline: T-14 asset list → T-7 concept MVP → T-5/T-3/T-1 asset theo do kho → D+1 danh dau winner/loser.
 
 ## Benchmark nhanh — Vietnam 2025–2026
 

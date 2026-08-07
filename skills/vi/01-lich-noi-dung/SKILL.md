@@ -2,7 +2,7 @@
 name: 01-lich-noi-dung
 description: Lich noi dung thang — len lich dang bai da kenh voi ti le pheu, content pillar, repurposing matrix, va scoring tieu chi.
 metadata:
-  version: 2.1.0
+  version: 2.2.0
   category: content
 triggers:
   - "lich noi dung"
@@ -10,6 +10,9 @@ triggers:
   - "ke hoach noi dung thang"
   - "content calendar"
   - "lich dang"
+  - "content strategy"
+  - "chien luoc content"
+  - "content pillar"
 output: File .md gom lich noi dung hang tuan co day du cot — ngay, kenh, dinh dang, tang pheu, pillar, CTA, nguoi thuc hien, trang thai
 related:
   - 00-ke-hoach-mkt
@@ -18,6 +21,10 @@ related:
   - 06-brief-ugc-egc
   - 09-insight-khach-hang
   - 15-social-listening
+  - 35-brand-voice
+  - 36-content-brief
+  - 39-content-audit
+  - 40-next-content-plan
   - references/hook-formulas-vn
 ---
 
@@ -33,6 +40,65 @@ Hoi user toi da 4 cau truoc khi bat dau:
 2. **Dang co kenh nao?** Liet ke kenh (TikTok, FB, IG, Zalo, Email, Blog), so follower/subscriber hien tai.
 3. **Muc tieu thang nay la gi?** Tang follower / tang mess / tang don / ra mat san pham / chien dich Tet?
 4. **Nguon luc content?** May nguoi lam content? Co quay video duoc khong? Co san UGC/testimonial khong?
+
+---
+
+## Content strategy truoc khi len lich
+
+Lich chi la be noi — truoc khi xep ngay nao dang gi, phai co strategy tra loi "brand nay noi ve dieu gi, tu goc nhin nao". Strategy tot = writer biet viet gi ke ca khi khong co brief.
+
+### Cau truc Pillar → Angle → Topic
+
+```
+Target audience → Insight (09) → Key message
+  → Pillar 1 / Pillar 2 / Pillar 3
+    → Angle 1.1 / 1.2 / 1.3 (goc nhin cu the trong pillar)
+      → Topic (bai viet / video cu the)
+```
+
+- **Pillar** = chu de lon ma brand co tham quyen noi — moi brand can 3-5 pillar, khong chong cheo.
+- **Angle** = goc nhin / cach tiep can cu the trong moi pillar.
+- **Topic** = bai cu the sinh ra tu angle (dung Content Matrix ben duoi de tao hang loat).
+
+Moi pillar khai bao du 4 muc: dinh nghia (brand noi ve dieu nay vi...), 3 angle chinh, format phu hop, tang pheu chu yeu.
+
+Cong thuc chon truc noi dung: **Truc noi dung = Muc tieu truyen thong x Van de khach hang x The manh thuong hieu.** Thieu 1 trong 3 ve la truc bi lech (chi co the manh = tu khen; chi co van de khach = khong khac biet).
+
+### Ti le pillar theo objective
+
+| Objective ky nay | Pillar thu hut | Pillar chuyen mon | Pillar chuyen doi |
+|------------------|----------------|-------------------|-------------------|
+| Awareness | 50% | 30% | 20% |
+| Leads | 30% | 40% | 30% |
+| Convert | 20% | 30% | 50% |
+
+### Hook bank — chuan bi truoc khi vao ky
+
+Truoc moi ky, viet san 20 hook theo 5 nhom (moi nhom 4 hook), viet that theo brand — khong de placeholder:
+
+| Nhom | Huong |
+|------|-------|
+| Pain hook | Bat dau bang noi dau cua khach |
+| Curiosity hook | Cau hoi / statement gay to mo |
+| Social proof hook | So lieu / testimonial an tuong |
+| Education hook | Kien thuc it nguoi biet |
+| Contrarian hook | Noi nguoc dieu thuong thay |
+
+> Cong thuc hook chi tiet: `references/hook-formulas-vn.md`. Tone hook doi chieu `35-brand-voice`.
+
+---
+
+## Quy trinh 5 giai doan cua content system
+
+Lich noi dung nam o giai doan 2 cua he thong content hoan chinh. Kiem tra giai doan truoc da xong chua roi hay len lich:
+
+| Giai doan | Viec can lam | Skill | Tieu chuan / Thoi gian |
+|-----------|--------------|-------|------------------------|
+| 1. Nen tang (lam 1 lan, review moi quy) | Brand voice, insight khach hang, nghien cuu doi thu, content strategy | `35-brand-voice`, `09-insight-khach-hang`, `08-nghien-cuu-doi-thu` | Brand voice lam truoc tien; strategy review sau 4 tuan dau |
+| 2. Lap ke hoach | Lich chi tiet tung ngay + brief tung bai | Skill nay + `36-content-brief` | Lich: 2-4 gio; brief: 30-60 phut/bai; 1 brief = 1 bai = 1 angle = 1 CTA |
+| 3. San xuat | Caption, script, email, ads copy, seeding, UGC | `37-caption-social`, `04-script-video`, `14-email-marketing`, `05-copy-quang-cao`, `38-seeding-plan`, `06-brief-ugc-egc` | Doc to len truoc khi chot; doi chieu brand voice moi bai |
+| 4. Brief visual | Brief anh / carousel / video cho designer, editor | `42-brief-hinh-anh`, `43-brief-carousel`, `44-brief-video-editor` | Chi brief visual khi copy DA duyet; gui kem reference |
+| 5. Do luong | Audit winner/loser, bao cao, plan ky sau tu data | `39-content-audit`, `07-bao-cao-marketing`, `40-next-content-plan` | Audit it nhat 1 lan/thang (keo data ngay 28-30); plan moi luon tu data cu |
 
 ---
 

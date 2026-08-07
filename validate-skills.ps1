@@ -1,9 +1,9 @@
 # Validate skills against Agent Skills Specification
 # Reference: https://agentskills.io/specification.md
 
-$Issues = 0
-$Warnings = 0
-$Passed = 0
+$IssueCount = 0
+$WarningCount = 0
+$PassedCount = 0
 
 Write-Host "Validating Skills Against Agent Skills Specification" -ForegroundColor Cyan
 Write-Host "=====================================================" -ForegroundColor Cyan
@@ -33,7 +33,7 @@ Get-ChildItem -Path $SkillsDir -Directory | ForEach-Object {
     if (-not (Test-Path $skillFile)) {
         Write-Host "FAIL $skillName" -ForegroundColor Red
         Write-Host "   Missing SKILL.md"
-        $script:Issues++
+        $script:IssueCount++
         return
     }
 
@@ -41,7 +41,7 @@ Get-ChildItem -Path $SkillsDir -Directory | ForEach-Object {
     if ($content -notmatch '(?s)^---\s*\n(.*?)\n---') {
         Write-Host "FAIL $skillName" -ForegroundColor Red
         Write-Host "   Missing YAML frontmatter"
-        $script:Issues++
+        $script:IssueCount++
         return
     }
 
@@ -84,14 +84,14 @@ Get-ChildItem -Path $SkillsDir -Directory | ForEach-Object {
         Write-Host "FAIL $skillName" -ForegroundColor Red
         $errors | ForEach-Object { Write-Host "   Error: $_" }
         $warnings | ForEach-Object { Write-Host "   Warn: $_" -ForegroundColor Yellow }
-        $script:Issues++
+        $script:IssueCount++
     } elseif ($warnings.Count -gt 0) {
         Write-Host "WARN $skillName" -ForegroundColor Yellow
         $warnings | ForEach-Object { Write-Host "   $_" -ForegroundColor Yellow }
-        $script:Warnings++
+        $script:WarningCount++
     } else {
         Write-Host "PASS $skillName" -ForegroundColor Green
-        $script:Passed++
+        $script:PassedCount++
     }
 }
 }
@@ -204,5 +204,5 @@ foreach ($skill in @("22-personal-brand-context-global", "24-ai-avatar-productio
 
 Write-Host ""
 Write-Host "====================================================="
-Write-Host "Passed: $Passed | Warnings: $Warnings | Issues: $Issues"
-if ($Issues -eq 0) { exit 0 } else { exit 1 }
+Write-Host "Passed: $PassedCount | Warnings: $WarningCount | Issues: $IssueCount"
+if ($IssueCount -eq 0) { exit 0 } else { exit 1 }

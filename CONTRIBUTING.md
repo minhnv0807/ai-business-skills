@@ -47,6 +47,11 @@ Every new skill must include:
 - ✅ Cross-references to related skills
 - ✅ Quality checklist (built-in self-review)
 - ✅ At least 1 example output (in `examples/` or inline)
+- ✅ Under 500 lines — move long lookup tables, platform checklists, and extended templates into `skills/<lang>/<skill>/references/*.md` and link to them from a pointer line (progressive disclosure; see `34-ai-marketing-os` for the pattern)
+
+Run `./validate-skills.sh` (or `.\validate-skills.ps1` on Windows) before opening a PR. Target: **Issues: 0**.
+
+Vietnamese skills write their body in **unaccented Vietnamese** (technical terms stay in English: ROAS, CPL, TOFU/MOFU/BOFU). This is a repo-wide convention that avoids encoding issues when skills are loaded into different AI platforms.
 
 ## Translation Guidelines
 

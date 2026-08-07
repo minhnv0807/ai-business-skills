@@ -3,7 +3,7 @@ name: 04-script-video
 description: Viet script video ngan cho TikTok, Reels, YouTube Shorts — 2 ban A/B, co hook, CTA, huong dan quay chi tiet
 argument-hint: "<sản phẩm + thời lượng + tone>"
 metadata:
-  version: 2.2.0
+  version: 2.3.0
   category: content
 triggers:
   - "viet script"
@@ -17,12 +17,18 @@ triggers:
   - "script ca nhan TikTok"
   - "story video"
   - "viet video LinkedIn ca nhan"
+  - "duyet script video"
+  - "beat script"
+  - "repurpose video"
 output: file .md gom 2 ban script A/B, bang timestamp, hook, CTA, huong dan quay, caption, hashtag, viral score
 related:
   - 05-copy-quang-cao
   - 06-brief-ugc-egc
   - 01-lich-noi-dung
   - 09-insight-khach-hang
+  - 36-content-brief
+  - 44-brief-video-editor
+  - 62-marketing-review
   - references/hook-formulas-vn
 ---
 
@@ -71,6 +77,27 @@ Hoi toi da 4 cau truoc khi viet:
 - MOFU: Uu tien hook 5 (ket qua truoc), 2 (con so)
 - BOFU: Uu tien hook 2 (con so), 5 (ket qua truoc)
 
+### 3 lop hook — ban dong thoi trong 0-3s
+
+5 loai hook o tren la **goc nhin**. Con day la **3 kenh truyen tai** — mot video manh phai co ca 3 chay cung luc, khong chi 1.
+
+| Lop | La gi | Yeu cau | Loi thuong gap |
+|-----|-------|---------|---------------|
+| **Visual hook** | Hanh dong / canh dau tien bat len ngay khi video chay | Co chuyen dong hoac thay doi trong 1s dau; khong phai canh tinh | Mo bang logo, bang intro, hoac mat nguoi ngoi yen |
+| **Audio hook** | Cau noi dau tien (hoac sound bat len) | Doc to phai hit ngay; khong chao hoi, khong ten brand | "Xin chao cac ban, hom nay minh..." |
+| **Text overlay hook** | Chu xuat hien on-screen 0-3s | <=50 ky tu, font day, doc duoc khi khong bat tieng | Chu nho, mau chim vao nen, xuat hien tre sau 1s |
+
+**Khi viet script, output du 3 phuong an hook cho moi ban A/B:**
+
+```
+Hook A — Visual:  [Mo ta hanh dong/canh dau tien]
+Hook B — Audio:   [Cau noi dau tien, nguyen van]
+Hook C — Text:    [Text on-screen 0-3s]
+→ Chon dung: [A/B/C hoac ket hop] — Ly do: [...]
+```
+
+**Quy tac:** phan lon nguoi xem luot feed khong bat tieng → **text overlay hook la lop bat buoc**, khong duoc bo qua. Kiem tra bang cach tat tieng va xem lai 3s dau: neu khong hieu video noi ve gi thi hook chua dat.
+
 ### Cau truc script theo timestamp
 
 Ap dung cho video 30–45s (dieu chinh ti le theo thoi luong):
@@ -91,6 +118,24 @@ Ap dung cho video 30–45s (dieu chinh ti le theo thoi luong):
 | 30s | 0–3s | 3–10s | 10–20s | 20–27s | 27–30s |
 | 45s | 0–3s | 3–12s | 12–28s | 28–40s | 40–45s |
 | 60s | 0–3s | 3–15s | 15–35s | 35–53s | 53–60s |
+
+### Chia beat — 1 beat = 1 diem duy nhat
+
+Timestamp la khung thoi gian; **beat** la don vi noi dung. Viet script theo beat truoc, sau do map vao giay.
+
+| Beat | Giay | Nhiem vu duy nhat cua beat | Neu beat nay hong |
+|------|------|---------------------------|------------------|
+| Hook | 0-3s | Chan dung nguoi luot | Toan bo video khong ai xem |
+| Beat 1 | 3-Xs | Goi ten van de HOAC dua boi canh | Nguoi xem khong thay minh trong do → thoat |
+| Beat 2 | | Dua giai phap / insight chinh | Video khong co gia tri, chi la quang cao |
+| Beat 3 | | Chung minh (so lieu, truoc-sau, demo) | Nguoi xem khong tin |
+| CTA | 5s cuoi | 1 hanh dong duy nhat | Xem xong roi troi |
+
+**Luat beat:**
+1. **Moi beat chi mang 1 diem.** Don 2 y vao 1 beat = nguoi xem khong nho y nao.
+2. **Toi da 3 beat than bai.** Video 15s chi du cho 2 beat — cat bot, dung nen chu.
+3. **Moi beat phai co doi canh hoac doi goc may.** Beat khong doi hinh = nguoi xem cam giac video dung yen.
+4. **Doc to toan bo script len truoc khi chot.** Nghe cung o cho nao thi cho do viet van chu khong phai viet noi.
 
 ### 6 cong thuc hook chuyen nghiep
 
@@ -350,12 +395,76 @@ Cham diem script theo 10 tieu chi, moi tieu chi 10 diem. **Chi giao khi dat ≥ 
 
 ---
 
+## Quy trinh san xuat va tieu chuan duyet script
+
+### Vi tri script trong chuoi san xuat
+
+```
+IDEA → HOOK → MESSAGE → CTA → BRIEF → SCRIPT → PRODUCTION → REVIEW → REPURPOSE → PUBLISH
+                                 ^        ^                      ^
+                          36-content-brief |              44-brief-video-editor
+                                     skill nay
+```
+
+**Dau vao bat buoc truoc khi viet script:** brief tu `36-content-brief` (chu de, message chinh, tang pheu, CTA, deadline) va insight tu `09-insight-khach-hang`. Khong co brief thi khong viet script — se phai viet lai.
+
+**Dau ra sau khi script duyet:** chuyen thanh brief cho editor qua `44-brief-video-editor` (nhac nen, text overlay, subtitle, transition, color grade, pace) va lich dang qua `01-lich-noi-dung`.
+
+### Khoi ban giao cho quay + dung
+
+Ghi kem cuoi moi script — thieu khoi nay, editor se tu quyet va lech brand:
+
+| Hang muc | Ghi ro | Vi du |
+|---------|--------|-------|
+| Nhac nen | Mood + dai BPM + nguon | "Upbeat, 100-120 BPM, nhac trending TikTok VN thang [X]" |
+| Anh sang | Natural / Ring light / Studio + huong chieu | "Ring light chinh dien, them den vien phia sau" |
+| Goc camera | Eye level / Slightly low / Overhead | "Eye level, doi sang overhead o beat demo" |
+| Transition | Cut nhanh / Slow motion / Zoom / None | "Cut nhanh giua cac beat, khong dung hieu ung chuyen canh cua CapCut" |
+| Text overlay | Vi tri + font + mau | "Giua tren, font dam, mau [mau primary] tren nen toi" |
+| Subtitle | Ngon ngu + kieu | "Tieng Viet, tung cum tu, khong hien ca cau" |
+| Trang phuc / Props | | |
+
+### Tieu chuan duyet script — 3 gate
+
+| Gate | Ai lam | Khi nao | Kiem gi | Ket qua |
+|------|--------|---------|---------|---------|
+| **Gate 1 — Self QA** | Nguoi viet | Truoc khi nop | Cham QA Score 10 tieu chi o tren; doc to toan bo script | >=85/100 moi duoc nop |
+| **Gate 2 — Content review** | Leader / content lead (`62-marketing-review`) | T-5 truoc ngay quay | 5 cau hoi duyet ben duoi | DUYET / DUYET CO DIEU KIEN / TRA VE |
+| **Gate 3 — Pre-shoot** | Nguoi quay | Ngay quay, truoc khi bam may | Checklist truoc khi quay + doi chieu khoi ban giao | Du moi quay |
+
+**5 cau hoi o Gate 2:**
+
+1. Hook co dung 3 lop (visual + audio + text) khong? Tat tieng doc 3s dau con hieu khong?
+2. Video nay co dung 1 y chinh duy nhat khong? Neu ke lai cho nguoi khac trong 1 cau co duoc khong?
+3. Message co khop brief va khop tang pheu khong? (TOFU khong ban, BOFU phai co offer)
+4. CTA co phai 1 hanh dong duy nhat, cu the, do duoc khong?
+5. So lieu / claim trong script co that va co nguon khong? Co vi pham chinh sach nen tang khong?
+
+**Ly do TRA VE thuong gap:** hook mo bang chao hoi hoac ten brand · nhoi 3 y vao 1 video · CTA chung chung · dung so khong co nguon · script viet van chu khong phai ngon ngu noi · thieu chi dan hinh anh.
+
+### Repurpose — 1 script ra nhieu dau ra
+
+Sau khi video chay tot (Viral Score >=20 hoac tren muc trung binh kenh), cat nho ra:
+
+| Nguon | Cac dau ra | Skill xu ly |
+|-------|-----------|-------------|
+| 1 livestream 60-90 phut | 5-10 clip 30-60s + 3-5 quote card + 1 thread + 1 bai blog + 1 email | `04` (cat clip), `42-brief-hinh-anh`, `14-email-marketing` |
+| 1 video dai / bai blog | Thread 10-15 y + infographic + video giai thich + newsletter | `37-caption-social`, `42-brief-hinh-anh` |
+| 1 case study | Post dai Facebook (truoc/sau) + carousel + video testimonial + quote card | `43-brief-carousel`, `06-brief-ugc-egc` |
+
+**Quy tac repurpose:** khong dang lai y nguyen tren nhieu kenh — doi hook va do dai theo kenh, giu nguyen message chinh.
+
+---
+
 ## Lien ket skill lien quan
 
 - **05-copy-quang-cao** — Dung copy ads de boost video co hieu suat tot
 - **06-brief-ugc-egc** — Gui script nay cho creator quay theo brief
 - **01-lich-noi-dung** — Xep lich dang video theo ke hoach noi dung
 - **09-insight-khach-hang** — Lay noi dau, mong muon cua khach de viet hook chinh xac
+- **36-content-brief** — Brief dau vao bat buoc truoc khi viet script
+- **44-brief-video-editor** — Chuyen script da duyet thanh brief dung phim
+- **62-marketing-review** — Gate 2 duyet script truoc ngay quay
 
 ---
 
@@ -375,3 +484,11 @@ Kiem tra truoc khi giao script:
 - [ ] Co viral score danh gia
 - [ ] Khong co nhac co ban quyen trong script
 - [ ] Goc do noi dung phu hop tang pheu (TOFU/MOFU/BOFU)
+- [ ] Moi ban co du 3 phuong an hook: Visual + Audio + Text overlay, kem ly do chon
+- [ ] Tat tieng xem 3s dau van hieu video noi ve gi
+- [ ] Chia beat ro rang, moi beat 1 diem, toi da 3 beat than bai
+- [ ] Moi beat co doi canh hoac doi goc may
+- [ ] Co khoi ban giao quay + dung (nhac, anh sang, goc may, transition, text overlay, subtitle)
+- [ ] Da qua Gate 1 self QA (>=85/100) truoc khi nop
+- [ ] Da qua Gate 2 content review, ghi ket qua duyet
+- [ ] Co brief dau vao tu `36-content-brief` — khong viet script khi chua co brief

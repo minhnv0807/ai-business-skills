@@ -160,6 +160,17 @@ AI:  [writes script in 1 response, 2 A/B variants]
 | Performance | Red | Analyze data, optimize, report |
 | Operations | Blue | Set up channels, automation |
 
+### Role SOP Packs (v3.5.0) — skills 35-67
+
+Four role-based operating procedure packs sit on top of the core skills. Each one covers the day-to-day process of a specific seat on a marketing team, with decision rules and quality gates built in:
+
+- **Content system (35-40)** — brand voice, content brief, organic captions, seeding, audit, next plan
+- **Design production (41-50)** — asset list, visual briefs, brand guideline, design review, resize
+- **Performance ops (51-57)** — audience, media plan, tracking, account structure, scaling, retargeting
+- **Leader ops (58-67)** — positioning, GTM, launch, budget, approval gates, retro, team, crisis, vendors
+
+Start here: [Getting Started with Role SOP Packs](getting-started-role-sop.md).
+
 ### Workflows — Skill Chains
 
 Some tasks chain multiple skills:
@@ -167,6 +178,10 @@ Some tasks chain multiple skills:
 - **Campaign Launch** (14-21 days): 08 → 09 → 00 → 02 → 01+04+05 → 06 → 11+12
 - **Monthly Cycle** (3-5 days): 13 → 03 → 07 → 10 → 01
 - **Content Production** (weekly): 04 → film → 05 → schedule
+- **Content Engine** (monthly loop): 35 → 09 → 01 → 36 → production → visual briefs → 39 → 07 → 40
+- **Performance Loop** (ads cycle): 51 → 10 → 54 → 53 → 52 → 19 → 21 → 55/56 → 07 → 57
+- **Design Pipeline** (T-14 to D+1): 41 → briefs → 47 → 50
+- **Leader Cadence** (quarter/campaign/week): 00 → 61 → 02 → 64 → 62/47 → 07 → 63
 
 See `workflows/` folder for details.
 
@@ -174,10 +189,16 @@ See `workflows/` folder for details.
 
 Think of agents as "marketing employees":
 
-- **MKT Strategist** — planning, research (skills 00, 02, 08, 09, 16, 17)
-- **Content Producer** — scripts, copy (skills 01, 04, 05, 06)
-- **Performance Analyst** — data, reports (skills 03, 07, 10, 13, 19)
-- **Channel Operator** — channels, landing pages (skills 11, 12, 14, 15, 18)
+- **MKT Strategist** — planning, research, positioning (skills 00, 02, 08, 09, 16, 17, 58-61)
+- **Content Producer** — brand voice, scripts, copy, briefs (skills 01, 04, 05, 06, 35-40, 42-44)
+- **Performance Analyst** — data, media plan, reports, scaling (skills 03, 07, 10, 13, 19, 21, 51-57)
+- **Channel Operator** — channels, landing pages, email, crisis (skills 11, 12, 14, 15, 18, 49, 66)
+- **Design Producer** — asset lists, visual briefs, design review (skills 12, 30, 41-50)
+- **Personal Brand Builder** — personal brand, AI avatar (skills 22-28)
+
+### Knowledge Library
+
+The `knowledge/` folder holds foundation thinking (brandformance mindset, funnel and channel systems, KPI measurement, offer architecture) as opposed to the executable SOPs in `skills/`. Upload these into role-based AI projects for context, or use them to onboard new team members. See [`knowledge/README.md`](../knowledge/README.md).
 
 ---
 

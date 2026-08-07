@@ -1,14 +1,29 @@
 # Global Edition — Skills (`skills/en/`)
 
-> **Status:** 🚧 In active translation. Frameworks transfer universally; benchmarks and channels need adaptation.
+> **Status:** ✅ Full parity with the Vietnam Edition as of v3.6.0 (2026-07-30).
 
 This directory holds the **English-language Global Edition** of skills, with USD-based benchmarks and global channels (Shopify, Klaviyo, Meta US, Pinterest, LinkedIn).
 
-The original **Vietnam Edition** lives in [`../vi/`](../vi/) — it remains the canonical source while the Global Edition catches up.
+The **Vietnam Edition** lives in [`../vi/`](../vi/). Both editions now cover the same 69 skills; the Vietnam Edition remains the canonical source when the two diverge on methodology.
 
 ---
 
-## Translation Status
+## Role SOP Packs (35-67) — added v3.6.0
+
+Four role-based operating-procedure packs, mirroring `../vi/35-67`. These are adaptations, not translations: frameworks and process steps carry over unchanged, while currency, channels, compliance, and examples are rebased for global markets.
+
+| Pack | Skills | Notable adaptation |
+|---|---|---|
+| Content system | `35-brand-voice-global` · `36-content-brief-global` · `37-social-caption-global` · `38-community-seeding-global` · `39-content-audit-global` · `40-next-content-plan-global` | Seeding rebuilt for Reddit/Discord/Slack norms with explicit anti-astroturfing guidance — the Vietnamese Facebook-group playbook does not transfer |
+| Design production | `41-campaign-asset-list-global` · `42-image-brief-global` · `43-carousel-brief-global` · `44-video-editor-brief-global` · `45-design-tool-brief-global` · `46-brand-guideline-global` · `47-design-review-global` · `48-quick-visual-brief-global` · `49-html-email-template-global` · `50-asset-resize-global` | Asset dimensions are already global standards; added LinkedIn/Pinterest/YouTube specs, WCAG AA contrast rules, and Apple Mail Privacy Protection caveats |
+| Performance ops | `51-audience-research-global` · `52-account-structure-global` · `53-tracking-setup-global` · `54-media-plan-global` · `55-scaling-ads-global` · `56-retargeting-plan-global` · `57-next-ads-plan-global` | USD benchmarks from `references/benchmarks-global.md`; regional tier economics (Tier 1 costs 6-7× Tier 2); consent mode, iOS ATT, and first-party audience durability |
+| Leader ops | `58-positioning-global` · `59-go-to-market-global` · `60-launch-playbook-global` · `61-budget-planning-global` · `62-marketing-review-global` · `63-campaign-retrospective-global` · `64-team-brief-global` · `65-team-performance-review-global` · `66-crisis-playbook-global` · `67-agency-vendor-brief-global` | FTC substantiation for claims, GDPR 72-hour breach notification, IP/work-for-hire in vendor contracts, async-first team briefing |
+
+Naming note: six skills use clearer English names rather than a literal transliteration — `37-social-caption-global`, `38-community-seeding-global`, `42-image-brief-global`, `43-carousel-brief-global`, `44-video-editor-brief-global`, `45-design-tool-brief-global`.
+
+---
+
+## Translation Status (skills 00-34)
 
 Skills are prioritized by **how much localization they need**. Framework-heavy skills (universal methodology) translate fast. Channel-specific skills need rewriting for Shopify/Klaviyo/etc.
 

@@ -2,7 +2,7 @@
 name: 11-thiet-lap-kenh
 description: Huong dan thiet lap kenh marketing A-Z — TikTok Brand, Zalo OA, Facebook Page, Email (Brevo), TikTok Shop, Instagram Business, Google Business Profile — tu tao den chay 30 ngay dau
 metadata:
-  version: 2.0.0
+  version: 2.0.1
   category: operations
 triggers:
   - "thiet lap kenh"
@@ -105,21 +105,7 @@ Moi kenh theo 4 giai doan:
 | Tuan 3 | 5–7 video | 50% TOFU + 30% MOFU + 20% BOFU | Bat dau thu lead |
 | Tuan 4 | 5–7 video | 40% TOFU + 30% MOFU + 30% BOFU | Toi uu format thang, tang lead |
 
-**Ky thuat video:**
-- Do phan giai: 1080x1920 (9:16)
-- Do dai: 15–60s (tot nhat 21–34s)
-- Hook: 3 giay dau quyet dinh 80% hieu qua
-- Caption: 150 ky tu, 3–5 hashtag
-- Nhac: Trending sound tang reach 30–50%
-
-### Loi thuong gap
-
-| Loi | Hau qua | Cach tranh |
-|----|---------|-----------|
-| Dang 1–2 video roi bo | Algorithm khong hieu kenh → reach thap mai | Cam ket toi thieu 5 video/tuan trong 30 ngay dau |
-| Copy nguyen content doi thu | Bi report, mat uy tin, khong co ban sac | Lay y tuong roi lam theo phong cach rieng |
-| Chi lam BOFU (ban hang) | Follower khong tang, engagement thap | Ti le TOFU:MOFU:BOFU = 40:30:30 |
-| Khong tra loi comment | Mat co hoi tuong tac, algorithm giam reach | Tra loi 100% comment trong 2 gio dau |
+> Ky thuat video (do phan giai, do dai, hook, caption, nhac) va bang loi thuong gap cua TikTok Brand: doc `references/thong-so-va-loi-thuong-gap.md` muc "1. TikTok Brand Account".
 
 ---
 
@@ -165,22 +151,7 @@ Moi kenh theo 4 giai doan:
 | Tuan 3 | Broadcast gia tri: tips/kien thuc nganh + CTA nhe | Click rate >5% |
 | Tuan 4 | Broadcast ban hang: uu dai co thoi han + CTA manh | Don hang/dat lich tu Zalo |
 
-**Thong so ky thuat broadcast:**
-- Hinh anh: 600x600px hoac 1200x628px
-- Tieu de: Max 100 ky tu
-- Mo ta: Max 500 ky tu
-- Tan suat: Toi da 4 broadcast/tuan (qua nhieu = unfollow cao)
-- Thoi gian gui: 9h–11h sang hoac 7h–9h toi
-- Gioi han: OA mien phi gui 500 tin/thang, tra phi 49–99d/tin
-
-### Loi thuong gap
-
-| Loi | Hau qua | Cach tranh |
-|----|---------|-----------|
-| Spam broadcast hang ngay | Unfollow rate >5%, OA bi han che | Toi da 3 broadcast/tuan, uu tien gia tri |
-| Khong tra loi tin nhan | Mat khach, danh gia kem | Tra loi trong 30 phut (gio hanh chinh) |
-| Chi gui tin ban hang | Khach unfollow, khong doc | Ti le: 60% gia tri + 20% tuong tac + 20% ban hang |
-| Khong xac minh OA | Khong duoc gui broadcast, mat trust | Xac minh ngay tuan dau |
+> Thong so ky thuat broadcast (kich thuoc anh, gioi han ky tu, tan suat, gio gui, quota tin) va bang loi thuong gap cua Zalo OA: doc `references/thong-so-va-loi-thuong-gap.md` muc "2. Zalo Official Account (OA)".
 
 ---
 
@@ -230,22 +201,7 @@ Moi kenh theo 4 giai doan:
 | Tuan 3 | 4–5 bai | Social proof + review + case study | Trust, inbox dau tien |
 | Tuan 4 | 4–5 bai | Mix: 40% TOFU + 30% MOFU + 30% BOFU | Lead, dat lich, don hang |
 
-**Thong so ky thuat:**
-- Anh vuong: 1080x1080px
-- Anh ngang: 1200x628px
-- Video: 1080x1080 (feed) hoac 1080x1920 (Reels)
-- Caption: 1–3 dong dau = hook, danh xuong dong truoc "Xem them"
-- Thoi gian dang: 7h–9h sang, 11h30–13h trua, 19h–21h toi
-- Hashtag: 3–5 hashtag (Facebook khong can nhieu nhu Instagram)
-
-### Loi thuong gap
-
-| Loi | Hau qua | Cach tranh |
-|----|---------|-----------|
-| Moi like ao / mua like | Engagement gia, reach that giam | Organic + paid reach den dung doi tuong |
-| Khong tra loi comment | Mat co hoi chuyen doi, algorithm giam | Tra loi 100% comment co y nghia |
-| Post qua nhieu link ngoai | Facebook giam reach bai co link | Dat link trong comment dau tien |
-| Chi boost post, khong dung Ads Manager | Khong target duoc, phi tien | Luon dung Ads Manager de tao chien dich |
+> Thong so ky thuat (kich thuoc anh/video, caption, gio dang, hashtag) va bang loi thuong gap cua Facebook Page: doc `references/thong-so-va-loi-thuong-gap.md` muc "3. Facebook Page".
 
 ---
 
@@ -272,13 +228,7 @@ Moi kenh theo 4 giai doan:
 | Tao form dang ky | Embed form len website, landing page | [ ] |
 | Setup unsubscribe link | Bat buoc — Brevo tu dong them nhung nen customize | [ ] |
 
-**Thong so ky thuat email:**
-- Chieu rong email: 600px
-- Kich thuoc anh: Rong toi da 600px, <200KB/anh
-- Tieu de email: 30–50 ky tu (mobile cat o 35 ky tu)
-- Preview text: 40–90 ky tu — bo sung cho tieu de
-- CTA button: Toi thieu 44x44px, mau noi bat
-- Ti le text/image: 60% text / 40% image (tranh spam filter)
+> Thong so ky thuat email (chieu rong, kich thuoc anh, do dai tieu de/preview text, CTA button, ti le text/image): doc `references/thong-so-va-loi-thuong-gap.md` muc "4. Email Marketing (Brevo)".
 
 ### Giai doan 3 — Ket noi & Tich hop (Ngay 7–14)
 
@@ -299,19 +249,7 @@ Moi kenh theo 4 giai doan:
 | Tuan 3 | 1 Case study | Ket qua khach hang + CTA tu van | Click >3%, reply |
 | Tuan 4 | 1 Offer | Uu dai doc quyen cho subscriber | Click >5%, conversion |
 
-**Lich gui email:**
-- Thoi gian tot nhat: Thu 3 + Thu 5, 9h–10h sang hoac 14h–15h chieu
-- Tan suat: 1–2 email/tuan (qua nhieu = unsubscribe)
-- Tranh gui: Thu 7 chieu, Chu nhat, ngay le
-
-### Loi thuong gap
-
-| Loi | Hau qua | Cach tranh |
-|----|---------|-----------|
-| Khong xac minh domain | Email vao spam, reputation thap | Setup DKIM + SPF + DMARC truoc khi gui |
-| Gui email cho list cu khong clean | Bounce rate cao, bi blacklist | Clean list: xoa email bounce, inactive >6 thang |
-| Chi gui email ban hang | Unsubscribe cao | Ti le: 70% gia tri + 20% tuong tac + 10% ban hang |
-| Khong co A/B test | Khong biet gi hieu qua | A/B test tieu de moi lan gui |
+> Lich gui email (gio/ngay tot nhat, tan suat, ngay nen tranh) va bang loi thuong gap cua email marketing: doc `references/thong-so-va-loi-thuong-gap.md` muc "4. Email Marketing (Brevo)".
 
 ---
 
@@ -355,14 +293,7 @@ Moi kenh theo 4 giai doan:
 | Tuan 3 | Tang video/ngay, chay Shopping Ads nho | Doanh thu on dinh |
 | Tuan 4 | Scale video + livestream + affiliate | Tang don 50% vs tuan 3 |
 
-### Loi thuong gap
-
-| Loi | Hau qua | Cach tranh |
-|----|---------|-----------|
-| Listing san pham xau (anh mo, mo ta thieu) | Khong ai mua, ti le tra cao | Anh sang ro, mo ta day du, co size chart |
-| Khong lam video, chi dang san pham | Khong co traffic tu nhien | Moi san pham can it nhat 3 video |
-| Hoa hong affiliate qua thap | Creator khong muon ban | Hoa hong 10–15% cho giai doan dau |
-| Khong xu ly don nhanh | Rating shop giam, bi phat | Ship trong 24h, tra loi chat trong 1h |
+> Bang loi thuong gap cua TikTok Shop (listing, video, hoa hong affiliate, toc do xu ly don): doc `references/thong-so-va-loi-thuong-gap.md` muc "5. TikTok Shop".
 
 ---
 
@@ -408,23 +339,7 @@ Moi kenh theo 4 giai doan:
 | Tuan 3 | 4–5 feed + 7 story + 3 Reels | Review + case study + UGC | Save + Share |
 | Tuan 4 | 4–5 feed + 7 story + 3 Reels | Mix TOFU/MOFU/BOFU | DM + Lead |
 
-**Thong so ky thuat:**
-- Feed vuong: 1080x1080px
-- Feed doc: 1080x1350px (duoc uu tien hien thi nhieu hon)
-- Reels: 1080x1920px (9:16)
-- Story: 1080x1920px
-- Carousel: Toi da 20 slide
-- Hashtag: 20–30 hashtag/post (luu trong note de copy nhanh)
-- Caption: 2,200 ky tu toi da — hook 125 ky tu dau (truoc "more")
-
-### Loi thuong gap
-
-| Loi | Hau qua | Cach tranh |
-|----|---------|-----------|
-| Feed khong nhat quan (mau sac, phong cach) | Mat chuyen nghiep, follower khong tang | Dung 3–5 mau co dinh, template Canva |
-| Khong lam Reels | Mat 50%+ reach tiem nang | Toi thieu 2–3 Reels/tuan |
-| Hashtag khong lien quan | Reach sai doi tuong, bi giam hien thi | Nghien cuu hashtag theo nganh, cap nhat hang thang |
-| Khong dung Story | Mat ket noi voi follower hien tai | 1–3 story/ngay, dung poll/quiz/question |
+> Thong so ky thuat (kich thuoc feed/Reels/Story, so slide carousel, hashtag, caption) va bang loi thuong gap cua Instagram Business: doc `references/thong-so-va-loi-thuong-gap.md` muc "6. Instagram Business".
 
 ---
 
@@ -471,111 +386,19 @@ Moi kenh theo 4 giai doan:
 | Tuan 3 | Dang 2 bai, tra loi review, them anh moi | Xuat hien tren Google Maps |
 | Tuan 4 | Dang 2 bai, xin them review, cap nhat thong tin | 10+ review, ranking len |
 
-**Thong so ky thuat:**
-- Anh: Toi thieu 720x720px, dinh dang JPG/PNG
-- Logo: 250x250px
-- Anh bia: 1080x608px
-- Bai dang GBP: Toi da 1,500 ky tu + 1 anh + 1 CTA button
-- Tan suat dang: 1–2 bai/tuan
-- Review: Nham toi thieu 4.5 sao, 20+ review trong 90 ngay
-
-### Loi thuong gap
-
-| Loi | Hau qua | Cach tranh |
-|----|---------|-----------|
-| Thong tin khong day du | Ranking thap, khach khong tim thay | Dien 100% cac truong |
-| Khong tra loi review tieu cuc | Mat trust, khach moi so | Tra loi lich su, de nghi giai quyet |
-| Khong cap nhat gio mo cua | Khach den cua dong | Cap nhat moi khi thay doi, dac biet ngay le |
-| Khong dang bai thuong xuyen | Mat hien thi tren Google | Toi thieu 1 bai/tuan |
+> Thong so ky thuat (kich thuoc anh/logo/anh bia, gioi han bai dang, tan suat, muc tieu review) va bang loi thuong gap cua Google Business Profile: doc `references/thong-so-va-loi-thuong-gap.md` muc "7. Google Business Profile (GBP)".
 
 ---
 
 ## Ban do tich hop lien kenh
 
-### Cach cac kenh ket noi voi nhau
-
-```
-                    TikTok Brand
-                    (Reach + Awareness)
-                         |
-              ┌──────────┼──────────┐
-              |          |          |
-              v          v          v
-         TikTok Shop  Fanpage   Instagram
-         (E-commerce) (Trust)   (Visual)
-              |          |          |
-              └──────┬───┘──────────┘
-                     |
-              ┌──────┼──────┐
-              v      v      v
-           Zalo OA  Email   GBP
-           (Nurture)(Auto)  (Local)
-```
-
-### Ma tran tich hop
-
-| Tu kenh | Den kenh | Cach ket noi | Muc dich |
-|---------|---------|-------------|----------|
-| TikTok → Zalo OA | Link trong bio, CTA trong video | Chuyen follower thanh lead |
-| TikTok → TikTok Shop | Tag san pham trong video | Chuyen viewer thanh buyer |
-| Facebook → Zalo OA | Ads click-to-Zalo, link trong post | Thu lead de nurture |
-| Facebook → Email | Lead form → tu dong them vao Brevo | Xay email list |
-| Instagram → Facebook | Cross-post, linked ads | Tang reach |
-| Zalo OA → Website | Broadcast co link | Tang traffic |
-| Email → Website | CTA trong email | Tang conversion |
-| GBP → Website | Link website trong profile | Traffic local |
-| GBP → Zalo | Link Zalo trong GBP | Chuyen doi local |
-
-### Quy tac tu dong hoa
-
-| Trigger | Hanh dong | Tool |
-|---------|----------|------|
-| Khach follow Zalo OA | Gui tin chao mung + menu dich vu | Zalo OA auto-reply |
-| Khach dien form tren website | Them vao Brevo list + gui Welcome email | Brevo automation |
-| Khach nhan tin Facebook | Bot hoi nhu cau + chuyen sang nhan vien | Pancake / Manychat |
-| Khach dat don TikTok Shop | Gui tin cam on + xin review sau 7 ngay | TikTok Shop auto-message |
-| Khach de review 5 sao GBP | Gui email cam on + uu dai gioi thieu ban be | Brevo trigger |
-| Khach khong mua sau 7 ngay | Retarget ads tren Facebook + TikTok | Meta Ads + TikTok Ads |
+> So do luong kenh, ma tran tich hop 9 cap kenh (tu kenh → den kenh → cach ket noi → muc dich), va 6 quy tac tu dong hoa (trigger → hanh dong → tool): doc `references/tich-hop-va-moc-tang-truong.md` muc "Ban do tich hop lien kenh".
 
 ---
 
 ## Moc tang truong (Growth Milestones)
 
-### 30 ngay dau
-
-| Kenh | Moc "tot" | Moc "xuat sac" |
-|------|----------|----------------|
-| TikTok Brand | 500 follower, 5 video >1K view | 1,000 follower, 1 video >10K view |
-| Zalo OA | 200 follower, read rate >60% | 500 follower, read rate >70% |
-| Facebook Page | 300 like, 10 bai, Messenger hoat dong | 500 like, ER >3%, co lead tu organic |
-| Email (Brevo) | 100 subscriber, open rate >25% | 300 subscriber, open rate >35% |
-| TikTok Shop | 10 don hang, rating >4.5 | 30 don hang, 5+ review |
-| Instagram | 200 follower, 12 feed post, 20 story | 400 follower, ER >5% |
-| GBP | Profile 100%, 5 review 5 sao | 10 review, xuat hien trang 1 local search |
-
-### 60 ngay
-
-| Kenh | Moc "tot" | Moc "xuat sac" |
-|------|----------|----------------|
-| TikTok Brand | 1,500 follower, CPMess <35K (ads) | 3,000 follower, 1 video >50K view |
-| Zalo OA | 500 follower, don hang tu Zalo | 1,000 follower, re-purchase tu broadcast |
-| Facebook Page | 800 like, lead on dinh tu ads | 1,500 like, ROAS >3x |
-| Email (Brevo) | 300 subscriber, automation chay on | 500 subscriber, revenue tu email |
-| TikTok Shop | 50 don hang, doanh thu tang 2x vs thang 1 | 100 don, affiliate bat dau ban |
-| Instagram | 500 follower, DM co lead | 1,000 follower, collab voi brand khac |
-| GBP | 15 review, traffic tang tu Google | 25 review, ranking top 3 local |
-
-### 90 ngay
-
-| Kenh | Moc "tot" | Moc "xuat sac" |
-|------|----------|----------------|
-| TikTok Brand | 3,000 follower, he thong content on dinh | 5,000+ follower, co video viral |
-| Zalo OA | 1,000 follower, re-purchase rate >20% | 2,000 follower, revenue chiem 15%+ tong |
-| Facebook Page | 1,500 like, ROAS on dinh >3x | 3,000 like, ROAS >5x, organic lead |
-| Email (Brevo) | 500 subscriber, LTV tang | 1,000 subscriber, email chiem 10%+ revenue |
-| TikTok Shop | 100 don/thang, GMV on dinh | 300 don/thang, top seller danh muc |
-| Instagram | 1,000 follower, referral traffic | 2,000 follower, collab thuong xuyen |
-| GBP | 25 review, ranking on dinh | 40+ review, top 3 khu vuc |
+> Bang moc 30/60/90 ngay cho ca 7 kenh, moi moc chia 2 muc "tot" va "xuat sac": doc `references/tich-hop-va-moc-tang-truong.md` muc "Moc tang truong (Growth Milestones)". Doc khi can dat KPI thuc te cho kenh moi mo.
 
 ---
 

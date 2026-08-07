@@ -406,8 +406,8 @@ Cho 1-page action plan cho thang sau.
 ### Docs tham khao
 
 - `docs/getting-started-personal-brand.md` — Cam nang 8 chuong cho nguoi moi
-- `skills/references/mcp-ads-integration.md` — MCP ads de pull data tu dong
-- `skills/references/hook-formulas-vn.md` — Re-use cho content plan thang sau
+- `skills/vi/references/mcp-ads-integration.md` — MCP ads de pull data tu dong
+- `skills/vi/references/hook-formulas-vn.md` — Re-use cho content plan thang sau
 
 ### Video demo
 

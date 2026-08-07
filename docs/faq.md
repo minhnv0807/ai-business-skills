@@ -31,7 +31,22 @@ Cau truc va framework (AIDA, PAS, Quality Gates) la pho quat — dung duoc moi n
 
 ### Q: Co bao nhieu skill?
 
-**A:** 22 skills (0-21) + 1 foundation skill (product-marketing-context) + 3 reference files + 4 workflows. Xem ban do day du tai `docs/skill-map.md`.
+**A:** 138 skills — 69 VN (`skills/vi/` + module personal branding) va 69 Global (`skills/en/` + module), kem 6 agents, 19 workflows, 8 reference files, va kho `knowledge/` (24 file kien thuc nen tang). Xem ban do day du tai `docs/skill-map.md`.
+
+### Q: Skill 35-67 la gi, khac gi skill 00-34?
+
+**A:** Skill 00-34 la cac cong viec marketing pho quat (ke hoach, copy, KPI, audit, offer, SEO). Skill 35-67 (v3.5.0) la **Role SOP packs** — quy trinh van hanh hang ngay cua tung vai tro trong team:
+
+- **35-40 Content system:** brand voice, content brief, caption organic, seeding, audit, next plan
+- **41-50 Design production:** asset list, brief visual, brand guideline, design review, resize
+- **51-57 Performance ops:** audience, media plan, tracking, account structure, scaling, retargeting
+- **58-67 Leader ops:** positioning, GTM, launch, budget, gate duyet, retro, team, crisis, vendor
+
+Chung bo tro nhau chu khong thay the: `05-copy-quang-cao` viet copy, con `62-marketing-review` la gate duyet copy do truoc khi len camp. Bat dau tai `docs/getting-started-role-sop.md`.
+
+### Q: `knowledge/` khac `skills/` cho nao?
+
+**A:** `knowledge/` la **tu duy nen tang** — tra loi "tai sao lam nhu vay", nap vao AI mot lan lam context. `skills/` la **SOP thuc thi** — tra loi "lam the nao", goi ra moi lan can output. Khong co knowledge thi skill van chay, nhung output se chung chung hon. Chi tiet: `knowledge/README.md`.
 
 ### Q: Skill nao nen chay dau tien?
 
@@ -262,7 +277,7 @@ A: Theo Nghi dinh 147/2024/ND-CP — BAT BUOC khi:
 3. Impersonate hoac tao impression la nguoi that nguoi noi
 NEN (khong bat buoc) cho content thuong khong tra tien.
 KHONG can cho test noi bo / draft / private group.
-Reference: `skills/references/ai-video-disclosure-vn.md`
+Reference: `skills/vi/references/ai-video-disclosure-vn.md`
 
 ### Q5: ROI cua personal brand sau 30 ngay — ky vong gi?
 
@@ -305,7 +320,7 @@ A: They read `.agents/` directory:
 - Both files → ask user to choose
 - None → suggest creating foundation file
 
-This is the new Universal Mode introduced in v2.5.0 — same 5 agents work for both clusters.
+This is the new Universal Mode introduced in v2.5.0 — the same agents work for both clusters (6 agents from v3.5.0).
 
 ### Q3: Can I use both VN and Global clusters together?
 

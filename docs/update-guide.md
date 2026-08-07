@@ -162,7 +162,7 @@ feat(skill-05): add 6 copy frameworks + Andromeda warning
 ### Naming convention
 
 ```
-skills/references/[ten-chu-de]-vn.md
+skills/vi/references/[ten-chu-de]-vn.md
 ```
 
 Vi du:

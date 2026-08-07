@@ -1,8 +1,8 @@
 ---
 name: 19-ab-test-setup
-description: "Khi nguoi dung can thiet lap A/B test cho ads, landing page, email, hoac product. Cung dung khi nguoi dung nhac 'A/B test', 'split test', 'test creative', 'test copy', 'test landing', 'test gia', 'kiem dinh thong ke', 'sample size'. Skill nay giup chon bien can test, tinh sample size, setup tracking, va phan tich ket qua thong ke (significance) — phu hop cho team khong phai data scientist."
+description: "Khi nguoi dung can thiet lap A/B test cho ads, landing page, email, hoac product. Cung dung khi nguoi dung nhac 'A/B test', 'split test', 'test creative', 'test copy', 'test landing', 'test gia', 'kiem dinh thong ke', 'sample size', 'testing framework', 'tim winning ad', 'test hypothesis ads', 'test log'. Skill nay giup chon bien can test, tinh sample size, setup tracking, va phan tich ket qua thong ke (significance) — phu hop cho team khong phai data scientist."
 metadata:
-  version: 1.0.0
+  version: 1.1.0
   category: performance
 license: MIT
 related:
@@ -11,6 +11,9 @@ related:
   - 05-copy-quang-cao
   - 12-brief-landing-page
   - 13-phan-tich-du-lieu
+  - 21-audit-ads-performance
+  - 52-account-structure
+  - 55-scaling-ads
 ---
 
 # A/B Test Setup
@@ -171,6 +174,100 @@ Test:
 
 ---
 
+## Ma tran uu tien bien test
+
+Khong test theo hung. Chon bien theo **tac dong** truoc, **do de** sau.
+
+| Bien | Tac dong len ket qua | Do kho thuc hien | Uu tien | Metric chinh |
+|------|---------------------|-----------------|---------|-------------|
+| Creative — hook 0-3s | Rat cao (quyet dinh CTR va CPM) | De — chi doi 3 giay dau | **1** | Hook rate, CTR |
+| Audience / tep | Cao (ai nhin thay ads) | De — doi setting | **2** | CPM, CPL |
+| Offer / CTA | Rat cao (ho nhan duoc gi) | Trung binh — can quyet dinh kinh doanh | **3** | CVR, CPL |
+| Landing page | Cao (trai nghiem sau click) | Kho — can dev/design | **4** | CVR, bounce |
+| Ad copy (than bai) | Trung binh | De | **5** | CTR, CVR |
+| Mau sac / font / chi tiet nho | Thap | De | **6** | — |
+
+**Quy tac:** het bien uu tien 1 roi moi xuong 2. Dung nhay thang vao test mau nut khi hook chua bao gio duoc test.
+
+---
+
+## Quy trinh test ads tren nen tang
+
+### Thu tu test creative (chay lan luot, khong chay song song)
+
+| Vong | Test gi | Cach lam | Metric doc |
+|------|--------|---------|-----------|
+| 1 | **Hook 0-3s** | 3-5 hook khac nhau, **giu nguyen than bai va CTA** — Pain vs To mo vs Social proof | Hook rate |
+| 2 | **Format** | Video doc vs Anh tinh vs Carousel | CTR, CPM, CPL |
+| 3 | **Goc nhin** | Loi ich vs Van de vs Bien doi (before-after) | CTR, CVR |
+| 4 | **Do dai** | 15s vs 30s vs 60s | Watch rate, CTR, CPL |
+
+### Khung test tep
+
+| Test | Phuong an A | Phuong an B |
+|------|------------|------------|
+| Broad vs Interest | Tep rong (de he thong tu tim) | Interest cu the |
+| Interest A vs B | [Nhom so thich 1] | [Nhom so thich 2] |
+| Do tuoi | 25-34 | 35-44 |
+| Lookalike | 1% LAL | 3% LAL |
+| Vi tri hien thi | Tu dong | Chi Feed |
+
+### Ngan sach va thoi gian test
+
+| Hang muc | Nguong thuc dung |
+|---------|-----------------|
+| % ngan sach danh cho testing | 30% tong ngan sach (Testing 30% · Scale 50% · Retarget 15% · Lookalike 5%) |
+| Ngan sach toi thieu | Du de moi bien the ra it nhat 1 conversion/ngay — duoi muc nay test khong bao gio ket luan duoc |
+| Thoi gian toi thieu | 7 ngay tron (khong 3 ngay, khong 10 ngay le tuan) |
+| Sample toi thieu — test ads tren nen tang | 50 conversion/bien the (hoac 1,000 click neu test CTR) |
+| Sample ly tuong — test landing page | 100 conversion/bien the, hoac tinh theo cong thuc o tren |
+| Dung som | Chi dung truoc han khi 1 bien the CPL > 2x target sau 3 ngay — dung bien the do, khong dung ca test |
+
+> Hai nguong sample khac nhau la co chu y: **50** la nguong thuc dung cho test ads (nen tang chay lien tuc, con nhieu vong test phia sau), **100** la nguong ly tuong khi test landing page (test 1 lan, sua xong kho lam lai).
+
+---
+
+## Tieu chi winner va quy trinh quyet dinh
+
+### Du dieu kien ket luan khi dat CA 4
+
+- [ ] Da chay >= 7 ngay
+- [ ] >= 50 conversion moi bien the (hoac >= 1,000 click neu la test CTR)
+- [ ] Confidence >= 95% (p-value < 0.05)
+- [ ] Bien the thang cai thien metric chinh >= 15%
+
+### Bang quyet dinh
+
+| Ket qua | Quyet dinh | Buoc tiep |
+|---------|-----------|----------|
+| Winner ro (>= 15%, du data, p < 0.05) | Scale winner, luu tru loser | `55-scaling-ads` |
+| Chenh lech < 15% | Hoa — giu control, chuyen sang test bien khac | Quay lai ma tran uu tien |
+| Cac metric mau thuan nhau (VD: CTR B cao hon nhung CPL A tot hon) | Theo **metric chinh** da chot tu dau, khong doi metric giua chung | — |
+| Chua du sample khi het thoi gian | Keo dai them 3-7 ngay, hoac ket luan "khong du du lieu" va ghi vao log | — |
+| Ca 2 bien the deu te hon baseline | Van de khong nam o bien dang test | `21-audit-ads-performance` |
+
+**Winner hom nay = baseline de test tiep.** Khong co diem dung — moi vong test lay winner cu lam control moi.
+
+---
+
+## Test log — nhat ky test tich luy
+
+Bang nay quan trong khong kem ket qua tung test. Sau 6-12 thang, pattern trong log cho biet **loai bien nao thuc su tao ra khac biet o nganh cua minh**.
+
+| # | Ngay bat dau | Ngay ket thuc | Bien test | Control (A) | Variant (B) | Metric chinh | Ket qua | p-value | Uplift | Hanh dong | Bai hoc |
+|---|-------------|--------------|----------|------------|-------------|-------------|---------|---------|--------|----------|---------|
+| 1 | | | | | | | Winner A / Winner B / Hoa | | | Scale / Luu tru / Test lai | |
+| 2 | | | | | | | | | | | |
+
+### Ky luat ghi log
+
+1. **Ghi ca test thua va test hoa.** Test that bai la thong tin — no ngan minh test lai dieu da biet la khong hieu qua.
+2. **Cot "Bai hoc" khong duoc de trong.** Neu khong rut ra duoc gi thi thiet ke test do co van de.
+3. **Ra soat log moi quy.** Dem xem loai bien nao hay thang → uu tien loai do o quy sau.
+4. **Toi thieu 1 test/thang** neu du traffic. Khong test = khong cai thien, chi lap lai.
+
+---
+
 ## Setup tracking
 
 ### Tool khuyen dung
@@ -301,3 +398,9 @@ Significant (p<0.05): [Yes/No]
 - [ ] p-value < 0.05 truoc khi ket luan
 - [ ] Document ket qua du thang hay thua
 - [ ] Toi thieu 1 test/thang neu traffic du
+- [ ] Bien dang test duoc chon theo ma tran uu tien — khong test chi tiet nho khi chua test hook
+- [ ] Test creative chay dung thu tu: hook → format → goc nhin → do dai
+- [ ] Ngan sach test nam trong 30% tong ngan sach, du de moi bien the ra >= 1 conversion/ngay
+- [ ] Da chot metric chinh TRUOC khi chay — khong doi metric giua chung
+- [ ] Winner phai cai thien >= 15% moi duoc goi la winner
+- [ ] Da ghi vao Test log, cot "Bai hoc" khong de trong

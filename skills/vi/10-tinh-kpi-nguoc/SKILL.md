@@ -2,7 +2,7 @@
 name: 10-tinh-kpi-nguoc
 description: Tinh KPI nguoc tu doanh thu ve ngan sach va tinh xuoi tu ngan sach ra doanh thu — 3 kich ban, sensitivity analysis, break-even, phan bo ngan sach theo giai doan va kenh
 metadata:
-  version: 2.0.0
+  version: 2.1.0
   category: performance
 triggers:
   - "tinh KPI"
@@ -11,12 +11,18 @@ triggers:
   - "ngan sach de dat X don"
   - "budget calculator"
   - "KPI calculator"
+  - "CPL toi da bao nhieu"
+  - "break-even ROAS"
+  - "LTV CAC"
 output: File .md gom bang tinh 3 kich ban, phan tich do nhay, break-even, phan bo ngan sach theo giai doan + kenh, va timeline ROI
 related:
   - 00-ke-hoach-mkt
   - 07-bao-cao-marketing
   - 03-danh-gia-hieu-suat
   - 08-nghien-cuu-doi-thu
+  - 54-media-plan
+  - 61-budget-planning
+  - 21-audit-ads-performance
 ---
 
 # Tinh KPI Nguoc
@@ -72,6 +78,85 @@ Ngan sach
 
 ---
 
+## Unit economics — tinh TRUOC khi chay dong ads dau tien
+
+Hai huong tinh o tren cho biet **can bao nhieu tien**. Phan nay cho biet **bao nhieu la lo**. Phai thuoc long truoc khi bat bat ky campaign nao.
+
+### Bo cong thuc day du
+
+```
+So don can          = Doanh thu muc tieu / AOV
+So lead can         = So don can / Close rate (Lead -> Mua)
+Max CPL (hoa von)   = (Doanh thu muc tieu x Gross margin %) / So lead can
+CPL target (co lai) = Max CPL / 1.5
+Break-even ROAS     = 1 / Gross margin %
+Target ROAS         = Break-even ROAS x 1.5   (bien an toan)
+Ngan sach ads can   = So lead can x CPL target
+CAC                 = Tong chi phi ads / So khach hang moi
+LTV                 = AOV x Tan suat mua/nam x So nam giu chan
+LTV : CAC           = LTV / CAC          (nguong khoe: >= 3:1)
+Payback period      = CAC / (Loi nhuan gop moi khach moi thang)
+```
+
+**Gross margin** = (Doanh thu - COGS) / Doanh thu. Khong biet gross margin thi khong tinh duoc gi ca — hoi user truoc.
+
+### Vi du so cu the — khoa hoc online
+
+Gia dinh: AOV 3,000,000d · Gross margin 70% · Close rate Lead->Mua 30% · Muc tieu 300,000,000d/thang.
+
+| Buoc | Cong thuc | Ket qua |
+|------|----------|---------|
+| So don can | 300,000,000 / 3,000,000 | **100 don** |
+| So lead can | 100 / 30% | **334 lead** |
+| Max CPL (hoa von) | (300,000,000 x 70%) / 334 | **~628,000d** |
+| CPL target (co lai) | 628,000 / 1.5 | **~419,000d** |
+| Break-even ROAS | 1 / 0.7 | **1.43x** |
+| Target ROAS | 1.43 x 1.5 | **2.14x** |
+| Ngan sach ads | 334 x 419,000 | **~140,000,000d** |
+| Kiem tra lai | 300,000,000 / 140,000,000 | ROAS 2.14x — khop |
+
+**Doc so nay the nao:** CPL cham 628K la hoa von, cham 419K la co lai. Neu thi truong dang cho CPL 700K → khong chay, phai sua offer, sua AOV, hoac sua gross margin truoc.
+
+### LTV : CAC — quyet dinh co duoc scale khong
+
+| Ti le LTV:CAC | Y nghia | Hanh dong |
+|--------------|---------|----------|
+| < 1:1 | Lo tren moi khach hang | DUNG scale. Sua san pham hoac gia truoc |
+| 1:1 - 3:1 | Hoa von den kha thi | Toi uu conversion, tang AOV — chua scale |
+| > 3:1 | Khoe — co the tang truong | Bat dau scale co kiem soat |
+| > 5:1 | Rat tot | Tang ngan sach ads manh |
+
+**Payback period** (thoi gian hoan von CAC) nen < 6 thang voi SME Viet Nam. Payback dai hon = dong tien bi ket, du ROAS dep van chet.
+
+---
+
+## Nguong healthy tung buoc — canh bao va dung
+
+Moi buoc trong pheu co nguong rieng. Kiem hang ngay khi ads dang chay; buoc nao vuot nguong DUNG thi xu ly buoc do truoc, khong do them tien.
+
+| Chi so | Khoe | Canh bao | DUNG | Hanh dong khi cham nguong dung |
+|--------|------|---------|------|-------------------------------|
+| CPL / CPMess | <= target | > 1.5x target | > 2x target | Pause adset, chay `21-audit-ads-performance` |
+| ROAS | >= Target ROAS | < Break-even x 0.8 | < Break-even | Review offer va gia truoc khi doi creative |
+| CTR (Meta) | >= 1.5% | < 0.8% | < 0.5% | Thay creative — van de o hook, khong phai o target |
+| Frequency | < 2.0 | 2.0 - 2.5 | > 3.0 | Thay creative va mo rong tep |
+| Mess -> Lead | >= benchmark nganh | thap hon benchmark 15% | thap hon benchmark 30% | Van de o sale/tu van, khong phai o ads |
+| Lead -> Booking | 60-75% | 40-60% | < 40% | Sua quy trinh follow-up, toc do reply |
+| Booking -> Customer | 40-55% | 25-40% | < 25% | Van de o trai nghiem va gia, khong phai o marketing |
+
+**Luat doc nguong:** khi nhieu buoc cung do, sua **buoc gan tien nhat truoc** (Booking->Customer), roi lui dan ve dau pheu. Sua CPL truoc khi sua close rate la dot tien nhanh hon.
+
+### KPI theo tang pheu — do o dau
+
+| Tang | KPI chinh | Nguong tham chieu | Do o dau |
+|------|----------|------------------|---------|
+| Awareness | CPM, Reach, Video view | CPM theo nganh va mua vu | Ads Manager |
+| Consideration | CTR, CPC, Landing view | CTR >= 1.5% (Meta) | Ads Manager |
+| Conversion | CPMess, CPL, CPA | Theo bang benchmark ben duoi | Ads Manager + CRM |
+| Revenue | ROAS, Doanh thu | >= Target ROAS da tinh | CRM / so ban hang |
+
+---
+
 ## Benchmark Vietnam 2025–2026
 
 ### Ti le chuyen doi theo nganh
@@ -91,6 +176,19 @@ Ngan sach
 | TikTok | >45K | 28–45K | 20–28K | <20K |
 | Google (CPL) | >200K | 85–150K | 50–85K | <50K |
 | Zalo (CPMess broadcast) | N/A | ~500d/mess | ~300d/mess | <200d/mess |
+
+### CPL va ROAS theo nganh (de doi chieu Max CPL vua tinh)
+
+| Nganh | CPL trung binh | ROAS thuong thay | CTR Meta |
+|-------|---------------|-----------------|----------|
+| Khoa hoc online | 50K – 200K | 3 – 8x | 1.5 – 3% |
+| Beauty / Skincare | 50K – 300K | 3 – 7x | 1.5 – 3% |
+| F&B / Nha hang | 30K – 100K | 3 – 6x | 1 – 2.5% |
+| E-commerce fashion | — | 2 – 5x | 1 – 2% |
+| BDS | 200K – 2 trieu | — | 0.5 – 1.5% |
+| SaaS / B2B | 500K – 3 trieu | 3 – 10x | 0.5 – 1.5% |
+
+**Cach dung:** so sanh **Max CPL** vua tinh voi khoang CPL cua nganh. Neu Max CPL thap hon dai duoi cua nganh → mo hinh chua chay duoc bang ads, phai sua AOV / margin / close rate truoc, khong phai sua creative.
 
 ### Luu y mua vu
 
@@ -288,6 +386,71 @@ Vi du: Ngan sach 80 trieu/thang
 
 ---
 
+## Tong ngan sach marketing — khong chi ngan sach ads
+
+Con so tinh nguoc o tren la **ngan sach ads**. Tong ngan sach marketing con nhieu khoan khac — bo qua se vo ke hoach giua ky.
+
+### 3 phuong phap dat ngan sach
+
+| Phuong phap | Cach tinh | Uu | Nhuoc |
+|------------|----------|----|----|
+| % doanh thu | Ngan sach = X% doanh thu ky vong | Don gian, de duyet | Khong phan anh giai doan tang truong |
+| Tinh nguoc tu muc tieu | Dat doanh thu → tinh nguoc ra CAC va ngan sach (phan tren) | Co can cu, bao ve duoc truoc CEO | Can biet CAC / CVR lich su |
+| Theo doi thu | Benchmark ngan sach nganh (`08-nghien-cuu-doi-thu`) | Tranh dau tu duoi nguong | Khong phan anh dieu kien rieng |
+
+**Khuyen nghi:** dung phuong phap tinh nguoc lam chinh, dung 2 phuong phap con lai de kiem tra cheo. Lech qua 50% giua 3 cach → xem lai gia dinh.
+
+### Co cau tong ngan sach (tham chieu SME Viet Nam)
+
+| Khoan muc | % tong ngan sach |
+|-----------|-----------------|
+| Meta Ads (FB + IG) | 50 – 60% |
+| TikTok Ads | 15 – 20% |
+| Google Ads / SEO | 10 – 15% |
+| San xuat content | 10 – 15% |
+| KOL / KOC / Seeding | 5 – 10% |
+| Email / CRM / tool | 2 – 5% |
+
+Chi tiet ke hoach phan bo theo kenh va thang → `54-media-plan`. Ke hoach ngan sach ca nam va bao ve truoc ban lanh dao → `61-budget-planning`.
+
+---
+
+## KPI theo 3 tang nguoi dung
+
+Cung mot chien dich nhung moi tang xem so khac nhau. Bao cao sai tang = nguoi doc khong hanh dong duoc.
+
+| Tang | Tan suat | KPI xem | Cau hoi ho quan tam |
+|------|---------|---------|--------------------|
+| **CEO / Founder** | Thang / Quy | Doanh thu, CAC, LTV, LTV:CAC, Payback period, ROAS tong | "Bo tien vao co lai khong, bao lau hoan von?" |
+| **Marketing Lead** | Tuan / Thang | CPL, CPO, CVR tung buoc pheu, tang truong organic | "Khau nao dang nghen, sua gi tuan nay?" |
+| **Executor** | Hang ngay | Reach, CPM, CTR, CPMess, Frequency, Engagement rate | "Hom nay tang hay giam adset nao?" |
+
+### Noi KPI voi OKR
+
+```
+O  : Tang doanh thu khoa hoc len 500 trieu/quy
+KR1: Dat 500 lead/thang voi CPL <= 200K
+KR2: Ti le chot don >= 30%
+KR3: AOV tang len 3.5 trieu (upsell)
+  → KPI Meta Ads : CPMess <= 25K, CTR >= 2%
+  → KPI Content  : 40 bai/thang, ER >= 5%
+```
+
+**Quy tac:** moi KR phai co it nhat 1 KPI kenh gan vao. KR khong gan duoc KPI kenh nao = KR khong ai chiu trach nhiem.
+
+### Nhip review KPI
+
+| Nhip | Lam gi |
+|------|--------|
+| Hang ngay (15 phut) | Doi chieu CPL/CPMess vs target → scale hoac pause; kiem frequency; kiem pace spend |
+| Hang tuan (thu 2) | Keo data 7 ngay → winner scale +20%, loser pause + ghi ly do; brief creative moi neu frequency cao |
+| Hang thang | Cap nhat lai CVR thuc te vao bang tinh — thay benchmark bang so cua chinh minh |
+| Hang quy | Tinh lai toan bo unit economics: AOV, margin, LTV, CAC co thay doi khong |
+
+**Nguyen tac:** co so cua chinh minh thi khong dung benchmark nganh nua. Benchmark chi de khoi dau va de doi chieu khi lech bat thuong.
+
+---
+
 ## Cross-reference
 
 - Can ke hoach tong the chua? → Dung `00-ke-hoach-mkt` truoc, roi quay lai tinh KPI
@@ -295,6 +458,9 @@ Vi du: Ngan sach 80 trieu/thang
 - Can biet doi thu chi bao nhieu? → Dung `08-nghien-cuu-doi-thu`
 - Can hieu khach hang de tinh ti le chuyen doi chinh xac hon? → Dung `09-insight-khach-hang`
 - Can phan tich du lieu sau khi chay? → Dung `13-phan-tich-du-lieu`
+- Can bien so ngan sach thanh ke hoach kenh theo thang? → Dung `54-media-plan`
+- Can ke hoach ngan sach ca nam / bao ve truoc ban lanh dao? → Dung `61-budget-planning`
+- CPL vuot nguong DUNG, can tim nguyen nhan? → Dung `21-audit-ads-performance`
 
 ---
 
@@ -312,3 +478,10 @@ Truoc khi giao bao cao, kiem tra:
 - [ ] ROI timeline thuc te — khong hua ROAS cao tu tuan 1
 - [ ] Tong ngan sach khop giua cac bang (giai doan + kenh + tong = khop nhau)
 - [ ] Co ghi chu mua vu neu chien dich roi vao dip dac biet (Tet, 11.11, etc.)
+- [ ] Da hoi gross margin — khong tinh Max CPL / Break-even ROAS khi thieu so nay
+- [ ] Co du 4 so: Max CPL, CPL target, Break-even ROAS, Target ROAS
+- [ ] Da doi chieu Max CPL voi khoang CPL cua nganh — neu thap hon, canh bao user truoc khi chay
+- [ ] Co LTV:CAC va payback period, kem ket luan co duoc scale hay khong
+- [ ] Co bang nguong khoe / canh bao / DUNG cho tung buoc pheu
+- [ ] Tong ngan sach marketing gom ca content, KOL, tool — khong chi ngan sach ads
+- [ ] KPI duoc trinh bay dung tang nguoi doc (CEO / Lead / Executor)
