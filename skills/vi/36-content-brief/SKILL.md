@@ -1,8 +1,8 @@
 ---
 name: 36-content-brief
-description: "Viet brief cho tung bai content cu the — angle, insight goc, key message, 3 hook options, CTA, format, visual direction, tham chieu brand voice. 1 brief = 1 bai = 1 angle = 1 CTA. Kich hoat khi nhac 'brief bai content', 'content brief', 'brief viet bai', 'angle cho bai nay'."
+description: "Dung khi da co lich content va can brief tung bai truoc khi viet — goc tiep can, insight goc, key message, CTA, format va tieu chuan nghiem thu. Kich hoat khi user nhac 'brief bai content', 'brief tung bai', 'goc cho bai nay', 'viet gi cho bai thu 3', 'content brief', 'huong dan viet bai'. Khong dung cho — lap lich ca thang thi dung skill 01-lich-noi-dung; viet caption thanh pham thi dung skill 37-caption-social; brief hinh anh thi dung skill 42-brief-hinh-anh."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: content
 license: MIT
 triggers:

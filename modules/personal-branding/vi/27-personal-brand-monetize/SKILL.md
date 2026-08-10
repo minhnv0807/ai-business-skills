@@ -1,8 +1,8 @@
 ---
 name: 27-personal-brand-monetize
-description: "Xay funnel kiem tien tu personal brand — 3 phien ban funnel khac nhau cho founder/coach/creator. Offer ladder template (Free → Low → Mid → High). Pricing psychology ca nhan. Outreach inbound vs outbound. Brand deal negotiation cho creator. Tax & legal VN 2026 (thue ca nhan, ho kinh doanh vs cong ty). Trigger: 'kiem tien personal brand', 'offer ladder ca nhan', 'course launch', '1-on-1 coaching', 'affiliate ca nhan', 'sponsorship deal', 'founder lead gen'."
+description: "Dung khi mot CA NHAN da co nguoi theo doi va muon RA TIEN — 3 phien ban funnel cho founder, coach, creator; offer ladder tu mien phi den high-ticket; tam ly gia cho dich vu gan voi con nguoi; inbound vs outbound; dam phan brand deal cho creator; thue va phap ly ca nhan tai VN. Kich hoat khi user nhac 'kiem tien tu personal brand', 'offer ladder ca nhan', 'ban khoa hoc', 'coaching 1-1', 'nhan booking sponsorship', 'nhieu follower ma khong ra tien', 'founder lead gen'. Khong dung cho — dinh gia san pham cua DOANH NGHIEP thi dung skill 17-pricing-strategy; dong goi offer cho san pham cong ty thi dung skill 31-offer-design; chuoi email nuoi duong thi dung skill 14-email-marketing."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: strategy
 license: MIT
 triggers:

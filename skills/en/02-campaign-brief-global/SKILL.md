@@ -1,8 +1,8 @@
 ---
 name: 02-campaign-brief-global
-description: "9-section campaign brief for global campaigns — context, objectives, target, message, creative, channels, timeline, deliverables, risks. Reads `.agents/product-marketing-context-global.md`. Universal framework, region-specific benchmarks via foundation skill. Trigger: 'campaign brief', 'creative brief', 'launch brief', 'product launch brief', 'global campaign'."
+description: "Use when a specific campaign needs a brief the whole team can execute from — context, objective, audience, core message, creative direction, channels, deliverables, week-by-week timeline, approval gates, and risks. Trigger on 'campaign brief', 'creative brief', 'launch brief', 'brief the team on this campaign', 'we are running a promo next month', 'what is the plan for this campaign'. Also use when the user describes a promotion out loud and asks for something the team can actually run. Not for — the whole period plan, see `00-marketing-plan-global`; the list of design files needed, see `41-campaign-asset-list-global`; assigning work to one person, see `64-team-brief-global`; a new product launch sequence, see `59-go-to-market-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: strategy
 license: MIT
 triggers:

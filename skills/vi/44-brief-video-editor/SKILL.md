@@ -1,8 +1,8 @@
 ---
 name: 44-brief-video-editor
-description: "Viet brief video day du cho editor / nguoi quay: storyboard tung beat, footage can quay, text overlay, nhac, pacing, CTA end-frame, spec theo kenh. Khac 04-script-video (script la loi thoai — brief editor la huong dan dung). Kich hoat khi nhac: brief video, brief editor, storyboard, brief dung video, brief quay video."
+description: "Dung khi da co y tuong va can huong dan NGUOI QUAY hoac NGUOI DUNG PHIM — storyboard tung beat, footage phai quay, chu chay tren man hinh, nhac, nhip cat, end-frame CTA va spec xuat theo kenh. Khac script video: script la loi thoai, day la huong dan dung. Kich hoat khi user nhac 'brief video', 'brief editor', 'storyboard', 'brief dung phim', 'huong dan cat video', 'brief videographer', 'editor cat khong dung y', 'video dai qua can cat lai'. Khong dung cho — viet loi thoai va hook noi truoc camera thi dung skill 04-script-video; nho khach hoac nhan vien tu quay thi dung skill 06-brief-ugc-egc; thue production house tron goi thi dung skill 67-agency-vendor-brief."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: content
 license: MIT
 triggers:

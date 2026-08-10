@@ -1,0 +1,12 @@
+{
+  "name": "ai-business-skills",
+  "description": "143 bilingual marketing skills (74 VN + 69 Global) for AI agents — strategy, content, performance, design production, leader ops, personal brand, and an AI Marketing OS. Vietnam 2025-2026 benchmarks plus US/EU/SEA/LATAM.",
+  "version": "3.7.0",
+  "author": {
+    "name": "Over Powers Agency",
+    "url": "https://opa.business"
+  },
+  "homepage": "https://github.com/minhnv0807/ai-business-skills",
+  "repository": "https://github.com/minhnv0807/ai-business-skills",
+  "license": "MIT"
+}

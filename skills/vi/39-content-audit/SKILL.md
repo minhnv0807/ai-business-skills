@@ -1,8 +1,8 @@
 ---
 name: 39-content-audit
-description: "Audit dinh ky toan bo content da dang — keo data, phan loai winner/loser theo pillar/format/hook, phan tich pattern tai sao work, action giu/bo/scale. Chay it nhat 1 lan/thang, truoc khi lap plan ky moi. Kich hoat khi nhac 'audit content', 'content nao dang work', 'danh gia content', 'phan tich hieu qua content'."
+description: "Dung khi cuoi thang can biet bai nao work bai nao khong va TAI SAO — phan loai winner/loser theo phan vi, tim pattern theo pillar, format, hook, gio dang va do dai. Kich hoat khi user nhac 'audit content', 'content nao dang work', 'bai nao hieu qua', 'danh gia noi dung thang', 'tai sao bai nay vieu', 'review content'. Khong dung cho — lap plan ky sau tu ket qua audit thi dung skill 40-next-content-plan; viet bao cao trinh sep thi dung skill 07-bao-cao-marketing."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: content
 license: MIT
 triggers:

@@ -1,8 +1,8 @@
 ---
 name: 24-ai-avatar-production-global
-description: "AI Avatar production pipeline for global markets — 3-tier tools (Free/Pro/Enterprise), 4 workflows (single avatar, translate, batch, hybrid), reference image intake for avatar prompts, face/style/logo/palette replacement workflows, voice clone, anti-detection, QA Score 100. Has 4 region variants for DISCLOSURE LAW (US FTC, EU AI Act, SEA per country, LATAM mixed). Tools: HeyGen, Synthesia, ElevenLabs, Captions, Rask AI. Trigger: 'AI avatar', 'HeyGen', 'Synthesia', 'avatar AI video', 'talking head AI', 'AI video translate', 'batch AI video', 'avatar reference image', 'AI avatar prompt', 'replace avatar face'."
+description: "Use when a PERSONAL brand needs AI avatar video at scale — three tool tiers, four workflows for single avatar, translation, batch, and hybrid, reference image intake, face, style, logo, and palette replacement, voice clone pairing, anti-detection, and a QA score, with disclosure-law variants for US FTC, EU AI Act, SEA, and LATAM, covering HeyGen and Synthesia. Trigger on 'AI avatar', 'HeyGen video', 'Synthesia', 'talking head AI video', 'translate my videos with AI', 'I cannot be on camera every day'. Not for — the words the avatar says, see `04-script-video-global`; audio-only voice clone and podcast, see `25-voice-clone-podcast-global`; a company product video edit, see `44-video-editor-brief-global`."
 metadata:
-  version: 1.1.0
+  version: 1.1.1
   category: content
 license: MIT
 triggers:

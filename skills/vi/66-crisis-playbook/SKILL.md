@@ -1,8 +1,8 @@
 ---
 name: 66-crisis-playbook
-description: "Playbook xu ly khung hoang truyen thong va campaign fail: phan loai 5 cap L1-L5, quy trinh 4 gio dau, template phan hoi tung loai, escalation matrix, danh sach KHONG lam, post-mortem. Dung khi nhac 'khung hoang', 'crisis', 'campaign fail', 'content gay phan ung', 'review xau lan rong', 'bi tan cong tren mang'."
+description: "Dung khi thuong hieu DANG bi tan cong hoac campaign gay phan ung xau — phan loai 5 cap L1 den L5, quy trinh 4 gio dau, template phan hoi tung tinh huong, ai duoc phat ngon, danh sach TUYET DOI khong lam va post-mortem sau khung hoang. Kich hoat khi user nhac 'khung hoang truyen thong', 'crisis', 'bi bao xau', 'review 1 sao lan rong', 'content gay phan ung', 'khach to tren mang', 'dang bi tay chay', 'phai xin loi the nao'. Khong dung cho — theo doi va canh bao som khi chua co su co thi dung skill 15-social-listening; campaign kem ve so lieu chu khong phai su co thi dung skill 03-danh-gia-hieu-suat; tong ket bai hoc sau khi da yen thi dung skill 63-campaign-retrospective."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: operations
 license: MIT
 triggers:

@@ -1,8 +1,8 @@
 ---
 name: 50-asset-resize-global
-description: "Use when one master design has to be adapted into every size a campaign needs across channels (feed, story, reel, cover, ad placement): the standard size matrix, three strategies (scale and crop, re-compose, rebuild), safe-zone rules, platform crop behavior, and file naming. Trigger on 'resize asset', 'resize this design', 'all the sizes', 'adapt to other sizes', 'standard size chart', 'safe zone', or 'repurpose the design'."
+description: "Use when one master design has to become every size a campaign needs — feed, story, reel, cover, and ad placements: the standard size matrix, three strategies of scale-and-crop, re-compose, or rebuild, safe-zone rules, platform crop behavior, and file naming. Trigger on 'resize this design', 'all the sizes', 'adapt to other placements', 'safe zone', 'standard size chart', 'the text gets cut off in stories'. Also use when one visual exists and six placements are waiting on it. Not for — the original concept brief, see `42-image-brief-global`; production steps in Canva or Figma, see `45-design-tool-brief-global`; the full campaign asset list, see `41-campaign-asset-list-global`; an urgent new creative, see `48-quick-visual-brief-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: operations
 license: MIT
 triggers:

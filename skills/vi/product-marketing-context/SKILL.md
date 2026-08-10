@@ -1,8 +1,8 @@
 ---
 name: product-marketing-context
-description: "Khi nguoi dung muon tao hoac cap nhat tai lieu goc ve san pham, khach hang, va dinh vi thuong hieu. Cung dung khi nguoi dung nhac 'product context', 'marketing context', 'thiet lap context', 'dinh vi', 'tep khach hang muc tieu', 'mo ta san pham', 'ICP', 'chan dung khach hang ly tuong', hoac muon tranh lap lai thong tin co ban cho moi task. Dung O DAU moi du an marketing truoc khi dung cac skill khac — skill nay tao file `.agents/product-marketing-context.md` ma tat ca skill khac doc truoc."
+description: "Dung khi bat dau lam viec voi mot san pham hoac khach hang moi — skill nay tao FILE CONTEXT ma hon 60 skill khac se doc, gom san pham, khach hang, dinh vi, proof, objection, brand voice va KPI. Chay mot lan, dung lai mai ve sau. Kich hoat khi user nhac 'tao context', 'setup product marketing context', 'bat dau du an moi', 'AI chua hieu san pham cua toi', 'khai bao thong tin san pham'. Khong dung cho — context cho thuong hieu CA NHAN thi dung skill 22-personal-brand-context; nghien cuu insight sau thi dung skill 09-insight-khach-hang."
 metadata:
-  version: 1.1.0
+  version: 1.1.1
   category: foundation
 license: MIT
 ---
@@ -77,8 +77,23 @@ Format file theo template ben duoi.
 ```markdown
 # Product Marketing Context — [Ten san pham]
 
+> Phien ban tai lieu: v1
 > Cap nhat lan cuoi: [YYYY-MM-DD]
 > Dung bang: Claude Code, ChatGPT, Gemini, bat ky AI agent nao
+
+---
+
+## 0. Nhat ky thay doi
+
+Ghi moi nhat len dau. **Them dong moi, khong sua dong cu.** Moi dong ghi: muc nao doi va vi sao.
+
+| Phien ban | Ngay | Doi gi | Ly do |
+|-----------|------|--------|-------|
+| v1 | [YYYY-MM-DD] | Tao lan dau | — |
+
+**Khi nao bump phien ban:** doi dinh vi, doi persona uu tien, doi offer/gia, doi brand voice, doi muc tieu. **Khong bump** khi chi sua chinh ta hoac dien them chi tiet nho.
+
+**Vi sao bat buoc:** hon 60 skill doc file nay lam nguon su that. Khi dinh vi doi ma khong ghi lai, moi output sau do doi theo trong im lang — 3 thang sau khong ai truy duoc ban brief thang truoc sinh ra tu phien ban nao. Skill `63-campaign-retrospective` va `39-content-audit` deu can biet dieu nay de so sanh dung ky.
 
 ---
 
@@ -177,7 +192,7 @@ Ghi lai cac cau khach noi NGUYEN VAN — khong paraphrase.
 
 ## 10. Giong noi thuong hieu (Brand Voice)
 
-> Ap dung tu `social-media-skills/voice-builder` — adapt cho brand VN.
+> Phan tich giong dieu tu mau that cua brand. Chi tiet brand voice day du: `35-brand-voice`.
 
 ### 10a. Brand voice co ban
 - **3 tinh tu mo ta thuong hieu:**

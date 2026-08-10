@@ -1,8 +1,8 @@
 ---
 name: 25-voice-clone-podcast-global
-description: "Audio AI for global personal brand — voice clone (ElevenLabs, Murf, PlayHT), podcast, audiobook, voiceover. 3 use cases: short voiceover (TikTok/Reels), podcast 30-60min, audiobook. 1:10 repurpose (1 podcast → 10 short clips). English (US/UK/AU/SG accents available). Trigger: 'voice clone global', 'ElevenLabs', 'podcast AI', 'audiobook AI', 'voiceover AI'."
+description: "Use when a PERSONAL brand needs AUDIO — voice cloning with ElevenLabs, Murf, or PlayHT, podcast production, audiobooks, and voiceover: short voiceover for TikTok and Reels, a 30 to 60 minute podcast format, and a 1-to-10 repurpose turning one episode into ten clips, in English with US, UK, AU, and SG accents. Trigger on 'voice clone', 'ElevenLabs', 'start a podcast', 'audiobook narration', 'AI voiceover for my videos', 'I hate re-recording the same intro'. Not for — video with a talking-head avatar, see `24-ai-avatar-production-global`; the script being read aloud, see `04-script-video-global`; written long-form posts, see `26-thought-leadership-content-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: content
 license: MIT
 triggers:

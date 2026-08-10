@@ -1,8 +1,8 @@
 ---
 name: 60-launch-playbook
-description: "Playbook chuan hoa quy trinh launch san pham / offer: timeline T-30 → D+7, checklist tung bo phan (content, design, ads, sales, CSKH), war-room ngay launch, escalation matrix va tieu chi roll-back. Dung khi nhac 'launch playbook', 'quy trinh launch', 'checklist launch', 'war room'."
+description: "Dung khi da co huong launch va can QUY TRINH chay cho khong vo tran — timeline T-30 den D+7, checklist tung bo phan content, design, ads, sales, CSKH; war-room ngay launch, escalation matrix va tieu chi roll-back. Kich hoat khi user nhac 'launch playbook', 'quy trinh launch', 'checklist launch', 'war room', 'sap launch ma so sot', 'ai lam gi trong ngay launch', 'SOP ra mat', 'lan truoc launch bi loan'. Khong dung cho — chon phan khuc va thong diep de ra thi truong thi dung skill 59-go-to-market; tong ket bai hoc sau khi launch xong thi dung skill 63-campaign-retrospective; su co truyen thong bung phat thi dung skill 66-crisis-playbook."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: strategy
 license: MIT
 triggers:

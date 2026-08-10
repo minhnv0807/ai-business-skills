@@ -1,8 +1,8 @@
 ---
 name: 16-marketing-psychology
-description: "Khi nguoi dung can ap dung nguyen tac tam ly vao marketing — cham cam xuc, tao khan cap, xay trust, thuyet phuc mua. Cung dung khi nguoi dung nhac 'tam ly khach hang', 'psychology marketing', 'scarcity', 'FOMO', 'social proof', 'Cialdini', 'thuyet phuc khach', 'trigger cam xuc'. Skill nay giai thich 7 nguyen tac tam ly + cach dung vao copy, landing page, email, ads — dieu chinh theo van hoa Vietnam."
+description: "Dung khi can hieu VI SAO nguoi ta mua va ap dung nguyen tac tam ly vao marketing — khan hiem, bang chung xa hoi, cam ket nhat quan, uy tin, co lai, neo gia, ac cam mat mat — kem cach dua vao copy, landing page, email, ads va dieu chinh theo van hoa Viet Nam. Kich hoat khi user nhac 'tam ly khach hang', 'marketing psychology', 'FOMO', 'social proof', 'khan hiem', 'Cialdini', 'lam sao thuyet phuc khach', 'trigger cam xuc', 'khach doc xong van khong hanh dong'. Khong dung cho — viet copy thanh pham thi dung skill 05-copy-quang-cao; dong goi goi ban va bonus thi dung skill 31-offer-design; chan doan mot trang cu the khong ra don thi dung skill 68-cro-audit-trang."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: strategy
 license: MIT
 related:

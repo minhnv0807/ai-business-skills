@@ -1,8 +1,8 @@
 ---
 name: 43-brief-carousel
-description: "Viet brief carousel Facebook/Instagram/LinkedIn tung slide theo narrative arc: hook slide 1, build value slide giua, CTA slide cuoi. Kem huong dan render HTML preview de duyet concept truoc khi vao production. Kich hoat khi nhac: brief carousel, lam carousel, carousel tu content nay, brief slide, render carousel."
+description: "Dung khi can brief mot CHUOI NHIEU SLIDE — carousel Facebook, Instagram, LinkedIn hoac bo anh doc theo mach: hook o slide 1, xay gia tri o giua, CTA o slide cuoi, kem huong dan render HTML preview de duyet concept truoc khi vao production. Kich hoat khi user nhac 'brief carousel', 'lam carousel', 'bo slide dang Facebook', 'tach bai nay thanh carousel', 'brief slide', 'render carousel xem truoc', 'post nhieu anh'. Khong dung cho — mot anh tinh don le thi dung skill 42-brief-hinh-anh; slide thuyet trinh ban hang thi dung skill 71-sales-enablement; huong dan thao tac tren Canva thi dung skill 45-brief-canva."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: content
 license: MIT
 triggers:

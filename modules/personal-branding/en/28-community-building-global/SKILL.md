@@ -1,8 +1,8 @@
 ---
 name: 28-community-building-global
-description: "Community building for global personal brand — Skool, Mighty Networks, Discord, Circle, Slack. 3-layer blueprint (Public/Member/Inner). 7-day onboarding. Engagement rituals. Moderation playbook. Activation metrics. Trigger: 'community building', 'Skool community', 'Mighty Networks', 'Discord community', 'paid community', 'mastermind community'."
+description: "Use when a PERSONAL brand needs its OWN community — Skool, Mighty Networks, Discord, Circle, or Slack: a three-layer public, member, and inner-circle blueprint, seven-day onboarding, engagement rituals, a moderation playbook, and activation metrics. Trigger on 'build a community', 'Skool community', 'Mighty Networks setup', 'Discord for my audience', 'paid community', 'my group is dead and nobody posts'. Also use when the user has members and no reason for them to come back. Not for — posting inside communities you do NOT own, see `38-community-seeding-global`; pricing and packaging the membership, see `27-personal-brand-monetize-global`; referral loops, see `18-referral-program-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: operations
 license: MIT
 triggers:

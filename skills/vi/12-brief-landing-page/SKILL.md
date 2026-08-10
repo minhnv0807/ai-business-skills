@@ -1,8 +1,8 @@
 ---
 name: 12-brief-landing-page
-description: Tao brief landing page chuyen doi cao — 7 section, 1 page = 1 goal = 1 CTA, mobile-first, toi uu conversion
+description: "Dung khi can viet brief de XAY landing page moi hoac trang ban hang moi — cau truc section, copy tung khoi, yeu cau ky thuat, tracking va timeline giao dev. Kich hoat khi user nhac 'brief landing page', 'lam trang ban hang', 'can trang dich', 'thue dev lam landing', 'landing page can gi', 'viet noi dung cho trang'. Khong dung cho — trang DA CHAY ma khong ra don thi dung skill 68-cro-audit-trang; email HTML thi dung skill 49-html-email-template; danh sach asset cho ca campaign thi dung skill 41-campaign-asset-list."
 metadata:
-  version: 2.1.1
+  version: 2.1.2
   category: content
 triggers:
   - "brief landing page"

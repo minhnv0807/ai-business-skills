@@ -1,9 +1,9 @@
 ---
 name: 05-copy-quang-cao
-description: Viet 6 bien the copy quang cao theo 3 tang pheu (TOFU/MOFU/BOFU), tuan thu chinh sach quang cao, co CTA phu hop tung nen tang
+description: "Dung khi can viet copy quang cao TRA TIEN cho Meta, TikTok hoac Google — 6 bien the theo 3 tang pheu TOFU/MOFU/BOFU, tuan thu gioi han ky tu va chinh sach nen tang. Co Mode A cho san pham va Mode B cho personal brand, tu chon theo file context. Kich hoat khi user nhac 'viet copy quang cao', 'noi dung chay ads', 'copy Facebook Ads', 'copy TikTok Ads', 'google rsa', 'tieu de quang cao', 'copy retarget'. Khong dung cho — caption dang organic khong chay tien thi dung skill 37-caption-social; loi thoai video thi dung skill 04-script-video; duyet copy da viet thi dung skill 62-marketing-review."
 argument-hint: "<sản phẩm + key message + kênh>"
 metadata:
-  version: 2.4.1
+  version: 2.5.1
   category: content
 triggers:
   - "viet quang cao"
@@ -163,7 +163,7 @@ Neu co bang chung that → viet lai thanh con so: "1,247 khach da dung" thay vi 
 
 ### 6 kieu hook quang cao — Dong 1 quyet dinh tat ca
 
-> Ap dung tu `social-media-skills/hook-generator` — adapt cho ads VN.
+> Hieu chinh cho ads VN. Chi tiet: `skills/vi/references/hook-formulas-vn.md`.
 
 125 ky tu dau cua primary text = hook quang cao. Moi bien the nen dung **kieu hook khac nhau**:
 
@@ -191,7 +191,7 @@ Neu co bang chung that → viet lai thanh con so: "1,247 khach da dung" thay vi 
 
 ### Copy Scoring — Cham diem truoc khi giao
 
-> Ap dung tu `social-media-skills/post-scorer` — adapt cho quang cao VN.
+> Thang cham diem hieu chinh cho quang cao VN.
 
 Cham 5 tieu chi, moi tieu chi 1–10 diem. **Chi giao khi dat ≥ 35/50.**
 

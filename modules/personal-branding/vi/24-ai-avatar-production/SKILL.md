@@ -1,8 +1,8 @@
 ---
 name: 24-ai-avatar-production
-description: "Pipeline AI Avatar production deep dive — 3 tier tools (Free/Pro/Enterprise), 4 workflow (single avatar / translate da ngon ngu / batch production / hybrid real+AI), reference image intake de tao prompt avatar, face/style/logo/palette replacement workflow, voice clone protocol, anti-detection cho FB/IG/TikTok VN, ethics & disclosure VN (Nghi dinh 147/2024), QA Score 100 diem. Tools: HeyGen, Synthesia, ElevenLabs, Captions, Rask AI, Vbee. Trigger: 'tao avatar AI', 'video AI HeyGen', 'voice clone ElevenLabs', 'lipsync Captions', 'AI video translate', 'talking head AI', 'batch video AI', 'pipeline AI avatar', 'anh reference avatar', 'prompt avatar AI', 'thay mat avatar'."
+description: "Dung khi mot CA NHAN muon len hinh bang AI thay vi tu quay — pipeline avatar AI: 3 tier cong cu, 4 workflow gom avatar don, dich da ngon ngu, san xuat hang loat va hybrid nguoi that cong AI; nhan anh reference de tao prompt avatar; thay mat, style, logo; ghep voice clone; tranh bi nen tang danh dau; cong bo AI theo Nghi dinh 147/2024 va QA 100 diem. Cong cu HeyGen, Synthesia, ElevenLabs, Captions, Vbee. Kich hoat khi user nhac 'tao avatar AI', 'video HeyGen', 'talking head AI', 'lam video ma ngai lo mat', 'batch video AI', 'dich video sang tieng Anh', 'prompt avatar'. Khong dung cho — clone giong cho podcast va audio thi dung skill 25-voice-clone-podcast; viet loi thoai video thi dung skill 04-script-video; anh tinh thi dung skill 30-thiet-ke-master."
 metadata:
-  version: 1.1.0
+  version: 1.1.1
   category: content
 license: MIT
 triggers:

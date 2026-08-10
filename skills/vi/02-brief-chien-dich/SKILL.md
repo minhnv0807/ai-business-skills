@@ -1,9 +1,9 @@
 ---
 name: 02-brief-chien-dich
-description: Brief chien dich marketing — 9 phan day du tu Context den Risk, bao gom creative direction, RACI, budget allocation theo phase, va auto-trigger cac skill lien quan.
+description: "Dung khi can brief mot chien dich cu the cho ca team thuc thi — muc tieu, thong diep, deliverable, timeline phan cong theo tuan, gate duyet va ma tran rui ro. Kich hoat khi user nhac 'brief chien dich', 'ke hoach campaign', 'len brief cho team', 'chien dich thang toi', 'phan cong campaign', 'timeline chien dich'. Khong dung cho — ke hoach marketing ca ky thi dung skill 00-ke-hoach-mkt; danh sach asset can thiet ke thi dung skill 41-campaign-asset-list; giao viec cho tung nguoi thi dung skill 64-team-brief."
 argument-hint: "<brand + campaign objective + timeline>"
 metadata:
-  version: 2.1.0
+  version: 2.1.1
   category: strategy
 triggers:
   - "brief chien dich"

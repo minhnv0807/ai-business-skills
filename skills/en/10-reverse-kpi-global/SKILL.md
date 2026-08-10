@@ -1,8 +1,8 @@
 ---
 name: 10-reverse-kpi-global
-description: "Reverse KPI calculation for global marketing budgets — work backward from revenue goal to required spend. Universal math, currency-specific per region (US/EU/SEA/LATAM). 3-scenario sensitivity analysis (pessimistic/realistic/optimistic). Trigger: 'reverse KPI', 'budget calculation', 'KPI breakdown', 'marketing budget plan', 'campaign budget'."
+description: "Use when the user needs to work backward from a revenue goal to the numbers that produce it — required leads, max CPA and CPL, funnel conversion thresholds, and the budget that has to be spent, with three scenarios and currency handling for US, EU, SEA, and LATAM. Trigger on 'reverse KPI', 'how much budget do I need', 'what CPA can I afford', 'work backward from revenue', 'how many leads to hit target', 'break-even ROAS'. Also use when the user names a revenue target and asks whether it is realistic. Not for — splitting an existing budget across channels and months, see `61-budget-planning-global`; a full paid media plan, see `54-media-plan-global`; the period plan, see `00-marketing-plan-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: strategy
 license: MIT
 triggers:

@@ -1,8 +1,8 @@
 ---
 name: 58-positioning-global
-description: "Use when the user needs to define or sharpen product/brand positioning: a positioning statement built on Promise + Proof + Path, a differentiation matrix against competitors, category entry points, a three-level message hierarchy, and tagline directions. Trigger on 'positioning', 'positioning statement', 'brand positioning', 'differentiation', 'USP', 'why should customers choose us', 'repositioning', or 'brand message'."
+description: "Use when positioning needs defining or sharpening — a statement built on Promise, Proof, and Path, a differentiation matrix against competitors, category entry points, a three-level message hierarchy, and tagline directions. Trigger on 'positioning', 'positioning statement', 'what makes us different', 'USP', 'why should customers choose us over them', 'we sound the same as everyone else'. Also use when the user can list features but not a reason to pick them. Not for — competitor teardown research, see `08-competitor-research-global`; how the brand sounds in writing, see `35-brand-voice-global`; the offer and its value stack, see `31-offer-design-global`; the launch built on it, see `59-go-to-market-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: strategy
 license: MIT
 triggers:

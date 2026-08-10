@@ -1,8 +1,8 @@
 ---
 name: 47-design-review-global
-description: "Use when the user wants a design reviewed against a scoring rubric across 4 groups — brand consistency, hierarchy and readability and accessibility, conversion elements, platform fit — 10 points each. Output is specific per-issue feedback plus a verdict of approve, minor fix, or redo. Trigger on 'design review', 'review this design', 'design feedback', 'score this design', 'brand check', 'is this design good', or 'approve this design'."
+description: "Use when a finished DESIGN needs scoring and feedback — brand consistency, hierarchy plus readability plus accessibility, conversion elements, and platform fit, 10 points each, with per-issue feedback in issue, why, and how-to-fix form and a verdict of approve, minor fix, or redo. Trigger on 'design review', 'review this design', 'score this creative', 'is this design good', 'brand check on this banner', 'can we ship this or not'. Also use when the user just sends an image and asks for thoughts. Not for — reviewing copy and briefs, see `62-marketing-review-global`; writing the brief before production, see `42-image-brief-global`; the brand rules being checked against, see `46-brand-guideline-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: operations
 license: MIT
 triggers:

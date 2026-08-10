@@ -1,8 +1,8 @@
 ---
 name: 47-design-review
-description: "Review thiet ke theo tieu chi cham diem 4 nhom: brand consistency, hierarchy va readability, conversion elements, platform fit — moi nhom 10 diem. Output feedback cu the tung van de kem cach sua + verdict approve / minor fix / redo. Kich hoat khi nhac: review design, duyet design, feedback thiet ke, cham diem design, check brand."
+description: "Dung khi da co THIET KE va can duyet truoc khi dang — cham diem 4 nhom brand consistency, hierarchy va do doc, yeu to chuyen doi, phu hop nen tang, moi nhom 10 diem, kem feedback theo dang van de - tai sao - cach sua va verdict duyet / sua nhe / lam lai. Kich hoat khi user nhac 'review design', 'duyet thiet ke', 'feedback thiet ke', 'cham diem design', 'anh nay ok chua', 'nhin sao sao ma khong biet sai cho nao', 'check brand', 'approve creative'. Dung ca khi user chi gui anh va hoi 'xem giup'. Khong dung cho — duyet CHU nhu content brief va ads copy thi dung skill 62-marketing-review; do xem trang co ra don khong thi dung skill 68-cro-audit-trang."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: operations
 license: MIT
 triggers:

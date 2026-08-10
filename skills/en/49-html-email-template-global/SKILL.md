@@ -1,8 +1,8 @@
 ---
 name: 49-html-email-template-global
-description: "Use when the user needs responsive HTML email that renders correctly in every major client: table-based structure, inline CSS, 600px max width, dark mode handling, per-client quirks for Gmail, Apple Mail, Outlook and Yahoo, and a pre-send test checklist. Colors and fonts come from the brand guideline. Trigger on 'HTML email', 'code an email', 'email template', 'responsive email', 'email broadcast HTML', or 'why does my email break in Outlook'."
+description: "Use when responsive HTML email has to render correctly in every client — table-based structure, inline CSS, 600px max width, dark mode handling, quirks for Gmail, Apple Mail, Outlook and Yahoo, bulletproof buttons, and a pre-send test checklist, shipping a self-contained .html file to paste into Klaviyo, Mailchimp, HubSpot, or Brevo. Trigger on 'HTML email', 'code an email template', 'responsive email', 'why does my email break in Outlook', 'email dark mode is broken', 'the newsletter looks wrong on mobile'. Not for — sequence strategy and subject lines, see `14-email-marketing-global`; a web page, see `12-landing-page-brief-global`; brand colors and fonts, see `46-brand-guideline-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: operations
 license: MIT
 triggers:

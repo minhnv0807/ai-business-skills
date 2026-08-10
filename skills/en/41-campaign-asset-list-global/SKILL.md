@@ -1,8 +1,8 @@
 ---
 name: 41-campaign-asset-list-global
-description: "Use when the user needs the full list of design assets a campaign requires before anyone opens a design tool: asset type, dimensions, channel, quantity, priority, owner, deadline, status. Deadlines are set backward from launch day on a T-14 to D+1 designer timeline. Trigger on 'campaign asset list', 'asset list', 'design checklist for campaign', 'what does the designer need', 'list the design files', 'creative asset list', or 'asset plan'."
+description: "Use when a campaign needs its full design asset list before anyone opens a tool — asset type, dimensions, channel, quantity, priority, owner, deadline, and status, with deadlines counted backward from launch day on a T-14 to D+1 timeline plus a naming convention. Trigger on 'campaign asset list', 'what does the designer need', 'list the design files', 'creative asset plan', 'how many banners do we need', 'the designer keeps asking what to make'. Not for — the spec for one individual image, see `42-image-brief-global`; a slide sequence, see `43-carousel-brief-global`; an urgent mid-campaign swap, see `48-quick-visual-brief-global`; resizing an existing master, see `50-asset-resize-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: operations
 license: MIT
 triggers:

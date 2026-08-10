@@ -1,8 +1,8 @@
 ---
 name: 41-campaign-asset-list
-description: "Tao danh sach day du asset thiet ke cho mot campaign: loai asset, kich thuoc, kenh, so luong, uu tien, owner, deadline, trang thai. Deadline dat nguoc tu ngay launch theo timeline designer T-14 den D+1. Kich hoat khi nhac: asset list campaign, danh sach asset, checklist design campaign, liet ke file thiet ke, designer can lam gi."
+description: "Dung khi campaign da chot huong va can biet phai thiet ke NHUNG GI — danh sach asset theo kenh kem kich thuoc, so luong, uu tien, nguoi lam, deadline dat nguoc tu ngay launch theo timeline T-14 den D+1 va quy uoc dat ten file. Kich hoat khi user nhac 'asset list', 'danh sach asset campaign', 'designer can lam gi', 'liet ke file thiet ke', 'campaign nay can bao nhieu anh', 'checklist design', 'khong biet con thieu asset nao'. Khong dung cho — brief chi tiet cho tung asset thi dung skill 42-brief-hinh-anh, 43-brief-carousel hoac 44-brief-video-editor; brief tong the chien dich cho ca team thi dung skill 02-brief-chien-dich; nhan mot master ra du kich thuoc thi dung skill 50-asset-resize."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: operations
 license: MIT
 triggers:

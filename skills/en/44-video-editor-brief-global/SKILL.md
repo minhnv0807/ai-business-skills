@@ -1,8 +1,8 @@
 ---
 name: 44-video-editor-brief-global
-description: "Use when the user needs a production brief for an editor or videographer: beat-by-beat storyboard, footage to shoot, text overlays, music, pacing, CTA end frame, and per-channel export specs. Different from 04-script-video-global, which writes the spoken lines. Trigger on 'video brief', 'editor brief', 'storyboard', 'brief for the video editor', 'shoot brief', 'videographer brief', or 'how should this video be cut'."
+description: "Use when an editor or videographer needs production direction — beat-by-beat storyboard, footage to shoot, b-roll, text overlays, music and pacing, transitions, CTA end frame, and per-channel export specs. This is the EDIT instruction, not the spoken script. Trigger on 'video brief', 'editor brief', 'storyboard', 'brief for the video editor', 'how should this video be cut', 'we have the footage and no direction'. Also use when raw clips exist and nobody knows what the final should look like. Not for — the words said on camera, see `04-script-video-global`; briefing a creator to film their own, see `06-ugc-egc-brief-global`; resizing a finished video, see `50-asset-resize-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: content
 license: MIT
 triggers:

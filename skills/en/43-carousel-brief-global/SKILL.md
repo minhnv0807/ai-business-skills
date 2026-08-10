@@ -1,8 +1,8 @@
 ---
 name: 43-carousel-brief-global
-description: "Use when the user needs a slide-by-slide carousel brief for Instagram, Facebook, or LinkedIn built on a narrative arc: hook on slide 1, value in the middle, CTA on the last slide. Includes an HTML preview step to approve the concept before production. Trigger on 'carousel brief', 'make a carousel', 'turn this into a carousel', 'slide brief', 'LinkedIn carousel', or 'render a carousel preview'."
+description: "Use when a multi-slide carousel is needed for Instagram, Facebook, or LinkedIn — a narrative arc with the hook on slide one, value through the middle, CTA on the last, headline, body, visual direction, and background per slide, plus an HTML preview to approve the concept before production. Trigger on 'carousel brief', 'make a carousel', 'turn this into slides', 'LinkedIn carousel', 'slide by slide breakdown', 'preview the carousel first'. Not for — a single static image, see `42-image-brief-global`; the caption posted with it, see `37-social-caption-global`; production steps inside Canva or Figma, see `45-design-tool-brief-global`; scoring the finished slides, see `47-design-review-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: content
 license: MIT
 triggers:

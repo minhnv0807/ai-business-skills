@@ -1,8 +1,8 @@
 ---
 name: 65-team-performance-review
-description: "Danh gia hieu suat thanh vien team marketing dua tren data: KPI scorecard theo role, strengths co vi du that, areas for improvement, development plan 30-90 ngay, rubric 1-5. Dung khi nhac 'danh gia nhan vien', 'performance review', 'review nhan su', '1:1 review thang', 'nguoi nay perform the nao'."
+description: "Dung khi can danh gia CON NGUOI trong team marketing dua tren du lieu — KPI scorecard theo tung vai tro writer, designer, media buyer; diem manh co vi du that; diem can cai thien; development plan 30-90 ngay; rubric cham 1-5. Kich hoat khi user nhac 'danh gia nhan vien', 'performance review', 'review nhan su', '1:1 review thang', 'nguoi nay lam duoc khong', 'co nen tang luong khong', 'feedback cho team member'. Khong dung cho — tong ket mot campaign thay vi con nguoi thi dung skill 63-campaign-retrospective; duyet chat luong mot output cu the thi dung skill 62-marketing-review; giao viec va dat deadline thi dung skill 64-team-brief."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: operations
 license: MIT
 triggers:

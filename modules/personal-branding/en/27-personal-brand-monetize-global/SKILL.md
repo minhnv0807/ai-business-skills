@@ -1,8 +1,8 @@
 ---
 name: 27-personal-brand-monetize-global
-description: "Personal brand monetization for global markets — 3 funnel versions (founder/coach/creator), offer ladder template (Free → Low → Mid → High), pricing psychology, outreach (inbound vs outbound), brand deal negotiation for creators. Has 4 region variants for TAX/LEGAL (LLC US, country-specific EU, Pte Ltd SEA, MEI LATAM). Trigger: 'personal brand monetize', 'offer ladder', 'course launch', 'coaching offer', 'creator economy', 'brand deals', 'sponsorship'."
+description: "Use when a PERSONAL brand needs to make money — three funnel versions for founder, coach, and creator, an offer ladder from free to low to mid to high ticket, pricing psychology, inbound versus outbound outreach, and brand deal and sponsorship negotiation, with tax and legal variants for US LLC, EU per country, SEA Pte Ltd, and LATAM MEI. Trigger on 'monetize my personal brand', 'offer ladder', 'launch my course', 'coaching packages', 'sponsorship rates', 'I have an audience and no income'. Not for — a company product offer, see `31-offer-design-global` and `17-pricing-strategy-global`; the strategy that comes first, see `23-personal-brand-strategy-global`; running the community, see `28-community-building-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: strategy
 license: MIT
 triggers:

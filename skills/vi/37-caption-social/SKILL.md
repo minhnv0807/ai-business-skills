@@ -1,8 +1,8 @@
 ---
 name: 37-caption-social
-description: "Viet caption organic cho Facebook / Instagram / TikTok theo tang pheu va brand voice — hook dong dau, body de doc tren mobile, 2 variant A/B, hashtag. Khac voi 05-copy-quang-cao (ads copy tra phi). Kich hoat khi nhac 'viet caption', 'caption Facebook', 'viet post', 'noi dung bai dang', 'caption TikTok'."
+description: "Dung khi can viet caption dang ORGANIC cho Facebook, Instagram, TikTok, Threads — khong chay tien, 2 bien the khac huong hook, kem hashtag va ghi chu chon ban. Kich hoat khi user nhac 'viet caption', 'caption Facebook', 'caption Instagram', 'noi dung dang bai', 'viet bai dang trang ca nhan', 'caption cho anh nay'. Khong dung cho — copy chay quang cao tra tien thi dung skill 05-copy-quang-cao; kich ban video thi dung skill 04-script-video; bai dang trong group cong dong thi dung skill 38-seeding-plan."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: content
 license: MIT
 triggers:

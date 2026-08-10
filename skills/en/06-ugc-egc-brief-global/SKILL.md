@@ -1,8 +1,8 @@
 ---
 name: 06-ugc-egc-brief-global
-description: "Detailed brief for UGC (customers), EGC (employees), KOC (paid creators) for global markets — shooting guide, do/don't, usage rights, batch management. Trigger: 'creator brief', 'UGC brief', 'EGC brief', 'employee video guide', 'KOC brief'."
+description: "Use when someone outside the marketing team has to film — a customer for UGC, an employee for EGC, or a paid creator or KOC — and needs a brief: talking points, shooting guide, do and do-not list, usage rights, deliverables, and batch management. Trigger on 'UGC brief', 'creator brief', 'KOC brief', 'brief for employee videos', 'what do I tell the influencer', 'we hired a creator to film'. Also use when the user asks how to get customers to make videos for the brand. Not for — a script the team writes and shoots itself, see `04-script-video-global`; edit direction for footage already shot, see `44-video-editor-brief-global`; posting inside communities, see `38-community-seeding-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: content
 license: MIT
 triggers:

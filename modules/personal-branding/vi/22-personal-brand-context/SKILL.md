@@ -1,8 +1,8 @@
 ---
 name: 22-personal-brand-context
-description: "Khi nguoi dung muon tao hoac cap nhat tai lieu goc ve personal brand — dinh vi ca nhan, niche, story arc, content pillars, audience ca nhan, brand voice, visual identity, visual asset inventory (anh style ref, face ref, logo, palette), monetization muc tieu. Cung dung khi nguoi dung nhac 'personal brand', 'thuong hieu ca nhan', 'ho so ca nhan', 'founder context', 'coach context', 'creator context', 'ICP cho ca nhan', 'anh reference ca nhan', 'visual identity ca nhan'. Foundation skill — chay TRUOC moi skill personal brand khac (23-28). Tao file `.agents/personal-brand-context.md` voi 13+ sections."
+description: "Dung khi bat dau xay thuong hieu CA NHAN cho mot con nguoi cu the — founder, coach, creator: skill nay tao file .agents/personal-brand-context.md gom dinh vi ca nhan, niche, story arc, content pillar, chan dung nguoi theo doi, brand voice, visual identity va kho anh reference. Chay MOT LAN truoc moi skill personal brand 23-28. Kich hoat khi user nhac 'thuong hieu ca nhan', 'personal brand', 'ho so ca nhan', 'founder context', 'coach context', 'creator context', 'muon xay hinh anh ca nhan', 'bat dau lam personal brand'. Khong dung cho — thuong hieu DOANH NGHIEP hoac san pham thi dung skill product-marketing-context; dinh vi cong ty tren thi truong thi dung skill 58-positioning."
 metadata:
-  version: 1.1.0
+  version: 1.1.1
   category: foundation
 license: MIT
 triggers:

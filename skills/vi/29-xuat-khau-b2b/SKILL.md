@@ -1,8 +1,8 @@
 ---
 name: 29-xuat-khau-b2b
-description: Chien luoc marketing xuat khau B2B cho doanh nghiep Viet Nam — tao ho so nha xuat khau, lap ke hoach trien khai thi truong nuoc ngoai, viet pitch deck va email chao hang quoc te, chuan bi cho hoi cho thuong mai. Triggers: "xuat khau", "B2B nuoc ngoai", "thi truong quoc te", "pitch khach nuoc ngoai", "ho so cong ty bang tieng Anh", "email chao hang export", "tham du hoi cho", "buyer nuoc ngoai", "company profile", "export marketing"
+description: "Dung khi doanh nghiep Viet Nam muon ban ra NUOC NGOAI theo duong B2B — ho so nang luc tieng Anh, chon thi truong muc tieu, pitch deck cho buyer, email chao hang quoc te, chuan bi hoi cho thuong mai va kenh Alibaba, Amazon Business. Kich hoat khi user nhac 'xuat khau', 'ban hang nuoc ngoai', 'tim buyer quoc te', 'company profile tieng Anh', 'email chao hang export', 'di hoi cho thuong mai', 'khach nuoc ngoai hoi gia', 'lam sao co don hang xuat khau'. Khong dung cho — tim va nuoi lead B2B trong nuoc thi dung skill 33-b2b-lead-gen; bo tai lieu ban hang va pipeline thi dung skill 71-sales-enablement; chuoi email nuoi duong thi dung skill 14-email-marketing."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: strategy
 license: MIT
 triggers:

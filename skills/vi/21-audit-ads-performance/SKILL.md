@@ -1,9 +1,9 @@
 ---
 name: 21-audit-ads-performance
-description: Audit toan dien tai khoan quang cao — cho diem Health Score 0-100, liet ke Quick Wins, phat hien vi pham Quality Gates, de xuat action plan theo muc do uu tien. Ho tro Meta Ads, TikTok Ads, Google Ads, Zalo Ads.
+description: "Dung khi can ra soat CAU HINH tai khoan quang cao mot cach he thong — 6 khau tu account, campaign, adset, creative, landing den tracking, cham Health Score 0-100 va liet ke Quick Wins. Kich hoat khi user nhac 'audit tai khoan ads', 'kiem tra tai khoan quang cao', 'health score ads', 'tai khoan chay kem qua', 'setup ads co dung khong', 'review tai khoan Meta'. Ho tro Meta, TikTok, Google, Zalo Ads. Khong dung cho — chan doan nhanh tai sao so xau thi dung skill 03-danh-gia-hieu-suat; lap ngan sach ky moi thi dung skill 54-media-plan."
 argument-hint: "<platform + account + period>"
 metadata:
-  version: 1.3.1
+  version: 1.3.2
   category: performance
 triggers:
   - "audit tai khoan ads"
@@ -219,7 +219,7 @@ Setup lai tu dau → `53-tracking-setup`.
 1. **Sua tu tren xuong theo khau** — tracking va account truoc, creative sau.
 2. **Moi lan chi doi 1 bien.** Doi 3 thu cung luc thi khong biet thu nao co tac dung.
 3. **Sau khi sua, cho 3-5 ngay moi danh gia.** Doc so sau 1 ngay la doc nhieu.
-4. **Adset CPL > 2x target sau 3 ngay → pause, khong cuu.** Ghi ly do vao log.
+4. **Giu/tat/scale theo thang CPA duy nhat** trong `skills/vi/references/quality-gates-vn.md` Gate 1 — dung tu dat nguong rieng o day. Tom tat: chua du data khi spend < 3x CPA muc tieu · winner ≤ 1.0x · theo doi 1.0-1.5x · thay creative khi > 1.5x keo dai 7 ngay · tat khi > 3.0x. Ghi ly do vao log truoc khi tat.
 5. **Sua xong va so on dinh >= 5 ngay → chuyen sang `55-scaling-ads`.** Chua on dinh thi khong scale.
 
 ---

@@ -1,8 +1,8 @@
 ---
 name: 45-design-tool-brief-global
-description: "Use when the user needs hands-on production direction for a designer working in a design tool (Canva, Figma, or Adobe Express): which template to start from, the operating order, element-by-element mapping, grid and spacing, export checklist, and dos and don'ts. Colors and fonts come from the brand kit. Trigger on 'design tool brief', 'Canva brief', 'Figma brief', 'production direction', 'layout direction', 'template direction', or 'how do I build this in Canva'."
+description: "Use when a designer needs hands-on production direction inside a tool — Canva, Figma, or Adobe Express: which template to start from, the operating order, element-by-element mapping, grid and spacing, brand kit colors and fonts, export checklist, and the dos and do-nots. Trigger on 'Canva brief', 'Figma brief', 'production direction', 'how do I build this in Canva', 'layout direction for the designer', 'the junior designer needs step by step'. Not for — the creative concept for a static, see `42-image-brief-global`; the concept for a slide sequence, see `43-carousel-brief-global`; the brand rules being applied, see `46-brand-guideline-global`; adapting one master into every size, see `50-asset-resize-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: operations
 license: MIT
 triggers:

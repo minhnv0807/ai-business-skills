@@ -1,8 +1,8 @@
 ---
 name: 53-tracking-setup-global
-description: "Use when the user needs to set up or fix conversion tracking before running ads: Meta Pixel and Conversions API, Google Ads conversion tracking with Enhanced Conversions, GA4, TikTok Pixel and Events API, server-side GTM, consent management for GDPR and CCPA, UTM conventions, iOS ATT attribution windows, and the pre-launch verification checklist. Trigger on 'tracking setup', 'pixel setup', 'conversions API', 'CAPI', 'GA4 setup', 'server-side tracking', 'consent mode', 'UTM convention', or 'conversion tracking not working'."
+description: "Use when conversion TRACKING must be set up or fixed before spending — Meta Pixel and Conversions API, Google Ads conversions with Enhanced Conversions, GA4, TikTok Pixel and Events API, server-side GTM, consent mode for GDPR and CCPA, UTM conventions, iOS ATT attribution windows, and a pre-launch verification checklist. Trigger on 'tracking setup', 'pixel setup', 'CAPI', 'GA4 events', 'conversions are not being recorded', 'Meta and Shopify numbers do not match'. Also use when launch is imminent and nothing has been verified. Not for — auditing a live account broadly, see `21-ads-audit-global`; analyzing data once it flows, see `13-data-analysis-global`; the campaign hierarchy, see `52-account-structure-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: performance
 license: MIT
 triggers:

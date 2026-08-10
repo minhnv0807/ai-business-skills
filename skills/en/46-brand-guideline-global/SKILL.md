@@ -1,8 +1,8 @@
 ---
 name: 46-brand-guideline-global
-description: "Use when the user wants to create or update a brand guideline: brand personality, color system, typography, logo usage, imagery and visual tone, component rules, accessibility contrast standards, standard asset sizes, naming and file organization. The output is the foundation document every design skill and the Brand Hub reads from. Trigger on 'brand guideline', 'brand book', 'brand identity', 'style guide', 'brand standards', 'brand palette', or 'update the brand guide'."
+description: "Use when brand VISUAL rules have to be created or updated — brand personality, color system, typography, logo usage, imagery and visual tone, component rules, accessibility contrast, standard asset sizes, and file naming. It is the source document every design skill and the Brand Hub reads. Trigger on 'brand guideline', 'brand book', 'style guide', 'brand standards', 'our designs all look different', 'update the brand palette'. Also use when the user has a logo and nothing written down. Not for — how the brand SOUNDS in writing, see `35-brand-voice-global`; positioning and the message, see `58-positioning-global`; briefing one asset, see `42-image-brief-global`; scoring a design, see `47-design-review-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: strategy
 license: MIT
 triggers:

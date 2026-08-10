@@ -1,8 +1,8 @@
 ---
 name: 14-email-marketing-global
-description: "Email marketing automation for global markets — welcome series, nurture sequences, re-engagement, transactional. Has 4 region variants for LEGAL compliance: US (CAN-SPAM opt-out), EU (GDPR opt-in mandatory), SEA (PDPA per country), LATAM (LGPD Brazil). Tools: Klaviyo, Mailchimp, ActiveCampaign. Trigger: 'email marketing', 'email automation', 'newsletter', 'drip campaign', 'GDPR email', 'CAN-SPAM'."
+description: "Use when the user needs email or lifecycle automation — welcome series, nurture, abandoned cart, re-engagement, broadcast, and transactional flows with subject lines, segmentation, cadence, and deliverability, plus legal variants: CAN-SPAM for US, GDPR opt-in for EU, PDPA for SEA, LGPD for LATAM. Covers Klaviyo, Mailchimp, and ActiveCampaign. Trigger on 'email marketing', 'welcome sequence', 'drip campaign', 'newsletter', 'abandoned cart emails', 'nobody opens our emails'. Not for — coding HTML that renders correctly in Outlook, see `49-html-email-template-global`; cold outbound to B2B prospects, see `33-b2b-lead-gen-global`; refer-a-friend loops, see `18-referral-program-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: operations
 license: MIT
 triggers:

@@ -1,8 +1,8 @@
 ---
 name: 35-brand-voice
-description: "Xay Brand Voice Document — nen tang cua content cluster: brand personality 3 tinh tu, tone of voice 5 chieu, vocabulary (dung/tranh/banned words), cau truc cau, 5 vi du before/after, platform adaptation va checklist duyet copy. Kich hoat khi nhac 'brand voice', 'tone of voice', 'giong brand', 'cach viet cua brand', 'brand personality'."
+description: "Dung khi can chot giong noi thuong hieu mot lan de moi output content ve sau nhat quan — personality 3 tinh tu, bang tone, tu duoc dung va tu cam, cau truc cau, va 5 vi du before/after. Kich hoat khi user nhac 'brand voice', 'giong brand', 'tone of voice', 'viet sao cho dung chat brand', 'moi nguoi viet moi kieu', 'thong nhat giong van'. Khong dung cho — quy dinh mau sac va font thi dung skill 46-brand-guideline; dinh vi thuong hieu thi dung skill 58-positioning; viet mot bai cu the thi dung skill 36-content-brief."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: content
 license: MIT
 triggers:

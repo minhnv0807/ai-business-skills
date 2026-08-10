@@ -1,8 +1,8 @@
 ---
 name: 10-tinh-kpi-nguoc
-description: Tinh KPI nguoc tu doanh thu ve ngan sach va tinh xuoi tu ngan sach ra doanh thu — 3 kich ban, sensitivity analysis, break-even, phan bo ngan sach theo giai doan va kenh
+description: "Dung khi can tinh nguoc tu muc tieu doanh thu ra so lead can, CPL toi da va ngan sach phai chi — kem 3 kich ban va nguong healthy tung buoc pheu. Kich hoat khi user nhac 'tinh KPI nguoc', 'CPL toi da la bao nhieu', 'can bao nhieu ngan sach', 'tinh nguoc tu doanh thu', 'muc tieu bao nhieu don', 'break-even ROAS'. Khong dung cho — phan bo ngan sach da co ra tung kenh va thang thi dung skill 61-budget-planning; lap media plan chi tiet theo funnel thi dung skill 54-media-plan."
 metadata:
-  version: 2.1.0
+  version: 2.1.1
   category: performance
 triggers:
   - "tinh KPI"

@@ -5,7 +5,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/v3.6.0-Bilingual%20Role%20SOP-6d28d9?style=for-the-badge&labelColor=1e1033" alt="v3.6.0"/>
-  <img src="https://img.shields.io/badge/Skills-138-6d28d9?style=for-the-badge&labelColor=1e1033" alt="138 Skills"/>
+  <img src="https://img.shields.io/badge/Skills-143-6d28d9?style=for-the-badge&labelColor=1e1033" alt="143 Skills"/>
   <img src="https://img.shields.io/badge/Agents-6-be185d?style=for-the-badge&labelColor=1e1033" alt="6 Agents"/>
   <img src="https://img.shields.io/badge/Workflows-19-0f766e?style=for-the-badge&labelColor=1e1033" alt="19 Workflows"/>
   <img src="https://img.shields.io/badge/Regions-VN%20%2B%20Global-f97316?style=for-the-badge&labelColor=1e1033" alt="VN + Global"/>
@@ -16,7 +16,7 @@
 <h1 align="center">ai-business-skills</h1>
 
 <p align="center">
-  <strong>Fullstack marketing skills cho AI agent — 138 skills bilingual (VN + Global).</strong>
+  <strong>Fullstack marketing skills cho AI agent — 143 skills bilingual (VN + Global).</strong>
   <br/>
   <sub>Vietnamese-first + Global (US/EU/SEA/LATAM) | Over Powers Agency</sub>
 </p>
@@ -41,7 +41,7 @@ ai-business-skills turns one marketing request into a routed workflow: context f
 flowchart LR
     UserRequest["User asks a marketing task"] --> Context["Foundation context<br/>.agents/*.md"]
     Context --> ModeRouter{"VN or Global?"}
-    ModeRouter --> VN["VN cluster<br/>69 skills"]
+    ModeRouter --> VN["VN cluster<br/>74 skills"]
     ModeRouter --> Global["Global cluster<br/>69 skills"]
     VN --> Agents["6 universal agents"]
     Global --> Agents
@@ -104,7 +104,7 @@ flowchart TD
 ```bash
 git clone https://github.com/minhnv0807/ai-business-skills.git
 cd ai-business-skills
-bash install.sh --global   # 138 skills -> ~/.claude/skills/marketing/
+bash install.sh --global   # 143 skills -> ~/.claude/skills/marketing/
 ```
 
 Windows:
@@ -139,7 +139,7 @@ Test ngay trong Claude Code:
 
 ---
 
-## 📦 138 Skills (bilingual VN + Global)
+## 📦 143 Skills (bilingual VN + Global)
 
 > Mỗi skill = 1 file `SKILL.md` với frontmatter triggers + workflow body. AI agent tự kích hoạt skill khi user nhắc trigger keyword.
 

@@ -75,6 +75,11 @@
 | 65-team-performance-review | 1.0.0 | 2026-07-30 | operations |
 | 66-crisis-playbook | 1.0.0 | 2026-07-30 | operations |
 | 67-agency-vendor-brief | 1.0.0 | 2026-07-30 | operations |
+| 68-cro-audit-trang | 1.0.0 | 2026-08-10 | performance |
+| 69-giu-chan-khach-hang | 1.0.0 | 2026-08-10 | operations |
+| 70-lead-magnet | 1.0.0 | 2026-08-10 | content |
+| 71-sales-enablement | 1.0.0 | 2026-08-10 | operations |
+| 72-hoi-dong-marketing | 1.0.0 | 2026-08-10 | strategy |
 | product-marketing-context-global | 1.0.0 | 2026-05-08 | foundation (global) |
 | 00-marketing-plan-global | 1.0.0 | 2026-05-08 | strategy (global) |
 | 01-content-calendar-global | 1.0.0 | 2026-05-08 | content (global) |
@@ -146,6 +151,27 @@
 | 67-agency-vendor-brief-global | 1.0.0 | 2026-07-30 | operations (global) |
 
 ## Changelog
+
+### 2026-08-10 — v3.7.0
+
+**Routing, thresholds, and five new skills.** Came out of a structured comparison against another open marketing-skills repo — more useful for what it exposed in our own repo than for what it suggested we add.
+
+**Fixed:**
+- Two validator bugs. It could not parse `description: |` block scalars (extracting the literal `|`, silently disabling every check for those skills), and its trigger check was a substring match on `dung|use|when` that any Vietnamese description passed by accident. The previously reported "89 passed" was not measuring anything. Honest baseline after the fix: **0 passed, 138 warnings**. With the parser working, `30-thiet-ke-master` and `30-design-master-global` turned out to have descriptions over the 1024-character spec limit.
+- Four contradictory ad kill thresholds consolidated into one ladder in `references/quality-gates-vn.md` Gate 1, anchored on target CPA so it recalibrates per account. Skills 21 and 54 now cite it instead of restating numbers.
+- Consent handling was in the Global tracking skill and missing from the Vietnamese one. Added, covering Nghi dinh 13/2023 domestically and GDPR consent mode v2 / CCPA cross-border.
+- `product-marketing-context` had no version field despite 60+ skills reading it. Added document version and changelog with bump rules.
+- Eleven source-attribution notes removed, two of which named real people.
+
+**Added:** 5 VN skills — `68-cro-audit-trang`, `69-giu-chan-khach-hang`, `70-lead-magnet`, `71-sales-enablement`, `72-hoi-dong-marketing`. Plus `.claude-plugin/plugin.json` (was missing; `claude plugin update` reads its version).
+
+**Changed:**
+- All 143 descriptions rewritten to a 4-part pattern (intent, quoted trigger phrases, broadening clause, sibling routing) because the model routes on `name` and `description` only — `triggers:` is documentation and is never seen at selection time. **Result: 143/143 PASS, 0 warnings.**
+- `32-seo-growth` rebuilt from 5.9 KB to a working skill plus 11 validated JSON-LD templates (repo previously had zero).
+- `hook-formulas-vn.md` models a hook as three simultaneous components with a no-duplication rule and a component-level diagnostic; read by skills 01, 04, 05.
+- `34-ai-marketing-os` gains a two-tier action model, spend caps and a kill switch.
+- `33-b2b-lead-gen` gains evidence discipline (source URL, verification date, confidence per lead; no Hot label without a named buying signal) and Zalo/phone-first outreach.
+- Marketplace 138 → 143 skills; version 3.7.0.
 
 ### 2026-07-30 — v3.6.0
 

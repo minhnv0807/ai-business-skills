@@ -1,9 +1,9 @@
 ---
 name: 00-ke-hoach-mkt
-description: Ke hoach Fullstack Marketing — master skill tong hop chien luoc, noi dung, trien khai, hieu suat, va timeline. Goi cac skill con de hoan thien output.
+description: "Dung khi can ke hoach marketing tong the cho mot ky — muc tieu, phan khuc, kenh, ngan sach, timeline, KPI va ma tran rui ro. Co ca che do ban day du va che do ke hoach 1 trang cho chu doanh nghiep nho. Kich hoat khi user nhac 'lap ke hoach marketing', 'ke hoach MKT', 'marketing plan', 'chien luoc marketing nam', 'plan quy toi', 'ke hoach 1 trang'. Khong dung cho — tinh nguoc ngan sach tu doanh thu thi dung skill 10-tinh-kpi-nguoc; phan bo ngan sach chi tiet theo kenh thi dung skill 61-budget-planning; brief mot chien dich cu the thi dung skill 02-brief-chien-dich."
 argument-hint: "<sản phẩm + objective + target user>"
 metadata:
-  version: 2.0.0
+  version: 2.0.1
   category: strategy
 triggers:
   - "lap ke hoach marketing"

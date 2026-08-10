@@ -5,7 +5,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/v3.6-Bilingual%20Role%20SOP-6d28d9?style=for-the-badge&labelColor=1e1033" alt="v3.6"/>
-  <img src="https://img.shields.io/badge/Skills-138-6d28d9?style=for-the-badge&labelColor=1e1033" alt="138 Skills"/>
+  <img src="https://img.shields.io/badge/Skills-143-6d28d9?style=for-the-badge&labelColor=1e1033" alt="143 Skills"/>
   <img src="https://img.shields.io/badge/Agents-6-be185d?style=for-the-badge&labelColor=1e1033" alt="6 Agents"/>
   <img src="https://img.shields.io/badge/Workflows-19-0f766e?style=for-the-badge&labelColor=1e1033" alt="19 Workflows"/>
   <img src="https://img.shields.io/badge/Market-Vietnam%202025--2026-f97316?style=for-the-badge&labelColor=1e1033" alt="Vietnam Market"/>
@@ -18,7 +18,7 @@
     <img src="https://img.shields.io/badge/%E2%98%95%20Moi%20Toi%20Mot%20Coffee-Ung%20ho%20Open%20Source-ff5e5b?style=for-the-badge" alt="Ung ho du an"/>
   </a>
   <br/>
-  <sub><b>💖 138 skills, 100% mien phi & MIT — neu giup ban tiet kiem thoi gian, hay ung ho tai <a href="https://www.opa.business/donate">opa.business/donate</a></b></sub>
+  <sub><b>💖 143 skills, 100% mien phi & MIT — neu giup ban tiet kiem thoi gian, hay ung ho tai <a href="https://www.opa.business/donate">opa.business/donate</a></b></sub>
 </p>
 
 > **🆕 v3.6.0 (2026-07-30)** — Role SOP Packs Go Global.
@@ -66,7 +66,7 @@ Repo nay co 3 tang de doc cho de: **context** giu thong tin san pham, **skills**
 flowchart LR
     UserRequest["Ban dua yeu cau marketing"] --> Context["Foundation context<br/>.agents/*.md"]
     Context --> Router{"Du an VN hay Global?"}
-    Router --> VN["Cum VN<br/>69 skills"]
+    Router --> VN["Cum VN<br/>74 skills"]
     Router --> Global["Cum Global<br/>69 skills"]
     VN --> Agents["6 agents universal"]
     Global --> Agents
@@ -226,7 +226,7 @@ Copy file `.md` lam Custom Instructions hoac context. Moi file la 1 prompt doc l
 
 ---
 
-## 138 Skills (69 VN + 69 Global)
+## 143 Skills (74 VN + 69 Global)
 
 ### Cum VN — Marketing core + Personal Brand (36 skills: ★, 00-34)
 
@@ -521,6 +521,16 @@ Bon bo SOP theo vai tro. Moi skill la quy trinh van hanh day du: cac khau, input
 | 65 | [Team Performance Review](skills/vi/65-team-performance-review/SKILL.md) | KPI scorecard theo role, development plan 30/90 ngay |
 | 66 | [Crisis Playbook](skills/vi/66-crisis-playbook/SKILL.md) | Phan loai L1-L5, quy trinh 4 gio dau, template phan hoi, escalation |
 | 67 | [Agency Vendor Brief](skills/vi/67-agency-vendor-brief/SKILL.md) | Scope of work, revision rounds, payment milestone, IP, danh gia vendor |
+
+**Chuyen doi, giu chan va ban hang (68-72)** ⭐ v3.7.0 — lap 5 khoang trong lon nhat sau khi doi chieu voi repo skill marketing khac:
+
+| # | Skill | Lam gi |
+|---|-------|--------|
+| 68 | [CRO Audit Trang](skills/vi/68-cro-audit-trang/SKILL.md) | Chan doan trang DANG CHAY ma khong ra don, theo 7 chieu xep theo thu tu tac dong. Coi luong inbox Zalo/Messenger va listing Shopee/TikTok Shop la be mat chuyen doi hang nhat, khong phai truong hop phu. Co che do hoi quy khi "sua xong lai kem hon truoc" |
+| 69 | [Giu Chan Khach Hang](skills/vi/69-giu-chan-khach-hang/SKILL.md) | Retention va win-back, re nhanh theo mo hinh kinh doanh (mua 1 lan / goi lieu trinh / the thanh vien / thue bao). Tin hieu sap mat khach viet theo du lieu SME VN that co: so ngay so voi chu ky rieng cua khach, no-show, ngung mo tin Zalo OA |
+| 70 | [Lead Magnet](skills/vi/70-lead-magnet/SKILL.md) | Thiet ke cai mien phi doi lay thong tin lien he — truoc day khong skill nao so huu. Giao qua Zalo/Messenger truoc, xin so dien thoai thay vi email |
+| 71 | [Sales Enablement](skills/vi/71-sales-enablement/SKILL.md) | Tai lieu ban hang + pipeline gop 1 skill vi o SME VN cung mot nguoi lam ca hai. Co thu vien xu ly phan doi kieu VN va phuong an khong co CRM |
+| 72 | [Hoi Dong Marketing](skills/vi/72-hoi-dong-marketing/SKILL.md) | Nam archetype an danh, bat buoc co nguoi phan bien, san pham chinh la ban do bat dong. Chong kieu that bai pho bien nhat khi dung AI mot minh: AI dong y voi ban |
 
 > **Kho kien thuc nen tang:** [`knowledge/`](knowledge/) — 10 file tu duy + `knowledge/trien-khai/`. Dung lam context upload cho AI project theo vai tro (Leader/Content/Designer/Performance). Kien truc 5 role project: skill [`34-ai-marketing-os`](skills/vi/34-ai-marketing-os/SKILL.md).
 

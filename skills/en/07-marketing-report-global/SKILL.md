@@ -1,8 +1,8 @@
 ---
 name: 07-marketing-report-global
-description: "Marketing reports under 'read 5 minutes, know what to do next' principle — insights first, numbers as proof, recommendations with deadlines and owners. For global markets. Trigger: 'marketing report', 'monthly summary', 'weekly summary', 'monthly results', 'monthly report', 'performance report'."
+description: "Use when the user needs to WRITE a marketing report someone else will read — a one-page weekly for a CEO, a full monthly, or a quarterly strategy report with TL;DR, results versus target, insight, decisions needed, and next actions with owners. Trigger on 'marketing report', 'monthly report', 'weekly update for my boss', 'report for the client', 'quarterly summary', 'turn these numbers into a report'. Also use when the user says a stakeholder is asking how marketing is doing. Not for — diagnosing why the numbers are bad, see `03-performance-eval-global`; turning a raw export into insight, see `13-data-analysis-global`; a closed campaign retrospective, see `63-campaign-retrospective-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: operations
 license: MIT
 triggers:

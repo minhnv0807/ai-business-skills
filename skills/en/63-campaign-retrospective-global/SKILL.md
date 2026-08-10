@@ -1,8 +1,8 @@
 ---
 name: 63-campaign-retrospective-global
-description: "Use when a campaign has ended and the team needs a structured retrospective: a scorecard of results versus target, what worked / what did not / why with evidence, surprises, lessons written back into the playbook and Brand Hub, and action items with owners. Trigger on 'campaign retrospective', 'campaign retro', 'post-mortem', 'campaign debrief', 'what worked what did not', or 'lessons from the campaign'."
+description: "Use when a campaign has ENDED and the team needs a structured retrospective — a scorecard against target, what worked, what did not, and why with evidence, surprises, process review, lessons written back into the playbook and Brand Hub, and action items with owners. Trigger on 'campaign retrospective', 'campaign retro', 'post-mortem', 'campaign debrief', 'what worked and what did not', 'the campaign is over, what did we learn'. Also use when a campaign underdelivered and the team is arguing about why. Not for — a periodic performance report, see `07-marketing-report-global`; diagnosing live numbers mid-flight, see `03-performance-eval-global`; the next period ads plan, see `57-next-ads-plan-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: operations
 license: MIT
 triggers:

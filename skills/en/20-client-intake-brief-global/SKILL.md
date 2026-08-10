@@ -1,8 +1,8 @@
 ---
 name: 20-client-intake-brief-global
-description: "Generic client intake brief for international marketing agencies — 11-section template covering business overview, target audience, current marketing, goals, budget, timeline, brand assets, success criteria. Generic version (no industry variants for v2.5 — coming in v2.6+ if demand). Trigger: 'client intake', 'agency brief', 'new client onboarding', 'project kickoff brief', 'discovery call template'."
+description: "Use when an agency or freelancer takes on a NEW client and needs everything up front — an 11-section intake covering business overview, audience, current marketing, goals, budget, timeline, brand assets, approval process, and success criteria, written for the client to fill in and return. Trigger on 'client intake', 'agency brief', 'onboard a new client', 'discovery call template', 'what should I ask a new client', 'kickoff questionnaire'. Also use when the user just signed someone and does not know where to begin. Not for — the internal context file the skills read, see `product-marketing-context-global`; the plan built from the answers, see `00-marketing-plan-global`; briefing an outside vendor, see `67-agency-vendor-brief-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: operations
   language: en
 license: MIT

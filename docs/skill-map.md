@@ -122,7 +122,7 @@
 
 ---
 
-## Bang tra nhanh — 138 Skills (69 VN + 69 Global)
+## Bang tra nhanh — 143 Skills (74 VN + 69 Global)
 
 | # | Skill | Lam gi | Khi nao dung | Output |
 |---|-------|--------|-------------|--------|

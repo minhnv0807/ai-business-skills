@@ -9,6 +9,37 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## v3.7.0 — Routing, thresholds, and five new skills (2026-08-10)
+
+Came out of a structured comparison against another open marketing-skills repo. The comparison was less useful for what it suggested we add than for what it exposed in what we already had.
+
+### Fixed — defects the old validator was hiding
+
+- **`validate-skills.sh` and `.ps1` could not parse `description: |` block scalars.** They extracted the literal `|`, which silently disabled the length and trigger checks for those skills. With the parser fixed, `30-thiet-ke-master` and `30-design-master-global` turned out to have descriptions of 1329 and 1210 characters — both over the spec limit of 1024. Rewritten.
+- **The trigger check was a substring match** on `khi|when|dung|use|mention`, so any Vietnamese description containing "dung" passed. The reported "89 passed" was not measuring what it claimed. It now counts actual quoted trigger phrases (minimum 3) and requires a sibling-routing clause. Honest baseline at the time of the fix: **0 passed, 138 warnings, 0 issues**.
+- **Four contradictory kill thresholds** for the same decision — `quality-gates-vn.md` said CPA > 3× target, `21-audit-ads-performance` said CPL > 2× after 3 days, `54-media-plan` said > 150%, and a user hit all of them in one session. Consolidated into a single ladder in `quality-gates-vn.md` Gate 1, anchored on one variable (target CPA) so it recalibrates per account: hold below 3× spend, winner ≤ 1.0×, monitor 1.0–1.5×, swap above 1.5× sustained 7 days, kill above 3.0×. Skills 21 and 54 now cite it instead of restating numbers. (`55-scaling-ads` measures a delta after a budget increase — a different instrument, left intact and now labelled as such.)
+- **Consent handling existed in the Global tracking skill and was missing entirely from the Vietnamese one.** Added, covering Nghi dinh 13/2023 for domestic traffic and GDPR consent mode v2 / CCPA for any cross-border traffic.
+- **`product-marketing-context` had no version field** despite 60+ skills reading it as source of truth. Added a document version and changelog section with bump rules.
+- **Eleven source-attribution notes** remained in the repo, two naming real people with follower counts. All removed.
+- `33-b2b-lead-gen` now routes foreign-buyer work to `29-xuat-khau-b2b`, which it never referenced.
+
+### Added — 5 new VN skills
+
+- `68-cro-audit-trang` — diagnose a page that is live but not converting, in a fixed impact order. Treats the Zalo/Messenger inbox flow and Shopee/TikTok Shop listing as first-class conversion surfaces, not web-page edge cases. Includes a regression mode for "we redesigned it and it got worse".
+- `69-giu-chan-khach-hang` — retention and win-back, branching on business model (one-off / package / membership / subscription). Churn signals rewritten off product telemetry onto what a Vietnamese SME actually observes: days since last visit against that customer's own cycle, no-shows, Zalo OA read collapse, unfinished treatment packages.
+- `70-lead-magnet` — designing the free thing you trade for contact details. Previously unowned: skill 12 built the page, skill 14 nurtured afterwards, skill 31 covered the paid offer. Delivery is Zalo/Messenger-first and the lowest-friction ask is a phone number, both inverted from the usual email-first assumption.
+- `71-sales-enablement` — sales collateral plus pipeline handoff as one skill, because at SME scale it is one person. Includes a Vietnamese objection library and a no-CRM fallback.
+- `72-hoi-dong-marketing` — five anonymous archetypes with a mandatory dissenter and a disagreement map. Counters the dominant failure mode of a solo operator using AI: the AI agrees with them.
+
+### Changed
+
+- **`32-seo-growth` rebuilt** from 5.9 KB (a routing stub) to a working skill, plus `references/schema-json-ld.md` with 11 validated JSON-LD templates — the repo previously had zero. Vietnamese specifics that do not exist in generic guides: VND prices must be written unpunctuated (`"450000"`, since `"450.000"` parses as 450 dong), Tet closure handling via `specialOpeningHoursSpecification`, and NAP consistency after the July 2025 administrative restructuring. Corrects several points that are stale in common guidance: FAQPage and HowTo rich results (restricted 2023 / removed 2023), the sitelinks search box (retired 2024), and `Google-Extended` being described as a crawler.
+- **`hook-formulas-vn.md`** — a hook is now modelled as three simultaneous components (0-3s visual, first spoken line, text overlay) with a no-duplication rule, a diagnostic table mapping each weak metric to the component at fault, and the on-ramp exception to the one-variable testing rule. Read by skills 01, 04 and 05, all version-bumped.
+- **`34-ai-marketing-os`** — a two-tier action model, spend caps, allowlists and a mandatory kill switch. The repo recommended AI automation to SMEs without ever defining a safety boundary.
+- **`33-b2b-lead-gen`** — evidence discipline: every prospect row requires a source URL, a verification date and a confidence level, and no lead may be labelled Hot without a named buying signal. Outreach rewritten for Zalo and phone as primary channels.
+- `19-ab-test-setup` gains sample-size lookup tables and a 72-idea test bank; `31-offer-design` gains bonus typology and payment-structure levers; `17-pricing-strategy` gains the four tier-differentiation axes, which previously left tier design arbitrary.
+- All descriptions rewritten to a 4-part pattern — intent, verbatim trigger phrases, broadening clause, sibling routing — because the model routes on `name` and `description` only. The `triggers:` key is documentation; it is never seen at selection time.
+
 ## v3.6.0 — Role SOP Packs Go Global (2026-07-30)
 
 ### Added

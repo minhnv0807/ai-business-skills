@@ -1,8 +1,8 @@
 ---
 name: 26-thought-leadership-content-global
-description: "Long-form text content for global personal brand — DIFFERENT from skill 05 (ad copy for sales). 3 structures: PAS-Insight (founder), Story-Lesson-CTA (coach), Hook-List-Reveal (creator). 6 hook formulas. Platforms: LinkedIn, Twitter/X, Substack, Medium. 1:5 repurpose. QA Score 100. Trigger: 'LinkedIn post', 'thought leadership', 'long-form content', 'newsletter post', 'Twitter thread', 'Substack'."
+description: "Use when a PERSONAL brand needs long-form WRITTEN content that builds authority rather than sells — LinkedIn posts, X threads, Substack and Medium essays, using PAS-Insight for founders, Story-Lesson-CTA for coaches, and Hook-List-Reveal for creators, with six hook formulas and a 1-to-5 repurpose. Trigger on 'LinkedIn post', 'thought leadership', 'write a Twitter thread', 'newsletter essay', 'Substack post', 'I want to be known for this topic'. Also use when the user has an opinion and wants it turned into a post. Not for — company brand captions, see `37-social-caption-global`; paid ad copy, see `05-ad-copy-global`; short video scripts, see `04-script-video-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: content
 license: MIT
 triggers:

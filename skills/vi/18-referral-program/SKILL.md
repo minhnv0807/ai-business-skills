@@ -1,8 +1,8 @@
 ---
 name: 18-referral-program
-description: "Khi nguoi dung can thiet ke chuong trinh gioi thieu bạn be (referral program), affiliate, hoac word-of-mouth. Cung dung khi nguoi dung nhac 'referral program', 'chuong trinh gioi thieu', 'affiliate', 'word of mouth', 'hoa hong gioi thieu', 'ma moi ban', 'giam gia khi gioi thieu'. Skill nay thiet ke referral mechanics (thuong 1 chieu / 2 chieu), tracking, chong gian lan, va campaign launch — toi uu cho thi truong VN."
+description: "Dung khi muon khach cu keo khach moi — thiet ke chuong trinh gioi thieu, affiliate, ma moi ban: co che thuong mot chieu hay hai chieu, muc thuong, cach theo doi, chong gian lan va kich ban ra mat chuong trinh. Kich hoat khi user nhac 'chuong trinh gioi thieu', 'referral program', 'affiliate', 'ma moi ban', 'hoa hong gioi thieu', 'word of mouth', 'khach gioi thieu khach', 'CTV ban hang huong hoa hong'. Khong dung cho — giu chan khach cu de ho mua lai thi dung skill 69-giu-chan-khach-hang; xay cong dong quanh thuong hieu ca nhan thi dung skill 28-community-building; thue KOC va creator quay bai thi dung skill 06-brief-ugc-egc."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: operations
 license: MIT
 related:

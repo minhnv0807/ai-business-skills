@@ -1,8 +1,8 @@
 ---
 name: 56-retargeting-plan-global
-description: "Use when the user needs a retargeting and lookalike plan: warm audience tiers, a different message per tier, frequency caps, attribution windows, lookalike seeds, exclusions, and a first-party data base that survives iOS ATT and cookie deprecation. Trigger on 'retargeting', 'remarketing', 'warm audience', 'custom audience', 'lookalike audience', 'retarget cart abandoners', or 'my retargeting pool is shrinking'."
+description: "Use when warm audiences need a plan — retargeting tiers by intent and recency, a different message per tier, frequency caps, attribution windows, lookalike seeds, exclusion rules, and a first-party data base that survives iOS ATT and cookie deprecation. Trigger on 'retargeting', 'remarketing', 'warm audience', 'custom audience setup', 'retarget cart abandoners', 'my retargeting pool is too small'. Also use when the user says people visit once and never come back. Not for — cold prospecting audiences, see `51-audience-research-global`; the pixel and events that feed these audiences, see `53-tracking-setup-global`; email win-back flows, see `14-email-marketing-global`; raising budgets, see `55-scaling-ads-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: performance
 license: MIT
 triggers:

@@ -1,8 +1,8 @@
 ---
 name: 17-pricing-strategy
-description: "Khi nguoi dung can thiet lap gia san pham/dich vu, thay doi chien luoc gia, hoac toi uu pricing page. Cung dung khi nguoi dung nhac 'chien luoc gia', 'dinh gia san pham', 'pricing strategy', 'pricing tier', 'goi dich vu', 'discount strategy', 'gia vs doi thu', 'goi combo'. Skill nay giup xac dinh mo hinh gia + chien thuat dinh gia + pricing page — toi uu cho tam ly khach hang VN."
+description: "Dung khi can dat gia hoac sua gia san pham va dich vu — chon mo hinh gia, thiet ke bac goi, neo gia, chien thuat giam gia, so sanh gia voi doi thu va cach bay bang gia tren trang. Kich hoat khi user nhac 'dinh gia san pham', 'chien luoc gia', 'pricing', 'nen ban bao nhieu tien', 'chia goi dich vu', 'co nen giam gia khong', 'khach che dat', 'doi thu re hon minh nhieu qua', 'tang gia co mat khach khong'. Khong dung cho — dong goi gia tri, bonus va bao hanh quanh muc gia thi dung skill 31-offer-design; phan bo ngan sach chi cho marketing thi dung skill 61-budget-planning; thiet ke va viet trang bang gia thi dung skill 12-brief-landing-page."
 metadata:
-  version: 1.0.0
+  version: 1.1.1
   category: strategy
 license: MIT
 related:
@@ -37,6 +37,39 @@ Doc `.agents/product-marketing-context.md` neu co.
 | **Package (combo)** | Tang perceived value | Spa lieu trinh 5 buoi |
 | **Freemium** | Tep lon, tle convert thap | App, tool online, khoa hoc |
 | **Pay-as-you-go** | Su dung khong deu | Cloud, API, credit |
+
+---
+
+## Phan tang theo truc nao
+
+"3 goi, lam noi bat goi giua" moi chi la hinh dang. Cau hoi that la: **goi cao hon goi thap o CHO NAO?** Khong chot truc phan tang thi cac goi se duoc ghep tuy tien, va khach khong biet minh dang tra them tien de doi lay gi.
+
+| Truc | Goi cao hon co gi | Hop voi | Cai bay thuong gap |
+|------|------------------|---------|-------------------|
+| **Tinh nang** | Mo khoa nhung thu goi thap khong co | Phan mem, cong cu, khoa hoc co module nang cao | Khoa mat tinh nang ma khach coi la co ban — ho thay bi chan chu khong thay duoc nang cap |
+| **Han muc su dung** | Nhieu hon: so buoi, so luot, dung luong, so nguoi dung | Spa/lieu trinh, dich vu theo goi, SaaS tinh theo luot, cloud | Han muc goi thap qua chat thi khach vuot ngay thang dau va thay bi gai; qua rong thi khong ai len goi cao |
+| **Muc ho tro** | Ho tro nhanh hon va sau hon: email → uu tien → co nguoi phu trach rieng | Dich vu B2B, agency, phan mem cho doanh nghiep, coaching | Ha ho tro goi thap xuong muc te de ep len goi cao — doi lai danh gia xau va hoan tien |
+| **Quyen truy cap va tuy chinh** | Mo them quyen: nhieu tai khoan, phan quyen, gan thuong hieu rieng, ket noi he thong | Khoa hoc/cong dong, phan mem ban cho doi nhom, nen tang | Ban quyen quan tri cho nguoi dung mot minh — khong ai tra them |
+
+### Quy tac chon truc
+
+**Chon 1 truc chinh, toi da them 1 truc phu. Khong dung ca 4.** Khi goi cao vua nhieu tinh nang, vua nhieu luot, vua ho tro tot hon, vua nhieu quyen hon — khach khong so sanh noi va se chon goi re nhat cho an toan, hoac khong chon gi.
+
+Kiem tra nhanh: co dien duoc cau nay khong — "Len goi tren, ban duoc them ___." Neu phai liet ke 4 thu khac loai moi tra loi duoc thi truc phan tang chua ro.
+
+Truc phu tot nhat gan nhu luon la **muc ho tro** — no ghep duoc voi ba truc con lai ma khong lam roi cach so sanh.
+
+### Vi du VN theo loai kinh doanh
+
+| Loai kinh doanh | Truc chinh | Truc phu | Ba goi trong nhu the nao |
+|----------------|-----------|---------|------------------------|
+| Spa / tham my | Han muc su dung | Muc ho tro | 5 buoi · 10 buoi · 20 buoi + ky thuat vien co dinh |
+| Khoa hoc / dao tao | Quyen truy cap | Muc ho tro | Hoc mot minh · Hoc + nhom hoi dap · Hoc + kem 1:1 va truy cap tron doi |
+| Phan mem / cong cu | Tinh nang | Han muc su dung | Tinh nang co ban 1 nguoi · Day du 5 nguoi · Day du khong gioi han + ket noi he thong |
+| Dich vu agency | Muc ho tro | Han muc su dung | Bao cao thang · Bao cao thang + hop tuan · Nguoi phu trach rieng, phan hoi trong ngay |
+| Ban le / TMDT | Han muc su dung (so luong) | — | Ban le · Combo 3 · Combo 6 kem qua tang |
+
+Trong moi vi du tren, **goi giua la goi muon ban** — no phai la buoc nhay hop ly tu goi thap, khong phai goi thap cong them vai thu vun vat.
 
 ---
 
@@ -111,24 +144,27 @@ COMBO 3 dich vu:   999K   (tiet kiem 201K — khach cam thay loi)
 ### Cau truc chuan (tu trai sang phai)
 
 ```
-[Goi 1: Starter/Basic]    [Goi 2: Pro - HIGHLIGHT]    [Goi 3: Enterprise]
-Gia thap                   Gia trung binh (anchor)      Gia cao (decoy)
-3-4 feature                7-8 feature                   Full feature
+[Goi 1: Khoi dau]         [Goi 2: Chinh - HIGHLIGHT]   [Goi 3: Cao cap]
+Gia thap                   Gia trung binh (anchor)      Gia cao (neo)
+Muc thap cua truc chinh    Muc du dung cua truc chinh   Muc cao nhat + truc phu
 Khong highlight            "Pho bien nhat" badge         "Lien he tu van"
 CTA: "Thu mien phi"       CTA: "Bat dau ngay"          CTA: "Dat lich demo"
 ```
+
+Ba goi phai khac nhau tren **cung mot truc** (xem muc "Phan tang theo truc nao"). Neu goi 2 hon goi 1 ve tinh nang con goi 3 hon goi 2 ve ho tro, khach khong doc duoc mach so sanh.
 
 ### Yeu cau pricing page
 
 | Yeu to | Can co |
 |--------|--------|
 | 3 goi (khong hon 4) | De so sanh |
+| Truc phan tang ro rang | Moi goi khac nhau tren cung 1-2 truc, khong moi goi mot kieu |
 | Highlight goi trung tam | Dinh huong chon |
 | Monthly/Yearly toggle | Yearly -15-20% |
 | Feature comparison table | So sanh chi tiet |
 | FAQ | Xu ly rao can gia |
 | Testimonial gan goi | Social proof |
-| Gia rõ rang, khong "lien he de bao gia" (B2C) | Tao tin |
+| Gia ro rang, khong "lien he de bao gia" (B2C) | Tao tin |
 | Trial mien phi / refund policy | Giam rui ro |
 
 ---
@@ -186,12 +222,14 @@ Ngay: [YYYY-MM-DD]
 Ly do chon: [...]
 
 ## 2. Pricing matrix (3 goi)
+Truc chinh: [Tinh nang / Han muc su dung / Muc ho tro / Quyen truy cap]
+Truc phu: [Chon 1 hoac de trong]
 
-| Goi | Gia | Target | Feature | CTA |
-|-----|-----|--------|---------|-----|
-| Basic | X | Tep nhay cam gia | [...] | "[CTA]" |
-| Pro | Y | Muc tieu chinh | [...] | "[CTA]" |
-| Premium/Enterprise | Z | Anchor | [...] | "[CTA]" |
+| Goi | Gia | Target | Muc tren truc chinh | Truc phu | CTA |
+|-----|-----|--------|--------------------|---------|-----|
+| Khoi dau | X | Tep nhay cam gia | [...] | [...] | "[CTA]" |
+| Chinh | Y | Muc tieu chinh | [...] | [...] | "[CTA]" |
+| Cao cap | Z | Anchor | [...] | [...] | "[CTA]" |
 
 ## 3. Chien thuat gia
 
@@ -238,6 +276,8 @@ Gia ban: Z
 ## Checklist chat luong
 
 - [ ] Co 3 goi (khong 1, khong 4+)
+- [ ] Da chot truc phan tang: 1 truc chinh + toi da 1 truc phu — khong tron ca 4
+- [ ] Dien duoc cau "Len goi tren, ban duoc them ___" bang 1 y duy nhat
 - [ ] Goi giua duoc highlight
 - [ ] Co feature comparison
 - [ ] Charm hoac anchor pricing ro rang

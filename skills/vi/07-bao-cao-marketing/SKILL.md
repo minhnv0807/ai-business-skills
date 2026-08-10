@@ -1,9 +1,9 @@
 ---
 name: 07-bao-cao-marketing
-description: Bao cao marketing theo nguyen tac "doc 5 phut, biet lam gi tiep" — nhan dinh truoc, so lieu minh hoa, de xuat co thoi han va nguoi phu trach
+description: "Dung khi can viet bao cao marketing cho nguoi khac doc — weekly 1 trang cho CEO, monthly day du, hoac strategy report theo quy. Cau truc TL;DR, so vs target, insight, quyet dinh can duyet, viec tiep theo. Kich hoat khi user nhac 'bao cao marketing', 'report thang', 'weekly update cho sep', 'tong ket quy', 'lam bao cao cho khach hang', 'bao cao content'. Khong dung cho — chan doan tai sao so xau thi dung skill 03-danh-gia-hieu-suat; bien data tho thanh insight thi dung skill 13-phan-tich-du-lieu."
 argument-hint: "<period + channels + metrics>"
 metadata:
-  version: 2.1.1
+  version: 2.1.2
   category: operations
 triggers:
   - "bao cao marketing"

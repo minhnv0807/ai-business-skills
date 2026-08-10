@@ -1,8 +1,8 @@
 ---
 name: 49-html-email-template
-description: "Code email HTML responsive dung duoc tren moi email client: cau truc table-based, inline CSS, max 600px, dark mode, spec tung client (Gmail, Outlook, Apple Mail), checklist test truoc khi gui. Mau va font doc tu brand guideline. Kich hoat khi nhac: email html, code email, template email html, email responsive."
+description: "Dung khi can FILE HTML email chay duoc tren moi email client — cau truc table, CSS inline, be ngang 600px, dark mode, spec rieng cho Gmail, Outlook, Apple Mail va checklist test truoc khi gui. Mau va font lay tu brand guideline. Kich hoat khi user nhac 'email HTML', 'code email', 'template email', 'email responsive', 'email vo bo cuc tren Outlook', 'anh trong email khong hien', 'paste vao Brevo bi vo'. Khong dung cho — noi dung va chuoi gui email thi dung skill 14-email-marketing; trang web dat sau nut CTA thi dung skill 12-brief-landing-page; quy dinh mau va font thuong hieu thi dung skill 46-brand-guideline."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: operations
 license: MIT
 triggers:

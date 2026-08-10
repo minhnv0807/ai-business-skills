@@ -1,8 +1,8 @@
 ---
 name: 54-media-plan-global
-description: "Use when the user needs a paid media plan: work backwards from revenue to max CPA and required budget, split spend across channels, funnel stages, and campaign types, build a ramp-up timeline, set KPI targets per channel, and prepare a contingency plan. Trigger on 'media plan', 'ads plan', 'paid media budget', 'budget allocation', 'how much should I spend on ads', 'channel mix', or 'plan a campaign budget'."
+description: "Use when a PAID MEDIA plan is needed — work backward from revenue to max CPA and required budget, split spend across channels, funnel stages, and campaign types, build a ramp-up timeline, set KPI targets per channel, and prepare a contingency plan. Trigger on 'media plan', 'paid media budget', 'how much should I spend on ads', 'channel mix for the campaign', 'plan the ad budget', 'we have 10k a month and no plan'. Also use when a budget number exists and nobody has decided where it goes. Not for — the pure revenue-to-budget math, see `10-reverse-kpi-global`; the whole marketing budget including non-paid, see `61-budget-planning-global`; the next period plan built from results, see `57-next-ads-plan-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: performance
 license: MIT
 triggers:

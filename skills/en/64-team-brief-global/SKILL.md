@@ -1,8 +1,8 @@
 ---
 name: 64-team-brief-global
-description: "Use when a leader needs to assign work to a marketing team member or run a cross-functional meeting: a task brief with concrete deliverables, a deadline with a time and timezone, a definition of done, constraints, and check-in points, plus an async-first meeting template. Trigger on 'assign a task', 'brief for my team', 'team brief', '1:1 brief', 'definition of done', 'meeting agenda template', or 'marketing standup agenda'."
+description: "Use when a leader assigns work to a marketing team member or runs a cross-functional meeting — a task brief with concrete deliverables, a deadline with time and timezone, a definition of done, constraints, and check-in points, plus an async-first meeting agenda and action-item template. Trigger on 'assign a task', 'brief for my team', 'team brief', 'definition of done', 'meeting agenda template', 'my team keeps delivering the wrong thing'. Also use when the user says nobody knows who owns what. Not for — the campaign brief the whole team executes from, see `02-campaign-brief-global`; briefing an external agency or freelancer, see `67-agency-vendor-brief-global`; evaluating performance, see `65-team-performance-review-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: operations
 license: MIT
 triggers:

@@ -1,8 +1,8 @@
 ---
 name: 51-audience-research
-description: "Nghien cuu audience cho ads truoc khi setup campaign: xac dinh tep target, map interest/behavior theo kenh, danh gia do rong tep, phan tang cold/warm/hot, va lap gia thuyet targeting de test. Kich hoat khi user nhac 'nghien cuu audience', 'tep target', 'interest targeting', 'audience cho campaign', 'nham dung tep'."
+description: "Dung khi can nghien cuu tep truoc khi chay ads — interest va behavior mapping, do rong tep, phan tang cold/warm/hot, va gia thuyet targeting de test. Kich hoat khi user nhac 'nghien cuu audience', 'tep target', 'nham ai', 'interest targeting', 'chon tep chay ads', 'lookalike tu dau'. Khong dung cho — hieu tam ly va ngon ngu khach hang thi dung skill 09-insight-khach-hang; phan bo ngan sach cho tung tep thi dung skill 54-media-plan."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: performance
 license: MIT
 triggers:

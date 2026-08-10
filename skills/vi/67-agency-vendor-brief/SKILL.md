@@ -1,8 +1,8 @@
 ---
 name: 67-agency-vendor-brief
-description: "Brief va quan ly agency, freelancer, vendor ben ngoai: scope of work, deliverable spec, revision rounds, quy trinh duyet, payment milestone, IP/bao mat, danh gia vendor sau project. Dung khi nhac 'brief agency', 'thue freelancer', 'quan ly vendor', 'scope of work', 'agency khong deliver dung', 'onboard vendor moi'."
+description: "Dung khi thue NGUOI NGOAI lam — agency, freelancer, production house, vendor: scope of work, spec deliverable, so vong sua, quy trinh duyet, moc thanh toan, dieu khoan IP va bao mat, bang danh gia vendor sau du an. Kich hoat khi user nhac 'brief agency', 'thue freelancer', 'quan ly vendor', 'scope of work', 'agency lam khong dung y', 'thue ngoai quay TVC', 'bao gia agency co hop ly khong', 'onboard vendor moi'. Khong dung cho — giao viec cho nhan su noi bo thi dung skill 64-team-brief; brief creator quay UGC hoac KOC thi dung skill 06-brief-ugc-egc; nhan brief tu khach khi CHINH MINH la agency thi dung skill 20-brief-client-intake."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: operations
 license: MIT
 triggers:

@@ -1,8 +1,8 @@
 ---
 name: 35-brand-voice-global
-description: "Use when the user wants to define, document, or enforce how a brand sounds in writing. Trigger on 'brand voice', 'tone of voice', 'brand personality', 'voice guidelines', 'banned words', 'how the brand writes', 'style guide for copy', or 'copy does not sound like us'."
+description: "Use when the user needs to define, document, or enforce how the brand SOUNDS in writing — three personality traits, a five-dimension tone table, vocabulary to use, avoid, and ban, sentence rules, before and after rewrites, platform adaptation, and a copy approval checklist. Every content skill reads it before writing. Trigger on 'brand voice', 'tone of voice', 'voice guidelines', 'banned words list', 'this copy does not sound like us', 'every writer sounds different'. Also use when the user cannot say why a draft feels wrong. Not for — the visual side of brand, see `46-brand-guideline-global`; positioning and the message, see `58-positioning-global`; approving one specific piece, see `62-marketing-review-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: content
 license: MIT
 triggers:

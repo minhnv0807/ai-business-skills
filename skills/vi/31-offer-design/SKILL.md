@@ -1,8 +1,8 @@
 ---
 name: 31-offer-design
-description: "Khi nguoi dung can thiet ke hoac toi uu offer — goi ban thuc su, khong chi gia hay copy. Dung khi nhac 'offer', 'irresistible offer', 'value stack', 'bonus stack', 'guarantee', 'risk reversal', 'scarcity', 'urgency', 'upsell', 'downsell', 'high-ticket', 'productize service', 'goi coaching', 'goi agency', hoac 'offer khong convert'."
+description: "Dung khi goi ban chua du hap dan va can dong goi lai — value stack, bonus, bao hanh va dao nguoc rui ro, ly do gap rut co that, cau truc upsell va downsell, dong goi dich vu thanh san pham ban duoc. Kich hoat khi user nhac 'thiet ke offer', 'offer khong convert', 'value stack', 'bonus stack', 'guarantee', 'risk reversal', 'upsell downsell', 'goi coaching', 'khach thay dat qua', 'ban gi thi khach moi mua'. Khong dung cho — chon con so gia va bac goi thi dung skill 17-pricing-strategy; offer MIEN PHI de doi thong tin lien he thi dung skill 70-lead-magnet; viet copy ban offer da chot thi dung skill 05-copy-quang-cao."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: strategy
 license: MIT
 triggers:

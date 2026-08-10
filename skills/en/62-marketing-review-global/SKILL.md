@@ -1,8 +1,8 @@
 ---
 name: 62-marketing-review-global
-description: "Use when a leader needs to review or approve team output before it ships: a checklist for approving content briefs (angle matches insight, correct pillar, clear CTA), a checklist for approving ad copy and creative (claims substantiated, on-brand tone, hook inside the first 125 characters, platform policy pre-check), and an Approve / Revise / Redo verdict with a feedback template. Trigger on 'review the brief', 'approve content', 'review ads', 'approve creative', 'check ads before launch', or 'review team output'."
+description: "Use when a leader must review or approve TEXT-based team output before it ships — content briefs checked for angle, pillar, and CTA, ad copy and creative checked for substantiated claims, on-brand tone, a hook inside the first 125 characters, and platform policy, ending in an Approve, Revise, or Redo verdict with point-by-point feedback. Trigger on 'review this brief', 'approve the ad copy', 'check ads before launch', 'review team output', 'is this good enough to publish', 'my team keeps sending me drafts'. Not for — reviewing a visual design, see `47-design-review-global`; evaluating a person over a period, see `65-team-performance-review-global`; writing the copy yourself, see `05-ad-copy-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: operations
 license: MIT
 triggers:

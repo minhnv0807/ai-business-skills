@@ -1,8 +1,8 @@
 ---
 name: 46-brand-guideline
-description: "Tao hoac cap nhat brand guideline: brand personality, color system, typography, logo usage, hinh anh va tone visual, component rules, kich thuoc an pham chuan, naming va to chuc file. Output la tai lieu nen tang cho moi skill design va Brand Hub. Kich hoat khi nhac: brand guideline, brand book, brand identity, style guide, quy chuan thuong hieu."
+description: "Dung khi can chot QUY CHUAN NHIN cua thuong hieu de moi nguoi lam ra deu giong nhau — brand personality, he mau, typography, quy tac dung logo, phong cach hinh anh, quy tac component, kich thuoc an pham chuan, cach dat ten va to chuc file. Kich hoat khi user nhac 'brand guideline', 'brand book', 'brand identity', 'style guide', 'quy chuan thuong hieu', 'bang mau thuong hieu', 'moi nguoi lam ra mot kieu', 'khong biet dung font gi'. Khong dung cho — giong noi va cach hanh van thi dung skill 35-brand-voice; cham diem mot thiet ke da lam xong thi dung skill 47-design-review; dinh vi va thong diep thi dung skill 58-positioning."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: strategy
 license: MIT
 triggers:

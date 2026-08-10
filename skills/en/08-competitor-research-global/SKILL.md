@@ -1,8 +1,8 @@
 ---
 name: 08-competitor-research-global
-description: "3-tier competitor analysis (direct, indirect, secondary) for global markets — positioning, SWOT, content benchmark, market gap. Tools: SimilarWeb, Ahrefs, Semrush, Minea (dropshipping). Trigger: 'competitor research', 'competitive analysis', 'what competitors are doing', 'competitor analysis', 'market research'."
+description: "Use when the user needs to understand competitors — direct, indirect, and substitute tiers, positioning map, SWOT, ad and content benchmark, pricing comparison, and the market gap to attack, using SimilarWeb, Ahrefs, Semrush, and the Meta Ad Library. Trigger on 'competitor research', 'competitive analysis', 'what are competitors running', 'who else sells this', 'why do people pick them over us', 'benchmark us against the market'. Also use when the user sends a competitor link and asks for an opinion. Not for — understanding the customer rather than the rival, see `09-customer-insight-global`; turning difference into a statement, see `58-positioning-global`; paid targeting, see `51-audience-research-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: strategy
 license: MIT
 triggers:

@@ -1,8 +1,8 @@
 ---
 name: 51-audience-research-global
-description: "Use when the user needs to research and define paid ad audiences before a campaign launches: target profile, interest and behavior mapping per platform, audience sizing, cold/warm/hot tiering, lookalike seeds, and targeting hypotheses to test. Trigger on 'audience research', 'target audience', 'interest targeting', 'audience for campaign', 'who should I target', 'Meta audience', 'TikTok audience', or 'lookalike seed'."
+description: "Use when paid ad AUDIENCES must be researched and defined before launch — target profile, interest and behavior mapping per platform, audience sizing, cold, warm, and hot tiering, lookalike seeds, exclusions, and ranked targeting hypotheses to test. Trigger on 'audience research', 'who should I target', 'interest targeting', 'Meta audience for this product', 'TikTok targeting ideas', 'my targeting is too broad'. Also use when launch is imminent and the ad set targeting is still empty. Not for — persona and JTBD depth for content, see `09-customer-insight-global`; warm retargeting tiers, see `56-retargeting-plan-global`; where the budget goes, see `54-media-plan-global`; the campaign hierarchy, see `52-account-structure-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: performance
 license: MIT
 triggers:

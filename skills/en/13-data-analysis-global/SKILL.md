@@ -1,8 +1,8 @@
 ---
 name: 13-data-analysis-global
-description: Turn raw marketing data into actionable insight — analysis by channel, campaign, creative, audience, time. Descriptive → Diagnostic → Predictive → Prescriptive.
+description: "Use when raw data exists — Meta, Google, TikTok, GA4, Shopify, a CRM export, or a spreadsheet — and has to become insight and decisions: descriptive, diagnostic, predictive, and prescriptive layers, cuts by channel, campaign, creative, audience, and time, cohorts, and a decision log. Trigger on 'analyze this data', 'read these numbers for me', 'what does this export say', 'pull insight from GA4', 'cohort analysis', 'here is the spreadsheet'. Also use when the user pastes a table and asks what it means. Not for — diagnosing ad root cause, see `03-performance-eval-global`; writing the report a stakeholder reads, see `07-marketing-report-global`; auditing account setup, see `21-ads-audit-global`."
 metadata:
-  version: 2.5.0
+  version: 2.5.1
   category: performance
   language: en
 triggers:

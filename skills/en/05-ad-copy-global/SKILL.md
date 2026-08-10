@@ -1,8 +1,8 @@
 ---
 name: 05-ad-copy-global
-description: "6 ad copy variations (2 TOFU + 2 MOFU + 2 BOFU) for global markets. Frameworks: AIDA, PAS, BAB. Platforms: Meta, Google, TikTok. INCLUDES Dropshipping Mode (4 templates) for Shopify dropshippers. Trigger: 'ad copy', 'Facebook ads', 'TikTok ads', 'Google Ads copy', 'dropshipping ads', 'Shopify ads'."
+description: "Use when the user needs PAID ad copy for Meta, Google, or TikTok — six variants across TOFU, MOFU, and BOFU using AIDA, PAS, and BAB, respecting each platform character limit and ad policy, with a dropshipping mode. Trigger on 'ad copy', 'write Facebook ads', 'TikTok ad copy', 'Google RSA headlines', 'primary text for this ad', 'my ad copy is not converting'. Also use when the user has a product page and asks what to run as an ad. Not for — organic social captions, see `37-social-caption-global`; spoken video lines, see `04-script-video-global`; approving copy already written, see `62-marketing-review-global`; the page the ad points at, see `12-landing-page-brief-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: content
 license: MIT
 triggers:

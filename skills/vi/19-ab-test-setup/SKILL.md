@@ -1,8 +1,8 @@
 ---
 name: 19-ab-test-setup
-description: "Khi nguoi dung can thiet lap A/B test cho ads, landing page, email, hoac product. Cung dung khi nguoi dung nhac 'A/B test', 'split test', 'test creative', 'test copy', 'test landing', 'test gia', 'kiem dinh thong ke', 'sample size', 'testing framework', 'tim winning ad', 'test hypothesis ads', 'test log'. Skill nay giup chon bien can test, tinh sample size, setup tracking, va phan tich ket qua thong ke (significance) — phu hop cho team khong phai data scientist."
+description: "Dung khi can test co ky luat de biet phuong an nao thang that — chon dung mot bien de test, viet gia thuyet, tinh sample size, setup tracking, doc y nghia thong ke va ghi test log cho ads, landing page, email hoac gia. Kich hoat khi user nhac 'A/B test', 'split test', 'test creative', 'test copy', 'test landing', 'chay bao lau moi du ket luan', 'ban nao thang', 'test xong khong biet doc ket qua', 'ket qua co dang tin khong'. Khong dung cho — so dang xau va can chan doan nguyen nhan thi dung skill 03-danh-gia-hieu-suat; nhan ngan sach cho creative da thang thi dung skill 55-scaling-ads; ra soat toan bo trang khong ra don thi dung skill 68-cro-audit-trang."
 metadata:
-  version: 1.1.0
+  version: 1.2.1
   category: performance
 license: MIT
 related:
@@ -38,6 +38,8 @@ Doc `.agents/product-marketing-context.md` neu co.
 
 - XAU: Doi headline + doi CTA + doi anh → khong ket luan duoc
 - TOT: Chi doi headline (A vs B), moi thu khac giu nguyen
+
+**Mot ngoai le duy nhat — test hook video.** Hook va doan on-ramp 3-15s ngay sau no la mot cap khong tach roi: doi hook ma bung nguyen than video cu se lam dut mach va hold rate sup, khien ket qua vo nghia. Khi test hook, viet lai on-ramp cho khop tung hook va ghi bien test la "hook + on-ramp". Chi tiet: `references/hook-formulas-vn.md`.
 
 ### 2. Gia thuyet co the kiem dinh
 **Format:** "Neu lam [X], metric [Y] se tang [Z%]"
@@ -75,6 +77,8 @@ Doc `.agents/product-marketing-context.md` neu co.
 ---
 
 ## Cong thuc tinh Sample Size
+
+> Khong muon tinh tay, hoac dang bi ket khong biet test gi tiep: doc `references/sample-size-va-y-tuong-test.md` — co bang tra sample size da tinh san, loi thoat khi traffic qua thap, va ngan hang 70+ y tuong test kem gia thuyet theo tung be mat.
 
 ### Cong thuc don gian
 

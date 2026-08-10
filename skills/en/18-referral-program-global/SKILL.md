@@ -1,8 +1,8 @@
 ---
 name: 18-referral-program-global
-description: "Referral program design for global businesses — 1-way vs 2-way, incentive structure, anti-fraud, attribution. Has 4 region variants for anti-spam compliance (TCPA US, GDPR EU, PDPA SEA, LGPD LATAM). Trigger: 'referral program', 'refer a friend', 'word of mouth', 'viral loop', 'referral marketing'."
+description: "Use when customers should bring other customers — one-way versus two-way incentives, reward structure and economics, trigger moments, referral messaging, tracking and attribution, fraud controls, and anti-spam compliance by region: TCPA for US, GDPR for EU, PDPA for SEA, LGPD for LATAM. Trigger on 'referral program', 'refer a friend', 'word of mouth', 'viral loop', 'how do I get customers to bring friends', 'affiliate rewards'. Also use when the user has happy customers and no system to use them. Not for — running your own community space, see `28-community-building-global`; posting inside third-party communities, see `38-community-seeding-global`; email flow mechanics, see `14-email-marketing-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: operations
 license: MIT
 triggers:

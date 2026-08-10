@@ -1,8 +1,8 @@
 ---
 name: 37-social-caption-global
-description: "Use when the user wants organic social captions for Instagram, LinkedIn, TikTok, Facebook, or X — hook, mobile-readable body, A/B variants, hashtags, written to brand voice and funnel stage. Trigger on 'write a caption', 'Instagram caption', 'LinkedIn post', 'TikTok caption', 'social post copy', or 'organic post'. For paid ad copy use 05-ad-copy-global instead."
+description: "Use when the user needs ORGANIC social captions for Instagram, LinkedIn, TikTok, Facebook, or X — hook, mobile-readable body, two A/B variants, platform-correct hashtags, written to brand voice and funnel stage. Trigger on 'write a caption', 'Instagram caption', 'LinkedIn post copy', 'TikTok caption', 'caption for this photo', 'we have the image but no words'. Also use when the user drops a picture and asks what to write with it. Not for — paid ad copy with character limits and policy, see `05-ad-copy-global`; the spoken lines in a video, see `04-script-video-global`; the brief that precedes writing, see `36-content-brief-global`; long-form authority posts, see `26-thought-leadership-content-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: content
 license: MIT
 triggers:

@@ -1,8 +1,8 @@
 ---
 name: 61-budget-planning
-description: "Lap va quan ly ngan sach marketing: phan bo theo kenh / funnel / thang, ti le test vs scale, nguong tang - cat budget (nguong cat lo), quy du phong, budget tracker va review cadence. Dung khi nhac 'phan bo ngan sach', 'budget marketing', 'budget planning', 'chi bao nhieu cho ads'."
+description: "Dung khi can chia TIEN marketing di dau bao nhieu — phan bo theo kenh, theo tang pheu va theo thang; ti le test vs scale; nguong tang va nguong cat lo; quy du phong; bang tracker chi tieu va nhip review. Kich hoat khi user nhac 'phan bo ngan sach', 'budget marketing', 'chi bao nhieu cho ads', 'ngan sach quy toi', 'budget allocation', 'nguong cat lo', 'tien it nen do vao dau', 'tieu het budget ma khong biet di dau'. Khong dung cho — tinh nguoc ngan sach can tu muc tieu doanh thu thi dung skill 10-tinh-kpi-nguoc; chia ngan sach chi tiet mot ky ads theo funnel thi dung skill 54-media-plan; ke hoach marketing tong the thi dung skill 00-ke-hoach-mkt."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: strategy
 license: MIT
 triggers:

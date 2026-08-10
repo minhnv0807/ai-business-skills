@@ -1,8 +1,8 @@
 ---
 name: 57-next-ads-plan-global
-description: "Use when the user needs the next period's ads plan built from the last period's data: read the report and audit, keep and scale winners, stop or fix losers, set new test hypotheses, split budget, and plan three budget scenarios. Trigger on 'next month ads plan', 'next ads plan', 'plan ads for next period', 'plan from the ads report', 'what should we run next month', or 'Q4 ads plan'."
+description: "Use when the next period ADS plan must be built from last period results — read the report and the audit, keep and scale winners, stop or fix losers, set new test hypotheses, split budget, plan three budget scenarios, and schedule the creative pipeline. Trigger on 'next month ads plan', 'plan ads from the report', 'what should we run next month', 'Q4 ads plan', 'next quarter media plan', 'the month ended, now what'. Also use when a report and an audit both exist and no decisions have been made. Not for — the first media plan before any data, see `54-media-plan-global`; scoring the account, see `21-ads-audit-global`; the next period CONTENT plan, see `40-next-content-plan-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: performance
 license: MIT
 triggers:

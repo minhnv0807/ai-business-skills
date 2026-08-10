@@ -1,8 +1,8 @@
 ---
 name: 23-personal-brand-strategy-global
-description: "12-month personal brand strategy for international markets — niche selection (Ikigai + 3x3), positioning statement, story arc 3 chapters, content pillars 4×7=28 topics, authority ladder 5 stages, growth plan Q1-Q4. Universal framework, examples diverse (US/EU/SEA/LATAM). Trigger: 'personal brand strategy', 'global founder strategy', 'creator strategy', 'coach positioning', 'niche selection global'."
+description: "Use when a PERSONAL brand — founder, coach, or creator — needs a 12-month strategy: niche selection with Ikigai and a 3x3 matrix, positioning statement, a three-chapter story arc, four content pillars with 28 topics, a five-stage authority ladder, and a Q1 to Q4 growth plan. Trigger on 'personal brand strategy', 'founder brand plan', 'coach positioning', 'creator strategy', 'what niche should I own', 'I post constantly and nothing compounds'. Also use when the user has followers and no direction. Not for — a company brand, see `58-positioning-global` and `00-marketing-plan-global`; the context file this reads first, see `22-personal-brand-context-global`; turning it into revenue, see `27-personal-brand-monetize-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: strategy
 license: MIT
 triggers:

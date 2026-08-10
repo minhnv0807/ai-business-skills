@@ -1,8 +1,8 @@
 ---
 name: 48-quick-visual-brief
-description: "Brief gap cho designer khi campaign dang chay va can asset moi trong ngay (creative fatigue, CTR drop, test angle moi): rut gon input, nhan ban tu creative winner, template 1 trang, SLA ro rang. Kich hoat khi nhac: brief nhanh, can asset gap, creative fatigue, quick brief, asset trong ngay."
+description: "Dung khi campaign DANG CHAY va can asset moi ngay trong hom nay — creative chay chai, CTR tut, muon test angle moi: brief 1 trang rut gon, nhan ban tu creative dang thang, chi ghi phan thay doi, kich thuoc can, deadline cung va SLA duyet 30 phut. Kich hoat khi user nhac 'brief nhanh', 'can asset gap', 'creative fatigue', 'quick brief', 'can anh trong ngay', 'thay creative ngay', 'ads tut roi can bai moi'. Khong dung cho — brief day du cho asset moi hoan toan thi dung skill 42-brief-hinh-anh; liet ke asset ca campaign tu dau thi dung skill 41-campaign-asset-list; chi doi kich thuoc tu master co san thi dung skill 50-asset-resize."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: operations
 license: MIT
 triggers:

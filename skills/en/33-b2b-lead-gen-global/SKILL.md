@@ -1,8 +1,8 @@
 ---
 name: 33-b2b-lead-gen-global
-description: "Use when the user wants B2B lead generation and sales pipeline support: prospecting, outbound lists, ICP account lists, cold email, lead scoring, MQL/SQL handoff, sales enablement, pitch decks, objection handling, demo scripts, CRM pipeline, or RevOps. Trigger on 'find leads', 'prospect list', 'cold email', 'outbound', 'sales deck', 'lead scoring', 'CRM', 'MQL', 'SQL', or 'pipeline'."
+description: "Use when the user needs B2B pipeline work — ICP and account lists, prospecting, cold email and LinkedIn outbound sequences, lead scoring, MQL to SQL handoff, sales decks, objection handling, demo scripts, CRM pipeline hygiene, and RevOps reporting. Trigger on 'find leads', 'prospect list', 'cold email sequence', 'outbound campaign', 'lead scoring model', 'our pipeline is empty', 'sales deck for enterprise buyers'. Also use when the user has a strong product and no route to the companies that need it. Not for — consumer lifecycle email, see `14-email-marketing-global`; the offer being sold, see `31-offer-design-global`; positioning against rivals, see `58-positioning-global`; inbound content, see `36-content-brief-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: operations
 license: MIT
 triggers:

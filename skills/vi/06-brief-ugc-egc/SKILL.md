@@ -1,8 +1,8 @@
 ---
 name: 06-brief-ugc-egc
-description: Tao brief chi tiet cho UGC (khach hang), EGC (nhan vien), KOC (creator tra phi) — gom huong dan quay, do/don't, quyen su dung, quan ly batch
+description: "Dung khi can brief NGUOI KHAC quay video ho — khach hang lam UGC, nhan vien lam EGC, hoac KOC va creator tra phi: tieu chi chon nguoi, huong dan quay tung canh, viec nen va khong nen lam, quyen su dung hinh anh, bang quan ly batch va cach do hieu qua. Kich hoat khi user nhac 'brief UGC', 'brief EGC', 'brief KOC', 'thue creator quay', 'huong dan nhan vien quay video', 'tim KOC o dau', 'creator quay sai y', 'hop dong quyen su dung video'. Khong dung cho — viet loi thoai kich ban video thi dung skill 04-script-video; huong dan editor dung phim thi dung skill 44-brief-video-editor; rai comment seeding duoi bai dang thi dung skill 38-seeding-plan; thue agency hoac production house lam tron goi thi dung skill 67-agency-vendor-brief."
 metadata:
-  version: 2.1.0
+  version: 2.1.1
   category: content
 triggers:
   - "brief creator"
