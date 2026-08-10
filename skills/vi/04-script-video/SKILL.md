@@ -1,9 +1,9 @@
 ---
 name: 04-script-video
-description: Viet script video ngan cho TikTok, Reels, YouTube Shorts — 2 ban A/B, co hook, CTA, huong dan quay chi tiet
+description: "Dung khi can viet kich ban video ngan — TikTok, Reels, Shorts — voi hook 3 thanh phan, cau truc theo giay va 2 bien the A/B de test. Co Mode A cho san pham va Mode B cho personal brand. Kich hoat khi user nhac 'viet script video', 'kich ban TikTok', 'script Reels', 'noi dung video ngan', 'hook video', 'quay video gi'. Khong dung cho — huong dan dung phim cho editor thi dung skill 44-brief-video-editor; copy quang cao tra tien thi dung skill 05-copy-quang-cao; brief cho creator quay ho thi dung skill 06-brief-ugc-egc."
 argument-hint: "<sản phẩm + thời lượng + tone>"
 metadata:
-  version: 2.3.0
+  version: 2.4.1
   category: content
 triggers:
   - "viet script"
@@ -139,7 +139,7 @@ Timestamp la khung thoi gian; **beat** la don vi noi dung. Viet script theo beat
 
 ### 6 cong thuc hook chuyen nghiep
 
-> Ap dung tu `social-media-skills/hook-generator` — da adapt cho thi truong VN.
+> Hieu chinh cho thi truong VN. Chi tiet: `skills/vi/references/hook-formulas-vn.md`.
 
 Moi hook gom **2 dong**: Dong 1 (mo) toi da 50 ky tu, Dong 2 (twist) toi da 50 ky tu.
 
@@ -369,7 +369,7 @@ Cham diem 5 yeu to, moi yeu to 1–5 diem:
 
 ## QA Score — Kiem tra truoc khi giao
 
-> Ap dung tu `social-media-skills/reels-scripting` — QA gate 95/100.
+> QA gate 95/100 cho script dang ngan.
 
 Cham diem script theo 10 tieu chi, moi tieu chi 10 diem. **Chi giao khi dat ≥ 85/100.**
 

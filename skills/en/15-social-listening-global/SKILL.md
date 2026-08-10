@@ -1,8 +1,8 @@
 ---
 name: 15-social-listening-global
-description: Monitor brand, competitors, and industry trends across social media — early crisis detection and content opportunity discovery
+description: "Use when the user wants to monitor what is being said about the brand, competitors, and the category — channels and keywords to track, sentiment scoring, weekly and monthly listening reports, brand health metrics, early crisis detection, and content opportunities pulled from real conversations. Trigger on 'social listening', 'brand monitoring', 'sentiment analysis', 'what are people saying about us', 'track our mentions', 'monitor competitors online'. Also use when the user spotted a bad comment thread and wants to know if it is spreading. Not for — responding to a crisis already underway, see `66-crisis-playbook-global`; competitor strategy teardown, see `08-competitor-research-global`; auditing your own posts, see `39-content-audit-global`."
 metadata:
-  version: 2.5.0
+  version: 2.5.1
   category: operations
   language: en
 triggers:
@@ -165,7 +165,7 @@ ACT       — Respond, adjust strategy, manage crises
 
 ## Niche Research — 20 hot topics in 7 days
 
-> Adapted from `social-media-skills/niche-research` for global channels.
+> Niche research, adapted for global channels.
 
 ### Goal
 

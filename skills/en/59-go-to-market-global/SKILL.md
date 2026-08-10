@@ -1,8 +1,8 @@
 ---
 name: 59-go-to-market-global
-description: "Use when the user needs a go-to-market plan for a new product, offer, or course: beachhead segment selection, launch messaging, channels by phase across pre-launch, launch, and post-launch, milestones, and go/no-go criteria. Trigger on 'go-to-market', 'GTM plan', 'product launch plan', 'launch plan', 'launching a new product', 'beachhead segment', or 'GTM strategy'."
+description: "Use when a NEW product, offer, or course is going to market — beachhead segment selection, launch messaging, channels by phase across pre-launch, launch, and post-launch, milestones, success metrics, and go or no-go criteria. Trigger on 'go-to-market', 'GTM plan', 'product launch plan', 'we are launching a new product', 'beachhead segment', 'how do we launch this course'. Also use when the user has a finished product and no route to the first customers. Not for — the day-by-day execution checklist, see `60-launch-playbook-global`; the ongoing period plan, see `00-marketing-plan-global`; one campaign inside the launch, see `02-campaign-brief-global`; positioning first, see `58-positioning-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: strategy
 license: MIT
 triggers:

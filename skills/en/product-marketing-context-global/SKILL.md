@@ -1,8 +1,8 @@
 ---
 name: product-marketing-context-global
-description: "Foundation skill for the global marketing cluster. Creates `.agents/product-marketing-context-global.md` with region-specific context (currency, primary platforms, regulations, persona research framework). Pick 1 of 4 region variants: US (USD/FTC), EU (EUR/GDPR), SEA (USD or local/PDPA), LATAM (USD or local/LGPD). All other global skills (00-29) read this context file. Trigger: 'global marketing context', 'international product context', 'US marketing context', 'EU marketing setup', 'SEA marketing context', 'LATAM marketing setup', 'multi-region context'."
+description: "Use when starting work on a new product, client, or market — this skill creates the file `.agents/product-marketing-context-global.md` that 60+ other global skills read before they write anything: product, ICP, positioning, proof, objections, brand voice, pricing, and KPIs, with a region variant for US, EU, SEA, or LATAM. Run once, reuse forever. Trigger on 'set up marketing context', 'new client setup', 'onboard a new product', 'the AI does not know my product', 'US marketing context', 'EU GDPR setup', 'SEA market context', 'LATAM setup'. Also use when the user complains every answer comes back generic because nothing about the business was ever provided. Not for — a personal brand belonging to a founder, coach, or creator, see `22-personal-brand-context-global`; deep persona and JTBD research, see `09-customer-insight-global`; the period plan itself, see `00-marketing-plan-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: foundation
 license: MIT
 triggers:

@@ -1,8 +1,8 @@
 ---
 name: 34-ai-marketing-os-global
-description: "Use when the user needs to design, audit, upgrade, or operate an AI Marketing OS for a marketing team: Brand Hub/source of truth, role-based AI agents/projects, skill chains, ChatGPT x Claude x NotebookLM workflows, MCP/connectors, Notion/Drive second brain, ads data loops, SOPs, weekly reviews, and handoffs. Trigger on 'AI marketing OS', 'marketing AI system', 'Brand Hub', 'AI workflow for marketers', 'AI team SOP', 'MCP marketing', 'marketing agent', or 'second brain marketing'."
+description: "Use when a team wants to design, audit, or operate an AI Marketing OS — a Brand Hub source of truth, role-based AI projects for leader, content, design, performance, and knowledge, skill chains, ChatGPT plus Claude plus NotebookLM workflows, MCP connectors, a Notion or Drive second brain, ads data loops, SOPs, weekly reviews, and handoffs. Trigger on 'AI marketing OS', 'set up our marketing AI system', 'Brand Hub', 'AI workflow for the team', 'MCP for ads data', 'how do I make AI actually useful for marketing'. Not for — one campaign brief, see `02-campaign-brief-global`; the weekly report, see `07-marketing-report-global`; the brand visual rules, see `46-brand-guideline-global`; the product context file, see `product-marketing-context-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: operations
 license: MIT
 triggers:

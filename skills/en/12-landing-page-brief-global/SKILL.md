@@ -1,8 +1,8 @@
 ---
 name: 12-landing-page-brief-global
-description: Create high-converting landing page briefs — 7-section structure, 1 page = 1 goal = 1 CTA, mobile-first, conversion-optimized. Includes Single-Product LP for Dropshipping mode.
+description: "Use when a NEW landing page, sales page, or single-product page has to be built — seven-section structure, one page one goal one CTA, copy per block, mobile-first rules, technical and speed requirements, tracking plan, A/B test plan, and a dropshipping single-product mode. Trigger on 'landing page brief', 'build a sales page', 'I need a landing page', 'brief for the dev', 'Shopify product page', 'what should go on the page'. Also use when ad traffic is ready and there is nowhere to send it. Not for — the ad copy pointing at the page, see `05-ad-copy-global`; the offer and its value stack, see `31-offer-design-global`; scoring a finished design, see `47-design-review-global`; coded email, see `49-html-email-template-global`."
 metadata:
-  version: 2.5.0
+  version: 2.5.1
   category: content
   language: en
 triggers:

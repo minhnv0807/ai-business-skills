@@ -1,8 +1,8 @@
 ---
 name: 65-team-performance-review-global
-description: "Use when a leader needs to evaluate a marketing team member using data: a KPI scorecard by role, strengths with real examples, areas to improve stated as observable behavior, a 30/90-day development plan, and a 1-5 rating rubric. Trigger on 'performance review', 'evaluate a team member', 'review my marketing team', 'monthly 1:1 review', 'feedback for a team member', or 'development plan for an employee'."
+description: "Use when a leader evaluates a marketing TEAM MEMBER using data — a KPI scorecard by role, strengths with real examples, areas to improve stated as observable behavior, a 30 and 90 day development plan, and a 1-5 rating rubric. Trigger on 'performance review for my marketer', 'evaluate a team member', 'monthly 1:1 review', 'feedback for my content writer', 'development plan for an employee', 'is this person underperforming'. Also use when the user is unhappy with someone and cannot articulate why. Not for — evaluating a campaign rather than a person, see `63-campaign-retrospective-global`; reviewing one piece of output, see `62-marketing-review-global`; scoring an external vendor, see `67-agency-vendor-brief-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: operations
 license: MIT
 triggers:

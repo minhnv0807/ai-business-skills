@@ -1,8 +1,8 @@
 ---
 name: 26-thought-leadership-content
-description: "Long-form text content cho personal brand — KHAC voi skill 05 ad copy ban hang. 3 cau truc chuan VN: PAS-Insight (founder), Story-Lesson-CTA (coach), Hook-List-Reveal (creator). 6 hook formulas long-form (controversial question, contrarian opinion, mini-confession, framework drop, data drop, character-driven story). Sentence rhythm engineering. Format theo platform: LinkedIn (1300-3000 ky tu), FB (500-1500 tu), Newsletter (800-2000 tu). Repurpose matrix 1:5. QA Score 100 diem. Trigger: 'viet bai LinkedIn ca nhan', 'thought leadership', 'long form post', 'newsletter', 'FB thread ca nhan', 'viet bai chuyen sau'."
+description: "Dung khi mot CA NHAN can viet BAI DAI de xay uy tin, khong phai copy ban hang — 3 cau truc chuan cho thi truong VN gom PAS-Insight cho founder, Story-Lesson-CTA cho coach, Hook-List-Reveal cho creator; 6 cong thuc hook long-form; ky thuat nhip cau; do dai theo nen tang LinkedIn, Facebook, newsletter; ma tran tai su dung 1:5. Kich hoat khi user nhac 'viet bai LinkedIn', 'thought leadership', 'long form post', 'newsletter ca nhan', 'viet bai chuyen sau', 'khong biet viet gi tren trang ca nhan', 'muon duoc coi la chuyen gia'. Khong dung cho — copy quang cao tra tien thi dung skill 05-copy-quang-cao; caption ngan cho fanpage doanh nghiep thi dung skill 37-caption-social; kich ban video ngan thi dung skill 04-script-video."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: content
 license: MIT
 triggers:

@@ -1,7 +1,7 @@
 # Roadmap
 
-> Public roadmap for `ai-business-skills` — 138 production-ready AI marketing skills for Claude Code, ChatGPT, Gemini & Copilot.
-> Last updated: 2026-07-30
+> Public roadmap for `ai-business-skills` — 143 production-ready AI marketing skills for Claude Code, ChatGPT, Gemini & Copilot.
+> Last updated: 2026-08-10
 
 ## 🎯 North Star
 Become the standard open-source AI marketing skill library for Vietnamese SMEs and global solo founders, with **150+ skills across 6+ regions** by end of 2026.
@@ -9,6 +9,14 @@ Become the standard open-source AI marketing skill library for Vietnamese SMEs a
 ---
 
 ## ✅ Shipped
+
+### v3.7.0 — Routing, thresholds, and five new skills *(2026-08-10)*
+- Fixed two validator bugs that were silently passing skills — the reported pass count had been meaningless
+- Consolidated four contradictory ad kill thresholds into one ladder anchored on target CPA
+- Rebuilt `32-seo-growth` from a routing stub, added 11 validated JSON-LD templates (repo previously had zero)
+- 5 new VN skills: CRO page audit, retention and win-back, lead magnet design, sales enablement, advisory council
+- Safety boundary for AI automation: two-tier action model, spend caps, kill switch
+- All descriptions rewritten so routing lives where the model can actually see it
 
 ### v3.6.0 — Role SOP Packs Go Global *(2026-07-30)*
 - 33 English mirrors of skills 35-67 — full bilingual parity for all four role packs
@@ -107,7 +115,7 @@ Become the standard open-source AI marketing skill library for Vietnamese SMEs a
 | Q3 2026 | 78 (VN + Global) | v3.1 → v3.6 | Design master, growth, AI Marketing OS, role SOP packs bilingual |
 | Q4 2026 (planned) | 15+ | v3.7, v4.0 | APAC region variants, B2B vertical pack |
 
-**Current: 138 skills. Target: 150+ by end of 2026.**
+**Current: 143 skills. Target: 150+ by end of 2026.**
 
 ---
 

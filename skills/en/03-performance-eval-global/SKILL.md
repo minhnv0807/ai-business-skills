@@ -1,8 +1,8 @@
 ---
 name: 03-performance-eval-global
-description: "Diagnose marketing performance for global businesses — root cause analysis, 5-Whys, 48-hour action plan. Has 4 region variants for benchmarks (US/EU/SEA/LATAM). Reads `.agents/product-marketing-context-global.md`. INCLUDES Dropshipping KPI section (ROAS, BE-ROAS, profit margin, CAC). Trigger: 'performance review', 'ad performance', 'marketing diagnosis', 'KPI analysis', 'dropshipping ROAS'."
+description: "Use when marketing numbers look bad and the user needs to know WHY — layered root-cause diagnosis across tracking, delivery, creative, landing page, offer, and audience quality, 5-Whys, regional benchmarks for US, EU, SEA, and LATAM, and a 48-hour action plan. Covers dropshipping ROAS and BE-ROAS. Trigger on 'why is CPA so high', 'my ads are not converting', 'ROAS dropped', 'we are burning budget', 'performance is bad this month', 'diagnose the funnel'. Also use when the user pastes a screenshot of numbers with no question attached. Not for — auditing account configuration and scoring health, see `21-ads-audit-global`; writing a report someone else reads, see `07-marketing-report-global`; turning a raw export into insight, see `13-data-analysis-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: performance
 license: MIT
 triggers:

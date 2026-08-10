@@ -1,8 +1,8 @@
 ---
 name: 53-tracking-setup
-description: "Setup he thong tracking truoc khi chay ads: Pixel + Conversion API, GA4, UTM convention, event mapping, offline conversion, va checklist verify xanh truoc khi len camp. Quy tac cung: khong chay ads khi tracking chua verify. Kich hoat khi user nhac 'setup tracking', 'pixel', 'UTM', 'conversion API', 'CAPI', 'GA4', 'do luong campaign'."
+description: "Dung khi phai setup do luong TRUOC khi tieu bat ky dong nao — pixel va CAPI, GA4, UTM convention, event mapping, offline conversion, dong y du lieu, va checklist verify xanh. Kich hoat khi user nhac 'setup tracking', 'cai pixel', 'UTM', 'CAPI', 'do luong chuyen doi', 'so lieu khong khop'. Quy tac cung: khong chay ads khi tracking chua xanh. Khong dung cho — doc data da co ra insight thi dung skill 13-phan-tich-du-lieu; ra soat cau hinh ads thi dung skill 21-audit-ads-performance."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: performance
 license: MIT
 triggers:
@@ -103,6 +103,22 @@ Ap dung khi chot don qua inbox / goi dien / tai quay (pho bien o VN):
 1. **Lead Log** — ghi moi lead ngay khi nhan, moi hang 1 lead: `ID | Ngay vao | Ten | SDT | Kenh nguon | Loai tuong tac (inbox/form/goi) | Trang thai (moi/qualified/chot/khong chot) | Ly do khong chot | Doanh thu neu chot | Sales phu trach`. Hoi moi khach "biet minh qua kenh nao?" ngay cau dau.
 2. **Offline conversion import:** upload danh sach chot don (SDT/email + thoi gian) len Meta Offline Events / Google Ads offline conversion theo tuan — de thuat toan hoc tu don that, khong chi lead.
 3. Doi chieu thang: so lead trong Lead Log vs so lead Ads Manager bao — lech >20% la co van de tracking hoac attribution.
+
+### Buoc 4b — Dong y thu thap du lieu (bat buoc neu co traffic ngoai VN)
+
+Neu website chi phuc vu khach trong nuoc, phan nay tuan theo **Nghi dinh 13/2023/ND-CP** ve bao ve du lieu ca nhan: phai co thong bao ro rang truoc khi thu thap, va nguoi dung phai dong y — khong duoc mac dinh tick san.
+
+Neu co bat ky traffic tu EU/UK hoac California (khach Viet kieu, ban hang xuyen bien gioi, du hoc, xuat khau), nhung yeu cau sau la BAT BUOC — thieu la rui ro phat tien va mat quyen dung remarketing audience:
+
+| Vung | Yeu cau | Hau qua neu thieu |
+|------|---------|-------------------|
+| EU / UK | CMP duoc chung nhan + **Google consent mode v2** (4 tin hieu: `ad_storage`, `analytics_storage`, `ad_user_data`, `ad_personalization`, mac dinh `denied` truoc khi user tra loi banner) | Meta yeu cau CMP cho traffic EU; Google mat personalized ads va audience feature |
+| California | Nut tu choi ban/chia se du lieu, ton trong tin hieu Global Privacy Control, bat **Limited Data Use** tren Meta cho traffic California | Vi pham CCPA/CPRA |
+| Toan cau | Tag khong duoc ban truoc khi co dong y; luu log dong y (ai, chon gi, luc nao, phien ban chinh sach nao) | Khong chung minh duoc tuan thu khi bi kiem tra |
+
+Danh sach email/SDT upload lam Custom Audience hoac Customer Match cung phai co dong y tuong ung — xem `14-email-marketing`.
+
+Ghi vao file ket qua: dung CMP nao, chan vung nao, ai verify.
 
 ### Buoc 5 — Checklist verify XANH truoc khi len camp
 

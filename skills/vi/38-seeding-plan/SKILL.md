@@ -1,8 +1,8 @@
 ---
 name: 38-seeding-plan
-description: "Len ke hoach seeding vao Facebook Group / Zalo Group / Forum — chon group, persona tai khoan, 4 loai bai seeding viet san, kich ban comment, lich an toan, do luong va red line chong spam. Kich hoat khi nhac 'seeding', 'vao group', 'gieo noi dung', 'bai dang cong dong', 'seeding plan'."
+description: "Dung khi can lan toa qua group va cong dong mot cach that — chon group, ho so nguoi tham gia that, kich ban bai va comment, lich dang, va gioi han de khong bi ban. Kich hoat khi user nhac 'seeding', 'dang bai vao group', 'lan toa cong dong', 'ke hoach seeding', 'marketing cong dong', 'vao group ban hang'. Khong dung cho — caption tren trang cua minh thi dung skill 37-caption-social; thue KOC quay ho thi dung skill 06-brief-ugc-egc; xay cong dong cua rieng minh thi dung skill 28-community-building."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: content
 license: MIT
 triggers:

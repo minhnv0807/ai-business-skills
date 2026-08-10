@@ -64,11 +64,21 @@ for skill_dir in "$SKILLS_DIR"/*/; do
     fi
 
     # Validate description
-    description=$(echo "$frontmatter" | grep "^description:" | head -1)
-    if [[ $description == *'description: "'* ]]; then
-        description=$(echo "$description" | sed 's/^description: "//' | sed 's/"$//')
+    # Handles three YAML forms: quoted scalar, plain scalar, and block scalar (| or >).
+    # Block scalars were previously parsed as the literal "|", silently disabling every
+    # check below for those skills.
+    desc_line=$(echo "$frontmatter" | grep "^description:" | head -1)
+    if [[ "$desc_line" =~ ^description:[[:space:]]*[\|\>] ]]; then
+        # Block scalar: collect the indented continuation lines that follow.
+        description=$(echo "$frontmatter" | awk '
+            /^description:[[:space:]]*[|>]/ { collecting=1; next }
+            collecting && /^[[:space:]]+/ { sub(/^[[:space:]]+/, ""); printf "%s ", $0; next }
+            collecting { exit }
+        ')
+    elif [[ $desc_line == *'description: "'* ]]; then
+        description=$(echo "$desc_line" | sed 's/^description: "//' | sed 's/"$//')
     else
-        description=$(echo "$description" | sed 's/^description: //')
+        description=$(echo "$desc_line" | sed 's/^description: //')
     fi
 
     if [[ -z "$description" ]]; then
@@ -78,8 +88,20 @@ for skill_dir in "$SKILLS_DIR"/*/; do
         if [[ $desc_len -lt 1 || $desc_len -gt 1024 ]]; then
             errors+=("Description length $desc_len chars (must be 1-1024)")
         fi
-        if ! echo "$description" | grep -qi "khi\|when\|dung\|use\|mention"; then
-            warnings+=("Description may lack trigger phrases")
+        # The model routes on name + description only. Custom keys (triggers/output/
+        # related) are documentation for humans and are never seen at selection time,
+        # so the trigger phrases must live inside the description itself.
+        # Previously this was a substring match on "dung|use|when" which any Vietnamese
+        # description passed by accident. Now: count actual quoted trigger phrases.
+        quoted_count=$(echo "$description" | grep -o "'[^']\+'" | wc -l | tr -d ' ')
+        if [[ $quoted_count -lt 3 ]]; then
+            warnings+=("Description has $quoted_count quoted trigger phrases (need >=3 — the model routes on description, not on the triggers: key)")
+        fi
+        # Sibling routing keeps overlapping skills from firing on each other's work.
+        # Accepts both the Vietnamese form ("Khong dung cho — X thi dung skill NN-...")
+        # and the English forms ("Not for — X, see `NN-...`" / "... use `NN-...`").
+        if ! echo "$description" | grep -qiE "khong dung cho|not for|xem skill|dung .*thay the|(see|use) \`?[0-9]{2}-"; then
+            warnings+=("Description lacks sibling routing (add 'Khong dung cho X - dung skill NN-ten' or 'Not for — X, see NN-name')")
         fi
     fi
 

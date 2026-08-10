@@ -1,8 +1,8 @@
 ---
 name: 09-customer-insight-global
-description: Build deep customer profiles — Consumer vs Shopper, JTBD framework, customer journey mapping, insight validation, internal monologue research
+description: "Use when the user needs to understand customers deeply enough to write copy and pick targeting — consumer versus shopper, JTBD, layered persona, internal monologue, pain map, objection list, journey map, and a customer language bank pulled from real reviews and DMs. Trigger on 'customer insight', 'buyer persona', 'who is my customer', 'what do they actually want', 'jobs to be done', 'why do they hesitate before buying'. Also use when the user cannot explain who the product is for. Not for — intake questions when an agency signs a new client, see `20-client-intake-brief-global`; paid audience targeting setup, see `51-audience-research-global`; competitor study, see `08-competitor-research-global`."
 metadata:
-  version: 2.5.0
+  version: 2.5.1
   category: strategy
   language: en
 triggers:

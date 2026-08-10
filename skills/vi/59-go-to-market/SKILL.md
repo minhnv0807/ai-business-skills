@@ -1,8 +1,8 @@
 ---
 name: 59-go-to-market
-description: "Lap ke hoach go-to-market (GTM) ra mat san pham / offer / khoa hoc moi: chon phan khuc beachhead, message launch, kenh theo giai doan pre-launch → launch → post-launch, milestone va tieu chi go/no-go. Dung khi nhac 'GTM', 'go-to-market', 'ke hoach ra mat san pham', 'launch plan'."
+description: "Dung khi sap ra mat san pham, dich vu hoac khoa hoc MOI va can duong di ra thi truong — chon phan khuc beachhead, thong diep launch, kenh theo tung giai doan pre-launch, launch, post-launch, milestone va tieu chi go/no-go. Kich hoat khi user nhac 'go-to-market', 'GTM', 'ke hoach ra mat san pham', 'launch plan', 'tung san pham moi', 'san pham sap ra ma chua biet ban cho ai', 'ra mat khoa hoc moi', 'vao thi truong moi'. Khong dung cho — checklist va war-room dieu phoi ngay launch thi dung skill 60-launch-playbook; ke hoach marketing dinh ky ca ky thi dung skill 00-ke-hoach-mkt; chot dinh vi truoc do thi dung skill 58-positioning."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: strategy
 license: MIT
 triggers:

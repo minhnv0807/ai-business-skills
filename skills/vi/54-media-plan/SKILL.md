@@ -1,8 +1,8 @@
 ---
 name: 54-media-plan
-description: "Lap media plan chay ads: tinh nguoc tu doanh thu ra CPL max va budget, phan bo ngan sach theo kenh va funnel TOFU/MOFU/BOFU, budget split Testing 30/Scale 50/Retarget 15/LAL 5, timeline ramp-up theo tuan, KPI target va contingency plan. Kich hoat khi user nhac 'media plan', 'plan ads', 'ke hoach chay ads', 'phan bo ngan sach ads'."
+description: "Dung khi can lap ke hoach chi tieu quang cao cho mot ky — tinh nguoc tu doanh thu, phan bo theo kenh va tang pheu, ty le testing 30 scale 50 retarget 15 lookalike 5, va timeline ramp-up. Kich hoat khi user nhac 'media plan', 'plan ads thang toi', 'phan bo ngan sach quang cao', 'chay bao nhieu tien', 'chia budget cho kenh nao', 'ke hoach chay ads'. Khong dung cho — phan bo ngan sach marketing tong the ngoai ads thi dung skill 61-budget-planning; tinh CPL toi da thi dung skill 10-tinh-kpi-nguoc."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: performance
 license: MIT
 triggers:
@@ -119,16 +119,18 @@ CPL decision rules hang tuan (vi du nganh dich vu local, CPL target 12K — chin
 
 | CPL thuc te | Frequency | Action |
 |-------------|-----------|--------|
-| < CPL target | < 2.0 | WIN — scale +20-30% |
-| 100-125% target | < 2.0 | Acceptable — theo doi |
-| 125-150% target | 2.0-2.5 | Optimize — thay creative |
-| > 150% target | > 2.5 | PAUSE — replace hoac stop |
+| ≤ 1.0x CPA target | < 2.0 | WIN — ung vien scale, kiem tra dieu kien trong `55-scaling-ads` |
+| 1.0 - 1.5x | < 2.0 | Theo doi — toi uu, chua scale |
+| > 1.5x keo dai 7 ngay | 2.0-2.5 | Thay creative hoac audience |
+| > 3.0x | > 2.5 | TAT — ghi ly do vao log |
+
+> Thang nay lay tu `skills/vi/references/quality-gates-vn.md` Gate 1 (nguon duy nhat). Truoc khi phan xu, kiem tra da spend >= 3x CPA muc tieu chua — chua du thi cho, dung tat som.
 
 ### Buoc 7 — Contingency plan
 
 | Tinh huong | Dau hieu | Action |
 |-----------|---------|--------|
-| CPL > 2x target | Sau 3 ngay | Dung ad set, test creative moi |
+| CPA > 3x target | Da spend >= 3x CPA target | Tat ad set (Gate 1), test creative moi |
 | CTR < 0.5% | Ngay 1-2 | Doi creative / hook ngay |
 | Frequency > 3 | Tuan 2+ | Refresh creative, mo rong tep |
 | Spend khong het (delivery thap) | Pace < 80% plan | Mo audience, tang bid, check reject |

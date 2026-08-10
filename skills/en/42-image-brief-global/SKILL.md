@@ -1,8 +1,8 @@
 ---
 name: 42-image-brief-global
-description: "Use when the user needs a complete static image brief for a designer or photographer: visual objective, concept, mood, composition, overlay copy, colors and fonts read from the brand guideline, channel dimensions, and approval criteria. Trigger on 'image brief', 'visual brief', 'banner brief', 'thumbnail brief', 'static brief', 'brief for the designer', or 'how should this graphic look'."
+description: "Use when ONE static image needs a full brief for a designer or photographer — visual objective, concept and mood, composition, overlay copy, colors and fonts read from the brand guideline, per-channel dimensions, deliverables, and approval criteria. Trigger on 'image brief', 'banner brief', 'thumbnail brief', 'brief for the designer', 'how should this graphic look', 'the design came back wrong again'. Also use when the user has a post idea and needs to explain the visual. Not for — a multi-slide sequence, see `43-carousel-brief-global`; tool-level production steps in Canva or Figma, see `45-design-tool-brief-global`; generating the image with AI, see `30-design-master-global`; an urgent same-day swap, see `48-quick-visual-brief-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: content
 license: MIT
 triggers:

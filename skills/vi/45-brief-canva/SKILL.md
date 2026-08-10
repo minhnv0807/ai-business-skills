@@ -1,8 +1,8 @@
 ---
 name: 45-brief-canva
-description: "Viet direction cu the cho designer lam viec tren Canva: template base, thu tu thao tac, map tung element, grid va spacing, export checklist, do va don't. Mau va font doc tu brand kit / brand guideline. Kich hoat khi nhac: brief canva, huong dan lam canva, direction canva, layout canva, template canva."
+description: "Dung khi designer se lam TREN CANVA hoac Figma va can direction thao tac cu the — chon template base, thu tu thao tac, map tung element vao vi tri, luoi va khoang cach, mau va font lay tu brand kit, checklist export, viec nen va khong nen lam. Kich hoat khi user nhac 'brief Canva', 'huong dan lam tren Canva', 'direction Canva', 'template Canva', 'layout Canva', 'lam trong Figma', 'ban design chua ranh nen phai chi tay'. Khong dung cho — brief concept anh tinh khong gan cong cu thi dung skill 42-brief-hinh-anh; chuoi slide carousel thi dung skill 43-brief-carousel; quy dinh mau, font va logo cua thuong hieu thi dung skill 46-brand-guideline."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: operations
 license: MIT
 triggers:

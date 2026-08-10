@@ -1,8 +1,8 @@
 ---
 name: 52-account-structure-global
-description: "Use when the user needs to design or clean up an ad account structure: campaign/ad set/ad hierarchy by objective, a naming convention that makes data readable, CBO vs ABO by stage, how many ad sets and creatives to run, and the minimum daily budget an ad set needs to exit learning. Trigger on 'account structure', 'campaign structure', 'naming convention', 'set up campaign', 'how many ad sets', 'CBO or ABO', or 'restructure ad account'."
+description: "Use when an ad account HIERARCHY needs designing or cleaning up — campaign, ad set, and ad structure by objective, a naming convention that keeps data readable, CBO versus ABO by stage, how many ad sets and creatives to run, and the minimum daily budget an ad set needs to exit learning. Trigger on 'account structure', 'campaign structure', 'naming convention', 'how many ad sets should I run', 'CBO or ABO', 'our account is a mess of duplicated campaigns'. Not for — scoring an existing account against 84 checkpoints, see `21-ads-audit-global`; pixel and conversion setup, see `53-tracking-setup-global`; budget across channels, see `54-media-plan-global`; scaling a winner, see `55-scaling-ads-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: performance
 license: MIT
 triggers:

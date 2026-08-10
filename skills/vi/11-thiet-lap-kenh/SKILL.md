@@ -1,8 +1,8 @@
 ---
 name: 11-thiet-lap-kenh
-description: Huong dan thiet lap kenh marketing A-Z — TikTok Brand, Zalo OA, Facebook Page, Email (Brevo), TikTok Shop, Instagram Business, Google Business Profile — tu tao den chay 30 ngay dau
+description: "Dung khi can MO va thiet lap kenh marketing tu con so khong — TikTok Brand, Zalo OA, Fanpage, Instagram Business, Google Business Profile, TikTok Shop, tai khoan email: checklist setup 4 giai doan, thong so ky thuat, lien ket cheo va ke hoach 30 ngay dau. Kich hoat khi user nhac 'thiet lap kenh', 'tao fanpage moi', 'dang ky Zalo OA', 'mo TikTok Shop', 'setup kenh tu dau', 'chua co kenh nao het', 'kenh moi lap nen lam gi truoc', 'mo kenh moi'. Khong dung cho — cau truc tai khoan quang cao thi dung skill 52-account-structure; gan pixel va do chuyen doi thi dung skill 53-tracking-setup; len lich dang bai thi dung skill 01-lich-noi-dung; van hanh email va Zalo broadcast thi dung skill 14-email-marketing."
 metadata:
-  version: 2.0.1
+  version: 2.0.2
   category: operations
 triggers:
   - "thiet lap kenh"

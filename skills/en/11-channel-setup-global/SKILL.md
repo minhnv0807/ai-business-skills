@@ -1,8 +1,8 @@
 ---
 name: 11-channel-setup-global
-description: "Setup marketing channels for global businesses — channel selection, platform-specific setup checklists, integration guides. Has 4 region variants (US/EU/SEA/LATAM) with region-specific platform priorities. US: Meta+Google+LinkedIn. EU: + LinkedIn/Xing. SEA: TikTok+Shopee/Lazada+LINE. LATAM: WhatsApp Business+Mercado Libre. Trigger: 'channel setup', 'platform setup', 'marketing tech stack', 'multi-channel marketing', 'platform selection'."
+description: "Use when the user needs to choose and stand up marketing channels and the tech behind them — channel selection scoring, platform-by-platform setup checklists, business account and verification steps, and integrations, with region priorities: US Meta plus Google plus LinkedIn, EU adding Xing, SEA adding TikTok, Shopee, Lazada and LINE, LATAM adding WhatsApp Business and Mercado Libre. Trigger on 'channel setup', 'which platforms should we be on', 'set up Google Business Profile', 'marketing tech stack', 'we are starting from zero on social', 'connect our accounts'. Not for — conversion tracking and pixels, see `53-tracking-setup-global`; ad account hierarchy, see `52-account-structure-global`; the posting plan once channels exist, see `01-content-calendar-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: operations
 license: MIT
 triggers:

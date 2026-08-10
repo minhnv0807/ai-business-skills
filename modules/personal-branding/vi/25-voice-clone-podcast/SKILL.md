@@ -1,8 +1,8 @@
 ---
 name: 25-voice-clone-podcast
-description: "Audio AI cho personal brand — voice clone (ElevenLabs/HeyGen Voice/Vbee), podcast workflow, audiobook, voiceover video. 3 use case: voiceover ngan TikTok/Reels (energetic), podcast 30-60 phut (conversational), audiobook (mid-tempo). Repurpose 1:10 (1 podcast → 10 short clip). Trigger: 'voice clone', 'ElevenLabs giong noi', 'podcast AI', 'audio AI', 'Descript voice', 'Riverside podcast', 'voiceover AI'."
+description: "Dung khi mot CA NHAN can AM THANH bang AI — clone giong noi, lam podcast, audiobook, voiceover cho video: 3 use case gom voiceover ngan cho TikTok va Reels, podcast 30-60 phut, audiobook; quy trinh thu mau giong, chinh cam xuc va toc do, cong bo dung luat, tai su dung 1 podcast thanh 10 clip ngan. Kich hoat khi user nhac 'voice clone', 'clone giong noi', 'ElevenLabs', 'lam podcast', 'audio AI', 'voiceover AI', 'ngai thu am moi ngay', 'cat podcast ra clip ngan'. Khong dung cho — video co hinh anh nguoi hoac avatar thi dung skill 24-ai-avatar-production; viet loi thoai va hook noi thi dung skill 04-script-video; viet bai dai dang chu thi dung skill 26-thought-leadership-content."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: content
 license: MIT
 triggers:

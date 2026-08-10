@@ -1,8 +1,8 @@
 ---
 name: 09-insight-khach-hang
-description: Xay dung chan dung khach hang sau — Consumer vs Shopper, JTBD, hanh trinh mua hang, insight validation, internal monologue
+description: "Dung khi can hieu khach hang du sau de viet duoc content va chon duoc tep — persona 3 tang, cau noi noi tam, pain map, objection list va ngan hang ngon ngu khach hang lay tu review va inbox that. Kich hoat khi user nhac 'insight khach hang', 'chan dung khach hang', 'customer persona', 'khach hang cua toi la ai', 'khach nghi gi', 'ho mua vi ly do gi'. Khong dung cho — thu thap thong tin khi agency nhan khach moi thi dung skill 20-brief-client-intake; nghien cuu tep de chay ads thi dung skill 51-audience-research."
 metadata:
-  version: 2.1.0
+  version: 2.1.1
   category: strategy
 triggers:
   - "insight khach hang"

@@ -1,8 +1,8 @@
 ---
 name: 31-offer-design-global
-description: "Use when the user wants to design, package, or improve an offer — the thing being sold, not just the price or copy. Trigger on 'offer', 'irresistible offer', 'value stack', 'bonus stack', 'guarantee', 'risk reversal', 'scarcity', 'urgency', 'upsell', 'downsell', 'high-ticket', 'productized service', 'coaching offer', 'agency offer', or 'offer is not converting'."
+description: "Use when the WHAT being sold needs work, not the price and not the copy — core promise, value stack, bonuses, guarantee and risk reversal, honest scarcity and urgency, tier packaging, upsell and downsell paths, and high-ticket or productized service structures. Trigger on 'design an offer', 'irresistible offer', 'value stack', 'add a guarantee', 'my offer is not converting', 'people say it is too expensive'. Also use when traffic and copy are fine and nobody is buying anyway. Not for — the number on the price tag, see `17-pricing-strategy-global`; the ad text selling it, see `05-ad-copy-global`; the page it sits on, see `12-landing-page-brief-global`; the launch sequence, see `59-go-to-market-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: strategy
 license: MIT
 triggers:

@@ -1,8 +1,8 @@
 ---
 name: 40-next-content-plan
-description: "Lap plan content ky sau TU DATA ky truoc — doc audit + report, giu winner, thay loser, thu nghiem moi theo ti le 70/20/10, toi da 2 hypothesis moi/ky. Khong lap plan tu cam tinh. Kich hoat khi nhac 'next content plan', 'plan content thang toi', 'ke hoach content dua tren data', 'content ky sau'."
+description: "Dung khi da co ket qua audit va can lap plan content ky sau TU DATA chu khong doan — ty le 70 giu winner, 20 toi uu bien the, 10 thu nghiem moi, toi da 2 gia thuyet moi mot ky. Kich hoat khi user nhac 'next content plan', 'plan thang toi', 'content ky sau lam gi', 'dua vao data lap ke hoach', 'thang sau viet gi'. Khong dung cho — audit de biet cai gi work thi chay skill 39-content-audit truoc; xep lich dang theo ngay thi dung skill 01-lich-noi-dung."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: content
 license: MIT
 triggers:

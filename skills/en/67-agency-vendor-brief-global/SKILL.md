@@ -1,8 +1,8 @@
 ---
 name: 67-agency-vendor-brief-global
-description: "Use when briefing or managing an external agency, freelancer, or production vendor: scope of work, deliverable specs, revision rounds, approval process, USD payment milestones, IP assignment and confidentiality terms, and a post-project vendor scorecard. Trigger on 'brief an agency', 'hire a freelancer', 'manage a vendor', 'scope of work', 'the agency is not delivering', 'onboard a new vendor', or 'brief a production house'."
+description: "Use when briefing or managing an EXTERNAL agency, freelancer, or production vendor — scope of work, deliverable specs, revision rounds, approval process, USD payment milestones, IP assignment and confidentiality terms, communication rules, and a post-project vendor scorecard. Trigger on 'brief an agency', 'hire a freelancer', 'scope of work', 'the agency is not delivering', 'onboard a new vendor', 'we keep paying for work we have to redo'. Also use when the user is about to sign a supplier with nothing written down. Not for — briefing an internal team member, see `64-team-brief-global`; the campaign brief itself, see `02-campaign-brief-global`; the asset list the vendor produces, see `41-campaign-asset-list-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: operations
 license: MIT
 triggers:

@@ -1,8 +1,8 @@
 ---
 name: 56-retargeting-plan
-description: "Lap ke hoach retargeting + lookalike: phan tang warm audience (video view / engage / visit / cart), message khac nhau theo tang, frequency cap, thoi gian window, LAL seed va exclusion. Kich hoat khi user nhac 'retarget', 'remarketing', 'lookalike', 'warm audience', 'chay lai nguoi da tuong tac', 'custom audience'."
+description: "Dung khi can chay lai vao nguoi da tuong tac — phan tang warm theo hanh vi va cua so thoi gian, thong diep rieng tung tang, frequency cap, va seed cho lookalike. Kich hoat khi user nhac 'retarget', 'remarketing', 'chay lai nguoi da xem', 'lookalike', 'tep warm', 'khach xem roi khong mua'. Khong dung cho — tim tep moi hoan toan thi dung skill 51-audience-research; keo lai khach da mua roi bo di thi dung skill 69-giu-chan-khach-hang."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: performance
 license: MIT
 triggers:

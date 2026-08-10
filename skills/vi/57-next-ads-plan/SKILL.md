@@ -1,8 +1,8 @@
 ---
 name: 57-next-ads-plan
-description: "Lap plan ads ky sau TU DATA ky truoc: doc report/audit, giu va scale winner, thay loser, dat gia thuyet test moi, budget ky sau theo 3 kich ban. Luon quet data ky truoc truoc khi viet plan. Kich hoat khi user nhac 'plan ads thang toi', 'next ads plan', 'ke hoach ads ky sau', 'plan tu report ads'."
+description: "Dung khi ket thuc mot ky va can lap plan quang cao ky sau tu data that — giu winner, thay loser, gia thuyet test moi, va ngan sach theo 3 kich ban. Kich hoat khi user nhac 'next ads plan', 'plan ads thang sau', 'ky toi chay gi', 'dua vao ket qua lap ke hoach ads', 'ads thang toi'. Khong dung cho — lap media plan lan dau khi chua co data thi dung skill 54-media-plan; chan doan tai sao ky vua roi kem thi dung skill 21-audit-ads-performance."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: performance
 license: MIT
 triggers:

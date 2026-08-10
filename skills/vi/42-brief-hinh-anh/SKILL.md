@@ -1,8 +1,8 @@
 ---
 name: 42-brief-hinh-anh
-description: "Viet brief anh static day du cho designer hoac photographer: muc tieu visual, concept, mood, composition, copy overlay, mau va font doc tu brand guideline, kich thuoc theo kenh, tieu chi duyet. Kich hoat khi nhac: brief anh, brief visual, brief banner, brief thumbnail, brief static, brief hinh anh."
+description: "Dung khi can brief mot ANH TINH cho designer hoac photographer — banner, thumbnail, poster, anh feed: muc tieu visual, concept va mood, bo cuc, copy overlay, mau va font lay tu brand guideline, kich thuoc theo kenh, tieu chi duyet. Kich hoat khi user nhac 'brief anh', 'brief banner', 'brief thumbnail', 'brief visual', 'dat designer lam anh', 'ta lai anh muon lam sao', 'designer hoi lai hoai'. Khong dung cho — chuoi nhieu slide thi dung skill 43-brief-carousel; huong dan thao tac tren Canva thi dung skill 45-brief-canva; can asset gap trong ngay khi campaign dang chay thi dung skill 48-quick-visual-brief; tu gen anh bang AI thi dung skill 30-thiet-ke-master."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: content
 license: MIT
 triggers:

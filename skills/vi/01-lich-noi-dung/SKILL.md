@@ -1,8 +1,8 @@
 ---
 name: 01-lich-noi-dung
-description: Lich noi dung thang — len lich dang bai da kenh voi ti le pheu, content pillar, repurposing matrix, va scoring tieu chi.
+description: "Dung khi can lich dang bai cho ca thang — chot content pillar va ti le, xep bai theo ngay va khung gio, ma tran tai su dung noi dung, va gan muc tieu cho tung tru cot. Kich hoat khi user nhac 'lich noi dung', 'content calendar', 'thang nay dang gi', 'len lich dang bai', 'ke hoach content thang', 'phan bo noi dung'. Khong dung cho — brief tung bai truoc khi viet thi dung skill 36-content-brief; viet caption thanh pham thi dung skill 37-caption-social; lap plan ky sau tu data thi dung skill 40-next-content-plan."
 metadata:
-  version: 2.2.0
+  version: 2.3.1
   category: content
 triggers:
   - "lich noi dung"
@@ -142,7 +142,7 @@ Moi thuong hieu can 3–5 pillar. Kiem tra balance moi tuan.
 
 ## Content Matrix — Y tuong noi dung tu dong
 
-> Ap dung tu `social-media-skills/content-matrix` (Justin Welsh method) — adapt cho VN.
+> Ma tran noi dung chuan hoa cho thi truong VN.
 
 Ghep **content pillar** cua brand voi **8 dinh dang** de tao 24–40 y tuong cung luc.
 

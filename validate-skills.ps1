@@ -60,17 +60,48 @@ Get-ChildItem -Path $SkillsDir -Directory | ForEach-Object {
     }
 
     # Validate description
-    if ($frontmatter -match 'description:\s*"?([^"\n]+)"?') {
+    # Handles three YAML forms: quoted scalar, plain scalar, and block scalar (| or >).
+    # Block scalars were previously parsed as the literal "|", silently disabling every
+    # check below for those skills.
+    $desc = $null
+    if ($frontmatter -match '(?m)^description:\s*[\|\>]\s*$') {
+        # Block scalar: join the indented continuation lines that follow.
+        $lines = $frontmatter -split "`n"
+        $collecting = $false
+        $parts = @()
+        foreach ($line in $lines) {
+            if ($line -match '^description:\s*[\|\>]\s*$') { $collecting = $true; continue }
+            if ($collecting) {
+                if ($line -match '^\s+\S') { $parts += $line.Trim() } else { break }
+            }
+        }
+        $desc = ($parts -join ' ')
+    } elseif ($frontmatter -match 'description:\s*"?([^"\n]+)"?') {
         $desc = $Matches[1]
+    }
+
+    if ([string]::IsNullOrWhiteSpace($desc)) {
+        $errors += "Missing 'description' field"
+    } else {
         $descLen = $desc.Length
         if ($descLen -lt 1 -or $descLen -gt 1024) {
             $errors += "Description length $descLen chars (must be 1-1024)"
         }
-        if ($desc -notmatch '(?i)khi|when|dung|use|mention') {
-            $warnings += "Description may lack trigger phrases"
+        # The model routes on name + description only. Custom keys (triggers/output/
+        # related) are documentation for humans and are never seen at selection time,
+        # so trigger phrases must live inside the description itself.
+        # Previously this was a substring match on "dung|use|when" which any Vietnamese
+        # description passed by accident. Now: count actual quoted trigger phrases.
+        $quotedCount = ([regex]::Matches($desc, "'[^']+'")).Count
+        if ($quotedCount -lt 3) {
+            $warnings += "Description has $quotedCount quoted trigger phrases (need >=3 - the model routes on description, not on the triggers: key)"
         }
-    } else {
-        $errors += "Missing 'description' field"
+        # Sibling routing keeps overlapping skills from firing on each other's work.
+        # Accepts both the Vietnamese form ("Khong dung cho — X thi dung skill NN-...")
+        # and the English forms ("Not for — X, see `NN-...`" / "... use `NN-...`").
+        if ($desc -notmatch '(?i)khong dung cho|not for|xem skill|dung .*thay the|(see|use) `?\d{2}-') {
+            $warnings += "Description lacks sibling routing (add 'Khong dung cho X - dung skill NN-ten' or 'Not for - X, see NN-name')"
+        }
     }
 
     # Validate file length

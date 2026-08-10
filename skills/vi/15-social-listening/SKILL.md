@@ -1,8 +1,8 @@
 ---
 name: 15-social-listening
-description: Giam sat thuong hieu, doi thu, xu huong nganh tren mang xa hoi — phat hien som khung hoang va co hoi content
+description: "Dung khi can theo doi lien tuc nguoi ta noi gi ve thuong hieu, doi thu va nganh tren mang xa hoi — bo tu khoa giam sat, phan loai sac thai, bao cao tuan va thang, canh bao som, chi so brand health. Kich hoat khi user nhac 'social listening', 'theo doi thuong hieu', 'giam sat mang xa hoi', 'brand monitoring', 'khach dang noi gi ve minh', 'do sentiment', 'co ai nhac ten shop khong', 'canh bao som khung hoang'. Khong dung cho — khung hoang DA XAY RA va can xu ly ngay thi dung skill 66-crisis-playbook; mo xe chien luoc mot doi thu cu the thi dung skill 08-nghien-cuu-doi-thu; doc so lieu ads va web thi dung skill 13-phan-tich-du-lieu."
 metadata:
-  version: 2.1.0
+  version: 2.1.1
   category: operations
 triggers:
   - "social listening"
@@ -160,7 +160,7 @@ ACT       — Phan hoi, dieu chinh chien luoc, xu ly khung hoang
 
 ## Niche Research — 20 chu de nong trong 7 ngay
 
-> Ap dung tu `social-media-skills/niche-research` — adapt cho VN channels.
+> Nghien cuu ngach, hieu chinh cho kenh VN.
 
 ### Muc dich
 

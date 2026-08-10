@@ -1,8 +1,8 @@
 ---
 name: 50-asset-resize
-description: "SOP resize va adapt asset tu 1 master design ra du kich thuoc cho tat ca kenh (feed, story, reel, cover, ads placement): bang kich thuoc chuan 2025-2026, 3 chien luoc scale-crop / re-compose / rebuild, quy tac safe zone, naming file. Kich hoat khi nhac: resize asset, du kich thuoc, adapt kich thuoc, bang kich thuoc chuan, safe zone."
+description: "Dung khi da co MOT master design va can ra du kich thuoc cho tat ca kenh — bang kich thuoc chuan 2025-2026 cho feed, story, reel, cover, placement ads; 3 cach xu ly scale-crop, re-compose, rebuild; quy tac safe zone va cach dat ten file. Kich hoat khi user nhac 'resize asset', 'du kich thuoc', 'adapt kich thuoc', 'bang kich thuoc chuan', 'safe zone', 'anh bi cat mat chu tren story', 'mot anh dang duoc may cho'. Khong dung cho — thiet ke moi tu concept thi dung skill 42-brief-hinh-anh; asset gap khi campaign dang chay thi dung skill 48-quick-visual-brief; liet ke toan bo asset cua campaign thi dung skill 41-campaign-asset-list."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: operations
 license: MIT
 triggers:

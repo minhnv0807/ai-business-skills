@@ -1,8 +1,9 @@
 # Hook Formulas — Cong Thuc Hook Cho Thi Truong VN
 
-> **Nguon goc:** Adapt tu `social-media-skills/hook-generator` + `post-formatter` (Charlie Hills, 350K+ followers, 100M+ views/nam).
+> **Nguon goc:** Tong hop tu cac framework hook pho bien, chuan hoa va hieu chinh cho thi truong Viet Nam.
 > **Ap dung cho:** Skill 04 (Script Video), Skill 05 (Copy Quang Cao), Skill 01 (Lich Noi Dung).
 > **Thi truong:** Viet Nam 2025–2026.
+> **Cap nhat 2026-08:** them mo hinh hook 3 thanh phan, bang chan doan theo pheu, va quy tac on-ramp.
 
 ---
 
@@ -16,7 +17,32 @@
 
 ---
 
+## Hook la 3 thanh phan, khong phai 1 dong chu
+
+Voi video, hook khong phai cau mo dau. No la **ba thu chay dong thoi** trong 0–3 giay:
+
+| Thanh phan | La gi | Nhiem vu |
+|-----------|-------|----------|
+| **Hinh anh 0-3s** | Dieu dang xay ra tren man hinh | Chan ngon tay dang luot |
+| **Cau noi dau tien** | Loi thoai / voice-over dau tien | Mo vong to mo |
+| **Text overlay** | Chu tren man hinh | Giu y nghia cho nguoi xem TAT TIENG |
+
+### Quy tac khong trung lap
+
+Ba thanh phan phai **bo tro** nhau, khong duoc noi cung mot thong tin.
+
+- **Sai:** nguoi noi "Toi bo goi tap 500K/thang", text overlay ghi "Toi bo goi tap 500K/thang", hinh la mat nguoi dang noi. Hai trong ba o bi lang phi — hook chi con 1/3 suc manh.
+- **Dung:** hinh la man hinh dien thoai dang bam huy goi tap · cau noi "Toi bo goi tap 500K/thang" · text overlay "Va thay bang cai nay".
+
+**Mot hook spec chi dien 1 cot la 1/3 cai hook.** Khi brief hook cho editor hoac talent, luon viet du ca ba cot — khong de o trong roi de nguoi lam tu doan.
+
+**Ads anh tinh** rut con 2 thanh phan (hinh + headline). Quy tac giu nguyen: headline khong duoc mo ta lai buc anh.
+
+---
+
 ## 6 Kieu Hook
+
+Moi kieu ben duoi co 2 bang: bang **cau chu** (dong 1 + twist) va bang **3 thanh phan** (vi du da dien du ca ba cot).
 
 ### 1. Con so dan dau (Number-led)
 
@@ -26,6 +52,12 @@
 |------------|---------|-------|
 | Dong 1 | ≤ 50 ky tu (video) / ≤ 125 ky tu (ads) | "97% chu spa dang lam sai buoc nay" |
 | Dong 2 (twist) | ≤ 50 ky tu | "Va no ton 200 trieu/nam ma khong biet" |
+
+**3 thanh phan (vi du spa):**
+
+| Hinh anh 0-3s | Cau noi dau tien | Text overlay |
+|--------------|-----------------|-------------|
+| Lat nhanh so tay lich hen — trang nao cung kin | "97% chu spa dang lam sai buoc nay" | "Ton 200 trieu/nam ma khong biet" |
 
 **Phu hop:** TOFU (cold audience), moi nen tang
 **Cam xuc trigger:** To mo, bat ngo
@@ -47,6 +79,12 @@
 | Dong 1 | ≤ 50 ky tu | "Chay ads nhieu hon KHONG giup ban" |
 | Dong 2 (lat nguoc) | ≤ 50 ky tu | "Toi giam budget 50% va tang don 3x" |
 
+**3 thanh phan (vi du dich vu marketing):**
+
+| Hinh anh 0-3s | Cau noi dau tien | Text overlay |
+|--------------|-----------------|-------------|
+| Tay keo thanh budget trong Ads Manager tu cao xuong thap | "Chay ads nhieu hon KHONG giup ban" | "Giam 50% budget — don tang 3x" |
+
 **Phu hop:** TOFU, dac biet TikTok va Facebook
 **Cam xuc trigger:** Bat ngo, thach thuc
 
@@ -65,6 +103,14 @@
 |------------|---------|-------|
 | Dong 1 (truoc) | ≤ 50 ky tu | "6 thang truoc toi khong co khach" |
 | Dong 2 (sau) | ≤ 50 ky tu | "Bay gio 40 booking/tuan — day la cach" |
+
+**3 thanh phan (vi du chu tiem):**
+
+| Hinh anh 0-3s | Cau noi dau tien | Text overlay |
+|--------------|-----------------|-------------|
+| Man hinh app dat lich hien tai — kin cho ca tuan | "6 thang truoc toi khong co khach" | "Chi doi dung 1 thu" |
+
+Luu y cach chia viec: **hinh** show trang thai SAU, **cau noi** ke trang thai TRUOC, **overlay** goi ten co che. Neu ca ba cung ke before-after thi hai o bi phi.
 
 **Phu hop:** MOFU (warm audience), Facebook, TikTok
 **Cam xuc trigger:** Hy vong, khat vong
@@ -85,6 +131,12 @@
 | Dong 1 | ≤ 50 ky tu | "Bac si da lieu 15 nam khuyen dung" |
 | Dong 2 | ≤ 50 ky tu | "Ly do bat ngo ma it ai biet" |
 
+**3 thanh phan (vi du my pham):**
+
+| Hinh anh 0-3s | Cau noi dau tien | Text overlay |
+|--------------|-----------------|-------------|
+| Can canh nhan hop — ngon tay chi vao dong thanh phan | "Bac si da lieu 15 nam khuyen dung" | "Ly do nam o dong thu 3" |
+
 **Phu hop:** MOFU, nganh can trust (y te, giao duc, tai chinh)
 **Cam xuc trigger:** Tin tuong, to mo
 
@@ -104,6 +156,12 @@
 | Dong 1 (thu nhan) | ≤ 50 ky tu | "Toi da mat 500 trieu chay ads sai" |
 | Dong 2 (bai hoc) | ≤ 50 ky tu | "Day la bai hoc dat gia nhat" |
 
+**3 thanh phan (vi du chu doanh nghiep):**
+
+| Hinh anh 0-3s | Cau noi dau tien | Text overlay |
+|--------------|-----------------|-------------|
+| Cuon bang bao cao Ads Manager, cot spend do keo dai | "Toi da mat 500 trieu chay ads sai" | "3 loi ai cung mac" |
+
 **Phu hop:** BOFU (hot audience), LinkedIn, Facebook
 **Cam xuc trigger:** Dong cam, chinh thuc
 
@@ -122,6 +180,12 @@
 |------------|---------|-------|
 | Dong 1 | ≤ 50 ky tu | "TikTok Shop sap thay doi hoan toan" |
 | Dong 2 | ≤ 50 ky tu | "Ai khong chuan bi se mat thi phan" |
+
+**3 thanh phan (vi du nha ban hang online):**
+
+| Hinh anh 0-3s | Cau noi dau tien | Text overlay |
+|--------------|-----------------|-------------|
+| Anh chup thong bao update chinh sach tren app ban hang | "TikTok Shop sap thay doi hoan toan" | "Ai khong chuan bi se mat thi phan" |
 
 **Phu hop:** BOFU, TOFU (tuy goc), moi nen tang
 **Cam xuc trigger:** FOMO, lo lang, kip thoi
@@ -157,6 +221,39 @@
 
 ---
 
+## Bang chan doan hook — metric nao yeu thi thanh phan nao hong
+
+Khi mot video/ads chay kem, **dung bo ca cai**. Doc pheu theo thu tu de biet phai sua PHAN NAO. Moi buoc trong pheu do mot thanh phan khac nhau.
+
+| Buoc | Metric | Yeu = hong o dau | Cach sua |
+|------|--------|-----------------|---------|
+| Chan | Thumbstop / 3-sec view rate | **Hinh anh 0-3s** (va text overlay) | Quay lai canh mo dau khac — giu nguyen cau noi, than bai, CTA |
+| Giu | Hold rate (3s → 15s, hoac 50% video) | **Doan 3-15s (on-ramp) — KHONG phai hook** | Viet lai doan noi tiep hook. Dung dong vao hook |
+| Click | CTR | Offer chua ro o phan giua | Lam ro loi ich, CTA, hoac bang chung |
+| Chuyen doi | CVR sau click | Ads va landing page khong khop | Sua landing page hoac sua claim — xem `12-brief-landing-page` |
+
+Ba ket luan quan trong tu bang nay:
+
+1. **Hold rate khong phai loi cua hook.** Rat nhieu team thay hold thap roi doi hook — sai cho. Hold rate do doan 3-15s. Doi hook khi hold thap la sua nham benh.
+2. **Thumbstop cao NHUNG hold sup = clickbait.** Hinh mo dau keo nham nguoi xem vao. Do la ads xau, khong phai hook thang. Doc het ca pheu roi moi goi la winner.
+3. **Moi vong test chi doi 1 thanh phan.** Doi hinh anh HOAC doi on-ramp HOAC doi cach dien dat offer — khong doi ca ba roi doan xem cai nao an.
+
+---
+
+## On-ramp — doan 3-15s ngay sau hook
+
+On-ramp la nhip noi giua hook va than bai. On-ramp tot **keo dai dung mach cua hook**; on-ramp xau nhay thang sang gioi thieu thuong hieu va lam nguoi xem thay bi lua.
+
+Vi du: hook hua "day la ly do da ban te hon" thi nhip tiep theo phai bat dau giai thich ly do — khong duoc chuyen sang "Spa Luna thanh lap nam 2019, voi doi ngu...".
+
+### Canh bao: doi hook ma giu nguyen than video se gay dut mach
+
+Hook moi hua mot dang, doan sau ke mot dang khac — nguoi xem roi ngay o giay thu 5. Vi vay **moi lan test hook thuc chat cung la test on-ramp**: phai viet lai on-ramp cho khop tung hook.
+
+**Day la NGOAI LE cua quy tac "1 bien 1 lan" trong `19-ab-test-setup`.** Hook va on-ramp la mot cap khong tach roi duoc — tach ra thi bien "hook" do duoc chinh la mot video gay. Khi ghi test log, ghi ro bien test la **"hook + on-ramp"**, khong ghi la "hook".
+
+---
+
 ## Kiem tra hook truoc khi dung
 
 - [ ] Dong 1 ≤ 50 ky tu (video) hoac ≤ 125 ky tu (ads primary text)
@@ -167,6 +264,9 @@
 - [ ] Phu hop nen tang (char limit dung)
 - [ ] Twist/dong 2 lat nguoc hoac tang stakes — khong lap lai dong 1
 - [ ] Doc len thanh tieng nghe tu nhien (khong co cau van)
+- [ ] (Video) Da dien du CA BA cot: hinh anh 0-3s · cau noi dau tien · text overlay
+- [ ] (Video) Ba thanh phan khong noi lai cung mot thong tin
+- [ ] (Video) Da viet lai on-ramp 3-15s cho khop voi hook nay — khong bung on-ramp cu
 
 ---
 
@@ -180,3 +280,7 @@
 | Copy y het doi thu | Andromeda cluster (Meta), nguoi xem nham | Doi goc nhin, dung so lieu khac, doi format |
 | Hook dai >125 ky tu (ads) | Bi cat giua, mat y nghia | Rut gon, 1 y duy nhat |
 | Hook khong lien quan noi dung | Clickbait → nguoi xem that vong → unfollow | Hook phai la promise, noi dung phai deliver |
+| 3 thanh phan noi cung 1 thong tin | Hook chi con 1/3 suc manh, 2 o bi phi | Chia viec: hinh show, loi ke, overlay goi ten |
+| Brief hook chi ghi cau noi | Editor tu doan hinh va overlay → ra thu khac | Dien du 3 cot truoc khi giao |
+| Doi hook nhung bung nguyen than video cu | Dut mach o giay thu 5, hold rate sup | Viet lai on-ramp 3-15s cho tung hook |
+| Thay hold rate thap → doi hook | Sua nham benh, hook khong phai nguyen nhan | Sua on-ramp 3-15s (xem bang chan doan) |

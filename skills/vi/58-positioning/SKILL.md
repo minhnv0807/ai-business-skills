@@ -1,8 +1,8 @@
 ---
 name: 58-positioning
-description: "Xac dinh dinh vi san pham / thuong hieu: positioning statement theo cong thuc Promise + Proof + Path, ma tran khac biet hoa vs doi thu, category entry points, message hierarchy va huong tagline. Dung khi nhac 'dinh vi', 'positioning', 'khac biet voi doi thu', 'tai sao khach chon minh', 'USP', 'tai dinh vi'."
+description: "Dung khi can tra loi duoc tai sao khach chon MINH chu khong chon nguoi khac — positioning statement theo Promise + Proof + Path, ma tran khac biet so voi doi thu, category entry points, thap thong diep 3 tang va huong tagline. Kich hoat khi user nhac 'dinh vi thuong hieu', 'positioning', 'USP', 'khac biet voi doi thu', 'tai sao khach chon minh', 'tai dinh vi', 'noi gi de khach nho', 'san pham giong het thi truong'. Khong dung cho — soi doi thu dang lam gi thi dung skill 08-nghien-cuu-doi-thu; giong noi va tu vung khi viet thi dung skill 35-brand-voice; dong goi goi ban thi dung skill 31-offer-design; ke hoach ra mat san pham thi dung skill 59-go-to-market."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: strategy
 license: MIT
 triggers:

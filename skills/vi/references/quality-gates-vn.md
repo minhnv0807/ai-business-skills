@@ -1,30 +1,60 @@
 # Quality Gates VN — Quy Tac Khong Bao Gio Vi Pham
 
 > **Reference file** — Load khi dung `03-danh-gia-hieu-suat`, `21-audit-ads-performance`, `10-tinh-kpi-nguoc`.
-> Adapted tu claude-ads/references cho thi truong Viet Nam 2025-2026.
+> Chuan hoa cho thi truong Viet Nam 2025-2026.
 >
 > **Dinh nghia:** Quality Gates la HARD RULES — vi pham bat ky dieu nao = danh dau CRITICAL, fix truoc toan bo.
 
 ---
 
-## Gate 1 — 3x Kill Rule (Quy tac Dung ngay)
+## Gate 1 — Thang quyet dinh CPA (nguon duy nhat cho moi skill)
 
-**Quy tac:** Bat ky ad set nao co CPA > 3x muc tieu CPA = **PAUSE NGAY**
+> **Day la nguon su that duy nhat ve nguong giu/tat/scale.** Skill `03`, `21`, `54`, `55` deu tro ve day. Neu thay so khac o cho khac, so o day dung.
+
+**Neo vao MOT bien: CPA muc tieu** (chi phi toi da cho 1 ket qua, tinh tu `10-tinh-kpi-nguoc`). Moi nguong ben duoi la boi so cua no — nen thang nay tu dong dung cho moi nganh, moi muc gia, khong can chinh tay.
+
+### Buoc 0 — Du data chua? (kiem tra TRUOC khi phan xu)
 
 ```
-Neu: CPA thuc te > 3 × CPA muc tieu
-→ Pause ad set
-→ Phan tich root cause (creative? audience? bid?)
-→ Test lai voi creative/audience moi
-→ Chi bat lai khi co hypothesis ro rang
+Chi spend < 3 × CPA muc tieu  →  CHUA DU DATA, cho tiep
 ```
 
-**Vi du VN:**
-- CPA muc tieu (CPMess): 25K
-- CPA nguong pause: > 75K
-- Spend hien tai truoc khi pause: 200K (8 mess × 25K = tieu chuan; neu spend 200K ma chi 3 mess = 66K/mess → PAUSE)
+Vi sao 3x: neu da tieu gap 3 lan CPA muc tieu ma van 0 chuyen doi, xac suat ad set nay thuc su tot chi con khoang 5%. Tat o muc 2x thi con 13% kha nang giet nham ad set tot; cho den 5x thi tra hoc phi qua dat.
 
-> Tai sao 3x? Vi du tu data VN: neu chay 2x thi qua that tho, nhieu ad set kha co the phuc hoi. Neu >3x, goc nhin kinh doanh roi: chi 66K de doi 1 tin nhan + ti le chuyen doi 50% = 132K/khach. Voi AOV spa 500K, LTV 2 trieu, nguong nay con chap nhan duoc. Nhung neu chay tiep tren 3x, lua dot chi phi qua nhanh.
+### Thang phan xu (sau khi du data)
+
+| CPA thuc te / CPA muc tieu | Trang thai | Hanh dong |
+|---|---|---|
+| ≤ 1.0x | **Winner** | Ung vien scale — chuyen sang `55-scaling-ads` kiem tra 7 dieu kien du |
+| 1.0 – 1.5x | Theo doi | Giu, toi uu creative/audience. Chua scale, chua tat |
+| > 1.5x lien tuc 7 ngay | Thay | Doi creative hoac audience. Giu ngan sach, doi bien |
+| > 3.0x | **Tat ngay** | Pause. Ghi ly do vao log truoc khi tat |
+| 0 chuyen doi khi spend ≥ 3x | **Tat ca concept** | Khong phai loi creative le — goc tiep can sai. Quay ve `09-insight-khach-hang` |
+
+### Vi du VN
+
+CPA muc tieu (CPMess) 25K → chua du data khi spend < 75K · winner khi ≤ 25K · theo doi 25–37K · thay creative khi > 37K keo dai 7 ngay · tat khi > 75K · tat concept khi tieu 75K ma chua co tin nhan nao.
+
+### Lop chat luong lead (platform khong nhin thay)
+
+CPA tren Ads Manager chi dem lead, khong dem lead THAT. Neu ti le lead du dieu kien < 40%, chi phi that cho 1 lead du dieu kien = CPA hien thi ÷ 0.4 = **gap 2.5 lan**. Mot ad set CPL 20K voi 30% lead that dat hon ad set CPL 35K voi 90% lead that. Kiem tra ti le nay hang tuan; duoi 40% thi doi creative/audience du CPA nhin dep.
+
+### Tran so luong ad ma ngan sach danh gia noi
+
+Moi ad can it nhat 3 × CPA muc tieu de ket luan (theo Buoc 0). Trong mot chu ky test 7 ngay:
+
+```
+So ad toi da = (Ngan sach ngay × 7) / (3 × CPA muc tieu)
+```
+
+| Ngan sach/ngay | CPA muc tieu | Tran ly thuyet |
+|---|---|---|
+| 100K | 25K | 9 ad |
+| 300K | 25K | 28 ad |
+| 200K | 50K | 9 ad |
+| 500K | 100K | 11 ad |
+
+**Trong thuc te lay thap hon tran nhieu.** Meta khong chia deu ngan sach — no don phan lon vao 1-2 ad thang som, nen cac ad con lai khong bao gio du data du tinh toan cho phep. Nguong van hanh: **3-5 ad/ad set**. Cong thuc tren dung de bat truong hop ro rang sai — vi du chay 15 ad voi 100K/ngay, khi tran chi la 9. Do la tra tien de khong biet gi.
 
 ---
 

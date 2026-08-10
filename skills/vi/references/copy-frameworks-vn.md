@@ -1,7 +1,7 @@
 # Copy Frameworks VN — 6 Framework Viet Copy Quang Cao Chuyen Nghiep
 
 > **Reference file** — Load khi dung skill `05-copy-quang-cao`.
-> Adapted tu claude-ads/references/copy-frameworks.md cho thi truong Viet Nam 2025–2026.
+> Chuan hoa cho thi truong Viet Nam 2025–2026.
 
 ---
 

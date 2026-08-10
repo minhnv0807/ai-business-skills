@@ -1,9 +1,9 @@
 ---
 name: 14-email-marketing
-description: Thiet lap va van hanh email marketing — welcome series, nurture, promotion, re-engage — toi uu cho thi truong Viet Nam
+description: "Dung khi can xay chuoi email hoac Zalo OA gui theo kich ban — welcome series, nurture, promotion, win-back: phan tep, luong automation, subject line, tan suat gui, A/B test va KPI open/click. Kich hoat khi user nhac 'email marketing', 'chuoi email tu dong', 'welcome email', 'email nurture', 'broadcast Zalo OA', 'co list ma khong biet gui gi', 'email khong ai mo', 'cham soc khach qua Zalo'. Khong dung cho — code file HTML email chay duoc tren moi client thi dung skill 49-html-email-template; xay he thong giu chan khach da mua thi dung skill 69-giu-chan-khach-hang; thiet ke qua tang doi thong tin lien he thi dung skill 70-lead-magnet."
 argument-hint: "<audience + objective + sequence type>"
 metadata:
-  version: 2.1.1
+  version: 2.1.2
   category: operations
 triggers:
   - "email marketing"

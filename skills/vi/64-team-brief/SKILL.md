@@ -1,8 +1,8 @@
 ---
 name: 64-team-brief
-description: "Brief giao viec cho tung thanh vien team marketing va template hop lien phong ban: task cu the, deadline theo gio, definition of done, constraint, check-in point. Dung khi nhac 'giao task', 'brief cho nhan vien', 'brief 1:1', 'phan cong cong viec', 'define done', 'template hop', 'agenda hop phong ban'."
+description: "Dung khi can GIAO VIEC cho tung nguoi trong team marketing hoac chuan bi hop — task cu the, deadline theo gio, definition of done, rang buoc, diem check-in, kem template agenda va bien ban hop lien phong ban co action item. Kich hoat khi user nhac 'giao task cho team', 'brief cho nhan vien', 'phan cong cong viec', 'brief 1:1', 'definition of done', 'template hop', 'agenda hop marketing', 'giao viec xong lam sai y'. Khong dung cho — brief tong the ca chien dich thi dung skill 02-brief-chien-dich; duyet output nguoi ta nop len thi dung skill 62-marketing-review; danh gia hieu suat dinh ky thi dung skill 65-team-performance-review; giao viec ra ben ngoai thi dung skill 67-agency-vendor-brief."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: operations
 license: MIT
 triggers:

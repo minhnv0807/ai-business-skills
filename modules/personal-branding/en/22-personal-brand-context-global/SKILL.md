@@ -1,8 +1,8 @@
 ---
 name: 22-personal-brand-context-global
-description: "Foundation skill for global personal brand cluster. Creates `.agents/personal-brand-context-global.md` with region-specific personal brand context plus visual identity and visual asset inventory (style refs, face refs, logo, palette, background). 4 region variants (US/EU/SEA/LATAM); each covers founder/coach/creator inside. Reads BEFORE other PB skills (23-28 global). Trigger: 'global personal brand', 'international personal brand', 'US founder brand', 'EU coach brand', 'creator economy global', 'personal brand reference image', 'personal visual identity'."
+description: "Use when starting work on a PERSONAL brand — a founder, coach, or creator, not a company: creates `.agents/personal-brand-context-global.md` covering story, expertise, audience, positioning, platforms, visual identity, and the asset inventory of style refs, face refs, logo, palette, and background, with region variants for US, EU, SEA, and LATAM. Skills 23 to 28 read it first. Trigger on 'personal brand setup', 'set up my founder brand', 'coach personal brand context', 'creator profile setup', 'the AI does not know my story', 'build my personal brand from zero'. Not for — a company or product brand, see `00-marketing-plan-global` and `product-marketing-context-global`; the 12-month strategy built on this, see `23-personal-brand-strategy-global`."
 metadata:
-  version: 1.1.0
+  version: 1.1.1
   category: foundation
 license: MIT
 triggers:

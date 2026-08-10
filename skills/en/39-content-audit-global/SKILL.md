@@ -1,8 +1,8 @@
 ---
 name: 39-content-audit-global
-description: "Use when the user wants to audit published content — pull channel data, classify winners and losers by percentile, find the pattern behind performance, and decide what to keep, kill, or scale. Trigger on 'content audit', 'audit our content', 'which content is working', 'content performance review', 'find the pattern in our posts', or 'evaluate last month's content'."
+description: "Use when published content has to be audited — pull channel data, classify winners and losers by percentile across pillar, format, and hook, find the pattern behind performance, and decide what to keep, kill, or scale. Trigger on 'content audit', 'which posts are working', 'content performance review', 'why did that one go viral', 'our reach is dropping', 'evaluate what we posted last month'. Also use when the user only says content does not seem to work anymore. Not for — the plan for next period built on these findings, see `40-next-content-plan-global`; paid ad account review, see `21-ads-audit-global`; the stakeholder report, see `07-marketing-report-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: content
 license: MIT
 triggers:

@@ -1,8 +1,8 @@
 ---
 name: 61-budget-planning-global
-description: "Use when the user needs to plan or manage a marketing budget in USD: allocation by channel, funnel stage, and month, test-versus-scale split, scale-up and stop-loss thresholds, reserve, a plan-versus-actual tracker, and a review cadence. Trigger on 'budget planning', 'marketing budget', 'budget allocation', 'how much should we spend on ads', 'campaign budget', 'stop loss threshold', or 'quarterly budget'."
+description: "Use when a marketing BUDGET has to be planned or managed in USD — allocation by bucket, channel, and month, test versus scale split, scale-up and stop-loss thresholds, reserve, a plan-versus-actual tracker, and a review cadence. Trigger on 'budget planning', 'marketing budget', 'split the budget across channels', 'stop loss threshold', 'quarterly budget', 'we keep overspending and nobody notices'. Also use when a number has been approved and nobody has divided it up. Not for — the revenue-backward math that produces the number, see `10-reverse-kpi-global`; paid media allocation only, see `54-media-plan-global`; paying an external vendor, see `67-agency-vendor-brief-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: strategy
 license: MIT
 triggers:

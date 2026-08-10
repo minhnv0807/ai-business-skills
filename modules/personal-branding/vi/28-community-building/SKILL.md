@@ -1,8 +1,8 @@
 ---
 name: 28-community-building
-description: "Xay community quanh personal brand — Zalo Group, Telegram, FB Group, Skool, Mighty Networks, Discord. Community blueprint 3 lop (Public/Member/Inner). Onboarding flow 7 ngay. Engagement rituals weekly. Moderation playbook. Activation metrics. Anti-pattern VN. Trigger: 'cong dong personal brand', 'Zalo group', 'Skool community', 'Mighty Networks', 'fan club online', 'membership site', 'community building VN'."
+description: "Dung khi mot CA NHAN muon xay CONG DONG quanh minh — Zalo Group, Telegram, Facebook Group, Skool, Mighty Networks, Discord: blueprint 3 lop public / member / inner, luong onboarding 7 ngay, nghi thuc tuong tac hang tuan, playbook kiem duyet, chi so kich hoat va cac loi thuong gap o VN. Kich hoat khi user nhac 'xay cong dong', 'Zalo group', 'Facebook group rieng', 'Skool community', 'membership site', 'group im lang khong ai noi', 'gom nguoi theo doi vao mot cho'. Khong dung cho — kiem tien tu cong dong thi dung skill 27-personal-brand-monetize; rai seeding duoi bai dang thi dung skill 38-seeding-plan; giu chan khach da mua cua doanh nghiep thi dung skill 69-giu-chan-khach-hang."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: operations
 license: MIT
 triggers:

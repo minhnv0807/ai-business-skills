@@ -1,8 +1,8 @@
 ---
 name: 38-community-seeding-global
-description: "Use when the user wants a plan for showing up in communities — Reddit, Facebook Groups, Discord, Slack, LinkedIn groups, Quora, niche forums — without astroturfing. Trigger on 'community marketing', 'Reddit marketing', 'seeding plan', 'post in groups', 'community strategy', 'forum marketing', or 'Discord and Slack communities'."
+description: "Use when the user wants to show up in OTHER communities without astroturfing — Reddit, Facebook Groups, Discord, Slack, LinkedIn groups, Quora, and niche forums: a prioritized community list with the rules of each space, a named participant roster, post types written in full, reply scripts, a participation calendar, and red lines. Trigger on 'community marketing', 'Reddit marketing', 'seeding plan', 'post in Facebook groups', 'answer questions on Quora', 'we got banned from a group'. Not for — building your OWN paid or private community, see `28-community-building-global`; monitoring mentions across the web, see `15-social-listening-global`; briefing paid creators, see `06-ugc-egc-brief-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: content
 license: MIT
 triggers:

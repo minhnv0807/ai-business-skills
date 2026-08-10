@@ -1,8 +1,8 @@
 ---
 name: 55-scaling-ads
-description: "Framework scale ads khi da co winner: kiem tra dieu kien du scale (CPL dat, frequency thap, volume tep con), vertical scaling +20-30%/lan, horizontal scaling (dup ad set, tep moi, kenh moi), quan ly rui ro reset learning phase va lich scale. Quy tac cung: khong tang budget khi CPL dang xau. Kich hoat khi user nhac 'scale ads', 'tang budget', 'nhan winner', 'scale campaign'."
+description: "Dung khi da co winner va muon tang quy mo ma khong lam hong — 7 dieu kien du de scale, tang doc +20-30% moi lan, mo rong ngang bang tep va kenh moi, va rui ro reset learning phase. Kich hoat khi user nhac 'scale ads', 'tang budget', 'nhan doi ngan sach', 'ads dang tot muon day manh', 'horizontal scaling', 'tang chi tieu'. Quy tac cung: khong tang budget khi CPL dang xau. Khong dung cho — CPL dang xau thi chay skill 21-audit-ads-performance truoc; nhan tep warm thi dung skill 56-retargeting-plan."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: performance
 license: MIT
 triggers:
@@ -69,10 +69,12 @@ Thieu bat ky muc nao → chua scale; quay ve toi uu hoac chuan bi them.
 | Aggressive | +50% | 1 lan duy nhat | Campaign rat stable, chap nhan rui ro |
 | KHONG LAM | x2 ngay | — | CPL se tang vot, reset learning |
 
-Sau moi lan tang, monitor 24-48h:
-- CPL tang <= 20% → giu, cho on dinh roi tang tiep
+Sau moi lan tang, monitor 24-48h. **Day la nguong DELTA — do muc tang so voi chinh no truoc khi scale, khac voi thang CPA tuyet doi trong Gate 1:**
+- CPL tang <= 20% so voi truoc khi tang → giu, cho on dinh roi tang tiep
 - CPL tang > 20% → HOLD, khong tang tiep
 - CPL tang > 40% → giam ve budget cu, cho 48h on dinh lai
+
+> Hai nguong chay song song, khong thay the nhau. Neu CPL sau khi scale vuot 3x CPA muc tieu thi Gate 1 thang: tat, du muc tang chi 15%.
 
 ### Buoc 3 — Horizontal scaling (mo rong)
 

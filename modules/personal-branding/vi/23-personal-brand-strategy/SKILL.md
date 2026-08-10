@@ -1,8 +1,8 @@
 ---
 name: 23-personal-brand-strategy
-description: "Tao file chien luoc personal brand 12 thang — niche selection, positioning statement, story arc 3 chuong, content pillars 4 cot, authority ladder 5 nac, 12-month growth plan. Doc skill 22 truoc. Dung khi user noi 'chien luoc personal brand', 'dinh vi ca nhan', 'niche selection', 'content pillar ca nhan', 'story arc', 'founder positioning', 'coach positioning', 'creator positioning'."
+description: "Dung khi mot CA NHAN — founder, coach, creator — can chien luoc thuong hieu ca nhan 12 thang: chon niche, positioning statement ca nhan, story arc 3 chuong, 4 content pillar, thang authority 5 nac va lo trinh tang truong theo quy. Doc file context tu skill 22 truoc khi viet. Kich hoat khi user nhac 'chien luoc personal brand', 'dinh vi ca nhan', 'chon niche', 'content pillar ca nhan', 'story arc', 'founder positioning', 'toi nen noi ve chu de gi', 'xay hinh anh chuyen gia'. Khong dung cho — dinh vi cho DOANH NGHIEP hay san pham thi dung skill 58-positioning; ke hoach marketing cong ty thi dung skill 00-ke-hoach-mkt; tao file context ca nhan lan dau thi chay skill 22-personal-brand-context truoc."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: strategy
 license: MIT
 triggers:

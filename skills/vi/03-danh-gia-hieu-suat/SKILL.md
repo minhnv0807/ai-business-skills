@@ -1,8 +1,8 @@
 ---
 name: 03-danh-gia-hieu-suat
-description: Danh gia hieu suat marketing — audit performance ads va organic, chan doan root cause, de xuat toi uu voi action plan 48h va checklist hang tuan.
+description: "Dung khi so lieu marketing dang xau va can biet TAI SAO — chan doan theo 5 lop tu tracking, delivery, creative, landing den chat luong audience, roi ra action plan 48h. Kich hoat khi user nhac 'so dang xau', 'CPMess cao qua', 'ROAS thap', 'chan doan root cause', 'tai sao khong ra don', 'ads dot tien'. Khong dung cho — audit CAU HINH tai khoan ads va cham Health Score thi dung skill 21-audit-ads-performance; viet bao cao cho nguoi khac doc thi dung skill 07-bao-cao-marketing; chan doan rieng mot trang thi dung skill 68-cro-audit-trang."
 metadata:
-  version: 2.3.1
+  version: 2.3.2
   category: performance
 triggers:
   - "danh gia chien dich"

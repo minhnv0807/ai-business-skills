@@ -1,8 +1,8 @@
 ---
 name: 16-marketing-psychology-global
-description: "Cialdini 7 principles applied to global marketing — reciprocity, scarcity, authority, social proof, liking, commitment, unity. Universal psychology with international examples (Apple, Tesla, Patagonia, Spotify). Trigger: 'marketing psychology', 'Cialdini', 'persuasion principles', 'consumer psychology', 'behavioral marketing'."
+description: "Use when persuasion principles have to be applied to a specific asset — reciprocity, scarcity, authority, social proof, liking, commitment, and unity mapped onto copy, a landing page, an email, or an ad, each with a hypothesis and a test plan. Trigger on 'marketing psychology', 'Cialdini', 'persuasion principles', 'how do I add urgency', 'make this more convincing', 'behavioral triggers for this page'. Also use when the user asks why people read the whole page and still do not buy. Not for — price framing and margin math, see `17-pricing-strategy-global`; building the offer itself, see `31-offer-design-global`; running the experiment properly, see `19-ab-test-setup-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: strategy
   language: en
 license: MIT

@@ -1,8 +1,8 @@
 ---
 name: 55-scaling-ads-global
-description: "Use when the user has a winning ad and wants to scale it safely: readiness checks, vertical scaling at +20-30% per step, horizontal scaling into new audiences, creatives, and channels, learning-phase reset risk, how Advantage+ and Performance Max behave when scaled, and the signals that mean stop. Trigger on 'scale ads', 'increase ad budget', 'scale campaign', 'scale a winner', 'vertical scaling', 'horizontal scaling', or 'CPA went up after scaling'."
+description: "Use when a WINNING ad has to be scaled without breaking it — readiness checks, vertical scaling at plus 20 to 30 percent per step, horizontal scaling into new audiences, creatives, and channels, learning-phase reset risk, how Advantage+ and Performance Max behave when scaled, creative refresh cadence, and the signals that mean stop. Trigger on 'scale ads', 'increase the ad budget', 'scale a winner', 'CPA went up after I scaled', 'how fast can I scale', 'it worked at 50 a day and broke at 200'. Not for — fixing an account that is not working yet, see `03-performance-eval-global`; warm audience plans, see `56-retargeting-plan-global`; proving the winner first, see `19-ab-test-setup-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: performance
 license: MIT
 triggers:

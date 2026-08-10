@@ -1,8 +1,8 @@
 ---
 name: 63-campaign-retrospective
-description: "Retrospective sau khi campaign ket thuc: scorecard so lieu vs target, what worked / what didn't / why co evidence, surprises, bai hoc cap nhat vao playbook + Brand Hub, action items co owner. Dung khi nhac 'retro campaign', 'retrospective', 'post-mortem', 'tong ket chien dich', 'bai hoc campaign'."
+description: "Dung khi campaign DA KET THUC va can rut ra bai hoc dung cho lan sau — scorecard so lieu vs target, cai gi hieu qua, cai gi khong va vi sao co bang chung, bat ngo ngoai du doan, cap nhat playbook va Brand Hub, action item co nguoi chiu trach nhiem. Kich hoat khi user nhac 'retro campaign', 'retrospective', 'post-mortem', 'tong ket chien dich', 'bai hoc tu campaign', 'campaign vua roi rut ra gi', 'lan sau lam khac the nao'. Khong dung cho — bao cao so lieu dinh ky cho sep hoac khach thi dung skill 07-bao-cao-marketing; danh gia hieu suat tung nhan su thi dung skill 65-team-performance-review; ke hoach ads ky tiep thi dung skill 57-next-ads-plan."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: operations
 license: MIT
 triggers:

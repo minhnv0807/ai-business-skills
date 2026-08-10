@@ -1,8 +1,8 @@
 ---
 name: 01-content-calendar-global
-description: "Monthly content calendar for global businesses — multi-channel posting schedule with funnel ratio, content pillars, repurposing matrix, and quality scoring. Reads `.agents/product-marketing-context-global.md`. Universal framework, region-specific posting times via foundation skill. Trigger: 'content calendar', 'posting schedule', 'monthly content plan', 'social media calendar', 'editorial calendar'."
+description: "Use when the user needs a monthly or weekly content calendar — posting schedule per channel, funnel ratio, content pillars, repurposing matrix, and an owner per slot. Trigger on 'content calendar', 'posting schedule', 'what should we post this month', 'editorial calendar', 'social media plan', 'we post randomly with no plan'. Also use when the user only says the team keeps running out of things to post. Not for — the brief for one specific post, see `36-content-brief-global`; the caption text itself, see `37-social-caption-global`; deciding next period content from last period data, see `40-next-content-plan-global`; a paid campaign timeline, see `02-campaign-brief-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: content
 license: MIT
 triggers:
@@ -87,7 +87,7 @@ Every brand needs 3–5 pillars. Audit balance weekly.
 
 ## Content matrix — generate ideas at scale
 
-> Adapted from Justin Welsh's content matrix method. Universal, works in any market.
+> Content matrix method. Universal, works in any market.
 
 Multiply your **content pillars** by **8 formats** to generate 24–40 ideas in one sitting.
 

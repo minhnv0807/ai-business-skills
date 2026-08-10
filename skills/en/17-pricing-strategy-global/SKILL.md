@@ -1,8 +1,8 @@
 ---
 name: 17-pricing-strategy-global
-description: "Pricing strategy for global markets — value-based, anchor pricing, charm pricing, decoy effect. Has 4 region variants for currency psychology (US/EU/SEA/LATAM). INCLUDES Dropshipping Markup Math section (3-5x markup, BE-ROAS, profit margin). Trigger: 'pricing strategy', 'price positioning', 'charm pricing', 'pricing psychology', 'dropshipping markup'."
+description: "Use when a price has to be set or changed — value-based pricing, anchoring, charm pricing, decoy tiers, good-better-best packaging, discount policy, and margin math, with currency psychology for US, EU, SEA, and LATAM plus dropshipping markup and BE-ROAS. Trigger on 'pricing strategy', 'how much should I charge', 'should I raise prices', 'price tiers', 'customers say it is too expensive', 'dropshipping markup'. Also use when the product is not selling and the user suspects price is the reason. Not for — bonuses, guarantee, and value stack around the price, see `31-offer-design-global`; persuasion beyond price, see `16-marketing-psychology-global`; ad budget math, see `10-reverse-kpi-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: strategy
 license: MIT
 triggers:

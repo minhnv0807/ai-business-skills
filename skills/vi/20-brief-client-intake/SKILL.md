@@ -1,9 +1,9 @@
 ---
 name: 20-brief-client-intake
-description: Tao brief khach hang dien cho agency (client intake form) — form thu thap thong tin dau vao chi tiet de agency lap ke hoach marketing chinh xac. Co 20 variants chuyen biet theo nganh — moi variant la full brief toi uu hoa cho dac thu nganh do.
+description: "Dung khi agency hoac freelancer nhan khach moi va can CHINH KHACH DIEN thong tin dau vao — form 11 phan ve san pham, muc tieu, ngan sach, kenh dang chay, doi thu, tai san san co, kem 20 ban toi uu theo tung nganh. Kich hoat khi user nhac 'brief khach hang', 'client intake', 'form khach dien', 'nhan khach moi', 'hoi khach nhung gi', 'chua biet gi ve khach', 'onboard khach hang moi', 'questionnaire cho khach'. Khong dung cho — tao file context noi bo cho san pham cua chinh minh thi dung skill product-marketing-context; dao sau insight khach hang cuoi thi dung skill 09-insight-khach-hang; brief NGUOC ra cho agency hoac vendor lam thi dung skill 67-agency-vendor-brief."
 argument-hint: "<industry + scope + budget>"
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: operations
 triggers:
   - "brief khach hang"

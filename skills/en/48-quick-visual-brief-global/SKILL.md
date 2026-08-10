@@ -1,8 +1,8 @@
 ---
 name: 48-quick-visual-brief-global
-description: "Use when a campaign is live and needs a new asset the same day — creative fatigue, CTR decay, or testing a new angle: stripped-down input, duplicate the winning creative, one-page template, hard SLA. Trigger on 'quick brief', 'need an asset fast', 'creative fatigue', 'urgent creative', 'asset today', 'new creative fast', or 'swap the creative'."
+description: "Use when a LIVE campaign needs a new asset the same day — creative fatigue, CTR decay, climbing frequency, or a new angle to test: stripped-down input, duplicate the winning creative and change only what is listed, a one-page template, and a hard SLA so the designer ships in 2-4 hours. Trigger on 'quick brief', 'need an asset fast', 'creative fatigue', 'swap the creative today', 'frequency is too high', 'the ad is dying and we need a new one'. Not for — planning assets before launch, see `41-campaign-asset-list-global`; a full concept brief with time to spare, see `42-image-brief-global`; resizing an existing master, see `50-asset-resize-global`; raising budget on a winner, see `55-scaling-ads-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: operations
 license: MIT
 triggers:

@@ -1,8 +1,8 @@
 ---
 name: 13-phan-tich-du-lieu
-description: Doc data marketing tho va bien thanh insight hanh dong — phan tich theo kenh, chien dich, creative, doi tuong, thoi gian
+description: "Dung khi co data tho tu Meta, TikTok, GA4, CRM hay Google Sheet va can bien thanh insight ra quyet dinh duoc — kem decision log ghi quyet dinh, can cu, tac dong ky vong va ngay review lai. Kich hoat khi user nhac 'phan tich du lieu', 'doc so lieu nay', 'export data ra insight', 'so nay noi len dieu gi', 'lam decision log', 'cohort analysis'. Khong dung cho — chan doan tai sao ads kem thi dung skill 03-danh-gia-hieu-suat; viet bao cao trinh bay thi dung skill 07-bao-cao-marketing."
 metadata:
-  version: 2.1.1
+  version: 2.1.2
   category: performance
 triggers:
   - "phan tich du lieu"

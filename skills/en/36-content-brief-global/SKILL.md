@@ -1,8 +1,8 @@
 ---
 name: 36-content-brief-global
-description: "Use when the user wants a brief for one specific piece of content — angle, source insight, key message, 3 hook options, CTA, format, visual direction. Trigger on 'content brief', 'brief for this post', 'brief a writer', 'angle for this piece', 'brief for the LinkedIn post', or 'brief for a TikTok'."
+description: "Use when ONE specific piece of content needs a brief before anyone writes — placement, angle plus the source insight behind it, key message, three hook options, CTA, format, brand voice reference, visual direction, and distribution. Trigger on 'content brief', 'brief for this post', 'brief a writer', 'what angle should this take', 'brief for the LinkedIn post', 'give the freelancer something to work from'. Also use when the user has a topic and no idea what to actually say about it. Not for — the month schedule of what posts when, see `01-content-calendar-global`; the finished caption text, see `37-social-caption-global`; a spoken video script, see `04-script-video-global`; the image spec, see `42-image-brief-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: content
 license: MIT
 triggers:

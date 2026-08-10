@@ -1,11 +1,9 @@
 ---
 name: 30-thiet-ke-master
-description: |
-  Master design skill cho ai-business-skills — 8 loại thiết kế (personal brand, business logo, campaign visual, marketing day-to-day, editorial, infographic, web mockup, quote graphic). Tự đọc brand identity (logo + palette + font) từ project context, compose prompt phù hợp brand voice, gen ảnh qua gpt-image-2 nếu có API hoặc fallback prompt cho 5 platform (DALL-E 3, MidJourney, Leonardo, Imagen, Bing). Có Prompt Director mode: nhận ảnh reference, phân tích style/composition, tạo master prompt copy-paste-ready, hỏi đúng asset còn thiếu (mặt, màu thương hiệu, logo, sản phẩm), xử lý nhiều ảnh thành nhiều luồng prompt riêng. Phân biệt rõ thiết kế cá nhân vs thương hiệu, biết khi nào route sang HTML skills cho web mockup.
-  Triggers — "thiết kế ảnh", "làm logo", "ảnh poster", "banner campaign", "social post", "infographic", "key visual", "hero web mockup", "ảnh truyền thông", "avatar cá nhân", "monogram", "quote graphic", "prompt MidJourney", "prompt DALL-E", "ảnh reference", "prompt master", "đổi màu thương hiệu", "thêm logo". KHÔNG dùng cho — UI wireframe full interactive (dùng web-prototype/saas-landing thay), video creation (dùng 04-script-video + Seedance/Kling), animation (dùng motion-frames).
+description: "Dung khi can TAO RA anh hoac prompt anh bang AI — anh thuong hieu ca nhan, logo, key visual campaign, anh dang hang ngay, editorial, infographic, mockup web, quote graphic. Tu doc brand identity trong context roi dung prompt, gen anh hoac xuat prompt cho MidJourney, DALL-E, Imagen, Leonardo. Co che do nhan anh reference va tra ve master prompt copy-paste duoc. Kich hoat khi user nhac 'thiet ke anh', 'lam logo', 've banner', 'prompt MidJourney', 'tao key visual', 'lam anh giong anh nay', 'gen anh AI', 'doi mau thuong hieu tren anh'. Khong dung cho — viet brief giao designer lam thi dung skill 42-brief-hinh-anh; quy trinh asset ca campaign thi dung skill 41-campaign-asset-list; video avatar AI thi dung skill 24-ai-avatar-production; UI wireframe tuong tac thi dung web-prototype; animation thi dung motion-frames."
 argument-hint: "<design type + brand + format>"
 metadata:
-  version: 1.2.0
+  version: 1.2.1
   category: design
 triggers:
   - "thiết kế ảnh"

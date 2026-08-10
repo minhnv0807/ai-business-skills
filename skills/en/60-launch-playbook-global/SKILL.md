@@ -1,8 +1,8 @@
 ---
 name: 60-launch-playbook-global
-description: "Use when the user needs a repeatable execution playbook for a product or offer launch: T-30 to D+7 timeline, per-function checklists for content, design, ads, sales, and engineering, launch-day war room, escalation matrix, and roll-back criteria. Trigger on 'launch playbook', 'launch process', 'launch checklist', 'launch SOP', 'war room', 'roll back launch', or 'how do we not fail this launch'."
+description: "Use when a launch needs a repeatable EXECUTION playbook — a T-30 to D+7 timeline, per-function checklists for content, design, ads, sales, and engineering, a launch-day war room, an escalation matrix, and roll-back criteria. Trigger on 'launch playbook', 'launch checklist', 'launch day plan', 'launch SOP', 'war room', 'we launch in two weeks and nothing is organized'. Also use when a GTM strategy exists and nobody knows who does what on the day. Not for — the strategy and beachhead choice, see `59-go-to-market-global`; the campaign brief, see `02-campaign-brief-global`; the post-launch review, see `63-campaign-retrospective-global`; a live crisis, see `66-crisis-playbook-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: strategy
 license: MIT
 triggers:

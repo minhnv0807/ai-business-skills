@@ -1,10 +1,8 @@
 ---
 name: 30-design-master-global
-description: |
-  Master design skill for ai-business-skills — covers 8 design categories (personal brand, business logo, campaign visual, day-to-day marketing, editorial, infographic, web mockup, quote graphic). Auto-reads brand identity (logo + palette + typography) from project context, composes prompts aligned with brand voice, and generates images via gpt-image-2 (OpenAI's image model) when an API key is available — otherwise outputs paste-ready prompts for 5 platforms (DALL-E 3, MidJourney, Leonardo, Imagen, Bing/Copilot Designer). Includes Prompt Director mode: accepts reference images, analyzes style/composition, creates copy-paste-ready master prompts, asks for the exact missing assets (face, brand colors, logo, product), and handles multiple images as separate optimized prompt flows. Clearly separates personal vs. brand work, and routes web mockup requests to dedicated HTML skills when appropriate.
-  Triggers — "design image", "create logo", "campaign visual", "social post design", "infographic", "key visual", "hero web mockup", "marketing visual", "personal avatar", "monogram", "quote graphic", "MidJourney prompt", "DALL-E prompt", "brand mockup", "reference image", "master prompt", "brand color adaptation", "add logo". DO NOT USE for — full interactive web UI (use web-prototype/saas-landing instead), video creation (use 04-script-video-global + Seedance/Kling), animation (use motion-frames).
+description: "Use when the user wants a marketing image GENERATED or an image prompt written — personal brand portraits, logos and monograms, campaign key visuals, day-to-day social graphics, editorial art, infographics, web hero mockups, and quote graphics. Reads brand identity from project context, composes an on-brand prompt, generates via gpt-image-2 when an API key exists, otherwise outputs paste-ready prompts for DALL-E 3, MidJourney, Leonardo, or Ideogram. Trigger on 'design an image', 'make me a logo', 'MidJourney prompt', 'key visual for the campaign', 'generate a graphic for this post', 'I need a visual and have no designer'. Not for — briefing a human designer on a static, see `42-image-brief-global`; a slide sequence, see `43-carousel-brief-global`; the brand rules themselves, see `46-brand-guideline-global`; scoring a finished design, see `47-design-review-global`."
 metadata:
-  version: 1.1.0
+  version: 1.1.1
   category: design
 triggers:
   - "design image"

@@ -1,8 +1,8 @@
 ---
 name: 66-crisis-playbook-global
-description: "Use when a brand faces a communications crisis or a failing campaign: a five-level L1-L5 classification, a first-four-hours process, response templates by type, an escalation matrix, a do-not-do list, and a post-mortem. Trigger on 'crisis', 'crisis playbook', 'PR crisis', 'campaign is failing', 'content caused backlash', 'bad reviews spreading', 'complaint going viral', or 'we are being attacked online'."
+description: "Use when a brand faces a communications CRISIS or a campaign is failing in public — L1 to L5 severity classification, a first-four-hours process, response templates by type, an escalation matrix, a do-not-do list, holding statements, and a post-mortem. Trigger on 'PR crisis', 'crisis playbook', 'a complaint is going viral', 'bad reviews are spreading', 'our content caused backlash', 'we are getting attacked online'. Also use when the user forwards an angry thread and asks what to do right now. Not for — monitoring before anything blows up, see `15-social-listening-global`; diagnosing weak performance numbers, see `03-performance-eval-global`; the routine post-campaign review, see `63-campaign-retrospective-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: operations
 license: MIT
 triggers:

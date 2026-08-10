@@ -1,8 +1,8 @@
 ---
 name: 19-ab-test-setup-global
-description: "Design valid A/B tests for global marketing — hypothesis formulation, sample size calculation, statistical significance, multi-arm testing, primary vs secondary metrics. Tools: Optimizely, VWO, Google Optimize (sunset 2023, alternatives), built-in platform tests (Meta, Google). Trigger: 'A/B test', 'split test', 'multivariate test', 'experiment design', 'statistical significance', 'sample size calculator'."
+description: "Use when the user wants a VALID experiment instead of a guess — hypothesis, one variable, sample size and runtime math, statistical significance, primary versus secondary metrics, multi-arm designs, and a results template, across Optimizely, VWO, and native Meta and Google tests. Trigger on 'A/B test', 'split test', 'how long should I run the test', 'is this result significant', 'test two versions', 'which creative is actually better'. Also use when a winner was declared after two days on tiny numbers. Not for — scaling the proven winner, see `55-scaling-ads-global`; analyzing data already collected, see `13-data-analysis-global`; auditing the account, see `21-ads-audit-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: performance
   language: en
 license: MIT

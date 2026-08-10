@@ -1,8 +1,8 @@
 ---
 name: 62-marketing-review
-description: "Leader review / duyet output cua team truoc khi trien khai: checklist duyet content brief (angle dung insight, dung pillar, CTA ro), checklist duyet ads copy + creative (claim co proof, dung tone, hook trong 125 ky tu dau), verdict Approve / Revise / Redo kem feedback template. Dung khi nhac 'duyet brief', 'review ads', 'duyet content', 'approve creative'."
+description: "Dung khi leader phai DUYET output CHU cua team truoc khi trien khai — content brief co dung insight va dung pillar khong, CTA co ro khong; ads copy va creative co proof cho claim khong, dung tone khong, hook co nam trong 125 ky tu dau khong; verdict Approve / Revise / Redo kem feedback cu the. Kich hoat khi user nhac 'duyet brief', 'review ads copy', 'duyet content', 'check truoc khi chay', 'bai nay dang duoc chua', 'em viet the nay sep xem giup', 'duyet output team'. Khong dung cho — cham diem THIET KE va hinh anh thi dung skill 47-design-review; danh gia nang luc nguoi lam thi dung skill 65-team-performance-review; can nhieu goc nhin phan bien cho mot huong chien luoc thi dung skill 72-hoi-dong-marketing."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: operations
 license: MIT
 triggers:

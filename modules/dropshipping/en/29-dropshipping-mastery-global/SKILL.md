@@ -1,8 +1,8 @@
 ---
 name: 29-dropshipping-mastery-global
-description: "Full dropshipping pipeline for US/EU/global markets — product research (winning criteria, Minea, PiPiAds), supplier sourcing (AliExpress, CJ Dropshipping, Spocket, Zendrop), Shopify store setup (themes, apps), ad creative pipeline (10 ads/week methodology, UGC pattern), audience targeting (interest stacking, lookalike, broad), pricing math (3-5x markup, BE-ROAS), customer service (long shipping, refunds), scaling playbook (CBO, vertical), compliance (FTC, EU CHRD). Trigger: 'dropshipping', 'shopify store', 'AliExpress', 'winning product', 'Facebook ads dropship', 'TikTok ads dropship', 'Shopify conversion'."
+description: "Use when the user is launching or running a DROPSHIPPING business end to end — the full 12-phase pipeline: product research with winning criteria, Minea and PiPiAds, supplier sourcing on AliExpress, CJ, Spocket, and Zendrop, Shopify store and app setup, the 10-ads-per-week creative pipeline, interest and lookalike targeting, 3-5x markup and BE-ROAS math, customer service, and scaling. Trigger on 'start dropshipping', 'winning product research', 'Shopify store setup', 'AliExpress supplier', 'scale my dropshipping store', 'my store gets traffic and no sales'. Not for — only the ad copy, see `05-ad-copy-global`; only the product page, see `12-landing-page-brief-global`; only the account audit, see `21-ads-audit-global`; only pricing, see `17-pricing-strategy-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: strategy
 license: MIT
 triggers:

@@ -1,8 +1,8 @@
 ---
 name: 00-marketing-plan-global
-description: "Comprehensive 7-section marketing plan for global businesses — strategy, target audience, positioning, channels, content, KPIs, budget. Reads `.agents/product-marketing-context-global.md` first. Universal framework adapts to US/EU/SEA/LATAM via foundation skill region. Trigger: 'marketing plan', 'global marketing strategy', 'go-to-market plan', 'marketing roadmap', 'international marketing plan'."
+description: "Use when the user needs an overall marketing plan for a period — objectives, segments, positioning, channel mix, content direction, budget, timeline, KPIs, and a risk matrix, adapted to US, EU, SEA, or LATAM. Trigger on 'marketing plan', 'marketing strategy for next year', 'go-to-market roadmap', 'plan for Q3', 'we have no marketing plan', 'where should we spend next quarter'. Also use when a founder only says the business needs to grow and has no idea which channel to start with. Not for — one specific campaign, see `02-campaign-brief-global`; working backward from a revenue goal to spend, see `10-reverse-kpi-global`; splitting a budget across channels and months, see `61-budget-planning-global`; taking a brand new product to market, see `59-go-to-market-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: strategy
 license: MIT
 triggers:

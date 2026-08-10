@@ -1,8 +1,8 @@
 ---
 name: 52-account-structure
-description: "Thiet ke cau truc tai khoan ads: hierarchy campaign/ad set/ad theo objective, naming convention chuan de doc data nhanh, chon CBO/ABO theo giai doan, so luong ad set va creative toi uu, ngan sach toi thieu moi ad set. Kich hoat khi user nhac 'cau truc campaign', 'account structure', 'naming convention', 'setup campaign', 'len camp'."
+description: "Dung khi can dung cau truc tai khoan quang cao truoc khi bat campaign — phan tang campaign/adset/ad, naming convention de doc data ve sau, CBO hay ABO, va so luong adset hop ly. Kich hoat khi user nhac 'cau truc campaign', 'naming convention ads', 'chia adset the nao', 'CBO hay ABO', 'setup tai khoan ads', 'to chuc campaign'. Khong dung cho — ra soat tai khoan dang chay thi dung skill 21-audit-ads-performance; phan bo ngan sach theo kenh thi dung skill 54-media-plan."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: performance
 license: MIT
 triggers:

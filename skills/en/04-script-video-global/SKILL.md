@@ -1,8 +1,8 @@
 ---
 name: 04-script-video-global
-description: "Short-form video scripts for TikTok, Reels, YouTube Shorts — 2 A/B variants, 6 hook formulas, timestamp breakdown, shoot guide, caption + hashtag, viral score. Reads `.agents/product-marketing-context-global.md`. Universal framework, English-language hooks. Trigger: 'video script', 'TikTok script', 'Reels script', 'Shorts script', 'short-form video'."
+description: "Use when the user needs a spoken script for short-form video — TikTok, Reels, or YouTube Shorts — with a 3-part hook, second-by-second beats, two A/B variants, shoot notes, and a viral score. Switches between product mode and personal brand mode from the context file. Trigger on 'video script', 'TikTok script', 'Reels script', 'Shorts script', 'what should I say in the video', 'write me a hook for a video'. Also use when the user has a video idea and knows only the topic. Not for — cut and edit instructions for an editor, see `44-video-editor-brief-global`; paid ad copy, see `05-ad-copy-global`; briefing an outside creator to film it, see `06-ugc-egc-brief-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: content
 license: MIT
 triggers:

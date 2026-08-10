@@ -1,8 +1,8 @@
 ---
 name: 40-next-content-plan-global
-description: "Use when the user wants the next period's content plan built from last period's data — keep winners, cut losers, test at most 2 new hypotheses, allocated 70/20/10. Trigger on 'next content plan', 'content plan for next month', 'data-driven content plan', 'plan from the audit', 'next quarter content', or 'what should we post next month'."
+description: "Use when the next period content plan must be built from last period DATA — keep and replicate winners, cut losers, at most two new hypotheses, a 70/20/10 mix, a four-week overview, and an owner per slot. Trigger on 'next content plan', 'content plan for next month', 'plan from the audit', 'what should we post next quarter', 'scale what worked', 'plan content using the numbers'. Also use when a report just landed and the user asks what to do with it. Not for — auditing the past period first, see `39-content-audit-global`; turning the plan into a dated calendar, see `01-content-calendar-global`; the next period ADS plan, see `57-next-ads-plan-global`."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: content
 license: MIT
 triggers:
