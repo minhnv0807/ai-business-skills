@@ -5,7 +5,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/v3.6.0-Bilingual%20Role%20SOP-6d28d9?style=for-the-badge&labelColor=1e1033" alt="v3.6.0"/>
-  <img src="https://img.shields.io/badge/Skills-143-6d28d9?style=for-the-badge&labelColor=1e1033" alt="143 Skills"/>
+  <img src="https://img.shields.io/badge/Skills-144-6d28d9?style=for-the-badge&labelColor=1e1033" alt="144 Skills"/>
   <img src="https://img.shields.io/badge/Agents-6-be185d?style=for-the-badge&labelColor=1e1033" alt="6 Agents"/>
   <img src="https://img.shields.io/badge/Workflows-19-0f766e?style=for-the-badge&labelColor=1e1033" alt="19 Workflows"/>
   <img src="https://img.shields.io/badge/Regions-VN%20%2B%20Global-f97316?style=for-the-badge&labelColor=1e1033" alt="VN + Global"/>
@@ -16,7 +16,7 @@
 <h1 align="center">ai-business-skills</h1>
 
 <p align="center">
-  <strong>Fullstack marketing skills cho AI agent — 143 skills bilingual (VN + Global).</strong>
+  <strong>Fullstack marketing skills cho AI agent — 144 skills bilingual (VN + Global).</strong>
   <br/>
   <sub>Vietnamese-first + Global (US/EU/SEA/LATAM) | Over Powers Agency</sub>
 </p>
@@ -104,7 +104,7 @@ flowchart TD
 ```bash
 git clone https://github.com/minhnv0807/ai-business-skills.git
 cd ai-business-skills
-bash install.sh --global   # 143 skills -> ~/.claude/skills/marketing/
+bash install.sh --global   # 144 skills -> ~/.claude/skills/marketing/
 ```
 
 Windows:
@@ -139,7 +139,7 @@ Test ngay trong Claude Code:
 
 ---
 
-## 📦 143 Skills (bilingual VN + Global)
+## 📦 144 Skills (bilingual VN + Global)
 
 > Mỗi skill = 1 file `SKILL.md` với frontmatter triggers + workflow body. AI agent tự kích hoạt skill khi user nhắc trigger keyword.
 
@@ -219,6 +219,8 @@ Bốn bộ SOP theo vai trò — mỗi bộ là quy trình vận hành đầy đ
 | **Performance ops (51-57)** | `51-audience-research` · `52-account-structure` · `53-tracking-setup` · `54-media-plan` · `55-scaling-ads` · `56-retargeting-plan` · `57-next-ads-plan` | Audience → media plan tính ngược từ doanh thu → tracking verify trước khi chạy → naming convention → scale winner → retarget theo tầng → plan kỳ sau |
 | **Leader ops (58-67)** | `58-positioning` · `59-go-to-market` · `60-launch-playbook` · `61-budget-planning` · `62-marketing-review` · `63-campaign-retrospective` · `64-team-brief` · `65-team-performance-review` · `66-crisis-playbook` · `67-agency-vendor-brief` | Positioning + GTM + launch → phân bổ ngân sách → gate duyệt output → retro → giao việc + đánh giá team → xử lý khủng hoảng → quản lý agency |
 
+**Creative copy (74)** — additive lane, không thay `05` / `37`: `74-copy-hai-lop` viết slogan / headline poster hai lớp nghĩa; ads trả tiền vẫn là `05`, caption organic vẫn là `37`.
+
 **Bilingual:** cả 4 pack đều có bản Global (`skills/en/35-67 *-global`) từ v3.6.0 — cùng framework và quy trình, nhưng USD benchmark, kênh toàn cầu (Klaviyo/Shopify/Meta US), và compliance FTC/GDPR/CCPA. Community seeding được viết lại theo chuẩn Reddit/Discord/Slack thay vì Facebook Group VN.
 
 **Kho kiến thức nền tảng:** [`knowledge/`](knowledge/) — 10 file tư duy (brandformance, blueprint 8 thành phần, phễu 6 bước, chiến lược kênh, Meta Ads framework, hệ thống KPI, customer insight, brand/offer architecture, AI Marketing OS, business model) + `knowledge/trien-khai/`. Dùng làm context upload cho AI project theo vai trò.
@@ -230,7 +232,7 @@ Bốn bộ SOP theo vai trò — mỗi bộ là quy trình vận hành đầy đ
 | Agent | Vai trò | Skills chính |
 |-------|---------|--------------|
 | [mkt-strategist](agents/mkt-strategist.md) | Chiến lược tổng + Leader strategy | 00, 02, 08, 09, 16, 17, 31-34, 58-61 (+ `-global` mirrors) |
-| [content-producer](agents/content-producer.md) | Sản xuất nội dung + content system | 01, 04, 05, 06, 35-40, 42-44 (+ `-global`) |
+| [content-producer](agents/content-producer.md) | Sản xuất nội dung + content system | 01, 04, 05, 06, 35-40, 42-44, 74 (+ `-global` trừ 74) |
 | [performance-analyst](agents/performance-analyst.md) | Phân tích hiệu suất + performance ops | 03, 07, 10, 13, 19, 21, 32, 34, 51-57 (+ `-global`) |
 | [channel-operator](agents/channel-operator.md) | Vận hành kênh + crisis | 11, 12, 14, 15, 18, 34, 49, 66 (+ `-global`) |
 | [design-producer](agents/design-producer.md) ⭐ | Visual & production | 12, 30, 41-50 |
@@ -243,7 +245,7 @@ Bốn bộ SOP theo vai trò — mỗi bộ là quy trình vận hành đầy đ
 - `client-onboard` (5-7 ngày, agency) — 20 → 09 → 08 → 10 → 00 → 02 → 01
 - `monthly-cycle` (3-5 ngày) — 13 → 03 → 07 → 10 → 01
 - `content-production` (weekly) — review calendar → 04 → film → 05 → schedule
-- `content-engine` ⭐ (vòng lặp tháng) — 35 → 09 → 01 → 36 → [37|04|05|38] → [42|43|44] → 39 → 07 → 40
+- `content-engine` ⭐ (vòng lặp tháng) — 35 → 09 → 01 → 36 → [37|04|05|74|38] → [42|43|44] → 39 → 07 → 40
 - `performance-loop` ⭐ (vòng lặp ads) — 51 → 10 → 54 → 53 → 52 → 19 → 21 → 55/56 → 07 → 57
 - `design-pipeline` ⭐ (T-14 → D+1) — 41 → [42|43|45] → 47 → 50
 - `leader-cadence` ⭐ (quý/campaign/tuần) — 00 → 61 → 02 → 64 → 62/47 → 07 → 63

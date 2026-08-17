@@ -9,6 +9,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- `74-copy-hai-lop` — dual-layer slogan / poster line for the Vietnam cluster. Method adapted from the MIT skill [xiaoma-durex-copywriter](https://github.com/crawfordxx/xiaoma-durex-copywriter) (commit `d892bfb`): two semantic layers, one-hop leap, hook-before-formula, eight localized formulas, diction checklist, visual brief. **Does not replace** `05-copy-quang-cao` or `37-caption-social`. Durex / Reckitt posters, original corpus lines, brand-red default palette, and render scripts are not imported.
+
+### Changed
+
+- Sibling routing only on `05-copy-quang-cao` (2.5.2), `37-caption-social` (1.0.2), `42-brief-hinh-anh` (1.0.2), `58-positioning` (1.0.2). Paid-ads and organic-caption lanes stay the owners they were.
+- Marketplace skill count 143 → 144 (75 VN + 69 Global). Plugin version stays 3.7.0 until the next release cut.
+
 ## v3.7.0 — Routing, thresholds, and five new skills (2026-08-10)
 
 Came out of a structured comparison against another open marketing-skills repo. The comparison was less useful for what it suggested we add than for what it exposed in what we already had.

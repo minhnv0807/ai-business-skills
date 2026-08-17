@@ -1,9 +1,9 @@
 ---
 name: 05-copy-quang-cao
-description: "Dung khi can viet copy quang cao TRA TIEN cho Meta, TikTok hoac Google — 6 bien the theo 3 tang pheu TOFU/MOFU/BOFU, tuan thu gioi han ky tu va chinh sach nen tang. Co Mode A cho san pham va Mode B cho personal brand, tu chon theo file context. Kich hoat khi user nhac 'viet copy quang cao', 'noi dung chay ads', 'copy Facebook Ads', 'copy TikTok Ads', 'google rsa', 'tieu de quang cao', 'copy retarget'. Khong dung cho — caption dang organic khong chay tien thi dung skill 37-caption-social; loi thoai video thi dung skill 04-script-video; duyet copy da viet thi dung skill 62-marketing-review."
+description: "Dung khi can viet copy quang cao TRA TIEN cho Meta, TikTok hoac Google — 6 bien the theo 3 tang pheu TOFU/MOFU/BOFU, tuan thu gioi han ky tu va chinh sach nen tang. Co Mode A cho san pham va Mode B cho personal brand, tu chon theo file context. Kich hoat khi user nhac 'viet copy quang cao', 'noi dung chay ads', 'copy Facebook Ads', 'copy TikTok Ads', 'google rsa', 'tieu de quang cao', 'copy retarget'. Khong dung cho — caption dang organic khong chay tien thi dung skill 37-caption-social; slogan / cau hai y / headline poster thi dung skill 74-copy-hai-lop; loi thoai video thi dung skill 04-script-video; duyet copy da viet thi dung skill 62-marketing-review."
 argument-hint: "<sản phẩm + key message + kênh>"
 metadata:
-  version: 2.5.1
+  version: 2.5.2
   category: content
 triggers:
   - "viet quang cao"
@@ -29,6 +29,7 @@ related:
   - 36-content-brief
   - 52-account-structure
   - 62-marketing-review
+  - 74-copy-hai-lop
   - references/copy-frameworks-vn
   - references/quality-gates-vn
   - references/hook-formulas-vn
@@ -356,6 +357,7 @@ Ket qua duyet ghi 1 trong 3: **DUYET** · **DUYET CO DIEU KIEN** (sua roi chay, 
 - **36-content-brief** — Brief dau vao cho nguoi viet copy (message, angle, proof point)
 - **52-account-structure** — Copy tang nao vao adset nao — kiem tra o Gate 3
 - **62-marketing-review** — Gate 2 duyet copy truoc khi len camp
+- **74-copy-hai-lop** — Slogan / poster / cau ngan hai lop; khong dung 05 de viet cau an y. Neu cau 74 phai chay ads, viet lai o day theo pheu + policy
 - **19-ab-test-setup** — Thiet ke test giua cac bien the copy sau khi launch
 
 ---

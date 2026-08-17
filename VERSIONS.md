@@ -12,7 +12,7 @@
 | 02-brief-chien-dich | 2.1.0 | 2026-07-30 | strategy |
 | 03-danh-gia-hieu-suat | 2.3.1 | 2026-07-30 | performance |
 | 04-script-video | 2.3.0 | 2026-07-30 | content |
-| 05-copy-quang-cao | 2.4.1 | 2026-07-30 | content |
+| 05-copy-quang-cao | 2.5.2 | 2026-08-16 | content |
 | 06-brief-ugc-egc | 2.1.0 | 2026-07-30 | content |
 | 07-bao-cao-marketing | 2.1.1 | 2026-07-30 | performance |
 | 08-nghien-cuu-doi-thu | 2.3.1 | 2026-07-30 | strategy |
@@ -44,12 +44,12 @@
 | 34-ai-marketing-os | 1.1.0 | 2026-07-30 | operations |
 | 35-brand-voice | 1.0.0 | 2026-07-30 | content |
 | 36-content-brief | 1.0.0 | 2026-07-30 | content |
-| 37-caption-social | 1.0.0 | 2026-07-30 | content |
+| 37-caption-social | 1.0.2 | 2026-08-16 | content |
 | 38-seeding-plan | 1.0.0 | 2026-07-30 | content |
 | 39-content-audit | 1.0.0 | 2026-07-30 | content |
 | 40-next-content-plan | 1.0.0 | 2026-07-30 | content |
 | 41-campaign-asset-list | 1.0.0 | 2026-07-30 | operations |
-| 42-brief-hinh-anh | 1.0.0 | 2026-07-30 | content |
+| 42-brief-hinh-anh | 1.0.2 | 2026-08-16 | content |
 | 43-brief-carousel | 1.0.0 | 2026-07-30 | content |
 | 44-brief-video-editor | 1.0.0 | 2026-07-30 | content |
 | 45-brief-canva | 1.0.0 | 2026-07-30 | operations |
@@ -65,7 +65,7 @@
 | 55-scaling-ads | 1.0.0 | 2026-07-30 | performance |
 | 56-retargeting-plan | 1.0.0 | 2026-07-30 | performance |
 | 57-next-ads-plan | 1.0.0 | 2026-07-30 | performance |
-| 58-positioning | 1.0.0 | 2026-07-30 | strategy |
+| 58-positioning | 1.0.2 | 2026-08-16 | strategy |
 | 59-go-to-market | 1.0.0 | 2026-07-30 | strategy |
 | 60-launch-playbook | 1.0.0 | 2026-07-30 | strategy |
 | 61-budget-planning | 1.0.0 | 2026-07-30 | strategy |
@@ -80,6 +80,7 @@
 | 70-lead-magnet | 1.0.0 | 2026-08-10 | content |
 | 71-sales-enablement | 1.0.0 | 2026-08-10 | operations |
 | 72-hoi-dong-marketing | 1.0.0 | 2026-08-10 | strategy |
+| 74-copy-hai-lop | 1.0.0 | 2026-08-16 | content |
 | product-marketing-context-global | 1.0.0 | 2026-05-08 | foundation (global) |
 | 00-marketing-plan-global | 1.0.0 | 2026-05-08 | strategy (global) |
 | 01-content-calendar-global | 1.0.0 | 2026-05-08 | content (global) |
@@ -151,6 +152,14 @@
 | 67-agency-vendor-brief-global | 1.0.0 | 2026-07-30 | operations (global) |
 
 ## Changelog
+
+### 2026-08-16 — Unreleased (additive, no replace)
+
+**Added:** `74-copy-hai-lop` — dual-layer slogan / poster line for VN. Method adapted (not copied) from MIT skill xiaoma-durex-copywriter. Does not replace `05-copy-quang-cao` or `37-caption-social`. No Durex posters, corpus lines, or render scripts imported.
+
+**Changed:** sibling routing on `05-copy-quang-cao` 2.5.2, `37-caption-social` 1.0.2, `42-brief-hinh-anh` 1.0.2, `58-positioning` 1.0.2.
+
+**Marketplace:** 143 → 144 skills (75 VN + 69 Global). Plugin version stays 3.7.0 until release cut.
 
 ### 2026-08-10 — v3.7.0
 
