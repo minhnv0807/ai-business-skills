@@ -43,6 +43,10 @@
     "supermetrics": {
       "type": "http",
       "url": "https://mcp.supermetrics.com/mcp"
+    },
+    "xquik": {
+      "type": "http",
+      "url": "https://xquik.com/mcp"
     }
   }
 }

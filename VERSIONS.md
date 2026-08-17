@@ -97,7 +97,7 @@
 | 12-landing-page-brief-global | 1.0.0 | 2026-05-08 | operations (global) |
 | 13-data-analysis-global | 1.0.0 | 2026-05-08 | operations (global) |
 | 14-email-marketing-global | 1.0.0 | 2026-05-08 | operations (global) |
-| 15-social-listening-global | 1.0.0 | 2026-05-08 | content (global) |
+| 15-social-listening-global | 2.5.2 | 2026-08-12 | content (global) |
 | 16-marketing-psychology-global | 1.0.0 | 2026-05-08 | strategy (global) |
 | 17-pricing-strategy-global | 1.0.0 | 2026-05-08 | strategy (global) |
 | 18-referral-program-global | 1.0.0 | 2026-05-08 | operations (global) |
@@ -160,6 +160,12 @@
 **Changed:** sibling routing on `05-copy-quang-cao` 2.5.2, `37-caption-social` 1.0.2, `42-brief-hinh-anh` 1.0.2, `58-positioning` 1.0.2.
 
 **Marketplace:** 143 → 144 skills (75 VN + 69 Global). Plugin version stays 3.7.0 until release cut.
+
+### 2026-08-12 — 15-social-listening-global 2.5.2
+
+- Added OAuth-first, bounded read-only X research through the Xquik MCP server.
+- Added X data to the connector capability matrix.
+- Made the validator's frontmatter extraction portable across GNU/Linux and BSD/macOS.
 
 ### 2026-08-10 — v3.7.0
 

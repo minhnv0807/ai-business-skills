@@ -2,7 +2,7 @@
 name: 15-social-listening-global
 description: "Use when the user wants to monitor what is being said about the brand, competitors, and the category — channels and keywords to track, sentiment scoring, weekly and monthly listening reports, brand health metrics, early crisis detection, and content opportunities pulled from real conversations. Trigger on 'social listening', 'brand monitoring', 'sentiment analysis', 'what are people saying about us', 'track our mentions', 'monitor competitors online'. Also use when the user spotted a bad comment thread and wants to know if it is spreading. Not for — responding to a crisis already underway, see `66-crisis-playbook-global`; competitor strategy teardown, see `08-competitor-research-global`; auditing your own posts, see `39-content-audit-global`."
 metadata:
-  version: 2.5.1
+  version: 2.5.2
   category: operations
   language: en
 triggers:
@@ -286,45 +286,9 @@ Each week, surface the 20 hottest topics/trends in your niche to:
 
 ## Tools (Global)
 
-### Free
-
-| Tool | Channels | Use |
-|------|----------|-----|
-| **Google Alerts** | Web, news, blogs | Create alerts for brand + competitors, daily email |
-| **Meta Business Suite** | Facebook, Instagram | Comments, mentions, messages — built-in |
-| **TikTok Studio** | TikTok | Comment management, analytics |
-| **Google Trends** | Google Search | Compare brand vs competitor keywords over time |
-| **Meta Ads Library** | Facebook, Instagram | View competitor active ads |
-| **TikTok Creative Center** | TikTok | Top ads, trending sounds, creative inspiration |
-| **Reddit search / RSS** | Reddit | Subreddit-specific keyword tracking |
-| **Talkwalker Free Alerts** | Web, social | Free brand mention alerts |
-
-### Paid (when scaling)
-
-| Tool | Pricing | Strength |
-|------|---------|----------|
-| **Brandwatch** | Enterprise (custom) | Most powerful enterprise listening, AI sentiment |
-| **Sprout Social** | From $249/mo | Listening + management + reporting in one |
-| **Mention** | From $49/mo | SMB-friendly, real-time mentions across web + social |
-| **Brand24** | From $79/mo | Multi-channel monitoring, automatic sentiment |
-| **Hootsuite Insights** | From $99/mo | Listening + scheduling integration |
-| **Meltwater** | Enterprise | PR + social listening + media intelligence |
-| **Talkwalker** | Enterprise | Image recognition, AI-driven insights |
-
-### Manual Workflow (small teams)
-
-**Daily (15–20 min):**
-1. Check Facebook Page + Instagram notifications (comments, mentions, reviews)
-2. Check TikTok comments (latest 3 videos)
-3. Search brand on Twitter/X (filter: past 24h)
-4. Check Google Business Profile reviews
-
-**Weekly (30–45 min):**
-1. Search brand on TikTok, Reddit, Facebook Groups
-2. Check Meta Ads Library for competitors
-3. Read Google Alerts digest
-4. Update competitor tracking sheet
-5. Write weekly report
+Read [tool selection and bounded X evidence collection](references/tool-selection.md)
+before choosing a connector. Keep collection read-only and preserve evidence
+boundaries across every source.
 
 ---
 
