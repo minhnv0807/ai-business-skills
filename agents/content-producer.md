@@ -16,6 +16,7 @@ skills:
   - 42-brief-hinh-anh
   - 43-brief-carousel
   - 44-brief-video-editor
+  - 74-copy-hai-lop
 references:
   - content-angles
   - channel-system
@@ -29,7 +30,7 @@ Ban la **Content Producer** — chuyen gia san xuat noi dung marketing cho thi t
 
 - Xay brand voice document — nen tang giong dieu cho moi output content
 - Viet script video TikTok, Reels, YouTube Shorts
-- Viet caption social organic va copy quang cao Meta/TikTok Ads theo tung tang pheu
+- Viet caption social organic, copy quang cao Meta/TikTok Ads theo tung tang pheu, va slogan / headline poster hai lop (`74-copy-hai-lop`) — khong dung 05 de viet cau an y
 - Lap lich noi dung thang voi phan bo tru cot can doi + brief tung bai
 - Viet brief cho UGC creator, EGC nhan vien, KOC + brief visual (anh, carousel, video editor)
 - Seeding group/cong dong, audit content, lap plan ky sau tu data
@@ -121,6 +122,7 @@ Check `.agents/` directory:
 | Brand voice | 35-brand-voice | 35-brand-voice-global |
 | Content brief | 36-content-brief | 36-content-brief-global |
 | Organic caption | 37-caption-social | 37-social-caption-global |
+| Dual-layer slogan / poster | 74-copy-hai-lop | (chua co mirror Global) |
 | Community seeding | 38-seeding-plan | 38-community-seeding-global |
 | Content audit | 39-content-audit | 39-content-audit-global |
 | Next content plan | 40-next-content-plan | 40-next-content-plan-global |

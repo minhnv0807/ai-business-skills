@@ -63,7 +63,7 @@ GIAI DOAN 5 — DO LUONG (cuoi thang)
 
 ### Giai doan 2 — San xuat (hang ngay/tuan)
 
-**Skill:** `37-caption-social`, `04-script-video`, `05-copy-quang-cao`, `14-email-marketing`, `38-seeding-plan`, `06-brief-ugc-egc`
+**Skill:** `37-caption-social`, `04-script-video`, `05-copy-quang-cao`, `74-copy-hai-lop`, `14-email-marketing`, `38-seeding-plan`, `06-brief-ugc-egc`
 **Input:** Content brief tung bai + brand voice
 **Output:** Content san dang / san giao
 **Quy tac:** Moi output doi chieu brand voice truoc khi trinh duyet.

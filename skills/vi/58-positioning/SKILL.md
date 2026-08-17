@@ -1,8 +1,8 @@
 ---
 name: 58-positioning
-description: "Dung khi can tra loi duoc tai sao khach chon MINH chu khong chon nguoi khac — positioning statement theo Promise + Proof + Path, ma tran khac biet so voi doi thu, category entry points, thap thong diep 3 tang va huong tagline. Kich hoat khi user nhac 'dinh vi thuong hieu', 'positioning', 'USP', 'khac biet voi doi thu', 'tai sao khach chon minh', 'tai dinh vi', 'noi gi de khach nho', 'san pham giong het thi truong'. Khong dung cho — soi doi thu dang lam gi thi dung skill 08-nghien-cuu-doi-thu; giong noi va tu vung khi viet thi dung skill 35-brand-voice; dong goi goi ban thi dung skill 31-offer-design; ke hoach ra mat san pham thi dung skill 59-go-to-market."
+description: "Dung khi can tra loi duoc tai sao khach chon MINH chu khong chon nguoi khac — positioning statement theo Promise + Proof + Path, ma tran khac biet so voi doi thu, category entry points, thap thong diep 3 tang va huong tagline. Kich hoat khi user nhac 'dinh vi thuong hieu', 'positioning', 'USP', 'khac biet voi doi thu', 'tai sao khach chon minh', 'tai dinh vi', 'noi gi de khach nho', 'san pham giong het thi truong'. Khong dung cho — soi doi thu dang lam gi thi dung skill 08-nghien-cuu-doi-thu; giong noi va tu vung khi viet thi dung skill 35-brand-voice; viet cau slogan / headline poster hai lop thi dung skill 74-copy-hai-lop; dong goi goi ban thi dung skill 31-offer-design; ke hoach ra mat san pham thi dung skill 59-go-to-market."
 metadata:
-  version: 1.0.1
+  version: 1.0.2
   category: strategy
 license: MIT
 triggers:
@@ -23,6 +23,7 @@ related:
   - 59-go-to-market
   - 02-brief-chien-dich
   - 35-brand-voice
+  - 74-copy-hai-lop
 ---
 
 # Positioning — Dinh Vi San Pham / Thuong Hieu
@@ -190,6 +191,7 @@ Chon 2 truc phu hop nganh (gia x chat luong cam nhan; chuyen mon x gan gui; prem
 - `59-go-to-market`: dung positioning statement lam message goc cho GTM plan.
 - `02-brief-chien-dich`: core message trong brief lay tu message hierarchy Level 1.
 - `35-brand-voice`: tone of voice phai phan anh dinh vi.
+- `74-copy-hai-lop`: sau khi chot Promise, dung 74 de viet cau slogan / poster hai lop. 58 dung o huong tagline, khong thay 74 viet cau.
 
 ## Checklist chat luong
 

@@ -111,7 +111,7 @@
 
 | Pack | Vong lap | Chain |
 |------|----------|-------|
-| Content system | Thang | 35 → 09 → 01 → 36 → [37\|04\|05\|38\|06\|14] → [42\|43\|44] → 39 → 07 → 40 → (lap lai 01) |
+| Content system | Thang | 35 → 09 → 01 → 36 → [37\|04\|05\|74\|38\|06\|14] → [42\|43\|44] → 39 → 07 → 40 → (lap lai 01) |
 | Design production | Theo campaign | 41 (T-14) → 45/12 concept (T-7) → 43/42 (T-5..T-1) → 47 review → 48 standby → 50 (D+1) |
 | Performance ops | Tuan / thang | 51 → 10 → 54 → 53 (verify) → 52 → 05 → 19 → 21 → 55/56 → 07 → 57 → (lap lai 54) |
 | Leader ops | Quy / campaign / tuan | 00 → 61 → 02 → 64 → 62/47 gate → 07 weekly → 63 retro → cap nhat Brand Hub (34) |
@@ -122,7 +122,7 @@
 
 ---
 
-## Bang tra nhanh — 143 Skills (74 VN + 69 Global)
+## Bang tra nhanh — 144 Skills (75 VN + 69 Global)
 
 | # | Skill | Lam gi | Khi nao dung | Output |
 |---|-------|--------|-------------|--------|
@@ -195,6 +195,7 @@
 | 65 | team-performance-review | Danh gia nhan su | Cuoi thang/quy | KPI scorecard + development plan |
 | 66 | crisis-playbook | Xu ly khung hoang | Khi co su co | Phan loai L1-L5 + response theo gio |
 | 67 | agency-vendor-brief | Brief + quan ly vendor | Thue agency/freelancer | SOW + milestone + danh gia vendor |
+| 74 | copy-hai-lop | Slogan / poster hai lop | Can cau ngan an y, khong phai ads | 3-5 the + brief visual |
 
 ---
 
