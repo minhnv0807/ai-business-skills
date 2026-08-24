@@ -37,7 +37,7 @@
 | 27-personal-brand-monetize | 1.0.0 | 2026-05-08 | strategy |
 | 28-community-building | 1.0.0 | 2026-05-08 | operations |
 | 29-xuat-khau-b2b | 1.0.0 | 2026-05-20 | strategy |
-| 30-thiet-ke-master | 1.2.0 | 2026-07-30 | design |
+| 30-thiet-ke-master | 1.3.0 | 2026-08-24 | design |
 | 31-offer-design | 1.0.0 | 2026-06-30 | strategy |
 | 32-seo-growth | 1.0.0 | 2026-06-30 | performance |
 | 33-b2b-lead-gen | 1.0.0 | 2026-06-30 | operations |
@@ -112,7 +112,7 @@
 | 27-personal-brand-monetize-global | 1.0.0 | 2026-05-08 | strategy (global) |
 | 28-community-building-global | 1.0.0 | 2026-05-08 | operations (global) |
 | 29-dropshipping-mastery-global | 1.0.0 | 2026-05-08 | strategy (global) — FLAGSHIP |
-| 30-design-master-global | 1.1.0 | 2026-06-06 | design (global) |
+| 30-design-master-global | 1.2.0 | 2026-08-24 | design (global) |
 | 31-offer-design-global | 1.0.0 | 2026-06-30 | strategy (global) |
 | 32-seo-growth-global | 1.0.0 | 2026-06-30 | performance (global) |
 | 33-b2b-lead-gen-global | 1.0.0 | 2026-06-30 | operations (global) |
@@ -152,6 +152,12 @@
 | 67-agency-vendor-brief-global | 1.0.0 | 2026-07-30 | operations (global) |
 
 ## Changelog
+
+### 2026-08-24 — Unreleased
+
+**Changed:** `30-thiet-ke-master` 1.3.0 and `30-design-master-global` 1.2.0 add Atlas Cloud as an explicit opt-in image provider. Existing OpenAI, Open Design, and prompt-only defaults remain unchanged.
+
+**Added:** Standard-library Atlas Cloud helpers for text-to-image and image editing, with exactly one generation POST, GET-only bounded polling, bilingual provider references, and focused tests for schema mapping and retry safety.
 
 ### 2026-08-16 — Unreleased (additive, no replace)
 

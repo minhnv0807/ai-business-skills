@@ -3,7 +3,7 @@ name: 30-thiet-ke-master
 description: "Dung khi can TAO RA anh hoac prompt anh bang AI — anh thuong hieu ca nhan, logo, key visual campaign, anh dang hang ngay, editorial, infographic, mockup web, quote graphic. Tu doc brand identity trong context roi dung prompt, gen anh hoac xuat prompt cho MidJourney, DALL-E, Imagen, Leonardo. Co che do nhan anh reference va tra ve master prompt copy-paste duoc. Kich hoat khi user nhac 'thiet ke anh', 'lam logo', 've banner', 'prompt MidJourney', 'tao key visual', 'lam anh giong anh nay', 'gen anh AI', 'doi mau thuong hieu tren anh'. Khong dung cho — viet brief giao designer lam thi dung skill 42-brief-hinh-anh; quy trinh asset ca campaign thi dung skill 41-campaign-asset-list; video avatar AI thi dung skill 24-ai-avatar-production; UI wireframe tuong tac thi dung web-prototype; animation thi dung motion-frames."
 argument-hint: "<design type + brand + format>"
 metadata:
-  version: 1.2.1
+  version: 1.3.0
   category: design
 triggers:
   - "thiết kế ảnh"
@@ -172,6 +172,7 @@ Load theo nhu cầu (lazy):
 - `references/<type>.md` — load đúng file cho type vừa detect (vd `references/business-logo.md`)
 - `references/brand-identity-source.md` — load khi type bắt đầu bằng `business-*`
 - `references/fallback-prompt-format.md` — load khi Tier Free (xem Step 5)
+- `references/atlas-cloud-provider.md` — load khi user chon `IMAGE_PROVIDER=atlas-cloud`
 - `templates/<format>.md` — load template theo format yêu cầu (vd `templates/poster.md`, `templates/social-square.md`)
 
 ### Step 3 — READ brand identity
@@ -204,7 +205,10 @@ Nếu thiếu cho business mode → **BLOCK** + ask user upload logo + specify p
 Detect tier theo Bash:
 
 ```bash
-if [[ -n "$OPENAI_API_KEY" ]]; then
+if [[ "${IMAGE_PROVIDER:-}" == "atlas-cloud" ]]; then
+  [[ -n "${ATLASCLOUD_API_KEY:-}" ]] || { echo "ATLASCLOUD_API_KEY is required"; exit 1; }
+  TIER="atlas-cloud"   # explicit opt-in only
+elif [[ -n "$OPENAI_API_KEY" ]]; then
   TIER="pro"   # direct gpt-image-2
 elif [[ -n "$OD_BIN" && -x "$OD_BIN" ]]; then
   TIER="enterprise"   # Open Design dispatcher
@@ -220,8 +224,11 @@ Print line: `[tier: <X>] [model: <Y>]`.
 | **Free** | Không có API key | `docs/design/<slug>-prompt.md` với 5 platform paste-ready (DALL-E 3, MidJourney v6, Leonardo, Imagen 3, Bing/Copilot Designer) — xem `references/fallback-prompt-format.md` |
 | **Pro** | `OPENAI_API_KEY` có sẵn → call gpt-image-2 direct | `docs/design/<slug>.png` + `docs/design/<slug>.md` (metadata) |
 | **Enterprise** | `$OD_BIN` có và executable → dispatch qua Open Design infrastructure (existing `image-poster` infra) | `docs/design/<slug>.png` + `docs/design/<slug>.md` (metadata, ghi `gen_mode: api-dispatcher`) |
+| **Atlas Cloud** | User chon `IMAGE_PROVIDER=atlas-cloud` va co `ATLASCLOUD_API_KEY` → submit mot lan, sau do poll GET theo `references/atlas-cloud-provider.md` | `docs/design/<slug>.png` + `docs/design/<slug>.md` (metadata, ghi `gen_mode: api-atlas`) |
 
-**Type 7 web mockup** — sau khi gen hero image (nếu tier Pro/Enterprise), in recommendation block:
+Atlas Cloud la paid generation: doc catalog/schema hien tai va xin user confirm truoc POST. Lenh `submit` khong duoc auto-retry; neu response khong chac chan, giu prediction context va kiem tra task history thay vi submit lai.
+
+**Type 7 web mockup** — sau khi gen hero image (nếu tier Pro/Enterprise/Atlas Cloud), in recommendation block:
 
 ```
 [NEXT STEP] Hero image gen xong. Để có mockup full interactive đa section,
@@ -234,7 +241,7 @@ chạy thêm 1 trong các skill:
 ```
 
 **Type 8 quote graphic** — output 2 file:
-- `docs/design/<slug>-bg.png` — background image gen qua gpt-image-2 (KHÔNG có text)
+- `docs/design/<slug>-bg.png` — background image gen qua API tier da chon (KHÔNG có text)
 - `docs/design/<slug>.html` — HTML overlay với text trên background (text qua HTML để tránh AI méo chữ)
 
 ---
@@ -257,8 +264,8 @@ brand_identity:
   style_adjectives: [<adj>, <adj>, ...]
 format: poster | social-square | social-vertical | banner-hero | magazine | infographic | logo-variant | quote
 aspect_ratio: 1:1 | 9:16 | 16:9 | 3:4 | 4:3 | custom
-gen_mode: api-direct | api-dispatcher | fallback-prompt | hybrid
-model: gpt-image-2 | dall-e-3 | midjourney-v6 | flux | imagen-3 | manual
+gen_mode: api-direct | api-dispatcher | api-atlas | fallback-prompt | hybrid
+model: gpt-image-2 | google/nano-banana-2-lite/text-to-image | google/nano-banana-2-lite/edit | dall-e-3 | midjourney-v6 | flux | imagen-3 | manual
 output_files:
   - <path>
 created: 2026-05-20
@@ -270,13 +277,14 @@ Tên field TIẾNG ANH — không dịch sang tiếng Việt (phá AI parsing). 
 
 ---
 
-## Error handling — 8 tình huống thực tế
+## Error handling — 9 tình huống thực tế
 
 | Tình huống | Xử lý |
 |------------|-------|
 | Type ambiguous (không match keyword, không có flag) | Ask 1 câu duy nhất với 8 options (xem Layer 3 ở Step 0) |
 | Business mode + brand identity thiếu | **BLOCK** + ask user upload logo + specify palette (3 hex) + font family |
 | `OPENAI_API_KEY` invalid / quota exceeded khi gọi gpt-image-2 | Fallback xuống Tier Free (prompt-only) + print error line |
+| Atlas Cloud submit timeout / connection reset / HTTP 5xx | **Khong retry POST.** Luu context, kiem tra task history, va chi poll GET neu da co prediction ID. |
 | Type 7 web mockup nhưng user thực sự muốn full UI multi-section | Hybrid OK: gen hero image + kèm recommend `web-prototype` (hoặc 4 skill kia) cho full mockup |
 | Logo gen nhưng user chưa có brand values | Grill 3 câu: tên brand, ngành, values (3-5 từ) — mới gen được logo có hồn |
 | Infographic text-heavy >5 data points | **Warn**: "Text trong AI-gen image unreliable. Recommend dùng Canva template cho infographic có nhiều text." Vẫn gen nếu user confirm. |
@@ -297,12 +305,14 @@ Tên field TIẾNG ANH — không dịch sang tiếng Việt (phá AI parsing). 
 - Gen >1 image per turn trừ trường hợp logo multi-variant
 - Save prompt mà không gen image khi đang ở Tier Pro/Enterprise — lãng phí API
 - Gen image mà không save metadata `.md` — mất context cho lần sau
+- Tu dong chon Atlas Cloud khi user khong set `IMAGE_PROVIDER=atlas-cloud` — provider nay phai opt-in
+- Retry Atlas Cloud generation POST sau response khong chac chan — co the tao duplicate paid request
 
 ---
 
 ## Self-test trước khi gen
 
-Trước mỗi lần gọi gpt-image-2 hoặc xuất prompt, tự hỏi:
+Trước mỗi lần gọi provider da chon hoặc xuất prompt, tự hỏi:
 
 > "Output này có align với brand voice + identity không? Khách hàng nhìn vào có nhận ra brand không? Nếu là personal brand — có phản ánh đúng style adjectives mà user khai không?"
 
@@ -328,6 +338,7 @@ Nếu **không chắc 2/3 câu trên** → quay lại Step 3, re-read brand iden
 | Compose prompt cho 1 trong 8 types | `references/<type>.md` (vd `references/business-logo.md`) |
 | Business mode — tìm brand identity source | `references/brand-identity-source.md` |
 | Tier Free — format prompt cho 5 platforms | `references/fallback-prompt-format.md` |
+| Atlas Cloud opt-in — model schema, submit-once, GET polling | `references/atlas-cloud-provider.md` |
 | Template format cụ thể (poster, banner, story...) | `templates/<format>.md` |
 | Example output thực tế | `examples/<example-name>.md` |
 
