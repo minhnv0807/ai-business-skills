@@ -9,6 +9,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed — `20-brief-client-intake` 1.1.0: briefs written in real people's language
+
+Briefs rendered from the variants read like forms written by an AI: concept questions ("mục tiêu kênh", "định vị", "USP") that business owners could not answer, and no sign that the agency understood what they were struggling with. Owners ticked "Chưa rõ" everywhere or dropped the form halfway.
+
+- **New principle 6 in `SKILL.md`: ngôn ngữ người thật.** Every brief opens with "Anh/chị đang gặp chuyện nào?", 5–8 real pain points to tick, written the way owners actually talk. Questions describe situations instead of concepts, ask about feelings (what worries them, what wears them out, what they hope for), and every section has one line explaining why the agency is asking. The limits are explicit: empathise without scaring, never exaggerate the pain, never promise numbers.
+- **New `references/ngon-ngu-nguoi-that.md`.** A phrase dictionary mapping AI and agency wording to plain Vietnamese, a pain-point and emotion bank for all 20 variant industries (Vietnam 2025–2026), an opening template, before/after rewrites, and a 7-point self-check.
+- **Step 3 (render) now rewrites the variant's wording** instead of copying it. Variants are the content skeleton, and the brief sent to clients is written in Vietnamese with diacritics. The checklist gains a "Ngôn ngữ" section.
+- Variant files are unchanged; the new rules apply when they are rendered.
+
 ## v3.7.0 — Routing, thresholds, and five new skills (2026-08-10)
 
 Came out of a structured comparison against another open marketing-skills repo. The comparison was less useful for what it suggested we add than for what it exposed in what we already had.

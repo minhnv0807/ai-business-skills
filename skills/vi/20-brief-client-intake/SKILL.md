@@ -3,7 +3,7 @@ name: 20-brief-client-intake
 description: "Dung khi agency hoac freelancer nhan khach moi va can CHINH KHACH DIEN thong tin dau vao — form 11 phan ve san pham, muc tieu, ngan sach, kenh dang chay, doi thu, tai san san co, kem 20 ban toi uu theo tung nganh. Kich hoat khi user nhac 'brief khach hang', 'client intake', 'form khach dien', 'nhan khach moi', 'hoi khach nhung gi', 'chua biet gi ve khach', 'onboard khach hang moi', 'questionnaire cho khach'. Khong dung cho — tao file context noi bo cho san pham cua chinh minh thi dung skill product-marketing-context; dao sau insight khach hang cuoi thi dung skill 09-insight-khach-hang; brief NGUOC ra cho agency hoac vendor lam thi dung skill 67-agency-vendor-brief."
 argument-hint: "<industry + scope + budget>"
 metadata:
-  version: 1.0.1
+  version: 1.1.0
   category: operations
 triggers:
   - "brief khach hang"
@@ -167,6 +167,7 @@ Tu input cua user, xac dinh nganh va load variant tuong ung.
 
 ### Buoc 3 — Render full brief
 Render toan bo noi dung variant + customize them theo thong tin user da cung cap.
+Variant la khung noi dung, khong phai cau chu cuoi: viet lai toan bo cau chu gui khach theo nguyen tac 6 (ngon ngu nguoi that) va `references/ngon-ngu-nguoi-that.md`. Brief gui khach viet tieng Viet CO DAU.
 
 ### Buoc 4 — Huong dan gui khach
 Cuoi file co Next Steps:
@@ -215,6 +216,15 @@ Sau khi khach dien xong va gui lai, tu dong de xuat:
 - Agency cam ket bao mat, dung muc dich
 - Timeline ro rang (24h xac nhan, 5-7 ngay co plan v1)
 
+### 6. Ngon ngu nguoi that, cham dung noi dau
+Brief giong van ban hanh chinh hay giong AI thi chu DN dien qua loa. Viet nhu nguoi trong nghe noi chuyen:
+- Mo brief bang phan "Anh/chi dang gap chuyen nao?" — 5-8 noi dau that cua nganh de tick, viet bang cau chu DN hay noi.
+- Hoi bang tinh huong va canh nhin thay duoc, khong hoi bang khai niem (muc tieu, dinh vi, USP, persona, KPI).
+- Hoi ca cam xuc (so gi, met gi, mong gi) — nguyen lieu cho noi dung va cach tu van.
+- Moi phan co 1 cau "vi sao em hoi" dong cam; tranh tu ngu sao rong (toi uu, nang tam, toan dien, giai phap...).
+- Dong cam, khong hu doa: khong phong dai noi dau, khong hua ket qua bang con so.
+- Tu dien doi giong, kho noi dau 20 nganh, vi du truoc/sau: `references/ngon-ngu-nguoi-that.md`.
+
 ---
 
 ## Checklist chat luong (truoc khi gui khach)
@@ -232,6 +242,13 @@ Sau khi khach dien xong va gui lai, tu dong de xuat:
 - [ ] Checkbox/radio dung dinh dang Markdown chuan
 - [ ] Co Next Steps cuoi file
 - [ ] Co commitment va xac nhan cuoi
+
+### Ngon ngu (nguyen tac 6)
+- [ ] Doc to 3 cau bat ky — nghe nhu nguoi noi chuyen, khong nhu van ban hanh chinh
+- [ ] Co phan "Anh/chi dang gap chuyen nao?" voi 5-8 noi dau dung nganh
+- [ ] Lua chon la cau chu DN tu noi ra duoc; khong con tu trong cot "Tranh" cua tu dien doi giong
+- [ ] Co it nhat 1 cau hoi ve cam xuc (so / met / mong)
+- [ ] Khong phong dai noi dau, khong hua ket qua bang con so
 
 ### Theo nganh
 - [ ] Phan B (San pham/Dich vu) co cau hoi dac thu nganh
@@ -255,4 +272,5 @@ Sau khi khach dien xong va gui lai, tu dong de xuat:
 ## References
 
 - `variants/` — 20 file variant chi tiet theo tung nganh
+- `references/ngon-ngu-nguoi-that.md` — nguyen tac giong nguoi that, tu dien doi giong, kho noi dau + cam xuc 20 nganh VN, vi du truoc/sau
 - Project root `brief-khach-hang-spa-le-chan-20260428.md` — Vi du output thuc te (Spa)
