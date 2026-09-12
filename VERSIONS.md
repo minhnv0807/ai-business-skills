@@ -27,7 +27,7 @@
 | 17-pricing-strategy | 1.0.0 | 2026-04-24 | strategy |
 | 18-referral-program | 1.0.0 | 2026-04-24 | operations |
 | 19-ab-test-setup | 1.1.0 | 2026-07-30 | performance |
-| 20-brief-client-intake | 1.0.0 | 2026-04-24 | operations |
+| 20-brief-client-intake | 1.1.0 | 2026-09-12 | operations |
 | 21-audit-ads-performance | 1.3.1 | 2026-07-30 | performance |
 | 22-personal-brand-context | 1.1.0 | 2026-06-06 | foundation |
 | 23-personal-brand-strategy | 1.0.0 | 2026-05-08 | strategy |
