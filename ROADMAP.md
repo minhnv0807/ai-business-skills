@@ -1,6 +1,6 @@
 # Roadmap
 
-> Public roadmap for `ai-business-skills` — 143 production-ready AI marketing skills for Claude Code, ChatGPT, Gemini & Copilot.
+> Public roadmap for `ai-business-skills` — 144 production-ready AI marketing skills for Claude Code, ChatGPT, Gemini & Copilot.
 > Last updated: 2026-08-10
 
 ## 🎯 North Star
@@ -115,7 +115,7 @@ Become the standard open-source AI marketing skill library for Vietnamese SMEs a
 | Q3 2026 | 78 (VN + Global) | v3.1 → v3.6 | Design master, growth, AI Marketing OS, role SOP packs bilingual |
 | Q4 2026 (planned) | 15+ | v3.7, v4.0 | APAC region variants, B2B vertical pack |
 
-**Current: 143 skills. Target: 150+ by end of 2026.**
+**Current: 144 skills. Target: 150+ by end of 2026.**
 
 ---
 

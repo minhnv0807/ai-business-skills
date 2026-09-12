@@ -31,7 +31,7 @@ Cau truc va framework (AIDA, PAS, Quality Gates) la pho quat — dung duoc moi n
 
 ### Q: Co bao nhieu skill?
 
-**A:** 143 skills — 74 VN (`skills/vi/` + module personal branding) va 69 Global (`skills/en/` + module), kem 6 agents, 19 workflows, 8 reference files, va kho `knowledge/` (24 file kien thuc nen tang). Xem ban do day du tai `docs/skill-map.md`.
+**A:** 144 skills — 75 VN (`skills/vi/` + module personal branding) va 69 Global (`skills/en/` + module), kem 6 agents, 19 workflows, 8 reference files, va kho `knowledge/` (24 file kien thuc nen tang). Xem ban do day du tai `docs/skill-map.md`.
 
 ### Q: Skill 35-67 la gi, khac gi skill 00-34?
 

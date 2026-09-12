@@ -1,8 +1,8 @@
 ---
 name: 37-caption-social
-description: "Dung khi can viet caption dang ORGANIC cho Facebook, Instagram, TikTok, Threads — khong chay tien, 2 bien the khac huong hook, kem hashtag va ghi chu chon ban. Kich hoat khi user nhac 'viet caption', 'caption Facebook', 'caption Instagram', 'noi dung dang bai', 'viet bai dang trang ca nhan', 'caption cho anh nay'. Khong dung cho — copy chay quang cao tra tien thi dung skill 05-copy-quang-cao; kich ban video thi dung skill 04-script-video; bai dang trong group cong dong thi dung skill 38-seeding-plan."
+description: "Dung khi can viet caption dang ORGANIC cho Facebook, Instagram, TikTok, Threads — khong chay tien, 2 bien the khac huong hook, kem hashtag va ghi chu chon ban. Kich hoat khi user nhac 'viet caption', 'caption Facebook', 'caption Instagram', 'noi dung dang bai', 'viet bai dang trang ca nhan', 'caption cho anh nay'. Khong dung cho — copy chay quang cao tra tien thi dung skill 05-copy-quang-cao; slogan / cau hai y / headline poster thi dung skill 74-copy-hai-lop; kich ban video thi dung skill 04-script-video; bai dang trong group cong dong thi dung skill 38-seeding-plan."
 metadata:
-  version: 1.0.1
+  version: 1.0.2
   category: content
 license: MIT
 triggers:
@@ -21,6 +21,7 @@ related:
   - 36-content-brief
   - 01-lich-noi-dung
   - 05-copy-quang-cao
+  - 74-copy-hai-lop
   - 42-brief-hinh-anh
   - 43-brief-carousel
 ---
@@ -144,6 +145,7 @@ Ten file: `caption-social-[ten-bai]-[YYYYMMDD].md`
 - `36-content-brief`: nhan angle, insight goc, key message, CTA tu brief.
 - `01-lich-noi-dung`: caption viet theo slot trong lich (kenh, tang pheu, pillar).
 - `05-copy-quang-cao`: khi bai can chay ads (boost / camp) — viet lai theo chuan ads copy, khong dung nguyen caption organic.
+- `74-copy-hai-lop`: khi can cau ngan hai lop / slogan / headline poster; 37 chi dan cau do thanh caption dai neu can.
 - `42-brief-hinh-anh` / `43-brief-carousel`: brief visual di kem sau khi caption duyet.
 
 ## Checklist chat luong

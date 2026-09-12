@@ -1,8 +1,8 @@
 ---
 name: 42-brief-hinh-anh
-description: "Dung khi can brief mot ANH TINH cho designer hoac photographer — banner, thumbnail, poster, anh feed: muc tieu visual, concept va mood, bo cuc, copy overlay, mau va font lay tu brand guideline, kich thuoc theo kenh, tieu chi duyet. Kich hoat khi user nhac 'brief anh', 'brief banner', 'brief thumbnail', 'brief visual', 'dat designer lam anh', 'ta lai anh muon lam sao', 'designer hoi lai hoai'. Khong dung cho — chuoi nhieu slide thi dung skill 43-brief-carousel; huong dan thao tac tren Canva thi dung skill 45-brief-canva; can asset gap trong ngay khi campaign dang chay thi dung skill 48-quick-visual-brief; tu gen anh bang AI thi dung skill 30-thiet-ke-master."
+description: "Dung khi can brief mot ANH TINH cho designer hoac photographer — banner, thumbnail, poster, anh feed: muc tieu visual, concept va mood, bo cuc, copy overlay, mau va font lay tu brand guideline, kich thuoc theo kenh, tieu chi duyet. Kich hoat khi user nhac 'brief anh', 'brief banner', 'brief thumbnail', 'brief visual', 'dat designer lam anh', 'ta lai anh muon lam sao', 'designer hoi lai hoai'. Khong dung cho — chua co cau overlay / slogan hai lop thi dung skill 74-copy-hai-lop truoc; chuoi nhieu slide thi dung skill 43-brief-carousel; huong dan thao tac tren Canva thi dung skill 45-brief-canva; can asset gap trong ngay khi campaign dang chay thi dung skill 48-quick-visual-brief; tu gen anh bang AI thi dung skill 30-thiet-ke-master."
 metadata:
-  version: 1.0.1
+  version: 1.0.2
   category: content
 license: MIT
 triggers:
@@ -23,6 +23,7 @@ related:
   - 46-brand-guideline
   - 47-design-review
   - 30-thiet-ke-master
+  - 74-copy-hai-lop
 ---
 
 # Brief Hinh Anh
@@ -168,6 +169,7 @@ Deadline: [ngay] | Sua toi da: 2 lan
 - `45-brief-canva`: khi designer lam tren Canva, kem direction thao tac cu the.
 - `47-design-review`: review ket qua theo tieu chi cham diem sau khi designer nop.
 - `30-thiet-ke-master`: khi can gen anh bang AI thay vi designer lam tay.
+- `74-copy-hai-lop`: khi poster can cau hai lop / slogan — chot cau o 74 roi moi brief anh; 42 khong tu viet slogan.
 
 ## Checklist chat luong
 
