@@ -2,7 +2,7 @@
 name: 30-design-master-global
 description: "Use when the user wants a marketing image GENERATED or an image prompt written — personal brand portraits, logos and monograms, campaign key visuals, day-to-day social graphics, editorial art, infographics, web hero mockups, and quote graphics. Reads brand identity from project context, composes an on-brand prompt, generates via gpt-image-2 when an API key exists, otherwise outputs paste-ready prompts for DALL-E 3, MidJourney, Leonardo, or Ideogram. Trigger on 'design an image', 'make me a logo', 'MidJourney prompt', 'key visual for the campaign', 'generate a graphic for this post', 'I need a visual and have no designer'. Not for — briefing a human designer on a static, see `42-image-brief-global`; a slide sequence, see `43-carousel-brief-global`; the brand rules themselves, see `46-brand-guideline-global`; scoring a finished design, see `47-design-review-global`."
 metadata:
-  version: 1.1.1
+  version: 1.2.0
   category: design
 triggers:
   - "design image"
@@ -167,6 +167,7 @@ Load lazily, as needed:
 - `references/<type>.md` — load the file matching the type just detected (e.g. `references/business-logo.md`)
 - `references/brand-identity-source.md` — load whenever the type starts with `business-*`
 - `references/fallback-prompt-format.md` — load when the tier is Free (see Step 5)
+- `references/atlas-cloud-provider.md` — load when the user selects `IMAGE_PROVIDER=atlas-cloud`
 - `templates/<format>.md` — load the template matching the requested format (e.g. `templates/poster.md`, `templates/social-square.md`)
 
 ### Step 3 — READ brand identity
@@ -199,7 +200,10 @@ If nothing is found for a business mode → **BLOCK** + ask the user to upload a
 Detect the tier in Bash:
 
 ```bash
-if [[ -n "$OPENAI_API_KEY" ]]; then
+if [[ "${IMAGE_PROVIDER:-}" == "atlas-cloud" ]]; then
+  [[ -n "${ATLASCLOUD_API_KEY:-}" ]] || { echo "ATLASCLOUD_API_KEY is required"; exit 1; }
+  TIER="atlas-cloud"   # explicit opt-in only
+elif [[ -n "$OPENAI_API_KEY" ]]; then
   TIER="pro"   # direct gpt-image-2
 elif [[ -n "$OD_BIN" && -x "$OD_BIN" ]]; then
   TIER="enterprise"   # Open Design dispatcher
@@ -215,8 +219,11 @@ Print line: `[tier: <X>] [model: <Y>]`.
 | **Free** | No API key available | `docs/design/<slug>-prompt.md` with paste-ready prompts for 5 platforms (DALL-E 3, MidJourney v6, Leonardo, Imagen 3, Bing/Copilot Designer) — see `references/fallback-prompt-format.md` |
 | **Pro** | `OPENAI_API_KEY` is set → call gpt-image-2 directly | `docs/design/<slug>.png` + `docs/design/<slug>.md` (metadata) |
 | **Enterprise** | `$OD_BIN` exists and is executable → dispatch via Open Design infrastructure (the existing `image-poster` infra) | `docs/design/<slug>.png` + `docs/design/<slug>.md` (metadata with `gen_mode: api-dispatcher`) |
+| **Atlas Cloud** | The user selected `IMAGE_PROVIDER=atlas-cloud` and `ATLASCLOUD_API_KEY` is set → submit once, then poll with GET as described in `references/atlas-cloud-provider.md` | `docs/design/<slug>.png` + `docs/design/<slug>.md` (metadata with `gen_mode: api-atlas`) |
 
-**Type 7 web mockup** — after generating the hero image (if Pro/Enterprise tier), print a recommendation block:
+Atlas Cloud is paid generation: read the current catalog/schema and get user confirmation before the POST. Never automatically retry `submit`; if the response is uncertain, preserve the prediction context and inspect task history instead of resubmitting.
+
+**Type 7 web mockup** — after generating the hero image (if Pro/Enterprise/Atlas Cloud tier), print a recommendation block:
 
 ```
 [NEXT STEP] Hero image generated. For a full multi-section interactive mockup,
@@ -229,7 +236,7 @@ also run one of:
 ```
 
 **Type 8 quote graphic** — output 2 files:
-- `docs/design/<slug>-bg.png` — background image generated via gpt-image-2 (NO text)
+- `docs/design/<slug>-bg.png` — background image generated through the selected API tier (NO text)
 - `docs/design/<slug>.html` — HTML overlay rendering the quote text on top of the background (HTML keeps typography crisp; avoids AI garbling letters)
 
 ---
@@ -252,8 +259,8 @@ brand_identity:
   style_adjectives: [<adj>, <adj>, ...]
 format: poster | social-square | social-vertical | banner-hero | magazine | infographic | logo-variant | quote
 aspect_ratio: 1:1 | 9:16 | 16:9 | 3:4 | 4:3 | custom
-gen_mode: api-direct | api-dispatcher | fallback-prompt | hybrid
-model: gpt-image-2 | dall-e-3 | midjourney-v6 | flux | imagen-3 | manual
+gen_mode: api-direct | api-dispatcher | api-atlas | fallback-prompt | hybrid
+model: gpt-image-2 | google/nano-banana-2-lite/text-to-image | google/nano-banana-2-lite/edit | dall-e-3 | midjourney-v6 | flux | imagen-3 | manual
 output_files:
   - <path>
 created: 2026-05-20
@@ -265,13 +272,14 @@ Field names stay in ENGLISH — do not translate (would break AI parsing). The b
 
 ---
 
-## Error handling — 8 real-world situations
+## Error handling — 9 real-world situations
 
 | Situation | How to handle |
 |-----------|---------------|
 | Type is ambiguous (no keyword match, no flag) | Ask 1 single question with all 8 options (see Layer 3 in Step 0) |
 | Business mode + brand identity missing | **BLOCK** + ask the user to upload the logo + specify a palette (3 hex codes) + name a font family |
 | `OPENAI_API_KEY` invalid / quota exceeded when calling gpt-image-2 | Fall back to Free tier (prompt-only) + print an error line |
+| Atlas Cloud submit timeout / connection reset / HTTP 5xx | **Do not retry the POST.** Preserve context, inspect task history, and poll with GET only when a prediction ID is known. |
 | Type 7 web mockup but user actually wants a full multi-section UI | Hybrid is fine: generate the hero image + attach a recommendation for `web-prototype` (or one of the 4 sibling skills) for the full mockup |
 | Logo gen requested but no brand values yet | Probe with 3 questions: brand name, industry, values (3-5 words) — only then is it possible to generate a logo with any soul |
 | Infographic text-heavy, >5 data points | **Warn**: "Text inside AI-generated images is unreliable. Recommend using a Canva template for text-heavy infographics." Still generate if the user confirms. |
@@ -292,12 +300,14 @@ Field names stay in ENGLISH — do not translate (would break AI parsing). The b
 - Generate >1 image per turn, unless it's a logo multi-variant set
 - Save only a prompt without generating the image while on Pro/Enterprise tier — wastes the API budget
 - Generate an image without saving a `.md` metadata sidecar — context is lost next time
+- Select Atlas Cloud automatically when the user did not set `IMAGE_PROVIDER=atlas-cloud` — this provider must stay opt-in
+- Retry an Atlas Cloud generation POST after an uncertain response — this can create a duplicate paid request
 
 ---
 
 ## Self-test before generating
 
-Before every gpt-image-2 call or fallback prompt export, ask yourself:
+Before every selected-provider call or fallback prompt export, ask yourself:
 
 > "Does this output align with the brand voice and identity? Would a client recognize the brand when they see it? If this is personal brand work — does it reflect the style adjectives the user actually wrote down?"
 
@@ -323,6 +333,7 @@ If you can't confidently answer 2 out of 3 → go back to Step 3, re-read the br
 | To compose a prompt for one of the 8 types | `references/<type>.md` (e.g. `references/business-logo.md`) |
 | To find the brand identity source for business mode | `references/brand-identity-source.md` |
 | To format prompts for 5 platforms on the Free tier | `references/fallback-prompt-format.md` |
+| Atlas Cloud opt-in: model schema, submit-once, GET polling | `references/atlas-cloud-provider.md` |
 | To use a specific format template (poster, banner, story...) | `templates/<format>.md` |
 | To see a real example output | `examples/<example-name>.md` |
 
