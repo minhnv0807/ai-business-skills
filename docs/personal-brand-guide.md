@@ -1,6 +1,6 @@
 # Cam Nang Personal Brand 2026 — Phien Ban Day Du
 
-> Cam nang nay danh cho nguoi moi bat dau xay dung personal brand tai Viet Nam, dac biet la founder, coach va creator mong muon kiem tien tu thuong hieu ca nhan. Tat ca noi dung dua tren benchmark VN 2025–2026, phap luat hien hanh (Nghi dinh 147/2024) va kinh nghiem thuc te tu cac skill 22 den 28 trong he thong.
+> Cam nang nay danh cho nguoi moi bat dau xay dung personal brand tai Viet Nam, dac biet la founder, coach va creator mong muon kiem tien tu thuong hieu ca nhan. Tat ca noi dung dua tren benchmark VN 2025–2026, khung phap ly VN hien hanh (hub `skills/vi/references/phap-ly-marketing-vn.md`) va kinh nghiem thuc te tu cac skill 22 den 28 trong he thong.
 
 **Muc luc**
 
@@ -48,7 +48,7 @@ Build corporate brand khi: (1) ban kinh doanh san pham vat ly co quy trinh san x
 
 ### 1.5. VN context 2026
 
-Vietnam dang vao "personal brand era" voi ba xu huong: TikTok dat hon 50 trieu nguoi dung VN, LinkedIn VN tang 2.3x trong 18 thang qua, va luong khoa hoc online ban duoc tu personal brand vuot 1.500 ty VND nam 2025. Ben canh do, Nghi dinh 147/2024 ve quan ly noi dung tren mang xa hoi co hieu luc tu 2025 — yeu cau tat ca nguoi sang tao co thu nhap >100 trieu/nam phai dang ky dinh danh va disclose noi dung tai tro. Day la thoi diem dac biet thuan loi de bat dau, voi dieu kien lam dung ngay tu dau.
+Vietnam dang vao "personal brand era" voi ba xu huong: so nguoi dung TikTok VN [CAN SO LIEU THAT], toc do tang cua LinkedIn VN [CAN SO LIEU THAT], va doanh so khoa hoc online ban tu personal brand [CAN SO LIEU THAT]. Ben canh do, khung phap ly da thay doi: nhan AI, cong bo quang cao cua KOL/KOC, du lieu ca nhan va xac thuc tai khoan deu co quy dinh rieng (xem muc 3.5 va hub `skills/vi/references/phap-ly-marketing-vn.md`). Day la thoi diem thuan loi de bat dau, voi dieu kien lam dung ngay tu dau.
 
 ---
 
@@ -171,15 +171,22 @@ Cong nghe stack pho bien VN 2026: HeyGen + ElevenLabs + Captions cho creator co 
 
 1. **Cost**: HeyGen $30/thang, ElevenLabs $22/thang, Captions $20/thang — tong ~$80/thang ($1m VND/thang).
 2. **Lipsync khong hoan hao tieng Viet**: chu co dau, am cuoi nhu "ng", "nh", "u" thi mom van bi sai khoang 10–15%.
-3. **AI detect**: TikTok va YouTube ngay cang co thuat toan phat hien AI generated content — co the bi giam reach 30–50% neu khong disclose.
+3. **AI detect**: TikTok va YouTube ngay cang co thuat toan phat hien AI generated content — co the bi giam reach neu khong disclose (muc giam: [CAN SO LIEU THAT], theo chinh sach tung nen tang).
 4. **Mat authenticity**: kha gia thay video AI thi du hay den dau van cam giac "khong that", lam giam khar nang chuyen doi sale.
 5. **Learning curve**: 2–3 tuan dau de quen tool, them 1–2 thang de tao output chat luong on dinh.
 
-### 3.5. Ethics VN 2026 — Nghi dinh 147/2024
+### 3.5. Ethics VN 2026 — tom tat phap ly
 
-Nghi dinh 147/2024 yeu cau tat ca content creator co thu nhap >100 trieu/nam phai (1) dang ky dinh danh, (2) disclose noi dung tai tro, (3) chiu trach nhiem ve tinh chinh xac noi dung. Voi AI Avatar, khuyen nghi 3 tang disclosure:
+Tom tat (khong phai tu van phap ly; chi tiet va so hieu van ban o hub `skills/vi/references/phap-ly-marketing-vn.md`):
 
-- **Tang 1 (BAT BUOC theo phap luat)**: noi dung suc khoe, tai chinh, phap luat — phai noi ro "video nay duoc tao boi AI" trong 3 giay dau hoac dong watermark "AI generated" suot video.
+- **Nhan noi dung AI**: xem hub muc 4 (Luat AI 134/2025 + ND 142/2026).
+- **KOC / creator nhan quang cao**: phai dung that san pham va cong bo quang cao truoc va trong khi quang cao — xem hub muc 3.
+- **Xac thuc tai khoan** mang xa hoi (ND 147/2024): xem hub muc 5.
+- **Thue** cua creator: xem hub muc 6 va hoi ke toan.
+
+Voi AI Avatar, **bat buoc theo luat** la nhan nhin thay duoc khi video mo phong nguoi that hoac co the gay nham lan ve nguon goc (hub muc 4). Phan chia 3 tang duoi day la **thuc hanh tot** de van hanh, khong phai trich luat:
+
+- **Tang 1 (nen lam chac chan)**: video avatar / clone giong nguoi that, noi dung suc khoe, tai chinh, phap luat — noi ro "video nay duoc tao boi AI" trong 3 giay dau hoac dong watermark "AI generated" suot video.
 - **Tang 2 (KHUYEN NGHI manh)**: noi dung giao duc, tu van — caption ghi "Video duoc xu ly bang AI" o cuoi caption.
 - **Tang 3 (TUY CHON, build trust)**: noi dung giai tri, cuc song — disclose mot lan trong bio kenh, khong can repeat moi video.
 
@@ -298,7 +305,7 @@ Tong ket 30 ngay: 50 tripwire don x 99K = 4.95 trieu, 1 coaching deal 15 trieu =
 ### 5. No disclosure khi dung AI
 
 **Mistake**: dung AI Avatar ma khong noi gi ca, dung anh AI tao gia ban than.
-**Why bad**: vi pham Nghi dinh 147/2024, audience phat hien la mat hoan toan trust.
+**Why bad**: video AI mo phong nguoi that ma khong gan nhan co the vi pham quy dinh nhan AI (hub muc 4), va audience phat hien la mat hoan toan trust.
 **Fix**: chon 1 trong 3 tang disclosure (Chuong 3.5). Bao bo cong cong khai disclosure giup tao cam giac trustworthy hon — dung sai cua nhieu nguoi.
 
 ### 6. Hard sell qua som
@@ -640,7 +647,7 @@ Khong. Toi da 30-40% AI Avatar trong content mix la luc thoai mai. Hon nua se ma
 Tot khoang 80-85%, am cuoi "ng", "nh", "u" van bi sai 10-15%. Phu hop educational content, KHONG phu hop sales VSL high-ticket.
 
 **8. Disclosure khi nao bat buoc?**
-Theo Nghi dinh 147/2024: bat buoc cho noi dung suc khoe, tai chinh, phap luat. Khuyen nghi cho giao duc va tu van. Tham khao Chuong 3.5.
+Bat buoc theo luat khi noi dung AI mo phong nguoi that hoac co the gay nham lan ve nguon goc (Luat AI 134/2025 + ND 142/2026, xem hub muc 4); khong co quy dinh rieng theo nganh suc khoe / tai chinh / phap luat da duoc kiem — neu co thi la chinh sach nen tang, kiem tra truoc khi dang. Khuyen nghi them cho giao duc va tu van. Tham khao Chuong 3.5.
 
 **9. Toi co the build personal brand voi 0 follower khong?**
 Co, hoan toan duoc. Phan lon nguoi build duoc 10K follower trong 6-12 thang khoi tu 0. Quan trong la consistency va niche.

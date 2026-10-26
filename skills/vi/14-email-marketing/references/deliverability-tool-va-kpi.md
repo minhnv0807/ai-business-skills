@@ -1,6 +1,6 @@
 # Deliverability, Tool, Phap Ly Va KPI Email
 
-> Reference cua skill 14-email-marketing. Doc khi can setup ky thuat gui (SPF/DKIM/DMARC, warm-up), chon tool, kiem tra tuan thu PDPA, hoac tra benchmark KPI email cho thi truong Viet Nam.
+> Reference cua skill 14-email-marketing. Doc khi can setup ky thuat gui (SPF/DKIM/DMARC, warm-up), chon tool, kiem tra cach lam email theo thuc hanh tot ve du lieu ca nhan, hoac tra benchmark KPI email cho thi truong Viet Nam.
 
 ## Deliverability — Dam bao email vao Inbox
 
@@ -53,24 +53,29 @@
 
 ## Tuan thu phap luat
 
-### PDPA Viet Nam (Nghi dinh 13/2023/ND-CP)
+### Du lieu ca nhan trong email — thuc hanh tot
 
-| Yeu cau | Cach thuc hien |
-|---------|---------------|
-| Dong y (Consent) | Form dang ky co checkbox dong y nhan email (khong tick san) |
-| Quyen rut dong y | Link unsubscribe trong moi email, xu ly trong 24h |
-| Bao mat du lieu | Ma hoa danh sach email, khong chia se voi ben thu 3 |
-| Muc dich ro rang | Ghi ro "Dang ky nhan email ve [noi dung gi]" |
-| Quyen xoa du lieu | Cung cap cach de user yeu cau xoa toan bo du lieu |
+> **Nghia vu phap ly:** Luat Bao ve du lieu ca nhan 91/2025/QH15 + ND 356/2025/ND-CP (hieu luc 2026-01-01) — xem `skills/vi/references/phap-ly-marketing-vn.md` muc 2. Bang duoi la **thuc hanh tot cho email**, khong phai trich dieu luat; doi chieu van ban goc truoc khi dua vao chinh sach / hop dong.
 
-### Checklist compliance
+| Viec can lam | Cach thuc hien (thuc hanh tot) |
+|--------------|-------------------------------|
+| Double opt-in | Gui email xac nhan sau khi dang ky; chi them vao list khi khach bam xac nhan |
+| Khong tick san | O dong y nhan email de trong, tach rieng khoi o dong y dieu khoan dich vu |
+| Muc dich ro rang | Ghi ro "Dang ky nhan email ve [noi dung gi]" canh nut dang ky + link chinh sach du lieu |
+| Consent log | Luu thoi diem, nguon form, noi dung da dong y cho tung dia chi |
+| Huy dang ky 1 cham | Link unsubscribe trong moi email, bam la huy, khong bat dang nhap; xu ly som va that |
+| Khong mua list | Khong mua / thue danh sach email, SDT; chi gui cho nguoi da dong y |
+| Custom Audience | Chi upload danh sach khach len Meta / Google khi da co co so dong y cho muc dich quang cao |
+| Yeu cau xoa | Co kenh de khach yeu cau xoa du lieu; ghi nguoi phu trach xu ly |
 
-- [ ] Form dang ky co o tick dong y (khong tu dong tick)
-- [ ] Moi email co link Unsubscribe o footer
-- [ ] Co dia chi lien he/doanh nghiep trong footer
-- [ ] Khong gui email cho nguoi chua dong y
-- [ ] Xu ly unsubscribe trong vong 24h
-- [ ] Luu tru bang chung dong y (consent log)
+### Checklist truoc khi gui
+
+- [ ] Form dang ky co o dong y khong tick san + double opt-in
+- [ ] Moi email co link Unsubscribe 1 cham o footer
+- [ ] Co dia chi lien he / ten doanh nghiep trong footer
+- [ ] Khong gui cho nguoi chua dong y; khong dung list mua
+- [ ] Yeu cau huy dang ky duoc xu ly truoc lan gui ke tiep
+- [ ] Luu consent log cho moi dia chi
 
 ## KPI va Benchmark
 

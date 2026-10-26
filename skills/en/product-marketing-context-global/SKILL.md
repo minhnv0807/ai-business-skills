@@ -2,9 +2,10 @@
 name: product-marketing-context-global
 description: "Use when starting work on a new product, client, or market — this skill creates the file `.agents/product-marketing-context-global.md` that 60+ other global skills read before they write anything: product, ICP, positioning, proof, objections, brand voice, pricing, and KPIs, with a region variant for US, EU, SEA, or LATAM. Run once, reuse forever. Trigger on 'set up marketing context', 'new client setup', 'onboard a new product', 'the AI does not know my product', 'US marketing context', 'EU GDPR setup', 'SEA market context', 'LATAM setup'. Also use when the user complains every answer comes back generic because nothing about the business was ever provided. Not for — a personal brand belonging to a founder, coach, or creator, see `22-personal-brand-context-global`; deep persona and JTBD research, see `09-customer-insight-global`; the period plan itself, see `00-marketing-plan-global`."
 metadata:
-  version: 1.0.1
+  version: 1.1.0
   category: foundation
 license: MIT
+output: file .agents/product-marketing-context-global.md (12 sections plus 3 optional blocks - Paid Ads, Agent permissions, Learnings)
 triggers:
   - "global marketing context"
   - "international product context"
@@ -17,9 +18,13 @@ related:
   - product-marketing-context
   - 00-marketing-plan-global
   - 22-personal-brand-context-global
+  - 10-reverse-kpi-global
+  - 53-tracking-setup-global
 ---
 
 # Product Marketing Context (Global Foundation)
+
+> Operating rules: `skills/en/references/operating-rules-global.md` (esp. rules 2, 3, 7).
 
 > **Foundation skill for the GLOBAL marketing cluster** — runs BEFORE every other global skill (00-29). Creates `.agents/product-marketing-context-global.md` with product, customer, positioning context tuned to a specific region. Parallel to `product-marketing-context` (the Vietnam foundation); this one serves 4 regions: US, EU, SEA, LATAM.
 
@@ -155,6 +160,38 @@ Save to `.agents/product-marketing-context-global.md` (create the `.agents/` fol
 ---
 
 [12 sections following the chosen variant]
+
+---
+
+## 13. Paid Ads (optional; skip if you do not run ads yet)
+
+> Ads skills (`10-reverse-kpi-global`, `53-tracking-setup-global`, `54-media-plan-global`, `21-ads-audit-global`) read this block. Where a value is unknown, write `[REAL DATA NEEDED]`; do not guess.
+
+- **Ad accounts:** (platform, account name, ID. NEVER write tokens or passwords)
+- **Pixel / CAPI status:** (not installed / installing / verified). **Last verified:** [YYYY-MM-DD] (how to check: see `53-tracking-setup-global`)
+- **Target CPA / ROAS:** [REAL DATA NEEDED] (how to derive: see `10-reverse-kpi-global`)
+- **Monthly budget:**
+- **Approver for budget and account changes:** [name]
+
+## 14. Agent permissions
+
+> **Only a human edits this section. Agents never edit it; they stop and ask when an action conflicts.** See `skills/en/references/operating-rules-global.md` rule 7. An `execute` row is a standing authorization under rule 7: its Limit column must state the allowlist, spend ceiling, per-run limit and expiry date.
+
+| Action | Agent may (read / draft / propose / execute / never) | Limit | Approver |
+|--------|------------------------------------------------------|-------|----------|
+| Read reports and dashboards | read | Only the accounts listed in section 13 | - |
+| Draft copy, briefs, captions | draft | Follow brand voice (section 10); no claims without proof (section 11) | [name] |
+| Change budget / bid / target | propose | One change block at a time; execute only after the approver says yes | [name] |
+| Publish a public post | propose | Approver reviews the final version before it goes live | [name] |
+| Upload a customer list | never | - | - |
+
+## 15. Learnings (max 20 active rows)
+
+> Agents may only **append proposed rows** (Status = `proposed`); the approver moves a row to `active`. Over 20 active rows, retire the expired ones.
+
+| Date | Learning | Evidence (observed / reported / inferred) | Source | Status (active / retired) | Retire when |
+|------|----------|-------------------------------------------|--------|---------------------------|-------------|
+| [YYYY-MM-DD] | [one sentence] | observed | [link / report name] | active | [condition or date] |
 ```
 
 ---
@@ -187,6 +224,9 @@ Check whether `.agents/product-marketing-context-global.md` exists:
 - [ ] Voice of customer (section 9) uses REAL quotes — not paraphrased
 - [ ] Anti-persona explicit (section 7); 3 concrete differentiators (section 6)
 - [ ] North Star Metric defined (section 12); last-updated date in file
+- [ ] If running ads: section 13 has a tracking verify date and a named approver (no tokens or passwords)
+- [ ] Section 14 Agent permissions is filled in by a human; no write action left blank
+- [ ] Section 15 Learnings rows carry evidence (observed / reported / inferred) and a retire condition
 
 ---
 

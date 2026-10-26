@@ -1,8 +1,12 @@
 # Checklist Audit Chi Tiet Theo Nen Tang
 
 > Reference cua skill 21-audit-ads-performance. Doc khi bat dau cham diem chi tiet cho mot nen tang cu the — chi doc phan cua nen tang user yeu cau, khong doc ca file.
+>
+> **Cach cham (quy tac 3, `skills/vi/references/quy-tac-van-hanh.md`):** moi check ghi `pass` / `fail` / `unknown` (thieu data) / `n_a`. Trong so check = he so severity (SKILL.md) × trong so nhom. Diem nhom va diem nen tang = Σ trong so `pass` / Σ trong so (`pass` + `fail`); in kem do phu. Export thieu cot → check phu thuoc cot do la `unknown`.
+>
+> **Hang nguon (quy tac 4):** moi nguong so trong file nay (EMQ, frequency, hook rate, so creative, so keyword, follow, read rate...) la `heuristic` — quy uoc noi bo / vendor, chua kiem — tru khi ghi khac. Uu tien so lich su cua chinh tai khoan; ghi ngay kiem khi dung.
 
-## Audit META ADS (50 Checks)
+## Audit META ADS (34 Checks)
 
 > Trong so danh muc: Pixel/CAPI (30%) · Creative Diversity (25%) · Cau truc (20%) · Audience (15%) · Settings (10%)
 
@@ -25,13 +29,13 @@
 
 | # | Check | Muc do | Cach kiem tra |
 |---|-------|--------|--------------|
-| M09 | Co it nhat 10 creative thuc su khac biet | High | Ads Manager → Creative tab |
+| M09 | Cac concept dang chay thuc su khac nhau — moi cap khac o it nhat 2 truc (goc tiep can, chan dung khach, bang chung, dinh dang); so concept toi thieu la heuristic cua vendor, Meta khong cong bo nguong | High | Ads Manager → Creative tab |
 | M10 | Khong co creative nao chay > 21 ngay lien tuc | High | Xem ngay bat dau creative |
-| M11 | Frequency < 3.5 (cold audience) | High | Ads Manager → Cot Frequency |
+| M11 | Frequency <= 2.5 (cold, 7 ngay; retargeting so voi lich su) | High | Ads Manager → Cot Frequency |
 | M12 | CTR creative lon nhat va nho nhat khong chenh > 3x | Medium | Sort by CTR |
 | M13 | Co ca 3 format: video, image, carousel | Medium | Creative library |
 | M14 | Video co am thanh / nhac nen (neu dung video) | High | Xem tung video |
-| M15 | Hook 3 giay dau gay chu y (HookRate > 25%) | High | TikTok-style: 3s view / Impression |
+| M15 | Hook 3 giay dau gay chu y (HookRate >= 25% dat · >= 30% tot) | High | TikTok-style: 3s view / Impression |
 | M16 | Co UGC hoac review-style creative (1+) | Medium | Kiem tra creative list |
 | M17 | Creative khong bi blur, mo, cua so sai | Low | Xem preview tung ad |
 
@@ -56,7 +60,7 @@
 | # | Check | Muc do | Cach kiem tra |
 |---|-------|--------|--------------|
 | M25 | Custom Audience (website, video, page) da cap nhat du lieu moi | High | Audiences → cap nhat ngay |
-| M26 | Lookalike audience duoc tao tu nguon chat luong (khach mua, khach nhắn tin) | High | LAL sources |
+| M26 | Lookalike audience duoc tao tu nguon chat luong (khach mua, khach nhan tin) | High | LAL sources |
 | M27 | Khong dung age/gender restriction qua tat (tru khi co data ro) | Medium | Ad set targeting |
 | M28 | Co test Broad Targeting voi creative tot | Medium | Ad set → No detailed targeting |
 | M29 | Audience overlap giua cac ad set < 25% | High | Audience Overlap tool |
@@ -71,18 +75,21 @@
 | M31 | Ad scheduling (lich chay) phu hop voi gio khach hang online | Medium | Ad Scheduling |
 | M32 | Placement dang su dung Advantage+ (khong lock cung 1 placement) | Medium | Placement settings |
 | M33 | Campaign spending limit da thiet lap (tranh chi qua) | Low | Campaign → Spending Limit |
-| M34 | Trang thai tai khoan: khong co Warning / Hạn chế | Critical | Account Quality |
+| M34 | Trang thai tai khoan: khong co Warning / Han che | Critical | Account Quality |
 
 **Sub-score Settings:** _____ / 10 diem
 
 ### Meta Health Score
 ```
-Meta Score = (M_Tracking × 0.30) + (M_Creative × 0.25) + (M_Structure × 0.20) + (M_Audience × 0.15) + (M_Settings × 0.10)
+Trong so check = He so severity × Trong so nhom (Tracking 0.30 · Creative 0.25 · Structure 0.20 · Audience 0.15 · Settings 0.10)
+Meta Score     = Σ trong so check (pass) / Σ trong so check (pass + fail) × 100
+Do phu         = so check (pass + fail) / so check ap dung (khong tinh n_a)
 ```
+Nhom nao toan `unknown` thi khong vao mau so — khong tu gan 0 diem. Do phu < 60% → khong dua Meta Score, chi liet ke `unknown` quan trong + export can lay.
 
 ---
 
-## Audit TIKTOK ADS (30 Checks)
+## Audit TIKTOK ADS (25 Checks)
 
 > Trong so danh muc: Creative Quality (30%) · Technical Setup (25%) · Bidding/Learning (20%) · Cau truc (15%) · Settings (10%)
 
@@ -138,7 +145,7 @@ Meta Score = (M_Tracking × 0.30) + (M_Creative × 0.25) + (M_Structure × 0.20)
 
 ---
 
-## Audit GOOGLE ADS (35 Checks)
+## Audit GOOGLE ADS (26 Checks)
 
 > Trong so danh muc: Conversion Tracking (25%) · Cau truc / Quality Score (20%) · Keywords (20%) · Ads/Assets (20%) · Settings (15%)
 
@@ -160,14 +167,14 @@ Meta Score = (M_Tracking × 0.30) + (M_Creative × 0.25) + (M_Structure × 0.20)
 | G07 | Quality Score trung binh >= 6/10 | High |
 | G08 | Moi ad group co it nhat 2 RSA (responsive search ads) | High |
 | G09 | Keyword match type mix phu hop (Broad Match + Smart Bidding, hoac Phrase/Exact) | High |
-| G10 | Khong dung ECPC (da deprecated March 2025) | Critical |
+| G10 | Khong dung bid strategy da bi Google ngung ho tro (vd ECPC — kiem tra trang thai tai Google Ads Help ngay audit) | Critical |
 
 ### Nhom 3 — Keywords (20%)
 
 | # | Check | Muc do |
 |---|-------|--------|
-| G11 | Negative keywords list da thiet lap | High |
-| G12 | Wasted spend keywords (spend >200K, 0 conversion) da pause | Critical |
+| G11 | Negative keywords list da thiet lap — chi de xuat them negative khi co search terms report; khong co → `unknown` | High |
+| G12 | Keyword "tieu phi" da xu ly — chi goi tieu phi khi qua Buoc 0 Gate 1 (`skills/vi/references/quality-gates-vn.md`) va export co cot conversion; thieu → `unknown` | Critical |
 | G13 | Search Term Report duoc review dinh ky | High |
 | G14 | Broad Match chi dung voi Smart Bidding | High |
 | G15 | Brand keywords co campaign tach biet | Medium |
@@ -191,16 +198,17 @@ Meta Score = (M_Tracking × 0.30) + (M_Creative × 0.25) + (M_Structure × 0.20)
 | G23 | Location targeting chinh xac (khong target toan cau) | Critical |
 | G24 | Ad scheduling: tat quang cao ngoai gio lam viec (neu la B2B/dich vu) | Medium |
 | G25 | Google Analytics 4 da link voi Google Ads | High |
+| G26 | So lieu brand vs non-brand doc rieng (CPA / ROAS non-brand khong bi keyword thuong hieu lam dep) — can bao cao theo campaign + search terms report | High |
 
 ---
 
-## Audit ZALO ADS (20 Checks)
+## Audit ZALO ADS (10 Checks)
 
 > Trong so danh muc: Setup & Technical (40%) · Content Quality (35%) · Audience (25%)
 
 | # | Check | Muc do |
 |---|-------|--------|
-| Z01 | Zalo OA da verify va du follow (> 1,000) | High |
+| Z01 | Zalo OA da verify va du follow (> 1,000 — heuristic) | High |
 | Z02 | Zalo Official Account co rating > 4.0 | High |
 | Z03 | Tracking URL da thiet lap | Medium |
 | Z04 | Tin nhan broadcast co ca nhan hoa (khong spam chung) | High |
@@ -209,4 +217,4 @@ Meta Score = (M_Tracking × 0.30) + (M_Creative × 0.25) + (M_Structure × 0.20)
 | Z07 | Database Zalo duoc phan khuc (theo hanh vi, lich su mua) | High |
 | Z08 | Frequency broadcast <= 2 lan/tuan (tranh unsub) | Critical |
 | Z09 | Unsubscribe rate < 5%/broadcast | High |
-| Z10 | Read rate > 40% (benchmark trung binh VN) | High |
+| Z10 | Read rate dat nguong noi bo (vd > 40% — heuristic, doi chieu so lich su OA) | High |

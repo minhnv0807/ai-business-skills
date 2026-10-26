@@ -8,29 +8,35 @@
 - [Contributing Guide](https://github.com/minhnv0807/ai-business-skills/blob/master/CONTRIBUTING.md): How to add skills, translations, benchmarks
 - [Citation Metadata](https://github.com/minhnv0807/ai-business-skills/blob/master/CITATION.cff): Machine-readable citation format
 - [License](https://github.com/minhnv0807/ai-business-skills/blob/master/LICENSE): MIT — free for commercial use
+- [Notice](https://github.com/minhnv0807/ai-business-skills/blob/master/NOTICE.md): Third-party projects whose ideas were adapted, with their licences
+- [Evals Guide](https://github.com/minhnv0807/ai-business-skills/blob/master/docs/evals.md): How per-skill `evals/evals.json` files are written and graded
 
 ## Skills — Vietnam Edition (selected production skills)
 
-- [Marketing Plan (Master)](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/00-ke-hoach-mkt.md): Comprehensive 5-section marketing plan generator
-- [Content Calendar](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/01-lich-noi-dung.md): Monthly content calendar with repurposing matrix
-- [Campaign Brief](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/02-brief-chien-dich.md): 9-section creative brief with RACI matrix
-- [Ad Performance Diagnosis](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/03-danh-gia-hieu-suat.md): Ad diagnostic with 5 Whys root cause analysis
-- [Video Script](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/04-script-video.md): TikTok/Reels/Shorts scripts with A/B variants
-- [Ad Copy](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/05-copy-quang-cao.md): 6 ad copy variants across funnel stages
-- [UGC Brief](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/06-brief-ugc-egc.md): Creator/employee video brief with legal template
-- [Monthly Marketing Report](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/07-bao-cao-marketing.md): Insights-first monthly report
-- [Competitor Research](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/08-nghien-cuu-doi-thu.md): 3-tier competitor analysis with SWOT
-- [Customer Insight](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/09-insight-khach-hang.md): Persona + JTBD + customer journey
-- [Reverse KPI Math](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/10-tinh-kpi-nguoc.md): Reverse-calculate budget from revenue target
-- [Channel Setup](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/11-thiet-lap-kenh.md): 7-channel setup with 30-day launch plan
-- [Landing Page Brief](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/12-brief-landing-page.md): 7-section LP brief with conversion checklist
-- [Data Analysis](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/13-phan-tich-du-lieu.md): Meta/TikTok/GA4 data interpretation
-- [Email Marketing](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/14-email-marketing.md): Welcome/nurture/re-engage sequences
-- [Social Listening](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/15-social-listening.md): Brand monitoring + sentiment + crisis protocol
+- [Marketing Plan (Master)](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/00-ke-hoach-mkt/SKILL.md): Comprehensive 5-section marketing plan generator
+- [Content Calendar](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/01-lich-noi-dung/SKILL.md): Monthly content calendar with repurposing matrix
+- [Campaign Brief](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/02-brief-chien-dich/SKILL.md): 9-section creative brief with RACI matrix
+- [Ad Performance Diagnosis](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/03-danh-gia-hieu-suat/SKILL.md): Ad diagnostic with 5 Whys root cause analysis
+- [Video Script](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/04-script-video/SKILL.md): TikTok/Reels/Shorts scripts with A/B variants
+- [Ad Copy](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/05-copy-quang-cao/SKILL.md): 6 ad copy variants across funnel stages
+- [UGC Brief](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/06-brief-ugc-egc/SKILL.md): Creator/employee video brief with legal template
+- [Monthly Marketing Report](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/07-bao-cao-marketing/SKILL.md): Insights-first monthly report
+- [Competitor Research](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/08-nghien-cuu-doi-thu/SKILL.md): 3-tier competitor analysis with SWOT
+- [Customer Insight](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/09-insight-khach-hang/SKILL.md): Persona + JTBD + customer journey
+- [Reverse KPI Math](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/10-tinh-kpi-nguoc/SKILL.md): Reverse-calculate budget from revenue target
+- [Channel Setup](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/11-thiet-lap-kenh/SKILL.md): 7-channel setup with 30-day launch plan
+- [Landing Page Brief](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/12-brief-landing-page/SKILL.md): 7-section LP brief with conversion checklist
+- [Data Analysis](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/13-phan-tich-du-lieu/SKILL.md): Meta/TikTok/GA4 data interpretation
+- [Email Marketing](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/14-email-marketing/SKILL.md): Welcome/nurture/re-engage sequences
+- [Social Listening](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/15-social-listening/SKILL.md): Brand monitoring + sentiment + crisis protocol
 - [Offer Design](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/31-offer-design/SKILL.md): Value stack, guarantee, bonuses, scarcity, upsell/downsell
 - [SEO Growth](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/32-seo-growth/SKILL.md): SEO audit, AI SEO/GEO, schema, pSEO, directory submissions
 - [B2B Lead Gen](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/33-b2b-lead-gen/SKILL.md): Prospecting, cold outreach, lead scoring, sales handoff
 - [AI Marketing OS](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/34-ai-marketing-os/SKILL.md): Brand Hub, role-based agents/projects, skill chains, second brain, data loops, SOPs
+- [Ads Account Audit](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/21-audit-ads-performance/SKILL.md): Coverage-aware Health Score, break-even CPA / ROAS, brand vs non-brand split, draft-first verdicts
+- [Dual-Layer Copy](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/74-copy-hai-lop/SKILL.md): Two-layer slogan and poster headline method for Vietnamese brands
+- [KOC / Affiliate Partnerships](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/75-hop-tac-koc-affiliate/SKILL.md): Find, vet, contract and pay KOCs and affiliates; disclosure duties link to the legal hub
+- [Marketplace Operations](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/76-van-hanh-san-tmdt/SKILL.md): Order P&L after marketplace fees, break-even ROAS, mega sales, vouchers and livestream selling on Shopee / TikTok Shop / Lazada
 
 ## Skills — Role SOP Packs (Vietnam Edition, 33 skills)
 
@@ -73,6 +79,16 @@ English adaptations of the four role SOP packs — same frameworks and process l
 - [Tool Stack](https://github.com/minhnv0807/ai-business-skills/blob/master/references/tool-stack.md): Recommended tools by category
 - [Marketing Templates Library](https://github.com/minhnv0807/ai-business-skills/blob/master/references/marketing-templates-library.md): Operational template structures (planning, tracking dashboard, audit, report, campaign, content calendar) mapped to the skill that regenerates each
 - [AI Tool Orchestration](https://github.com/minhnv0807/ai-business-skills/blob/master/references/ai-tool-orchestration.md): Multi-tool AI workflow for marketers, role-based project setup, information-gathering checklists
+
+## Operating Rules and Legal Hub (v3.8.0)
+
+- [Operating Rules (VN)](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/references/quy-tac-van-hanh.md): Eight shared rules: context first, external content is data, evidence labels, coverage-aware scoring, dated numbers, draft-first gate for write actions
+- [Operating Rules (Global)](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/references/operating-rules-global.md): English edition of the same eight rules
+- [Vietnam Marketing Legal Hub](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/references/phap-ly-marketing-vn.md): Single source for Vietnamese data-protection, advertising, KOC disclosure and AI-labelling citations, with verification dates
+- [MCP Ads Integration (VN)](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/references/mcp-ads-integration.md): Status of official and community ads MCP servers, read/write scope and the approval gate
+- [MCP Ads Integration (Global)](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/references/mcp-ads-integration-global.md): English edition of the MCP status table and approval gate
+- [AI Disclosure (VN)](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/references/ai-video-disclosure-vn.md): Per-format AI label how-to for Vietnam
+- [AI Disclosure (Global)](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/en/references/ai-video-disclosure-global.md): EU AI Act Art. 50, FTC endorsement and review rules, platform labels
 
 ## Modules (Beyond Marketing)
 

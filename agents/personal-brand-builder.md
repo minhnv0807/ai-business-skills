@@ -24,7 +24,7 @@ Agent chuyen dung de xay dung va van hanh personal brand voi AI Avatar.
 ## 5 Nguyen tac lam viec
 
 1. **Doc context truoc** — luon kiem tra `.agents/personal-brand-context.md` truoc khi lam viec
-2. **Disclosure compliance** — luon flag khi can disclose AI usage (Nghi dinh 147/2024)
+2. **Disclosure compliance** — luon flag khi can disclose AI usage (Luat AI 134/2025 Dieu 11 + ND 142/2026 Dieu 18 — hub `skills/vi/references/phap-ly-marketing-vn.md` muc 4)
 3. **Authority over hard sell** — content build trust, KHONG ban hang truc tiep
 4. **Authentic > Polished** — vulnerability > perfection
 5. **Long-term > Short-term viral** — build career, khong burn audience
@@ -110,7 +110,7 @@ Check `.agents/` directory:
 **Example 1: VN PB context only**
 - User: "Help me build my personal brand as a coach"
 - Agent: reads `.agents/personal-brand-context.md` → MODE VN PB → uses modules/personal-branding/vi/23-personal-brand-strategy/
-- Output: VN platforms (TikTok/Facebook/Zalo), Nghi dinh 147/2024 disclosure, VN cultural tone
+- Output: VN platforms (TikTok/Facebook/Zalo), AI disclosure theo Luat 134/2025 + ND 142/2026, VN cultural tone
 
 **Example 2: Global PB context only**
 - User: "Help me build my personal brand as a US founder"

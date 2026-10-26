@@ -1,8 +1,8 @@
 ---
 name: 03-performance-eval-global
-description: "Use when marketing numbers look bad and the user needs to know WHY — layered root-cause diagnosis across tracking, delivery, creative, landing page, offer, and audience quality, 5-Whys, regional benchmarks for US, EU, SEA, and LATAM, and a 48-hour action plan. Covers dropshipping ROAS and BE-ROAS. Trigger on 'why is CPA so high', 'my ads are not converting', 'ROAS dropped', 'we are burning budget', 'performance is bad this month', 'diagnose the funnel'. Also use when the user pastes a screenshot of numbers with no question attached. Not for — auditing account configuration and scoring health, see `21-ads-audit-global`; writing a report someone else reads, see `07-marketing-report-global`; turning a raw export into insight, see `13-data-analysis-global`."
+description: "Use when marketing numbers look bad and the user needs to know WHY — layered root-cause diagnosis across tracking, delivery, creative, landing page, offer, and audience quality, 5-Whys, regional benchmarks for US, EU, SEA, and LATAM, and a 48-hour action plan. Covers dropshipping ROAS and BE-ROAS. Trigger on 'why is CPA so high', 'my ads are not converting', 'ROAS dropped', 'we are burning budget', 'performance is bad this month', 'diagnose the funnel'. Also use when the user pastes a screenshot of numbers with no question attached. Not for — full account configuration audit, see `21-ads-audit-global`; writing a report someone else reads, see `07-marketing-report-global`; turning a raw export into insight, see `13-data-analysis-global`."
 metadata:
-  version: 1.0.1
+  version: 1.1.0
   category: performance
 license: MIT
 triggers:
@@ -21,6 +21,8 @@ related:
 ---
 
 # Performance Evaluation (Global)
+
+> Operating rules: `skills/en/references/operating-rules-global.md` (esp. rules 2, 3, 7).
 
 Diagnose marketing performance — paid ads, organic, funnel — find root cause, propose optimization with 48h action plan and weekly checklist. Region variants (US/EU/SEA/LATAM) provide localized benchmarks.
 
@@ -65,11 +67,13 @@ Ask user up to 4 questions:
 
 | Platform | MCP recommended | Data pulled |
 |----------|----------------|-------------|
-| Meta Ads | Meta Official MCP (`mcp.facebook.com/ads`) | 29 tools — performance, anomalies, benchmarks |
+| Meta Ads | Meta Official MCP (`mcp.facebook.com/ads`) | List tools at connect time — performance, anomalies, benchmarks |
 | Meta Ads (alt) | Pipeboard, brijr/meta-mcp | Targeting research, ad library |
 | Google Ads | Google Official MCP | GAQL — cost, clicks, conv, impression share |
 | TikTok Ads | AdsMCP/tiktok-ads-mcp-server | Campaign performance reports |
 | Cross-platform | Adspirer ads-mcp | 175+ tools, unified metrics |
+
+The official Meta MCP can write, not only read, so any change recommended from MCP data follows rule 7 (draft-first, named approver) — never edit campaigns directly.
 
 **Quick MCP diagnostic flow:**
 
@@ -87,6 +91,8 @@ Ask user up to 4 questions:
 
 ### Part 0 — Ads Health Score (0-100)
 
+> Quick screening score only. Follow rule 3: mark each check pass / fail / unknown / n_a; under 60% coverage give no score and list the unknowns. The full platform-checklist score is `21-ads-audit-global`.
+
 ```
 Health Score = Σ(Check_pass × W_severity × W_category) / Σ(Check_total × W_severity × W_category) × 100
 ```
@@ -94,7 +100,7 @@ Health Score = Σ(Check_pass × W_severity × W_category) / Σ(Check_total × W_
 | Severity | Weight | Example checkpoints |
 |----------|--------|--------------------|
 | Critical | 5× | Pixel not firing, CAPI not setup, CPA > 3× target |
-| High | 3× | Creative similarity > 60%, budget < 5× CPA/day |
+| High | 3× | near-duplicate concepts (differ on < 2 axes), budget < 5× CPA/day |
 | Medium | 1.5× | No retargeting audience, headline > 40 chars |
 | Low | 0.5× | Naming convention not followed |
 
@@ -179,7 +185,7 @@ Ask "Why?" 5 times until you reach a process/system/skill root cause:
 |-----------|---------|--------|--------|
 | Frequency | >2.5 | >4 | Refresh creative, expand audience |
 | CTR decline | -20% vs first 3 days | -40% | New creative |
-| CPA increase | +25% vs first 3 days | +50% | Pause, test new |
+| CPA increase | +25% vs first 3 days | +50% | Diagnostic signal: check frequency and creative, prepare new creative. Any pause decision follows the house ladder below, not this metric alone |
 | Run time | >7 days | >14 days | Mandatory refresh |
 | Engagement decline | -30% comments/shares | -50% | Switch angle |
 | Negative feedback | >3% | >5% | Pause immediately |
@@ -274,7 +280,7 @@ Apply when CRITICAL issue detected:
 
 | # | Time | Action | Severity | Expected outcome |
 |---|------|--------|----------|------------------|
-| 1 | 0–2h | Pause creatives/ad sets with CPA > 2x target | CRITICAL | Stop bleeding spend |
+| 1 | 0–2h | Apply the house ladder (below) and propose pause for creatives/ad sets at CPA > 3.0x target (rule 7 draft block) | CRITICAL | Stop bleeding spend |
 | 2 | 2–4h | Deep-dive data: which creative, audience, time slot | CRITICAL | Identify root cause |
 | 3 | 4–8h | Duplicate winning ad set, test new creatives | HIGH | New creative live |
 | 4 | 8–12h | Adjust audience: exclude overlap, test new LAL | HIGH | Reduce frequency |
@@ -282,6 +288,8 @@ Apply when CRITICAL issue detected:
 | 6 | 12–24h | Review landing page / inbox flow | MEDIUM | Fix funnel leak |
 | 7 | 24–36h | Compare new vs. old performance | MEDIUM | Decide next step |
 | 8 | 36–48h | Report + propose week-2 plan | MEDIUM | Concrete plan |
+
+**House heuristic ladder (no EN gate file; verify against your own account data):** spend < 3x target CPA = not enough data; <= 1.0x = winner; 1.0-1.5x = watch; > 1.5x for 7 days = change creative or audience; > 3.0x = propose pause (rule 7 draft block); 0 conversions at >= 3x spend = the concept is wrong, go back to customer insight (`09-customer-insight-global`).
 
 ---
 
@@ -291,7 +299,7 @@ Apply when CRITICAL issue detected:
 |-----|-------|
 | Mon | Compare WoW KPIs, identify top/bottom 3 creatives, check frequency + audience overlap |
 | Tue | Make 3-5 new creatives, test new hook, review UGC pipeline + organic |
-| Wed | Optimize bid/budget on winners, pause CPA > 2x target, test new audiences |
+| Wed | Optimize bid/budget on winners, propose pause per the house ladder (CPA > 3.0x target, rule 7 draft block), test new audiences |
 | Thu | Check Mess→Lead, Lead→Booking, response time, sales script |
 | Fri | WoW table, top 3 priorities for next week, content calendar update |
 

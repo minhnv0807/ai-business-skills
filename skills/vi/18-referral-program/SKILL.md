@@ -1,8 +1,8 @@
 ---
 name: 18-referral-program
-description: "Dung khi muon khach cu keo khach moi — thiet ke chuong trinh gioi thieu, affiliate, ma moi ban: co che thuong mot chieu hay hai chieu, muc thuong, cach theo doi, chong gian lan va kich ban ra mat chuong trinh. Kich hoat khi user nhac 'chuong trinh gioi thieu', 'referral program', 'affiliate', 'ma moi ban', 'hoa hong gioi thieu', 'word of mouth', 'khach gioi thieu khach', 'CTV ban hang huong hoa hong'. Khong dung cho — giu chan khach cu de ho mua lai thi dung skill 69-giu-chan-khach-hang; xay cong dong quanh thuong hieu ca nhan thi dung skill 28-community-building; thue KOC va creator quay bai thi dung skill 06-brief-ugc-egc."
+description: "Dung khi muon khach cu hoac CTV keo khach moi — thiet ke chuong trinh gioi thieu, affiliate cho khach cu va CTV, ma moi ban: co che thuong mot chieu hay hai chieu, muc thuong, cach theo doi, chong gian lan va kich ban ra mat chuong trinh. Kich hoat khi user nhac 'chuong trinh gioi thieu', 'referral program', 'affiliate cho khach cu', 'ma moi ban', 'hoa hong gioi thieu', 'word of mouth', 'khach gioi thieu khach', 'CTV ban hang huong hoa hong'. Khong dung cho — giu chan khach cu de ho mua lai thi dung skill 69-giu-chan-khach-hang; xay cong dong quanh thuong hieu ca nhan thi dung skill 28-community-building; chon, tham dinh, bao gia KOC hoac chuong trinh affiliate cho KOC / creator thi dung skill 75-hop-tac-koc-affiliate; brief quay video cho creator da chot thi dung skill 06-brief-ugc-egc."
 metadata:
-  version: 1.0.1
+  version: 1.1.0
   category: operations
 license: MIT
 related:
@@ -10,9 +10,15 @@ related:
   - 09-insight-khach-hang
   - 10-tinh-kpi-nguoc
   - 14-email-marketing
+  - 75-hop-tac-koc-affiliate
+  - 06-brief-ugc-egc
 ---
 
 # Referral Program
+
+> Quy tac van hanh chung: `skills/vi/references/quy-tac-van-hanh.md` (dac biet quy tac 2, 3, 7).
+
+> Pham vi: khach cu va CTV gioi thieu. Chuong trinh affiliate cho KOC / creator (tham dinh, bao gia, hop dong, hoa hong tren san) la viec cua `75-hop-tac-koc-affiliate`.
 
 ## Thu thap thong tin
 
@@ -80,12 +86,13 @@ Nguoi duoc gioi thieu: Discount lan dau / bonus / free trial
 **Khi dung:**
 - SaaS / khoa hoc / san pham gia cao
 - Co he thong tracking (link affiliate, coupon code)
-- Muon thu hut influencer / partner
+- Muon thu hut CTV / doi tac ban hang (KOC / creator: dung `75-hop-tac-koc-affiliate`)
 
-**Cau truc VN pho bien:**
-- Tier 1: 10-20% doanh so don dau
-- Tier 2: 5-10% cac don tiep theo trong 90 ngay
-- Cap tren cao nhat: 30% cho super affiliate
+**Cau truc goi y (vi du gia dinh, heuristic — khong phai muc thi truong da kiem; tinh lai tu bien loi nhuan cua brand):**
+- Tier 1: hoa hong tren doanh so don dau
+- Tier 2: hoa hong thap hon cho cac don tiep theo trong khoang thoi gian ngan
+- Co tran hoa hong cho CTV top
+- Moi muc % phai nam duoi bien loi nhuan sau phi; `[CAN SO LIEU THAT]`. Voi nguoi ban qua san, phi san lay tu `76-van-hanh-san-tmdt`; thue: hoi ke toan (`skills/vi/references/phap-ly-marketing-vn.md` muc 6).
 
 ---
 
@@ -134,7 +141,7 @@ Thuong = 15-25% LTV khach moi
    └─► Qua Zalo, Messenger, SMS, email, copy link
 
 4. Ban be click link / nhap code
-   └─► Landing page don gian, rõ uu dai
+   └─► Landing page don gian, ro uu dai
 
 5. Ban be mua (redeem)
    └─► Tracking dung — pixel / tagged order

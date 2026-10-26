@@ -42,7 +42,10 @@ Mot so skill goi skill khac tu dong:
 - `39-content-audit` + `07-bao-cao-marketing` → `40-next-content-plan` → `01-lich-noi-dung` (vong lap content thang)
 - `41-campaign-asset-list` → goi `42-brief-hinh-anh` / `43-brief-carousel` / `45-brief-canva` → `47-design-review` → `50-asset-resize`
 - `54-media-plan` → goi `10-tinh-kpi-nguoc` + `51-audience-research`; truoc khi chay ads can `53-tracking-setup` verify xanh + `52-account-structure`
-- `21-audit-ads-performance` → `55-scaling-ads` / `56-retargeting-plan` → `57-next-ads-plan` (vong lap ads)
+- `21-audit-ads-performance` → `55-scaling-ads` / `56-retargeting-plan` → `57-next-ads-plan` (vong lap ads); verdict INVESTIGATE (lech so lieu) → `53-tracking-setup`; ads san TMDT → `76-van-hanh-san-tmdt`
+- `10-tinh-kpi-nguoc` → `76-van-hanh-san-tmdt` khi ban qua san TMDT (P&L don hang sau phi san, ROAS hoa von)
+- `76-van-hanh-san-tmdt` → `75-hop-tac-koc-affiliate` (affiliate san / KOC livestream) + `21-audit-ads-performance` (ads san)
+- `75-hop-tac-koc-affiliate` ↔ `06-brief-ugc-egc` (75 = tim, tham dinh, hop dong, tra phi; 06 = brief + kich ban noi dung); phap ly → hub `skills/vi/references/phap-ly-marketing-vn.md`
 - `02-brief-chien-dich` → them `41-campaign-asset-list` (asset scope) + `62-marketing-review` (gate duyet output)
 - `63-campaign-retrospective` → bai hoc cap nhat Brand Hub qua `34-ai-marketing-os`
 
@@ -139,15 +142,18 @@ related:
 
 Khi user da ket noi MCP server cho nen tang quang cao, cac skill co the pull data tu dong thay vi yeu cau user paste.
 
-> **Reference day du:** `skills/vi/references/mcp-ads-integration.md`
+> **Reference day du:** `skills/vi/references/mcp-ads-integration.md` (VN) · `skills/en/references/mcp-ads-integration-global.md` (Global)
 
-| Nen tang | MCP chinh thuc | MCP community tot nhat |
+| Nen tang | MCP chinh thuc [DA KIEM 2026-10] | MCP community |
 |----------|---------------|----------------------|
-| Meta Ads | Meta Official MCP (`@meta/ads-cli`) | Pipeboard (29 tools), brijr/meta-mcp (25 tools) |
-| Google Ads | Google Official MCP (read-only) | — |
-| TikTok Ads | — | AdsMCP/tiktok-ads-mcp-server |
-| Cross-platform | — | Adspirer ads-mcp (175+ tools) |
-| Doi thu research | — | facebook-ads-library-mcp (15+ tools) |
+| Meta Ads | Meta Ads MCP (`mcp.facebook.com/ads`, open beta) — **co quyen ghi**: tao moi o trang thai paused, khong co undo | Pipeboard, brijr/meta-mcp — chi doc, ghi khong khuyen nghi |
+| Google Ads | Google Ads MCP (googleads/google-ads-mcp) — chi doc | — |
+| TikTok Ads | — | AdsMCP/tiktok-ads-mcp-server — chi doc |
+| Cross-platform | — | Adspirer ads-mcp — chi doc |
+| Doi thu research | — | facebook-ads-library-mcp |
+
+- Ket noi qua giao dien connector cua client; **liet ke tool luc ket noi** (so tool doi theo ban beta — khong ghi cung so tool vao skill).
+- Moi hanh dong ghi (doi budget, pause, tao ad, upload audience) di qua cong draft-first: quy tac 7 trong `skills/vi/references/quy-tac-van-hanh.md` + muc "Agent permissions" trong context file. Agent khong bao gio tu sua muc "Agent permissions".
 
 **Skills ho tro MCP:** 03, 07, 08, 10, 13, 21, 39, 51-57 (pull data ads/analytics truc tiep khi co connector)
 
@@ -181,8 +187,8 @@ Tat ca 6 agents la **universal** (v2.5.0+) — phuc vu CA hai cluster VN va Glob
 |-------|---------|-------------|
 | mkt-strategist | Chien luoc tong + Leader strategy | 00, 02, 08, 09, 10, 31, 58-61 |
 | content-producer | San xuat noi dung + content system | 01, 04, 05, 06, 35-40, 42-44 |
-| performance-analyst | Phan tich hieu suat + performance ops | 03, 07, 10, 13, 19, 21, 51-57 |
-| channel-operator | Van hanh kenh + crisis | 11, 12, 14, 15, 49, 66 |
+| performance-analyst | Phan tich hieu suat + performance ops | 03, 07, 10, 13, 19, 21, 51-57, 76 (VN) |
+| channel-operator | Van hanh kenh + crisis | 11, 12, 14, 15, 49, 66, 75 (VN) |
 | design-producer | Visual & production | 12, 30, 41-50 |
 | personal-brand-builder | Thuong hieu ca nhan + AI Avatar | 22, 23, 24, 25, 26, 27, 28 |
 

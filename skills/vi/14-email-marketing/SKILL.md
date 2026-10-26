@@ -3,8 +3,9 @@ name: 14-email-marketing
 description: "Dung khi can xay chuoi email hoac Zalo OA gui theo kich ban — welcome series, nurture, promotion, win-back: phan tep, luong automation, subject line, tan suat gui, A/B test va KPI open/click. Kich hoat khi user nhac 'email marketing', 'chuoi email tu dong', 'welcome email', 'email nurture', 'broadcast Zalo OA', 'co list ma khong biet gui gi', 'email khong ai mo', 'cham soc khach qua Zalo'. Khong dung cho — code file HTML email chay duoc tren moi client thi dung skill 49-html-email-template; xay he thong giu chan khach da mua thi dung skill 69-giu-chan-khach-hang; thiet ke qua tang doi thong tin lien he thi dung skill 70-lead-magnet."
 argument-hint: "<audience + objective + sequence type>"
 metadata:
-  version: 2.1.2
+  version: 2.2.0
   category: operations
+license: MIT
 triggers:
   - "email marketing"
   - "chuoi email"
@@ -31,6 +32,8 @@ related:
 # Email Marketing
 
 > Email la kenh so huu — khong phu thuoc thuat toan, khong mat tien tiep can lai nguoi da dang ky.
+
+> Quy tac van hanh chung: `skills/vi/references/quy-tac-van-hanh.md` (dac biet quy tac 2, 3, 7).
 
 ---
 
@@ -269,7 +272,7 @@ O Viet Nam, Zalo OA doc cao hon email rat nhieu nhung **giay phep hep hon**: gui
 | Read / Open rate tham chieu | 15-25% TB · 25-35% tot | 40-60% TB · **60-80% tot** · >80% xuat sac |
 | Do dai phu hop | Dai — ke chuyen, giao duc, nhieu link | Rat ngan — 3-6 dong, 1 y duy nhat |
 | Tan suat an toan | 1-3 lan/tuan tuy sequence | **Toi da 2-3 lan/tuan, an toan nhat <= 2 lan/tuan** |
-| Chi phi | Gan nhu mien phi theo goi tool | Tinh theo tin gui — ~500d/tin (TB), ~300d (tot), <200d (xuat sac) |
+| Chi phi | Gan nhu mien phi theo goi tool | Tinh theo tin gui — gia tham khao — kiem tra business.zalo.me ngay lap ke hoach (khong chot gia trong output) |
 | Rui ro khi lam qua | Vao spam, unsubscribe | **Follower bam bo quan tam — mat vinh vien** |
 | Loai tin phu hop | Nurture, giao duc, newsletter, chuoi dai | Nhac lich, xac nhan don, uu dai gioi han, tin khan |
 
@@ -372,7 +375,7 @@ Doi chieu 2 cot nay hang thang trong `13-phan-tich-du-lieu`. Kenh nao chi phi/le
 
 ## Tuan thu phap luat
 
-> Bang 5 yeu cau PDPA Viet Nam (Nghi dinh 13/2023/ND-CP) kem cach thuc hien + checklist compliance 6 diem: doc `references/deliverability-tool-va-kpi.md` muc "Tuan thu phap luat".
+> Nghia vu phap ly ve du lieu ca nhan (Luat Bao ve du lieu ca nhan 91/2025/QH15 + ND 356/2025/ND-CP, hieu luc 2026-01-01): xem `skills/vi/references/phap-ly-marketing-vn.md` muc 2. Cach lam email theo thuc hanh tot (double opt-in, consent log, huy dang ky 1 cham, khong mua list) + checklist: `references/deliverability-tool-va-kpi.md` muc "Tuan thu phap luat".
 
 ---
 

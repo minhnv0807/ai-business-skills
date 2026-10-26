@@ -2,7 +2,7 @@
 name: 34-ai-marketing-os
 description: "Dung khi muon bien cach team dung AI thanh mot he thong van hanh — Brand Hub lam nguon su that, chia project theo vai tro, skill chain, data loop, nhip review, va bien an toan cho automation gom phan tang hanh dong, tran chi tieu va kill switch. Kich hoat khi user nhac 'AI marketing OS', 'he thong AI marketing', 'Brand Hub', 'setup Claude Project cho team', 'SOP AI team', 'AI moi nguoi dung mot kieu', 'automation marketing co an toan khong'. Khong dung cho — chi can mot output don le thi dung skill tuong ung nhu 00-ke-hoach-mkt hoac 05-copy-quang-cao; setup do luong thi dung skill 53-tracking-setup."
 metadata:
-  version: 1.2.1
+  version: 1.3.0
   category: operations
 license: MIT
 triggers:
@@ -155,14 +155,16 @@ Ranh gioi de nho: **soan nhap la Tang 1, bam gui la Tang 2.**
 
 #### 8.2 Dieu kien de Tang 2 duoc chay tu dong
 
-Tang 2 chi duoc bo qua buoc duyet tung lan khi co **DU CA 4** dieu sau. Thieu 1 trong 4 thi quay ve che do soan nhap + cho duyet.
+Tang 2 chi duoc bo qua buoc duyet tung lan khi co **uy quyen thuong truc** theo quy tac 7 (`skills/vi/references/quy-tac-van-hanh.md` muc 7) — ngoai le duy nhat cua "mot lan duyet = mot thay doi". Cu the la **DU CA 4** dieu sau, cong kill switch o 8.3. Thieu 1 dieu thi quay ve che do soan nhap + cho duyet.
 
 | Dieu kien | Y nghia | Vi du |
 |-----------|---------|-------|
-| Uy quyen ghi bang van ban | Nguoi co tham quyen cho phep, luu lai duoc | Mot dong trong decision log co ten + ngay |
+| Uy quyen ghi bang van ban, co han | Quy tac automation duoc duyet 1 lan nhu 1 khoi thay doi (quy tac 7); nguoi (khong phai agent) ghi thanh dong `execute` trong muc "Agent permissions" cua context file, kem ngay het han | "Scale 3 campaign trong allowlist, +20%/lan, tran 3 trieu/ngay, het han [ngay] — duyet: [ten]" |
 | Tran chi tieu tuyet doi | Muc tran ngay/tuan khong bao gio duoc vuot | "Toi da 3 trieu/ngay — cham tran thi dung va bao" |
 | Gioi han thay doi moi lan | Mot lan chay khong duoc doi qua nhieu | "Khong doi qua 20% ngan sach moi lan chay" |
 | Danh sach duoc phep (allowlist) | Chi campaign/tai khoan/list duoc liet ke moi duoc dong den | 3 campaign duoc scale; con lai chi duoc de xuat |
+
+Moi lan chay van **doc lai + ghi log** (buoc 5-6 quy tac 7). Uy quyen khong bao gio dung de nang tran, mo rong allowlist hay gia han chinh no.
 
 Bon truong hop nay **luon phai co nguoi**, ke ca khi da du 4 dieu kien tren: khung hoang hoac binh luan tieu cuc · khieu nai khach hang · bat thuong doanh thu hoac spend · hanh dong cham den toan bo danh sach khach (gui hang loat, xoa hang loat).
 
@@ -237,7 +239,7 @@ Automation khong sinh ra hanh dong la **chi phi**, khong phai thanh tuu.
 | Rui ro | Cach phong tranh | Ai duyet |
 
 ## 9. So dang ky automation
-| Automation | Tang 1/2 | Tran chi tieu | Gioi han moi lan | Allowlist | Ai tat duoc | Tat bang cach nao |
+| Automation | Tang 1/2 | Tran chi tieu | Gioi han moi lan | Allowlist | Het han | Ai tat duoc | Tat bang cach nao |
 
 ## 10. Thu tu bat automation
 | Thu tu | Automation | Dieu kien du de bat | Ngay bat | Ra soat lai ngay |
@@ -264,7 +266,7 @@ Automation khong sinh ra hanh dong la **chi phi**, khong phai thanh tuu.
 - Co owner, deadline, approval gate cho campaign/budget/claim.
 - Co phan governance ve privacy, access, prompt injection, va brand drift.
 - Moi automation da duoc xep ro Tang 1 hay Tang 2.
-- Automation Tang 2 chay tu dong co du CA 4 dieu kien: uy quyen van ban, tran chi tieu, gioi han thay doi moi lan, allowlist.
+- Automation Tang 2 chay tu dong co uy quyen thuong truc theo quy tac 7: dong `execute` co ngay het han trong "Agent permissions", tran chi tieu, gioi han thay doi moi lan, allowlist; moi lan chay co doc lai + log.
 - Moi automation co kill switch — ghi ro it nhat 2 nguoi tat duoc va tat bang cach nao.
 - Bat automation dung thu tu tracking → giu khach → kich hoat → keo khach moi → doanh thu, moi lan chi 1 cai.
 - Co lich ra soat quy de tat automation khong sinh ra hanh dong nao.

@@ -1,8 +1,8 @@
 ---
 name: 17-pricing-strategy
-description: "Dung khi can dat gia hoac sua gia san pham va dich vu — chon mo hinh gia, thiet ke bac goi, neo gia, chien thuat giam gia, so sanh gia voi doi thu va cach bay bang gia tren trang. Kich hoat khi user nhac 'dinh gia san pham', 'chien luoc gia', 'pricing', 'nen ban bao nhieu tien', 'chia goi dich vu', 'co nen giam gia khong', 'khach che dat', 'doi thu re hon minh nhieu qua', 'tang gia co mat khach khong'. Khong dung cho — dong goi gia tri, bonus va bao hanh quanh muc gia thi dung skill 31-offer-design; phan bo ngan sach chi cho marketing thi dung skill 61-budget-planning; thiet ke va viet trang bang gia thi dung skill 12-brief-landing-page."
+description: "Dung khi can dat gia hoac sua gia san pham va dich vu — chon mo hinh gia, thiet ke bac goi, neo gia, chien thuat giam gia, so sanh gia voi doi thu va cach bay bang gia tren trang. Kich hoat khi user nhac 'dinh gia san pham', 'chien luoc gia', 'pricing', 'nen ban bao nhieu tien', 'chia goi dich vu', 'co nen giam gia khong', 'khach che dat', 'doi thu re hon minh nhieu qua', 'tang gia co mat khach khong'. Khong dung cho — dong goi gia tri, bonus va bao hanh quanh muc gia thi dung skill 31-offer-design; phan bo ngan sach chi cho marketing thi dung skill 61-budget-planning; thiet ke va viet trang bang gia thi dung skill 12-brief-landing-page; tinh phi san / ROAS hoa von tren san thi dung skill 76-van-hanh-san-tmdt."
 metadata:
-  version: 1.1.1
+  version: 1.1.2
   category: strategy
 license: MIT
 related:
@@ -13,6 +13,8 @@ related:
 ---
 
 # Pricing Strategy
+
+> Quy tac van hanh chung: `skills/vi/references/quy-tac-van-hanh.md` (dac biet quy tac 2, 3, 7).
 
 ## Thu thap thong tin
 

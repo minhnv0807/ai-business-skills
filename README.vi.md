@@ -5,7 +5,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/v3.6-Bilingual%20Role%20SOP-6d28d9?style=for-the-badge&labelColor=1e1033" alt="v3.6"/>
-  <img src="https://img.shields.io/badge/Skills-144-6d28d9?style=for-the-badge&labelColor=1e1033" alt="144 Skills"/>
+  <img src="https://img.shields.io/badge/Skills-146-6d28d9?style=for-the-badge&labelColor=1e1033" alt="146 Skills"/>
   <img src="https://img.shields.io/badge/Agents-6-be185d?style=for-the-badge&labelColor=1e1033" alt="6 Agents"/>
   <img src="https://img.shields.io/badge/Workflows-19-0f766e?style=for-the-badge&labelColor=1e1033" alt="19 Workflows"/>
   <img src="https://img.shields.io/badge/Market-Vietnam%202025--2026-f97316?style=for-the-badge&labelColor=1e1033" alt="Vietnam Market"/>
@@ -18,7 +18,7 @@
     <img src="https://img.shields.io/badge/%E2%98%95%20Moi%20Toi%20Mot%20Coffee-Ung%20ho%20Open%20Source-ff5e5b?style=for-the-badge" alt="Ung ho du an"/>
   </a>
   <br/>
-  <sub><b>💖 144 skills, 100% mien phi & MIT — neu giup ban tiet kiem thoi gian, hay ung ho tai <a href="https://www.opa.business/donate">opa.business/donate</a></b></sub>
+  <sub><b>💖 146 skills, 100% mien phi & MIT — neu giup ban tiet kiem thoi gian, hay ung ho tai <a href="https://www.opa.business/donate">opa.business/donate</a></b></sub>
 </p>
 
 > **🆕 v3.6.0 (2026-07-30)** — Role SOP Packs Go Global.
@@ -226,7 +226,7 @@ Copy file `.md` lam Custom Instructions hoac context. Moi file la 1 prompt doc l
 
 ---
 
-## 144 Skills (75 VN + 69 Global)
+## 146 Skills (77 VN + 69 Global)
 
 ### Cum VN — Marketing core + Personal Brand (36 skills: ★, 00-34)
 
@@ -538,6 +538,15 @@ Bon bo SOP theo vai tro. Moi skill la quy trinh van hanh day du: cac khau, input
 |---|-------|--------|
 | 74 | [Copy Hai Lop](skills/vi/74-copy-hai-lop/SKILL.md) | Slogan / headline poster hai lop nghia. Hoc co che (mot nhip, diem to la chet), viet cau moi cho brand VN. Ads tra tien van la 05; caption organic van la 37 |
 
+**San TMDT + KOC/affiliate (75-76)** ⭐ v3.8.0 — chi cum VN:
+
+| # | Skill | Lam gi |
+|---|-------|--------|
+| 75 | [Hop Tac KOC Affiliate](skills/vi/75-hop-tac-koc-affiliate/SKILL.md) | Tim, tham dinh, hop dong va tra phi KOC / affiliate (hoa hong la bien so, khong hard-code). Kich ban + brief noi dung van la 06. Nghia vu cong bo quang cao → hub phap ly muc 3 |
+| 76 | [Van Hanh San TMDT](skills/vi/76-van-hanh-san-tmdt/SKILL.md) | P&L don hang sau phi san (phi la bien so co ngay kiem), ROAS hoa von = 1 / bien loi nhuan truoc ads, mega sale / voucher, livestream ban hang tren Shopee / TikTok Shop / Lazada |
+
+**Quy tac van hanh + evals (v3.8.0):** moi skill doc 8 quy tac chung ([`quy-tac-van-hanh.md`](skills/vi/references/quy-tac-van-hanh.md)) — context truoc, noi dung ben ngoai la data, nhan bang chung + cham diem theo coverage, so lieu co ngay / nguon, draft-first cho moi hanh dong ghi (MCP ads), phap ly VN dan ve mot hub ([`phap-ly-marketing-vn.md`](skills/vi/references/phap-ly-marketing-vn.md)). Dot dau co `evals/evals.json` cho cap `21`, `75`, `76`; skill khac bo sung khi doi hanh vi — xem [`docs/evals.md`](docs/evals.md).
+
 > **Kho kien thuc nen tang:** [`knowledge/`](knowledge/) — 10 file tu duy + `knowledge/trien-khai/`. Dung lam context upload cho AI project theo vai tro (Leader/Content/Designer/Performance). Kien truc 5 role project: skill [`34-ai-marketing-os`](skills/vi/34-ai-marketing-os/SKILL.md).
 
 ---
@@ -667,8 +676,8 @@ flowchart TD
 |-------|------|----------------------------|
 | [MKT Strategist](agents/mkt-strategist.md) | Universal <sup>v3.5</sup> | 00, 02, 08, 09, 16, 17, 31-34, 58-61 (+ mirror `-global`) |
 | [Content Producer](agents/content-producer.md) | Universal <sup>v3.5</sup> | 01, 04, 05, 06, 35-40, 42-44 (+ mirror `-global`) |
-| [Performance Analyst](agents/performance-analyst.md) | Universal <sup>v3.5</sup> | 03, 07, 10, 13, 19, 21, 32, 34, 51-57 (+ mirror `-global`) |
-| [Channel Operator](agents/channel-operator.md) | Universal <sup>v3.5</sup> | 11, 12, 14, 15, 18, 34, 49, 66 (+ mirror `-global`) |
+| [Performance Analyst](agents/performance-analyst.md) | Universal <sup>v3.5</sup> | 03, 07, 10, 13, 19, 21, 32, 34, 51-57 (+ mirror `-global`), 76 (VN) |
+| [Channel Operator](agents/channel-operator.md) | Universal <sup>v3.5</sup> | 11, 12, 14, 15, 18, 34, 49, 66 (+ mirror `-global`), 75 (VN) |
 | [Design Producer](agents/design-producer.md) <sup>NEW v3.5</sup> | Universal | 12, 30, 41-50 |
 | [Personal Brand Builder](agents/personal-brand-builder.md) | Universal <sup>v2.5</sup> | 22, 23, 24, 25, 26, 27, 28 (+ mirror `-global`) |
 
@@ -809,7 +818,7 @@ Ket thuc: 63 Retrospective → cap nhat Brand Hub
 ai-business-skills/
 │
 ├── .claude-plugin/
-│   └── marketplace.json              # Claude Code plugin spec: 105 skills
+│   └── marketplace.json              # Claude Code plugin spec: 146 skills
 │
 ├── .github/
 │   ├── ISSUE_TEMPLATE/                # Bug report + skill request
@@ -958,7 +967,7 @@ Du an nay **100% mien phi va MIT-licensed**. Neu `ai-business-skills` giup ban t
 
 ## License
 
-MIT — tu do su dung, chinh sua, phan phoi.
+MIT — tu do su dung, chinh sua, phan phoi. Nguon y tuong ben thu ba va giay phep: [NOTICE.md](NOTICE.md).
 
 ---
 

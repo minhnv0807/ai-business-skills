@@ -257,15 +257,17 @@ Hashtag: #[ten nganh] #review #truocvausau
 
 ---
 
-## Andromeda Warning — Dung Clone Ads
+## Da dang concept (Andromeda) — Dung Clone Ads
 
-> **Cap nhat Meta 2026:** He thong Andromeda cua Meta cluster cac quang cao co **Creative Similarity Score > 60%** vao cung 1 nhom va giam delivery cua cac ban sao. 100 quang cao "bien the nho" (doi mau, thay font, cat nho clip) = KHONG tot hon 10 quang cao thuc su khac biet.
+> Andromeda [reported] la he thong truy xuat quang cao cua Meta; theo cac nguon trong nganh, no coi bien the chi khac be ngoai (doi mau, thay font, cat clip) la gan nhu trung nhau. Meta khong cong bo nguong "similarity" nao.
 
-### Nguyen tac da dang creative (Andromeda-safe)
-- **Hook khac nhau** — goc nhin van de khac (TOFU vs noi dau vs to mo)
+### Quy tac 2 truc
+1 concept chi tinh la khac biet khi khac cac concept con lai o **it nhat 2 truc**: **angle (goc tiep can) · persona · proof · format**.
+
+- **Angle khac nhau** — goc nhin van de khac (TOFU vs noi dau vs to mo)
 - **Format khac nhau** — video ngang + doc + Reel + carousel
-- **Nhan vat khac nhau** — demo tu founder vs khach hang vs bac si
-- **Am nhac khac nhau** — trending VN vs nhac cam trang vs giong noi
-- **Boi canh khac nhau** — studio vs ngoai canh vs UGC phong khach
+- **Persona khac nhau** — demo tu founder vs khach hang vs bac si
+- **Proof khac nhau** — so lieu vs review that vs demo truoc/sau (co nguon)
+- Boi canh / am nhac chi la bo tro — khong tinh la truc neu angle va proof giu nguyen
 
-> 10 creative THUC SU KHAC BIET > 50 creative "clone" doi mau.
+> "8-12 concept, lam moi sau 2-3 tuan" la heuristic cua vendor, khong phai luat cua Meta — kiem tra lai bang data tai khoan.

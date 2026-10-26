@@ -1,8 +1,8 @@
 ---
 name: 27-personal-brand-monetize
-description: "Dung khi mot CA NHAN da co nguoi theo doi va muon RA TIEN — 3 phien ban funnel cho founder, coach, creator; offer ladder tu mien phi den high-ticket; tam ly gia cho dich vu gan voi con nguoi; inbound vs outbound; dam phan brand deal cho creator; thue va phap ly ca nhan tai VN. Kich hoat khi user nhac 'kiem tien tu personal brand', 'offer ladder ca nhan', 'ban khoa hoc', 'coaching 1-1', 'nhan booking sponsorship', 'nhieu follower ma khong ra tien', 'founder lead gen'. Khong dung cho — dinh gia san pham cua DOANH NGHIEP thi dung skill 17-pricing-strategy; dong goi offer cho san pham cong ty thi dung skill 31-offer-design; chuoi email nuoi duong thi dung skill 14-email-marketing."
+description: "Dung khi mot CA NHAN da co nguoi theo doi va muon RA TIEN — 3 phien ban funnel cho founder, coach, creator; offer ladder tu mien phi den high-ticket; tam ly gia cho dich vu gan voi con nguoi; inbound vs outbound; dam phan brand deal cho creator; thue va phap ly ca nhan tai VN. Kich hoat khi user nhac 'kiem tien tu personal brand', 'offer ladder ca nhan', 'ban khoa hoc', 'coaching 1-1', 'nhan booking sponsorship', 'nhieu follower ma khong ra tien', 'founder lead gen'. Khong dung cho — dinh gia san pham cua DOANH NGHIEP thi dung skill 17-pricing-strategy; dong goi offer cho san pham cong ty thi dung skill 31-offer-design; chuoi email nuoi duong thi dung skill 14-email-marketing; brand thue KOC / chay affiliate thi dung skill 75-hop-tac-koc-affiliate."
 metadata:
-  version: 1.0.1
+  version: 1.1.0
   category: strategy
 license: MIT
 triggers:
@@ -21,6 +21,8 @@ related:
 ---
 
 # Personal Brand Monetize — Funnel Kiem Tien Tu Personal Brand
+
+> Quy tac van hanh chung: `skills/vi/references/quy-tac-van-hanh.md` (dac biet quy tac 2, 3, 7).
 
 > Build authority → mua trust → chot tien. Skill nay focus vao **buoc 3** (chot tien) sau khi da co context (skill 22), chien luoc (skill 23), va content (skill 26). 3 funnel khac nhau cho founder/coach/creator.
 
@@ -292,7 +294,7 @@ Floor price (VND) = CPM × Follower / 1000 × Engagement multiplier × Format mu
 
 ---
 
-## 8. Lead Inbound Tracking + Tax & Legal VN 2026
+## 8. Lead Inbound Tracking + Tax & Legal VN
 
 ### 8.1 Inbound DM tracking spreadsheet
 
@@ -315,6 +317,8 @@ Cot can co (Google Sheet / Notion):
 
 ### 8.2 Conversion benchmark inbound DM VN
 
+> Heuristic tham khao, chua co nguon — thay bang so lieu CRM that cua ban [CAN SO LIEU THAT].
+
 - DM → Reply: 70-90% (warm audience)
 - Reply → Discovery call: 30-50%
 - Discovery call → Proposal: 50-70%
@@ -322,38 +326,39 @@ Cot can co (Google Sheet / Notion):
 
 **Tong:** DM → Closed ~ 5-15% (warm inbound).
 
-### 8.3 Thue thu nhap ca nhan (TNCN) VN 2026
+### 8.3 Thue khi monetize personal brand — cau hoi quyet dinh
 
-Khi monetize personal brand, ban se co income tu nhieu nguon (course, coaching, brand deal). Phan loai:
+> Khong phai tu van thue. Nguon su that: `skills/vi/references/phap-ly-marketing-vn.md` muc 6. Skill nay **khong ghi nguong doanh thu, thue suat hay cach tinh thue** — cac con so nay doi nhanh, nguon dang mau thuan.
 
-- **Tien luong** (full-time job): bieu thue luy tien 5-35%
-- **Tien thu nhap khac** (freelance, brand deal, advisory): khau tru 10% tai nguon (>2tr/lan)
-- **Tien hoa hong / affiliate**: 5-10% khau tru tai nguon
-- **Loi tuc kinh doanh** (course self-launch, ban san pham): 0.5-5% tren doanh thu (tuy nganh)
+Khi co thu nhap tu nhieu nguon (course, coaching, brand deal, affiliate, ban san pham), tra loi 4 cau truoc khi lam gi:
 
-### 8.4 Khi nao can dang ky ho kinh doanh / cong ty
+1. **Ban co thu nhap tu dau?** Lam thue cho 1 ben (luong / hop dong lao dong), nhan tien tu brand deal hoac hoa hong, hay tu ban khoa hoc / san pham cua chinh minh. Moi nguon co cach ke khai khac nhau.
+2. **San co khau tru thay chua?** Neu ban ban qua san TMDT co chuc nang dat hang va thanh toan, san co the khau tru va nop thay thue (ND 117/2025, hub muc 6). Ban qua kenh rieng (Zalo, website, chuyen khoan) thi nguoi ban tu ke khai.
+3. **Co can dang ky ho kinh doanh khong?** Phu thuoc quy mo, tinh chat hoat dong va quy dinh hien hanh — hoi ke toan hoac cuc thue dia phuong.
+4. **Ho kinh doanh hay cong ty?** Quyet dinh theo ke hoach tang truong, nhu cau xuat hoa don cho doanh nghiep, va chi phi van hanh — khong quyet dinh chi theo thue.
 
-| Nguong doanh thu | Hinh thuc | Thue suat | Dac diem |
-|------------------|-----------|-----------|----------|
-| <100tr/nam | Ca nhan | TNCN khau tru tai nguon 10% | Don, khong can dang ky |
-| 100tr - 1ty/nam | Ho kinh doanh ca the | Thue khoan / tren doanh thu 1.5-7% | Don, dang ky cap quan/huyen |
-| >1ty/nam | Cong ty TNHH | TNDN 20% + GTGT 10% | Phai co ke toan |
-| >5ty/nam | Cong ty co phan | TNDN 20% + management overhead | Cho team >5 nguoi |
+**Nguong va thue suat — hoi ke toan / kiem tra ND 68/2026 [BAO CAO] va thong tu huong dan tai gdt.gov.vn.**
 
-### 8.5 Best practice tax VN cho personal brand
+### 8.4 Thu nhap tu brand deal / affiliate
 
-1. **Tach tai khoan ngan hang** rieng cho personal brand (KHONG dung tai khoan luong cong ty)
-2. **Giu hoa don/contract** toi thieu 5 nam (luat thue VN)
-3. **Khai bao quy** (ho kinh doanh) hoac thang (cong ty) — KHONG quen
-4. **Thue ke toan part-time** khi vuot 500tr/nam — chi 1-3tr/thang, save thoi gian + sai sot
-5. **Reference chinh thuc**: gdt.gov.vn (Tong cuc Thue) va Luat Thue TNCN sua doi 2024 (hieu luc 2025-2026)
+- Thu nhap tu quang cao, brand deal, hoa hong la loai thu nhap rieng — can ghi nhan dung nguon va hop dong. Xac nhan cach ke khai voi ke toan.
+- Neu ban la nguoi chuyen tai quang cao: nghia vu cong bo xem hub muc 3 (khong phai chuyen thue).
+- Brand thue KOC / chay affiliate (phia brand): dung skill `75-hop-tac-koc-affiliate`.
 
-### 8.6 Anti-pattern tax personal brand VN
+### 8.5 Thuc hanh tot ve so sach (khong phai trich luat)
 
-1. **Nhan toan bo bang tien mat** → KHONG co bang chung doanh thu → kho len ngan hang vay khi can
-2. **Pay all qua Momo/ZaloPay ca nhan** → moi ngan hang flag activity bat thuong → bi block
-3. **Khong dang ky gi het** dù income >500tr/nam → bi truy thu thue + phat lai 0.03%/ngay
-4. **Khai thieu doanh thu** → bi cuc thue inspection → phat 1-3 lan thue thieu
+1. **Tach tai khoan ngan hang** rieng cho personal brand (khong dung tai khoan luong).
+2. **Giu hoa don / hop dong / sao ke** day du, luu co he thong — thoi han luu tru hoi ke toan.
+3. **Ke khai dung ky han** theo huong dan cua ke toan — dung de quen.
+4. **Nho ke toan** (part-time hoac dich vu) ngay khi thu nhap bat dau on dinh — tiet kiem thoi gian, giam sai sot.
+5. **Nguon chinh thuc**: gdt.gov.vn (Tong cuc Thue) va hub muc 6.
+
+### 8.6 Anti-pattern ve so sach
+
+1. **Nhan toan bo bang tien mat** → khong co bang chung doanh thu → kho chung minh thu nhap khi can vay ngan hang.
+2. **Gop chung moi khoan thu qua vi dien tu / tai khoan ca nhan** → kho doi soat, de bi ngan hang / vi flag giao dich bat thuong.
+3. **Khong ghi nhan gi het khi thu nhap da on dinh** → rui ro bi truy thu khi bi doi soat; hoi ke toan de xu ly dung cach.
+4. **Khai thieu doanh thu** → rui ro bi thanh tra thue; hoi ke toan, khong tu suy doan muc xu ly.
 
 ---
 
@@ -364,7 +369,7 @@ Khi monetize personal brand, ban se co income tu nhieu nguon (course, coaching, 
 - [ ] Da xac dinh archetype (founder / coach / creator) → funnel phu hop
 - [ ] Pricing co Anchor tier (cao) + Target tier (mid) + Entry tier (thap)
 - [ ] Tracking spreadsheet inbound DM da setup
-- [ ] Da hieu nguong thue (100tr / 1ty) va dang ky phu hop
+- [ ] Da tra loi 4 cau quyet dinh thue (muc 8.3) va hoi ke toan ve nguong / thue suat hien hanh
 - [ ] Tach tai khoan ngan hang ca nhan vs personal brand
 - [ ] Co ke hoach tang gia 20-30% moi quy sau 2-3 deal
 - [ ] KHONG discount >30% lien tiep — bao ve gia tri brand

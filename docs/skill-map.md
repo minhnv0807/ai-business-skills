@@ -263,7 +263,7 @@
 | `references/mcp-ads-integration.md` | Huong dan ket noi MCP Meta/Google/TikTok | 03, 08, 21 |
 | `references/hook-formulas-vn.md` | 6 kieu hook + funnel mapping + platform limits + anti-patterns | 04, 05, 01 |
 | `references/ai-avatar-tools-vn.md` | So sanh tools AI Avatar (HeyGen/Synthesia/D-ID) + pricing VN | 24, 25 |
-| `references/ai-video-disclosure-vn.md` | Nghi dinh 147/2024/ND-CP — disclosure rules cho AI video | 24, 26 |
+| `references/ai-video-disclosure-vn.md` | Cach gan nhan noi dung AI (video, audio, chatbot) — can cu phap ly o hub | 24, 25, 04, 76 |
 | `references/personal-brand-playbook-vn.md` | Founder/Coach/Creator playbooks + content cadence | 22, 23, 26, 27, 28 |
 
 ### Global Cluster (7 references)
@@ -460,7 +460,7 @@ flowchart TD
 | Thi truong | Vietnam | US/EU/SEA/LATAM |
 | Ngon ngu | Tieng Viet | International English |
 | Tien te | VND | USD/EUR/GBP/region |
-| Compliance | Nghi dinh 147/2024 (VN) | GDPR/CCPA/FTC/CAN-SPAM |
+| Compliance | Luat AI 134/2025 + ND 142/2026; Luat QC 75/2025; Luat BVDLCN 91/2025 (VN) | GDPR/CCPA/FTC/CAN-SPAM |
 | Platforms | Zalo, Shopee VN, TikTok VN | Discord, Stripe, Shopify, Klaviyo |
 | Benchmarks | VN 2025-2026 | Region-specific 2025-2026 |
 | Foundation | `product-marketing-context` | `product-marketing-context-global` (4 regions) |

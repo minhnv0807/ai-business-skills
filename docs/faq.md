@@ -271,13 +271,16 @@ A: Co va khong:
 
 ### Q4: Disclosure AI o VN bat buoc khi nao?
 
-A: Theo Nghi dinh 147/2024/ND-CP — BAT BUOC khi:
-1. Quang cao thuong mai (paid ads, sponsored, affiliate co tra tien)
-2. Content lien quan y te / tai chinh / phap luat
-3. Impersonate hoac tao impression la nguoi that nguoi noi
-NEN (khong bat buoc) cho content thuong khong tra tien.
-KHONG can cho test noi bo / draft / private group.
-Reference: `skills/vi/references/ai-video-disclosure-vn.md`
+A: Bat buoc theo luat (kiem tra van ban goc tai vbpl.vn / thuvienphapluat.vn):
+- Luat Tri tue nhan tao 134/2025/QH15 Dieu 11 (hieu luc 2026-03-01) + Nghi dinh 142/2026/ND-CP Dieu 18 (hieu luc 2026-05-01): noi dung do AI tao hoac chinh sua tung ra cong chung ma co the gay nham lan ve su kien, con nguoi hoac nguon goc (vd video avatar / clone giong nguoi that) phai co nhan nhin thay duoc.
+- Ngoai le: chinh sua ky thuat chi nang chat luong am thanh / hinh anh; noi dung chi dung noi bo.
+
+Nen lam (thuc hanh tot, khong phai trich luat):
+- Ghi nhan AI ngay ca khi noi dung it nguy co gay nham lan, de giu trust voi audience.
+- Quang cao co tra tien / affiliate: ngoai nhan AI, con phai cong bo quang cao rieng (xem hub muc 3).
+
+Luu y: xac thuc tai khoan mang xa hoi la quy dinh rieng (hub muc 5), khong lien quan gan nhan AI.
+Hub phap ly: `skills/vi/references/phap-ly-marketing-vn.md` muc 4. Mau cau nhan: `skills/vi/references/ai-video-disclosure-vn.md`
 
 ### Q5: ROI cua personal brand sau 30 ngay — ky vong gi?
 
@@ -310,7 +313,7 @@ A: Co overlap, nhung primary la khac:
 
 ### Q1: How is global cluster different from VN cluster?
 
-A: VN cluster (`skills/`) for Vietnam market with VN benchmarks/platforms/regulations (Zalo, Shopee VN, Nghi dinh 147/2024). Global cluster (`skills/en/`) for international markets with USD/EUR currencies, US/EU/SEA/LATAM regions, GDPR/FTC compliance. Both clusters share the same skill structure but differ in content, references, and compliance rules.
+A: VN cluster (`skills/`) for Vietnam market with VN benchmarks/platforms/regulations (Zalo, Shopee VN, Luat AI 134/2025, Luat Quang cao sua doi 75/2025, Luat BVDLCN 91/2025). Global cluster (`skills/en/`) for international markets with USD/EUR currencies, US/EU/SEA/LATAM regions, GDPR/FTC compliance. Both clusters share the same skill structure but differ in content, references, and compliance rules.
 
 ### Q2: How do agents auto-detect which cluster to use?
 

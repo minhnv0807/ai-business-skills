@@ -1,115 +1,86 @@
 ---
-# ====================
-# Skill Frontmatter Standard v2.0
-# For both Vietnam Edition (skills/vi/) and Global Edition (skills/en/)
-# ====================
-
-# Core identity
-id: skill-name-kebab-case
-name: Human-readable skill name
-version: 1.0.0
-
-# Edition & localization
-edition: global              # vietnam | global
-language: en                 # vi | en | both
-currency: USD                # VND | USD | both | auto
-
-# Categorization
-category: strategy           # strategy | content | performance | operations
-module: marketing            # marketing | dropshipping | personal-branding
-
-# Market applicability
-markets:
-  - us
-  - eu
-  - sea
-  - global
-
-# Activation
+name: NN-skill-name-global
+description: "Use when [the situation this skill solves, in one sentence — what goes in, what comes out]. Trigger on 'trigger phrase one', 'trigger phrase two', 'trigger phrase three'. Not for — [neighbouring job A], see `NN-other-skill-global`; [neighbouring job B], see `NN-another-skill-global`."
+metadata:
+  version: 1.0.0
+  category: strategy
+license: MIT
 triggers:
-  - "trigger phrase 1"
-  - "trigger phrase 2"
-  - "campaign brief"
-  - "creative brief"
-
-# Output spec
-output:
-  format: markdown
-  length: 1500-3000 words
-  structure: tabled          # tabled | narrative | mixed
-
-# Cross-references
+  - "trigger phrase one"
+  - "trigger phrase two"
+  - "trigger phrase three"
+output: "File .md — [the sections the deliverable contains, in order]"
 related:
-  - 00-marketing-plan
-  - 09-customer-insight
-
-# Quality
-maturity: production         # draft | beta | production
-last_review: 2026-05-11
-maintainer: opa
+  - product-marketing-context-global
+  - NN-other-skill-global
+  - NN-another-skill-global
 ---
 
-# [Skill Name]
+<!--
+Template rules (delete this comment in a real skill):
+- `name` must equal the directory name (lowercase, digits, hyphens; Global skills end in `-global`).
+- `description` is ONE double-quoted line, <= 1024 chars. The model routes on name + description only,
+  so it must hold >= 3 single-quoted trigger phrases and a sibling-routing clause:
+  `Not for — X, see \`NN-name\``.
+- `metadata.category`: strategy | content | performance | operations (match neighbouring skills).
+- `metadata.version`: 1.0.0 for a new skill; minor bump for behaviour change; patch for citation/label swaps.
+- Keep SKILL.md under 500 lines (target <= 450). Move depth into `references/`.
+- No invented stats, testimonials or benchmarks: use `[REAL DATA NEEDED]`.
+- Evals: `evals/evals.json`, see `docs/evals.md`.
+-->
 
-> Brief one-line description of what this skill does.
+# [Skill Name] (Global)
 
-## When to use
+> Operating rules: `skills/en/references/operating-rules-global.md` (esp. rules 2, 3, 7).
 
-- Trigger condition 1
-- Trigger condition 2
-- Trigger condition 3
+[One or two sentences: the job this skill does and the hard rule it never breaks.]
 
-## Information Gathering Protocol
+## Inputs
 
-Before producing output, ask the user **maximum 4 questions** to gather:
+Read context first: `.agents/product-marketing-context-global.md` (or `.agents/personal-brand-context-global.md`). Do not ask for anything already in it.
 
-1. **[Question 1]** — what you need to know
-2. **[Question 2]** — what you need to know
-3. **[Question 3]** — what you need to know
-4. **[Question 4]** — what you need to know
+Then ask **at most 4 questions**, only for what is still missing:
 
-If user has already provided some of these in their initial message, skip those questions. Ask only what's missing.
+1. **[Question 1]** — why it is needed
+2. **[Question 2]** — why it is needed
+3. **[Question 3]** — why it is needed
+4. **[Question 4]** — why it is needed
 
-## Output Template
+## Principles
 
-### Section 1: [Name]
+- [Rule 1 — the decision rule that matters most]
+- [Rule 2 — insight before numbers]
+- [Rule 3 — legal duty kept separate from best practice; link the region reference, do not restate statute text]
+- [Rule 4 — unverified figures are labelled heuristic with a verify-at note, or removed]
 
-[Description. Use tables when possible.]
+## Output structure
+
+File name: `[skill-name]-[product]-[YYYYMMDD].md`
+
+### 1. [Section name]
+
+[What goes here. Prefer tables.]
 
 | Column 1 | Column 2 | Column 3 |
 |---|---|---|
 | ... | ... | ... |
 
-### Section 2: [Name]
+### 2. [Section name]
 
 [...]
 
-### Section 3: [Name]
+### 3. Next steps
 
-[...]
+| Next step | Skill |
+|---|---|
+| [When X] | `NN-other-skill-global` |
 
-## Quality Checklist
+## Quality checklist
 
-Before delivering, self-verify:
-
-- [ ] All sections present
-- [ ] Numbers consistent across sections
+- [ ] Context file read; no question repeated what it already answered
+- [ ] Every section of the output structure present
+- [ ] Numbers consistent across sections; no invented figures (`[REAL DATA NEEDED]` where missing)
+- [ ] Region and currency match the user's market
+- [ ] Legal points link to the reference instead of restating statute text
 - [ ] Cross-references to related skills included
-- [ ] Region/market context appropriate (matches `markets:` frontmatter)
-- [ ] Currency matches `currency:` frontmatter
-- [ ] No generic AI filler ("In today's fast-paced world…")
-
-## Cross-References
-
-If this skill triggers, also consider:
-
-- **[related skill 1]** — when [condition]
-- **[related skill 2]** — when [condition]
-
-## Examples
-
-See [`examples/`](../../examples/) for sample outputs.
-
----
-
-**Maintainer:** OPA · **Module:** [marketing/dropshipping/personal-branding] · **Edition:** [vietnam/global]
+- [ ] No generic AI filler

@@ -3,7 +3,7 @@
 > **Region:** Vietnam, Thailand, Indonesia, Philippines, Singapore, Malaysia (also: Cambodia, Laos, Myanmar)
 > **Currency:** USD-equivalent (local: VND, THB, IDR, PHP, SGD, MYR)
 > **Primary platforms:** Meta (FB+IG, Messenger), TikTok (very strong), Google (Search+YouTube), Zalo (Vietnam), LINE (Thailand), Shopee/Lazada Ads
-> **Key regulations:** Vietnam PDPL (Decree 13), Thailand PDPA, Indonesia PDP Law, Singapore PDPA, Malaysia PDPA, Philippines DPA
+> **Key regulations:** Vietnam PDPL (Law 91/2025/QH15 + Decree 356/2025/ND-CP), Thailand PDPA, Indonesia PDP Law, Singapore PDPA, Malaysia PDPA, Philippines DPA
 > **Major attribution platforms:** GA4 (heavy), Triple Whale (growing in Singapore/Malaysia), Hyros (limited adoption), platform-native dashboards dominate
 
 ---
@@ -133,9 +133,9 @@ Singapore + Malaysia CPMs are 2-3x higher than VN/TH/ID/PH due to higher purchas
 
 ### Privacy / Consent
 
-- **VN PDPL (Decree 13/2023)** — Vietnam's first comprehensive personal data law, effective July 2023. Cross-border data transfers require dossier filing.
+- **VN PDPL (Law 91/2025/QH15 + Decree 356/2025/ND-CP, effective 2026-01-01)** — see the VN legal hub `skills/vi/references/phap-ly-marketing-vn.md`. Verify cross-border transfer duties against the primary text.
 - **TH PDPA** — operational since June 2022. Consent management required.
-- **ID PDP Law** — passed 2022, effective fully 2024. Penalties up to 2% global revenue.
+- **ID PDP Law** — passed 2022, effective fully 2024.
 - **SG PDPA** — mature, similar to GDPR-lite.
 - **MY PDPA** — applies to commercial data; less strict than EU but enforcement strengthening.
 - **PH DPA** — National Privacy Commission active in enforcement.
@@ -174,9 +174,9 @@ Singapore + Malaysia CPMs are 2-3x higher than VN/TH/ID/PH due to higher purchas
 | COD vs prepaid offer mix | >50% COD = high cancellation; mix in prepaid discount | High |
 | Local language customer service | Native speaker, response <24h | Critical |
 | Local payment integration (MoMo, GCash, TrueMoney, GoPay, ZaloPay) | At least 3 methods per market | Critical |
-| Compliance with local consumer law (VN Law on Protection of Consumer Rights, TH Consumer Protection Act) | Refund + 7-day cooling-off | Critical |
+| Compliance with local consumer law (VN Law on Protection of Consumer Rights, TH Consumer Protection Act) | Consumer-protection rules on returns and disclosures vary by country; check local rules and platform policy | Critical |
 | Live chat / Messenger active and responsive | Response <30 min during business hours | High |
-| Refund window clearly visible | Mandatory by local law | Critical |
+| Refund window clearly visible | Visible before checkout; check local rules and platform policy for what is required | Critical |
 
 ### SEA dropshipping benchmarks
 

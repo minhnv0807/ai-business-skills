@@ -22,7 +22,7 @@ Repo cung hoat dong nhu **Claude Code Plugin Marketplace** — cai dat bang `/pl
 │       ├── SKILL.md              # Skill definition (required)
 │       ├── references/           # Supporting docs (optional)
 │       ├── scripts/              # Helper scripts (optional)
-│       └── evals/                # Quality tests (optional)
+│       └── evals/evals.json      # Trigger / routing / guardrail tests (xem docs/evals.md)
 ├── references/                   # Shared references across skills
 ├── knowledge/                    # Foundation thinking (upload as AI project context)
 │   └── trien-khai/               # Implementation knowledge by role
@@ -31,7 +31,9 @@ Repo cung hoat dong nhu **Claude Code Plugin Marketplace** — cai dat bang `/pl
 ├── examples/                     # Sample outputs
 ├── AGENTS.md                     # This file
 ├── CLAUDE.md                     # Claude-specific instructions
-├── VERSIONS.md                   # Version tracking
+├── VERSIONS.md                   # Version tracking (bang sinh tu metadata.version)
+├── NOTICE.md                     # Nguon y tuong ben thu ba + giay phep
+├── scripts/check-repo.mjs        # Kiem tra nhat quan repo (evals, denylist, llms, manifest, versions, counts)
 ├── CONTRIBUTING.md               # Contribution guide
 ├── validate-skills.sh            # Spec validator (bash)
 └── validate-skills.ps1           # Spec validator (PowerShell)
@@ -197,6 +199,26 @@ Script kiem tra:
 - Duoi 500 dong
 - Co trigger phrases trong description
 
+Sau do chay kiem tra nhat quan repo (Node 18+, khong can cai package):
+
+```bash
+node scripts/check-repo.mjs              # tat ca check
+node scripts/check-repo.mjs --only=evals # mot check: evals | denylist | llms | manifest | versions | counts
+```
+
+- `evals` (ISSUE) — moi `evals/evals.json` parse duoc, `skill_name` = ten thu muc, >=4 eval, moi eval co `prompt`, `expected_output`, >=2 `assertions`; eval `should_trigger: false` phai co `routes_to` tro toi skill co that. Moi file phai co it nhat 1 routing negative, 1 eval `kind: guardrail`, 1 eval `kind: context`; skill VN can it nhat 1 prompt co dau va 1 prompt khong dau (chi tiet: `docs/evals.md`).
+- `denylist` (ISSUE) — chan cac claim da bi go: ND 13/2023 (da thay the), ND 147/2024 lam can cu gan nhan AI, Luat Quang cao 2012 khong kem 75/2025, nguong similarity cua vendor, package `@meta/ads-cli`. Dong co cum "da thay the / bi thay the / thay the boi / superseded / deprecated / het hieu luc" duoc bo qua (ngu canh lich su); chu "thay the" don le khong du.
+- `llms` (ISSUE) — moi link trong `llms.txt` tro toi file co that.
+- `manifest` (ISSUE / WARN) — skill liet ke trong `marketplace.json` phai ton tai; moi `version` trong marketplace.json = plugin.json; skill chua liet ke la WARN.
+- `versions` (WARN) — bang `VERSIONS.md` khop `metadata.version`.
+- `counts` (WARN) — cum "NNN skills" trong README / README.vi / manifest khop so thu muc skill thuc te.
+
+CI (`.github/workflows/validate.yml`) chay ca hai. Bat ky ISSUE nao lam fail build; WARN chi bao. Cach viet va cham evals: `docs/evals.md`.
+
+### Quy tac van hanh chung (v3.8.0)
+
+Moi skill tro toi 8 quy tac: `skills/vi/references/quy-tac-van-hanh.md` (VN) / `skills/en/references/operating-rules-global.md` (Global). Phap ly VN chi dan ve mot hub: `skills/vi/references/phap-ly-marketing-vn.md` — khong ghi muc phat, thue suat, nguong hay % phi vao skill.
+
 ## Versioning
 
 - **Major** (X.0.0): Breaking change (doi frontmatter, doi folder structure)
@@ -226,7 +248,7 @@ refactor: restructure Z skill
 
 1. Fork repo
 2. Tao branch tu `master`
-3. Chay `validate-skills.sh` truoc khi push
+3. Chay `validate-skills.sh` va `node scripts/check-repo.mjs` truoc khi push
 4. Tao PR voi mo ta ro rang
 5. Chi ra anh huong (skill nao bi affected, breaking change?)
 
@@ -243,7 +265,8 @@ refactor: restructure Z skill
 1. Tang version trong `metadata.version`
 2. Cap nhat `VERSIONS.md` voi ngay + thay doi
 3. Giu frontmatter dung spec
-4. Chay validator truoc khi commit
+4. Them / cap nhat `evals/evals.json` khi doi routing hoac guardrail
+5. Chay validator + `node scripts/check-repo.mjs` truoc khi commit
 
 ## Tuong thich
 

@@ -1,8 +1,8 @@
 ---
 name: 32-seo-growth-global
-description: "Use when the user wants SEO growth, AI SEO, GEO/AEO, Google visibility, ChatGPT or Perplexity citations, schema, structured data, llms.txt, programmatic SEO, local SEO, comparison and alternative pages, directory submissions, Product Hunt, G2/Capterra, backlinks, or a site audit. Trigger on 'SEO audit', 'AI search visibility', 'AI citations', 'schema markup', 'pSEO', 'alternative page', 'submit to directories', or 'backlink plan'. Not for first-time Google Business Profile setup, see `11-channel-setup-global`; not for writing the articles themselves, see `36-content-brief-global`."
+description: "Use when the user wants SEO growth, AI SEO, GEO/AEO, Google visibility, ChatGPT or Perplexity citations, schema, structured data, llms.txt, programmatic SEO, local SEO, comparison and alternative pages, directory submissions, Product Hunt, G2/Capterra, backlinks, or a site audit. Trigger on 'SEO audit', 'AI search visibility', 'AI citations', 'schema markup', 'pSEO', 'alternative page', 'submit to directories', or 'backlink plan'. Not for — first-time Google Business Profile setup, see `11-channel-setup-global`; writing the articles themselves, see `36-content-brief-global`."
 metadata:
-  version: 1.1.0
+  version: 1.2.0
   category: performance
 license: MIT
 triggers:
@@ -27,15 +27,18 @@ related:
 
 # SEO Growth (Global)
 
+> Operating rules: `skills/en/references/operating-rules-global.md` (esp. rules 2, 3, 7).
+
 This skill covers 6 practical SEO layers: foundation audit, local SEO, search-intent content, AI search visibility, schema/machine-readable files, and backlink/distribution. The goal is qualified demand, not publishing volume.
 
 ## Information gathering
 
 Read `.agents/product-marketing-context-global.md` if available. Ask up to 4 questions: website URL, target market, main product/service, and 90-day SEO goal. Use Search Console, GA4, Ahrefs, Semrush or similar exports when available.
 
-Two companion references:
+Three companion references:
 - `references/seo-growth-playbook.md` — 90-day roadmap, pSEO, comparison and alternative pages, site architecture.
 - `references/schema-json-ld.md` — 12 copy-paste JSON-LD blocks with current rich-result status.
+- `references/ai-visibility-measurement.md` — prompt portfolio, answer audit, AI referral traffic, crawler log check, fix loop.
 
 ## Pick the mode
 
@@ -227,25 +230,28 @@ Disallow: /
 
 | Bot | Operator | Role |
 |-----|----------|------|
-| GPTBot | OpenAI | Broad crawling; blocking reduces how well the model knows you |
-| OAI-SearchBot | OpenAI | Powers search-time retrieval — blocking it all but eliminates citations |
-| ChatGPT-User | OpenAI | Fetches a page when a user asks ChatGPT to open a link |
+| GPTBot | OpenAI | Crawls for model training; obeys robots.txt. Independent of search: allowing OAI-SearchBot while disallowing GPTBot is a valid combination |
+| OAI-SearchBot | OpenAI | Decides whether the site can appear in ChatGPT search answers; obeys robots.txt, changes take about 24h to apply. Opted out means not shown in those answers |
+| ChatGPT-User | OpenAI | Fetches a page when a user acts in ChatGPT (e.g. opens a link); robots.txt rules may not apply. Not used to decide search inclusion |
+| OAI-AdsBot | OpenAI | Checks landing pages submitted as ChatGPT ads; does not train models. Only relevant if you run those ads |
 | PerplexityBot | Perplexity | Perplexity always cites sources, making it the most measurable channel |
 | ClaudeBot / anthropic-ai | Anthropic | `anthropic-ai` is the legacy token, `ClaudeBot` the current one |
 | Google-Extended | Google | **Not a crawler.** See the note below |
 | Bingbot | Microsoft | Feeds both Bing and Copilot |
 | CCBot | Common Crawl | Training-only corpus; produces no citations, safe to block if you prefer |
 
+OpenAI bot roles [checked 2026-10, developers.openai.com/api/docs/bots]. Re-check that page on the planning date: bot lists change, so do not copy user-agent strings or version numbers from memory. Confirm the bots really fetch your key pages with the crawler log check in `references/ai-visibility-measurement.md`.
+
 **What most guides get wrong:** `Google-Extended` does not control whether you appear in AI Overviews. AI Overviews are built on the regular Search index. Blocking `Google-Extended` only affects use of your content in Google's other generative products. To control snippet usage in AI Overviews you use `nosnippet`, `max-snippet` or `data-nosnippet` — which also costs you ordinary snippets.
 
 **Three additional checks:**
 1. **Silent CDN/WAF blocking.** Cloudflare and several other providers ship an "AI crawlers" toggle that is on by default. Your robots.txt can say Allow while the request never reaches origin. Check server logs or the CDN dashboard, not just robots.txt.
 2. **Platform limits.** Hosted site builders often restrict robots.txt editing. Confirm what is actually editable before promising it in a plan.
-3. **`llms.txt`.** Served at `/llms.txt`, listing your most important pages in markdown with short descriptions. It is a community-proposed convention with no formal commitment from any major platform. Cheap enough to ship, but do not oversell it or bill it as a major line item.
+3. **`llms.txt`.** Served at `/llms.txt`, listing your most important pages in markdown with short descriptions. It is a community-proposed convention with no formal commitment from any major platform. Optional: effect unproven, no vendor commitment. Cheap enough to ship, but do not oversell it or bill it as a major line item.
 
 #### 4.4 AI visibility audit table
 
-Test 10-20 of your highest-value queries and log the results:
+For a fixed prompt portfolio, per-answer audit columns, metrics, AI referral traffic and a fix loop, use `references/ai-visibility-measurement.md`. Quick version: test 10-20 of your highest-value queries and log the results:
 
 | Question | Platform (ChatGPT / Perplexity / AI Overview) | Are we cited? | Which competitor is cited instead | Action |
 |----------|----------------------------------------------|---------------|-----------------------------------|--------|
@@ -298,7 +304,7 @@ Four formatting rules: lead each section with the answer instead of burying it; 
 | Course | Course |
 
 **Two things to state plainly to the client:**
-- **FAQPage** no longer produces a rich result on Google for most sites (limited to authoritative government and health sites since Aug 2023). Keep shipping it because AI engines parse it — but do not sell it as extra SERP real estate.
+- **FAQPage**: Google FAQ rich results are deprecated for all sites from 2026-05-07 (`reported`: Search Central notice dated 2026-05-08, doc not fetched). Search Console FAQ report removal is reported for June 2026 and API removal for August 2026. The markup is still valid schema.org and harmless: keep it when the FAQ is genuinely on the page, but promise no rich result and do not sell it as extra SERP real estate.
 - **HowTo** rich results were removed entirely by Google in Sept 2023. Low priority.
 
 Full code for 12 JSON-LD blocks, testing tools and common failure modes: `references/schema-json-ld.md`.

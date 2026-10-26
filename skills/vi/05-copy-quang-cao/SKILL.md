@@ -1,9 +1,9 @@
 ---
 name: 05-copy-quang-cao
 description: "Dung khi can viet copy quang cao TRA TIEN cho Meta, TikTok hoac Google — 6 bien the theo 3 tang pheu TOFU/MOFU/BOFU, tuan thu gioi han ky tu va chinh sach nen tang. Co Mode A cho san pham va Mode B cho personal brand, tu chon theo file context. Kich hoat khi user nhac 'viet copy quang cao', 'noi dung chay ads', 'copy Facebook Ads', 'copy TikTok Ads', 'google rsa', 'tieu de quang cao', 'copy retarget'. Khong dung cho — caption dang organic khong chay tien thi dung skill 37-caption-social; slogan / cau hai y / headline poster thi dung skill 74-copy-hai-lop; loi thoai video thi dung skill 04-script-video; duyet copy da viet thi dung skill 62-marketing-review."
-argument-hint: "<sản phẩm + key message + kênh>"
+argument-hint: "<san pham + key message + kenh>"
 metadata:
-  version: 2.5.2
+  version: 2.6.0
   category: content
 triggers:
   - "viet quang cao"
@@ -36,6 +36,8 @@ related:
 ---
 
 # Copy Quang Cao
+
+> Quy tac van hanh chung: `skills/vi/references/quy-tac-van-hanh.md` (dac biet quy tac 2, 3, 7).
 
 ## Buoc 0: Kiem tra context file
 
@@ -139,26 +141,22 @@ Neu co bang chung that → viet lai thanh con so: "1,247 khach da dung" thay vi 
 
 > **Sai lam pho bien VN:** Viet theo cau truc tu do (gioi thieu → tinh nang → CTA) thay vi ap framework. Ket qua: copy nhat, it cam xuc, CTR thap. Moi bien the trong 6 bien the output nen dung **1 framework khac nhau**.
 
-### Andromeda Warning — Khong clone ads
+### Da dang concept (Andromeda) — Khong clone ads
 
-> **Meta 2026:** He thong Andromeda cluster cac quang cao co **Creative Similarity Score > 60%** — giam delivery tu dong. 100 bien the nho (doi mau, cat clip, thay font) KHONG tot hon 10 creative thuc su khac biet.
+> Andromeda [reported] la he thong truy xuat quang cao cua Meta; theo cac nguon trong nganh, no coi cac bien the chi khac be ngoai (doi mau, cat clip, thay font) la gan nhu trung nhau. Meta khong cong bo nguong "similarity" nao — khong dung con so % de ket luan.
 
-**Nguong an toan:**
+**Quy tac 2 truc:** 1 concept chi tinh la khac biet khi khac cac concept con lai o **it nhat 2 truc** trong 4 truc: **goc tiep can (angle) · persona · proof · format**. Doi mau / cat clip / thay font = 0 truc.
 
-| Similarity Score | Trang thai | Hanh dong |
-|-----------------|-----------|-----------|
-| < 40% | An toan | Tiep tuc chay |
-| 40–60% | Canh bao | Kiem tra lai — co the bi cluster |
-| > 60% | Nguy hiem | Andromeda cluster → giam delivery tu dong |
+> "8-12 concept, lam moi sau 2-3 tuan" la heuristic cua vendor (kiem tra lai bang data tai khoan cua ban), khong phai luat cua Meta.
 
-**5 chieu da dang de vuot Andromeda:**
-1. **Hook khac nhau** — Pain vs To mo vs Aspiration (khong chi thay text, phai thay goc nhin)
+**Cach tao khac biet (moi muc map vao 1 truc):**
+1. **Angle khac nhau** — Pain vs To mo vs Aspiration (khong chi thay text, phai thay goc nhin)
 2. **Format khac nhau** — Video doc 9:16 vs Anh vuong 1:1 vs Carousel
-3. **Nhan vat khac nhau** — Founder vs Khach hang review vs KOC/bac si
-4. **Am nhac khac nhau** — Trending VN vs Nhac cam trang vs Giong noi/voiceover
-5. **Boi canh khac nhau** — Studio vs Ngoai canh vs UGC phong khach
+3. **Persona / nhan vat khac nhau** — Founder vs Khach hang review vs KOC/bac si
+4. **Proof khac nhau** — So lieu vs Review that vs Demo truoc/sau (co nguon)
+5. **Boi canh / am nhac** — chi la bo tro; khong tinh la truc neu angle va proof giu nguyen
 
-> Xem them: `skills/vi/references/quality-gates-vn.md` Gate 5 (Andromeda Creative Diversity)
+> Xem them: `skills/vi/references/quality-gates-vn.md` "Gate 5 — Da dang concept (Andromeda)"
 
 ---
 
@@ -275,7 +273,7 @@ Moi tang co luat rieng. Viet sai luat tang = copy khong sai chinh ta nhung khong
 1. **Doc insight truoc, khong viet ngay.** Mo `09-insight-khach-hang` — lay Pain Map, Objection List, Ngan hang ngon ngu khach hang. Neu chua co → chay skill 09 truoc.
 2. **Chot 1 message cho 1 ad.** Moi bien the chi mang 1 thong diep. Nhoi 3 benefit vao 1 bai = khong benefit nao duoc nho.
 3. **Viet hook truoc, than bai sau.** Viet 6 hook 125 ky tu truoc — chon xong moi viet phan than.
-4. **Gan framework cho tung bien the.** 6 bien the = 6 framework khac nhau (AIDA, PAS, BAB, 4P, FAB, Star-Story-Solution) — tranh Andromeda cluster.
+4. **Gan framework cho tung bien the.** 6 bien the = 6 framework khac nhau (AIDA, PAS, BAB, 4P, FAB, Star-Story-Solution) — de concept khac nhau >= 2 truc (xem muc Da dang concept).
 5. **Cam con so vao.** Moi bien the phai co it nhat 1 con so that. Khong co so that → lay tu `13-phan-tich-du-lieu` hoac bo bien the do.
 6. **Viet CTA cuoi cung.** CTA = dong tu + loi ich cu the, khong phai "Lien he ngay".
 7. **Cham diem Copy Scoring** (bang o tren) — <35/50 thi viet lai, khong gui di duyet.
@@ -315,7 +313,7 @@ Chuyen sang `62-marketing-review` — che do review ads copy. Nguoi duyet cham 4
 | Copy nay co dung tang pheu cua adset se chay khong? | | Sai tang → viet lai |
 | Message co khop offer va landing page khong? | | Lech message → sua copy hoac sua LP |
 | Con so trong copy co that va co nguon khong? | | Bia so → xoa, khong duoc "lam tron len" |
-| Co bien the nao trung goc nhin voi ads dang chay khong? | | Trung → thay goc nhin, tranh Andromeda |
+| Co bien the nao trung goc nhin voi ads dang chay khong? | | Trung (khac < 2 truc) → doi angle / persona / proof / format |
 
 Ket qua duyet ghi 1 trong 3: **DUYET** · **DUYET CO DIEU KIEN** (sua roi chay, khong can duyet lai) · **TRA VE** (viet lai, duyet lai tu dau).
 
@@ -364,7 +362,7 @@ Ket qua duyet ghi 1 trong 3: **DUYET** · **DUYET CO DIEU KIEN** (sua roi chay, 
 
 ## Personal Brand Mode
 
-> Chi doc khi da xac dinh MODE B o Buoc 0. Bang khac biet Mode A vs Mode B (pheu, goal, tone, CTA, proof), 6 bien the copy personal brand (2 Awareness · 2 Trust · 2 Soft Sell) kem vi du day du, va 3 canh bao bat buoc truoc khi chay ads (nguong 500 follower huu co, niche phai ro, disclosure AI avatar theo Nghi dinh 147/2024): doc `references/personal-brand-mode.md`.
+> Chi doc khi da xac dinh MODE B o Buoc 0. Bang khac biet Mode A vs Mode B (pheu, goal, tone, CTA, proof), 6 bien the copy personal brand (2 Awareness · 2 Trust · 2 Soft Sell) kem vi du day du, va 3 canh bao bat buoc truoc khi chay ads (nguong 500 follower huu co, niche phai ro, nhan AI → hub muc 4 (`skills/vi/references/phap-ly-marketing-vn.md`)): doc `references/personal-brand-mode.md`.
 
 ---
 
@@ -385,7 +383,7 @@ Kiem tra truoc khi giao copy:
 - [ ] Co huong dan A/B test ro rang
 - [ ] Retarget copy khac creative voi ads lan 1
 - [ ] Moi bien the dung dung framework phu hop voi nhiet do audience (Cold/Warm/Hot)
-- [ ] Khong co 2 bien the nao dung cung framework + cung hook → Andromeda risk
+- [ ] Khong co 2 bien the nao dung cung framework + cung hook → concept trung lap (khac < 2 truc)
 - [ ] Creative di kem moi bien the thuc su khac biet — khong chi doi mau/cat clip
 - [ ] TOFU khong nhac gia; MOFU co social proof; BOFU co gia + deadline + guarantee
 - [ ] Do dai primary text dung chuan tung tang (150/120/100 chu)

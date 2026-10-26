@@ -1,7 +1,7 @@
 # EMAIL MARKETING — SEA VARIANT
 
 > **Region:** Southeast Asia (Singapore, Malaysia, Indonesia, Thailand, Philippines)
-> **Note:** Vietnam is covered by `14-email-marketing` (VN skill) — Decree 13/2023/ND-CP
+> **Note:** Vietnam is covered by `14-email-marketing` (VN skill) — Vietnam Personal Data Protection Law 91/2025/QH15 and Decree 356/2025/ND-CP (effective 2026-01-01); see the VN legal hub `skills/vi/references/phap-ly-marketing-vn.md`
 > **Common rule:** **Most SEA countries now require OPT-IN** (post-2020 wave of privacy laws)
 > **Strictest:** Singapore PDPA (well-enforced, often cited as APAC's GDPR)
 > **Currency for benchmarks:** USD or local (SGD, MYR, IDR, THB, PHP)
@@ -17,11 +17,11 @@
 | Authority | Personal Data Protection Commission (PDPC) |
 | Consent | **Opt-in mandatory** for marketing email |
 | Withdrawal | Must honor within reasonable time |
-| Penalty | Up to SGD 1,000,000 or 10% annual turnover (whichever higher, post-2022 amendment) |
+| Penalty | Statutory financial penalties apply — verify current amounts on the PDPC site |
 | DNC Registry | Singapore Do-Not-Call Registry (covers SMS + voice; not email) |
 | DPO | Required if processing personal data |
 
-**Singapore is the gold standard in SEA.** If you comply with PDPA Singapore, you're 80% compliant for the rest of the region.
+**Singapore is the gold standard in SEA.** If you comply with PDPA Singapore you have a strong baseline, but compliance varies by country; audit your own list against each local law.
 
 ### Malaysia — Personal Data Protection Act (PDPA) 2010, amended 2024
 
@@ -30,7 +30,7 @@
 | Authority | Department of Personal Data Protection (PDP) |
 | Consent | **Opt-in required** with clear notice |
 | Notice | Must inform of purpose, third parties, rights |
-| Penalty | Up to MYR 1,000,000 (post-2024 amendment); imprisonment possible |
+| Penalty | Statutory penalties apply (criminal liability possible) — verify current amounts with local counsel |
 | DPO | Required for "data user" handling personal data at scale |
 
 ### Indonesia — UU PDP (Personal Data Protection Law) 2022, effective Oct 2024
@@ -40,7 +40,7 @@
 | Authority | Personal Data Protection Agency (under formation) |
 | Consent | **Opt-in mandatory; granular consent required (similar to GDPR)** |
 | Right to erasure | Yes |
-| Penalty | Up to IDR 50,000,000,000 (~USD 3.2M) or 2% global revenue |
+| Penalty | Statutory administrative and criminal penalties apply — verify current amounts with local counsel |
 | Cross-border transfer | Restricted; requires equivalent protection in destination |
 
 UU PDP is the most GDPR-like law in SEA — treat as strict.
@@ -51,7 +51,7 @@ UU PDP is the most GDPR-like law in SEA — treat as strict.
 |---------|--------|
 | Authority | Personal Data Protection Committee (PDPC) |
 | Consent | **Opt-in required, must be explicit and separable** |
-| Penalty | Up to THB 5,000,000 + criminal penalties for violations |
+| Penalty | Statutory administrative and criminal penalties apply — verify current amounts with local counsel |
 | DPO | Required for large data processors |
 | Cross-border | Restricted unless adequate protection |
 
@@ -62,7 +62,7 @@ UU PDP is the most GDPR-like law in SEA — treat as strict.
 | Authority | National Privacy Commission (NPC) |
 | Consent | **Opt-in required for direct marketing** |
 | Registration | Personal Information Controllers (PICs) must register with NPC if processing 1,000+ records |
-| Penalty | Up to PHP 5,000,000 + imprisonment |
+| Penalty | Statutory penalties apply (criminal liability possible) — verify current amounts with local counsel |
 | Breach notification | Within 72 hours to NPC |
 
 ---

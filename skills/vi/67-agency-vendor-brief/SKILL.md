@@ -1,8 +1,8 @@
 ---
 name: 67-agency-vendor-brief
-description: "Dung khi thue NGUOI NGOAI lam — agency, freelancer, production house, vendor: scope of work, spec deliverable, so vong sua, quy trinh duyet, moc thanh toan, dieu khoan IP va bao mat, bang danh gia vendor sau du an. Kich hoat khi user nhac 'brief agency', 'thue freelancer', 'quan ly vendor', 'scope of work', 'agency lam khong dung y', 'thue ngoai quay TVC', 'bao gia agency co hop ly khong', 'onboard vendor moi'. Khong dung cho — giao viec cho nhan su noi bo thi dung skill 64-team-brief; brief creator quay UGC hoac KOC thi dung skill 06-brief-ugc-egc; nhan brief tu khach khi CHINH MINH la agency thi dung skill 20-brief-client-intake."
+description: "Dung khi thue NGUOI NGOAI lam — agency, freelancer, production house, vendor: scope of work, spec deliverable, so vong sua, quy trinh duyet, moc thanh toan, dieu khoan IP va bao mat, bang danh gia vendor sau du an. Kich hoat khi user nhac 'brief agency', 'thue freelancer', 'quan ly vendor', 'scope of work', 'agency lam khong dung y', 'thue ngoai quay TVC', 'bao gia agency co hop ly khong', 'onboard vendor moi'. Khong dung cho — giao viec cho nhan su noi bo thi dung skill 64-team-brief; chon, tham dinh hoac bao gia KOC rieng le thi dung skill 75-hop-tac-koc-affiliate; brief creator quay UGC hoac KOC da chot thi dung skill 06-brief-ugc-egc; nhan brief tu khach khi CHINH MINH la agency thi dung skill 20-brief-client-intake."
 metadata:
-  version: 1.0.1
+  version: 1.1.0
   category: operations
 license: MIT
 triggers:
@@ -21,9 +21,14 @@ related:
   - 41-campaign-asset-list
   - 61-budget-planning
   - 47-design-review
+  - 75-hop-tac-koc-affiliate
 ---
 
 # Agency va Vendor Brief
+
+> Quy tac van hanh chung: `skills/vi/references/quy-tac-van-hanh.md` (dac biet quy tac 2, 3, 7).
+
+> Chon, tham dinh va bao gia tung KOC rieng le: `75-hop-tac-koc-affiliate`. Skill nay chi dung khi thue agency / MCN / production house lam tron goi.
 
 > Agency lam sai thuong khong phai vi ho kem — ma vi brief te va ky vong khong khop tu dau. Brief tot voi agency: it revision, dung han, dung budget. Doi xu voi agency nhu doi tac chuyen nghiep, khong phai nguoi lam thue: brief ro + feedback ro = ket qua tot nhat.
 

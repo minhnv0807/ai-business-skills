@@ -2,35 +2,36 @@
 
 > **Disclaimer:** This document is for general informational purposes only. It is **NOT legal advice**. AI disclosure laws, FTC/ASA guidance, and platform policies evolve rapidly and vary by jurisdiction, industry, and business model. Always consult a qualified attorney licensed in the relevant jurisdiction before launching campaigns that use AI-generated voice, likeness, or content.
 
-> **Reference file** — Load when using `22-ai-avatar-pb-global`, `23-voice-clone-pb-global`, `24-video-ai-batch-global`, or any personal brand skill that produces AI-generated content.
-> Last updated: 2026-Q1. Review cadence: every 6 months.
+> **Reference file** — Load when using `24-ai-avatar-production-global`, `25-voice-clone-podcast-global`, `26-thought-leadership-content-global`, or any personal brand skill that produces AI-generated content.
+> Last updated: 2026-10. Review cadence: every 6 months. Statutory dates and instrument numbers: verify on the primary source (EUR-Lex, ftc.gov) before relying on them.
 
 ---
 
 ## 1. Legal Framework By Region
 
-### United States — FTC Endorsement Guides (16 CFR Part 255)
+### United States — FTC Endorsement Guides (16 CFR Part 255) and Consumer Reviews Rule (16 CFR Part 465)
 
-The FTC's Endorsement Guides require **disclosure of any material connection** between an endorser and the advertiser. As of 2023 revisions and 2024-2026 FTC guidance, this explicitly covers AI-generated endorsements, synthetic testimonials, and deepfake-style content.
+Two FTC instruments matter here: the **Endorsement Guides** (16 CFR Part 255) and the **Rule on the Use of Consumer Reviews and Testimonials** (16 CFR Part 465). Part 255 (Endorsement Guides) is where the duty to **disclose any material connection** between an endorser and the advertiser comes from. Part 465 (consumer reviews rule) addresses fake reviews, including AI-generated ones, undisclosed insider reviews and bought reviews. Check current text and FTC guidance on ftc.gov before relying on the details below.
 
 - **Material connection** = anything that could affect the weight of the endorsement (payment, free product, employment, family relationship, AI-generated likeness of a paid spokesperson, etc.)
 - **Clear and conspicuous** standard: a reasonable consumer must notice the disclosure without effort
-- **AI-specific guidance (FTC 2024):** Fake AI-generated reviews and testimonials are deceptive practices under Section 5 of the FTC Act. Civil penalties up to $51,744 per violation (2025 inflation-adjusted).
-- **In-stream disclosure required** for sponsored content on TikTok, YouTube, Instagram, etc.
+- **Fake reviews and testimonials:** fabricated testimonials, including AI-generated ones that imply real customer experience, are deceptive practices under Section 5 of the FTC Act and fall under the Part 465 consumer reviews rule (fake or AI-generated reviews, undisclosed insider reviews, bought reviews). Disclosure of a paid or free-product relationship is a Part 255 duty, not a Part 465 one. Penalties: see the FTC — verify on ftc.gov.
+- **In-stream disclosure** is the safe practice for sponsored content on TikTok, YouTube, Instagram, etc.
 - **Influencer disclosure:** #ad, #sponsored, "Paid partnership with [Brand]" — placed where the viewer cannot miss it
 
-**Resource:** FTC.gov "Disclosures 101 for Social Media Influencers"
+**Resource:** FTC.gov "Disclosures 101 for Social Media Influencers" (verify on ftc.gov)
 
-### European Union — AI Act Article 50 (effective Aug 2024 / phased)
+### European Union — AI Act Article 50 (applies from 2026-08-02)
 
-The EU AI Act establishes the world's first comprehensive AI regulation. Article 50 addresses transparency obligations.
+The EU AI Act (Regulation (EU) 2024/1689) entered into force on 2024-08-01. Article 50 addresses transparency obligations and **applies from 2026-08-02** (verify on EUR-Lex).
 
-- **Article 50(2):** Providers of generative AI systems must ensure outputs are **marked as artificially generated** in a machine-readable format (e.g., watermark, metadata)
+- **Article 50(2):** Providers of generative AI systems must ensure outputs are **marked as artificially generated** in a machine-readable format (e.g., watermark, metadata). Systems already on the market before 2026-08-02 reportedly have until **2026-12-02** (reported; verify on EUR-Lex — sources differ on scope).
 - **Article 50(4):** Deployers of AI systems that generate or manipulate image, audio, or video content constituting **deepfakes must disclose** that the content has been artificially generated
 - **Exception:** Authorized criminal investigations; artistic/satirical works (but still must disclose in a manner that does not hamper enjoyment)
 - **Scope:** Applies to anyone placing AI systems on the EU market or whose output is used in the EU, regardless of where the provider is established
-- **Penalties:** Up to EUR 15M or 3% of global annual turnover for general transparency violations; up to EUR 35M or 7% for prohibited practices
-- **Disclosure standard:** Must be "clear and distinguishable at the latest at the time of the first interaction or exposure"
+- **Code of Practice on marking and labelling AI-generated content:** published mid-2026, voluntary. Following it is a compliance aid, not a safe harbour — verify on EUR-Lex / the Commission site.
+- **Penalties:** see Art. 99 — verify on EUR-Lex
+- **Disclosure standard:** deepfake deployers must disclose no later than the time of first interaction or exposure, in a clear and distinguishable manner
 
 ### European Union — Unfair Commercial Practices Directive (UCPD, 2005/29/EC)
 
@@ -60,7 +61,7 @@ Under GDPR, biometric data including voice patterns and facial features qualify 
 | **Malaysia** | MCMC + ASA Malaysia | Content Code requires honesty; AI-generated content in ads should be disclosed |
 | **Thailand** | NBTC + Consumer Protection Act | PDPA (similar to GDPR) governs voice/face data; misleading ads prohibited |
 | **Philippines** | DTI + Data Privacy Act | Consumer Act prohibits deceptive sales practices; AI disclosure recommended |
-| **Vietnam** | Ministry of Information and Communications (MIC) | Decree 147/2024 — AI-generated content for commercial advertising must indicate origin |
+| **Vietnam** | See the VN legal hub | AI-labelling duties: Law 134/2025/QH15 + Decree 142/2026/ND-CP. Details: `skills/vi/references/phap-ly-marketing-vn.md` section 4 (verify on the official gazette) |
 
 ### Latin America
 
@@ -117,12 +118,12 @@ Violates: defamation law, right of publicity (US states), Article 8 ECHR (privac
 **Risk:** Civil damages, criminal fraud charges, permanent platform bans.
 
 ### Political deepfakes
-Many jurisdictions (US states like Texas, California; EU under AI Act prohibited practices Article 5; UK Online Safety Act) now prohibit or heavily restrict synthetic political content.
+Many jurisdictions (US states like Texas, California; UK Online Safety Act) now prohibit or heavily restrict synthetic political content. In the EU, the relevant layers are the AI Act Art. 50(4) deepfake disclosure (applies from 2026-08-02), Regulation (EU) 2024/900 on political advertising, and national election rules — verify on EUR-Lex.
 **Risk:** Criminal penalties, election law violations, platform-wide bans, civil liability.
 
 ### Fake testimonials and reviews
 Violates: FTC Act Section 5, EU UCPD Annex I, consumer protection acts in nearly every jurisdiction.
-**Risk:** Civil penalties up to USD 51,744 per violation (FTC); EUR-denominated fines under UCPD; class action exposure.
+**Risk:** FTC civil penalties (verify on ftc.gov); national enforcement under UCPD; class action exposure.
 
 ### Unauthorized medical, health, or financial advice
 Beyond AI disclosure, these often require licensed professional involvement.
@@ -148,7 +149,7 @@ GDPR Article 8, COPPA (US), Online Safety Act (UK), and similar laws impose elev
   ```
   Note: This video was created with AI avatar technology. The voice and likeness are based on the creator's verified consent. All content is reviewed and approved by [Your Name] before publication.
   ```
-- **YouTube Studio "Altered content" disclosure:** Required toggle in Upload > Details for synthetic or significantly altered content (effective March 2024)
+- **YouTube Studio "Altered content" disclosure:** Toggle in Upload > Details for realistic synthetic or significantly altered content (platform policy — check YouTube Help Center, 2026-10)
 - **End screen note** (last 5 seconds): "AI-generated avatar | Content by [Your Name]"
 - **Community Guidelines label:** Use the AI-generated content tag in YouTube's metadata
 
@@ -253,6 +254,6 @@ flowchart TD
 
 ## 7. Update Log
 
-- **2026-Q1:** Initial global reference released. EU AI Act Article 50 phased application details added.
-- **2025-Q3 (planned):** Update with first wave of EU AI Act enforcement decisions and FTC AI-specific rulemaking outcomes.
+- **2026-Q1:** Initial global reference released.
+- **2026-10:** EU AI Act Art. 50 application date (2026-08-02), reported Art. 50(2) grace date, and voluntary Code of Practice added; FTC Part 465 named; penalty figures removed (point to Art. 99 / ftc.gov); Vietnam row now points to the VN legal hub.
 - **Review cadence:** Every 6 months or upon major regulatory change (EU AI Act milestones, FTC final rules, major national AI laws).
