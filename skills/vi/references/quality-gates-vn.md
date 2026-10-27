@@ -21,6 +21,8 @@ Chi spend < 3 × CPA muc tieu  →  CHUA DU DATA, cho tiep
 
 Vi sao 3x: neu da tieu gap 3 lan CPA muc tieu ma van 0 chuyen doi, xac suat ad set nay thuc su tot chi con khoang 5%. Tat o muc 2x thi con 13% kha nang giet nham ad set tot; cho den 5x thi tra hoc phi qua dat.
 
+Cach tinh (mo hinh don gian hoa): gia dinh CPA that = CPA muc tieu va so chuyen doi theo phan phoi Poisson thi xac suat 0 chuyen doi sau khi tieu k x CPA la e^-k. k=3 → ~5%, k=2 → ~13.5%, k=5 → ~0.7%. Mo hinh bo qua do tre chuyen doi (conversion lag), nen dung de chon nguong, khong phai bang chung thong ke.
+
 ### Thang phan xu (sau khi du data)
 
 | CPA thuc te / CPA muc tieu | Trang thai | Hanh dong |
@@ -28,7 +30,7 @@ Vi sao 3x: neu da tieu gap 3 lan CPA muc tieu ma van 0 chuyen doi, xac suat ad s
 | ≤ 1.0x | **Winner** | Ung vien scale — chuyen sang `55-scaling-ads` kiem tra 7 dieu kien du |
 | 1.0 – 1.5x | Theo doi | Giu, toi uu creative/audience. Chua scale, chua tat |
 | > 1.5x lien tuc 7 ngay | Thay | Doi creative hoac audience. Giu ngan sach, doi bien |
-| > 3.0x | **Tat ngay** | Pause. Ghi ly do vao log truoc khi tat |
+| > 3.0x | **Tat ngay** | De xuat pause qua cong duyet quy tac 7 (hoac uy quyen thuong truc con hieu luc). Ghi ly do vao log truoc khi tat |
 | 0 chuyen doi khi spend ≥ 3x | **Tat ca concept** | Khong phai loi creative le — goc tiep can sai. Quay ve `09-insight-khach-hang` |
 
 ### Vi du VN
@@ -136,27 +138,25 @@ Neu bat ky dieu tren = KHONG → Fix tracking truoc, khong chay ads
 
 ---
 
-## Gate 5 — Andromeda Creative Diversity (Da Dang Thuc Su)
+## Gate 5 — Da dang concept (Andromeda)
 
-**Quy tac:** Tai khoan Meta phai co it nhat **10 creative THUC SU KHAC BIET** — khong phai bien the cung noi dung.
+**Quy tac:** Andromeda [reported] la he thong truy xuat quang cao cua Meta va coi bien the chi khac be ngoai la gan nhu trung nhau. Meta khong cong bo nguong similarity — gate nay dung quy tac 2 truc, khong dung con so %.
+
+**Dat (Pass):** ad set dang chay co **>= 3 concept** doi mot khac nhau o **>= 2 truc** trong 4 truc: angle · persona · proof · format. (Con so 3 la heuristic — kiem tra lai bang data tai khoan.)
 
 ```
-Vi pham Andromeda:
+Vi pham:
 × 20 video cung hook, chi thay mau background
 × 15 anh product cung goc chup, chi thay text overlay
 × 10 video cung noi dung, chi cat ngan/dai
 
-Dat chuan:
-✓ It nhat 3 hook KHAC NHAU (pain, to mo, aspiration)
-✓ It nhat 2 format KHAC NHAU (video doc + anh vuong)
-✓ It nhat 2 nhan vat KHAC NHAU (founder, KOC, khach hang)
-✓ It nhat 2 boi canh KHAC NHAU (studio, ngoai canh)
+Dat chuan (vi du):
+✓ Concept A: angle noi dau + persona khach hang + format video doc
+✓ Concept B: angle to mo + persona founder + format anh vuong
+✓ Concept C: angle aspiration + proof so lieu co nguon + format carousel
 ```
 
-**Meta Creative Similarity Score:**
-- < 40%: An toan
-- 40-60%: Canh bao — kiem lai
-- > 60%: Andromeda cluster → giam delivery tu dong
+> "8-12 concept, lam moi sau 2-3 tuan" la heuristic cua vendor, khong phai luat cua Meta.
 
 ---
 
@@ -229,9 +229,9 @@ Cach dung:
 
 ```
 Du lieu toi thieu de ket luan:
-  - Facebook/Instagram ad: 1,000 impression VÀ 50 click
-  - TikTok ad: 500 view VÀ 30 click
-  - Google Search ad: 100 click VÀ 7 ngay
+  - Facebook/Instagram ad: 1,000 impression VA 50 click
+  - TikTok ad: 500 view VA 30 click
+  - Google Search ad: 100 click VA 7 ngay
   - A/B test: Du lieu thong ke (MDE, p < 0.05)
 
 Thoi gian toi thieu truoc khi ket luan:
@@ -269,13 +269,13 @@ Nguong:
 
 ## Tong hop — Checklist Quick Gates
 
-Truoc bat ky khuy en nghi scale hoac toi uu nao, kiem tra:
+Truoc bat ky khuyen nghi scale hoac toi uu nao, kiem tra:
 
-- [ ] **Gate 1** — Ad set nao co CPA > 3x? → Pause truoc
+- [ ] **Gate 1** — Da qua Buoc 0 (du data)? Ad set nao co CPA > 3.0x? → De xuat pause qua quy tac 7 truoc
 - [ ] **Gate 2** — Moi ad set co it nhat 5x CPA muc tieu/ngay?
 - [ ] **Gate 3** — Co ad set nao dang Learning? → Khong cham vao
 - [ ] **Gate 4** — Pixel/CAPI firing chinh xac, khong duplicate?
-- [ ] **Gate 5** — Co it nhat 10 creative thuc su khac biet tren Meta?
+- [ ] **Gate 5** — Ad set dang chay co >= 3 concept khac nhau o >= 2 truc (angle / persona / proof / format)?
 - [ ] **Gate 6** — Nganh co rui ro compliance? → Da kiem tra chua?
 - [ ] **Gate 7** — TikTok video co am thanh? (neu dung TikTok)
 - [ ] **Gate 8** — Tang ngan sach khong qua 20%/lan?

@@ -1,241 +1,164 @@
-# AI Video Disclosure VN — Quy Tac Cong Khai Khi Dung AI Avatar
+# AI Video Disclosure VN — Cach Gan Nhan Khi Dung AI Avatar / Voice
 
-> **Reference file** — Load khi dung `16-ai-avatar-personal-brand`, `17-voice-clone-brand`, `18-video-ai-batch`.
-> Thi truong: Viet Nam 2025-2026. Cap nhat theo phap ly VN hien hanh.
-> **KHONG PHAI TU VAN PHAP LY.** Tham khao luat su neu can y kien chinh thuc.
-
----
-
-## 1. Boi Canh Phap Ly VN 2025-2026
-
-### Van ban phap luat lien quan
-
-**Nghi dinh 147/2024/ND-CP** (Co hieu luc 2025)
-- Quy dinh ve quan ly, cung cap, su dung dich vu internet va thong tin tren mang
-- Yeu cau: noi dung do AI tao ra dung cho quang cao thuong mai phai ghi ro nguon goc
-- Pham vi: ap dung cho to chuc, ca nhan hoat dong tren khong gian mang tai VN
-
-**Luat Quang cao 2012 (sua doi, bo sung 2024)**
-- Dieu 8: Cam quang cao co noi dung khong trung thuc, gay nham lan ve nguon goc
-- Dieu 19: Quang cao phai ro rang ve chu the quang cao va san pham
-- Lien quan AI: su dung hinh anh/giong noi AI ma khong cong khai = co the vi pham dieu 8
-
-**FTC Guidelines (My) — Tham khao, khong bat buoc tai VN**
-- Yeu cau disclose khi dung AI-generated content trong quang cao
-- "Material connection" phai duoc cong khai ro rang
-- VN chua co quy dinh chi tiet bang nhung xu huong se theo
-
-**GDPR (EU) — Ap dung neu target khach EU**
-- AI Act 2024: Yeu cau gan nhan "AI-generated" cho noi dung tao boi AI
-- Neu ban ban hang/dich vu cho nguoi EU: PHAI tuan thu
-
-**Tinh hinh hien tai:**
-- VN dang trong giai doan hoan thien khung phap ly ve AI
-- Bo Thong tin & Truyen thong (Bo TT&TT) dang soan Nghi dinh rieng ve AI
-- Khuyen nghi: follow tin tuc tu Bo TT&TT va Hoi Truyen thong So Viet Nam
-- An toan nhat: disclose som con hon bi phat sau
+> **Reference file** — Load khi dung `24-ai-avatar-production`, `25-voice-clone-podcast`, `04-script-video` (Personal Brand Mode), `76-van-hanh-san-tmdt` (livestream co AI host).
+> **Cap nhat:** 2026-10 · Thi truong: Viet Nam.
+> **KHONG PHAI TU VAN PHAP LY.** Cau hoi rui ro cao -> hoi luat su.
+> File nay la **how-to gan nhan thuc te**. Noi dung luat nam o `skills/vi/references/phap-ly-marketing-vn.md` — khong chep lai o day.
 
 ---
 
-## 2. Quy Tac 3 Tang Disclose
+## 1. Can Cu Phap Ly (tom tat)
 
-| Tang | Khi nao | Vi du | Bat buoc? |
-|------|---------|-------|-----------|
-| **BAT BUOC** | Quang cao thuong mai, sponsored content, affiliate marketing | Ads Facebook/TikTok, product review tra tien, sponsored post | Co — Nghi dinh 147/2024 + Luat Quang cao |
-| **NEN** | Content thuong khong tra tien, personal brand building | Bai chia se kien thuc, podcast, video giao duc | Khong bat buoc nhung KHUYEN NGHI manh — tang trust |
-| **TUY CHON** | Test noi bo, draft chua publish, private group kin | A/B test creative, internal review, group noi bo cong ty | Khong can — nhung nen ghi chu noi bo de team biet |
+- **Luat Tri tue nhan tao 134/2025/QH15, Dieu 11** (hieu luc 2026-03-01): minh bach — nguoi dung phai biet dang tuong tac voi AI; am thanh / hinh anh / video do AI tao hoac chinh sua mo phong nguoi that hoac tai hien su kien that phai co dau hieu nhan biet.
+- **ND 142/2026/ND-CP, Dieu 18** (hieu luc 2026-05-01): thong bao va nhan nhin thay duoc tren noi dung AI da ra cong chung **ma co the gay nham lan** ve tinh xac thuc cua su kien, con nguoi hoac nguon goc. Ngoai le: chinh sua ky thuat chi nang chat luong am thanh / hinh anh; noi dung chi dung noi bo.
+- **KOL/KOC va quang cao** (cong bo "quang cao" truoc va trong khi quang cao): xem hub muc 3 — day la nghia vu **rieng**, khong thay the nhan AI.
+- Chi tiet va cap nhat: `skills/vi/references/phap-ly-marketing-vn.md` **muc 4**. Kiem tra van ban goc tai vbpl.vn / thuvienphapluat.vn.
 
-### Chi tiet tung tang
-
-**Tang BAT BUOC:**
-- Moi quang cao dung AI avatar/voice PHAI co disclosure
-- Vi tri: noi nguoi dung thay TRUOC khi tuong tac (dau video, dau caption)
-- Ngon ngu: tieng Viet ro rang, khong an/giau
-
-**Tang NEN:**
-- Khong bat buoc nhung 73% nguoi tieu dung VN (khao sat 2025) tin tuong hon khi brand minh bach
-- Disclosure = competitive advantage, khong phai bat loi
-- Dat cuoi video hoac trong bio/description la du
-
-**Tang TUY CHON:**
-- Chi ap dung cho noi dung noi bo
-- Van nen ghi chu de doi ngu biet dau la AI, dau la thuc
+> Tach ro: muc 1 la **nghia vu phap ly** (theo hub). Tu muc 2 tro di la **thuc hanh tot** — khuyen nghi van hanh, khong phai trich luat.
 
 ---
 
-## 3. Khi Nao TUYET DOI KHONG Dung AI Avatar
+## 2. Quy Tac 3 Tang Disclose (thuc hanh tot)
 
-### Truong hop 1: Impersonate nguoi khac
-- **Vi pham:** Luat So huu tri tue 2005, Bo luat Hinh su 2015 (dieu 174 — lua dao)
-- **Vi du:** Tao avatar giong nguoi noi tieng de ban hang
-- **Hau qua:** Truy to hinh su, boi thuong thiet hai, mat uy tin vinh vien
+| Tang | Khi nao | Vi du | Ghi chu |
+|------|---------|-------|---------|
+| **BAT BUOC gan nhan AI** (nghia vu phap ly) | AI mo phong nguoi that / tai hien su kien that, hoac co the gay nham lan, va ra cong chung; chatbot tra loi khach (nguoi dung phai biet dang noi voi AI) | Avatar / clone giong nguoi that dung trong ads, review, chatbot Zalo OA | Can cu: hub muc 4 |
+| **BAT BUOC cong bo quang cao** (nghia vu rieng, khong phai nhan AI) | Quang cao, sponsored, affiliate — dung AI hay khong | Dong "quang cao" / "hop tac voi [brand]" | Can cu: hub muc 3 |
+| **NEN** (thuc hanh tot / chinh sach nen tang) | Noi dung AI khac khong thuoc 2 dong tren: personal brand, anh minh hoa, ads dung hinh AI khong mo phong nguoi that | Bai chia se kien thuc, podcast, video giao duc | Khong phai nghia vu luat, nhung giu trust — nen lam |
+| **TUY CHON** | Test noi bo, draft chua publish, group kin noi bo | A/B test creative, internal review | Ngoai le "chi dung noi bo" cua hub; van nen ghi chu noi bo |
 
-### Truong hop 2: Tin gia / Deepfake chinh tri
-- **Vi pham:** Nghi dinh 15/2020 (xu phat hanh chinh), Bo luat Hinh su
-- **Vi du:** Tao video gia chinh tri gia de lan truyen
-- **Hau qua:** Phat tien 20-30 trieu VND, co the bi truy to hinh su
-
-### Truong hop 3: Testimonial gia
-- **Vi pham:** Luat Quang cao 2012, Luat Bao ve quyen loi nguoi tieu dung 2023
-- **Vi du:** Tao AI avatar gia danh khach hang review san pham
-- **Hau qua:** Phat tien 60-80 trieu VND, go quang cao, mat trust khach hang
-
-### Truong hop 4: Noi dung y te / tai chinh khong disclaimer
-- **Vi pham:** Luat Quang cao (quang cao y te), Nghi dinh 96/2023
-- **Vi du:** AI avatar tu van suc khoe, khuyen mua co phieu ma khong ghi disclaimer
-- **Hau qua:** Phat nang, co the bi truy cuu trach nhiem neu khach hang thiet hai
+- Vi tri: noi nguoi xem thay **truoc khi tuong tac** (tu giay dau, dong dau caption). Khong an, khong de chung trong dong hashtag.
+- Ngon ngu: tieng Viet ro rang, dung tu "AI" hoac "tao bang AI".
+- Disclosure la loi the canh tranh (minh bach), khong phai bat loi. Khong co so lieu thi truong thi dung `[CAN SO LIEU THAT]`, khong tu nghi ra phan tram.
 
 ---
 
-## 4. Template Disclosure Cho Tung Nen Tang
+## 3. Bang Nhan Theo Dinh Dang (thuc hanh tot)
+
+| Dinh dang | Nhan o dau | Khi nao (tu lan tiep xuc dau tien) | Cau mau |
+|-----------|------------|------------------------------------|---------|
+| **Video** (co hinh AI / clone) | Text tren man hinh + dong dau caption | Tu giay dau, giu du lau de doc het | "Video nay co hinh anh/giong noi tao bang AI" |
+| **Anh tinh** (AI tao) | Goc anh hoac dong dau caption | Ngay khi anh hien thi, nhat la khi co the tuong la anh that | "Anh minh hoa tao bang AI" |
+| **Giong AI / audio** (podcast, voice-over) | Cau noi o dau file + mo ta tap | Cau dau tien truoc noi dung chinh | "Giong doc trong tap nay do AI tao, kich ban cua [Ten ban]" |
+| **AI avatar / digital human** | Badge co dinh tren khung hinh suot video | Tu giay dau den het | Badge "AI Avatar" hoac "Nhan vat AI" |
+| **AI host livestream** | Badge co dinh + loi noi dau phien + nhac lai giua phien | Truoc khi host bat dau ban hang | "Ban dang xem host AI. Chu tai khoan: [Ten]" (kem cong truoc live: hub muc 5) |
+| **Chatbot / tro ly AI** | Tin nhan mo dau + ten hien thi | Truoc cau tra loi dau tien | "Ban dang chat voi tro ly AI. Can gap nhan vien, go 'nhan vien'" |
+
+> Chinh mau, khu nhieu, nang chat luong khong can nhan (ngoai le ky thuat, hub muc 4). Dau hieu may doc (metadata, C2PA) la them, khong thay nhan nhin thay duoc.
+
+---
+
+## 4. Nhan Cua Nen Tang
+
+Moi muc duoi day la **chinh sach nen tang** — kiem tra Help Center [2026-10]; ten nut va vi tri co the doi.
+
+| Nen tang | Cong cu nhan | Nguon |
+|----------|--------------|-------|
+| TikTok | Nhan "AI-generated" (bat khi dang) | chinh sach nen tang — kiem tra Help Center [2026-10] |
+| Meta (Facebook / Instagram) | "AI info" | chinh sach nen tang — kiem tra Help Center [2026-10] |
+| YouTube | Khai bao noi dung bi thay doi / tong hop (altered or synthetic content) trong YouTube Studio | chinh sach nen tang — kiem tra Help Center [2026-10] |
+
+Nhan nen tang **bo sung**, khong thay nhan tren man hinh / caption cua ban.
+
+---
+
+## 5. Template Disclosure Cho Tung Nen Tang
 
 ### TikTok
 
 **Bio line:**
 ```
-Mot so video su dung cong nghe AI Avatar | Noi dung chinh chu
+Mot so video co AI Avatar | Noi dung do [Ten ban] bien soan
 ```
 
-**Video tag:** Dung hashtag #AIAvatar #AIGenerated
-
-**In-video text overlay (3 giay dau):**
+**Text overlay (3 giay dau):**
 ```
-Video nay su dung cong nghe AI
-Hinh anh & giong noi dua tren [Ten ban] thuc te
+Video nay co hinh anh/giong noi tao bang AI
 ```
-
----
 
 ### YouTube
 
-**Description box (dong dau):**
+**Description (dong dau):**
 ```
-Luu y: Video nay duoc tao voi su ho tro cua cong nghe AI Avatar.
-Hinh anh va giong noi dua tren [Ten ban] thuc te.
-Noi dung duoc kiem duyet va phe duyet boi [Ten ban].
-```
-
-**End screen note (text card 5 giay cuoi):**
-```
-Video su dung AI Avatar — Noi dung chinh chu boi [Ten ban]
+Luu y: Video nay duoc tao voi ho tro AI Avatar.
+Hinh anh va giong noi dua tren [Ten ban] (da dong y).
+Noi dung do [Ten ban] bien soan va duyet.
 ```
 
-**Community Guidelines:** Tick chon "Altered content" trong YouTube Studio neu co
-
----
+**End screen (5 giay cuoi):** `Video dung AI Avatar — Noi dung boi [Ten ban]`
 
 ### Facebook / Instagram
 
-**Post text (cuoi bai):**
+**Post text (dau hoac cuoi bai):**
 ```
-Noi dung nay duoc tao voi ho tro cong nghe AI Avatar.
-Giong noi va hinh anh dua tren toi (nguoi that), noi dung do toi bien soan.
-```
-
-**Story sticker:** Dung text sticker "Made with AI" hoac "AI Avatar"
-
-**Ad disclosure (bat buoc cho ads):**
-```
-Quang cao nay su dung cong nghe AI de tao hinh anh/giong noi.
-Noi dung phan anh san pham/dich vu thuc te cua [Ten thuong hieu].
+Noi dung nay tao voi ho tro AI Avatar. Giong noi va hinh anh dua tren toi (nguoi that), noi dung do toi bien soan.
 ```
 
----
+**Ads:** dat dong gan nhan trong primary text va tren video. Dong cong bo "quang cao" van phai co (hub muc 3).
+```
+Quang cao nay dung AI de tao hinh anh/giong noi. Thong tin phan anh san pham/dich vu thuc cua [Ten thuong hieu].
+```
 
 ### LinkedIn
 
-**Post note (cuoi bai):**
 ```
-*Luu y: Video nay su dung cong nghe AI Avatar de toi uu hoa quy trinh
-san xuat noi dung. Noi dung va quan diem la cua toi.*
+*Luu y: Video nay dung AI Avatar de toi uu san xuat. Noi dung va quan diem la cua toi.*
 ```
 
-**Profile banner:** Them dong "Content co su ho tro cua AI" trong phan About
+### Website ca nhan
+
+**Footer:** `Mot so noi dung tren website dung AI Avatar va AI Voice. Noi dung do [Ten ban] duyet truoc khi dang.`
+
+**Trang About:** mot doan rieng noi ro AI chi ho tro phan hinh anh/giong noi; bien soan va quan diem la cua ban.
 
 ---
 
-### Personal Website
+## 6. Khi Nao KHONG Dung AI Avatar
 
-**Footer disclaimer (moi trang co AI content):**
-```
-Mot so noi dung tren website su dung cong nghe AI Avatar va AI Voice.
-Tat ca noi dung duoc [Ten ban] kiem duyet va phe duyet truoc khi dang.
-```
+Day la **rui ro / thuc hanh tot**, khong phai danh sach dieu luat. Hau qua cu the (muc phat, truy cuu) — hoi luat su.
 
-**About page (doan rieng):**
-```
-Ve cong nghe: Toi su dung AI Avatar va Voice AI nhu cong cu ho tro san
-xuat noi dung. Moi bai viet, video, podcast deu do toi bien soan noi
-dung. AI chi ho tro phan hinh anh va giong noi de tang hieu qua san xuat.
-```
+1. **Gia danh nguoi khac** (avatar / voice clone giong nguoi noi tieng, doi tac, nhan su cu) khi chua co **van ban dong y** nguoi do. Rui ro: tranh chap hinh anh / giong noi, bi go noi dung, mat uy tin.
+2. **Tin gia / deepfake chinh tri hoac nguoi that**: khong lam. Day la noi dung luat AI nham vao.
+3. **Testimonial gia**: avatar dong vai "khach hang" review san pham. Xem hub muc 3 (nguoi chuyen tai khong duoc quang cao san pham chua dung) va muc 7 (lan ranh do).
+4. **Y te / tai chinh** khong co disclaimer va khong co nguoi co chuyen mon chiu trach nhiem. Doi chieu `74-copy-hai-lop/references/bien-gioi-va-nguon.md` muc "Luat va rui ro VN".
+5. **Clone giong / mat that** cua nguoi khac khi chua co hop dong ro pham vi, thoi han, quyen rut lai — xem `25-voice-clone-podcast`, `75-hop-tac-koc-affiliate`.
 
 ---
 
-## 5. Case Study VN 2025 (Fictional — Minh Hoa)
+## 7. Tinh Huong Minh Hoa (gia dinh, khong phai du lieu that)
 
-### Case 1: Coach Tuan — AI Avatar bi khach complain
-
-**Boi canh:** Coach Tuan dung HeyGen lam video kien thuc marketing, dang TikTok 3 video/ngay.
-Khong co disclosure nao.
-
-**Van de:** Sau 2 thang, follower phat hien video la AI vi lip-sync loi. Comment tieu cuc
-tang 40%, un-follow 15%. Mot so khach DM hoi "Anh co that khong hay la bot?"
-
-**Fix:** Coach Tuan them disclosure vao bio, ghim comment giai thich, lam 1 video real face
-giai thich ly do dung AI. Ket qua: retention phuc hoi sau 3 tuan, trust tang vi minh bach.
-
-**Bai hoc:** Disclose som = khach hang ton trong. An giau = mat trust khi bi phat hien.
-
-### Case 2: Creator Linh — Voice clone khong xin phep
-
-**Boi canh:** Creator Linh clone giong cua mot KOL noi tieng de lam podcast, khong xin phep.
-Upload len Spotify va YouTube, thu hut 50K luot nghe.
-
-**Van de:** KOL phat hien, report. YouTube go video, Spotify go podcast. Linh bi cam
-monetization 6 thang. KOL doa kien vi vi pham quyen hinh anh va giong noi.
-
-**Fix:** Khong co fix — damage da xay ra. Linh phai xin loi cong khai va bat dau lai tu dau.
-
-**Bai hoc:** KHONG BAO GIO clone giong nguoi khac khi chua co van ban dong y.
-
-### Case 3: Founder Mai — Hybrid approach thanh cong
-
-**Boi canh:** Founder Mai dung cach ket hop: 60% video real face (livestream, Q&A, behind the
-scenes) + 40% AI avatar (kien thuc ngan, tip nhanh, recap). Luon co disclosure ro rang.
-
-**Van de:** Khong co van de. Khach hang biet ro dau la real, dau la AI.
-
-**Ket qua:** Trust score cao (survey 8.5/10), content output tang 3x, chi phi giam 50%.
-Khong bi flag boi bat ky nen tang nao.
-
-**Bai hoc:** Hybrid + minh bach = cong thuc tot nhat cho personal brand.
+- **Giau AI roi bi phat hien:** creator dung avatar dang video hang ngay, khong gan nhan. Nguoi xem phat hien qua loi dong bo moi, comment nghi ngo tang. Cach go: them nhan vao bio, ghim comment giai thich, lam mot video mat that noi ro vi sao dung AI. So lieu: `[CAN SO LIEU THAT]`.
+- **Clone giong khong xin phep:** creator clone giong mot KOL de lam podcast. Nen tang go noi dung khi bi bao cao. Bai hoc: khong clone khi chua co van ban dong y.
+- **Hybrid minh bach:** founder ket hop video mat that (live, Q&A, hau truong) voi video avatar ngan (tip, recap), luon gan nhan ro. Bai hoc: tron that + AI duoc, mien la khach biet dau la dau.
 
 ---
 
-## 6. Decision Tree: "Toi Co Can Disclose Khong?"
+## 8. Decision Tree: "Toi Co Can Gan Nhan Khong?"
 
 ```mermaid
 flowchart TD
-    A[Noi dung cua ban co su dung AI Avatar/Voice khong?] -->|Khong| B[KHONG CAN disclosure]
-    A -->|Co| C{Noi dung co tinh thuong mai?}
+    A[Noi dung co dung AI Avatar/Voice/hinh AI khong?] -->|Khong| B[Khong can nhan AI]
+    A -->|Co| X{Chi la chinh mau / khu nhieu / noi bo?}
+    X -->|Co| Y[Khong can nhan nhin thay duoc — ghi chu noi bo]
+    X -->|Khong| C{Noi dung co tinh thuong mai?}
 
-    C -->|Co — ads, sponsored, affiliate| D[BAT BUOC disclose]
-    C -->|Khong| E{Noi dung dang public?}
+    C -->|Co — ads, sponsored, affiliate| D[Cong bo quang cao - hub muc 3. Nhan AI: bat buoc neu mo phong nguoi that / gay nham lan - hub muc 4, con lai NEN]
+    C -->|Khong| E{Noi dung ra cong chung?}
 
-    E -->|Co — social media, website, podcast| F{Ban muon xay trust lau dai?}
-    E -->|Khong — noi bo, private group| G[TUY CHON — khong bat buoc]
+    E -->|Co — social, website, podcast| F{AI mo phong nguoi that hoac su kien that?}
+    E -->|Khong — noi bo| G[TUY CHON — ghi chu noi bo]
 
-    F -->|Co| H[NEN disclose — tang trust]
-    F -->|Khong| I[Khong bat buoc — nhung van nen]
+    F -->|Co| H[Gan nhan AI — hub muc 4]
+    F -->|Khong| I[NEN gan nhan — tang trust]
 
-    D --> J[Dung template o muc 4]
+    D --> J[Dung bang muc 3 + template muc 5]
     H --> J
-    G --> K[Ghi chu noi bo de team biet]
+    I --> J
 ```
 
 ---
 
-## 7. Disclosure Copy Template — 5 Mau San Dung
+## 9. Disclosure Copy Template — 5 Mau San Dung
 
 ### Mau 1 — Ngan (Story, Reels, TikTok overlay)
 ```
@@ -247,22 +170,32 @@ Video su dung cong nghe AI Avatar
 Noi dung nay duoc tao voi ho tro AI. Giong noi va hinh anh dua tren [Ten ban] thuc te.
 ```
 
-### Mau 3 — Dai (Cho quang cao thuong mai)
+### Mau 3 — Dai (Quang cao thuong mai)
 ```
-THONG BAO: Video quang cao nay su dung cong nghe AI Avatar va AI Voice de tao hinh
-anh va giong noi. Noi dung phan anh san pham/dich vu thuc te cua [Ten thuong hieu].
-Moi thong tin trong video da duoc [Ten ban] kiem duyet va xac nhan. Hinh anh dai dien
-duoc tao tu anh chup thuc te cua [Ten ban] voi su ho tro cua cong nghe AI.
+THONG BAO: Video quang cao nay dung AI Avatar va AI Voice de tao hinh anh va giong noi.
+Noi dung phan anh san pham/dich vu thuc te cua [Ten thuong hieu]. Thong tin trong video
+da duoc [Ten ban] kiem duyet va xac nhan.
 ```
 
-### Mau 4 — Tieng Anh (International audience)
+### Mau 4 — Tieng Anh (khan gia quoc te)
 ```
 This content was created with AI avatar technology. Voice and likeness are based on
 a real person. All content is reviewed and approved by the creator.
 ```
 
-### Mau 5 — Song ngu VN + EN (Da ngon ngu)
+### Mau 5 — Song ngu VN + EN
 ```
 Video su dung cong nghe AI | Noi dung chinh chu boi [Ten ban]
 This video uses AI technology | Authentic content by [Your name]
 ```
+
+---
+
+## 10. Checklist Truoc Khi Dang
+
+- [ ] Nhan AI nhin thay duoc tu giay dau (video) hoac dong dau (caption).
+- [ ] Avatar / livestream co badge co dinh; chatbot co tin nhan mo dau.
+- [ ] Neu la quang cao / hop tac: dong cong bo "quang cao" rieng (hub muc 3).
+- [ ] Da bat nhan cua nen tang (muc 4) va kiem tra Help Center [2026-10].
+- [ ] Giong / mat that cua nguoi khac: co van ban dong y.
+- [ ] Khong co testimonial gia, khong co claim thieu bang chung.

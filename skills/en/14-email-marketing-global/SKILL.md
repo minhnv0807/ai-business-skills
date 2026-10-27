@@ -2,7 +2,7 @@
 name: 14-email-marketing-global
 description: "Use when the user needs email or lifecycle automation — welcome series, nurture, abandoned cart, re-engagement, broadcast, and transactional flows with subject lines, segmentation, cadence, and deliverability, plus legal variants: CAN-SPAM for US, GDPR opt-in for EU, PDPA for SEA, LGPD for LATAM. Covers Klaviyo, Mailchimp, and ActiveCampaign. Trigger on 'email marketing', 'welcome sequence', 'drip campaign', 'newsletter', 'abandoned cart emails', 'nobody opens our emails'. Not for — coding HTML that renders correctly in Outlook, see `49-html-email-template-global`; cold outbound to B2B prospects, see `33-b2b-lead-gen-global`; refer-a-friend loops, see `18-referral-program-global`."
 metadata:
-  version: 1.0.1
+  version: 1.0.2
   category: operations
 license: MIT
 triggers:
@@ -21,7 +21,9 @@ related:
 
 # Email Marketing (Global)
 
-> Email is the only owned channel — algorithm-proof, free to re-reach. **But legal differs HUGELY by region: US allows opt-out, EU mandates opt-in, SEA/LATAM mostly require opt-in.** Pick the right variant — getting this wrong can cost up to EUR 20M (GDPR) or USD 51,744 per email (CAN-SPAM).
+> Email is the only owned channel — algorithm-proof, free to re-reach. **But legal differs HUGELY by region: US allows opt-out, EU mandates opt-in, SEA/LATAM mostly require opt-in.** Pick the right variant — getting this wrong means regulatory penalties in every region (verify current amounts on the primary sources).
+
+> Operating rules: `skills/en/references/operating-rules-global.md` (esp. rules 2, 3, 7).
 
 ---
 
@@ -38,7 +40,7 @@ related:
 
 ### Who is this NOT for?
 
-- **Vietnam-only email marketing** -> Use `14-email-marketing` (VN skill) — covers PDPA Vietnam (Decree 13/2023)
+- **Vietnam-only email marketing** -> Use `14-email-marketing` (VN skill) — covers Vietnam's Personal Data Protection Law 91/2025/QH15 and Decree 356/2025/ND-CP (effective 2026-01-01), see the VN legal hub `skills/vi/references/phap-ly-marketing-vn.md`
 - **Transactional-only (order confirms, password reset)** -> Use ESP defaults; transactional emails have softer consent rules in most regions
 - **SMS / WhatsApp / push** -> Different channels with different laws (TCPA US, GDPR EU)
 
@@ -48,18 +50,18 @@ This skill produces ONE email marketing strategy file with 4 components: subscri
 
 ### 3 common errors
 
-1. **Reusing US opt-out logic in EU** -> GDPR violation; fines up to EUR 20M or 4% global revenue
+1. **Reusing US opt-out logic in EU** -> GDPR violation; regulatory fines (verify current amounts on EUR-Lex)
 2. **Skipping double opt-in for EU/Brazil/SEA** -> Cannot prove consent if challenged; subscribers can demand deletion
-3. **Missing physical address in footer** -> CAN-SPAM violation US; EUR 51,744 per email
+3. **Missing physical address in footer** -> CAN-SPAM violation in the US; per-email penalties (verify current amount on ftc.gov)
 
 ---
 
 ## Why do you need this skill?
 
-Email is the highest-ROI channel (USD 36-42 per USD 1 spent globally), but legal compliance is non-negotiable. Without the right region variant:
-- US brand using EU opt-in flow -> losing 30-50% of subscribers unnecessarily
+Email is often a high-ROI channel (vendor-reported ROI figures vary widely; [REAL DATA NEEDED] — use your own account history), but legal compliance is non-negotiable. Without the right region variant:
+- US brand using EU opt-in flow -> may lose subscribers unnecessarily to extra friction
 - EU brand using US opt-out flow -> direct GDPR violation
-- LATAM brand ignoring LGPD -> BRL 50M penalty risk in Brazil
+- LATAM brand ignoring LGPD -> LGPD fines can be large; check ANPD
 - SEA brand mixing rules -> PDPA Singapore + per-country differences
 
 Pick the right variant once -> all downstream emails compliant by default.
@@ -102,13 +104,13 @@ Where do MOST of your subscribers live?
     |-- US / Canada
     |       --> 01-us.md    (CAN-SPAM Act 2003, opt-out OK, CCPA/state laws)
     |-- EU / EEA / UK
-    |       --> 02-eu.md    (GDPR + ePrivacy, opt-in MANDATORY, EUR 20M penalty)
+    |       --> 02-eu.md    (GDPR + ePrivacy, opt-in MANDATORY)
     |-- Southeast Asia (SG, MY, ID, TH, PH)
     |       --> 03-sea.md   (PDPA Singapore + per-country, mostly opt-in)
     |-- Latin America (BR, MX, AR, CO, CL)
     |       --> 04-latam.md (LGPD Brazil + LFPDPPP Mexico, opt-in mandatory)
     |-- Vietnam only
-    |       --> Use `14-email-marketing` (VN skill) — Decree 13/2023
+    |       --> Use `14-email-marketing` (VN skill) — Law 91/2025/QH15 + Decree 356/2025/ND-CP
     |-- Multi-region
             --> Default to STRICTEST applicable region (usually EU GDPR)
 ```
@@ -117,7 +119,7 @@ Where do MOST of your subscribers live?
 
 If you sell in US + EU + LATAM, you can either:
 1. **Run separate sequences per region** (best — but operationally heavy)
-2. **Apply EU GDPR rules globally** (safe — but loses 20-30% US subscribers due to double opt-in friction)
+2. **Apply EU GDPR rules globally** (safe — but you may lose some US subscribers to double opt-in friction; measure it on your own list)
 
 For most early-stage brands, option 2 is the safer default. Document the decision in your DPA.
 

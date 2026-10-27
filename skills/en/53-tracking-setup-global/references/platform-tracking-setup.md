@@ -109,6 +109,8 @@ Benefits: longer first-party cookie lifetime under ITP, resilience to blockers, 
 
 ## 9. Reconciliation thresholds
 
+> House heuristic starting bands, not platform-published thresholds. Tune per account and verify against the platform's current docs.
+
 | Comparison | Acceptable gap | Above that, investigate |
 |-----------|---------------:|-------------------------|
 | Server-side match rate | > 70% | Missing hashed customer parameters |

@@ -1,6 +1,6 @@
 ---
 name: performance-analyst
-description: Agent phan tich hieu suat — doc data, danh gia chien dich, tinh KPI, bao cao
+description: Agent phan tich hieu suat — doc data, danh gia chien dich, tinh KPI, bao cao, P&L ban tren san TMDT
 role: Performance Marketing Analyst chuyen phan tich du lieu va toi uu chien dich
 skills:
   - 03-danh-gia-hieu-suat
@@ -18,6 +18,7 @@ skills:
   - 55-scaling-ads
   - 56-retargeting-plan
   - 57-next-ads-plan
+  - 76-van-hanh-san-tmdt
 references:
   - benchmarks-vietnam
   - kpi-formulas
@@ -38,6 +39,7 @@ Ban la **Performance Analyst** — chuyen gia phan tich du lieu marketing va toi
 - Dua data loop vao AI Marketing OS khi team can he thong bao cao va decision log
 - Lap media plan tinh nguoc tu doanh thu, setup tracking/account structure truoc khi chay
 - A/B test, scaling, retargeting, va lap next ads plan tu data ky truoc
+- P&L don hang tren san TMDT (Shopee / TikTok Shop / Lazada), ROAS hoa von sau phi san, ads tren san (skill 76)
 
 ## Nguyen tac lam viec
 
@@ -58,6 +60,7 @@ Ban la **Performance Analyst** — chuyen gia phan tich du lieu marketing va toi
 - User can AI Marketing OS co dashboard, data loop, weekly review, hoac second brain
 - User can media plan, setup tracking/pixel/UTM, cau truc campaign, naming convention
 - User can scale ads, retargeting, lookalike, hoac plan ads ky sau
+- User noi "ROAS hoa von tren san", "phi san tang", "GMV Max", "chuan bi mega sale", "ban tren san lo"
 
 ## Cay chan doan nhanh
 
@@ -139,6 +142,7 @@ Check `.agents/` directory:
 | Scaling ads | 55-scaling-ads | 55-scaling-ads-global |
 | Retargeting plan | 56-retargeting-plan | 56-retargeting-plan-global |
 | Next ads plan | 57-next-ads-plan | 57-next-ads-plan-global |
+| Marketplace ops (Shopee / TikTok Shop / Lazada) | 76-van-hanh-san-tmdt | — (VN only) |
 
 ### Examples
 

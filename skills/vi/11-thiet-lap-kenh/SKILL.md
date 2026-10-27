@@ -1,8 +1,8 @@
 ---
 name: 11-thiet-lap-kenh
-description: "Dung khi can MO va thiet lap kenh marketing tu con so khong — TikTok Brand, Zalo OA, Fanpage, Instagram Business, Google Business Profile, TikTok Shop, tai khoan email: checklist setup 4 giai doan, thong so ky thuat, lien ket cheo va ke hoach 30 ngay dau. Kich hoat khi user nhac 'thiet lap kenh', 'tao fanpage moi', 'dang ky Zalo OA', 'mo TikTok Shop', 'setup kenh tu dau', 'chua co kenh nao het', 'kenh moi lap nen lam gi truoc', 'mo kenh moi'. Khong dung cho — cau truc tai khoan quang cao thi dung skill 52-account-structure; gan pixel va do chuyen doi thi dung skill 53-tracking-setup; len lich dang bai thi dung skill 01-lich-noi-dung; van hanh email va Zalo broadcast thi dung skill 14-email-marketing."
+description: "Dung khi can MO va thiet lap kenh marketing tu con so khong — TikTok Brand, Zalo OA, Fanpage, Instagram Business, Google Business Profile, TikTok Shop, tai khoan email: checklist setup 4 giai doan, thong so ky thuat, lien ket cheo va ke hoach 30 ngay dau. Kich hoat khi user nhac 'thiet lap kenh', 'tao fanpage moi', 'dang ky Zalo OA', 'mo TikTok Shop', 'setup kenh tu dau', 'chua co kenh nao het', 'kenh moi lap nen lam gi truoc', 'mo kenh moi'. Khong dung cho — cau truc tai khoan quang cao thi dung skill 52-account-structure; gan pixel va do chuyen doi thi dung skill 53-tracking-setup; len lich dang bai thi dung skill 01-lich-noi-dung; van hanh email va Zalo broadcast thi dung skill 14-email-marketing; van hanh gian hang dang chay va tinh P&L tren san TMDT thi dung skill 76-van-hanh-san-tmdt."
 metadata:
-  version: 2.0.2
+  version: 2.1.0
   category: operations
 triggers:
   - "thiet lap kenh"
@@ -22,6 +22,8 @@ related:
 ---
 
 # Thiet Lap Kenh A-Z
+
+> Quy tac van hanh chung: `skills/vi/references/quy-tac-van-hanh.md` (dac biet quy tac 2, 3, 7).
 
 ## Thu thap thong tin
 
@@ -273,7 +275,7 @@ Moi kenh theo 4 giai doan:
 | Toi uu listing san pham | Tieu de co keyword, anh dep, mo ta day du, gia canh tranh | [ ] |
 | Setup voucher cua hang | Giam gia cho don dau, freeship, combo | [ ] |
 | Ket noi TikTok Brand Account | Link shop voi tai khoan brand de gan san pham vao video | [ ] |
-| Setup affiliate | Cho phep creator ban san pham cua ban, hoa hong 5–15% | [ ] |
+| Setup affiliate | Cho phep creator ban san pham cua ban, hoa hong affiliate: phi thay doi tu 05/2026 [BAO CAO] — kiem tra Seller Center; tinh P&L o skill 76 | [ ] |
 
 ### Giai doan 3 — Ket noi & Tich hop (Ngay 7–14)
 

@@ -1,8 +1,8 @@
 ---
 name: 10-tinh-kpi-nguoc
-description: "Dung khi can tinh nguoc tu muc tieu doanh thu ra so lead can, CPL toi da va ngan sach phai chi — kem 3 kich ban va nguong healthy tung buoc pheu. Kich hoat khi user nhac 'tinh KPI nguoc', 'CPL toi da la bao nhieu', 'can bao nhieu ngan sach', 'tinh nguoc tu doanh thu', 'muc tieu bao nhieu don', 'break-even ROAS'. Khong dung cho — phan bo ngan sach da co ra tung kenh va thang thi dung skill 61-budget-planning; lap media plan chi tiet theo funnel thi dung skill 54-media-plan."
+description: "Dung khi can tinh nguoc tu muc tieu doanh thu ra so lead can, CPL toi da va ngan sach phai chi — kem 3 kich ban va nguong healthy tung buoc pheu. Kich hoat khi user nhac 'tinh KPI nguoc', 'CPL toi da la bao nhieu', 'can bao nhieu ngan sach', 'tinh nguoc tu doanh thu', 'muc tieu bao nhieu don', 'break-even ROAS'. Khong dung cho — phan bo ngan sach da co ra tung kenh va thang thi dung skill 61-budget-planning; lap media plan chi tiet theo funnel thi dung skill 54-media-plan; ROAS hoa von tren san TMDT sau phi san thi dung skill 76-van-hanh-san-tmdt."
 metadata:
-  version: 2.1.1
+  version: 2.2.0
   category: performance
 triggers:
   - "tinh KPI"
@@ -87,10 +87,11 @@ Hai huong tinh o tren cho biet **can bao nhieu tien**. Phan nay cho biet **bao n
 ```
 So don can          = Doanh thu muc tieu / AOV
 So lead can         = So don can / Close rate (Lead -> Mua)
-Max CPL (hoa von)   = (Doanh thu muc tieu x Gross margin %) / So lead can
+Max CPL (hoa von)   = (Doanh thu muc tieu x Bien dong gop %) / So lead can
 CPL target (co lai) = Max CPL / 1.5
-Break-even ROAS     = 1 / Gross margin %
+Break-even ROAS     = 1 / Bien dong gop %
 Target ROAS         = Break-even ROAS x 1.5   (bien an toan)
+(Ban tren san TMDT: bien dong gop phai tru phi san → skill 76-van-hanh-san-tmdt)
 Ngan sach ads can   = So lead can x CPL target
 CAC                 = Tong chi phi ads / So khach hang moi
 LTV                 = AOV x Tan suat mua/nam x So nam giu chan
@@ -98,11 +99,11 @@ LTV : CAC           = LTV / CAC          (nguong khoe: >= 3:1)
 Payback period      = CAC / (Loi nhuan gop moi khach moi thang)
 ```
 
-**Gross margin** = (Doanh thu - COGS) / Doanh thu. Khong biet gross margin thi khong tinh duoc gi ca — hoi user truoc.
+**Bien dong gop truoc ads** = (Gia ban - gia von - phi bien doi) / Gia ban, phi bien doi gom van chuyen, thanh toan, hoan hang, phi san (cach tinh giong `76-van-hanh-san-tmdt`). Dung gross margin thuan (chi tru gia von) se danh gia Max CPL va Break-even ROAS qua lac quan. Khong biet bien dong gop thi khong tinh duoc gi ca — hoi user truoc.
 
 ### Vi du so cu the — khoa hoc online
 
-Gia dinh: AOV 3,000,000d · Gross margin 70% · Close rate Lead->Mua 30% · Muc tieu 300,000,000d/thang.
+Gia dinh: AOV 3,000,000d · Bien dong gop truoc ads 70% · Close rate Lead->Mua 30% · Muc tieu 300,000,000d/thang.
 
 | Buoc | Cong thuc | Ket qua |
 |------|----------|---------|
@@ -115,7 +116,7 @@ Gia dinh: AOV 3,000,000d · Gross margin 70% · Close rate Lead->Mua 30% · Muc 
 | Ngan sach ads | 334 x 419,000 | **~140,000,000d** |
 | Kiem tra lai | 300,000,000 / 140,000,000 | ROAS 2.14x — khop |
 
-**Doc so nay the nao:** CPL cham 628K la hoa von, cham 419K la co lai. Neu thi truong dang cho CPL 700K → khong chay, phai sua offer, sua AOV, hoac sua gross margin truoc.
+**Doc so nay the nao:** CPL cham 628K la hoa von, cham 419K la co lai. Neu thi truong dang cho CPL 700K → khong chay, phai sua offer, sua AOV, hoac sua bien dong gop truoc.
 
 ### LTV : CAC — quyet dinh co duoc scale khong
 
@@ -136,10 +137,10 @@ Moi buoc trong pheu co nguong rieng. Kiem hang ngay khi ads dang chay; buoc nao 
 
 | Chi so | Khoe | Canh bao | DUNG | Hanh dong khi cham nguong dung |
 |--------|------|---------|------|-------------------------------|
-| CPL / CPMess | <= target | > 1.5x target | > 2x target | Pause adset, chay `21-audit-ads-performance` |
+| CPL / CPMess | <= 1.0x target | 1.0-1.5x target; > 1.5x lien tuc 7 ngay = doi creative/audience | > 3.0x target sau khi du data (Buoc 0), hoac 0 chuyen doi khi spend >= 3x | De xuat pause qua quy tac 7 (draft block); tim nguyen nhan → `03-danh-gia-hieu-suat`. Nguong goc: `skills/vi/references/quality-gates-vn.md` Gate 1 |
 | ROAS | >= Target ROAS | < Break-even x 0.8 | < Break-even | Review offer va gia truoc khi doi creative |
 | CTR (Meta) | >= 1.5% | < 0.8% | < 0.5% | Thay creative — van de o hook, khong phai o target |
-| Frequency | < 2.0 | 2.0 - 2.5 | > 3.0 | Thay creative va mo rong tep |
+| Frequency (heuristic, traffic lanh, 7 ngay) | <= 2.5 | > 2.5 kem CTR giam = chuan bi / doi creative | Retargeting chiu duoc cao hon — so voi lich su tai khoan | Doi creative va mo rong tep |
 | Mess -> Lead | >= benchmark nganh | thap hon benchmark 15% | thap hon benchmark 30% | Van de o sale/tu van, khong phai o ads |
 | Lead -> Booking | 60-75% | 40-60% | < 40% | Sua quy trinh follow-up, toc do reply |
 | Booking -> Customer | 40-55% | 25-40% | < 25% | Van de o trai nghiem va gia, khong phai o marketing |
@@ -460,7 +461,7 @@ KR3: AOV tang len 3.5 trieu (upsell)
 - Can phan tich du lieu sau khi chay? → Dung `13-phan-tich-du-lieu`
 - Can bien so ngan sach thanh ke hoach kenh theo thang? → Dung `54-media-plan`
 - Can ke hoach ngan sach ca nam / bao ve truoc ban lanh dao? → Dung `61-budget-planning`
-- CPL vuot nguong DUNG, can tim nguyen nhan? → Dung `21-audit-ads-performance`
+- CPL vuot nguong DUNG, can tim nguyen nhan? → Dung `03-danh-gia-hieu-suat` (chan doan); chi dung `21-audit-ads-performance` khi can audit cau hinh tai khoan day du
 
 ---
 
@@ -478,7 +479,7 @@ Truoc khi giao bao cao, kiem tra:
 - [ ] ROI timeline thuc te — khong hua ROAS cao tu tuan 1
 - [ ] Tong ngan sach khop giua cac bang (giai doan + kenh + tong = khop nhau)
 - [ ] Co ghi chu mua vu neu chien dich roi vao dip dac biet (Tet, 11.11, etc.)
-- [ ] Da hoi gross margin — khong tinh Max CPL / Break-even ROAS khi thieu so nay
+- [ ] Da hoi bien dong gop truoc ads — khong tinh Max CPL / Break-even ROAS khi thieu so nay
 - [ ] Co du 4 so: Max CPL, CPL target, Break-even ROAS, Target ROAS
 - [ ] Da doi chieu Max CPL voi khoang CPL cua nganh — neu thap hon, canh bao user truoc khi chay
 - [ ] Co LTV:CAC va payback period, kem ket luan co duoc scale hay khong

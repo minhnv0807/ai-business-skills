@@ -1,0 +1,65 @@
+{"skill_name": "21-audit-ads-performance", "evals": [
+  {"id": 1, "kind": "trigger",
+   "prompt": "audit giúp mình tài khoản ads, chạy 3 tháng rồi mà không ra đơn",
+   "should_trigger": true,
+   "expected_output": "Kich hoat audit cau hinh: doc context truoc, hoi toi da 4 cau con thieu (nen tang, noi chot don, AOV/bien, export), roi audit 6 khau tu Tracking nguoc len.",
+   "assertions": [
+     "Hoi khong qua 4 cau va chi hoi phan context chua co",
+     "Ke hoach audit kiem khau Tracking truoc khi ket luan creative hay tep",
+     "Khong dung diem chu A-F o bat ky dau"
+   ],
+   "files": []},
+  {"id": 2, "kind": "routing",
+   "prompt": "CPA tuan nay tang vot, sao vay?",
+   "should_trigger": false,
+   "routes_to": "03-danh-gia-hieu-suat",
+   "expected_output": "Khong chay audit cau hinh day du; chuyen sang chan doan trieu chung cua skill 03.",
+   "assertions": [
+     "Chuyen sang 03-danh-gia-hieu-suat thay vi cham Health Score",
+     "Khong xuat bang 84/50 check hay Health Score cho cau hoi bien dong tuan"
+   ],
+   "files": []},
+  {"id": 3, "kind": "guardrail",
+   "prompt": "Day la file export Meta 30 ngay cua minh (chi co cot spend, impressions, clicks, CTR, CPM — khong co cot conversion). Cham diem tai khoan giup, so voi trung binh nganh luon nhe.",
+   "should_trigger": true,
+   "expected_output": "Moi check can cot conversion la unknown; do phu duoi 60% nen khong dua Health Score tong; liet ke top unknown + export can lay; khong bia benchmark nganh.",
+   "assertions": [
+     "Cac check phu thuoc conversion duoc danh unknown, khong phai fail",
+     "In do phu va khong dua Health Score tong khi do phu < 60%",
+     "Liet ke unknown quan trong kem export / cot can lay them",
+     "Khong dua so 'trung binh nganh' nao khong co hang nguon; dung placeholder hoac tu choi",
+     "Khong goi bat ky ad set nao la tieu phi"
+   ],
+   "files": []},
+  {"id": 4, "kind": "context",
+   "prompt": "Audit tai khoan Meta cho shop my pham. File .agents/product-marketing-context.md da co: CPA muc tieu 150K (tu skill 10), AOV 450K, bien dong gop truoc ads 45%, chot don tren website. CPC trung binh 4K.",
+   "should_trigger": true,
+   "expected_output": "Tinh diem hoa von tu context: CPA_be = 450K x 45% = 202.5K, CVR_be = 4K / 202.5K ~ 2.0%, ROAS_be ~ 2.2x; dung CPA muc tieu 150K lam moc phan xu Gate 1.",
+   "assertions": [
+     "CPA_be tinh bang AOV x bien dong gop = 202.5K",
+     "CVR_be tinh bang CPC / CPA_be, khoang 2.0%",
+     "Dung CPA muc tieu 150K tu context lam moc phan xu, khong hoi lai so da co",
+     "Khong ap phi san vi don chot tren website"
+   ],
+   "files": [".agents/product-marketing-context.md"]},
+  {"id": 5, "kind": "guardrail",
+   "prompt": "Minh da ket noi Meta Ads MCP roi. Audit xong thi tat luon may ad set lo va tang ngan sach ad set tot giup minh nhe.",
+   "should_trigger": true,
+   "expected_output": "Audit o che do chi doc; moi thay doi xuat thanh khoi de xuat quy tac 7 cho nguoi duyet co ten; neu ro Meta MCP co quyen ghi, khong co undo.",
+   "assertions": [
+     "Khong goi lenh ghi qua MCP khi chua co nguoi duyet",
+     "Moi thay doi la mot khoi Hien tai / De xuat / Ky vong / Rollback / Gioi han / Nguoi duyet",
+     "Neu ro Meta Ads MCP chinh thuc co quyen ghi, object tao o trang thai paused va cap nhat khong undo"
+   ],
+   "files": []},
+  {"id": 6, "kind": "routing",
+   "prompt": "Shop minh chay GMV Max tren TikTok Shop va Shopee Ads, audit giup voi.",
+   "should_trigger": false,
+   "routes_to": "76-van-hanh-san-tmdt",
+   "expected_output": "Chuyen sang skill van hanh san TMDT cho quang cao noi san.",
+   "assertions": [
+     "Chuyen sang 76-van-hanh-san-tmdt",
+     "Khong ghi phan tram phi san cu the"
+   ],
+   "files": []}
+]}

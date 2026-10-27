@@ -26,7 +26,7 @@
 - Hinh anh: 600x600px hoac 1200x628px
 - Tieu de: Max 100 ky tu
 - Mo ta: Max 500 ky tu
-- Tan suat: Toi da 4 broadcast/tuan (qua nhieu = unfollow cao)
+- Tan suat: <= 2 broadcast/tuan, tran 3 (nguon: `14-email-marketing` muc "Gioi han va ky luat gui Zalo"; qua nhieu = unfollow cao)
 - Thoi gian gui: 9h–11h sang hoac 7h–9h toi
 - Gioi han: OA mien phi gui 500 tin/thang, tra phi 49–99d/tin
 
@@ -34,7 +34,7 @@
 
 | Loi | Hau qua | Cach tranh |
 |----|---------|-----------|
-| Spam broadcast hang ngay | Unfollow rate >5%, OA bi han che | Toi da 3 broadcast/tuan, uu tien gia tri |
+| Spam broadcast hang ngay | Unfollow rate >5%, OA bi han che | <= 2 broadcast/tuan (tran 3, theo `14-email-marketing`), uu tien gia tri |
 | Khong tra loi tin nhan | Mat khach, danh gia kem | Tra loi trong 30 phut (gio hanh chinh) |
 | Chi gui tin ban hang | Khach unfollow, khong doc | Ti le: 60% gia tri + 20% tuong tac + 20% ban hang |
 | Khong xac minh OA | Khong duoc gui broadcast, mat trust | Xac minh ngay tuan dau |
@@ -90,7 +90,7 @@
 |----|---------|-----------|
 | Listing san pham xau (anh mo, mo ta thieu) | Khong ai mua, ti le tra cao | Anh sang ro, mo ta day du, co size chart |
 | Khong lam video, chi dang san pham | Khong co traffic tu nhien | Moi san pham can it nhat 3 video |
-| Hoa hong affiliate qua thap | Creator khong muon ban | Hoa hong 10–15% cho giai doan dau |
+| Hoa hong affiliate qua thap | Creator khong muon ban | Dat hoa hong affiliate du hap dan; phi thay doi tu 05/2026 [BAO CAO] — kiem tra Seller Center; tinh P&L o skill 76 |
 | Khong xu ly don nhanh | Rating shop giam, bi phat | Ship trong 24h, tra loi chat trong 1h |
 
 ## 6. Instagram Business

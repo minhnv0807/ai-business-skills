@@ -1,8 +1,8 @@
 ---
 name: 03-danh-gia-hieu-suat
-description: "Dung khi so lieu marketing dang xau va can biet TAI SAO — chan doan theo 5 lop tu tracking, delivery, creative, landing den chat luong audience, roi ra action plan 48h. Kich hoat khi user nhac 'so dang xau', 'CPMess cao qua', 'ROAS thap', 'chan doan root cause', 'tai sao khong ra don', 'ads dot tien'. Khong dung cho — audit CAU HINH tai khoan ads va cham Health Score thi dung skill 21-audit-ads-performance; viet bao cao cho nguoi khac doc thi dung skill 07-bao-cao-marketing; chan doan rieng mot trang thi dung skill 68-cro-audit-trang."
+description: "Dung khi so lieu marketing dang xau va can biet TAI SAO — chan doan theo 5 lop tu tracking, delivery, creative, landing den chat luong audience, roi ra action plan 48h. Kich hoat khi user nhac 'so dang xau', 'CPMess cao qua', 'ROAS thap', 'chan doan root cause', 'tai sao khong ra don', 'ads dot tien'. Khong dung cho — audit cau hinh tai khoan day du (cau truc, tracking, creative, Health Score day du theo checklist nen tang) thi dung skill 21-audit-ads-performance; viet bao cao cho nguoi khac doc thi dung skill 07-bao-cao-marketing; chan doan rieng mot trang thi dung skill 68-cro-audit-trang."
 metadata:
-  version: 2.3.2
+  version: 2.4.0
   category: performance
 triggers:
   - "danh gia chien dich"
@@ -29,6 +29,8 @@ related:
 
 # Danh Gia Hieu Suat
 
+> Quy tac van hanh chung: `skills/vi/references/quy-tac-van-hanh.md` (dac biet quy tac 2, 3, 7).
+
 ---
 
 ## Thu thap thong tin
@@ -48,11 +50,13 @@ Hoi user toi da 4 cau truoc khi bat dau:
 
 | Nen tang | MCP khuyen dung | Data pull |
 |----------|----------------|----------|
-| Meta Ads | **Meta Official MCP** (`mcp.facebook.com/ads`) | 29 tools — xem chi tiet ben duoi |
-| Meta Ads (alt) | Pipeboard (`mcp.pipeboard.co/meta-ads-mcp`) | 29 tools — targeting research manh hon |
+| Meta Ads | **Meta Official MCP** (`mcp.facebook.com/ads`) | Liet ke tool luc ket noi — so tool doi theo ban beta; xem nhom tool ben duoi |
+| Meta Ads (alt) | Pipeboard (`mcp.pipeboard.co/meta-ads-mcp`) | Liet ke tool luc ket noi — targeting research manh hon |
 | Google Ads | Google Official MCP | GAQL query — cost, clicks, conversions, impression share |
 | TikTok Ads | TikTok Ads MCP | Campaign/ad group performance reports |
 | Nhieu nen tang | Adspirer ads-mcp | 222 metrics, cross-platform unified |
+
+> Meta Official MCP co the GHI (khong chi doc), nen moi de xuat thay doi tu data MCP di theo quy tac 7 (nhap truoc, ghi sau) — khong tu y sua campaign.
 
 **Meta Official MCP — Tools dung cho Danh gia hieu suat:**
 
@@ -84,8 +88,9 @@ OPTIMIZATION:
 
 ## Phan 0 — Ads Health Score (0-100)
 
-> **Audit day du:** Dung `21-audit-ads-performance` khi can chay full 84 checkpoints cho Meta/TikTok/Google/Zalo.
-> Phan nay la quick-check — danh gia nhanh truoc khi di sau vao diagnostic.
+> **Audit day du:** Dung `21-audit-ads-performance` khi can Health Score day du theo checklist tung nen tang (Meta/TikTok/Google/Zalo).
+> Phan nay la diem sang loc nhanh — danh gia nhanh truoc khi di sau vao diagnostic.
+> Theo quy tac 3: moi check ghi pass / fail / unknown / n_a. Do phu du lieu duoi 60% thi KHONG cho diem, chi liet ke cac muc unknown can bo sung.
 
 ### Cong thuc tinh Health Score
 
@@ -98,7 +103,7 @@ Health Score = Σ(Check_pass × W_severity × W_category) / Σ(Check_total × W_
 | Muc do | He so | Vi du checkpoints |
 |--------|-------|------------------|
 | Critical | 5× | Pixel khong fire, CAPI chua setup, CPA > 3× target |
-| High | 3× | Creative similarity > 60%, budget duoi 5× CPA/ngay |
+| High | 3× | concept trung lap (khac < 2 truc), budget duoi 5× CPA/ngay |
 | Medium | 1.5× | Chua co retarget audience, headline qua 40 char |
 | Low | 0.5× | Ten chien dich khong theo naming convention |
 
@@ -118,11 +123,11 @@ Health Score = Σ(Check_pass × W_severity × W_category) / Σ(Check_total × W_
 
 | Gate | Quy tac | Nguong vi pham | Hanh dong bat buoc |
 |------|---------|---------------|-------------------|
-| **G1** 3× Kill Rule | CPA > 3× CPA muc tieu | > 3× | Pause ad set NGAY |
+| **G1** Thang quyet dinh CPA | CPA / CPA muc tieu, sau Buoc 0 (spend >= 3x CPA muc tieu) | > 3.0x (hoac > 1.5x lien tuc 7 ngay) | > 3.0x: de xuat pause qua quy tac 7 (hoac uy quyen thuong truc con hieu luc); > 1.5x 7 ngay: doi creative / audience |
 | **G2** Budget Sufficiency | Ngan sach < 5× CPA/ad set/ngay | < 5× | Gop ad set, tang budget |
 | **G3** Learning Phase | Ad set dang "Learning" | Dang hoc | KHONG chinh sua bat ky thu gi |
 | **G4** Pixel Integrity | EMQ < 6.0, duplicate event | < 6.0 | Fix tracking TRUOC khi chay |
-| **G5** Creative Diversity | Similarity Score > 60% | > 60% | Lam creative moi thuc su khac biet |
+| **G5** Creative Diversity | So concept khac nhau (>=2 truc) — nguong 3 concept la heuristic | < 3 concept khac nhau | Lam concept moi khac goc tiep can / persona / proof / format |
 | **G6** Compliance | Nganh dac biet chua kiem tra | Chua check | Review policy truoc launch |
 | **G7** TikTok Sound | Video TikTok khong co am thanh | Khong audio | Them nhac/voiceover |
 | **G8** Scale Speed | Tang ngan sach > 20%/72h | > 20% | Giam toc do tang, toi da 20%/lan |
@@ -212,7 +217,7 @@ Khi gap van de, hoi "Tai sao?" 5 lan de tim nguyen nhan goc:
 |----------|-----------------|------------------|-----------|
 | Frequency | >2.5 | >4 | Doi creative, expand audience |
 | CTR giam | Giam 20% vs 3 ngay dau | Giam 40% | Thay creative moi |
-| CPA tang | Tang 25% vs 3 ngay dau | Tang 50% | Pause creative, test moi |
+| CPA tang | Tang 25% vs 3 ngay dau | Tang 50% | Dau hieu chan doan: kiem tra frequency + creative, chuan bi creative moi. Quyet dinh pause theo Gate 1 (`skills/vi/references/quality-gates-vn.md`), khong theo rieng chi so nay |
 | Thoi gian chay | >7 ngay | >14 ngay | Bat buoc thay moi |
 | Engagement giam | Comment/share giam 30% | Giam 50% | Doi goc do noi dung |
 | Negative feedback | >3% | >5% | Tat ngay, review creative |
@@ -289,7 +294,7 @@ Khi gap van de, hoi "Tai sao?" 5 lan de tim nguyen nhan goc:
 
 | STT | Thoi gian | Hanh dong | Muc do | Ket qua ky vong | Nguoi TH |
 |-----|----------|-----------|--------|-----------------|----------|
-| 1 | Trong 2h | Pause creative/ad set co CPA > 2x target | **CRITICAL** | Ngung chay mau ngan sach | [ten] |
+| 1 | Trong 2h | Sau Buoc 0 (du data), de xuat pause creative/ad set co CPA > 3.0x CPA muc tieu qua cong duyet quy tac 7; > 1.5x lien tuc 7 ngay thi doi creative/audience — nguong theo Gate 1 `skills/vi/references/quality-gates-vn.md` | **CRITICAL** | Ngung chay mau ngan sach | [ten] |
 | 2 | Trong 4h | Phan tich data chi tiet: creative nao, audience nao, gio nao | **CRITICAL** | Xac dinh nguyen nhan | [ten] |
 | 3 | Trong 8h | Duplicate winning ad set, test creative moi | **HIGH** | Co creative thay the | [ten] |
 | 4 | Trong 12h | Dieu chinh audience: loai tru overlap, test LAL moi | **HIGH** | Giam frequency | [ten] |
@@ -359,7 +364,7 @@ Neu sau 7 ngay khong cai thien: dung tiep tuc tinh chinh nho — quay lai Layer 
 
 | Khi can | Goi skill |
 |---------|-----------|
-| Audit day du voi Health Score 0-100 (84 checkpoints) | `21-audit-ads-performance` |
+| Audit day du voi Health Score 0-100 theo checklist nen tang | `21-audit-ads-performance` |
 | Bao cao marketing hang thang day du | `07-bao-cao-marketing` |
 | Tinh lai ngan sach va KPI tu doanh thu | `10-tinh-kpi-nguoc` |
 | Viet lai copy quang cao theo 6 frameworks | `05-copy-quang-cao` |

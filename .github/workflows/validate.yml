@@ -6,10 +6,34 @@ on:
     paths:
       - 'skills/**'
       - 'validate-skills.sh'
+      - 'validate-skills.ps1'
+      - 'modules/**'
+      - 'agents/**'
+      - 'docs/**'
+      - 'scripts/**'
+      - 'llms.txt'
+      - '.claude-plugin/**'
+      - 'CLAUDE.md'
+      - 'AGENTS.md'
+      - 'README.md'
+      - 'README.vi.md'
+      - 'VERSIONS.md'
   pull_request:
     paths:
       - 'skills/**'
       - 'validate-skills.sh'
+      - 'validate-skills.ps1'
+      - 'modules/**'
+      - 'agents/**'
+      - 'docs/**'
+      - 'scripts/**'
+      - 'llms.txt'
+      - '.claude-plugin/**'
+      - 'CLAUDE.md'
+      - 'AGENTS.md'
+      - 'README.md'
+      - 'README.vi.md'
+      - 'VERSIONS.md'
 
 jobs:
   validate:
@@ -25,6 +49,9 @@ jobs:
 
       - name: Run validator
         run: ./validate-skills.sh
+
+      - name: Run repo consistency checks
+        run: node scripts/check-repo.mjs
 
       - name: Check skill file count
         run: |

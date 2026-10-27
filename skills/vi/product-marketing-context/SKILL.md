@@ -2,12 +2,28 @@
 name: product-marketing-context
 description: "Dung khi bat dau lam viec voi mot san pham hoac khach hang moi — skill nay tao FILE CONTEXT ma hon 60 skill khac se doc, gom san pham, khach hang, dinh vi, proof, objection, brand voice va KPI. Chay mot lan, dung lai mai ve sau. Kich hoat khi user nhac 'tao context', 'setup product marketing context', 'bat dau du an moi', 'AI chua hieu san pham cua toi', 'khai bao thong tin san pham'. Khong dung cho — context cho thuong hieu CA NHAN thi dung skill 22-personal-brand-context; nghien cuu insight sau thi dung skill 09-insight-khach-hang."
 metadata:
-  version: 1.1.1
+  version: 1.2.0
   category: foundation
 license: MIT
+triggers:
+  - "tao context"
+  - "setup product marketing context"
+  - "bat dau du an moi"
+  - "AI chua hieu san pham cua toi"
+  - "khai bao thong tin san pham"
+output: file .agents/product-marketing-context.md (12 section + 3 muc tuy chon - Paid Ads, Agent permissions, Learnings)
+related:
+  - 22-personal-brand-context
+  - 09-insight-khach-hang
+  - 00-ke-hoach-mkt
+  - 10-tinh-kpi-nguoc
+  - 53-tracking-setup
+  - 35-brand-voice
 ---
 
 # Product Marketing Context (Foundation Skill)
+
+> Quy tac van hanh chung: `skills/vi/references/quy-tac-van-hanh.md` (dac biet quy tac 2, 3, 7).
 
 > **Day la foundation skill** — chay TRUOC moi skill marketing khac. Tao file `.agents/product-marketing-context.md` chua thong tin goc ve san pham, khach hang, dinh vi — de cac skill khac khong phai hoi lai.
 
@@ -234,6 +250,38 @@ Neu user cung cap 3–5 mau content da dang (bai post, email, video script), pha
 - **Muc tieu 12 thang:**
 - **Chi so quan trong nhat (North Star Metric):**
 - **Chi so phu:**
+
+---
+
+## 13. Paid Ads (tuy chon — bo qua neu chua chay ads)
+
+> Cac skill ads (`10-tinh-kpi-nguoc`, `53-tracking-setup`, `54-media-plan`, `21-audit-ads-performance`) doc muc nay. Chua co thong tin thi ghi `[CAN SO LIEU THAT]`, khong doan.
+
+- **Tai khoan quang cao:** (nen tang, ten tai khoan, ID — KHONG ghi token / mat khau)
+- **Pixel / CAPI:** (trang thai: chua cai / dang cai / da verify) — **Ngay verify lan cuoi:** [YYYY-MM-DD] (cach kiem tra: xem `53-tracking-setup`)
+- **CPA / ROAS muc tieu:** [CAN SO LIEU THAT] (cach tinh: xem `10-tinh-kpi-nguoc`)
+- **Ngan sach hang thang:**
+- **Nguoi duyet thay doi ngan sach / tai khoan:** [ten]
+
+## 14. Agent permissions
+
+> **Chi nguoi duoc sua muc nay. Agent khong bao gio sua; khi mot hanh dong lech voi bang duoi day, agent dung lai va hoi nguoi.** Xem `skills/vi/references/quy-tac-van-hanh.md` muc 7. Dong `execute` = uy quyen thuong truc theo quy tac 7: cot Gioi han bat buoc ghi allowlist, tran chi tieu, gioi han moi lan chay va ngay het han.
+
+| Hanh dong | Agent duoc phep (read / draft / propose / execute / never) | Gioi han | Nguoi duyet |
+|-----------|------------------------------------------------------------|----------|-------------|
+| Doc bao cao, dashboard | read | Chi tai khoan da liet ke o muc 13 | — |
+| Soan copy, brief, caption | draft | Dung brand voice (muc 10), khong claim khi chua co proof (muc 11) | [ten] |
+| Doi ngan sach / bid / target | propose | Moi lan 1 khoi de xuat; chi thuc hien sau khi nguoi duyet dong y | [ten] |
+| Dang bai cong khai | propose | Nguoi duyet xem ban cuoi truoc khi dang | [ten] |
+| Upload danh sach khach hang | never | — | — |
+
+## 15. Learnings (toi da 20 dong dang active)
+
+> Agent chi duoc **them dong de xuat** vao bang nay (Status = `proposed`); nguoi duyet chuyen sang `active`. Qua 20 dong active thi retire bot dong het han.
+
+| Ngay | Learning | Bang chung (observed / reported / inferred) | Nguon | Trang thai (active / retired) | Retire khi |
+|------|----------|---------------------------------------------|-------|-------------------------------|------------|
+| [YYYY-MM-DD] | [1 cau] | observed | [link / ten bao cao] | active | [dieu kien hoac ngay] |
 ```
 
 ---
@@ -260,10 +308,13 @@ Kiem tra co file `.agents/product-marketing-context.md` khong:
 Truoc khi ket thuc:
 
 - [ ] File luu vao `.agents/product-marketing-context.md`
-- [ ] Du 12 section (hoac it nhat 8 section chinh: 1,2,4,5,6,9,10,12)
+- [ ] Du 12 section (hoac it nhat 8 section chinh: 1,2,4,5,6,9,10,12); muc 13-15 la tuy chon / bo sung
 - [ ] Co ngon ngu khach hang noi thuc te (section 9) — khong paraphrase
 - [ ] Co anti-persona ro rang (section 7)
 - [ ] Co 3 khac biet hoa cu the (section 6)
 - [ ] Co North Star Metric (section 12)
 - [ ] Da xac nhan voi user tat ca thong tin
 - [ ] Co ngay cap nhat cuoi
+- [ ] Neu co chay ads: muc 13 co ngay verify tracking, nguoi duyet co ten (khong ghi token / mat khau)
+- [ ] Muc 14 Agent permissions do nguoi dien; khong co hanh dong ghi nao de trong
+- [ ] Muc 15 Learnings co bang chung (observed / reported / inferred) va dieu kien retire

@@ -35,14 +35,14 @@ A lot of SEO advice still says "add FAQ schema to take up more space on the SERP
 | Article / BlogPosting | Yes | Yes | Image, date, author in news surfaces and Discover |
 | Product + Offer | Yes (price, availability, rating) | Yes | Direct CTR impact |
 | SoftwareApplication | Not guaranteed | Yes | Mainly helps AI engines classify what the product is |
-| **FAQPage** | **No** — since Aug 2023 Google limits FAQ rich results to authoritative government and health sites | Yes | No rich result, but ChatGPT, Perplexity and Gemini still parse the Q&A pairs |
+| **FAQPage** | **No** — Google FAQ rich results are deprecated for all sites from 2026-05-07 (`reported`: Search Central notice 2026-05-08, doc not fetched) | Yes, when the FAQ is genuinely on the page | Valid schema.org and harmless, but promise no rich result. AI engines may parse the Q&A pairs (`inferred`, not guaranteed) |
 | **HowTo** | **No** — Google removed HowTo rich results entirely in Sept 2023 | Low priority | Only add when content genuinely is an ordered procedure and you want AI to extract step order |
 | BreadcrumbList | Yes | Yes | Replaces the raw URL in the SERP |
 | LocalBusiness | Does not replace Google Business Profile | Yes | Corroborates NAP; GBP is what drives the local pack |
 | Event | Yes | Yes | Date, venue, ticket price on the SERP |
 | Course | Yes | Yes | Valuable for education and online-course businesses |
 
-**What to tell the client about FAQPage and HowTo:** keep shipping them, but write the correct reason into the plan — "so AI engines can extract it", not "to take more SERP real estate". If the brief is signed with the wrong expectation, that is on you.
+**What to tell the client about FAQPage and HowTo:** keep FAQPage when the FAQ is really on the page, and add HowTo only when the content is a real procedure. Write the correct reason into the plan — "clear, machine-readable structure that AI engines may use", not "to take more SERP real estate". Search Console FAQ report removal is reported for June 2026 and API removal for August 2026 (`reported`), so do not build a dashboard KPI on FAQ rich-result impressions. If the brief is signed with the wrong expectation, that is on you.
 
 ## Picking the right type
 
@@ -310,7 +310,7 @@ Place on the homepage or about page.
 
 ## 6. FAQPage
 
-**Status:** no longer produces a rich result on Google for most sites (limited to authoritative government and health sites since Aug 2023). Still worth shipping: ChatGPT, Perplexity, Gemini and other engines parse these Q&A pairs and use them as citation sources.
+**Status:** Google FAQ rich results are deprecated for all sites from 2026-05-07 (`reported`: Search Central notice 2026-05-08, doc not fetched); Search Console FAQ report removal reported for June 2026, API for August 2026. FAQPage remains valid schema.org and is harmless. Keep it when the FAQ is genuinely on the page, but promise no rich result. AI engines may read the Q&A pairs (`inferred`; no engine has committed to it).
 
 ```json
 {

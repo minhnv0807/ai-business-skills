@@ -452,5 +452,5 @@ Chi tiet: `modules/dropshipping/workflows/en/dropshipping-launch-global.md`
 | Thi truong | Vietnam | US / EU / SEA / LATAM |
 | Foundation file | `.agents/product-marketing-context.md` | `.agents/product-marketing-context-global.md` |
 | Tien te | VND | USD / EUR / region |
-| Compliance | Nghi dinh 147/2024 | GDPR / CCPA / FTC / CAN-SPAM |
+| Compliance | Luat AI 134/2025 + ND 142/2026; Luat QC 75/2025; Luat BVDLCN 91/2025 | GDPR / CCPA / FTC / CAN-SPAM |
 | Tien co the chay | Caller mode tu dong (xem header) | Caller mode tu dong (xem header) |

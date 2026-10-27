@@ -55,5 +55,5 @@ Bien the S2: Waitlist / cohort offer (FOMO nhe)
    - Fix: chay skill 23 personal-brand-strategy → niche ro rang truoc.
 
 3. **CANH BAO 3: Disclosure neu dung AI avatar.**
-   - Quang cao thuong mai dung AI avatar PHAI disclose theo Nghi dinh 147/2024.
+   - Noi dung AI avatar / giong clone mo phong nguoi that: gan nhan theo Luat Tri tue nhan tao 134/2025 Dieu 11 (hieu luc 2026-03-01) + ND 142/2026/ND-CP Dieu 18 (hieu luc 2026-05-01) — xem `skills/vi/references/phap-ly-marketing-vn.md` muc 4.
    - Reference: `references/ai-video-disclosure-vn.md` chuong 1.

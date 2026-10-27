@@ -35,14 +35,14 @@ Nhieu tai lieu SEO con day "them FAQ schema de an nhieu dong hon tren SERP". Die
 | Article / BlogPosting | Co | Co | Anh, ngay, tac gia trong ket qua tin tuc/Discover |
 | Product + Offer | Co (gia, ton kho, sao) | Co | Anh huong CTR truc tiep |
 | SoftwareApplication | Khong dam bao | Co | Chu yeu de AI engine hieu san pham la phan mem gi |
-| **FAQPage** | **Khong** — tu 8/2023 Google gioi han rich result FAQ cho site co quan chinh phu va y te co tham quyen | Co | Khong ra rich result nhung ChatGPT/Perplexity/Gemini van doc duoc cap Q&A |
+| **FAQPage** | **Khong** — Google FAQ rich result bi ngung cho tat ca site tu 2026-05-07 (`reported`: thong bao Search Central 2026-05-08, chua fetch tai lieu goc) | Co, khi FAQ thuc su hien tren page | Hop le theo schema.org va vo hai, nhung khong hua rich result. AI engine co the doc cap Q&A (`inferred`, khong dam bao) |
 | **HowTo** | **Khong** — Google bo hoan toan rich result HowTo tu 9/2023 | Uu tien thap | Chi them khi noi dung that su la quy trinh tung buoc va ban muon AI trich duoc thu tu buoc |
 | BreadcrumbList | Co | Co | Thay URL tho bang duong dan de doc |
 | LocalBusiness | Khong thay the Google Business Profile | Co | Xac nhan cheo NAP; GBP moi la thu quyet dinh local pack |
 | Event | Co | Co | Ngay, dia diem, gia ve hien tren SERP |
 | Course | Co | Co | Huu ich cho nganh dao tao/khoa hoc online |
 
-**Ket luan cho FAQPage va HowTo:** van chen, nhung ghi dung ly do vao ke hoach — "de AI engine trich duoc", khong phai "de an nhieu dong tren Google". Neu client ky brief voi ky vong sai thi do la loi cua ban.
+**Ket luan cho FAQPage va HowTo:** giu FAQPage khi FAQ that su co tren page, chi them HowTo khi noi dung that su la quy trinh. Ghi dung ly do vao ke hoach — "cau truc ro rang, may doc duoc, AI engine co the dung", khong phai "de an nhieu dong tren Google". Bao cao FAQ trong Search Console bi go thang 6/2026 va API thang 8/2026 (`reported`), nen dung dat KPI dashboard vao impression cua FAQ rich result. Neu client ky brief voi ky vong sai thi do la loi cua ban.
 
 ## Chon type theo nganh VN
 
@@ -282,7 +282,7 @@ Vi du: cua hang thoi trang.
 
 ## 6. FAQPage
 
-**Trang thai:** khong con tao rich result tren Google cho hau het website (tu 8/2023 Google gioi han cho site co quan chinh phu va y te co tham quyen). Van nen chen: ChatGPT, Perplexity, Gemini va cac AI engine khac doc duoc cap cau hoi - tra loi nay va dung lam nguon trich dan.
+**Trang thai:** Google FAQ rich result bi ngung cho tat ca site tu 2026-05-07 (`reported`: thong bao Search Central 2026-05-08, chua fetch tai lieu goc); bao cao FAQ trong Search Console bi go thang 6/2026, API thang 8/2026. FAQPage van hop le theo schema.org va vo hai. Giu khi FAQ thuc su hien tren page, nhung khong hua rich result. AI engine co the doc cap cau hoi - tra loi nay (`inferred`; chua engine nao cam ket).
 
 ```json
 {
@@ -397,7 +397,7 @@ Day la block quan trong nhat cho phan lon khach hang VN: spa, phong kham, quan a
   "image": "https://[ten-mien].vn/anh-mat-tien.jpg",
   "url": "https://[ten-mien].vn/chi-nhanh/quan-1",
   "telephone": "+84901234567",
-  "priceRange": "300.000d - 2.500.000d",
+  "priceRange": "300.000-2.500.000 VND",
   "currenciesAccepted": "VND",
   "paymentAccepted": "Tien mat, Chuyen khoan, The, Vi dien tu, QR VietQR",
   "address": {

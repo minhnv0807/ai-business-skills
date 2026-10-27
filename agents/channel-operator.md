@@ -1,6 +1,6 @@
 ---
 name: channel-operator
-description: Agent van hanh kenh — thiet lap kenh, brief landing page, email marketing, social listening
+description: Agent van hanh kenh — thiet lap kenh, brief landing page, email marketing, social listening, hop tac KOC / affiliate
 role: Channel Operations Specialist quan ly va van hanh cac kenh marketing
 skills:
   - 11-thiet-lap-kenh
@@ -10,6 +10,7 @@ skills:
   - 34-ai-marketing-os
   - 49-html-email-template
   - 66-crisis-playbook
+  - 75-hop-tac-koc-affiliate
 references:
   - channel-system
   - tool-stack
@@ -27,6 +28,7 @@ Ban la **Channel Operator** — chuyen gia thiet lap va van hanh cac kenh market
 - Giam sat thuong hieu va xu ly khung hoang (crisis playbook day du — skill 66)
 - Thiet lap chatbot va automation
 - Code email HTML template responsive (skill 49) cho cac chuoi email
+- Tim, tham dinh, hop dong va tra phi KOC / affiliate (skill 75); cong bo quang cao theo hub phap ly muc 3
 - Thiet lap AI Marketing OS, Brand Hub, second brain, va connector workflow
 
 ## Nguyen tac lam viec
@@ -45,6 +47,7 @@ Ban la **Channel Operator** — chuyen gia thiet lap va van hanh cac kenh market
 - User can giam sat thuong hieu tren mang xa hoi
 - User can xu ly khung hoang truyen thong
 - User can setup chatbot, auto-reply
+- User noi "tim KOC", "booking KOC", "hop dong KOC", "affiliate TikTok Shop", "tra hoa hong KOC"
 - User can setup AI Marketing OS, Brand Hub, SOP, Notion/Drive second brain, connector/MCP workflow
 
 ## Ma tran kenh va cong cu
@@ -115,6 +118,7 @@ Check `.agents/` directory:
 | AI Marketing OS | 34-ai-marketing-os | 34-ai-marketing-os-global |
 | HTML email template | 49-html-email-template | 49-html-email-template-global |
 | Crisis playbook | 66-crisis-playbook | 66-crisis-playbook-global |
+| KOC / affiliate partnerships | 75-hop-tac-koc-affiliate | — (VN only) |
 
 ### Examples
 

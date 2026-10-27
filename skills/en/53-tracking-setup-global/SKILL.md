@@ -2,7 +2,7 @@
 name: 53-tracking-setup-global
 description: "Use when conversion TRACKING must be set up or fixed before spending — Meta Pixel and Conversions API, Google Ads conversions with Enhanced Conversions, GA4, TikTok Pixel and Events API, server-side GTM, consent mode for GDPR and CCPA, UTM conventions, iOS ATT attribution windows, and a pre-launch verification checklist. Trigger on 'tracking setup', 'pixel setup', 'CAPI', 'GA4 events', 'conversions are not being recorded', 'Meta and Shopify numbers do not match'. Also use when launch is imminent and nothing has been verified. Not for — auditing a live account broadly, see `21-ads-audit-global`; analyzing data once it flows, see `13-data-analysis-global`; the campaign hierarchy, see `52-account-structure-global`."
 metadata:
-  version: 1.0.1
+  version: 1.1.0
   category: performance
 license: MIT
 triggers:
@@ -26,6 +26,8 @@ related:
 ---
 
 # Tracking Setup (Global)
+
+> Operating rules: `skills/en/references/operating-rules-global.md` (esp. rules 2, 3, 7).
 
 Ads without verified tracking is driving blind. **Hard rule: do not launch ads until tracking verifies green.** Every dollar spent before verification is unmeasurable. Set it up correctly the first time — changing events mid-campaign destroys historical comparability.
 
@@ -82,6 +84,10 @@ This is a first-class requirement, not an optional extra.
 **Email and SMS:** CAN-SPAM in the US and GDPR in the EU require documented opt-in for marketing sends and a working unsubscribe. Any list uploaded as a Custom Audience or Customer Match list must have that consent on record — see `14-email-marketing-global`.
 
 Record the decision in the output file: which CMP, which regions gated, who verified.
+
+**Vietnam traffic:** personal-data duties for Vietnamese visitors and customers are not covered here. See the VN legal hub `skills/vi/references/phap-ly-marketing-vn.md` section 2 and verify the source instruments on vbpl.vn / thuvienphapluat.vn.
+
+**Any change to live tags, pixel settings, consent configuration, or an audience upload is a write action:** draft it as a change block (current / proposed / rollback / named approver), apply only after approval, read back, and log it (operating rule 7).
 
 ### 3. Install per platform
 
@@ -141,7 +147,7 @@ Required whenever the sale closes off-site (B2B, high-ticket, coaching, agency, 
 
 1. **Capture source on every lead.** CRM fields: source, medium, campaign, ad content, GCLID or fbclid, timestamp, owner, stage, disqualification reason, closed revenue.
 2. **Import offline conversions weekly.** Meta offline/CAPI conversions and Google Ads offline conversion import via GCLID or Enhanced Conversions for Leads. This teaches bidding from real revenue instead of raw lead count.
-3. **Reconcile monthly.** Compare CRM lead count against ads manager lead count. A gap above 20% signals a tracking or attribution problem, not a sales problem.
+3. **Reconcile monthly.** Compare CRM lead count against ads manager lead count. A large gap (20% is a heuristic starting band, tune it per account) signals a tracking or attribution problem, not a sales problem.
 
 Uploaded CRM data must be hashed and covered by consent.
 
@@ -155,7 +161,8 @@ All must pass. One missing item means do not launch:
 - [ ] Server-side API live, deduplication working, Meta EMQ >= 6.0
 - [ ] Google Enhanced Conversions enabled and receiving hashed data
 - [ ] Consent mode v2 implemented; tags blocked before consent in EEA/UK; Limited Data Use applied for California
-- [ ] Test event: complete one real conversion and confirm it is recorded
+- [ ] Test event: complete one conversion and confirm it is recorded (preliminary only, see Discrepancy triage)
+- [ ] End-to-end proof: one real order or lead traced from click to backend/CRM by its ID (`order_id`, `lead_id`, `event_id`)
 - [ ] Domain verified and Aggregated Event Measurement events prioritized
 - [ ] UTMs on all ad links and matching the convention
 - [ ] GA4 receiving paid sessions (confirm in Realtime)
@@ -165,7 +172,22 @@ All must pass. One missing item means do not launch:
 
 **Daily (2 minutes):** events flowing in the last 24 hours on every platform; Google Ads conversions recording; GA4 showing paid sessions.
 
-**Weekly:** server-side match rate above 70%; no duplicate events; lead counts across ads manager, GA4, and CRM within 20% of each other; every live link carries a correct UTM; consent banner still firing correctly after any site release.
+**Weekly:** server-side match rate healthy against your own baseline (house heuristic: 70% as a starting band, verify against the platform's current docs); no duplicate events; lead counts across ads manager, GA4, and CRM within your tuned gap band (house heuristic: start near 20%); every live link carries a correct UTM; consent banner still firing correctly after any site release.
+
+## Discrepancy triage
+
+When ads manager, GA4, and backend numbers disagree, classify the gap before changing budgets or tags.
+
+1. **Source of truth first.** Orders = backend order system; leads = CRM. Platform and GA4 figures are directional.
+2. **Compare like with like.** Same date range, timezone, currency, and attribution window.
+3. **Expected causes (not defects):** attribution window, click vs view-through, modeled conversions, timezone/currency, session vs user counting, ad blockers and consent declines, cross-device.
+4. **Double-sender check:** pixel plus server API without a shared `event_id` double-counts; a GTM tag plus a hardcoded snippet duplicates; a platform plugin plus GTM duplicates. Keep one installation method.
+5. **Thank-you-page guard:** fire the purchase or lead event once per `order_id`. Reloads, the back button, and bookmarked confirmation URLs all re-fire it, so dedupe server-side as well.
+6. **Test Events are not proof.** A green Test Events panel only shows one test event arrived. Proof is one real order or lead traced end to end by its ID.
+7. **Label each finding** observed / reported / inferred (operating rule 3). Missing data is `unknown`, not `fail`.
+8. **No universal percentage thresholds.** Any "acceptable gap" band (for example 20%) is a heuristic to tune per account; record it as such.
+
+Verdict per gap: expected / investigate / fix. The Vietnamese pack has a detailed reference and a reconciliation-report template (`skills/vi/53-tracking-setup/references/chan-doan-lech-so-lieu.md`); reuse its structure.
 
 ## Troubleshooting
 
@@ -216,5 +238,5 @@ Platforms: [list] · Site platform: [x] · Markets: [x] · Objective: [Lead/Purc
 - [ ] Event mapping complete from page_view to purchase, with value and currency
 - [ ] Offline or CRM conversion path exists if the sale closes off-site
 - [ ] Green verification checklist completed, dated, and signed off by a named person
-- [ ] Daily and weekly checks scheduled with alert thresholds (match rate >70%, source gap <20%)
+- [ ] Daily and weekly checks scheduled with alert thresholds (house heuristics to tune per account: match rate starting band 70%, source gap starting band 20%)
 - [ ] The hard rule is restated in the output: not green means do not launch

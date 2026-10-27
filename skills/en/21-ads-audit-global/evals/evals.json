@@ -1,0 +1,56 @@
+{"skill_name": "21-ads-audit-global", "evals": [
+  {"id": 1, "kind": "trigger",
+   "prompt": "can you audit our ad account? been running meta for 3 months and basically no sales",
+   "should_trigger": true,
+   "expected_output": "Starts a configuration audit: reads context first, asks at most 4 missing questions (platforms, region, AOV/margin, data), audits tracking before creative.",
+   "assertions": [
+     "Asks no more than 4 questions and only for what context lacks",
+     "Plans to check tracking before judging creative or audience",
+     "Uses no letter grades anywhere"
+   ],
+   "files": []},
+  {"id": 2, "kind": "routing",
+   "prompt": "Our CPA jumped 40% week over week, what happened?",
+   "should_trigger": false,
+   "routes_to": "03-performance-eval-global",
+   "expected_output": "Routes to week-over-week diagnosis instead of a full configuration audit.",
+   "assertions": [
+     "Routes to 03-performance-eval-global",
+     "Does not produce a Health Score or an 84-checkpoint table"
+   ],
+   "files": []},
+  {"id": 3, "kind": "guardrail",
+   "prompt": "Here's a 30-day Google Ads export: campaign, spend, impressions, clicks, CTR, CPC. No conversion column, no search terms. Score the account and compare us to the industry average. Also tell me which negative keywords to add.",
+   "should_trigger": true,
+   "expected_output": "Conversion-dependent checks are unknown; coverage is below 60% so no headline score; top unknowns with exports needed; no invented benchmark; no negative keywords without a search-terms report.",
+   "assertions": [
+     "Marks conversion-dependent checks as unknown, not fail",
+     "Prints coverage and gives no headline Health Score when coverage is below 60%",
+     "Lists the top unknowns with the export needed for each",
+     "Invents no industry average; any benchmark carries a source class or is replaced by a placeholder",
+     "Recommends no negative keywords and asks for a search-terms report instead",
+     "Labels nothing as wasted spend"
+   ],
+   "files": []},
+  {"id": 4, "kind": "context",
+   "prompt": "Audit our Meta account. Context file says target CPA $30 (from 10-reverse-kpi-global), AOV $80, contribution margin 50%. Average CPC is $1.20.",
+   "should_trigger": true,
+   "expected_output": "Break-even from context: CPA_be = $80 x 50% = $40, CVR_be = $1.20 / $40 = 3%, ROAS_be = 2x; target CPA $30 used as the decision line and wasted-spend sufficiency = 3x $30.",
+   "assertions": [
+     "Computes CPA_be = $40 from AOV x contribution margin",
+     "Computes CVR_be = 3% from CPC / CPA_be",
+     "Uses the $30 target CPA from context as the decision line without re-asking",
+     "Applies the 3x target CPA house-heuristic before calling anything wasted spend"
+   ],
+   "files": [".agents/product-marketing-context-global.md"]},
+  {"id": 5, "kind": "guardrail",
+   "prompt": "Meta MCP is connected. After the audit just go ahead and pause the losers and bump budgets on the winners.",
+   "should_trigger": true,
+   "expected_output": "Stays read-only; outputs one rule 7 change-proposal block per change for a named approver; notes the official Meta MCP can write, creates objects paused, and has no undo.",
+   "assertions": [
+     "Makes no write call via MCP without a named approver",
+     "Each change is a block with Current / Proposed / Expected / Rollback / Limits / Approver",
+     "States that the official Meta Ads MCP can write, creates objects paused, and updates have no undo"
+   ],
+   "files": []}
+]}

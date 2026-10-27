@@ -27,6 +27,8 @@
 | **Lazada Ads — CPC** | >$0.50 | $0.15–$0.30 | $0.05–$0.15 | <$0.05 | [#] |
 | **LINE Ads (TH/JP) — CPM** | >$8 | $2–$6 | $1–$2 | <$1 | [#] |
 
+_Heuristic — no public source; prefer the account's own history._
+
 ### Funnel conversion
 
 | Step | Average | Good | Your data |
@@ -38,6 +40,8 @@
 | Booking → Customer | 30–40% | 50%+ | [#]% |
 | Customer → Repeat (90d) | 20–35% | 45%+ | [#]% |
 | E-com platform: Click → Purchase (Shopee/Lazada) | 1–3% | 5%+ | [#]% |
+
+_Heuristic — no public source; prefer the account's own history._
 
 ### Email + organic + messaging
 
@@ -51,6 +55,8 @@
 | TikTok engagement rate | <3% | 4–7% | 7–12% | >12% | [#]% |
 | Facebook engagement rate | <1% | 2–4% | 4–7% | >7% | [#]% |
 
+_Heuristic — no public source; prefer the account's own history._
+
 ### Industry-specific CAC / AOV (SEA)
 
 | Industry | Typical CAC | Typical AOV | Healthy LTV:CAC |
@@ -63,6 +69,8 @@
 | Real estate | $30–$200 | $30K–$300K | 5:1+ |
 | SaaS (regional SMB) | $50–$300 | $500–$5K | 5:1+ |
 | Health / supplements | $5–$30 | $30–$200 | 3:1+ |
+
+_Heuristic — no public source; prefer the account's own history._
 
 ---
 
@@ -144,15 +152,15 @@ SEA is THE birthplace of modern dropshipping. Different dynamics:
 
 | Area | Rule | Impact on ads |
 |------|------|---------------|
-| Vietnam — Decree 13 (data) | Personal data localized | EU-style consent + Vietnam server hosting for sensitive data |
+| Vietnam — Law 91/2025/QH15 + Decree 356/2025/ND-CP (data, effective 2026-01-01) | See VN legal hub `skills/vi/references/phap-ly-marketing-vn.md` | EU-style consent; verify localization and transfer duties against the primary text |
 | Thailand — PDPA | Consent + processing limits | Updated consent banners |
 | Indonesia — UU PDP | Similar to GDPR (effective 2024) | Update consent flow |
 | Philippines — Data Privacy Act | Opt-in for marketing | Double opt-in standard |
 | Singapore — PDPA | Strict, with DNC registry | Check DNC before SMS/calls |
 | Malaysia — PDPA | Specific consent required | Update collection forms |
 | Cosmetics / supplements (VN MOH) | Approval required | No "treats" or "cures" claims |
-| Live commerce (VN, TH) | Tax reporting on sales | Use compliant platforms (TikTok Shop, Shopee Live) |
-| KOL endorsement (VN) | Disclosure recommended | Use #qc or "tài trợ" (sponsored) |
+| Live commerce (VN, TH) | Tax and e-commerce rules apply (VN: hub sections 5-6) | Use compliant platforms (TikTok Shop, Shopee Live); ask an accountant |
+| KOL endorsement (VN) | Ad disclosure duty under amended Advertising Law 75/2025/QH15 (effective 2026-01-01; hub section 3) | Disclose before and during the content: #qc or "tài trợ" (sponsored) |
 
 ---
 
@@ -185,7 +193,7 @@ Before delivering SEA performance evaluation:
 - [ ] If live commerce: separate tracking for TikTok Live / Facebook Live
 - [ ] KOL spend ROI tracked separately from paid ads
 - [ ] Tet/Songkran/Lebaran seasonality factored
-- [ ] Country-specific compliance verified (VN Decree 13, TH PDPA, etc.)
+- [ ] Country-specific compliance verified (VN Law 91/2025 + Decree 356/2025, TH PDPA, etc.)
 - [ ] If dropshipping: Shopee/Lazada vs DTC split decided
 - [ ] Local payment methods supported (Momo, GrabPay, GoPay, etc.)
 

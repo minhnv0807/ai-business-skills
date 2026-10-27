@@ -5,7 +5,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/v3.6.0-Bilingual%20Role%20SOP-6d28d9?style=for-the-badge&labelColor=1e1033" alt="v3.6.0"/>
-  <img src="https://img.shields.io/badge/Skills-144-6d28d9?style=for-the-badge&labelColor=1e1033" alt="144 Skills"/>
+  <img src="https://img.shields.io/badge/Skills-146-6d28d9?style=for-the-badge&labelColor=1e1033" alt="146 Skills"/>
   <img src="https://img.shields.io/badge/Agents-6-be185d?style=for-the-badge&labelColor=1e1033" alt="6 Agents"/>
   <img src="https://img.shields.io/badge/Workflows-19-0f766e?style=for-the-badge&labelColor=1e1033" alt="19 Workflows"/>
   <img src="https://img.shields.io/badge/Regions-VN%20%2B%20Global-f97316?style=for-the-badge&labelColor=1e1033" alt="VN + Global"/>
@@ -16,7 +16,7 @@
 <h1 align="center">ai-business-skills</h1>
 
 <p align="center">
-  <strong>Fullstack marketing skills cho AI agent — 144 skills bilingual (VN + Global).</strong>
+  <strong>Fullstack marketing skills cho AI agent — 146 skills bilingual (VN + Global).</strong>
   <br/>
   <sub>Vietnamese-first + Global (US/EU/SEA/LATAM) | Over Powers Agency</sub>
 </p>
@@ -41,7 +41,7 @@ ai-business-skills turns one marketing request into a routed workflow: context f
 flowchart LR
     UserRequest["User asks a marketing task"] --> Context["Foundation context<br/>.agents/*.md"]
     Context --> ModeRouter{"VN or Global?"}
-    ModeRouter --> VN["VN cluster<br/>74 skills"]
+    ModeRouter --> VN["VN cluster<br/>77 skills"]
     ModeRouter --> Global["Global cluster<br/>69 skills"]
     VN --> Agents["6 universal agents"]
     Global --> Agents
@@ -104,7 +104,7 @@ flowchart TD
 ```bash
 git clone https://github.com/minhnv0807/ai-business-skills.git
 cd ai-business-skills
-bash install.sh --global   # 144 skills -> ~/.claude/skills/marketing/
+bash install.sh --global   # 146 skills -> ~/.claude/skills/marketing/
 ```
 
 Windows:
@@ -139,7 +139,7 @@ Test ngay trong Claude Code:
 
 ---
 
-## 📦 144 Skills (bilingual VN + Global)
+## 📦 146 Skills (bilingual VN + Global)
 
 > Mỗi skill = 1 file `SKILL.md` với frontmatter triggers + workflow body. AI agent tự kích hoạt skill khi user nhắc trigger keyword.
 
@@ -221,6 +221,8 @@ Bốn bộ SOP theo vai trò — mỗi bộ là quy trình vận hành đầy đ
 
 **Creative copy (74)** — additive lane, không thay `05` / `37`: `74-copy-hai-lop` viết slogan / headline poster hai lớp nghĩa; ads trả tiền vẫn là `05`, caption organic vẫn là `37`.
 
+**Sàn TMĐT + KOC/affiliate (75-76)** ⭐ NEW v3.8.0 — VN only: `75-hop-tac-koc-affiliate` tìm, thẩm định, hợp đồng và trả phí KOC/affiliate (kịch bản nội dung vẫn ở `06`); `76-van-hanh-san-tmdt` P&L đơn hàng sau phí sàn, ROAS hòa vốn, mega sale/voucher và livestream bán hàng trên Shopee / TikTok Shop / Lazada. Phí sàn là biến số có ngày kiểm, không hard-code.
+
 **Bilingual:** cả 4 pack đều có bản Global (`skills/en/35-67 *-global`) từ v3.6.0 — cùng framework và quy trình, nhưng USD benchmark, kênh toàn cầu (Klaviyo/Shopify/Meta US), và compliance FTC/GDPR/CCPA. Community seeding được viết lại theo chuẩn Reddit/Discord/Slack thay vì Facebook Group VN.
 
 **Kho kiến thức nền tảng:** [`knowledge/`](knowledge/) — 10 file tư duy (brandformance, blueprint 8 thành phần, phễu 6 bước, chiến lược kênh, Meta Ads framework, hệ thống KPI, customer insight, brand/offer architecture, AI Marketing OS, business model) + `knowledge/trien-khai/`. Dùng làm context upload cho AI project theo vai trò.
@@ -233,8 +235,8 @@ Bốn bộ SOP theo vai trò — mỗi bộ là quy trình vận hành đầy đ
 |-------|---------|--------------|
 | [mkt-strategist](agents/mkt-strategist.md) | Chiến lược tổng + Leader strategy | 00, 02, 08, 09, 16, 17, 31-34, 58-61 (+ `-global` mirrors) |
 | [content-producer](agents/content-producer.md) | Sản xuất nội dung + content system | 01, 04, 05, 06, 35-40, 42-44, 74 (+ `-global` trừ 74) |
-| [performance-analyst](agents/performance-analyst.md) | Phân tích hiệu suất + performance ops | 03, 07, 10, 13, 19, 21, 32, 34, 51-57 (+ `-global`) |
-| [channel-operator](agents/channel-operator.md) | Vận hành kênh + crisis | 11, 12, 14, 15, 18, 34, 49, 66 (+ `-global`) |
+| [performance-analyst](agents/performance-analyst.md) | Phân tích hiệu suất + performance ops | 03, 07, 10, 13, 19, 21, 32, 34, 51-57 (+ `-global`), 76 (VN) |
+| [channel-operator](agents/channel-operator.md) | Vận hành kênh + crisis | 11, 12, 14, 15, 18, 34, 49, 66 (+ `-global`), 75 (VN) |
 | [design-producer](agents/design-producer.md) ⭐ | Visual & production | 12, 30, 41-50 |
 | [personal-brand-builder](agents/personal-brand-builder.md) | PB + AI Avatar | 22-28 (+ `-global`) |
 
@@ -482,6 +484,9 @@ related: [08-nghien-cuu-doi-thu, 09-insight-khach-hang, 10-tinh-kpi-nguoc]
 - `00-ke-hoach-mkt` → 08 → 09 → 10 (research before planning)
 - `02-brief-chien-dich` → 05 + 04 + 01 (campaign breaks into content)
 - `30-thiet-ke-master` reads context từ `22-personal-brand-context` hoặc `product-marketing-context` để compose prompt đúng brand voice
+- `21-audit-ads-performance` → `53` (lệch số liệu) / `76` (ads sàn) → `55` / `56` → `57`
+
+**Operating rules + evals (v3.8.0):** mọi skill đọc 8 quy tắc vận hành chung ([VN](skills/vi/references/quy-tac-van-hanh.md) · [Global](skills/en/references/operating-rules-global.md)) — context trước, nội dung bên ngoài là data, nhãn bằng chứng + chấm điểm theo coverage, số liệu có ngày/nguồn, draft-first cho mọi hành động ghi (MCP ads), pháp lý VN dẫn về một hub ([`phap-ly-marketing-vn.md`](skills/vi/references/phap-ly-marketing-vn.md)). Đợt đầu có `evals/evals.json` (trigger, routing, guardrail, context) cho cặp `21`, `75`, `76`; skill khác bổ sung khi đổi hành vi — xem [`docs/evals.md`](docs/evals.md).
 
 **Personal Brand Mode auto-detect** (skill 04, 05):
 - `.agents/product-marketing-context.md` only → Mode A (sales/conversion)
@@ -537,6 +542,7 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md).
 ```bash
 git checkout -b feature/new-skill
 ./validate-skills.sh             # validate frontmatter + structure
+node scripts/check-repo.mjs      # evals, denylist, llms.txt, manifest, versions, counts
 git commit -m "feat(skill): add new-skill"
 ```
 
@@ -563,7 +569,7 @@ Or: ⭐ star this repo · 🐛 [Report bugs](https://github.com/minhnv0807/ai-bu
 
 ## 📜 License
 
-MIT — free to use, modify, distribute. See [LICENSE](LICENSE).
+MIT — free to use, modify, distribute. See [LICENSE](LICENSE). Third-party ideas and their licences: [NOTICE.md](NOTICE.md).
 
 ---
 

@@ -1,8 +1,8 @@
 ---
 name: 32-seo-growth
-description: "Khi nguoi dung muon tang traffic tu SEO, AI SEO, GEO/AEO, Google, ChatGPT, Perplexity, schema, structured data, llms.txt, programmatic SEO, local SEO, directory submissions, Product Hunt, G2/Capterra, backlinks, hoac audit website khong len top. Dung cho 'SEO audit', 'AI search visibility', 'duoc AI trich dan', 'schema markup', 'pSEO', 'local SEO', 'submit directory', 'backlink plan'. Khong dung cho setup Google Business Profile lan dau — dung skill 11-thiet-lap-kenh; khong dung cho viet noi dung bai — dung 36-content-brief."
+description: "Khi nguoi dung muon tang traffic tu SEO, AI SEO, GEO/AEO, Google, ChatGPT, Perplexity, schema, structured data, llms.txt, programmatic SEO, local SEO, directory submissions, Product Hunt, G2/Capterra, backlinks, hoac audit website khong len top. Dung cho 'SEO audit', 'AI search visibility', 'duoc AI trich dan', 'schema markup', 'pSEO', 'local SEO', 'submit directory', 'backlink plan'. Khong dung cho — setup Google Business Profile lan dau thi dung skill 11-thiet-lap-kenh; viet noi dung bai thi dung skill 36-content-brief."
 metadata:
-  version: 1.1.0
+  version: 1.2.0
   category: performance
 license: MIT
 triggers:
@@ -26,15 +26,18 @@ related:
 
 # SEO Growth
 
+> Quy tac van hanh chung: `skills/vi/references/quy-tac-van-hanh.md` (dac biet quy tac 2, 3, 7).
+
 Skill nay gom 6 lop SEO thuc chien: audit nen tang, local SEO, noi dung co y dinh tim kiem, AI search visibility, schema/machine-readable files, va backlink/distribution. Muc tieu la tang traffic co y dinh mua, khong phai chi viet nhieu bai.
 
 ## Thu thap thong tin
 
 Doc `.agents/product-marketing-context.md` neu co. Hoi toi da 4 cau: website/URL, thi truong muc tieu, san pham/dich vu chinh, va muc tieu SEO 90 ngay. Neu co Search Console/GA4/Ahrefs/Semrush export, dung no truoc y kien cam tinh.
 
-Hai reference di kem:
+Ba reference di kem:
 - `references/seo-growth-playbook.md` — lo trinh 90 ngay, pSEO, comparison page, cau truc site.
 - `references/schema-json-ld.md` — 12 block JSON-LD copy-paste duoc, adapt cho VN.
+- `references/do-luong-hien-dien-ai.md` — danh muc prompt, audit cau tra loi AI, traffic tu AI, log crawler, vong sua loi.
 
 ## Chon mode
 
@@ -228,25 +231,28 @@ Disallow: /
 
 | Bot | Thuoc ve | Vai tro |
 |-----|----------|---------|
-| GPTBot | OpenAI | Thu thap du lieu; chan thi giam kha nang duoc biet den |
-| OAI-SearchBot | OpenAI | Bot phuc vu tinh nang tim kiem — chan thi gan nhu chac chan mat cho trich dan |
-| ChatGPT-User | OpenAI | Truy cap khi nguoi dung yeu cau ChatGPT mo mot link |
+| GPTBot | OpenAI | Thu thap du lieu de train model; tuan theo robots.txt. Doc lap voi search: cho OAI-SearchBot va chan GPTBot la to hop hop le |
+| OAI-SearchBot | OpenAI | Quyet dinh site co the hien trong cau tra loi tim kiem cua ChatGPT hay khong; tuan theo robots.txt, thay doi mat khoang 24h de ap dung. Opt-out thi site khong hien trong cac cau tra loi do |
+| ChatGPT-User | OpenAI | Truy cap khi nguoi dung thao tac trong ChatGPT (vi du mo mot link); robots.txt co the khong ap dung. Khong dung de quyet dinh site co vao ket qua tim kiem |
+| OAI-AdsBot | OpenAI | Kiem tra landing page duoc gui cho quang cao ChatGPT; khong train model. Chi lien quan neu ban chay loai quang cao do |
 | PerplexityBot | Perplexity | Perplexity luon kem nguon, day la kenh de do luong nhat |
 | ClaudeBot / anthropic-ai | Anthropic | `anthropic-ai` la ten cu, `ClaudeBot` la ten hien hanh |
 | Google-Extended | Google | **Khong phai crawler.** Xem ghi chu ben duoi |
 | Bingbot | Microsoft | Nuoi ca Bing va Copilot |
 | CCBot | Common Crawl | Chi phuc vu train model, khong tao trich dan — chan duoc neu khong muon |
 
+Vai tro cac bot OpenAI [kiem 2026-10, developers.openai.com/api/docs/bots]. Mo lai trang nay vao ngay lap ke hoach: danh sach bot thay doi, khong chep chuoi user-agent hay so phien ban tu tri nho. Xac nhan bot co that su lay cac trang quan trong bang buoc kiem tra log crawler trong `references/do-luong-hien-dien-ai.md`.
+
 **Diem nhieu tai lieu ghi sai:** `Google-Extended` khong quyet dinh viec ban co xuat hien trong AI Overviews hay khong. AI Overviews chay tren chinh chi muc Search binh thuong. Chan `Google-Extended` chi anh huong den viec noi dung duoc dung cho cac san pham AI khac cua Google. Muon kiem soat viec noi dung bi trich trong AI Overviews thi dung `nosnippet`, `max-snippet`, hoac `data-nosnippet` — nhung do la danh doi ca kha nang hien snippet thong thuong.
 
 **Ba diem kiem tra them:**
 1. **CDN/WAF chan ngam.** Cloudflare va vai nha cung cap khac co nut chan AI crawler bat san. Robots.txt cua ban co the "Allow" trong khi request bi chan o tang truoc do. Kiem tra log server hoac dashboard CDN, dung chi doc robots.txt.
 2. **Nen tang gioi han.** Nhieu site VN chay tren Haravan, Sapo, Ladipage, Wix — khong sua duoc robots.txt tu do. Kiem tra kha nang truoc khi hua trong ke hoach.
-3. **`llms.txt`.** Dat o `/llms.txt`, liet ke cac trang quan trong nhat dang markdown kem mo ta ngan. Day la quy uoc do cong dong de xuat, chua nen tang lon nao cam ket ho tro chinh thuc — chi phi thap nen van dang lam, nhung khong dat ky vong cao va khong tinh phi client nhu mot hang muc lon.
+3. **`llms.txt`.** Dat o `/llms.txt`, liet ke cac trang quan trong nhat dang markdown kem mo ta ngan. Day la quy uoc do cong dong de xuat, chua nen tang lon nao cam ket ho tro chinh thuc. Tuy chon: hieu qua chua duoc chung minh. Chi phi thap nen van dang lam, nhung khong dat ky vong cao va khong tinh phi client nhu mot hang muc lon.
 
 #### 4.4 Bang audit AI visibility
 
-Chay thu 10-20 truy van quan trong nhat. Ghi ket qua:
+Danh muc prompt co dinh, cot audit tung cau tra loi, chi so, traffic gioi thieu tu AI va vong sua loi: xem `references/do-luong-hien-dien-ai.md`. Ban nhanh: chay thu 10-20 truy van quan trong nhat. Ghi ket qua:
 
 | Cau hoi | Nen tang (ChatGPT / Perplexity / AI Overview) | Co duoc trich dan khong | Doi thu nao duoc trich thay | Hanh dong |
 |---------|----------------------------------------------|-------------------------|----------------------------|-----------|
@@ -301,7 +307,7 @@ Chon schema theo loai page:
 | Khoa hoc | Course |
 
 **Hai dieu phai noi ro voi client:**
-- **FAQPage** khong con tao rich result tren Google cho hau het website (tu 8/2023 gioi han cho co quan chinh phu va y te co tham quyen). Van nen chen vi AI engine doc duoc, nhung dung ban no nhu "them dong tren Google".
+- **FAQPage**: Google FAQ rich result bi ngung cho TAT CA site tu 2026-05-07 (`reported`: thong bao Search Central ngay 2026-05-08, chua fetch tai lieu goc). Bao cao FAQ trong Search Console bi go thang 6/2026, API thang 8/2026 (`reported`). Markup FAQPage van hop le theo schema.org va vo hai: giu khi FAQ thuc su hien tren page, nhung khong hua rich result va khong ban no nhu "them dong tren Google".
 - **HowTo** da bi Google bo hoan toan rich result tu 9/2023. Uu tien thap.
 
 Code day du 12 block JSON-LD, cach kiem tra, va loi thuong gap tren site VN: `references/schema-json-ld.md`.

@@ -6,160 +6,162 @@
 
 | Skill | Version | Last Updated | Category |
 |-------|---------|--------------|----------|
-| product-marketing-context | 1.1.0 | 2026-05-02 | foundation |
-| 00-ke-hoach-mkt | 2.0.0 | 2026-04-24 | strategy |
-| 01-lich-noi-dung | 2.2.0 | 2026-07-30 | content |
-| 02-brief-chien-dich | 2.1.0 | 2026-07-30 | strategy |
-| 03-danh-gia-hieu-suat | 2.3.1 | 2026-07-30 | performance |
-| 04-script-video | 2.3.0 | 2026-07-30 | content |
-| 05-copy-quang-cao | 2.5.2 | 2026-08-16 | content |
-| 06-brief-ugc-egc | 2.1.0 | 2026-07-30 | content |
-| 07-bao-cao-marketing | 2.1.1 | 2026-07-30 | performance |
-| 08-nghien-cuu-doi-thu | 2.3.1 | 2026-07-30 | strategy |
-| 09-insight-khach-hang | 2.1.0 | 2026-07-30 | strategy |
-| 10-tinh-kpi-nguoc | 2.1.0 | 2026-07-30 | performance |
-| 11-thiet-lap-kenh | 2.0.1 | 2026-07-30 | operations |
-| 12-brief-landing-page | 2.1.1 | 2026-07-30 | operations |
-| 13-phan-tich-du-lieu | 2.1.1 | 2026-07-30 | operations |
-| 14-email-marketing | 2.1.1 | 2026-07-30 | operations |
-| 15-social-listening | 2.1.0 | 2026-05-02 | content |
-| 16-marketing-psychology | 1.0.0 | 2026-04-24 | strategy |
-| 17-pricing-strategy | 1.0.0 | 2026-04-24 | strategy |
-| 18-referral-program | 1.0.0 | 2026-04-24 | operations |
-| 19-ab-test-setup | 1.1.0 | 2026-07-30 | performance |
+| product-marketing-context | 1.2.0 | 2026-10-26 | foundation |
+| 00-ke-hoach-mkt | 2.0.1 | 2026-08-10 | strategy |
+| 01-lich-noi-dung | 2.3.1 | 2026-08-10 | content |
+| 02-brief-chien-dich | 2.1.1 | 2026-08-10 | strategy |
+| 03-danh-gia-hieu-suat | 2.4.0 | 2026-10-26 | performance |
+| 04-script-video | 2.4.1 | 2026-08-10 | content |
+| 05-copy-quang-cao | 2.6.0 | 2026-10-26 | content |
+| 06-brief-ugc-egc | 2.2.0 | 2026-10-26 | content |
+| 07-bao-cao-marketing | 2.1.2 | 2026-08-10 | operations |
+| 08-nghien-cuu-doi-thu | 2.3.2 | 2026-08-10 | strategy |
+| 09-insight-khach-hang | 2.1.1 | 2026-08-10 | strategy |
+| 10-tinh-kpi-nguoc | 2.2.0 | 2026-10-26 | performance |
+| 11-thiet-lap-kenh | 2.1.0 | 2026-10-26 | operations |
+| 12-brief-landing-page | 2.1.2 | 2026-08-10 | content |
+| 13-phan-tich-du-lieu | 2.1.2 | 2026-08-10 | performance |
+| 14-email-marketing | 2.2.0 | 2026-10-26 | operations |
+| 15-social-listening | 2.1.1 | 2026-08-10 | operations |
+| 16-marketing-psychology | 1.0.1 | 2026-08-10 | strategy |
+| 17-pricing-strategy | 1.1.2 | 2026-10-26 | strategy |
+| 18-referral-program | 1.1.0 | 2026-10-26 | operations |
+| 19-ab-test-setup | 1.2.1 | 2026-08-10 | performance |
 | 20-brief-client-intake | 1.1.0 | 2026-09-12 | operations |
-| 21-audit-ads-performance | 1.3.1 | 2026-07-30 | performance |
-| 22-personal-brand-context | 1.1.0 | 2026-06-06 | foundation |
-| 23-personal-brand-strategy | 1.0.0 | 2026-05-08 | strategy |
-| 24-ai-avatar-production | 1.1.0 | 2026-06-06 | content |
-| 25-voice-clone-podcast | 1.0.0 | 2026-05-08 | content |
-| 26-thought-leadership-content | 1.0.0 | 2026-05-08 | content |
-| 27-personal-brand-monetize | 1.0.0 | 2026-05-08 | strategy |
-| 28-community-building | 1.0.0 | 2026-05-08 | operations |
-| 29-xuat-khau-b2b | 1.0.0 | 2026-05-20 | strategy |
-| 30-thiet-ke-master | 1.2.0 | 2026-07-30 | design |
-| 31-offer-design | 1.0.0 | 2026-06-30 | strategy |
-| 32-seo-growth | 1.0.0 | 2026-06-30 | performance |
-| 33-b2b-lead-gen | 1.0.0 | 2026-06-30 | operations |
-| 34-ai-marketing-os | 1.1.0 | 2026-07-30 | operations |
-| 35-brand-voice | 1.0.0 | 2026-07-30 | content |
-| 36-content-brief | 1.0.0 | 2026-07-30 | content |
+| 21-audit-ads-performance | 1.4.0 | 2026-10-26 | performance |
+| 22-personal-brand-context | 1.1.1 | 2026-08-10 | foundation |
+| 23-personal-brand-strategy | 1.0.1 | 2026-08-10 | strategy |
+| 24-ai-avatar-production | 1.1.2 | 2026-10-26 | content |
+| 25-voice-clone-podcast | 1.0.2 | 2026-10-26 | content |
+| 26-thought-leadership-content | 1.0.1 | 2026-08-10 | content |
+| 27-personal-brand-monetize | 1.1.0 | 2026-10-26 | strategy |
+| 28-community-building | 1.0.1 | 2026-08-10 | operations |
+| 29-xuat-khau-b2b | 1.0.1 | 2026-08-10 | strategy |
+| 30-thiet-ke-master | 1.2.1 | 2026-08-10 | design |
+| 31-offer-design | 1.0.1 | 2026-08-10 | strategy |
+| 32-seo-growth | 1.2.0 | 2026-10-26 | performance |
+| 33-b2b-lead-gen | 1.1.1 | 2026-08-10 | operations |
+| 34-ai-marketing-os | 1.3.0 | 2026-10-26 | operations |
+| 35-brand-voice | 1.0.1 | 2026-08-10 | content |
+| 36-content-brief | 1.0.1 | 2026-08-10 | content |
 | 37-caption-social | 1.0.2 | 2026-08-16 | content |
-| 38-seeding-plan | 1.0.0 | 2026-07-30 | content |
-| 39-content-audit | 1.0.0 | 2026-07-30 | content |
-| 40-next-content-plan | 1.0.0 | 2026-07-30 | content |
-| 41-campaign-asset-list | 1.0.0 | 2026-07-30 | operations |
+| 38-seeding-plan | 1.1.0 | 2026-10-26 | content |
+| 39-content-audit | 1.0.1 | 2026-08-10 | content |
+| 40-next-content-plan | 1.0.1 | 2026-08-10 | content |
+| 41-campaign-asset-list | 1.0.1 | 2026-08-10 | operations |
 | 42-brief-hinh-anh | 1.0.2 | 2026-08-16 | content |
-| 43-brief-carousel | 1.0.0 | 2026-07-30 | content |
-| 44-brief-video-editor | 1.0.0 | 2026-07-30 | content |
-| 45-brief-canva | 1.0.0 | 2026-07-30 | operations |
-| 46-brand-guideline | 1.0.0 | 2026-07-30 | strategy |
-| 47-design-review | 1.0.0 | 2026-07-30 | operations |
-| 48-quick-visual-brief | 1.0.0 | 2026-07-30 | operations |
-| 49-html-email-template | 1.0.0 | 2026-07-30 | operations |
-| 50-asset-resize | 1.0.0 | 2026-07-30 | operations |
-| 51-audience-research | 1.0.0 | 2026-07-30 | performance |
-| 52-account-structure | 1.0.0 | 2026-07-30 | performance |
-| 53-tracking-setup | 1.0.0 | 2026-07-30 | performance |
-| 54-media-plan | 1.0.0 | 2026-07-30 | performance |
-| 55-scaling-ads | 1.0.0 | 2026-07-30 | performance |
-| 56-retargeting-plan | 1.0.0 | 2026-07-30 | performance |
-| 57-next-ads-plan | 1.0.0 | 2026-07-30 | performance |
+| 43-brief-carousel | 1.0.1 | 2026-08-10 | content |
+| 44-brief-video-editor | 1.0.1 | 2026-08-10 | content |
+| 45-brief-canva | 1.0.1 | 2026-08-10 | operations |
+| 46-brand-guideline | 1.0.1 | 2026-08-10 | strategy |
+| 47-design-review | 1.0.1 | 2026-08-10 | operations |
+| 48-quick-visual-brief | 1.0.1 | 2026-08-10 | operations |
+| 49-html-email-template | 1.0.1 | 2026-08-10 | operations |
+| 50-asset-resize | 1.0.1 | 2026-08-10 | operations |
+| 51-audience-research | 1.0.1 | 2026-08-10 | performance |
+| 52-account-structure | 1.0.1 | 2026-08-10 | performance |
+| 53-tracking-setup | 1.1.0 | 2026-10-26 | performance |
+| 54-media-plan | 1.0.1 | 2026-08-10 | performance |
+| 55-scaling-ads | 1.0.1 | 2026-08-10 | performance |
+| 56-retargeting-plan | 1.0.1 | 2026-08-10 | performance |
+| 57-next-ads-plan | 1.0.1 | 2026-08-10 | performance |
 | 58-positioning | 1.0.2 | 2026-08-16 | strategy |
-| 59-go-to-market | 1.0.0 | 2026-07-30 | strategy |
-| 60-launch-playbook | 1.0.0 | 2026-07-30 | strategy |
-| 61-budget-planning | 1.0.0 | 2026-07-30 | strategy |
-| 62-marketing-review | 1.0.0 | 2026-07-30 | operations |
-| 63-campaign-retrospective | 1.0.0 | 2026-07-30 | operations |
-| 64-team-brief | 1.0.0 | 2026-07-30 | operations |
-| 65-team-performance-review | 1.0.0 | 2026-07-30 | operations |
-| 66-crisis-playbook | 1.0.0 | 2026-07-30 | operations |
-| 67-agency-vendor-brief | 1.0.0 | 2026-07-30 | operations |
+| 59-go-to-market | 1.0.1 | 2026-08-10 | strategy |
+| 60-launch-playbook | 1.0.1 | 2026-08-10 | strategy |
+| 61-budget-planning | 1.0.1 | 2026-08-10 | strategy |
+| 62-marketing-review | 1.0.1 | 2026-08-10 | operations |
+| 63-campaign-retrospective | 1.0.1 | 2026-08-10 | operations |
+| 64-team-brief | 1.0.1 | 2026-08-10 | operations |
+| 65-team-performance-review | 1.0.1 | 2026-08-10 | operations |
+| 66-crisis-playbook | 1.0.1 | 2026-08-10 | operations |
+| 67-agency-vendor-brief | 1.1.0 | 2026-10-26 | operations |
 | 68-cro-audit-trang | 1.0.0 | 2026-08-10 | performance |
 | 69-giu-chan-khach-hang | 1.0.0 | 2026-08-10 | operations |
 | 70-lead-magnet | 1.0.0 | 2026-08-10 | content |
 | 71-sales-enablement | 1.0.0 | 2026-08-10 | operations |
 | 72-hoi-dong-marketing | 1.0.0 | 2026-08-10 | strategy |
 | 74-copy-hai-lop | 1.0.0 | 2026-08-16 | content |
-| product-marketing-context-global | 1.0.0 | 2026-05-08 | foundation (global) |
-| 00-marketing-plan-global | 1.0.0 | 2026-05-08 | strategy (global) |
-| 01-content-calendar-global | 1.0.0 | 2026-05-08 | content (global) |
-| 02-campaign-brief-global | 1.0.0 | 2026-05-08 | strategy (global) |
-| 03-performance-eval-global | 1.0.0 | 2026-05-08 | performance (global) |
-| 04-script-video-global | 1.0.0 | 2026-05-08 | content (global) |
-| 05-ad-copy-global | 1.0.0 | 2026-05-08 | content (global) |
-| 06-ugc-egc-brief-global | 1.0.0 | 2026-05-08 | content (global) |
-| 07-marketing-report-global | 1.0.0 | 2026-05-08 | performance (global) |
-| 08-competitor-research-global | 1.0.0 | 2026-05-08 | strategy (global) |
-| 09-customer-insight-global | 1.0.0 | 2026-05-08 | strategy (global) |
-| 10-reverse-kpi-global | 1.0.0 | 2026-05-08 | performance (global) |
-| 11-channel-setup-global | 1.0.0 | 2026-05-08 | operations (global) |
-| 12-landing-page-brief-global | 1.0.0 | 2026-05-08 | operations (global) |
-| 13-data-analysis-global | 1.0.0 | 2026-05-08 | operations (global) |
-| 14-email-marketing-global | 1.0.0 | 2026-05-08 | operations (global) |
-| 15-social-listening-global | 1.0.0 | 2026-05-08 | content (global) |
-| 16-marketing-psychology-global | 1.0.0 | 2026-05-08 | strategy (global) |
-| 17-pricing-strategy-global | 1.0.0 | 2026-05-08 | strategy (global) |
-| 18-referral-program-global | 1.0.0 | 2026-05-08 | operations (global) |
-| 19-ab-test-setup-global | 1.0.0 | 2026-05-08 | performance (global) |
-| 20-client-intake-brief-global | 1.0.0 | 2026-05-08 | operations (global) |
-| 21-ads-audit-global | 1.0.0 | 2026-05-08 | performance (global) |
-| 22-personal-brand-context-global | 1.1.0 | 2026-06-06 | foundation (global) |
-| 23-personal-brand-strategy-global | 1.0.0 | 2026-05-08 | strategy (global) |
-| 24-ai-avatar-production-global | 1.1.0 | 2026-06-06 | content (global) |
-| 25-voice-clone-podcast-global | 1.0.0 | 2026-05-08 | content (global) |
-| 26-thought-leadership-content-global | 1.0.0 | 2026-05-08 | content (global) |
-| 27-personal-brand-monetize-global | 1.0.0 | 2026-05-08 | strategy (global) |
-| 28-community-building-global | 1.0.0 | 2026-05-08 | operations (global) |
-| 29-dropshipping-mastery-global | 1.0.0 | 2026-05-08 | strategy (global) — FLAGSHIP |
-| 30-design-master-global | 1.1.0 | 2026-06-06 | design (global) |
-| 31-offer-design-global | 1.0.0 | 2026-06-30 | strategy (global) |
-| 32-seo-growth-global | 1.0.0 | 2026-06-30 | performance (global) |
-| 33-b2b-lead-gen-global | 1.0.0 | 2026-06-30 | operations (global) |
-| 34-ai-marketing-os-global | 1.0.0 | 2026-07-08 | operations (global) |
-| 35-brand-voice-global | 1.0.0 | 2026-07-30 | content (global) |
-| 36-content-brief-global | 1.0.0 | 2026-07-30 | content (global) |
-| 37-social-caption-global | 1.0.0 | 2026-07-30 | content (global) |
-| 38-community-seeding-global | 1.0.0 | 2026-07-30 | content (global) |
-| 39-content-audit-global | 1.0.0 | 2026-07-30 | content (global) |
-| 40-next-content-plan-global | 1.0.0 | 2026-07-30 | content (global) |
-| 41-campaign-asset-list-global | 1.0.0 | 2026-07-30 | operations (global) |
-| 42-image-brief-global | 1.0.0 | 2026-07-30 | content (global) |
-| 43-carousel-brief-global | 1.0.0 | 2026-07-30 | content (global) |
-| 44-video-editor-brief-global | 1.0.0 | 2026-07-30 | content (global) |
-| 45-design-tool-brief-global | 1.0.0 | 2026-07-30 | operations (global) |
-| 46-brand-guideline-global | 1.0.0 | 2026-07-30 | strategy (global) |
-| 47-design-review-global | 1.0.0 | 2026-07-30 | operations (global) |
-| 48-quick-visual-brief-global | 1.0.0 | 2026-07-30 | operations (global) |
-| 49-html-email-template-global | 1.0.0 | 2026-07-30 | operations (global) |
-| 50-asset-resize-global | 1.0.0 | 2026-07-30 | operations (global) |
-| 51-audience-research-global | 1.0.0 | 2026-07-30 | performance (global) |
-| 52-account-structure-global | 1.0.0 | 2026-07-30 | performance (global) |
-| 53-tracking-setup-global | 1.0.0 | 2026-07-30 | performance (global) |
-| 54-media-plan-global | 1.0.0 | 2026-07-30 | performance (global) |
-| 55-scaling-ads-global | 1.0.0 | 2026-07-30 | performance (global) |
-| 56-retargeting-plan-global | 1.0.0 | 2026-07-30 | performance (global) |
-| 57-next-ads-plan-global | 1.0.0 | 2026-07-30 | performance (global) |
-| 58-positioning-global | 1.0.0 | 2026-07-30 | strategy (global) |
-| 59-go-to-market-global | 1.0.0 | 2026-07-30 | strategy (global) |
-| 60-launch-playbook-global | 1.0.0 | 2026-07-30 | strategy (global) |
-| 61-budget-planning-global | 1.0.0 | 2026-07-30 | strategy (global) |
-| 62-marketing-review-global | 1.0.0 | 2026-07-30 | operations (global) |
-| 63-campaign-retrospective-global | 1.0.0 | 2026-07-30 | operations (global) |
-| 64-team-brief-global | 1.0.0 | 2026-07-30 | operations (global) |
-| 65-team-performance-review-global | 1.0.0 | 2026-07-30 | operations (global) |
-| 66-crisis-playbook-global | 1.0.0 | 2026-07-30 | operations (global) |
-| 67-agency-vendor-brief-global | 1.0.0 | 2026-07-30 | operations (global) |
+| product-marketing-context-global | 1.1.0 | 2026-10-26 | foundation |
+| 00-marketing-plan-global | 1.0.1 | 2026-08-10 | strategy |
+| 01-content-calendar-global | 1.0.1 | 2026-08-10 | content |
+| 02-campaign-brief-global | 1.0.1 | 2026-08-10 | strategy |
+| 03-performance-eval-global | 1.1.0 | 2026-10-26 | performance |
+| 04-script-video-global | 1.0.1 | 2026-08-10 | content |
+| 05-ad-copy-global | 1.1.0 | 2026-10-26 | content |
+| 06-ugc-egc-brief-global | 1.0.1 | 2026-08-10 | content |
+| 07-marketing-report-global | 1.0.1 | 2026-08-10 | operations |
+| 08-competitor-research-global | 1.0.1 | 2026-08-10 | strategy |
+| 09-customer-insight-global | 2.5.1 | 2026-08-10 | strategy |
+| 10-reverse-kpi-global | 1.0.1 | 2026-08-10 | strategy |
+| 11-channel-setup-global | 1.0.1 | 2026-08-10 | operations |
+| 12-landing-page-brief-global | 2.5.1 | 2026-08-10 | content |
+| 13-data-analysis-global | 2.5.1 | 2026-08-10 | performance |
+| 14-email-marketing-global | 1.0.2 | 2026-10-26 | operations |
+| 15-social-listening-global | 2.5.1 | 2026-08-10 | operations |
+| 16-marketing-psychology-global | 1.0.1 | 2026-08-10 | strategy |
+| 17-pricing-strategy-global | 1.0.1 | 2026-08-10 | strategy |
+| 18-referral-program-global | 1.0.1 | 2026-08-10 | operations |
+| 19-ab-test-setup-global | 1.0.1 | 2026-08-10 | performance |
+| 20-client-intake-brief-global | 1.0.1 | 2026-08-10 | operations |
+| 21-ads-audit-global | 1.1.0 | 2026-10-26 | performance |
+| 22-personal-brand-context-global | 1.1.1 | 2026-08-10 | foundation |
+| 23-personal-brand-strategy-global | 1.0.1 | 2026-08-10 | strategy |
+| 24-ai-avatar-production-global | 1.1.2 | 2026-10-26 | content |
+| 25-voice-clone-podcast-global | 1.0.1 | 2026-08-10 | content |
+| 26-thought-leadership-content-global | 1.0.1 | 2026-08-10 | content |
+| 27-personal-brand-monetize-global | 1.0.1 | 2026-08-10 | strategy |
+| 28-community-building-global | 1.0.1 | 2026-08-10 | operations |
+| 29-dropshipping-mastery-global | 1.0.1 | 2026-08-10 | strategy |
+| 30-design-master-global | 1.1.1 | 2026-08-10 | design |
+| 31-offer-design-global | 1.0.1 | 2026-08-10 | strategy |
+| 32-seo-growth-global | 1.2.0 | 2026-10-26 | performance |
+| 33-b2b-lead-gen-global | 1.0.1 | 2026-08-10 | operations |
+| 34-ai-marketing-os-global | 1.1.0 | 2026-10-26 | operations |
+| 35-brand-voice-global | 1.0.1 | 2026-08-10 | content |
+| 36-content-brief-global | 1.0.1 | 2026-08-10 | content |
+| 37-social-caption-global | 1.0.1 | 2026-08-10 | content |
+| 38-community-seeding-global | 1.0.1 | 2026-08-10 | content |
+| 39-content-audit-global | 1.0.1 | 2026-08-10 | content |
+| 40-next-content-plan-global | 1.0.1 | 2026-08-10 | content |
+| 41-campaign-asset-list-global | 1.0.1 | 2026-08-10 | operations |
+| 42-image-brief-global | 1.0.1 | 2026-08-10 | content |
+| 43-carousel-brief-global | 1.0.1 | 2026-08-10 | content |
+| 44-video-editor-brief-global | 1.0.1 | 2026-08-10 | content |
+| 45-design-tool-brief-global | 1.0.1 | 2026-08-10 | operations |
+| 46-brand-guideline-global | 1.0.1 | 2026-08-10 | strategy |
+| 47-design-review-global | 1.0.1 | 2026-08-10 | operations |
+| 48-quick-visual-brief-global | 1.0.1 | 2026-08-10 | operations |
+| 49-html-email-template-global | 1.0.1 | 2026-08-10 | operations |
+| 50-asset-resize-global | 1.0.1 | 2026-08-10 | operations |
+| 51-audience-research-global | 1.0.1 | 2026-08-10 | performance |
+| 52-account-structure-global | 1.0.1 | 2026-08-10 | performance |
+| 53-tracking-setup-global | 1.1.0 | 2026-10-26 | performance |
+| 54-media-plan-global | 1.0.1 | 2026-08-10 | performance |
+| 55-scaling-ads-global | 1.0.1 | 2026-08-10 | performance |
+| 56-retargeting-plan-global | 1.0.1 | 2026-08-10 | performance |
+| 57-next-ads-plan-global | 1.0.1 | 2026-08-10 | performance |
+| 58-positioning-global | 1.0.1 | 2026-08-10 | strategy |
+| 59-go-to-market-global | 1.0.1 | 2026-08-10 | strategy |
+| 60-launch-playbook-global | 1.0.1 | 2026-08-10 | strategy |
+| 61-budget-planning-global | 1.0.1 | 2026-08-10 | strategy |
+| 62-marketing-review-global | 1.0.1 | 2026-08-10 | operations |
+| 63-campaign-retrospective-global | 1.0.1 | 2026-08-10 | operations |
+| 64-team-brief-global | 1.0.1 | 2026-08-10 | operations |
+| 65-team-performance-review-global | 1.0.1 | 2026-08-10 | operations |
+| 66-crisis-playbook-global | 1.0.1 | 2026-08-10 | operations |
+| 67-agency-vendor-brief-global | 1.0.1 | 2026-08-10 | operations |
+| 75-hop-tac-koc-affiliate | 1.0.0 | 2026-10-26 | operations |
+| 76-van-hanh-san-tmdt | 1.0.0 | 2026-10-26 | performance |
 
 ## Changelog
 
-### 2026-08-16 — Unreleased (additive, no replace)
+### 2026-10-26 — v3.8.0
+
+**Operating rules, legal hub, evals, marketplace and KOC skills.** Eight shared operating rules (VN + Global), one Vietnam legal hub replacing outdated citations (ND 13/2023 → Luat 91/2025 + ND 356/2025; AI labels → Luat 134/2025 + ND 142/2026; ND 147/2024 kept only for account verification). Removed unverifiable claims: the `@meta/ads-cli` npm package, MCP tool counts, an Andromeda similarity threshold, fine amounts. New VN skills `75-hop-tac-koc-affiliate` and `76-van-hanh-san-tmdt`; `21` pair rebuilt with coverage-aware scoring. First `evals/evals.json` files and `scripts/check-repo.mjs` in CI. Marketplace 143 → 146 skills (77 VN + 69 Global) with `74`, `75`, `76`. Full list: CHANGELOG.md.
 
 **Added:** `74-copy-hai-lop` — dual-layer slogan / poster line for VN. Method adapted (not copied) from MIT skill xiaoma-durex-copywriter. Does not replace `05-copy-quang-cao` or `37-caption-social`. No Durex posters, corpus lines, or render scripts imported.
 
-**Changed:** sibling routing on `05-copy-quang-cao` 2.5.2, `37-caption-social` 1.0.2, `42-brief-hinh-anh` 1.0.2, `58-positioning` 1.0.2.
-
-**Marketplace:** 143 → 144 skills (75 VN + 69 Global). Plugin version stays 3.7.0 until release cut.
+**Changed:** sibling routing on `05-copy-quang-cao` 2.5.2 (2.6.0 by release), `37-caption-social` 1.0.2, `42-brief-hinh-anh` 1.0.2, `58-positioning` 1.0.2.
 
 ### 2026-08-10 — v3.7.0
 

@@ -1,8 +1,8 @@
 ---
 name: 24-ai-avatar-production
-description: "Dung khi mot CA NHAN muon len hinh bang AI thay vi tu quay — pipeline avatar AI: 3 tier cong cu, 4 workflow gom avatar don, dich da ngon ngu, san xuat hang loat va hybrid nguoi that cong AI; nhan anh reference de tao prompt avatar; thay mat, style, logo; ghep voice clone; tranh bi nen tang danh dau; cong bo AI theo Nghi dinh 147/2024 va QA 100 diem. Cong cu HeyGen, Synthesia, ElevenLabs, Captions, Vbee. Kich hoat khi user nhac 'tao avatar AI', 'video HeyGen', 'talking head AI', 'lam video ma ngai lo mat', 'batch video AI', 'dich video sang tieng Anh', 'prompt avatar'. Khong dung cho — clone giong cho podcast va audio thi dung skill 25-voice-clone-podcast; viet loi thoai video thi dung skill 04-script-video; anh tinh thi dung skill 30-thiet-ke-master."
+description: "Dung khi mot CA NHAN muon len hinh bang AI thay vi tu quay — pipeline avatar AI: 3 tier cong cu, 4 workflow gom avatar don, dich da ngon ngu, san xuat hang loat va hybrid nguoi that cong AI; nhan anh reference de tao prompt avatar; thay mat, style, logo; ghep voice clone; tranh bi nen tang danh dau; cong bo AI theo Luat Tri tue nhan tao 134/2025 + ND 142/2026 va QA 100 diem. Cong cu HeyGen, Synthesia, ElevenLabs, Captions, Vbee. Kich hoat khi user nhac 'tao avatar AI', 'video HeyGen', 'talking head AI', 'lam video ma ngai lo mat', 'batch video AI', 'dich video sang tieng Anh', 'prompt avatar'. Khong dung cho — clone giong cho podcast va audio thi dung skill 25-voice-clone-podcast; viet loi thoai video thi dung skill 04-script-video; anh tinh thi dung skill 30-thiet-ke-master."
 metadata:
-  version: 1.1.1
+  version: 1.1.2
   category: content
 license: MIT
 triggers:
@@ -27,6 +27,8 @@ related:
 ---
 
 # AI Avatar Production — Pipeline 3 Tier, 4 Workflow, QA Score
+
+> Quy tac van hanh chung: `skills/vi/references/quy-tac-van-hanh.md` (dac biet quy tac 2, 3, 7).
 
 > **Skill nay la flagship cua cluster AI Content.**
 > Bao gom toan bo quy trinh tao video AI Avatar tu zero den publish,
@@ -388,26 +390,31 @@ Neu chi can anh avatar tinh, route sang `30-thiet-ke-master` personal-brand mode
 - **YouTube:** Nghiem voi video monetize — can disclose theo YPP policy
 
 > **CANH BAO:** KHONG BAO GIO dung AI avatar de gia mao (impersonate)
-> nguoi khac. Day la vi pham phap luat va se bi khoa tai khoan vinh vien.
+> nguoi khac. Rui ro: ve phap ly, noi dung mo phong nguoi that / gay nham lan thuoc hub muc 4
+> (`skills/vi/references/phap-ly-marketing-vn.md`); ve nen tang, noi dung co the bi go va tai khoan co the bi han che.
 
 ---
 
 ## 11. Ethics & Disclosure VN
 
-### Khung phap ly 2024-2025
+### Khung phap ly (kiem tra van ban goc tai vbpl.vn / thuvienphapluat.vn)
 
 | Van ban | Yeu cau chinh |
 |---------|--------------|
-| **Nghi dinh 147/2024/ND-CP** | Bat buoc disclose khi dung AI cho quang cao thuong mai |
-| **Luat Quang cao 2012 (sua doi 2024)** | Cam thong tin sai lech ve nguon goc san pham/dich vu |
-| **YouTube YPP Policy** | Bat buoc gan nhan "Altered content" neu dung AI realistic |
+| **Luat Tri tue nhan tao 134/2025/QH15 Dieu 11** (hieu luc 2026-03-01) + **ND 142/2026/ND-CP Dieu 18** (hieu luc 2026-05-01) | Noi dung AI mo phong nguoi that / co the gay nham lan ve nguon goc phai co nhan nhin thay duoc — xem `skills/vi/references/phap-ly-marketing-vn.md` muc 4 |
+| **Luat Quang cao (sua doi 75/2025/QH15, hieu luc 2026-01-01)** | Nghia vu cong bo quang cao + cam thong tin sai lech — xem hub muc 3 |
+| **ND 147/2024/ND-CP** | Can cu **xac thuc tai khoan** mang xa hoi (khong lien quan den nhan noi dung) — xem hub muc 5 |
+
+**Chinh sach nen tang (khong phai van ban luat):** YouTube yeu cau khai bao "Altered content" voi noi dung AI chan that — kiem tra chinh sach YouTube [2026-10].
 
 ### 3 tang disclosure
 
+Nhan **AI** va cong bo **quang cao** la 2 nghia vu tach biet: quang cao tra tien / KOL co tra phi van phai co dong cong bo quang cao (hub muc 3), du co gan nhan AI hay khong.
+
 | Tang | Khi nao | Vi du |
 |------|---------|-------|
-| **BAT BUOC** | Quang cao thuong mai (ads tra tien, KOL co tra phi) | "Video nay su dung cong nghe AI Avatar" |
-| **NEN CO** | Content thuong (organic post, video giao duc) | "Hinh anh/giong noi duoc ho tro boi AI" |
+| **BAT BUOC (phap ly, hub muc 4)** | AI mo phong nguoi that / tai hien su kien that, hoac co the gay nham lan (avatar / clone giong nguoi that ra cong chung) | "Video nay su dung cong nghe AI Avatar" |
+| **NEN CO** (thuc hanh tot / chinh sach nen tang) | Cac noi dung AI khac: organic post, video giao duc, ads dung avatar hu cau ro rang | "Hinh anh/giong noi duoc ho tro boi AI" |
 | **TUY CHON** | Test noi bo, prototype, demo | Khong bat buoc nhung nen ghi chu |
 
 ### Template disclosure (copy-paste)
@@ -454,7 +461,7 @@ hoac tag "AI Generated" cua nen tang (neu co).
 
 - `references/ai-avatar-tools-vn.md` — So sanh chi tiet tools theo tung tieu chi
 - `references/voice-clone-prompts-vn.md` — Prompt va sample scripts cho voice clone
-- `references/ai-video-disclosure-vn.md` — Huong dan phap ly day du
+- `references/ai-video-disclosure-vn.md` — Huong dan gan nhan theo dinh dang (can cu phap ly: hub muc 4)
 
 ---
 

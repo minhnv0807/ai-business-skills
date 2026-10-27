@@ -2,7 +2,7 @@
 name: 25-voice-clone-podcast
 description: "Dung khi mot CA NHAN can AM THANH bang AI — clone giong noi, lam podcast, audiobook, voiceover cho video: 3 use case gom voiceover ngan cho TikTok va Reels, podcast 30-60 phut, audiobook; quy trinh thu mau giong, chinh cam xuc va toc do, cong bo dung luat, tai su dung 1 podcast thanh 10 clip ngan. Kich hoat khi user nhac 'voice clone', 'clone giong noi', 'ElevenLabs', 'lam podcast', 'audio AI', 'voiceover AI', 'ngai thu am moi ngay', 'cat podcast ra clip ngan'. Khong dung cho — video co hinh anh nguoi hoac avatar thi dung skill 24-ai-avatar-production; viet loi thoai va hook noi thi dung skill 04-script-video; viet bai dai dang chu thi dung skill 26-thought-leadership-content."
 metadata:
-  version: 1.0.1
+  version: 1.0.2
   category: content
 license: MIT
 triggers:
@@ -21,6 +21,8 @@ related:
 ---
 
 # Voice Clone & Podcast — Audio AI cho Personal Brand
+
+> Quy tac van hanh chung: `skills/vi/references/quy-tac-van-hanh.md` (dac biet quy tac 2, 3, 7).
 
 > **Skill nay tap trung vao audio AI** — voice clone, podcast, audiobook, voiceover.
 > Bo sung cho `24-ai-avatar-production` (video) — ket hop ca 2 de phu het content stack.
@@ -349,13 +351,15 @@ Tim trong transcript nhung cau co dac diem:
 
 ### VN disclosure — khi nao bat buoc
 
-| Tinh huong | Disclosure | Vi tri |
-|-----------|-----------|--------|
-| Quang cao thuong mai | BAT BUOC | Caption + cuoi audio ("Audio nay su dung voice clone AI") |
-| Podcast personal brand | NEN — minh bach | Episode description |
-| Audiobook fiction | KHONG bat buoc | Optional — credits cuoi |
-| Tin tuc/giao duc | BAT BUOC | Dau audio + caption |
-| Noi dung noi bo cong ty | KHONG bat buoc | n/a |
+Tach 2 nghia vu: (1) nhan **AI** — BAT BUOC khi audio mo phong giong nguoi that / tai hien su kien that hoac co the gay nham lan (hub muc 4); con lai la thuc hanh tot / chinh sach nen tang. (2) cong bo **quang cao** la nghia vu rieng (hub muc 3), khong thay the nhan AI.
+
+| Tinh huong | Nhan AI — nghia vu phap ly (hub muc 4) | Thuc hanh tot | Vi tri |
+|-----------|-----------|-----------|--------|
+| Quang cao thuong mai | BAT BUOC neu clone giong nguoi that / co the gay nham lan; them dong cong bo "quang cao" rieng (hub muc 3) | NEN gan nhan AI ke ca khi giong tong hop | Caption + cuoi audio ("Audio nay su dung voice clone AI") |
+| Podcast personal brand | BAT BUOC neu clone giong nguoi that va ra cong chung | NEN — minh bach | Episode description |
+| Audiobook fiction | Khong, tru khi mo phong nguoi that / gay nham lan | Optional — credits cuoi | Credits cuoi |
+| Tin tuc/giao duc | BAT BUOC neu mo phong nguoi that / tai hien su kien that hoac co the gay nham lan | NEN gan nhan o dau audio ke ca khi giong tong hop | Dau audio + caption |
+| Noi dung noi bo cong ty | Khong (ngoai le noi bo, hub muc 4) | n/a | n/a |
 
 **Template disclosure caption:**
 ```
@@ -363,7 +367,7 @@ Audio nay su dung cong nghe voice clone AI
 (ElevenLabs / Vbee / [tool ten]). Noi dung do [Ten ban] viet va duyet.
 ```
 
-> **Reference day du:** `references/ai-video-disclosure-vn.md` — Nghi dinh 147/2024,
+> **Reference day du:** `references/ai-video-disclosure-vn.md` — Luat AI 134/2025 Dieu 11 + ND 142/2026 Dieu 18 (hub muc 4),
 > 3 tang disclose, va template cho tung tinh huong (cung ap dung cho audio).
 
 ---

@@ -2,7 +2,7 @@
 name: 05-ad-copy-global
 description: "Use when the user needs PAID ad copy for Meta, Google, or TikTok — six variants across TOFU, MOFU, and BOFU using AIDA, PAS, and BAB, respecting each platform character limit and ad policy, with a dropshipping mode. Trigger on 'ad copy', 'write Facebook ads', 'TikTok ad copy', 'Google RSA headlines', 'primary text for this ad', 'my ad copy is not converting'. Also use when the user has a product page and asks what to run as an ad. Not for — organic social captions, see `37-social-caption-global`; spoken video lines, see `04-script-video-global`; approving copy already written, see `62-marketing-review-global`; the page the ad points at, see `12-landing-page-brief-global`."
 metadata:
-  version: 1.0.1
+  version: 1.1.0
   category: content
 license: MIT
 triggers:
@@ -22,6 +22,8 @@ related:
 ---
 
 # Ad Copy (Global)
+
+> Operating rules: `skills/en/references/operating-rules-global.md` (esp. rules 2, 3, 7).
 
 ## Step 0: Check context file
 
@@ -105,24 +107,20 @@ BAD:   "Hello there, thank you for your interest in our services. Today I want t
 
 > **Common mistake:** Writing freeform (intro -> features -> CTA) instead of using a framework. Result: bland copy, low CTR. Each of the 6 variations should use a **different framework**.
 
-### Andromeda Warning — Don't clone ads
+### Concept diversity (Andromeda) — Don't clone ads
 
-> **Meta 2026:** Andromeda system clusters ads with **Creative Similarity Score > 60%** — auto-reduces delivery. 100 minor variations (color swap, clip cut, font change) is NOT better than 10 truly distinct creatives.
+> Andromeda [reported] is Meta's ad-retrieval system; industry sources say it treats cosmetic variants (color swap, clip cut, font change) as near-duplicates. Meta publishes no similarity threshold, so do not claim a percentage.
 
-**Safety thresholds:**
+**2-axis test:** a concept counts as distinct only if it differs from the others on **at least 2 axes** of 4: **angle, persona, proof, format**. A color, clip-length or font change is 0 axes.
 
-| Similarity Score | Status | Action |
-|------------------|--------|--------|
-| < 40% | Safe | Continue |
-| 40-60% | Warning | Re-check — may cluster |
-| > 60% | Danger | Andromeda clusters -> auto delivery cut |
+> "8-12 concepts, refresh every 2-3 weeks" is a vendor heuristic — check it against your own account data; it is not a Meta rule.
 
-**5 dimensions of diversity:**
-1. **Different hooks** — Pain vs Curiosity vs Aspiration (not just text swap, change angle)
-2. **Different formats** — Vertical 9:16 vs Square 1:1 vs Carousel
-3. **Different characters** — Founder vs Customer review vs KOC/expert
-4. **Different audio** — Trending music vs Inspirational vs Voiceover
-5. **Different settings** — Studio vs Outdoor vs UGC living room
+**Ways to create real difference (each maps to an axis):**
+1. **Different angle** — Pain vs Curiosity vs Aspiration (not a text swap; change the angle)
+2. **Different format** — Vertical 9:16 vs Square 1:1 vs Carousel
+3. **Different persona** — Founder vs Customer review vs KOC/expert
+4. **Different proof** — Numbers vs real reviews vs before/after demo (sourced)
+5. **Setting / audio** — supporting only; not an axis if angle and proof stay the same
 
 ---
 
@@ -392,5 +390,5 @@ Check before delivery:
 - [ ] Has clear A/B test guide
 - [ ] Retarget creative differs from first ad
 - [ ] Each variation uses framework matching audience temperature (Cold/Warm/Hot)
-- [ ] No 2 variations using same framework + same hook -> Andromeda risk
+- [ ] No 2 variations using same framework + same hook -> near-duplicate concepts (differ on < 2 axes)
 - [ ] Creatives truly differentiated — not just color/clip swap

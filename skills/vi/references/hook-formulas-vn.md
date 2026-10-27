@@ -192,7 +192,7 @@ Luu y cach chia viec: **hinh** show trang thai SAU, **cau noi** ke trang thai TR
 
 **Vi du VN:**
 - "Con 8 slot thang 6 — 34 nguoi dang cho"
-- "Meta 2026: Andromeda se giet ads clone — ban da san sang?"
+- "Con 1 tuan de doi hook cu — 3 goc nhin moi dang cho ban test"
 - "3 thay doi lon trong marketing VN 2026 — dieu cuoi bat ngo nhat"
 
 ---
@@ -277,7 +277,7 @@ Hook moi hua mot dang, doan sau ke mot dang khac — nguoi xem roi ngay o giay t
 | "Xin chao, hom nay minh se..." | Khong co hook, nguoi xem luot ngay | Bo gioi thieu, vao thang van de |
 | "Ban co biet...?" (qua chung) | Cau hoi khong cu the, khong gay to mo | Them con so hoac chi tiet |
 | "Chung toi la thuong hieu X..." | Self-centered, khach khong quan tam | Noi ve van de cua KHACH, khong noi ve BAN |
-| Copy y het doi thu | Andromeda cluster (Meta), nguoi xem nham | Doi goc nhin, dung so lieu khac, doi format |
+| Copy y het doi thu | Nguoi xem nham, ads nhu ban sao (Meta co the coi la gan trung — Andromeda [reported]) | Doi goc nhin, dung so lieu khac, doi format |
 | Hook dai >125 ky tu (ads) | Bi cat giua, mat y nghia | Rut gon, 1 y duy nhat |
 | Hook khong lien quan noi dung | Clickbait → nguoi xem that vong → unfollow | Hook phai la promise, noi dung phai deliver |
 | 3 thanh phan noi cung 1 thong tin | Hook chi con 1/3 suc manh, 2 o bi phi | Chia viec: hinh show, loi ke, overlay goi ten |

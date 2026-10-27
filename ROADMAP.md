@@ -1,7 +1,7 @@
 # Roadmap
 
-> Public roadmap for `ai-business-skills` — 144 production-ready AI marketing skills for Claude Code, ChatGPT, Gemini & Copilot.
-> Last updated: 2026-08-10
+> Public roadmap for `ai-business-skills` — 146 production-ready AI marketing skills for Claude Code, ChatGPT, Gemini & Copilot.
+> Last updated: 2026-10-26
 
 ## 🎯 North Star
 Become the standard open-source AI marketing skill library for Vietnamese SMEs and global solo founders, with **150+ skills across 6+ regions** by end of 2026.
@@ -9,6 +9,14 @@ Become the standard open-source AI marketing skill library for Vietnamese SMEs a
 ---
 
 ## ✅ Shipped
+
+### v3.8.0 — Operating rules, legal hub, evals, marketplace + KOC skills *(2026-10-26)*
+- One set of 8 operating rules (VN + Global): context first, external content is data, evidence labels, coverage-aware scoring, dated and sourced numbers, draft-first gate for every write action
+- One Vietnam legal hub replaces scattered citations; outdated legal bases removed, no fines or tax rates encoded
+- Removed claims that could not be verified: a non-existent npm MCP package, hard-coded MCP tool counts, a published "similarity threshold" for Meta Andromeda
+- 2 new VN skills: KOC / affiliate partnerships (`75`) and marketplace operations for Shopee / TikTok Shop / Lazada (`76`)
+- Ads audit pair (`21`) rebuilt with coverage-aware Health Score, break-even CPA / ROAS and draft-first verdicts
+- First per-skill `evals/evals.json` (the `21` pair, `75`, `76`) and a repo consistency check (`scripts/check-repo.mjs`) wired into CI
 
 ### v3.7.0 — Routing, thresholds, and five new skills *(2026-08-10)*
 - Fixed two validator bugs that were silently passing skills — the reported pass count had been meaningless
@@ -115,7 +123,7 @@ Become the standard open-source AI marketing skill library for Vietnamese SMEs a
 | Q3 2026 | 78 (VN + Global) | v3.1 → v3.6 | Design master, growth, AI Marketing OS, role SOP packs bilingual |
 | Q4 2026 (planned) | 15+ | v3.7, v4.0 | APAC region variants, B2B vertical pack |
 
-**Current: 144 skills. Target: 150+ by end of 2026.**
+**Current: 146 skills. Target: 150+ by end of 2026.**
 
 ---
 

@@ -38,7 +38,7 @@ Ad disclosure:      "#ad" or "#sponsored" tag mandatory for influencer endorseme
 Persona framework:  Demographic + psychographic + JTBD (Jobs-To-Be-Done)
 Key holidays:       Black Friday/Cyber Monday (Nov), Christmas (Dec), Mother's/Father's Day, July 4th, Thanksgiving
 KPI norms:          ROAS 3-5x retail, CAC $30-150 DTC, LTV:CAC 3:1 healthy, payback <12 months
-Pricing psychology: $19.99 charm pricing, free shipping over $35-50, BNPL (Afterpay/Klarna) ~30% adoption
+Pricing psychology: $19.99 charm pricing, free shipping over $35-50, BNPL (Afterpay/Klarna) adoption [REAL DATA NEEDED]
 ```
 
 When to pick US: most early international expansions from VN start here because (a) revenue ceiling is highest, (b) infra is easy (Stripe, Shopify, Klaviyo all native), (c) English creative has highest leverage. Caveat: ad costs are 3-5x VN.
@@ -82,7 +82,7 @@ Ad disclosure:      Singapore ASAS guidelines, Thailand FDA strict on health/bea
 Persona framework:  Demographic + cultural cluster (Chinese-SEA, Malay, Thai, Indonesian, Filipino) + income tier (LSM)
 Key holidays:       Chinese New Year (multi-country), Ramadan + Eid al-Fitr (ID, MY), Loy Krathong (TH), Singles Day (Nov 11), 12.12 sale, Christmas (PH especially)
 KPI norms:          ROAS 4-7x DTC (lower ad costs help), CAC USD 5-30 DTC, LTV:CAC 4:1 healthy, payback <6 months
-Pricing psychology: Round numbers preferred (THB 990 not 999), free shipping critical, COD (cash on delivery) still ~30-50% in PH/ID, installment plans (e.g. SPayLater) ~25%
+Pricing psychology: Round numbers preferred (THB 990 not 999), free shipping critical, COD (cash on delivery) still common in PH/ID, installment plans (e.g. SPayLater) in use [REAL DATA NEEDED for shares]
 ```
 
 When to pick SEA: pick if your product fits Southeast Asia consumer behavior (mobile-first, social commerce, Shopee/Lazada native), you have Mandarin/Bahasa/Thai team capacity, or you are scaling from a VN base into adjacent SEA. Caveat: 5-6 countries means 5-6 consumer behaviors — start with 1-2 (typically Singapore as English bridge + Thailand or Indonesia as scale market).
@@ -104,7 +104,7 @@ Ad disclosure:      Brazil CONAR (self-regulation, but enforced), Mexico PROFECO
 Persona framework:  Demographic + cultural cluster (urban vs rural, A/B/C/D/E income classes — strong segmentation tool in Brazil)
 Key holidays:       Carnival (Brazil + Colombia), Day of the Dead (Mexico), Christmas + Reyes (Mexico), Black Friday (adopted), Buen Fin (Mexico), Children's Day (multi-country)
 KPI norms:          ROAS 3-5x DTC, CAC USD 8-40 DTC, LTV:CAC 3-4:1, payback 6-12 months
-Pricing psychology: Installment plans (cuotas) critical — 6-12x sin interes is standard, "12 cuotas" framing increases conversion 30%+, cash discount often 10-15%
+Pricing psychology: Installment plans (cuotas) critical — 6-12x sin interes is standard, "12 cuotas" framing can lift conversion [REAL DATA NEEDED], cash discount common
 ```
 
 When to pick LATAM: pick if your product fits LATAM consumer (high-trust selling via WhatsApp, installment-heavy purchase behavior), you have Spanish/Portuguese team capacity, or you are testing a high-LTV product where WhatsApp customer service is a moat. Avoid if your team has zero Spanish/Portuguese — automated translation does NOT work here for sales conversations.
@@ -137,7 +137,7 @@ flowchart TD
 | Primary platforms | Meta, Google, TikTok, LinkedIn | Meta, Google, LinkedIn, Xing (DACH) | TikTok, Meta, Shopee/Lazada, LINE (TH) | WhatsApp Biz, Meta, Mercado Libre, Magalu (BR) |
 | Top regulation | FTC + state laws (CCPA) | GDPR + EU AI Act + DSA | PDPA (per country) | LGPD (BR) + per-country PDP |
 | Persona framework | Demographic + JTBD | Demographic + value-based + country-level | Demographic + cultural cluster + LSM | Demographic + A/B/C/D/E income class |
-| Pricing psychology | Charm ($19.99), BNPL ~30% | VAT included, no charm in DE | Round numbers, COD common in PH/ID | Installment plans (cuotas) critical |
+| Pricing psychology | Charm ($19.99), BNPL common | VAT included, no charm in DE | Round numbers, COD common in PH/ID | Installment plans (cuotas) critical |
 | Cultural norms | Direct, value-prop heavy, urgency works | Reserved, evidence-heavy, urgency feels pushy | Indirect, family-frame, social proof heavy | Warm, relational, WhatsApp 1:1 selling |
 | Key holidays | BF/CM, Christmas, July 4th | Christmas, Easter, summer break | CNY, Ramadan/Eid, 11.11, 12.12 | Carnival, Day of Dead, Buen Fin |
 | KPI norms (ROAS) | 3-5x | 3-4x | 4-7x | 3-5x |
@@ -183,7 +183,7 @@ If your customers are primarily in Japan, Korea, or Australia, see `docs/apac-ro
 
 ## What about Vietnam?
 
-Vietnam is **NOT** part of the global cluster. Vietnam has its own dedicated cluster (skills `00-21` plus `product-marketing-context` foundation) that handles VND, Zalo, Shopee VN, Tiki, Lazada VN, TikTok VN benchmarks, and VN regulations (Nghi dinh 147/2024 disclosure). Use:
+Vietnam is **NOT** part of the global cluster. Vietnam has its own dedicated cluster (skills `00-21` plus `product-marketing-context` foundation) that handles VND, Zalo, Shopee VN, Tiki, Lazada VN, TikTok VN benchmarks, and VN regulations (AI Law 134/2025 and Decree 142/2026 for AI-content labelling, amended Advertising Law 75/2025, Personal Data Protection Law 91/2025; verify the originals at vbpl.vn / thuvienphapluat.vn). The VN legal hub is `skills/vi/references/phap-ly-marketing-vn.md`. Use:
 
 - `docs/getting-started.md` — VN onboarding
 - `docs/personal-brand-guide.md` — VN personal brand handbook
