@@ -7,26 +7,26 @@
 | Skill | Version | Last Updated | Category |
 |-------|---------|--------------|----------|
 | product-marketing-context | 1.2.0 | 2026-10-26 | foundation |
-| 00-ke-hoach-mkt | 2.0.1 | 2026-08-10 | strategy |
+| 00-ke-hoach-mkt | 2.0.2 | 2026-10-28 | strategy |
 | 01-lich-noi-dung | 2.3.1 | 2026-08-10 | content |
-| 02-brief-chien-dich | 2.1.1 | 2026-08-10 | strategy |
-| 03-danh-gia-hieu-suat | 2.4.0 | 2026-10-26 | performance |
-| 04-script-video | 2.4.1 | 2026-08-10 | content |
+| 02-brief-chien-dich | 2.1.2 | 2026-10-28 | strategy |
+| 03-danh-gia-hieu-suat | 2.4.1 | 2026-10-28 | performance |
+| 04-script-video | 2.4.2 | 2026-10-28 | content |
 | 05-copy-quang-cao | 2.6.0 | 2026-10-26 | content |
 | 06-brief-ugc-egc | 2.2.0 | 2026-10-26 | content |
 | 07-bao-cao-marketing | 2.1.2 | 2026-08-10 | operations |
 | 08-nghien-cuu-doi-thu | 2.3.2 | 2026-08-10 | strategy |
 | 09-insight-khach-hang | 2.1.1 | 2026-08-10 | strategy |
-| 10-tinh-kpi-nguoc | 2.2.0 | 2026-10-26 | performance |
+| 10-tinh-kpi-nguoc | 2.2.1 | 2026-10-28 | performance |
 | 11-thiet-lap-kenh | 2.1.0 | 2026-10-26 | operations |
 | 12-brief-landing-page | 2.1.2 | 2026-08-10 | content |
-| 13-phan-tich-du-lieu | 2.1.2 | 2026-08-10 | performance |
+| 13-phan-tich-du-lieu | 2.1.3 | 2026-10-28 | performance |
 | 14-email-marketing | 2.2.0 | 2026-10-26 | operations |
 | 15-social-listening | 2.1.1 | 2026-08-10 | operations |
 | 16-marketing-psychology | 1.0.1 | 2026-08-10 | strategy |
 | 17-pricing-strategy | 1.1.2 | 2026-10-26 | strategy |
 | 18-referral-program | 1.1.0 | 2026-10-26 | operations |
-| 19-ab-test-setup | 1.2.1 | 2026-08-10 | performance |
+| 19-ab-test-setup | 1.2.2 | 2026-10-28 | performance |
 | 20-brief-client-intake | 1.1.0 | 2026-09-12 | operations |
 | 21-audit-ads-performance | 1.4.0 | 2026-10-26 | performance |
 | 22-personal-brand-context | 1.1.1 | 2026-08-10 | foundation |
@@ -59,16 +59,16 @@
 | 49-html-email-template | 1.0.1 | 2026-08-10 | operations |
 | 50-asset-resize | 1.0.1 | 2026-08-10 | operations |
 | 51-audience-research | 1.0.1 | 2026-08-10 | performance |
-| 52-account-structure | 1.0.1 | 2026-08-10 | performance |
+| 52-account-structure | 1.0.2 | 2026-10-28 | performance |
 | 53-tracking-setup | 1.1.0 | 2026-10-26 | performance |
-| 54-media-plan | 1.0.1 | 2026-08-10 | performance |
-| 55-scaling-ads | 1.0.1 | 2026-08-10 | performance |
+| 54-media-plan | 1.0.2 | 2026-10-28 | performance |
+| 55-scaling-ads | 1.0.2 | 2026-10-28 | performance |
 | 56-retargeting-plan | 1.0.1 | 2026-08-10 | performance |
-| 57-next-ads-plan | 1.0.1 | 2026-08-10 | performance |
+| 57-next-ads-plan | 1.0.2 | 2026-10-28 | performance |
 | 58-positioning | 1.0.2 | 2026-08-16 | strategy |
 | 59-go-to-market | 1.0.1 | 2026-08-10 | strategy |
-| 60-launch-playbook | 1.0.1 | 2026-08-10 | strategy |
-| 61-budget-planning | 1.0.1 | 2026-08-10 | strategy |
+| 60-launch-playbook | 1.0.2 | 2026-10-28 | strategy |
+| 61-budget-planning | 1.0.2 | 2026-10-28 | strategy |
 | 62-marketing-review | 1.0.1 | 2026-08-10 | operations |
 | 63-campaign-retrospective | 1.0.1 | 2026-08-10 | operations |
 | 64-team-brief | 1.0.1 | 2026-08-10 | operations |
@@ -84,26 +84,26 @@
 | product-marketing-context-global | 1.1.0 | 2026-10-26 | foundation |
 | 00-marketing-plan-global | 1.0.1 | 2026-08-10 | strategy |
 | 01-content-calendar-global | 1.0.1 | 2026-08-10 | content |
-| 02-campaign-brief-global | 1.0.1 | 2026-08-10 | strategy |
-| 03-performance-eval-global | 1.1.0 | 2026-10-26 | performance |
+| 02-campaign-brief-global | 1.0.2 | 2026-10-28 | strategy |
+| 03-performance-eval-global | 1.1.1 | 2026-10-28 | performance |
 | 04-script-video-global | 1.0.1 | 2026-08-10 | content |
 | 05-ad-copy-global | 1.1.0 | 2026-10-26 | content |
 | 06-ugc-egc-brief-global | 1.0.1 | 2026-08-10 | content |
 | 07-marketing-report-global | 1.0.1 | 2026-08-10 | operations |
 | 08-competitor-research-global | 1.0.1 | 2026-08-10 | strategy |
 | 09-customer-insight-global | 2.5.1 | 2026-08-10 | strategy |
-| 10-reverse-kpi-global | 1.0.1 | 2026-08-10 | strategy |
+| 10-reverse-kpi-global | 1.0.2 | 2026-10-28 | strategy |
 | 11-channel-setup-global | 1.0.1 | 2026-08-10 | operations |
 | 12-landing-page-brief-global | 2.5.1 | 2026-08-10 | content |
-| 13-data-analysis-global | 2.5.1 | 2026-08-10 | performance |
+| 13-data-analysis-global | 2.5.2 | 2026-10-28 | performance |
 | 14-email-marketing-global | 1.0.2 | 2026-10-26 | operations |
 | 15-social-listening-global | 2.5.1 | 2026-08-10 | operations |
 | 16-marketing-psychology-global | 1.0.1 | 2026-08-10 | strategy |
-| 17-pricing-strategy-global | 1.0.1 | 2026-08-10 | strategy |
+| 17-pricing-strategy-global | 1.0.2 | 2026-10-28 | strategy |
 | 18-referral-program-global | 1.0.1 | 2026-08-10 | operations |
 | 19-ab-test-setup-global | 1.0.1 | 2026-08-10 | performance |
 | 20-client-intake-brief-global | 1.0.1 | 2026-08-10 | operations |
-| 21-ads-audit-global | 1.1.0 | 2026-10-26 | performance |
+| 21-ads-audit-global | 1.1.1 | 2026-10-28 | performance |
 | 22-personal-brand-context-global | 1.1.1 | 2026-08-10 | foundation |
 | 23-personal-brand-strategy-global | 1.0.1 | 2026-08-10 | strategy |
 | 24-ai-avatar-production-global | 1.1.2 | 2026-10-26 | content |
@@ -111,7 +111,7 @@
 | 26-thought-leadership-content-global | 1.0.1 | 2026-08-10 | content |
 | 27-personal-brand-monetize-global | 1.0.1 | 2026-08-10 | strategy |
 | 28-community-building-global | 1.0.1 | 2026-08-10 | operations |
-| 29-dropshipping-mastery-global | 1.0.1 | 2026-08-10 | strategy |
+| 29-dropshipping-mastery-global | 1.0.2 | 2026-10-28 | strategy |
 | 30-design-master-global | 1.1.1 | 2026-08-10 | design |
 | 31-offer-design-global | 1.0.1 | 2026-08-10 | strategy |
 | 32-seo-growth-global | 1.2.0 | 2026-10-26 | performance |
@@ -130,20 +130,20 @@
 | 45-design-tool-brief-global | 1.0.1 | 2026-08-10 | operations |
 | 46-brand-guideline-global | 1.0.1 | 2026-08-10 | strategy |
 | 47-design-review-global | 1.0.1 | 2026-08-10 | operations |
-| 48-quick-visual-brief-global | 1.0.1 | 2026-08-10 | operations |
+| 48-quick-visual-brief-global | 1.0.2 | 2026-10-28 | operations |
 | 49-html-email-template-global | 1.0.1 | 2026-08-10 | operations |
 | 50-asset-resize-global | 1.0.1 | 2026-08-10 | operations |
 | 51-audience-research-global | 1.0.1 | 2026-08-10 | performance |
-| 52-account-structure-global | 1.0.1 | 2026-08-10 | performance |
+| 52-account-structure-global | 1.0.2 | 2026-10-28 | performance |
 | 53-tracking-setup-global | 1.1.0 | 2026-10-26 | performance |
-| 54-media-plan-global | 1.0.1 | 2026-08-10 | performance |
-| 55-scaling-ads-global | 1.0.1 | 2026-08-10 | performance |
+| 54-media-plan-global | 1.0.2 | 2026-10-28 | performance |
+| 55-scaling-ads-global | 1.0.2 | 2026-10-28 | performance |
 | 56-retargeting-plan-global | 1.0.1 | 2026-08-10 | performance |
-| 57-next-ads-plan-global | 1.0.1 | 2026-08-10 | performance |
+| 57-next-ads-plan-global | 1.0.2 | 2026-10-28 | performance |
 | 58-positioning-global | 1.0.1 | 2026-08-10 | strategy |
 | 59-go-to-market-global | 1.0.1 | 2026-08-10 | strategy |
-| 60-launch-playbook-global | 1.0.1 | 2026-08-10 | strategy |
-| 61-budget-planning-global | 1.0.1 | 2026-08-10 | strategy |
+| 60-launch-playbook-global | 1.0.2 | 2026-10-28 | strategy |
+| 61-budget-planning-global | 1.0.2 | 2026-10-28 | strategy |
 | 62-marketing-review-global | 1.0.1 | 2026-08-10 | operations |
 | 63-campaign-retrospective-global | 1.0.1 | 2026-08-10 | operations |
 | 64-team-brief-global | 1.0.1 | 2026-08-10 | operations |
@@ -154,6 +154,12 @@
 | 76-van-hanh-san-tmdt | 1.0.0 | 2026-10-26 | performance |
 
 ## Changelog
+
+### 2026-10-28 — v3.8.1
+
+**One threshold per decision, everywhere.** v3.8.0 made Gate 1 the only CPA ladder in `03`, `10` and the `21` pair; this patch removes the older pause, frequency, scaling, hook-rate and break-even rules that survived in about 40 other files. Pauses and channel cuts are proposed through rule 7 once there is enough data; frequency alone never pauses an ad set; budget steps are +20-30% at least 72h apart; break-even ROAS is 1 / contribution margin before ads. `license: MIT` added to the 20 skills that lacked it (no bump when that was the only change). No new skills. Full list: CHANGELOG.md.
+
+**Changed:** patch bumps for 27 skills. VN: `00` 2.0.2, `02` 2.1.2, `03` 2.4.1, `04` 2.4.2, `10` 2.2.1, `13` 2.1.3, `19` 1.2.2, `52` `54` `55` `57` `60` `61` 1.0.2. Global: `02` 1.0.2, `03` 1.1.1, `10` 1.0.2, `13` 2.5.2, `17` 1.0.2, `21` 1.1.1, `48` `52` `54` `55` `57` `60` `61` 1.0.2. Module: `29-dropshipping-mastery-global` 1.0.2.
 
 ### 2026-10-26 — v3.8.0
 

@@ -2,7 +2,7 @@
 name: 57-next-ads-plan-global
 description: "Use when the next period ADS plan must be built from last period results — read the report and the audit, keep and scale winners, stop or fix losers, set new test hypotheses, split budget, plan three budget scenarios, and schedule the creative pipeline. Trigger on 'next month ads plan', 'plan ads from the report', 'what should we run next month', 'Q4 ads plan', 'next quarter media plan', 'the month ended, now what'. Also use when a report and an audit both exist and no decisions have been made. Not for — the first media plan before any data, see `54-media-plan-global`; scoring the account, see `21-ads-audit-global`; the next period CONTENT plan, see `40-next-content-plan-global`."
 metadata:
-  version: 1.0.1
+  version: 1.0.2
   category: performance
 license: MIT
 triggers:
@@ -91,9 +91,10 @@ Apply the `55-scaling-ads-global` rules: +20-30% per step, never double, do not 
 
 | Campaign / ad set | Problem (with numbers) | Decision | If fixing: what changes |
 |-------------------|------------------------|----------|-------------------------|
-| [name] | CPA above 2x target for 3 days | STOP | — |
+| [name] | CPA above 3.0x target with spend >= 3x target CPA (house heuristic ladder, `03-performance-eval-global`) | STOP (propose pause via rule 7) | — |
+| [name] | CPA above 1.5x target for 7 days | FIX | Change creative or audience |
 | [name] | CTR far below the median band | FIX | New creative and hook, keep the audience |
-| [name] | Frequency 3.5+, CTR down 30% | FIX | Refresh creative, widen the audience |
+| [name] | Frequency above 2.5 (heuristic), CTR falling | FIX | Refresh creative, widen the audience |
 | [name] | Good CTR, poor CVR | FIX | Landing page or offer, not the ad |
 
 Use the diagnostic order from `references/benchmarks-global.md`: weak CTR is a creative problem; good CTR with weak CVR is a landing page or offer problem; good CVR with weak ROAS is a margin or AOV problem. Every stopped item gets a logged reason so nobody retests the same thing next period.
@@ -144,7 +145,7 @@ Have 2-3 reserve creatives ready before the period starts. Do not wait for fatig
 |------|-------|--------|---------------------------:|
 | 1 | Launch winner clones | Build, launch, verify tracking green | 20% |
 | 2 | Launch tests | Run hypotheses, read day-3 signal | 45% |
-| 3 | Optimize | Scale winners, pause losers | 70% |
+| 3 | Optimize | Scale winners, propose pausing losers per the house ladder (rule 7) | 70% |
 | 4 | Review and prepare | Pull data, write the report, draft the next plan | 100% |
 
 At the end of each week, compare cumulative actual against the threshold. A shortfall above 15% triggers the downside scenario immediately — do not wait for the period to end.

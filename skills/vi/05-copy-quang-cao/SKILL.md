@@ -5,6 +5,7 @@ argument-hint: "<san pham + key message + kenh>"
 metadata:
   version: 2.6.0
   category: content
+license: MIT
 triggers:
   - "viet quang cao"
   - "copy quang cao"

@@ -91,7 +91,7 @@
 ### Thu 4 — Ads Optimization
 
 - [ ] Toi uu bid/budget cho ad set tot
-- [ ] Pause ad set co CPA > 2x target
+- [ ] Ad set co CPA > 3.0x target (sau Buoc 0: spend >= 3x CPA muc tieu) → de xuat pause qua quy tac 7; 1.0-1.5x → theo doi; > 1.5x lien tuc 7 ngay → doi creative/audience (Gate 1, `skills/vi/references/quality-gates-vn.md`)
 - [ ] Test audience moi (LAL, interest, broad)
 - [ ] Kiem tra landing page load speed + conv rate
 

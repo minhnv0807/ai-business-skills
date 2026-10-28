@@ -74,7 +74,7 @@ SME khong can attribution model phuc tap. 4 cach tren du de ra quyet dinh phan b
 ### Phase 3 — BUNG MANH (40-50% ngan sach)
 
 - Thoi gian: 2-4 tuan | Objective: Conversions | KPI: ROAS, CPO, Revenue.
-- Viec lam: tang budget 20-30%/ngay (khong tang dot ngot) + retarget warm + monitor frequency.
+- Viec lam: tang budget 20-30%/lan, cach nhau >= 72h (Gate 8, `skills/vi/references/quality-gates-vn.md`; khong tang dot ngot) + retarget warm + monitor frequency.
 
 ### Phase 4 — DUY TRI (15-20% ngan sach)
 

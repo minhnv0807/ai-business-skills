@@ -23,7 +23,7 @@
 | **CPA (DTC e-com, AOV $25-50)** | >$18 | $9-18 | $4.50-9 | <$4.50 |
 | **ROAS (DTC, prospecting)** | <1.4x | 1.4-2.2x | 2.2-3.0x | >3.0x |
 | **ROAS (DTC, blended)** | <1.8x | 1.8-2.5x | 2.5-3.5x | >3.5x |
-| **Frequency (cold)** | >5 | 3.5-5 | 2-3.5 | <2 |
+| **Frequency (cold, 7-day, heuristic; compare with account history)** | >4 (urgent: expand audience) | 2.5-4 (with falling CTR: swap creative) | 2-2.5 | <2 |
 
 ### Meta Ads (Argentina — currency volatility caveat)
 
@@ -66,7 +66,7 @@ Argentina ARS reports are unreliable for trending due to inflation (50-150% YoY 
 
 | Model | Break-even ROAS | Healthy ROAS | Scale ROAS |
 |-------|-----------------|--------------|------------|
-| **DTC e-com (40-50% margin)** | 2.0-2.5x | 2.5-3.2x | 3.2x+ |
+| **DTC e-com (40-50% contribution margin before ads)** | 2.0-2.5x | 2.5-3.2x | 3.2x+ |
 | **Local service (estética, dental, F&B)** | 3-4x first-touch | 5-7x | 7x+ |
 | **Real estate (lead → consult)** | Cost-per-consult <$10 | <$6 | <$3 |
 | **Course / info-product** | 1.6-2x | 2.2-3x | 3x+ |

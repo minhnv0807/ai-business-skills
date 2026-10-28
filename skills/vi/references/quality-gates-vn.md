@@ -30,12 +30,12 @@ Cach tinh (mo hinh don gian hoa): gia dinh CPA that = CPA muc tieu va so chuyen 
 | ≤ 1.0x | **Winner** | Ung vien scale — chuyen sang `55-scaling-ads` kiem tra 7 dieu kien du |
 | 1.0 – 1.5x | Theo doi | Giu, toi uu creative/audience. Chua scale, chua tat |
 | > 1.5x lien tuc 7 ngay | Thay | Doi creative hoac audience. Giu ngan sach, doi bien |
-| > 3.0x | **Tat ngay** | De xuat pause qua cong duyet quy tac 7 (hoac uy quyen thuong truc con hieu luc). Ghi ly do vao log truoc khi tat |
-| 0 chuyen doi khi spend ≥ 3x | **Tat ca concept** | Khong phai loi creative le — goc tiep can sai. Quay ve `09-insight-khach-hang` |
+| > 3.0x | **De xuat tat** | De xuat pause qua cong duyet quy tac 7 (hoac uy quyen thuong truc con hieu luc). Ghi ly do vao log truoc khi tat |
+| 0 chuyen doi khi spend ≥ 3x | **Bo concept** | Khong phai loi creative le — goc tiep can sai. Quay ve `09-insight-khach-hang` |
 
 ### Vi du VN
 
-CPA muc tieu (CPMess) 25K → chua du data khi spend < 75K · winner khi ≤ 25K · theo doi 25–37K · thay creative khi > 37K keo dai 7 ngay · tat khi > 75K · tat concept khi tieu 75K ma chua co tin nhan nao.
+CPA muc tieu (CPMess) 25K → chua du data khi spend < 75K · winner khi ≤ 25K · theo doi 25–37K · thay creative khi > 37K keo dai 7 ngay · de xuat tat khi > 75K · bo concept khi tieu 75K ma chua co tin nhan nao.
 
 ### Lop chat luong lead (platform khong nhin thay)
 
@@ -204,7 +204,7 @@ Khong duoc:
 
 ## Gate 8 — Scale Speed Limit (Toc Do Tang Ngan Sach)
 
-**Quy tac:** KHONG tang ngan sach quang cao nhanh hon **20%/lan/72h**.
+**Quy tac (heuristic):** moi lan tang ngan sach toi da **20-30%**, hai lan tang cach nhau it nhat **72h**. +20% la muc an toan nhat. Khong gap doi dot ngot.
 
 ```
 Sai lam pho bien:
@@ -213,13 +213,13 @@ Sai lam pho bien:
 
 Cach dung:
   Thu 2: 100K/ngay
-  Thu 4: 120K/ngay (+20%)
-  Thu 6: 144K/ngay (+20%)
-  T2 tuan sau: 173K/ngay (+20%)
+  Thu 5: 120K/ngay (+20%, sau 72h)
+  Chu nhat: 144K/ngay (+20%, sau 72h)
+  Thu 4 tuan sau: 173K/ngay (+20%, sau 72h)
   ...
 ```
 
-**Ly do:** Meta reset hoc lieu khi budget thay doi > 20% → quay lai Learning Phase → Performance giam tam thoi.
+**Ly do:** thay doi ngan sach lon co the dua ad set quay lai Learning Phase → performance giam tam thoi. Meta khong cong bo nguong % cu the; 20-30% la heuristic pho bien, so voi lich su tai khoan cua ban.
 
 ---
 
@@ -278,6 +278,6 @@ Truoc bat ky khuyen nghi scale hoac toi uu nao, kiem tra:
 - [ ] **Gate 5** — Ad set dang chay co >= 3 concept khac nhau o >= 2 truc (angle / persona / proof / format)?
 - [ ] **Gate 6** — Nganh co rui ro compliance? → Da kiem tra chua?
 - [ ] **Gate 7** — TikTok video co am thanh? (neu dung TikTok)
-- [ ] **Gate 8** — Tang ngan sach khong qua 20%/lan?
+- [ ] **Gate 8** — Moi lan tang ngan sach <= 20-30%, cach lan truoc >= 72h?
 - [ ] **Gate 9** — Du du lieu de ket luan? (it nhat 1,000 impression)
 - [ ] **Gate 10** — LTV:CAC >= 3:1 truoc khi scale?

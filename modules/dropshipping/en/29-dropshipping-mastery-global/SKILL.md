@@ -2,7 +2,7 @@
 name: 29-dropshipping-mastery-global
 description: "Use when the user is launching or running a DROPSHIPPING business end to end — the full 12-phase pipeline: product research with winning criteria, Minea and PiPiAds, supplier sourcing on AliExpress, CJ, Spocket, and Zendrop, Shopify store and app setup, the 10-ads-per-week creative pipeline, interest and lookalike targeting, 3-5x markup and BE-ROAS math, customer service, and scaling. Trigger on 'start dropshipping', 'winning product research', 'Shopify store setup', 'AliExpress supplier', 'scale my dropshipping store', 'my store gets traffic and no sales'. Not for — only the ad copy, see `05-ad-copy-global`; only the product page, see `12-landing-page-brief-global`; only the account audit, see `21-ads-audit-global`; only pricing, see `17-pricing-strategy-global`."
 metadata:
-  version: 1.0.1
+  version: 1.0.2
   category: strategy
 license: MIT
 triggers:
@@ -184,7 +184,7 @@ Ask up to 4 questions before generating output:
 - **Monday**: Brief 5 UGC creators or shoot 5 in-house
 - **Wed-Thu**: Review footage, edit 10 final ads
 - **Friday**: Upload, schedule for Monday morning
-- **Sunday**: Launch new ads, kill underperformers from prior week
+- **Sunday**: Launch new ads, propose pausing losers from prior week per the house ladder (`03-performance-eval-global`, rule 7)
 
 **Creative iteration framework:**
 - Test 3-5 hooks per winning concept (same body, different first 3 seconds)
@@ -216,7 +216,8 @@ Ask up to 4 questions before generating output:
 
 **Budget allocation rules:**
 - Don't scale ad sets that haven't crossed $50 spend (insufficient data)
-- Kill ad sets at $20 spend with 0 ATC (clear loser)
+- 0 add-to-cart after spend >= 1x target CPA = early warning: check creative and offer, do not decide yet
+- Kill only at 0 purchases after spend >= 3x target CPA (house heuristic ladder in `03-performance-eval-global`; a pause is a proposal through rule 7)
 - Duplicate winners with +50% budget; don't edit winning ad sets directly
 
 ## 8. Pricing math — 3-5x markup + BE-ROAS
@@ -236,18 +237,20 @@ Net profit:     $4-8/unit (15-30% margin)
 **BE-ROAS (Break-Even ROAS) formula:**
 
 ```
-BE-ROAS = 1 / (gross profit margin)
+BE-ROAS = 1 / contribution margin before ads
+
+Contribution margin before ads = (price - COGS - shipping - payment/platform fees - returns allowance) / price
+(NOT gross margin, and never a margin that already subtracts ad spend)
 
 If product cost $5, sells $25:
-  Gross margin = ($25 - $5) / $25 = 80%
-  BE-ROAS = 1 / 0.80 = 1.25x
+  Product-only margin = ($25 - $5) / $25 = 80%  -> BE-ROAS 1.25x (too optimistic)
 
-But factor in fulfillment, transaction fees, refunds (~10%):
-  Net margin ~= 60%
+Factor in fulfillment, transaction fees, refunds (~10%):
+  Contribution margin before ads ~= 60%
   BE-ROAS = 1 / 0.60 = 1.67x
 ```
 
-**Need actual ROAS > BE-ROAS to be profitable.** Many dropshippers chase 2x ROAS but don't realize their BE-ROAS is 1.8x — they're barely profitable.
+**Need actual ROAS > BE-ROAS to be profitable.** Many dropshippers chase 2x ROAS but don't realize their BE-ROAS is 1.67x — they're barely profitable.
 
 **Price ladder (encourage upsell):**
 - Single product: $29.99

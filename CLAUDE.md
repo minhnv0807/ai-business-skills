@@ -211,10 +211,11 @@ Reference bo sung v3.5.0:
 - `references/marketing-templates-library.md` — cau truc 28 template van hanh (planning, tracking dashboard, audit, report, campaign, content calendar) + bo cot chuan de moi skill xuat bang dong nhat. Doc truoc khi xuat bat ky bang tracking/dashboard/plan nao.
 - `references/ai-tool-orchestration.md` — vai tro tung AI tool, quy trinh 9 buoc lap ke hoach, setup project theo vai tro, checklist cau hoi khai thac thong tin, anti-pattern.
 
-Decision rules nhanh (chi tiet trong skill 03/21/54/55):
+Decision rules nhanh (chi tiet trong `skills/vi/references/quality-gates-vn.md` + skill 03/21/54/55):
 - Budget split ads: Testing 30% · Scale 50% · Retargeting 15% · Lookalike 5%.
-- Frequency > 2.5 → thay creative. CPL vuot target >25% + freq cao → PAUSE, khong do them tien.
-- Scale winner tung buoc +20-30%; KHONG tang budget khi CPL dang xau; KHONG chay ads khi tracking chua verify.
+- CPA/CPL theo Gate 1: spend < 3x CPA muc tieu = chua du data, chua phan xu; > 1.5x lien tuc 7 ngay → doi creative/audience; > 3.0x → de xuat PAUSE qua quy tac 7, khong do them tien; 0 chuyen doi khi spend >= 3x → bo concept.
+- Frequency (heuristic, traffic lanh 7 ngay) > 2.5 kem CTR giam → thay creative; retargeting so voi lich su tai khoan. Frequency mot minh khong phai ly do pause.
+- Scale winner tung buoc +20-30%/lan, cach nhau >= 72h, an toan nhat +20% (Gate 8); KHONG tang budget khi CPL dang xau; KHONG chay ads khi tracking chua verify.
 - Designer timeline: T-14 asset list → T-7 concept MVP → T-5/T-3/T-1 asset theo do kho → D+1 danh dau winner/loser.
 
 ## Benchmark nhanh — Vietnam 2025–2026

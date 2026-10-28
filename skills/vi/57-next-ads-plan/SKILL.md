@@ -2,7 +2,7 @@
 name: 57-next-ads-plan
 description: "Dung khi ket thuc mot ky va can lap plan quang cao ky sau tu data that — giu winner, thay loser, gia thuyet test moi, va ngan sach theo 3 kich ban. Kich hoat khi user nhac 'next ads plan', 'plan ads thang sau', 'ky toi chay gi', 'dua vao ket qua lap ke hoach ads', 'ads thang toi'. Khong dung cho — lap media plan lan dau khi chua co data thi dung skill 54-media-plan; chan doan tai sao ky vua roi kem thi dung skill 21-audit-ads-performance."
 metadata:
-  version: 1.0.1
+  version: 1.0.2
   category: performance
 license: MIT
 triggers:
@@ -84,9 +84,9 @@ Ap quy tac `55-scaling-ads`: tang +20-30%/lan, khong x2; giu nguyen winning ad s
 
 | Campaign / Ad set | Van de (so lieu) | Quyet dinh | Neu fix: thay gi |
 |-------------------|------------------|-----------|------------------|
-| [ten] | CPL > 2x target 3 ngay | DUNG | — |
+| [ten] | CPL > 3.0x target, da spend >= 3x CPA target (Gate 1, `skills/vi/references/quality-gates-vn.md`) | DE XUAT DUNG (pause qua quy tac 7) | — |
 | [ten] | CTR < 0.5% | FIX | Doi creative/hook, giu tep |
-| [ten] | Frequency > 3.5, CTR giam 30% | FIX | Refresh creative, mo tep |
+| [ten] | Frequency > 2.5 (heuristic, traffic lanh 7 ngay), CTR giam 30% | FIX | Refresh creative, mo tep |
 
 Moi loser dung phai ghi ly do vao log — de ky sau khong test lai y het.
 
@@ -104,7 +104,7 @@ Moi loser dung phai ghi ly do vao log — de ky sau khong test lai y het.
 
 | Kich ban | Gia dinh | Budget | Leads du kien | Hanh dong neu xay ra |
 |----------|---------|--------|---------------|---------------------|
-| Xau | CPL +30% vs ky truoc (mua cao diem, fatigue) | [so] | [so] | Cat testing con 20%, don ve winner + retarget |
+| Xau | CPL +30% vs ky truoc (mua cao diem, fatigue) | [so] | [so] | Cat ngan sach testing con 20% (khong phai pause; pause ad/ad set van theo Gate 1: CPA > 3.0x target sau khi du data, qua quy tac 7), don ve winner + retarget |
 | Co so | CPL bang ky truoc | [so] | [so] | Chay dung plan nay |
 | Tot | CPL -20% (winner moi an) | [so] | [so] | Day them budget scale +20%/72h, mo kenh moi |
 
@@ -135,7 +135,7 @@ Luon co 2-3 creative du tru truoc khi ky moi bat dau — khong doi fatigue moi b
 |------|-------|--------|------------------------------|
 | 1 | Launch winner clones | Setup + launch, verify tracking | 20% |
 | 2 | Launch test moi | Chay hypothesis, doc so ngay 3 | 45% |
-| 3 | Optimize | Scale winner, pause loser | 70% |
+| 3 | Optimize | Scale winner, de xuat pause loser theo Gate 1 | 70% |
 | 4 | Review + chuan bi ky sau | Pull data, viet report, draft plan moi | 100% |
 
 Cuoi moi tuan doi chieu luy ke vs nguong: hut > 15% → kich hoat hanh dong kich ban Xau ngay, khong doi het thang.

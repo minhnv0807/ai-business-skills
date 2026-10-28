@@ -2,7 +2,7 @@
 name: 17-pricing-strategy-global
 description: "Use when a price has to be set or changed — value-based pricing, anchoring, charm pricing, decoy tiers, good-better-best packaging, discount policy, and margin math, with currency psychology for US, EU, SEA, and LATAM plus dropshipping markup and BE-ROAS. Trigger on 'pricing strategy', 'how much should I charge', 'should I raise prices', 'price tiers', 'customers say it is too expensive', 'dropshipping markup'. Also use when the product is not selling and the user suspects price is the reason. Not for — bonuses, guarantee, and value stack around the price, see `31-offer-design-global`; persuasion beyond price, see `16-marketing-psychology-global`; ad budget math, see `10-reverse-kpi-global`."
 metadata:
-  version: 1.0.1
+  version: 1.0.2
   category: strategy
 license: MIT
 triggers:
@@ -160,26 +160,32 @@ Of that USD 20.79 gross profit:
 ### Break-Even ROAS (BE-ROAS) formula
 
 ```
-BE-ROAS = 1 / (1 - cost/sale_price)
+BE-ROAS = 1 / (1 - variable cost per order / sale_price)
 
-Example:
-- Cost USD 8, sale USD 29.99
-- cost/sale = 0.267
-- BE-ROAS = 1 / (1 - 0.267) = 1 / 0.733 = 1.36x
+Variable cost = COGS + shipping + payment/platform fees + returns allowance
+(contribution margin before ads, not a margin that already subtracts ad spend)
 
-Translation: Your ads must return AT LEAST USD 1.36 for every USD 1 spent
+Example (same product as the unit economics above):
+- COGS USD 5 + shipping USD 3 + fees USD 1.20 + returns allowance USD 0.90 (3%) = USD 10.10
+- Sale USD 29.99
+- variable cost / sale = 10.10 / 29.99 = 0.337
+- BE-ROAS = 1 / (1 - 0.337) = 1 / 0.663 = 1.51x
+
+Translation: Your ads must return AT LEAST USD 1.51 for every USD 1 spent
 just to break even. Profitable target: 2.5x or higher.
 ```
+
+> The BE-ROAS column in the markup-tier table is a heuristic: it takes the middle of each markup range (markup = sale price / product cost) and assumes shipping, payment/platform fees and returns of about 15% of the sale price, so BE-ROAS = 1 / (1 - 1/markup - 0.15). Recompute it with your own variable cost per order using the formula above.
 
 ### Markup tiers by product price
 
 | Product cost | Recommended markup | Sale price | BE-ROAS | Profit ROAS target |
 |-------------|-------------------|-----------|---------|-------------------|
-| < USD 5 | 5-10x | USD 25-49.99 | 1.25x | 2.5x |
-| USD 5-15 | 4-5x | USD 49-79 | 1.40x | 2.7x |
-| USD 15-30 | 3-4x | USD 79-129 | 1.55x | 3.0x |
-| USD 30-60 | 2.5-3x | USD 129-199 | 1.75x | 3.2x |
-| USD 60+ | 2-2.5x | USD 199+ | 2.0x | 3.5x |
+| < USD 5 | 5-10x | USD 25-49.99 | 1.40x | 2.5x |
+| USD 5-15 | 4-5x | USD 49-79 | 1.59x | 2.7x |
+| USD 15-30 | 3-4x | USD 79-129 | 1.77x | 3.0x |
+| USD 30-60 | 2.5-3x | USD 129-199 | 2.06x | 3.2x |
+| USD 60+ | 2-2.5x | USD 199+ | 2.47x | 3.5x |
 
 ### The dropshipping price ladder
 

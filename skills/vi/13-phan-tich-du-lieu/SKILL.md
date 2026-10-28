@@ -2,8 +2,9 @@
 name: 13-phan-tich-du-lieu
 description: "Dung khi co data tho tu Meta, TikTok, GA4, CRM hay Google Sheet va can bien thanh insight ra quyet dinh duoc — kem decision log ghi quyet dinh, can cu, tac dong ky vong va ngay review lai. Kich hoat khi user nhac 'phan tich du lieu', 'doc so lieu nay', 'export data ra insight', 'so nay noi len dieu gi', 'lam decision log', 'cohort analysis'. Khong dung cho — chan doan tai sao ads kem thi dung skill 03-danh-gia-hieu-suat; viet bao cao trinh bay thi dung skill 07-bao-cao-marketing."
 metadata:
-  version: 2.1.2
+  version: 2.1.3
   category: performance
+license: MIT
 triggers:
   - "phan tich du lieu"
   - "phan tich so lieu"
@@ -209,7 +210,7 @@ ROAS giam
 │   ├── Sales team cham? → Kiem tra response time
 │   └── Gia ban thay doi? → Kiem tra pricing
 ├── Revenue giu + Spend tang? → Over-spending
-│   ├── Scale qua nhanh? → Giam lai, tang 20%/ngay max
+│   ├── Scale qua nhanh? → Giam lai, tang tung buoc <= 20-30%, cach nhau >= 72h (Gate 8)
 │   └── Kenh moi chua toi uu? → Dung scale, toi uu truoc
 └── Ca hai giam? → Van de toan dien
     ├── Doi thu co khuyen mai lon? → Phan tich doi thu
@@ -255,11 +256,11 @@ Khi phan tich, tu dong kiem tra cac tinh huong sau:
 
 | Tinh huong | Kiem tra | Hanh dong |
 |-----------|---------|----------|
-| CPL tang > 30% WoW | Creative co chay qua 14 ngay khong? Frequency > 3? | Thay creative moi, refresh audience |
+| CPL tang > 30% WoW | Creative co chay qua 14 ngay khong? Frequency > 2.5 va CTR dang giam (heuristic, 7 ngay)? | Thay creative moi, refresh audience |
 | CTR giam < 0.8% | Hook 3 giay co manh khong? Hinh anh co noi bat khong? | A/B test hook moi, doi hinh dau |
-| ROAS < 2x lien tuc 7 ngay | Audience co dung khong? Landing page conv rate bao nhieu? | Thu hep audience, kiem tra landing page |
+| ROAS duoi break-even (bien dong gop truoc ads) lien tuc 7 ngay sau khi du data | Audience co dung khong? Landing page conv rate bao nhieu? | Thu hep audience, kiem tra landing page |
 | Conv rate landing page < 3% | Load time bao lau? Form may truong? CTA co ro khong? | Goi skill 12-brief-landing-page |
-| Frequency > 4 | Audience da bao hoa | Mo rong audience hoac doi kenh |
+| Frequency > 4 (heuristic, muc khan cap) | Audience da bao hoa | Mo rong audience hoac doi kenh — frequency khong tu no la ly do pause |
 | Spend < 70% ngan sach | Audience qua hep hoac bid qua thap | Mo rong audience, tang bid |
 | 1 kenh chiem > 60% spend | Phu thuoc 1 kenh — rui ro cao | Phan bo lai, test kenh moi |
 
@@ -308,13 +309,14 @@ Nguyen nhan goc: [...]
 
 | Tinh huong | Nguong | Quyet dinh | Thoi han |
 |-----------|--------|-----------|---------|
-| CPL < 70% target, on dinh >= 5 ngay | CPL < 70% | Tang ngan sach +30% | Ngay |
+| CPL < 70% target, on dinh >= 5 ngay | CPL < 70% | Tang ngan sach +30% (Gate 8: cach lan truoc >= 72h) | Ngay |
 | CPL 70-100% target | On track | Giu nguyen, theo doi | — |
-| CPL 100-150% target | Canh bao | Audit creative + tep | Trong 48h |
-| CPL > 150% target sau 5 ngay | Nghiem trong | Pause + dieu tra | Ngay |
+| CPL 1.0-1.5x target (sau khi du data: spend >= 3x CPA muc tieu) | Theo doi | Audit creative + tep, chua pause | Trong 48h |
+| CPL > 1.5x target lien tuc 7 ngay | Nghiem trong | Doi creative hoac audience, giu ngan sach | Trong tuan |
+| CPL > 3.0x target sau Buoc 0 (hoac 0 chuyen doi khi spend >= 3x CPA) | Rat nghiem trong | De xuat pause qua quy tac 7 (draft block, nguoi duyet); 0 chuyen doi → bo concept, quay ve insight. Nguon: Gate 1, `skills/vi/references/quality-gates-vn.md` | Ngay |
 | ROAS > 5x va frequency < 2 | Rat tot | Scale ngan sach | Ngay |
 | Frequency 2.0-2.5 | Bat dau fatigue | Chuan bi creative moi | Trong tuan |
-| Frequency > 2.5 | Fatigue | Pause creative do | Ngay |
+| Frequency > 2.5 va CTR giam (heuristic, tep lanh, 7 ngay) | Fatigue | Doi creative hoac mo rong audience — frequency khong tu no pause ad set; retargeting chiu duoc cao hon, so voi lich su account | Ngay |
 | Close rate giam vs tuan truoc | — | Van de o sale, KHONG phai o ads | Trong tuan |
 
 ### Nguyen tac ra quyet dinh

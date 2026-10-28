@@ -2,7 +2,7 @@
 name: 02-campaign-brief-global
 description: "Use when a specific campaign needs a brief the whole team can execute from — context, objective, audience, core message, creative direction, channels, deliverables, week-by-week timeline, approval gates, and risks. Trigger on 'campaign brief', 'creative brief', 'launch brief', 'brief the team on this campaign', 'we are running a promo next month', 'what is the plan for this campaign'. Also use when the user describes a promotion out loud and asks for something the team can actually run. Not for — the whole period plan, see `00-marketing-plan-global`; the list of design files needed, see `41-campaign-asset-list-global`; assigning work to one person, see `64-team-brief-global`; a new product launch sequence, see `59-go-to-market-global`."
 metadata:
-  version: 1.0.1
+  version: 1.0.2
   category: strategy
 license: MIT
 triggers:
@@ -306,13 +306,13 @@ Verify the insight is actually an insight and not just an observation:
 
 | Risk | Probability | Impact | Severity | Mitigation | Warning trigger |
 |------|------------|--------|----------|-----------|-----------------|
-| CPMess >50% above target | High | High | **CRITICAL** | Prepare 5 backup creatives, cut spend, shift to organic | CPMess > target +30% after 3 days |
+| CPMess >50% above target | High | High | **CRITICAL** | Prepare 5 backup creatives, propose a pause via rule 7 (draft block, named approver) only when the trigger is met, shift to organic | Spend >= 3x target CPMess (Step 0 data check), then CPMess > 1.5x target for 7 days = change creative/audience; > 3.0x = propose pause (house heuristic ladder in `03-performance-eval-global`) |
 | Creative does not perform | High | High | **CRITICAL** | A/B test from day 1, 3–5 new creatives / week | CTR < 1% after 2 days |
 | Landing page conversion low | Medium | High | **HIGH** | A/B test headline + CTA, run heatmap | Conversion < 10% after 1 week |
 | UGC delivered late | Medium | Medium | **MEDIUM** | Brief early, keep backup content | UGC not received by D-3 |
 | Competitor runs deal at same time | Low | High | **HIGH** | Lean on USP messaging, do not race on price | Competitor ad detected at same time |
 | Negative feedback goes viral | Low | Very high | **CRITICAL** | Crisis protocol: respond <2h, transparent, prepared template | More than 5 negative comments / reviews in 1 day |
-| Audience fatigue | Medium | Medium | **MEDIUM** | Rotate creative every 5–7 days, expand audience | Frequency >3, CTR drops 30% |
+| Audience fatigue | Medium | Medium | **MEDIUM** | Rotate creative every 5–7 days, expand audience | Frequency > 2.5 (heuristic, cold traffic, 7 days) with CTR falling, e.g. down 30% |
 | Budget overrun | Low | Medium | **MEDIUM** | Cap daily budgets, daily spend review | Spend > 110% of plan |
 
 ### 9.2 Plan B (fallback)

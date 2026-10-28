@@ -2,8 +2,9 @@
 name: 03-danh-gia-hieu-suat
 description: "Dung khi so lieu marketing dang xau va can biet TAI SAO — chan doan theo 5 lop tu tracking, delivery, creative, landing den chat luong audience, roi ra action plan 48h. Kich hoat khi user nhac 'so dang xau', 'CPMess cao qua', 'ROAS thap', 'chan doan root cause', 'tai sao khong ra don', 'ads dot tien'. Khong dung cho — audit cau hinh tai khoan day du (cau truc, tracking, creative, Health Score day du theo checklist nen tang) thi dung skill 21-audit-ads-performance; viet bao cao cho nguoi khac doc thi dung skill 07-bao-cao-marketing; chan doan rieng mot trang thi dung skill 68-cro-audit-trang."
 metadata:
-  version: 2.4.0
+  version: 2.4.1
   category: performance
+license: MIT
 triggers:
   - "danh gia chien dich"
   - "audit performance"
@@ -115,7 +116,7 @@ Health Score = Σ(Check_pass × W_severity × W_category) / Σ(Check_total × W_
 | 75–89 | **B** 🟢 | Tot | Fix Medium issues, tang budget nhe |
 | 60–74 | **C** 🟡 | Trung binh | Fix High issues truoc khi scale |
 | 40–59 | **D** 🔴 | Kem | Fix Critical + High truoc toan bo |
-| < 40 | **F** ⛔ | Nguy hiem | Pause, audit toan dien, rebuild |
+| < 40 | **F** ⛔ | Nguy hiem | Audit toan dien, rebuild; neu can tat thi de xuat pause theo Gate 1 qua quy tac 7 (Buoc 0 truoc) |
 
 ### 10 Quality Gates — Bat buoc kiem tra truoc moi de xuat
 
@@ -130,7 +131,7 @@ Health Score = Σ(Check_pass × W_severity × W_category) / Σ(Check_total × W_
 | **G5** Creative Diversity | So concept khac nhau (>=2 truc) — nguong 3 concept la heuristic | < 3 concept khac nhau | Lam concept moi khac goc tiep can / persona / proof / format |
 | **G6** Compliance | Nganh dac biet chua kiem tra | Chua check | Review policy truoc launch |
 | **G7** TikTok Sound | Video TikTok khong co am thanh | Khong audio | Them nhac/voiceover |
-| **G8** Scale Speed | Tang ngan sach > 20%/72h | > 20% | Giam toc do tang, toi da 20%/lan |
+| **G8** Scale Speed | Tang ngan sach > 30%/lan hoac 2 lan trong 72h (heuristic) | > 30%/lan | Tang tung buoc +20-30%, cach nhau >= 72h; an toan nhat +20% |
 | **G9** Min Data | < 1,000 impression (Meta) | < 1K impr | Doi du data moi ket luan |
 | **G10** LTV:CAC | LTV:CAC < 3:1 | < 3:1 | Khong nen scale, kiem tra churn |
 
@@ -147,7 +148,7 @@ So xau la trieu chung, khong phai benh. Dao tung layer tu tren xuong, moi layer 
 **Layer 1 — Tracking va chat luong data.** Pixel co fire dung khong (dung Pixel Helper)? Conversion event dang do dung thu can do hay dang do PageView? UTM day du chua? Co event trung lap khong?
 → Neu tracking sai: fix tracking truoc, khong lam gi khac. Moi so lieu phia sau deu vo nghia.
 
-**Layer 2 — Delivery va dau gia.** CPM co tang khong? Frequency dang o dau (>3.5 canh bao, >5 phai tat)? Co dang trong learning phase khong (khong dung vao adset trong learning)?
+**Layer 2 — Delivery va dau gia.** CPM co tang khong? Frequency dang o dau (heuristic, traffic lanh 7 ngay: > 2.5 kem CTR giam = chuan bi thay creative; > 3.5 khan cap = thay creative + mo rong audience; retargeting so voi lich su account; frequency khong tu no la ly do pause)? Co dang trong learning phase khong (khong dung vao adset trong learning)?
 → CPM tang + frequency cao = audience bao hoa → mo rong tep hoac doi creative.
 → CPM tang + frequency thap = CPM thi truong tang theo mua → cho hoac chinh bid, khong doi creative.
 
@@ -220,7 +221,7 @@ Khi gap van de, hoi "Tai sao?" 5 lan de tim nguyen nhan goc:
 | CPA tang | Tang 25% vs 3 ngay dau | Tang 50% | Dau hieu chan doan: kiem tra frequency + creative, chuan bi creative moi. Quyet dinh pause theo Gate 1 (`skills/vi/references/quality-gates-vn.md`), khong theo rieng chi so nay |
 | Thoi gian chay | >7 ngay | >14 ngay | Bat buoc thay moi |
 | Engagement giam | Comment/share giam 30% | Giam 50% | Doi goc do noi dung |
-| Negative feedback | >3% | >5% | Tat ngay, review creative |
+| Negative feedback | >3% | >5% | Review creative ngay; de xuat tat qua quy tac 7 (draft block, nguoi duyet) |
 
 ### Lich rotation creative khuyen nghi
 
@@ -311,7 +312,7 @@ Khi gap van de, hoi "Tai sao?" 5 lan de tim nguyen nhan goc:
 
 Ba viec, khong hon. Muc tieu la bat van de trong ngay, khong phai phan tich sau:
 
-1. **CPL vs target** → quyet dinh scale hay pause theo decision rules trong `references/benchmarks-vietnam.md` (muc "Decision rules theo target").
+1. **CPL vs target** → scale theo `55-scaling-ads` (Gate 8: moi buoc tang <= 20-30%, cach nhau >= 72h); pause theo Gate 1 (`skills/vi/references/quality-gates-vn.md`: Buoc 0, sau do de xuat qua quy tac 7). Benchmark tham chieu: `references/benchmarks-vietnam.md`.
 2. **Frequency** → neu vuot 2.5 thi chuan bi creative moi; vuot 3.5 thi brief gap qua `48-quick-visual-brief`.
 3. **Pace spend** → dang tieu dung tien do hay overspend? Overspend som trong ngay thuong keo CPL len vao khung gio dat.
 

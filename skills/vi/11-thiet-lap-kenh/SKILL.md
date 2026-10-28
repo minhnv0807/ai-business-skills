@@ -4,6 +4,7 @@ description: "Dung khi can MO va thiet lap kenh marketing tu con so khong — Ti
 metadata:
   version: 2.1.0
   category: operations
+license: MIT
 triggers:
   - "thiet lap kenh"
   - "tao TikTok moi"

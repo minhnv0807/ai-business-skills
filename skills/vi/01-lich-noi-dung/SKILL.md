@@ -4,6 +4,7 @@ description: "Dung khi can lich dang bai cho ca thang — chot content pillar va
 metadata:
   version: 2.3.1
   category: content
+license: MIT
 triggers:
   - "lich noi dung"
   - "len lich dang bai"

@@ -10,7 +10,7 @@
 
 - **Ma mau o:** vang = nguoi dung dien · xanh = cong thuc tu tinh · xam = benchmark/co dinh khong sua. Khi xuat markdown, ghi chu `[dien]`, `[tu tinh]`, `[benchmark]` sau ten cot.
 - **Trang thai task:** `Chua` · `Dang lam` · `Xong` · `Blocked`. Uu tien: `Cao` · `TB` · `Thap`. Trang thai content: `Draft` · `Review` · `Da duyet` · `Live`.
-- **Danh gia dat KPI:** Dat (>=90%) · Gan dat (70-89%) · Chua dat (<70%). De xuat kenh: Scale ↑ · Giu → · Giam ↓ · Kill ✕ · Test moi ★.
+- **Danh gia dat KPI:** Dat (>=90%) · Gan dat (70-89%) · Chua dat (<70%). De xuat kenh: Scale ↑ · Giu → · Giam ↓ · De xuat cat ✕ (quy tac 7) · Test moi ★.
 - **Nhip dien:** target dien 1 lan dau ky · so thuc te dien moi thu 6 · flag do khi lech >20% target.
 - **Ke thua:** moi tang ke thua tang tren (nam → quy → thang → tuan). Khong nhap lai ICP/positioning/tone o tang duoi — copy tu tang tren.
 
@@ -74,7 +74,7 @@
 - **Muc dich:** chay 1 chien dich 3 thang voi phan cong theo ngay giua Brand / Performance / CRM.
 - **Khi nao dung:** chien dich lon co nhieu doi phoi hop, chay lien tuc 12 tuan.
 - **Sheet & cot chinh:** `Brief chien dich` (Ten | Quy/Thang | Tru cot | Owner | Ngay bat dau/ket thuc | Budget tong | Budget paid; ke thua Big idea, ICP, pain point, positioning, tone; Hook 1-3 + loai hook Pain/Curiosity/Result; DO 1-4 va DON'T 1-4; bang asset: Asset | Kenh dung | Kich thuoc/Format | So luong | Deadline | Owner | Trang thai) · `Ke hoach 3 thang` (Hang muc | Brand lam gi | Performance lam gi | CRM lam gi | KPI do | Output phai co) · `Lich tuan T1/T2/T3` (Ngay | Thu | Brand | Performance | CRM | Output | KPI check) · `Tracking tuan` (KPI | Target | T1..T12, nhom Brand / Performance / Funnel / CRM) · `Danh gia thang` · `Budget tracker` (Kenh | Budget plan | T1-T3 actual | Budget con | ROAS avg).
-- **Quy tac trong template:** T1 Build = setup, launch, test creative, keo awareness · T2 Push = scale hook win, tat hook thua, toi uu CPL · T3 Convert = chot don, retarget warm, upsell. Nguong can thiep: CPL tang >50% vs tuan truoc → check creative/audience/landing ngay · ROAS <1.5x → pause kenh, chuyen budget sang kenh >3x · CTR giam >30% vs tuan 1 → creative fatigue, thay ngay · Lead rate <1% → sua landing page. Danh gia thang = 5 cau hoi bat buoc, toi da 3 thay doi cho thang sau.
+- **Quy tac trong template:** T1 Build = setup, launch, test creative, keo awareness · T2 Push = scale hook win, tat hook thua, toi uu CPL · T3 Convert = chot don, retarget warm, upsell. Nguong can thiep: CPL tang >50% vs tuan truoc → check creative/audience/landing ngay · ROAS duoi break-even (bien dong gop truoc ads) 14 ngay sau khi du data → de xuat cat kenh qua quy tac 7, chuyen budget sang kenh co ROAS tren target · CTR giam >30% vs tuan 1 → creative fatigue, thay ngay · Lead rate <1% → sua landing page. Danh gia thang = 5 cau hoi bat buoc, toi da 3 thay doi cho thang sau.
 - **Skill tai tao:** `02-brief-chien-dich` (chinh) + `41-campaign-asset-list` + `54-media-plan` + `61-budget-planning` + `63-campaign-retrospective`.
 
 ### 2.2 Campaign playbook mua cao diem
@@ -130,7 +130,7 @@
 
 - **Muc dich:** 1 file duy nhat theo doi tu lead don le den pheu thang va so sanh hieu qua kenh.
 - **Khi nao dung:** lien tuc — Lead Log dien hang ngay, Weekly KPI dien hang tuan (~15 phut).
-- **Sheet & cot chinh:** `Config` (KPI muc tieu thang, gross margin, break-even ROAS = 1/margin, danh sach kenh: Ten kenh | Loai paid/organic | Ads platform) · `Lead Log` (ID | Ngay vao | Ho ten | So dien thoai | Kenh nguon | Loai tuong tac | Trang thai | Ly do khong chot | Doanh thu neu chot | Sales phu trach) — sheet quan trong nhat, moi dong 1 lead · `Weekly KPI` (pheu theo thang: Reach | Tong leads | Organic leads | Paid leads | Organic lead ratio | Qualified leads | Qualify rate | Khach chot | Close rate | Doanh thu | Ads spend | Blended ROAS | CAC | Repeat rate; nhap tu Ads Manager: Kenh | Spend | Impressions | Clicks | CTR | CPM | Leads | CPL | Q.Leads | ROAS) · `Pheu tong quan` (Tang pheu | Thuc te | KPI muc tieu | Dat % | vs thang truoc | Trang thai) · `Content da kenh` (Kenh | Followers | Reach | Impressions | Like+Cmt+Share+Save | ER% | CTR% | Follower growth%; tracking video: Views | Watch time TB | Completion rate | Shares | Saves; email: Campaign | Ngay gui | Danh sach | Gui thanh cong | Open | CTR | Unsub | Doanh thu) · `Performance Ads` (CPL | CPQL | CAC | ROAS | Break-even ROAS theo kenh; lich su 6 thang) · `Trend Chart`.
+- **Sheet & cot chinh:** `Config` (KPI muc tieu thang, bien dong gop truoc ads (= (gia ban - gia von - ship - phi thanh toan/san - du phong hoan) / gia ban), break-even ROAS = 1 / bien dong gop truoc ads, danh sach kenh: Ten kenh | Loai paid/organic | Ads platform) · `Lead Log` (ID | Ngay vao | Ho ten | So dien thoai | Kenh nguon | Loai tuong tac | Trang thai | Ly do khong chot | Doanh thu neu chot | Sales phu trach) — sheet quan trong nhat, moi dong 1 lead · `Weekly KPI` (pheu theo thang: Reach | Tong leads | Organic leads | Paid leads | Organic lead ratio | Qualified leads | Qualify rate | Khach chot | Close rate | Doanh thu | Ads spend | Blended ROAS | CAC | Repeat rate; nhap tu Ads Manager: Kenh | Spend | Impressions | Clicks | CTR | CPM | Leads | CPL | Q.Leads | ROAS) · `Pheu tong quan` (Tang pheu | Thuc te | KPI muc tieu | Dat % | vs thang truoc | Trang thai) · `Content da kenh` (Kenh | Followers | Reach | Impressions | Like+Cmt+Share+Save | ER% | CTR% | Follower growth%; tracking video: Views | Watch time TB | Completion rate | Shares | Saves; email: Campaign | Ngay gui | Danh sach | Gui thanh cong | Open | CTR | Unsub | Doanh thu) · `Performance Ads` (CPL | CPQL | CAC | ROAS | Break-even ROAS theo kenh; lich su 6 thang) · `Trend Chart`.
 - **Quy tac trong template:** hoi "biet qua kenh nao?" voi moi inbox/cuoc goi — khong co Lead Log thi khong co attribution. Mau: xanh la = dat KPI · cam = 80-99% · do = chua dat.
 - **Skill tai tao:** `13-phan-tich-du-lieu` (chinh) + `53-tracking-setup` + `21-audit-ads-performance` + `03-danh-gia-hieu-suat`.
 
@@ -139,7 +139,7 @@
 - **Muc dich:** theo doi song song Content · Ads · CRM · Automation · Sales trong 1 chu ky chien dich 12 tuan.
 - **Khi nao dung:** dien moi thu 6, 30 phut, kem review tuan.
 - **Sheet & cot chinh:** `Dashboard` (Hang muc | KPI chinh | Target thang | Thuc te | Dat % | Xu huong ↑↓→ | Trang thai Tot/Canh bao/Kem; canh bao tuan: KPI lech >20%? kenh/creative can thay? bottleneck o dau? dieu chinh can approve?) · `Content` (nhom: Organic reach & awareness / Engagement / Video performance / SEO & Blog / Content production; cot KPI | Target | Benchmark | T1..T12) · `Ads` (Performance tong / Meta / Google / TikTok / Creative performance / Landing page & CVR) · `CRM` (Lead pipeline / Email nurture / Sales handoff / Chuyen doi & doanh thu / Retention & LTV) · `Automation` (Trigger performance / Workflow nurture / Email automation / Health check) · `Sales support` (Chat luong lead / Sales pipeline / Feedback loop Sales→Marketing / Sales enablement) · `Review tuan` (12 tuan, moi tuan 6 cau).
-- **Quy tac trong template:** nguong noi trong bang — CPL tang >50% → thay creative ngay · ROAS <1.5x → pause kenh · MER <2x → xem lai toan chien luoc · frequency >3.5 → audience saturation · CTR Meta <1% → creative kem · Quality Score <5 → landing page co van de · CVR landing <1% → LP co van de · form submit rate <50% → form qua dai · handoff sales <4h, ti le trong 4h >90%, lead bi drop = 0 · trigger fire rate >99%, form submit → email D0 <5 phut. Review tuan gioi han toi da 3 thay doi.
+- **Quy tac trong template:** nguong noi trong bang — CPL tang >50% → thay creative ngay · ROAS duoi break-even (bien dong gop truoc ads) 14 ngay sau khi du data → de xuat cat kenh qua quy tac 7 · MER <2x → xem lai toan chien luoc · frequency >2.5 kem CTR giam → thay creative; >3.5 → bao hoa, mo rong audience · CTR Meta <1% → creative kem · Quality Score <5 → landing page co van de · CVR landing <1% → LP co van de · form submit rate <50% → form qua dai · handoff sales <4h, ti le trong 4h >90%, lead bi drop = 0 · trigger fire rate >99%, form submit → email D0 <5 phut. Review tuan gioi han toi da 3 thay doi.
 - **Skill tai tao:** `13-phan-tich-du-lieu` + `62-marketing-review` + `21-audit-ads-performance` + `39-content-audit`.
 
 ### 3.3 Bo metrics organic (brand health · doanh thu · organic vs paid)
@@ -252,9 +252,9 @@ Tuan,Giai doan,Ngan sach KH,Chi tieu thuc te,Luy ke,% Budget da dung,Reach,Click
 | Chi tieu thuc te / Luy ke | Dien moi thu 6; luy ke de phat hien overspend som |
 | % Budget da dung | `Luy ke / tong budget` — canh bao khi lech >20% so voi % thoi gian da chay |
 | CPL | Tang >50% vs tuan truoc → check creative, audience, landing ngay |
-| ROAS | <1.5x → pause kenh, chuyen budget sang kenh >3x |
+| ROAS | Duoi break-even (bien dong gop truoc ads) 14 ngay sau khi du data → de xuat cat kenh qua quy tac 7, chuyen budget sang kenh co ROAS tren target |
 | Creative win | Ten/ID creative co CTR cao hon phan con lai >20% |
-| Quyet dinh | Chi 1 quyet dinh/tuan: `Scale ↑` · `Giu →` · `Giam ↓` · `Kill ✕` · `Test ★` |
+| Quyet dinh | Chi 1 quyet dinh/tuan: `Scale ↑` · `Giu →` · `Giam ↓` · `De xuat cat ✕` (quy tac 7) · `Test ★` |
 
 ### 7.2 Content calendar — 1 dong = 1 bai/video
 

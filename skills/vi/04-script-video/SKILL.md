@@ -1,10 +1,11 @@
 ---
 name: 04-script-video
 description: "Dung khi can viet kich ban video ngan — TikTok, Reels, Shorts — voi hook 3 thanh phan, cau truc theo giay va 2 bien the A/B de test. Co Mode A cho san pham va Mode B cho personal brand. Kich hoat khi user nhac 'viet script video', 'kich ban TikTok', 'script Reels', 'noi dung video ngan', 'hook video', 'quay video gi'. Khong dung cho — huong dan dung phim cho editor thi dung skill 44-brief-video-editor; copy quang cao tra tien thi dung skill 05-copy-quang-cao; brief cho creator quay ho thi dung skill 06-brief-ugc-egc."
-argument-hint: "<sản phẩm + thời lượng + tone>"
+argument-hint: "<san pham + thoi luong + tone>"
 metadata:
-  version: 2.4.1
+  version: 2.4.2
   category: content
+license: MIT
 triggers:
   - "viet script"
   - "script TikTok"

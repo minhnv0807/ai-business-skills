@@ -2,8 +2,9 @@
 name: 10-tinh-kpi-nguoc
 description: "Dung khi can tinh nguoc tu muc tieu doanh thu ra so lead can, CPL toi da va ngan sach phai chi — kem 3 kich ban va nguong healthy tung buoc pheu. Kich hoat khi user nhac 'tinh KPI nguoc', 'CPL toi da la bao nhieu', 'can bao nhieu ngan sach', 'tinh nguoc tu doanh thu', 'muc tieu bao nhieu don', 'break-even ROAS'. Khong dung cho — phan bo ngan sach da co ra tung kenh va thang thi dung skill 61-budget-planning; lap media plan chi tiet theo funnel thi dung skill 54-media-plan; ROAS hoa von tren san TMDT sau phi san thi dung skill 76-van-hanh-san-tmdt."
 metadata:
-  version: 2.2.0
+  version: 2.2.1
   category: performance
+license: MIT
 triggers:
   - "tinh KPI"
   - "can bao nhieu ngan sach"
@@ -232,7 +233,7 @@ Moi buoc trong pheu co nguong rieng. Kiem hang ngay khi ads dang chay; buoc nao 
 
 ### Doc ket qua
 
-- Pessimistic: Can ~196 trieu ads cho 200 trieu doanh thu — ROAS <1, lo
+- Pessimistic: Can ~196 trieu ads cho 200 trieu doanh thu — ROAS ~1.02x, thap hon break-even (1 / bien dong gop truoc ads) nen lo
 - Base: Can ~74 trieu ads — ROAS 2.7x, chap nhan duoc
 - Optimistic: Can ~37 trieu ads — ROAS 5.5x, rat tot
 
@@ -291,9 +292,9 @@ Break-even ngay = Break-even don / So don trung binh moi ngay
 | — UGC/KOL | [X] |
 | **Tong chi phi co dinh** | **[X]** |
 | **AOV** | [X] |
-| **Chi phi bien doi/don** | [X] (van chuyen, hoa hong, COGS) |
-| **Loi nhuan/don** | AOV - Chi phi bien doi = [X] |
-| **Break-even don** | Tong CF co dinh / Loi nhuan moi don = **[X don]** |
+| **Chi phi bien doi/don** | [X] (COGS, van chuyen, hoa hong, phi cong thanh toan, hoan tra, phi san) |
+| **Bien dong gop/don (truoc ads)** | AOV - Chi phi bien doi = [X] (ads da nam trong chi phi co dinh thang o tren) |
+| **Break-even don** | Tong CF co dinh / Bien dong gop moi don = **[X don]** |
 | **Break-even ngay** | Break-even don / 30 = **[X ngay]** |
 
 ### Danh gia
@@ -346,7 +347,7 @@ Vi du: Ngan sach 80 trieu/thang
 1. **Kenh da chung minh hieu qua → 60–70% ngan sach.** Khong dan deu.
 2. **Kenh moi / test → 15–20% ngan sach.** Du de co du lieu, khong qua nhieu de mat tien.
 3. **Retarget → 10–15% ngan sach.** Nham lai nguoi da tuong tac — thuong ROAS cao nhat.
-4. **Chuyen kenh khi ROAS < 2x sau 2 tuan.** Khong cho doi qua lau.
+4. **Cat kenh khi ROAS duoi break-even (bien dong gop truoc ads) lien tuc 14 ngay sau khi du data (Buoc 0).** De xuat cat kenh qua quy tac 7 (draft block, nguoi duyet); khong dung moc co dinh "ROAS < 1.5x / 2x". Khong cho doi qua lau.
 
 ### Template phan bo thang
 
@@ -379,9 +380,9 @@ Vi du: Ngan sach 80 trieu/thang
 
 | Quy tac | Giai thich |
 |---------|-----------|
-| 2 tuan dau = mat tien | Day la chi phi hoc — dung hoang, dung tat ads |
+| 2 tuan dau = mat tien | Day la chi phi hoc — dung hoang; chua phan xu khi spend < 3x CPA muc tieu (Buoc 0, Gate 1) |
 | ROAS Base dat o thang 2 | Thang 1 la thang test — khong danh gia ROAS thang 1 |
-| Tang ngan sach toi da 20%/tuan | Tang nhanh hon = performance giam, CPM tang |
+| Tang ngan sach +20-30% moi lan, cach nhau >= 72h (Gate 8, `skills/vi/references/quality-gates-vn.md`) | Tang nhanh hon = performance giam, CPM tang |
 | ROAS giam 30% khi scale | Binh thuong — audience rong hon = ti le chuyen doi thap hon |
 | Retarget ROAS cao gap 2–3x Prospecting | Dung de nham, retarget luon la kenh ROAS tot nhat |
 
@@ -443,8 +444,8 @@ KR3: AOV tang len 3.5 trieu (upsell)
 
 | Nhip | Lam gi |
 |------|--------|
-| Hang ngay (15 phut) | Doi chieu CPL/CPMess vs target → scale hoac pause; kiem frequency; kiem pace spend |
-| Hang tuan (thu 2) | Keo data 7 ngay → winner scale +20%, loser pause + ghi ly do; brief creative moi neu frequency cao |
+| Hang ngay (15 phut) | Doi chieu CPL/CPMess vs target → quyet dinh scale/hold; neu CPA > 3.0x target sau khi du data (spend >= 3x CPA muc tieu) thi DE XUAT pause qua quy tac 7 (Gate 1); kiem frequency > 2.5 (heuristic, traffic lanh 7 ngay) → chuan bi thay creative; kiem pace spend |
+| Hang tuan (thu 2) | Keo data 7 ngay → winner scale +20% (cach lan truoc >= 72h, Gate 8), loser de xuat pause theo Gate 1 qua quy tac 7 + ghi ly do; brief creative moi neu frequency cao |
 | Hang thang | Cap nhat lai CVR thuc te vao bang tinh — thay benchmark bang so cua chinh minh |
 | Hang quy | Tinh lai toan bo unit economics: AOV, margin, LTV, CAC co thay doi khong |
 

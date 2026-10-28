@@ -50,7 +50,7 @@ GIAI DOAN 3 — TEST & OPTIMIZE           GIAI DOAN 4 — SCALE & DO LUONG
 | 2.3 | `05-copy-quang-cao` | Brief + brand voice | Ads copy theo funnel | `62-marketing-review` duyet |
 | 3.1 | `19-ab-test-setup` | Media plan phan testing | Test plan 1 bien/lan + log | — |
 | 3.2 | `21-audit-ads-performance` | Data 7 ngay | Audit + hanh dong theo CPL rules | Weekly |
-| 4.1 | `55-scaling-ads` | Winner da xac nhan | Scaling plan +20-30%/lan | CPL dat mới scale |
+| 4.1 | `55-scaling-ads` | Winner da xac nhan | Scaling plan +20-30%/lan | CPL dat moi scale; moi lan cach nhau >= 72h (Gate 8) |
 | 4.2 | `56-retargeting-plan` | Warm audience du lon | Retarget theo tang + frequency cap | — |
 | 4.3 | `07-bao-cao-marketing` | Data thang | Report ROAS | Leader |
 | 4.4 | `57-next-ads-plan` | Report + audit + test log | Plan ky sau: giu winner, thay loser, test moi | Leader duyet |
@@ -60,13 +60,13 @@ GIAI DOAN 3 — TEST & OPTIMIZE           GIAI DOAN 4 — SCALE & DO LUONG
 ## Nhip van hanh
 
 ### Daily (15 phut)
-- CPL vs target → quyet dinh scale / pause theo decision rules.
-- Frequency > 2.5 → brief creative moi (goi `48-quick-visual-brief`).
+- CPL vs target → quyet dinh scale (Gate 8) / de xuat pause theo Gate 1 qua quy tac 7 (chi sau khi spend >= 3x CPA muc tieu).
+- Frequency > 2.5 kem CTR giam (heuristic, traffic lanh 7 ngay) → brief creative moi (goi `48-quick-visual-brief`). Frequency khong tu pause.
 - Pace spend: dung tien do hay overspend.
 
 ### Weekly (thu 2 sang)
 - Pull data 7 ngay → dien vao performance report.
-- Winner → scale +20-30% (`55-scaling-ads`). Loser → pause + ghi ly do vao test log.
+- Winner → scale +20-30% (`55-scaling-ads`). Loser → de xuat pause theo Gate 1 qua quy tac 7 (ten nguoi duyet) + ghi ly do vao test log.
 - Chay `21-audit-ads-performance` neu co chi so lech benchmark.
 
 ### Monthly
@@ -78,9 +78,12 @@ GIAI DOAN 3 — TEST & OPTIMIZE           GIAI DOAN 4 — SCALE & DO LUONG
 
 | CPL | Frequency | Hanh dong |
 |-----|-----------|-----------|
-| Duoi target 20%+ | < 2.0 | WIN — scale +20-30% |
-| Quanh target | < 2.0 | Theo doi, chua dong gi |
-| Vuot target 10-25% | 2.0-2.5 | Toi uu: thay creative, sua audience |
-| Vuot target >25% | > 2.5 | PAUSE — replace hoac stop, audit lai |
+| <= 1.0x CPA target | <= 2.5 | WIN — ung vien scale +20-30%/lan, cach nhau >= 72h (Gate 8) |
+| 1.0-1.5x | <= 2.5 | Theo doi, toi uu, chua scale |
+| > 1.5x lien tuc 7 ngay | bat ky | Thay creative hoac audience |
+| bat ky | > 2.5 kem CTR giam | Chuan bi / thay creative, mo rong audience (frequency khong tu pause) |
+| > 3.0x (da spend >= 3x CPA target) | bat ky | DE XUAT PAUSE qua quy tac 7 (ten nguoi duyet) |
+
+> Nguon: `skills/vi/references/quality-gates-vn.md` Gate 1. Buoc 0: spend < 3x CPA muc tieu = chua du data, chua phan xu. 0 chuyen doi khi spend >= 3x → bo concept, quay lai insight.
 
 Budget split chuan: Testing 30% · Scale 50% · Retargeting 15% · Lookalike 5%.

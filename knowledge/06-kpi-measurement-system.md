@@ -103,13 +103,13 @@ ROAS TRENDING: 3.5x → 4.0x → 3.8x (tot)
 **Buoc 1: Check CPL**
 - CPL < 20K? → Giu & co the scale +20%.
 - CPL 20-25K? → Theo doi.
-- CPL > 25K? → Optimize hoac pause.
-(Nguong tren la vi du cho CPL target ~20K — chinh theo nganh.)
+- CPL > 25K? → Optimize: doi creative / audience.
+(Nguong tren la vi du cho CPL target ~20K — chinh theo nganh. Pause theo Gate 1 trong `skills/vi/references/quality-gates-vn.md`: chi xet khi spend >= 3x target; > 3.0x target thi DE XUAT pause qua quy tac 7.)
 
 **Buoc 2: Check Frequency**
 - Frequency < 2.0? → Fresh, giu.
 - Frequency 2.0-2.5? → Start fatigue, test creative moi.
-- Frequency > 2.5? → Pause creative nay.
+- Frequency > 2.5 (traffic lanh 7 ngay, heuristic) kem CTR giam? → Chuan bi / thay creative. Frequency khong tu no la ly do pause.
 
 **Buoc 3: Check Conversion**
 - Close rate tang vs tuan truoc? → Good.
@@ -118,7 +118,7 @@ ROAS TRENDING: 3.5x → 4.0x → 3.8x (tot)
 **Buoc 4: Quyet dinh**
 - Tang budget campaign nao (scale winners).
 - Toi uu campaign nao (change creative).
-- Pause campaign nao (CPL qua cao).
+- De xuat pause campaign nao (CPL > 3.0x target, theo Gate 1 + quy tac 7).
 
 ## Phan 6: Cac loi do luong pho bien
 
