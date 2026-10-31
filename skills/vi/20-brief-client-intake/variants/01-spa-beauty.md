@@ -39,7 +39,7 @@
 | Fanpage chinh | |
 
 ### A2. Nguoi dai dien
-| Vai tro | Ho ten | SĐT | Email |
+| Vai tro | Ho ten | SDT | Email |
 |---------|--------|-----|-------|
 | Chu / Founder | | | |
 | Quan ly chi nhanh | | | |
@@ -394,7 +394,7 @@
 ### H2. Website / Landing Page
 - [ ] Da co website hoan chinh — link: ............................
 - [ ] Co domain nhung chua co web
-- [ ] Co lan đặt sẵn web tren nen tang nao do (Wix, Wordpress) nhung chua hoan thien
+- [ ] Co lan dat san web tren nen tang nao do (Wix, Wordpress) nhung chua hoan thien
 - [ ] Chua co gi — can build moi
 
 **Yeu cau Landing Page khai truong:**
@@ -407,7 +407,7 @@
 
 ### H3. Database khach hang hien co
 - [ ] **Khong co** (Spa moi, chua khach)
-- [ ] Co ............ data SĐT khach cu (file Excel/Google Sheet)
+- [ ] Co ............ data SDT khach cu (file Excel/Google Sheet)
 - [ ] Co nhom Zalo ............ thanh vien
 - [ ] Co Group Facebook khach VIP ............ thanh vien
 - [ ] Co he thong CRM rieng — ten phan mem: ............................
@@ -569,7 +569,7 @@
 **Nguoi dien brief:** ............................
 **Chuc vu:** ............................
 **Ngay dien:** ......./......./..........
-**SĐT:** ............................
+**SDT:** ............................
 **Email:** ............................
 
 **Cam ket:**

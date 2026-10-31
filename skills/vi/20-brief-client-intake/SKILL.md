@@ -3,7 +3,7 @@ name: 20-brief-client-intake
 description: "Dung khi agency hoac freelancer nhan khach moi va can CHINH KHACH DIEN thong tin dau vao — form 11 phan ve san pham, muc tieu, ngan sach, kenh dang chay, doi thu, tai san san co, kem 20 ban toi uu theo tung nganh. Kich hoat khi user nhac 'brief khach hang', 'client intake', 'form khach dien', 'nhan khach moi', 'hoi khach nhung gi', 'chua biet gi ve khach', 'onboard khach hang moi', 'questionnaire cho khach'. Khong dung cho — tao file context noi bo cho san pham cua chinh minh thi dung skill product-marketing-context; dao sau insight khach hang cuoi thi dung skill 09-insight-khach-hang; brief NGUOC ra cho agency hoac vendor lam thi dung skill 67-agency-vendor-brief."
 argument-hint: "<industry + scope + budget>"
 metadata:
-  version: 1.1.0
+  version: 1.1.1
   category: operations
 license: MIT
 triggers:
@@ -32,18 +32,18 @@ related:
 
 ---
 
-### Khi dùng `opa-prd` (OPA KIT) thay thế
+### Khi dung `opa-prd` (OPA KIT) thay the
 
-Skill này (`20-brief-client-intake`) focus marketing intake cho agency relationship — discovery khách hàng mới của agency. **KHÔNG** dùng cho:
+Skill nay (`20-brief-client-intake`) focus marketing intake cho agency relationship — discovery khach hang moi cua agency. **KHONG** dung cho:
 
-| Tình huống | Use |
+| Tinh huong | Use |
 |------------|-----|
 | Full product PRD (tech SaaS, feature spec) | **`opa-prd --mode=product`** (OPA KIT) — 12 sections, Deep Modules, GTM |
 | Course / lesson module PRD | **`opa-prd --mode=lesson`** — Bloom-anchored learning PRD |
 | Single creative brief TVC | **`opa-prd --mode=creative`** — 1-page |
 | Marketing campaign intake (multi-creative) | **`02-brief-chien-dich`** (this repo) |
 
-`opa-prd` là PRD authoring chuyên sâu cho tech + creative + lesson, plain Vietnamese cho non-tech clients fill. Install OPA KIT: `https://github.com/minhnv0807/opa-kit`.
+`opa-prd` la PRD authoring chuyen sau cho tech + creative + lesson, plain Vietnamese cho non-tech clients fill. Install OPA KIT: `https://github.com/minhnv0807/opa-kit`.
 
 ---
 

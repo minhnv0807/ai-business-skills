@@ -2,7 +2,7 @@
 name: 09-insight-khach-hang
 description: "Dung khi can hieu khach hang du sau de viet duoc content va chon duoc tep — persona 3 tang, cau noi noi tam, pain map, objection list va ngan hang ngon ngu khach hang lay tu review va inbox that. Kich hoat khi user nhac 'insight khach hang', 'chan dung khach hang', 'customer persona', 'khach hang cua toi la ai', 'khach nghi gi', 'ho mua vi ly do gi'. Khong dung cho — thu thap thong tin khi agency nhan khach moi thi dung skill 20-brief-client-intake; nghien cuu tep de chay ads thi dung skill 51-audience-research."
 metadata:
-  version: 2.1.1
+  version: 2.1.2
   category: strategy
 license: MIT
 triggers:
@@ -96,7 +96,7 @@ Moi giai doan trong hanh trinh mua hang co insight khac nhau:
 | Rao can | So het tien, so mua roi hoi han, quy trinh dat phuc tap |
 | Content can thiet | Uu dai, khan cap, social proof manh, CTA ro rang |
 | Kenh hieu qua | Messenger/Zalo (tu van 1:1), Landing page, Retarget ads |
-| Vi du insight | "Ho da sẵn sàng mua nhung can chong dong y — nen gui thong tin cho ca hai" |
+| Vi du insight | "Ho da san sang mua nhung can chong dong y — nen gui thong tin cho ca hai" |
 
 ### Giai doan 4 — Retention (Tai sao ho quay lai hoac khong)
 

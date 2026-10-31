@@ -1,13 +1,13 @@
 # gpt-image-2 Spec
 
-API spec, env vars, limits, pricing cho gpt-image-2 — model default của skill ở Tier Pro. Reference này dùng khi Step 5 detect tier Pro và cần call API direct.
+API spec, env vars, limits, pricing cho gpt-image-2 — model default cua skill o Tier Pro. Reference nay dung khi Step 5 detect tier Pro va can call API direct.
 
 ## Env vars
 
-- `OPENAI_API_KEY` — **required** cho Tier Pro. Key OpenAI account có quyền call gpt-image-2.
-- `OPENAI_ORG_ID` — optional. Dùng nếu user thuộc organization (multi-org account).
+- `OPENAI_API_KEY` — **required** cho Tier Pro. Key OpenAI account co quyen call gpt-image-2.
+- `OPENAI_ORG_ID` — optional. Dung neu user thuoc organization (multi-org account).
 
-Detect bằng Bash:
+Detect bang Bash:
 
 ```bash
 if [[ -n "$OPENAI_API_KEY" ]]; then
@@ -26,7 +26,7 @@ POST https://api.openai.com/v1/images/generations
 ```json
 {
   "model": "gpt-image-2",
-  "prompt": "<composed prompt từ skill compose>",
+  "prompt": "<composed prompt tu skill compose>",
   "n": 1,
   "size": "1024x1024",
   "quality": "standard",
@@ -36,11 +36,11 @@ POST https://api.openai.com/v1/images/generations
 
 ### Field options
 
-| Field | Options | Mặc định | Notes |
+| Field | Options | Mac dinh | Notes |
 |-------|---------|----------|-------|
-| `model` | `gpt-image-2` | required | Fixed cho skill này |
-| `prompt` | string max 4000 chars | required | Composed prompt 5 phần (subject + composition + lighting + palette + style + negatives) |
-| `n` | 1-10 | 1 | Skill này dùng `n=1` trừ business-logo (3-5 variants → loop call) |
+| `model` | `gpt-image-2` | required | Fixed cho skill nay |
+| `prompt` | string max 4000 chars | required | Composed prompt 5 phan (subject + composition + lighting + palette + style + negatives) |
+| `n` | 1-10 | 1 | Skill nay dung `n=1` tru business-logo (3-5 variants → loop call) |
 | `size` | `1024x1024` / `1792x1024` / `1024x1792` | `1024x1024` | Map aspect: 1:1 → 1024x1024; 16:9 → 1792x1024; 9:16 → 1024x1792 |
 | `quality` | `standard` / `hd` | `standard` | HD cho production asset (logo, hero, key visual); standard cho day-to-day |
 | `style` | `vivid` / `natural` | `vivid` | `natural` cho photographic realism; `vivid` cho illustrative / branding |
@@ -55,14 +55,14 @@ OpenAI-Organization: $OPENAI_ORG_ID  (optional)
 
 ## Limits
 
-- **Max prompt 4000 chars** — nếu prompt compose vượt → trim subject description hoặc bỏ optional adjectives
-- **Max 10 images per request** (n=1 đến n=10) — skill này dùng 1 trừ logo multi-variant
+- **Max prompt 4000 chars** — neu prompt compose vuot → trim subject description hoac bo optional adjectives
+- **Max 10 images per request** (n=1 den n=10) — skill nay dung 1 tru logo multi-variant
 - **Rate limit tier-dependent**:
   - Free: 5 images/min
   - Tier 1: 50 images/min
   - Tier 2: 100 images/min
   - Tier 5: 500 images/min
-- **Concurrent requests**: tier-dependent, mặc định không parallel cho Free tier
+- **Concurrent requests**: tier-dependent, mac dinh khong parallel cho Free tier
 
 ## Pricing (2026 reference)
 
@@ -78,14 +78,14 @@ OpenAI-Organization: $OPENAI_ORG_ID  (optional)
 - Campaign key visual 16:9 HD: $0.12
 - Social post 1:1 standard: $0.04
 - Hero web 16:9 standard: $0.08
-- Quote background 1:1 standard: $0.04 (text qua HTML, không cần HD)
-- Infographic 1:1 HD: $0.08 (cần HD vì icons + numbers cần sắc nét)
+- Quote background 1:1 standard: $0.04 (text qua HTML, khong can HD)
+- Infographic 1:1 HD: $0.08 (can HD vi icons + numbers can sac net)
 
 ## Best practices
 
 ### Quality selection
 
-- **`hd`** cho production asset lâu dài: logo (3-5 variants), key visual chiến dịch, magazine cover, hero web landing
+- **`hd`** cho production asset lau dai: logo (3-5 variants), key visual chien dich, magazine cover, hero web landing
 - **`standard`** cho day-to-day: social post, banner ads, email header, quote background, story
 
 ### Style selection
@@ -93,11 +93,11 @@ OpenAI-Organization: $OPENAI_ORG_ID  (optional)
 - **`natural`** cho:
   - Photographic realism (personal avatar, product hero photo, editorial photography)
   - Magazine cover lifestyle
-  - Café/restaurant brand photography
+  - Cafe/restaurant brand photography
 - **`vivid`** cho:
   - Illustrative / vector (infographic, business-logo abstract mark)
   - Branding visual (campaign key visual saturated)
-  - Quote background abstract texture có color pop
+  - Quote background abstract texture co color pop
 
 ### Size mapping aspect ratio
 
@@ -110,22 +110,22 @@ OpenAI-Organization: $OPENAI_ORG_ID  (optional)
 | Banner ad horizontal | 16:9 | `1792x1024` |
 | Magazine cover print | 8.5:11 | `1024x1792` (closest) |
 
-Nếu user yêu cầu aspect không match 3 sizes — pick closest, document `aspect_ratio: custom` trong frontmatter, note rằng có thể cần crop hậu kỳ.
+Neu user yeu cau aspect khong match 3 sizes — pick closest, document `aspect_ratio: custom` trong frontmatter, note rang co the can crop hau ky.
 
 ## Fallback khi API fails
 
-| Lỗi | Behavior |
+| Loi | Behavior |
 |-----|----------|
-| **Quota exceeded** | Print "Quota exceeded — fallback to Tier Free (prompt-only)" → output `docs/design/<slug>-prompt.md` với 5 platforms (xem `fallback-prompt-format.md`) |
+| **Quota exceeded** | Print "Quota exceeded — fallback to Tier Free (prompt-only)" → output `docs/design/<slug>-prompt.md` voi 5 platforms (xem `fallback-prompt-format.md`) |
 | **Invalid API key** | Print "OPENAI_API_KEY invalid — fallback to Tier Free" → fallback prompt-only |
-| **Network error / timeout** | Retry 1x với delay 3s. Nếu vẫn fail → fallback Tier Free |
-| **Prompt rejected (content policy)** | Print "Prompt rejected by OpenAI content policy. Recompose with safer phrasing." → suggest rephrase, không fallback Tier Free (vì prompt content có vấn đề, không phải tier issue) |
-| **Rate limit hit** | Sleep theo `retry-after` header response, retry 1x. Nếu vẫn fail → fallback |
+| **Network error / timeout** | Retry 1x voi delay 3s. Neu van fail → fallback Tier Free |
+| **Prompt rejected (content policy)** | Print "Prompt rejected by OpenAI content policy. Recompose with safer phrasing." → suggest rephrase, khong fallback Tier Free (vi prompt content co van de, khong phai tier issue) |
+| **Rate limit hit** | Sleep theo `retry-after` header response, retry 1x. Neu van fail → fallback |
 
-## Self-test trước khi call API
+## Self-test truoc khi call API
 
 - [ ] Prompt ≤4000 chars?
 - [ ] `OPENAI_API_KEY` env var set?
-- [ ] Aspect ratio map sang 1 trong 3 sizes hợp lệ?
+- [ ] Aspect ratio map sang 1 trong 3 sizes hop le?
 - [ ] Quality + style selection match design type (xem Best practices)?
-- [ ] Đã estimate cost user biết trước khi call (nếu >$0.20)?
+- [ ] Da estimate cost user biet truoc khi call (neu >$0.20)?

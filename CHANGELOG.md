@@ -9,6 +9,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed — ASCII Vietnamese cleanup in the VN cluster
+
+- `skills/vi/` is written as ASCII Vietnamese (no diacritics) by house convention; 772 lines in 56 files had drifted from it, almost all in `30-thiet-ke-master`. They are now converted, with no wording changes. EOL is preserved per file.
+- Patch bumps for the 12 skills whose `SKILL.md` changed: `00-ke-hoach-mkt` 2.0.3, `02-brief-chien-dich` 2.1.3, `04-script-video` 2.4.3, `08-nghien-cuu-doi-thu` 2.3.3, `09-insight-khach-hang` 2.1.2, `12-brief-landing-page` 2.1.3, `14-email-marketing` 2.2.1, `16-marketing-psychology` 1.0.2, `19-ab-test-setup` 1.2.3, `20-brief-client-intake` 1.1.1, `30-thiet-ke-master` 1.2.2, `74-copy-hai-lop` 1.0.1.
+- Kept with diacritics on purpose (17 lines): Vietnamese copy that is rendered to end customers or that only makes sense with the accent (quote texts, overlay slogan and HTML author line, brand names `Lumiere` / `BHOP Ca phe` in the logo rules, the "strip diacritics" examples) and the user-typed prompts in `evals/evals.json`, which `scripts/check-repo.mjs` requires to include diacritics.
+
 ---
 
 ## v3.8.1 — One threshold per decision, everywhere (2026-10-28)

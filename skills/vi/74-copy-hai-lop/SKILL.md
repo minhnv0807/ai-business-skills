@@ -2,7 +2,7 @@
 name: 74-copy-hai-lop
 description: "Dung khi can viet slogan, headline poster hoac cau ngan co HAI LOP NGHIA — mat chu dung o hot/le/canh, lop trong la brand, de nguoi doc tu nhay mot nhip. Ra 3-5 phuong an khac cong thuc, kem brief visual giao skill 42. Kich hoat khi user nhac 'viet slogan', 'cau hai y', 'copy poster', 'an y nhu Durex', 'headline poster', 'copy doi am', 'viet cau ngan dang anh'. Khong dung cho — copy quang cao tra tien theo pheu thi dung skill 05-copy-quang-cao; caption organic dai thi dung skill 37-caption-social; dinh vi chien luoc thi dung skill 58-positioning; brief anh chi tiet thi dung skill 42-brief-hinh-anh."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: content
 license: MIT
 triggers:
@@ -55,7 +55,7 @@ Toi da 4 cau neu that su thieu. Uu tien 1 cau hoac 0.
 
 1. **Hai lop, mot nhip.** Lop mat doc duoc ma khong can biet brand. Lop trong la gia tri san pham, khong phai tro cuoi rieng. Chuoi lien tuong chi duoc **mot mui ten**. Hai mui ten tro len = do, viet lai.
 2. **Diem to la chet.** Viet xong cau la dung. Khong them "y la...", "day chinh la suc manh cua...".
-3. **Cong thuc la cach viet, khong phai cach nghi.** Truoc khi chon cong thuc, tim moc noi (`references/tim-moc-noi.md`). Khong bam thi **bo dip**, dung gắng.
+3. **Cong thuc la cach viet, khong phai cach nghi.** Truoc khi chon cong thuc, tim moc noi (`references/tim-moc-noi.md`). Khong bam thi **bo dip**, dung gang.
 4. **3-5 the phai khac that.** Khac cong thuc, khac chu the hinh, khac giong. Khong giao 3 bien the cua cung mot y.
 5. **Cau tren poster <= 12 chu.** Tot nhat 4-8. Dai hon chi khi la cap doi / song song. Caption dai de o phan phu, khong len hinh.
 6. **Roi vao "ban", khong vao thong so.** Nguoi ta chia se vi "cau nay noi minh", khong vi "san pham tot".

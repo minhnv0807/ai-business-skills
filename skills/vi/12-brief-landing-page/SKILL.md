@@ -2,7 +2,7 @@
 name: 12-brief-landing-page
 description: "Dung khi can viet brief de XAY landing page moi hoac trang ban hang moi — cau truc section, copy tung khoi, yeu cau ky thuat, tracking va timeline giao dev. Kich hoat khi user nhac 'brief landing page', 'lam trang ban hang', 'can trang dich', 'thue dev lam landing', 'landing page can gi', 'viet noi dung cho trang'. Khong dung cho — trang DA CHAY ma khong ra don thi dung skill 68-cro-audit-trang; email HTML thi dung skill 49-html-email-template; danh sach asset cho ca campaign thi dung skill 41-campaign-asset-list."
 metadata:
-  version: 2.1.2
+  version: 2.1.3
   category: content
 license: MIT
 triggers:
@@ -178,7 +178,7 @@ Tai sao khac biet:
 | Thanh phan | Yeu cau |
 |------------|---------|
 | Headline form | Nhac lai loi ich + khan cap |
-| So truong form | Toi thieu: Ten + SĐT (2 truong). Toi da: + Email + 1 truong tuy chon |
+| So truong form | Toi thieu: Ten + SDT (2 truong). Toi da: + Email + 1 truong tuy chon |
 | CTA button | Mau cam (#ff6b00), kich thuoc lon, noi bat |
 | Cam ket | "Thong tin bao mat" hoac "Tu van mien phi, khong rang buoc" |
 | Khan cap | Countdown timer hoac "Con [X] slot trong thang nay" |
@@ -220,7 +220,7 @@ Tai sao khac biet:
 | Headline | Tom tat toan bo gia tri trong 1 cau |
 | CTA button | Giong Section 5, mau cam, kich thuoc lon |
 | Khan cap | Nhac lai deadline/gioi han |
-| Lien he truc tiep | SĐT hotline + link Zalo/Messenger (cho nguoi khong muon dien form) |
+| Lien he truc tiep | SDT hotline + link Zalo/Messenger (cho nguoi khong muon dien form) |
 
 ---
 

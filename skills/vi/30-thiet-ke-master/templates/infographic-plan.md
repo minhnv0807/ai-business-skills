@@ -11,7 +11,7 @@ Roadmap infographic, plan summary visual, milestone overview, vertical scrolling
 
 ## ⚠️ Workaround note
 
-Text minimal trong AI image (AI image gen rendering text vẫn unreliable — warped letters / spelling drift common). Nếu cần >5 data points text-heavy, recommend dùng **Canva template** hoặc **HTML/SVG infographic** thay vì AI generation. Template này phù hợp cho 3-5 large icons + 2-3 huge numbers visual layouts.
+Text minimal trong AI image (AI image gen rendering text van unreliable — warped letters / spelling drift common). Neu can >5 data points text-heavy, recommend dung **Canva template** hoac **HTML/SVG infographic** thay vi AI generation. Template nay phu hop cho 3-5 large icons + 2-3 huge numbers visual layouts.
 
 ## Prompt structure
 

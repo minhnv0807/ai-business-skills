@@ -4,10 +4,10 @@
 business-campaign
 
 ## Aspect ratio
-16:9 (web hero) HOẶC 1:1 (social hero) — config theo platform target
+16:9 (web hero) HOAC 1:1 (social hero) — config theo platform target
 
 ## Use case
-Hero shot product launch / campaign landing page / featured product showcase. Một focal point, cinematic, mood-setting.
+Hero shot product launch / campaign landing page / featured product showcase. Mot focal point, cinematic, mood-setting.
 
 ## Prompt structure
 
@@ -37,8 +37,8 @@ Negatives — no BHOP logo in-frame (overlay sau via HTML), no text in-frame, no
 `product-hero-[campaign-slug].png`
 
 ## Aspect ratio API parameter
-- gpt-image-2: `"1792x1024"` (web hero) hoặc `"1024x1024"` (social)
-- MJ: `--ar 16:9` hoặc `--ar 1:1`
+- gpt-image-2: `"1792x1024"` (web hero) hoac `"1024x1024"` (social)
+- MJ: `--ar 16:9` hoac `--ar 1:1`
 
 ## Cross-reference
 Xem `references/business-campaign.md` cho campaign tone discovery + product hero composition patterns.

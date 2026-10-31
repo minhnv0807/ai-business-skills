@@ -151,7 +151,7 @@
 - [ ] Theo mua / Theo dip
 
 ### C5. Persona
-> *VD: "Chi Mai, 25 tuoi, copywriter, song quan A, chi 2-3tr/thang cho thoi trang, theo dõi 15+ brand fashion local, mua tu IG + TikTok Shop, thich phong cach Korean nhe nhang, ngan vi long lay..."*
+> *VD: "Chi Mai, 25 tuoi, copywriter, song quan A, chi 2-3tr/thang cho thoi trang, theo doi 15+ brand fashion local, mua tu IG + TikTok Shop, thich phong cach Korean nhe nhang, ngan vi long lay..."*
 
 ```
 [Dien]

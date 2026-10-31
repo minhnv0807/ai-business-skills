@@ -3,7 +3,7 @@ name: 04-script-video
 description: "Dung khi can viet kich ban video ngan — TikTok, Reels, Shorts — voi hook 3 thanh phan, cau truc theo giay va 2 bien the A/B de test. Co Mode A cho san pham va Mode B cho personal brand. Kich hoat khi user nhac 'viet script video', 'kich ban TikTok', 'script Reels', 'noi dung video ngan', 'hook video', 'quay video gi'. Khong dung cho — huong dan dung phim cho editor thi dung skill 44-brief-video-editor; copy quang cao tra tien thi dung skill 05-copy-quang-cao; brief cho creator quay ho thi dung skill 06-brief-ugc-egc."
 argument-hint: "<san pham + thoi luong + tone>"
 metadata:
-  version: 2.4.2
+  version: 2.4.3
   category: content
 license: MIT
 triggers:
@@ -55,7 +55,7 @@ Quyet dinh mode:
 Hoi toi da 4 cau truoc khi viet:
 
 1. **San pham / dich vu gi?** Mo ta ngan, USP chinh, gia (neu co).
-2. **Nền tang + thoi luong mong muon?** TikTok (15/30/45/60s), Reels (15/30/60s), YouTube Shorts (30/60s). Neu khong chon — mac dinh TikTok 30s.
+2. **Nen tang + thoi luong mong muon?** TikTok (15/30/45/60s), Reels (15/30/60s), YouTube Shorts (30/60s). Neu khong chon — mac dinh TikTok 30s.
 3. **Doi tuong muc tieu?** Gioi tinh, do tuoi, noi dau chinh, muc tieu ho muon dat.
 4. **Goc do noi dung?** TOFU (thu hut moi), MOFU (thuyet phuc), BOFU (chot don). Neu khong chon — mac dinh TOFU.
 

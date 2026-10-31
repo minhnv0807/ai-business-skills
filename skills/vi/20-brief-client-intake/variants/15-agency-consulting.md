@@ -112,7 +112,7 @@
 - [ ] **Startup giai doan growth** — can marketing/tu van scale
 - [ ] **SME truyen thong muon chuyen doi so**
 - [ ] **Doanh nghiep nuoc ngoai vao VN** — can local partner
-- [ ] **Co ty tha nh lập mới** — can setup he thong
+- [ ] **Co ty tha nh lap moi** — can setup he thong
 - [ ] **Doanh nghiep co van de cu the** (sieu sale, tuyen dung, tranh chap phap ly...)
 - [ ] **Enterprise — phong ban con** (thue ngoai chuc nang cu the)
 

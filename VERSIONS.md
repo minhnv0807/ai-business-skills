@@ -7,27 +7,27 @@
 | Skill | Version | Last Updated | Category |
 |-------|---------|--------------|----------|
 | product-marketing-context | 1.2.0 | 2026-10-26 | foundation |
-| 00-ke-hoach-mkt | 2.0.2 | 2026-10-28 | strategy |
+| 00-ke-hoach-mkt | 2.0.3 | 2026-10-31 | strategy |
 | 01-lich-noi-dung | 2.3.1 | 2026-08-10 | content |
-| 02-brief-chien-dich | 2.1.2 | 2026-10-28 | strategy |
+| 02-brief-chien-dich | 2.1.3 | 2026-10-31 | strategy |
 | 03-danh-gia-hieu-suat | 2.4.1 | 2026-10-28 | performance |
-| 04-script-video | 2.4.2 | 2026-10-28 | content |
+| 04-script-video | 2.4.3 | 2026-10-31 | content |
 | 05-copy-quang-cao | 2.6.0 | 2026-10-26 | content |
 | 06-brief-ugc-egc | 2.2.0 | 2026-10-26 | content |
 | 07-bao-cao-marketing | 2.1.2 | 2026-08-10 | operations |
-| 08-nghien-cuu-doi-thu | 2.3.2 | 2026-08-10 | strategy |
-| 09-insight-khach-hang | 2.1.1 | 2026-08-10 | strategy |
+| 08-nghien-cuu-doi-thu | 2.3.3 | 2026-10-31 | strategy |
+| 09-insight-khach-hang | 2.1.2 | 2026-10-31 | strategy |
 | 10-tinh-kpi-nguoc | 2.2.1 | 2026-10-28 | performance |
 | 11-thiet-lap-kenh | 2.1.0 | 2026-10-26 | operations |
-| 12-brief-landing-page | 2.1.2 | 2026-08-10 | content |
+| 12-brief-landing-page | 2.1.3 | 2026-10-31 | content |
 | 13-phan-tich-du-lieu | 2.1.3 | 2026-10-28 | performance |
-| 14-email-marketing | 2.2.0 | 2026-10-26 | operations |
+| 14-email-marketing | 2.2.1 | 2026-10-31 | operations |
 | 15-social-listening | 2.1.1 | 2026-08-10 | operations |
-| 16-marketing-psychology | 1.0.1 | 2026-08-10 | strategy |
+| 16-marketing-psychology | 1.0.2 | 2026-10-31 | strategy |
 | 17-pricing-strategy | 1.1.2 | 2026-10-26 | strategy |
 | 18-referral-program | 1.1.0 | 2026-10-26 | operations |
-| 19-ab-test-setup | 1.2.2 | 2026-10-28 | performance |
-| 20-brief-client-intake | 1.1.0 | 2026-09-12 | operations |
+| 19-ab-test-setup | 1.2.3 | 2026-10-31 | performance |
+| 20-brief-client-intake | 1.1.1 | 2026-10-31 | operations |
 | 21-audit-ads-performance | 1.4.0 | 2026-10-26 | performance |
 | 22-personal-brand-context | 1.1.1 | 2026-08-10 | foundation |
 | 23-personal-brand-strategy | 1.0.1 | 2026-08-10 | strategy |
@@ -37,7 +37,7 @@
 | 27-personal-brand-monetize | 1.1.0 | 2026-10-26 | strategy |
 | 28-community-building | 1.0.1 | 2026-08-10 | operations |
 | 29-xuat-khau-b2b | 1.0.1 | 2026-08-10 | strategy |
-| 30-thiet-ke-master | 1.2.1 | 2026-08-10 | design |
+| 30-thiet-ke-master | 1.2.2 | 2026-10-31 | design |
 | 31-offer-design | 1.0.1 | 2026-08-10 | strategy |
 | 32-seo-growth | 1.2.0 | 2026-10-26 | performance |
 | 33-b2b-lead-gen | 1.1.1 | 2026-08-10 | operations |
@@ -80,7 +80,7 @@
 | 70-lead-magnet | 1.0.0 | 2026-08-10 | content |
 | 71-sales-enablement | 1.0.0 | 2026-08-10 | operations |
 | 72-hoi-dong-marketing | 1.0.0 | 2026-08-10 | strategy |
-| 74-copy-hai-lop | 1.0.0 | 2026-08-16 | content |
+| 74-copy-hai-lop | 1.0.1 | 2026-10-31 | content |
 | product-marketing-context-global | 1.1.0 | 2026-10-26 | foundation |
 | 00-marketing-plan-global | 1.0.1 | 2026-08-10 | strategy |
 | 01-content-calendar-global | 1.0.1 | 2026-08-10 | content |

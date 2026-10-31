@@ -17,7 +17,7 @@
 |----------|-----------|
 | Ten shop/spa/clinic | |
 | Tagline | |
-| Loai hinh | □ Pet Spa (cat lông, tăm) □ Pet Shop (san pham) □ Pet Hotel (luu tru) □ Pet Clinic (kham chua) □ Tron goi □ Cat cafe |
+| Loai hinh | □ Pet Spa (cat long, tam) □ Pet Shop (san pham) □ Pet Hotel (luu tru) □ Pet Clinic (kham chua) □ Tron goi □ Cat cafe |
 | Dia chi | |
 | So chi nhanh | |
 | Nam thanh lap | |

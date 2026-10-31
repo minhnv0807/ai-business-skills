@@ -7,7 +7,7 @@ personal-brand
 1:1 + transparent background recommended
 
 ## Use case
-Personal initials/symbol cho stationery, email signature, watermark, brand mark cá nhân scalable.
+Personal initials/symbol cho stationery, email signature, watermark, brand mark ca nhan scalable.
 
 ## Prompt structure
 
@@ -35,18 +35,18 @@ Negatives — no decorative ornament, no warped letterforms, no spelling drift, 
 
 ## Variant suggestions
 
-1. **Stacked** — M trên N, vertical compact
+1. **Stacked** — M tren N, vertical compact
 2. **Horizontal** — MN inline ngang, side-by-side
 3. **Circular badge** — MN inside circle border seal-style
-4. **Interlocking** — M và N overlap creative ligature
+4. **Interlocking** — M va N overlap creative ligature
 5. **Wordmark style** — "Minh Nguyen" full name stylized typography
 
 ## Output filename pattern
 `personal-monogram-[variant].png` (transparent PNG)
 
 ## Aspect ratio API parameter
-- gpt-image-2: `"1024x1024"` (export với transparent bg post-processing)
+- gpt-image-2: `"1024x1024"` (export voi transparent bg post-processing)
 - MJ: `--ar 1:1 --no background`
 
 ## Cross-reference
-Xem `references/personal-brand.md` cho brand archetype + values trước khi chọn letterform style.
+Xem `references/personal-brand.md` cho brand archetype + values truoc khi chon letterform style.

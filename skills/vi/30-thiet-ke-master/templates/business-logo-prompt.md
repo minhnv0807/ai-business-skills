@@ -7,11 +7,11 @@ business-logo
 1:1 transparent background
 
 ## Use case
-Brand logo brainstorm 3-5 directions — concept exploration giai đoạn đầu. KHÔNG phải final shippable logo.
+Brand logo brainstorm 3-5 directions — concept exploration giai doan dau. KHONG phai final shippable logo.
 
-## 🚨 Human review disclaimer (BẮT BUỘC ở output)
+## 🚨 Human review disclaimer (BAT BUOC o output)
 
-> AI-generated logos for brainstorming only. Logo là asset lâu dài — human designer phải refine vector + monochrome variants + scalability test trước khi ship production. AI output dùng để chốt direction, không phải file deliverable.
+> AI-generated logos for brainstorming only. Logo la asset lau dai — human designer phai refine vector + monochrome variants + scalability test truoc khi ship production. AI output dung de chot direction, khong phai file deliverable.
 
 ## Prompt structure
 

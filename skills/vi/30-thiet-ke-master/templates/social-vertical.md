@@ -22,7 +22,7 @@ TikTok cover, IG Reels cover, IG Stories, FB Stories, YouTube Shorts cover. Vert
 ## Filled example (BHOP weekend TikTok Reel cover)
 
 ```
-Vertical 9:16 social cover for BHOP "góc cuối tuần" Reel series, cozy reading nook scene with hands holding open book + steaming latte mug on side table, focal composition upper-third (book + mug eye-level), middle-third atmospheric (autumn afternoon window light), bottom 20% intentionally empty for TikTok UI overlay.
+Vertical 9:16 social cover for BHOP "goc cuoi tuan" Reel series, cozy reading nook scene with hands holding open book + steaming latte mug on side table, focal composition upper-third (book + mug eye-level), middle-third atmospheric (autumn afternoon window light), bottom 20% intentionally empty for TikTok UI overlay.
 
 Bright warm afternoon light from window-right, golden hour quality, soft fill bouncing off cream wall, subtle steam from latte. Mood — slow weekend ritual, cozy reading-spot vibe, thumb-stopping for autumn content audience.
 

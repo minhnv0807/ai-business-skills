@@ -2,7 +2,7 @@
 name: 19-ab-test-setup
 description: "Dung khi can test co ky luat de biet phuong an nao thang that — chon dung mot bien de test, viet gia thuyet, tinh sample size, setup tracking, doc y nghia thong ke va ghi test log cho ads, landing page, email hoac gia. Kich hoat khi user nhac 'A/B test', 'split test', 'test creative', 'test copy', 'test landing', 'chay bao lau moi du ket luan', 'ban nao thang', 'test xong khong biet doc ket qua', 'ket qua co dang tin khong'. Khong dung cho — so dang xau va can chan doan nguyen nhan thi dung skill 03-danh-gia-hieu-suat; nhan ngan sach cho creative da thang thi dung skill 55-scaling-ads; ra soat toan bo trang khong ra don thi dung skill 68-cro-audit-trang."
 metadata:
-  version: 1.2.2
+  version: 1.2.3
   category: performance
 license: MIT
 related:
@@ -148,7 +148,7 @@ Test:
 
 ### 4. Price Display
 Test:
-- 299K vs 299,000 vs 299.000đ
+- 299K vs 299,000 vs 299.000d
 - Co discount strikeout vs khong
 - Monthly vs Yearly highlight
 

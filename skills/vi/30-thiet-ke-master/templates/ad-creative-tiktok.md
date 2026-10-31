@@ -19,10 +19,10 @@ TikTok ad creative, IG Reels promo, vertical paid social. Native-feel (less poli
 [Negatives — no studio polish, no text in frame, no centered "ad" composition, no AI-slop]
 ```
 
-## Filled example (AI Kiếm Tiền course TikTok promo)
+## Filled example (AI Kiem Tien course TikTok promo)
 
 ```
-TikTok ad creative for AI Kiếm Tiền course promo, overhead shot of student desk scene — open notebook with handwritten notes + laptop showing ChatGPT interface + warm latte mug + autumn afternoon window light, focal composition upper-third (notebook + laptop), middle-third atmospheric (steam + light rays), bottom 20% empty for TikTok UI/captions. Vertical 9:16 mobile-native.
+TikTok ad creative for AI Kiem Tien course promo, overhead shot of student desk scene — open notebook with handwritten notes + laptop showing ChatGPT interface + warm latte mug + autumn afternoon window light, focal composition upper-third (notebook + laptop), middle-third atmospheric (steam + light rays), bottom 20% empty for TikTok UI/captions. Vertical 9:16 mobile-native.
 
 Natural warm afternoon ambient light from window-right, soft realistic shadows, NOT studio polished — feels like real student captured moment. Mood — relatable productive vibe, "this could be me" aspirational, authentic learning ritual.
 

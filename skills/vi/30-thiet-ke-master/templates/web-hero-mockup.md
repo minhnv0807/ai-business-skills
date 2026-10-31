@@ -7,17 +7,17 @@ web-mockup (hybrid — image only, NOT full interactive)
 16:9 (desktop hero standard)
 
 ## Use case
-Hero section image cho landing page concept exploration, mood-board hero visual. **KHÔNG phải full interactive mockup.**
+Hero section image cho landing page concept exploration, mood-board hero visual. **KHONG phai full interactive mockup.**
 
 ## 🚨 CRITICAL NOTE
 
-Đây là **hero image only** — không phải HTML mockup. Cho **full interactive mockup**:
-- Landing page → invoke skill `web-prototype` hoặc `saas-landing`
+Day la **hero image only** — khong phai HTML mockup. Cho **full interactive mockup**:
+- Landing page → invoke skill `web-prototype` hoac `saas-landing`
 - Mobile app → invoke `mobile-app`
 - Dashboard → invoke `dashboard`
 - Custom frontend → invoke `frontend-design:frontend-design`
 
-Template này chỉ generate hero background image để designer paste vào HTML mockup tools.
+Template nay chi generate hero background image de designer paste vao HTML mockup tools.
 
 ## Prompt structure
 
@@ -29,10 +29,10 @@ Template này chỉ generate hero background image để designer paste vào HTM
 [Negatives — no UI buttons, no nav bars, no text overlays, no UI elements, no faces (avoid distraction)]
 ```
 
-## Filled example (AI Kiếm Tiền course landing hero image)
+## Filled example (AI Kiem Tien course landing hero image)
 
 ```
-Wide cinematic 16:9 hero image for AI Kiếm Tiền course landing page background, abstract digital learning workspace concept — floating geometric shapes suggesting data + ideas + flow, focal composition anchored right-third with rule of thirds, left two-thirds reserved as soft-gradient atmospheric space for headline + CTA overlay.
+Wide cinematic 16:9 hero image for AI Kiem Tien course landing page background, abstract digital learning workspace concept — floating geometric shapes suggesting data + ideas + flow, focal composition anchored right-third with rule of thirds, left two-thirds reserved as soft-gradient atmospheric space for headline + CTA overlay.
 
 Cinematic warm golden hour light from upper-right, soft gradient transition to cream left, subtle glow on floating shapes suggesting momentum + opportunity. Mood — aspirational momentum, premium course vibe, focused clarity.
 
@@ -40,7 +40,7 @@ Palette warm cream #F5EBE0 left half base, gold accent #D4A574 floating shapes h
 
 Cinematic abstract digital art with photographic realism, 16:9 widescreen web-hero aesthetic like Stripe or Linear landing pages, premium SaaS quality.
 
-Negatives — no UI buttons, no nav bars, no text overlays, no UI elements (no laptop frames no browser windows), no faces, no neon colors, no AI-slop floating particles, no clichéd "AI hands reaching" tropes, no stock photo aesthetic.
+Negatives — no UI buttons, no nav bars, no text overlays, no UI elements (no laptop frames no browser windows), no faces, no neon colors, no AI-slop floating particles, no cliched "AI hands reaching" tropes, no stock photo aesthetic.
 ```
 
 ## Output filename pattern

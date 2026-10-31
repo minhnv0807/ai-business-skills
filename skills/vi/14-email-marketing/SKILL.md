@@ -3,7 +3,7 @@ name: 14-email-marketing
 description: "Dung khi can xay chuoi email hoac Zalo OA gui theo kich ban — welcome series, nurture, promotion, win-back: phan tep, luong automation, subject line, tan suat gui, A/B test va KPI open/click. Kich hoat khi user nhac 'email marketing', 'chuoi email tu dong', 'welcome email', 'email nurture', 'broadcast Zalo OA', 'co list ma khong biet gui gi', 'email khong ai mo', 'cham soc khach qua Zalo'. Khong dung cho — code file HTML email chay duoc tren moi client thi dung skill 49-html-email-template; xay he thong giu chan khach da mua thi dung skill 69-giu-chan-khach-hang; thiet ke qua tang doi thong tin lien he thi dung skill 70-lead-magnet."
 argument-hint: "<audience + objective + sequence type>"
 metadata:
-  version: 2.2.0
+  version: 2.2.1
   category: operations
 license: MIT
 triggers:
@@ -80,7 +80,7 @@ Hoi user toi da 4 cau:
 
 | Cong thuc | Vi du | Khi dung |
 |-----------|------|---------|
-| **Curiosity** (To mo) | "Dieu 90% nguoi lam sai khi [chủ de]" | TOFU, nurture |
+| **Curiosity** (To mo) | "Dieu 90% nguoi lam sai khi [chu de]" | TOFU, nurture |
 | **Benefit** (Loi ich) | "[Ket qua] trong [thoi gian] — day la cach" | MOFU, nurture |
 | **Urgency** (Khan cap) | "Con 24h — [uu dai] het han ngay mai" | BOFU, promotion |
 | **Personalization** (Ca nhan) | "[Ten], minh co thu nay cho ban" | Re-engage, VIP |

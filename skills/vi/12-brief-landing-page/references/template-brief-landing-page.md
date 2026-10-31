@@ -55,7 +55,7 @@ Nguon traffic: [Meta Ads / TikTok Ads / Google Ads / ...]
 ## Section 5 — Form
 
 - Headline form: [...]
-- Truong: Ten, SĐT, [truong tuy chon]
+- Truong: Ten, SDT, [truong tuy chon]
 - CTA button: [...]
 - Khan cap: [Countdown / So luong gioi han]
 - Cam ket: [...]
@@ -72,7 +72,7 @@ Nguon traffic: [Meta Ads / TikTok Ads / Google Ads / ...]
 
 - Headline: [Tom tat gia tri]
 - CTA: [Giong Section 5]
-- Lien he: [SĐT + Zalo + Messenger]
+- Lien he: [SDT + Zalo + Messenger]
 
 ---
 

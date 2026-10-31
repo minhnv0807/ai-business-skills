@@ -77,7 +77,7 @@ Test theo thu tu uu tien — moi lan chi test 1 yeu to:
 
 | Yeu to test | Bien the A | Bien the B | Chi so do |
 |-------------|-----------|-----------|-----------|
-| So truong form | 2 truong (Ten + SĐT) | 3 truong (Ten + SĐT + Email) | Conv rate form |
+| So truong form | 2 truong (Ten + SDT) | 3 truong (Ten + SDT + Email) | Conv rate form |
 | Vi tri form | Giua trang (Section 5) | Tren dau trang (sau Hero) | Conv rate form |
 
 ### Vong 3 — Tinh chinh

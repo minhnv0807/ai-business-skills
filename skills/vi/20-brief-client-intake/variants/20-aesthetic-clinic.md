@@ -10,7 +10,7 @@
 
 ## HUONG DAN
 - Thoi gian: **40-50 phut**
-- Gui kem: giay phep hoat dong phong kham, chung chi bac si (chuyên khoa Tham my), hinh case study (co su dong y bang van ban cua khach)
+- Gui kem: giay phep hoat dong phong kham, chung chi bac si (chuyen khoa Tham my), hinh case study (co su dong y bang van ban cua khach)
 - **Bat buoc: Luat su hoac chuyen gia phap ly review noi dung truoc khi launch**
 
 ---
@@ -432,7 +432,7 @@
 
 ## NEXT STEPS
 
-1. 24h: Review brief + kiểm tra phap ly
+1. 24h: Review brief + kiem tra phap ly
 2. 48h: Hop compliance + tu van noi dung an toan
 3. 5-7 ngay: Plan v1 + content framework
 4. 7-10 ngay: Legal review lan 1

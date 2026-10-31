@@ -7,7 +7,7 @@ personal-brand
 1:1 (avatar profile standard cho LinkedIn, Twitter, IG, podcast cover)
 
 ## Use case
-Ảnh profile chính thức cho personal brand — LinkedIn headshot, Twitter avatar, IG profile, speaker bio photo.
+Anh profile chinh thuc cho personal brand — LinkedIn headshot, Twitter avatar, IG profile, speaker bio photo.
 
 ## Prompt structure
 
@@ -42,4 +42,4 @@ Negatives — no extra fingers, no warped face proportions, no text in frame, no
 - MJ: `--ar 1:1`
 
 ## Cross-reference
-Xem `references/personal-brand.md` cho grill questions về role + values + brand archetype trước khi viết prompt.
+Xem `references/personal-brand.md` cho grill questions ve role + values + brand archetype truoc khi viet prompt.

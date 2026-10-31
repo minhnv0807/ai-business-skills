@@ -3,27 +3,27 @@ name: 30-thiet-ke-master
 description: "Dung khi can TAO RA anh hoac prompt anh bang AI — anh thuong hieu ca nhan, logo, key visual campaign, anh dang hang ngay, editorial, infographic, mockup web, quote graphic. Tu doc brand identity trong context roi dung prompt, gen anh hoac xuat prompt cho MidJourney, DALL-E, Imagen, Leonardo. Co che do nhan anh reference va tra ve master prompt copy-paste duoc. Kich hoat khi user nhac 'thiet ke anh', 'lam logo', 've banner', 'prompt MidJourney', 'tao key visual', 'lam anh giong anh nay', 'gen anh AI', 'doi mau thuong hieu tren anh'. Khong dung cho — viet brief giao designer lam thi dung skill 42-brief-hinh-anh; quy trinh asset ca campaign thi dung skill 41-campaign-asset-list; video avatar AI thi dung skill 24-ai-avatar-production; UI wireframe tuong tac thi dung web-prototype; animation thi dung motion-frames."
 argument-hint: "<design type + brand + format>"
 metadata:
-  version: 1.2.1
+  version: 1.2.2
   category: design
 triggers:
-  - "thiết kế ảnh"
-  - "làm logo"
-  - "ảnh poster"
+  - "thiet ke anh"
+  - "lam logo"
+  - "anh poster"
   - "banner campaign"
   - "social post design"
   - "infographic"
   - "key visual"
   - "hero web"
-  - "avatar cá nhân"
+  - "avatar ca nhan"
   - "monogram"
   - "quote graphic"
   - "prompt MidJourney"
   - "prompt DALL-E"
-  - "ảnh truyền thông"
-  - "ảnh reference"
+  - "anh truyen thong"
+  - "anh reference"
   - "prompt master"
-  - "đổi màu thương hiệu"
-  - "thêm logo"
+  - "doi mau thuong hieu"
+  - "them logo"
 license: MIT
 related:
   - 02-brief-chien-dich
@@ -36,23 +36,23 @@ related:
   - 47-design-review
 ---
 
-# Master Thiết Kế — 30-thiet-ke-master
+# Master Thiet Ke — 30-thiet-ke-master
 
-Master design skill xử lý 8 loại thiết kế cho ai-business-skills. Một cửa cho cả thiết kế cá nhân (founder, creator) lẫn thương hiệu (logo, campaign, marketing hàng ngày). Tự đọc brand identity từ project context, compose prompt đúng brand voice, và route sang đúng tool: gen trực tiếp qua gpt-image-2, fallback prompt cho 5 nền tảng phổ biến, hoặc dispatch qua Open Design infrastructure.
+Master design skill xu ly 8 loai thiet ke cho ai-business-skills. Mot cua cho ca thiet ke ca nhan (founder, creator) lan thuong hieu (logo, campaign, marketing hang ngay). Tu doc brand identity tu project context, compose prompt dung brand voice, va route sang dung tool: gen truc tiep qua gpt-image-2, fallback prompt cho 5 nen tang pho bien, hoac dispatch qua Open Design infrastructure.
 
-Toàn bộ skill viết tiếng Việt phổ thông để client có thể đọc, hiểu và fill cùng. Tên field tiếng Anh giữ nguyên để AI parsing không bị phá.
+Toan bo skill viet tieng Viet pho thong de client co the doc, hieu va fill cung. Ten field tieng Anh giu nguyen de AI parsing khong bi pha.
 
-Khi user đưa ảnh reference hoặc xin prompt tạo ảnh/video/storyboard, skill hoạt động như Prompt Director: phân loại intent, phân tích ảnh thành các prompt layer, xuất prompt tiếng Anh copy-paste-ready, rồi nêu rõ cần upload thêm asset nào cho từng ảnh.
+Khi user dua anh reference hoac xin prompt tao anh/video/storyboard, skill hoat dong nhu Prompt Director: phan loai intent, phan tich anh thanh cac prompt layer, xuat prompt tieng Anh copy-paste-ready, roi neu ro can upload them asset nao cho tung anh.
 
 ---
 
-## 8 loại thiết kế
+## 8 loai thiet ke
 
-| # | Type | Subject | Khi nào dùng | Tool |
+| # | Type | Subject | Khi nao dung | Tool |
 |---|------|---------|--------------|------|
-| 1 | personal-brand | Cá nhân (founder/creator) | Avatar profile, monogram, speaker cover, quote graphic cá nhân | gpt-image-2 raster |
-| 2 | business-logo | Thương hiệu — logo identity | Logo primary/secondary/mark | gpt-image-2 multi-variant 3-5 hướng + disclaimer human review |
-| 3 | business-campaign | Brand campaign visual | TVC still, OOH, product hero, key visual chiến dịch | gpt-image-2 raster |
+| 1 | personal-brand | Ca nhan (founder/creator) | Avatar profile, monogram, speaker cover, quote graphic ca nhan | gpt-image-2 raster |
+| 2 | business-logo | Thuong hieu — logo identity | Logo primary/secondary/mark | gpt-image-2 multi-variant 3-5 huong + disclaimer human review |
+| 3 | business-campaign | Brand campaign visual | TVC still, OOH, product hero, key visual chien dich | gpt-image-2 raster |
 | 4 | marketing-day-to-day | Operational marketing | Social post, banner ad, email header, story | gpt-image-2 raster |
 | 5 | editorial | Long-form publication | Magazine cover, article hero, e-book, lookbook | gpt-image-2 raster |
 | 6 | infographic | Data/plan/process viz | Roadmap, process flow, comparison chart | gpt-image-2 (text minimal, icons-focused) |
@@ -61,20 +61,20 @@ Khi user đưa ảnh reference hoặc xin prompt tạo ảnh/video/storyboard, s
 
 ---
 
-## Khi nào trigger / KHÔNG trigger
+## Khi nao trigger / KHONG trigger
 
-### Triggers (gọi skill này)
+### Triggers (goi skill nay)
 
-- "thiết kế ảnh", "làm logo", "ảnh poster", "banner campaign"
+- "thiet ke anh", "lam logo", "anh poster", "banner campaign"
 - "social post design", "infographic", "key visual", "hero web mockup"
-- "ảnh truyền thông", "avatar cá nhân", "monogram", "quote graphic"
+- "anh truyen thong", "avatar ca nhan", "monogram", "quote graphic"
 - "prompt MidJourney", "prompt DALL-E", "prompt Leonardo", "prompt Imagen"
 
-### DO NOT INVOKE (route sang skill khác)
+### DO NOT INVOKE (route sang skill khac)
 
-| Trường hợp | Route sang |
+| Truong hop | Route sang |
 |------------|------------|
-| Full interactive web UI mockup (multi-section, có behavior) | **`web-prototype`** / **`saas-landing`** / **`mobile-app`** / **`dashboard`** / **`frontend-design`** |
+| Full interactive web UI mockup (multi-section, co behavior) | **`web-prototype`** / **`saas-landing`** / **`mobile-app`** / **`dashboard`** / **`frontend-design`** |
 | Video creation (TVC, ads video, UGC) | **`04-script-video`** + Seedance/Kling/Sora dispatcher |
 | Animation, motion graphics, sprite | **`motion-frames`** / **`sprite-animation`** |
 | Audio asset (jingle, voiceover, SFX) | **`audio-jingle`** |
@@ -84,13 +84,13 @@ Khi user đưa ảnh reference hoặc xin prompt tạo ảnh/video/storyboard, s
 
 ## Mode detection cascade (Step 0)
 
-Ba lớp phát hiện type theo thứ tự ưu tiên:
+Ba lop phat hien type theo thu tu uu tien:
 
 ### Layer 1 — Keyword auto-detect
 
-| Keyword (Vietnamese hoặc English) | Type detect |
+| Keyword (Vietnamese hoac English) | Type detect |
 |-----------------------------------|-------------|
-| "avatar", "ảnh đại diện", "monogram", "speaker cover", "profile pic" | personal-brand |
+| "avatar", "anh dai dien", "monogram", "speaker cover", "profile pic" | personal-brand |
 | "logo", "wordmark", "lockup", "brand mark" | business-logo |
 | "key visual", "campaign visual", "TVC still", "OOH", "product hero" | business-campaign |
 | "social post", "banner ads", "email header", "story IG", "post Facebook" | marketing-day-to-day |
@@ -98,22 +98,22 @@ Ba lớp phát hiện type theo thứ tự ưu tiên:
 | "infographic", "roadmap visual", "process flow", "comparison chart", "data viz" | infographic |
 | "hero web", "landing hero image", "app screen mockup" | web-mockup |
 | "quote", "quote graphic", "guru post", "motivational post" | quote-graphic |
-| "ảnh reference", "giống ảnh này", "prompt master", "same style", "same composition" | giữ type hiện tại + bật Prompt Director reference mode |
-| "đổi màu", "màu thương hiệu", "brand color", "thêm logo", "replace logo" | giữ type hiện tại + bật Prompt Director brand adaptation |
-| "nhìn AI quá", "chưa giống", "sửa prompt", "màu sai", "font khó đọc" | giữ type hiện tại + bật Prompt Director diagnosis |
+| "anh reference", "giong anh nay", "prompt master", "same style", "same composition" | giu type hien tai + bat Prompt Director reference mode |
+| "doi mau", "mau thuong hieu", "brand color", "them logo", "replace logo" | giu type hien tai + bat Prompt Director brand adaptation |
+| "nhin AI qua", "chua giong", "sua prompt", "mau sai", "font kho doc" | giu type hien tai + bat Prompt Director diagnosis |
 
 ### Layer 2 — Explicit flag
 
-User truyền `--type=business-logo` (hoặc 7 type khác) → override Layer 1.
+User truyen `--type=business-logo` (hoac 7 type khac) → override Layer 1.
 
 ### Layer 3 — Ambiguous fallback
 
-Nếu không match keyword và không có flag → hỏi 1 câu duy nhất:
+Neu khong match keyword va khong co flag → hoi 1 cau duy nhat:
 
-> "Loại thiết kế nào trong 8 lựa chọn dưới?
-> 1) personal-brand (cá nhân) 2) business-logo 3) business-campaign 4) marketing-day-to-day 5) editorial 6) infographic 7) web-mockup 8) quote-graphic"
+> "Loai thiet ke nao trong 8 lua chon duoi?
+> 1) personal-brand (ca nhan) 2) business-logo 3) business-campaign 4) marketing-day-to-day 5) editorial 6) infographic 7) web-mockup 8) quote-graphic"
 
-In ra transparency line trước khi tiếp tục:
+In ra transparency line truoc khi tiep tuc:
 
 ```
 [detect type: business-logo — keyword "logo" + "BHOP" match]
@@ -123,21 +123,21 @@ In ra transparency line trước khi tiếp tục:
 
 ## Prompt Director mode
 
-Bật mode này khi user đưa ảnh reference, xin master prompt, muốn đổi mặt/màu/logo, hoặc feedback ảnh ra chưa đúng. Load `references/prompt-director.md` trước khi compose prompt.
+Bat mode nay khi user dua anh reference, xin master prompt, muon doi mat/mau/logo, hoac feedback anh ra chua dung. Load `references/prompt-director.md` truoc khi compose prompt.
 
-Nguyên tắc xử lý:
-- **Không hỏi form dài trước.** Nếu đủ input, tạo prompt ngay và chỉ ghi phần còn thiếu ở cuối.
-- **Ảnh reference = style/composition source**, không tự xem đó là ảnh mặt/logo trừ khi user nói rõ.
-- **Asset thay thế phải hỏi rõ theo loại:** face reference, logo file, brand palette hex, product image, background/location, exact text.
-- **Nhiều ảnh = nhiều luồng.** Đặt tên `Flow A/B/C`, nêu vai trò từng ảnh, prompt riêng, negative prompt riêng, và danh sách asset cần upload cho từng flow.
-- **Prompt cuối cho image/video model mặc định tiếng Anh**; phần giải thích và yêu cầu bổ sung dùng tiếng Việt.
+Nguyen tac xu ly:
+- **Khong hoi form dai truoc.** Neu du input, tao prompt ngay va chi ghi phan con thieu o cuoi.
+- **Anh reference = style/composition source**, khong tu xem do la anh mat/logo tru khi user noi ro.
+- **Asset thay the phai hoi ro theo loai:** face reference, logo file, brand palette hex, product image, background/location, exact text.
+- **Nhieu anh = nhieu luong.** Dat ten `Flow A/B/C`, neu vai tro tung anh, prompt rieng, negative prompt rieng, va danh sach asset can upload cho tung flow.
+- **Prompt cuoi cho image/video model mac dinh tieng Anh**; phan giai thich va yeu cau bo sung dung tieng Viet.
 
-Output nhanh khi có reference image:
+Output nhanh khi co reference image:
 
 ```markdown
-## Luồng ảnh
+## Luong anh
 
-| Flow | Ảnh đầu vào | Vai trò | Output |
+| Flow | Anh dau vao | Vai tro | Output |
 |------|-------------|---------|--------|
 | A | [file/path] | style/composition reference | master prompt |
 
@@ -147,7 +147,7 @@ Output nhanh khi có reference image:
 ## Negative prompt / Avoid
 [English avoid list]
 
-## Cần upload thêm để cá nhân hóa Flow A
+## Can upload them de ca nhan hoa Flow A
 - Face reference:
 - Logo:
 - Brand colors:
@@ -157,47 +157,47 @@ Output nhanh khi có reference image:
 
 ---
 
-## Workflow runtime — 5 bước
+## Workflow runtime — 5 buoc
 
 ### Step 1 — DETECT design type
 
-Chạy 3-layer cascade ở trên. Print `[detect type: ...]` trước khi sang Step 2.
+Chay 3-layer cascade o tren. Print `[detect type: ...]` truoc khi sang Step 2.
 
 ### Step 2 — LOAD references
 
-Load theo nhu cầu (lazy):
+Load theo nhu cau (lazy):
 
-- `CONVENTIONS.md` — load 1 lần đầu session
-- `references/prompt-director.md` — load khi có ảnh reference, master prompt, đổi mặt/màu/logo, nhiều ảnh, hoặc feedback sửa prompt
-- `references/<type>.md` — load đúng file cho type vừa detect (vd `references/business-logo.md`)
-- `references/brand-identity-source.md` — load khi type bắt đầu bằng `business-*`
+- `CONVENTIONS.md` — load 1 lan dau session
+- `references/prompt-director.md` — load khi co anh reference, master prompt, doi mat/mau/logo, nhieu anh, hoac feedback sua prompt
+- `references/<type>.md` — load dung file cho type vua detect (vd `references/business-logo.md`)
+- `references/brand-identity-source.md` — load khi type bat dau bang `business-*`
 - `references/fallback-prompt-format.md` — load khi Tier Free (xem Step 5)
-- `templates/<format>.md` — load template theo format yêu cầu (vd `templates/poster.md`, `templates/social-square.md`)
+- `templates/<format>.md` — load template theo format yeu cau (vd `templates/poster.md`, `templates/social-square.md`)
 
 ### Step 3 — READ brand identity
 
-**Business modes** (`business-logo` / `business-campaign` / `marketing-day-to-day`): BẮT BUỘC tìm brand identity. Auto-search theo priority:
+**Business modes** (`business-logo` / `business-campaign` / `marketing-day-to-day`): BAT BUOC tim brand identity. Auto-search theo priority:
 
 1. `assets/brand/logo.{svg,png,ai}` — logo file primary
-2. `brand-guideline.md` / `brand-identity.md` ở root project
-3. `02-brief-chien-dich/output.md` Section "Yêu cầu thương hiệu" — campaign brief có brand mandatories
+2. `brand-guideline.md` / `brand-identity.md` o root project
+3. `02-brief-chien-dich/output.md` Section "Yeu cau thuong hieu" — campaign brief co brand mandatories
 4. `prd.md` frontmatter `target_user` + Section "Visual cues" — style direction
 5. `prd.md` Section 6 — features cho visual concept
 
-Nếu thiếu cho business mode → **BLOCK** + ask user upload logo + specify palette (3 màu hex) + chỉ định font family.
+Neu thieu cho business mode → **BLOCK** + ask user upload logo + specify palette (3 mau hex) + chi dinh font family.
 
-**Personal modes** (`personal-brand` / `quote-graphic` cá nhân): brand identity optional. Đủ với style adjectives (3-5 từ) + color preference (3 mood color).
+**Personal modes** (`personal-brand` / `quote-graphic` ca nhan): brand identity optional. Du voi style adjectives (3-5 tu) + color preference (3 mood color).
 
-**Editorial / Infographic / Web-mockup**: tùy ngữ cảnh — nếu là cho brand thì làm như business, nếu là cá nhân/general thì làm như personal.
+**Editorial / Infographic / Web-mockup**: tuy ngu canh — neu la cho brand thi lam nhu business, neu la ca nhan/general thi lam nhu personal.
 
 ### Step 4 — ROUTE theo type
 
 | Type | Route action |
 |------|--------------|
 | 1-5 (personal-brand, business-logo, business-campaign, marketing-day-to-day, editorial) | COMPOSE prompt raster → sang Step 5 |
-| 6 (infographic) | COMPOSE prompt với chiến lược **text-minimal**: icons-heavy, palette branded, tối đa 2-3 number stats, KHÔNG paragraph dài → sang Step 5 |
+| 6 (infographic) | COMPOSE prompt voi chien luoc **text-minimal**: icons-heavy, palette branded, toi da 2-3 number stats, KHONG paragraph dai → sang Step 5 |
 | 7 (web-mockup hybrid) | COMPOSE 1 hero image prompt → Step 5 + print HTML skill recommendation block, exit gracefully sau khi gen hero |
-| 8 (quote-graphic) | COMPOSE background image prompt (KHÔNG có text in-image) + tạo HTML overlay template (text qua HTML, KHÔNG in-image text) |
+| 8 (quote-graphic) | COMPOSE background image prompt (KHONG co text in-image) + tao HTML overlay template (text qua HTML, KHONG in-image text) |
 
 ### Step 5 — CHECK API tier + GENERATE
 
@@ -217,15 +217,15 @@ Print line: `[tier: <X>] [model: <Y>]`.
 
 | Tier | Behavior | Output |
 |------|----------|--------|
-| **Free** | Không có API key | `docs/design/<slug>-prompt.md` với 5 platform paste-ready (DALL-E 3, MidJourney v6, Leonardo, Imagen 3, Bing/Copilot Designer) — xem `references/fallback-prompt-format.md` |
-| **Pro** | `OPENAI_API_KEY` có sẵn → call gpt-image-2 direct | `docs/design/<slug>.png` + `docs/design/<slug>.md` (metadata) |
-| **Enterprise** | `$OD_BIN` có và executable → dispatch qua Open Design infrastructure (existing `image-poster` infra) | `docs/design/<slug>.png` + `docs/design/<slug>.md` (metadata, ghi `gen_mode: api-dispatcher`) |
+| **Free** | Khong co API key | `docs/design/<slug>-prompt.md` voi 5 platform paste-ready (DALL-E 3, MidJourney v6, Leonardo, Imagen 3, Bing/Copilot Designer) — xem `references/fallback-prompt-format.md` |
+| **Pro** | `OPENAI_API_KEY` co san → call gpt-image-2 direct | `docs/design/<slug>.png` + `docs/design/<slug>.md` (metadata) |
+| **Enterprise** | `$OD_BIN` co va executable → dispatch qua Open Design infrastructure (existing `image-poster` infra) | `docs/design/<slug>.png` + `docs/design/<slug>.md` (metadata, ghi `gen_mode: api-dispatcher`) |
 
-**Type 7 web mockup** — sau khi gen hero image (nếu tier Pro/Enterprise), in recommendation block:
+**Type 7 web mockup** — sau khi gen hero image (neu tier Pro/Enterprise), in recommendation block:
 
 ```
-[NEXT STEP] Hero image gen xong. Để có mockup full interactive đa section,
-chạy thêm 1 trong các skill:
+[NEXT STEP] Hero image gen xong. De co mockup full interactive da section,
+chay them 1 trong cac skill:
   - web-prototype (general landing/marketing page)
   - saas-landing (SaaS product page)
   - mobile-app (mobile app screens)
@@ -234,14 +234,14 @@ chạy thêm 1 trong các skill:
 ```
 
 **Type 8 quote graphic** — output 2 file:
-- `docs/design/<slug>-bg.png` — background image gen qua gpt-image-2 (KHÔNG có text)
-- `docs/design/<slug>.html` — HTML overlay với text trên background (text qua HTML để tránh AI méo chữ)
+- `docs/design/<slug>-bg.png` — background image gen qua gpt-image-2 (KHONG co text)
+- `docs/design/<slug>.html` — HTML overlay voi text tren background (text qua HTML de tranh AI meo chu)
 
 ---
 
 ## Frontmatter schema cho output file
 
-Mọi file metadata `docs/design/<slug>.md` PHẢI có frontmatter:
+Moi file metadata `docs/design/<slug>.md` PHAI co frontmatter:
 
 ```yaml
 ---
@@ -266,96 +266,96 @@ last_updated: 2026-05-20
 ---
 ```
 
-Tên field TIẾNG ANH — không dịch sang tiếng Việt (phá AI parsing). Body file có thể tiếng Việt phổ thông.
+Ten field TIENG ANH — khong dich sang tieng Viet (pha AI parsing). Body file co the tieng Viet pho thong.
 
 ---
 
-## Error handling — 8 tình huống thực tế
+## Error handling — 8 tinh huong thuc te
 
-| Tình huống | Xử lý |
+| Tinh huong | Xu ly |
 |------------|-------|
-| Type ambiguous (không match keyword, không có flag) | Ask 1 câu duy nhất với 8 options (xem Layer 3 ở Step 0) |
-| Business mode + brand identity thiếu | **BLOCK** + ask user upload logo + specify palette (3 hex) + font family |
-| `OPENAI_API_KEY` invalid / quota exceeded khi gọi gpt-image-2 | Fallback xuống Tier Free (prompt-only) + print error line |
-| Type 7 web mockup nhưng user thực sự muốn full UI multi-section | Hybrid OK: gen hero image + kèm recommend `web-prototype` (hoặc 4 skill kia) cho full mockup |
-| Logo gen nhưng user chưa có brand values | Grill 3 câu: tên brand, ngành, values (3-5 từ) — mới gen được logo có hồn |
-| Infographic text-heavy >5 data points | **Warn**: "Text trong AI-gen image unreliable. Recommend dùng Canva template cho infographic có nhiều text." Vẫn gen nếu user confirm. |
-| Quote graphic text >50 ký tự | **Warn**: similar — recommend chỉ dùng background image + HTML overlay (đã là default cho type 8) |
-| User yêu cầu format không match type vừa detect | Suggest mode tương ứng — vd "landing page banner" → mode=`marketing-day-to-day` format=`banner-hero` |
+| Type ambiguous (khong match keyword, khong co flag) | Ask 1 cau duy nhat voi 8 options (xem Layer 3 o Step 0) |
+| Business mode + brand identity thieu | **BLOCK** + ask user upload logo + specify palette (3 hex) + font family |
+| `OPENAI_API_KEY` invalid / quota exceeded khi goi gpt-image-2 | Fallback xuong Tier Free (prompt-only) + print error line |
+| Type 7 web mockup nhung user thuc su muon full UI multi-section | Hybrid OK: gen hero image + kem recommend `web-prototype` (hoac 4 skill kia) cho full mockup |
+| Logo gen nhung user chua co brand values | Grill 3 cau: ten brand, nganh, values (3-5 tu) — moi gen duoc logo co hon |
+| Infographic text-heavy >5 data points | **Warn**: "Text trong AI-gen image unreliable. Recommend dung Canva template cho infographic co nhieu text." Van gen neu user confirm. |
+| Quote graphic text >50 ky tu | **Warn**: similar — recommend chi dung background image + HTML overlay (da la default cho type 8) |
+| User yeu cau format khong match type vua detect | Suggest mode tuong ung — vd "landing page banner" → mode=`marketing-day-to-day` format=`banner-hero` |
 
 ---
 
-## Anti-patterns CẤM
+## Anti-patterns CAM
 
-- Gen logo as final output → luôn multi-variant 3-5 hướng + human review disclaimer
-- Text in-image >50 ký tự — AI gen sẽ méo chữ, sai chính tả, dấu tiếng Việt vỡ
-- Web mockup raster pretend là interactive — phải hybrid + recommend HTML skill
-- Skip brand identity check cho business modes — output sẽ rời rạc với brand
-- Output prompt chỉ có keyword (vd "logo cafe đẹp") — phải structured 5 phần: subject + composition + lighting + palette + style + negatives
-- Hardcode hex màu khi project đã có brand identity file — phải đọc từ source
-- Translate field name trong frontmatter sang tiếng Việt — phá AI parsing
-- Gen >1 image per turn trừ trường hợp logo multi-variant
-- Save prompt mà không gen image khi đang ở Tier Pro/Enterprise — lãng phí API
-- Gen image mà không save metadata `.md` — mất context cho lần sau
+- Gen logo as final output → luon multi-variant 3-5 huong + human review disclaimer
+- Text in-image >50 ky tu — AI gen se meo chu, sai chinh ta, dau tieng Viet vo
+- Web mockup raster pretend la interactive — phai hybrid + recommend HTML skill
+- Skip brand identity check cho business modes — output se roi rac voi brand
+- Output prompt chi co keyword (vd "logo cafe dep") — phai structured 5 phan: subject + composition + lighting + palette + style + negatives
+- Hardcode hex mau khi project da co brand identity file — phai doc tu source
+- Translate field name trong frontmatter sang tieng Viet — pha AI parsing
+- Gen >1 image per turn tru truong hop logo multi-variant
+- Save prompt ma khong gen image khi dang o Tier Pro/Enterprise — lang phi API
+- Gen image ma khong save metadata `.md` — mat context cho lan sau
 
 ---
 
-## Self-test trước khi gen
+## Self-test truoc khi gen
 
-Trước mỗi lần gọi gpt-image-2 hoặc xuất prompt, tự hỏi:
+Truoc moi lan goi gpt-image-2 hoac xuat prompt, tu hoi:
 
-> "Output này có align với brand voice + identity không? Khách hàng nhìn vào có nhận ra brand không? Nếu là personal brand — có phản ánh đúng style adjectives mà user khai không?"
+> "Output nay co align voi brand voice + identity khong? Khach hang nhin vao co nhan ra brand khong? Neu la personal brand — co phan anh dung style adjectives ma user khai khong?"
 
-Nếu **không chắc 2/3 câu trên** → quay lại Step 3, re-read brand identity hoặc grill thêm 1-2 câu.
+Neu **khong chac 2/3 cau tren** → quay lai Step 3, re-read brand identity hoac grill them 1-2 cau.
 
 ---
 
 ## Examples reference
 
 - `examples/personal-founder-avatar.md` — Avatar founder OPA (style: confident, warm, minimal)
-- `examples/bhop-fall-campaign-poster.md` — Key visual chiến dịch BHOP cafe mùa thu (palette nâu + cam)
-- `examples/ai-monetization-quote-graphic.md` — Quote graphic IG cho course "AI Kiếm Tiền" (background + HTML overlay)
-- `examples/opa-roadmap-infographic.md` — Infographic roadmap sản phẩm OPA (icons-heavy, text minimal)
+- `examples/bhop-fall-campaign-poster.md` — Key visual chien dich BHOP cafe mua thu (palette nau + cam)
+- `examples/ai-monetization-quote-graphic.md` — Quote graphic IG cho course "AI Kiem Tien" (background + HTML overlay)
+- `examples/opa-roadmap-infographic.md` — Infographic roadmap san pham OPA (icons-heavy, text minimal)
 
 ---
 
-## Cheat sheet — load file nào khi nào
+## Cheat sheet — load file nao khi nao
 
-| Khi cần | Load file |
+| Khi can | Load file |
 |---------|-----------|
-| Hiểu format frontmatter, output location, prompt rule chung | `CONVENTIONS.md` |
-| Ảnh reference, master prompt, đổi mặt/màu/logo, prompt diagnosis | `references/prompt-director.md` |
+| Hieu format frontmatter, output location, prompt rule chung | `CONVENTIONS.md` |
+| Anh reference, master prompt, doi mat/mau/logo, prompt diagnosis | `references/prompt-director.md` |
 | Compose prompt cho 1 trong 8 types | `references/<type>.md` (vd `references/business-logo.md`) |
-| Business mode — tìm brand identity source | `references/brand-identity-source.md` |
+| Business mode — tim brand identity source | `references/brand-identity-source.md` |
 | Tier Free — format prompt cho 5 platforms | `references/fallback-prompt-format.md` |
-| Template format cụ thể (poster, banner, story...) | `templates/<format>.md` |
-| Example output thực tế | `examples/<example-name>.md` |
+| Template format cu the (poster, banner, story...) | `templates/<format>.md` |
+| Example output thuc te | `examples/<example-name>.md` |
 
 ---
 
 ## Plain Vietnamese policy
 
-Skill này dùng tiếng Việt phổ thông xuyên suốt — client có thể đọc, hiểu, fill cùng AI. Technical terms (gpt-image-2, DALL-E 3, MidJourney, CTR, CPM) giữ nguyên + giải thích lần đầu. Examples dùng OPA brands realistic (BHOP cafe, Lumière agency, AI Kiếm Tiền course).
+Skill nay dung tieng Viet pho thong xuyen suot — client co the doc, hieu, fill cung AI. Technical terms (gpt-image-2, DALL-E 3, MidJourney, CTR, CPM) giu nguyen + giai thich lan dau. Examples dung OPA brands realistic (BHOP cafe, Lumiere agency, AI Kiem Tien course).
 
 ---
 
-## Chuyển sang skill design chuyên biệt (41-50)
+## Chuyen sang skill design chuyen biet (41-50)
 
-Skill này **tạo ra ảnh/prompt**. Khi việc cần làm là **quy trình sản xuất visual theo campaign** (lập danh sách asset, viết brief giao designer, duyệt thiết kế, resize hàng loạt), chuyển sang các skill dưới đây:
+Skill nay **tao ra anh/prompt**. Khi viec can lam la **quy trinh san xuat visual theo campaign** (lap danh sach asset, viet brief giao designer, duyet thiet ke, resize hang loat), chuyen sang cac skill duoi day:
 
-| Việc cần làm | Skill |
+| Viec can lam | Skill |
 |--------------|-------|
-| Liệt kê toàn bộ asset campaign cần thiết kế + deadline + owner | `41-campaign-asset-list` |
-| Viết brief ảnh static / banner / thumbnail giao designer | `42-brief-hinh-anh` |
-| Viết brief carousel (logic chuỗi slide) | `43-brief-carousel` |
-| Viết brief cho editor dựng video | `44-brief-video-editor` |
-| Direction cho designer làm trên Canva | `45-brief-canva` |
-| Xây brand guideline (palette, typography, logo, component) | `46-brand-guideline` |
-| Duyệt thiết kế, chấm điểm, feedback | `47-design-review` |
-| Brief gấp khi campaign đang chạy (creative fatigue) | `48-quick-visual-brief` |
+| Liet ke toan bo asset campaign can thiet ke + deadline + owner | `41-campaign-asset-list` |
+| Viet brief anh static / banner / thumbnail giao designer | `42-brief-hinh-anh` |
+| Viet brief carousel (logic chuoi slide) | `43-brief-carousel` |
+| Viet brief cho editor dung video | `44-brief-video-editor` |
+| Direction cho designer lam tren Canva | `45-brief-canva` |
+| Xay brand guideline (palette, typography, logo, component) | `46-brand-guideline` |
+| Duyet thiet ke, cham diem, feedback | `47-design-review` |
+| Brief gap khi campaign dang chay (creative fatigue) | `48-quick-visual-brief` |
 | Code email HTML responsive | `49-html-email-template` |
-| Resize asset winner sang đa kích thước | `50-asset-resize` |
+| Resize asset winner sang da kich thuoc | `50-asset-resize` |
 
-**Timeline chuẩn của designer theo campaign:** T-14 lập asset list → T-7 concept MVP 30 phút để duyệt hướng → T-5 asset phức tạp (landing page, email) → T-3 asset trung bình (carousel, banner set) → T-1 asset nhanh (static, story) → launch day standby quick asset → D+1 đánh dấu winner/loser rồi resize winner.
+**Timeline chuan cua designer theo campaign:** T-14 lap asset list → T-7 concept MVP 30 phut de duyet huong → T-5 asset phuc tap (landing page, email) → T-3 asset trung binh (carousel, banner set) → T-1 asset nhanh (static, story) → launch day standby quick asset → D+1 danh dau winner/loser roi resize winner.
 
-Agent phụ trách cả pipeline này: `agents/design-producer.md`.
+Agent phu trach ca pipeline nay: `agents/design-producer.md`.
