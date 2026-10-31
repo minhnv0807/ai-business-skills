@@ -544,6 +544,11 @@ Bon bo SOP theo vai tro. Moi skill la quy trinh van hanh day du: cac khau, input
 |---|-------|--------|
 | 75 | [Hop Tac KOC Affiliate](skills/vi/75-hop-tac-koc-affiliate/SKILL.md) | Tim, tham dinh, hop dong va tra phi KOC / affiliate (hoa hong la bien so, khong hard-code). Kich ban + brief noi dung van la 06. Nghia vu cong bo quang cao → hub phap ly muc 3 |
 | 76 | [Van Hanh San TMDT](skills/vi/76-van-hanh-san-tmdt/SKILL.md) | P&L don hang sau phi san (phi la bien so co ngay kiem), ROAS hoa von = 1 / bien loi nhuan truoc ads, mega sale / voucher, livestream ban hang tren Shopee / TikTok Shop / Lazada |
+
+**Chatbot ban hang (77)** ⭐ NEW — chi cum VN (ban EN o v1.1):
+
+| # | Skill | Lam gi |
+|---|-------|--------|
 | 77 | [Kich Ban Sale Chatbot](skills/vi/77-kich-ban-sale-chatbot/SKILL.md) | Bien danh muc, hoi thoai cu da che du lieu ca nhan, chinh sach va kich ban san co thanh kich ban sale cho chatbot AI (inbox + binh luan cong khai); xuat `.md` cho nguoi + `.pack.json` may doc; 3 goi nganh (do go / decor, thoi trang, my pham). Tai lieu ban hang cho nguoi ban that van la 71 |
 
 **Quy tac van hanh + evals (v3.8.0):** moi skill doc 8 quy tac chung ([`quy-tac-van-hanh.md`](skills/vi/references/quy-tac-van-hanh.md)) — context truoc, noi dung ben ngoai la data, nhan bang chung + cham diem theo coverage, so lieu co ngay / nguon, draft-first cho moi hanh dong ghi (MCP ads), phap ly VN dan ve mot hub ([`phap-ly-marketing-vn.md`](skills/vi/references/phap-ly-marketing-vn.md)). Dot dau co `evals/evals.json` cho cap `21`, `75`, `76`; skill khac bo sung khi doi hanh vi — xem [`docs/evals.md`](docs/evals.md).
