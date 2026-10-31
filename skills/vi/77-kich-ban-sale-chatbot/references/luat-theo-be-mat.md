@@ -20,6 +20,8 @@
 | Khong ro mau | hoi lai ten / anh | xem muc 3 |
 | Noi dung tieu cuc | xin loi, chuyen nhan vien | xem muc 4 |
 
+`capabilities` la nang luc *duoc phep* (ten trung tinh). Nen tang that co tool tuong ung hay khong phai kiem luc nap; khong co tool thi bo muc do khoi be mat.
+
 Schema ep: `pii.request = never` ⇒ `capabilities` khong chua `cart`, `create_order`, `order_status`, `payment_check`.
 
 ## 2. Binh luan cong khai: nguyen tac
@@ -39,9 +41,11 @@ Khi khach hoi gia/size/con hang nhung **khong neu mau** va bai chua anh xa sang 
 - **Khong** doan mau, khong bao size/gia cua mot mau tu doan.
 - **Khong** neu vi du san pham (nhat la san pham ngoai nganh cua shop).
 
-Cau mau (co dau): "Dạ em cảm ơn anh/chị đã quan tâm ạ. Anh/chị nhắn tin riêng cho shop kèm ảnh mẫu đang xem để em báo đúng size và giá nhé."
+Cau mau (co dau): "Dạ em cảm ơn anh/chị đã quan tâm ạ. Anh/chị nhắn tin riêng cho shop kèm ảnh hoặc tên mẫu đang xem để em báo đúng size và giá nhé."
 
 Khi nen tang cho biet bai viet gan voi san pham nao (da duoc chu shop xac nhan trong `post_product_map`, `confidence: high`): bot co the tra loi theo san pham do. `confidence` thap / trung binh: coi nhu khong ro.
+
+**Nhan AI o binh luan (de xuat, chua co quy dinh cu the trong hub):** hub phap ly muc 4 yeu cau khach biet dang noi voi AI "o tin nhan mo dau". Voi binh luan cong khai, cach an toan: (a) cau tra loi dau tien trong moi chuoi binh luan ky la tro ly AI cua shop (vd "Em là trợ lý AI của shop ạ."), va/hoac (b) tin nhan rieng dau tien luon co nhan AI. Chu shop quyet cach cu the cung tu van phap ly; khong phai tu van phap ly. Dat vao `shop.disclosure` va ghi vao `missing[]` neu chua quyet.
 
 ## 4. Binh luan tieu cuc
 

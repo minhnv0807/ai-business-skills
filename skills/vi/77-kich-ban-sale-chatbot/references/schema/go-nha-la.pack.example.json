@@ -79,7 +79,7 @@
   {"id": "ask_unknown_post", "label": "Xin giá/size nhưng không nêu mẫu (dưới bài)", "surfaces": ["public_comment"], "stage": "discover",
    "utterances": {"text": ["xin giá và size", "cho mình xin kích thước và giá"], "ascii": ["xin gia va size", "cho minh xin kich thuoc va gia"]},
    "resolve": "ask_back", "rules": ["Không đoán mẫu, không hỏi tên hay mã mẫu ngay trong bình luận.", "Trả lời ngắn rồi mời nhắn tin riêng kèm ảnh hoặc tên mẫu."],
-   "templates": [{"id": "unknown_post_comment", "surface": "public_comment", "text": "Dạ em cảm ơn anh/chị đã quan tâm ạ. Anh/chị nhắn tin riêng cho shop kèm ảnh mẫu đang xem để em báo đúng size và giá nhé.", "slots": []}],
+   "templates": [{"id": "unknown_post_comment", "surface": "public_comment", "text": "Dạ em cảm ơn anh/chị đã quan tâm ạ. Anh/chị nhắn tin riêng cho shop kèm ảnh hoặc tên mẫu đang xem để em báo đúng size và giá nhé.", "slots": []}],
    "next": "invite_inbox"},
   {"id": "buy_signal", "label": "Muốn mua", "surfaces": ["inbox"], "stage": "close",
    "utterances": {"text": ["lấy cái này", "chốt cho chị 2 cái"], "ascii": ["lay cai nay", "chot cho chi 2 cai"]},
@@ -143,7 +143,7 @@
    "messages": [{"sender": "customer", "text": "Khay chữ nhật sồi 24x34 giá sao shop?"}, {"sender": "bot", "text": "Dạ khay gỗ chữ nhật sồi 24x34 giá {price} ạ. Anh/chị nhắn tin riêng cho shop để em gửi ảnh thật và tư vấn thêm nhé."}],
    "notes": "{price} do tool POS điền lúc chạy; ví dụ không chứa giá thật."},
   {"id": "ex_comment_unknown", "title": "Bình luận xin giá, không nêu mẫu", "surface": "public_comment",
-   "messages": [{"sender": "customer", "text": "Cho mình xin kích thước và giá nhé"}, {"sender": "bot", "text": "Dạ em cảm ơn anh/chị đã quan tâm ạ. Anh/chị nhắn tin riêng cho shop kèm ảnh mẫu đang xem để em báo đúng size và giá nhé."}]},
+   "messages": [{"sender": "customer", "text": "Cho mình xin kích thước và giá nhé"}, {"sender": "bot", "text": "Dạ em cảm ơn anh/chị đã quan tâm ạ. Anh/chị nhắn tin riêng cho shop kèm ảnh hoặc tên mẫu đang xem để em báo đúng size và giá nhé."}]},
   {"id": "ex_inbox_explore", "title": "Khách mới nhắc tên mẫu, chưa mua", "surface": "inbox",
    "messages": [{"sender": "customer", "text": "Thớt gỗ tròn 28"}, {"sender": "bot", "text": "Dạ bên em có thớt gỗ tròn size 28 ạ. Em gửi ảnh thật cho anh/chị xem nhé, anh/chị có muốn lấy mẫu này không ạ?"},
                 {"sender": "customer", "text": "ok lấy 1 cái"}, {"sender": "bot", "text": "Dạ em xác nhận anh/chị lấy 1 thớt gỗ tròn size 28 đúng không ạ?"}]}

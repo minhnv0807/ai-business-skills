@@ -74,6 +74,8 @@ Phan loai theo `thu-vien-y-dinh.md`. Voi moi y dinh:
 | Tin hieu mua + cau chot | cum khach noi khi muon mua; cau nhan vien dung de chot (kem ket qua neu co) | `closing.buy_signals`, `closing.steps` |
 | Diem phai chuyen nguoi | luc nhan vien tiep quan | `handoff[]` |
 
+Nhan vien cu hua "em bao lai", "de em hoi xuong" hay noi "thu cong": bot khong tu nhan lai duoc → **khong** dua vao mau cau; ghi y dinh do vao `handoff[]` (hoac `missing[]` neu la thieu chinh sach) va `never_say` (khong hua bao lai).
+
 Cum gia/khuyen mai/ton kho trong hoi thoai cu **khong** vao pack (gia luon tu POS; khuyen mai chi vao `price_policy.promotions` khi co `approved_by` + `valid_to`).
 
 ## 7. Dau ra cua buoc nay
