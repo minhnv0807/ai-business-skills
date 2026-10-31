@@ -24,7 +24,7 @@ Quy tac viet dang khong dau: bo dau thanh, giu viet tat that khach hay go (`bn`,
 | `ask_stock` | Hoi con hang | discover | ca hai | "còn hàng không shop" | "con hang khong shop" | `pos_lookup` |
 | `ask_ship` | Hoi giao hang | discover | ca hai | "ship về tỉnh mấy ngày" | "ship ve tinh may ngay" | `policy` |
 | `ask_return` | Hoi doi tra / bao hanh | discover | ca hai | "đổi trả thế nào vậy" | "doi tra the nao vay" | `policy` |
-| `ask_custom` | Hoi tuy chinh / dat rieng | support | ca hai | "làm theo yêu cầu được không" | "lam theo yeu cau duoc khong" | `handoff` hoac `policy` |
+| `ask_custom` | Hoi tuy chinh / dat rieng | discover | ca hai | "làm theo yêu cầu được không" | "lam theo yeu cau duoc khong" | `handoff` hoac `policy` |
 | `ask_compare` | So sanh hai mau | recommend | inbox | "hai cái này khác nhau sao" | "hai cai nay khac nhau sao" | `knowledge` |
 | `ask_unknown_post` | Xin gia/size nhung khong neu mau | discover | binh luan | "xin giá và size ạ" | "xin gia va size a" | `ask_back` (moi nhan tin rieng) |
 | `buy_signal` | Muon mua | close | inbox | "lấy cái này", "chốt cho chị 2 cái" | "lay cai nay", "chot cho chi 2 cai" | `pos_lookup` |
@@ -32,6 +32,8 @@ Quy tac viet dang khong dau: bo dau thanh, giu viet tat that khach hay go (`bn`,
 | `order_status` | Hoi tinh trang don | post_sale | inbox | "đơn của em tới đâu rồi" | "don cua em toi dau roi" | `pos_lookup` hoac `handoff` |
 | `ask_human` | Doi gap nguoi that | support | ca hai | "cho em gặp nhân viên" | "cho em gap nhan vien" | `handoff` |
 | `complaint` | Phan nan / loi | support | ca hai | "hàng bị lỗi", "giao sai rồi" | "hang bi loi", "giao sai roi" | `handoff` |
+
+`support` danh rieng cho **sau khi mua** (don hang, phan nan, doi gap nguoi); cau hoi truoc khi mua dung `discover`/`recommend`.
 
 ## 3. Tin hieu mua va tin hieu *chua* mua
 

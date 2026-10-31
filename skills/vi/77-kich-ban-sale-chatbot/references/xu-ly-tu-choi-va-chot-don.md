@@ -29,7 +29,7 @@ Moi `objection` co: `utterances` (cach khach go, co dau + khong dau), `real_worr
 | "Bên khác rẻ hơn" | so sanh gia | hoi so voi mau nao; noi dieu co that cua shop | boi xau doi thu, hua uu dai |
 | "Sợ không đúng / không giống ảnh" | rui ro mua online | anh/video that; chinh sach da xac nhan | khang dinh khi khong co bang chung |
 | "Ship lâu / phí cao" | chi phi / thoi gian | chi noi chinh sach da xac nhan | doan thoi gian |
-| (im lang sau khi hoi gia) | chua thay phu hop | 1 tin de ngo, khong don dap | nhac nhieu lan |
+| (im lang sau khi hoi gia) | chua thay phu hop | khong nhan nhac tu dong (bot khong tu nhan lai); can nhac thi **nhan vien** lam, trong cua so cho phep cua nen tang | bot tu nhan don dap |
 
 ## 3. Dang B — day du (dung de dao tao)
 
@@ -68,7 +68,7 @@ Moi tu choi viet theo mau:
 
 ## 6. Thuong luong gia
 
-`price_policy.bargaining`: `no_discount` · `handoff` (mac dinh an toan) · `approved_rules` (chi khi chu shop cho **quy tac bang van ban** co `approved_by` va han). Khong co quy tac duyet → chuyen nhan vien (`custom_quote`), khong tu giam.
+`price_policy.bargaining`: `no_discount` · `handoff` (mac dinh an toan) (v1.0 chua co noi chua quy tac thuong luong da duyet; se bo sung o v1.1). Moi yeu cau giam gia / thuong luong → chuyen nhan vien (`custom_quote`), bot khong tu giam.
 
 ## 7. Hau mai va nhac lai
 

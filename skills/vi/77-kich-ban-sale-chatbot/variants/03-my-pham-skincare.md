@@ -79,7 +79,7 @@ Khung xu ly dung chung o `../references/xu-ly-tu-choi-va-chot-don.md`. Dieu rien
 
 ## 8. Goi y chon bot (`bot_profile`) — heuristic, chua do
 
-`tool_use: medium`, `vision: none`, `context: medium`, `reasoning: medium`, `tier_hint: standard`, `salesMode: strict`.
+`tool_use: medium`, `vision: none`, `context: medium`, `reasoning: medium`, `tier_hint: standard`. De xuat them (khong phai truong cua `bot_profile`): dat `exports.opa_agent.ai_config_patch.salesMode = "strict"`.
 Ly do: khong doc anh da (rieng tu va khong chan doan); cau tra loi phai bam sat nhan nen can on dinh, handoff-first khi lien quan suc khoe. Xac nhan bang backtest tren `evals` cua pack.
 
 ## 9. Ca nghiem thu nganh

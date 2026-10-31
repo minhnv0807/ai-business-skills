@@ -29,14 +29,15 @@ Khoa dung lam `products[].facts[].key`. Thieu fact nao thi dua vao `missing_fact
 
 | Khoa | Hoi chu shop the nao | Lay tu dau |
 |---|---|---|
+| `shape` | "Hinh dang tung mau (tron, chu nhat…)?" | POS, mo ta |
 | `wood_type` | "Moi mau lam bang go gi? Co mau nao co hai loai go khong?" | POS, mo ta, chu shop |
-| `dimensions` | "Kich thuoc DxRxC hoac duong kinh, don vi cm hay mm?" | POS (ten bien the), chu shop |
+| `size` | "Kich thuoc DxRxC hoac duong kinh, don vi cm hay mm?" (ghi `unit`) | POS (ten bien the), chu shop |
 | `thickness` | "Do day thuc te cua tung mau?" | chu shop |
 | `finish` | "Be mat hoan thien la gi (dau, sap, son phu, de tran)?" | chu shop |
 | `food_contact` | "Co dung truc tiep voi thuc pham khong? Co giay to/bang chung nao?" | chu shop + chung tu |
 | `care` | "Cach ve sinh, bao quan, dieu khong nen lam?" | chu shop |
-| `custom_option` | "Nhan cat theo size / khac ten / in logo khong; toi thieu bao nhieu; mat may ngay?" | chu shop (policy) |
-| `packaging_shipping` | "Dong goi hang cong kenh the nao, ship vung nao?" | chu shop (policy) |
+
+Khong phai fact san pham, ghi o `policies[]` (topic `custom_order`, `shipping`, `returns`): nhan cat theo size / khac ten / in logo, toi thieu, thoi gian lam; dong goi hang cong kenh va vung ship.
 
 Fact `food_contact` chi duoc bot noi khi co bang chung (`observed`/`reported` da duyet). Chua co: noi chua co thong tin va moi nhan vien.
 
@@ -73,7 +74,7 @@ Khung xu ly dung chung o `../references/xu-ly-tu-choi-va-chot-don.md`. Dieu rien
 |---|---|---|
 | `custom_quote` | cat theo size rieng, khac ten, in logo, dat lam | normal |
 | `wholesale` | so luong lon, mua cho quan, xuat hoa don | normal |
-| `complaint` | hang nut, cong, giao sai, don ve sinh bi hong | urgent |
+| `complaint` | hang nut, cong, giao sai, khach lam hong san pham khi ve sinh nhung doi bao hanh | urgent |
 | `refund_return` | doi tra, hoan tien | urgent |
 | `missing_info` | hoi thuoc tinh ngoai du lieu (do day, lop phu, dung voi thuc pham) | normal |
 

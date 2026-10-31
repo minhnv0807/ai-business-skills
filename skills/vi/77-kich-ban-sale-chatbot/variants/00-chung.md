@@ -28,7 +28,7 @@ Cach go cua khach (lay tu hoi thoai that, ghi vao `intents[].utterances`): luon 
 | Khoa (`facts[].key`) | Hoi chu shop the nao | Lay tu dau | Bang chung toi thieu |
 |---|---|---|---|
 | `product_name` | "Ten goi khach hay dung cho mau nay la gi?" | POS / hoi thoai | observed |
-| `variants` | "Co nhung bien the nao (size, mau, loai)?" | POS | observed (bien the that lay tu POS luc chay) |
+| `variant_naming` | "Khach goi cac bien the (size, mau, loai) bang tu gi?" | hoi thoai / chu shop | reported (danh sach bien the that lay tu POS luc chay, **khong** ghi vao pack) |
 | `key_spec` | "Thong so quan trong nhat khach can biet truoc khi mua?" | chu shop | reported |
 | `use_case` | "Dung de lam gi, danh cho ai?" | chu shop / mo ta | reported |
 | `not_for` | "Truong hop nao KHONG nen mua?" | chu shop | reported |
@@ -57,7 +57,8 @@ Quy tac: thieu khoa → `missing_facts`, khong dien bua. Fact `inferred` khong b
 
 | | Inbox | Binh luan cong khai |
 |---|---|---|
-| Do dai | ≤3 cau, 1 cau hoi/tin | ≤2 cau |
+| Do dai (khong tinh nhan AI) | ≤3 cau, 1 cau hoi/tin | ≤2 cau |
+| Nhan AI | tin dau tien cua bot | cau tra loi dau tien cua bot trong moi chuoi binh luan |
 | Xin thong tin ca nhan | chi sau khi khach noi ro muon mua | **khong bao gio**; khach tu de lai thi chi cam on, moi nhan tin rieng, khong lap lai |
 | Gia | chi khi khach hoi, dung bien the, lay tu POS | nhu inbox, tra loi ngan roi moi nhan tin rieng |
 | Khong ro mau | hoi lai ten/anh mau | **khong doan mau, khong hoi ten/ma cong khai**; tra loi ngan, moi nhan tin rieng kem anh hoac ten mau |
@@ -68,7 +69,7 @@ Chi tiet va cau mau: `../references/luat-theo-be-mat.md`.
 
 ## 7. Trigger chuyen nguoi (bat buoc toi thieu)
 
-`human_request` · `complaint` · `refund_return` · `negative_comment` · `incident_safety` · `abuse` · `payment_issue` → luon la nguoi (`autonomy.always_human`). Them tuy shop: `custom_quote`, `wholesale`, `missing_info`, `bot_loop`.
+`human_request` · `complaint` · `refund_return` · `negative_comment` · `incident_safety` · `abuse` · `payment_issue` → luon la nguoi (`autonomy.always_human`). Moi trigger o day phai co mot muc trong `handoff[]` cua pack (ca `refund_return`, `incident_safety`, `abuse`, `payment_issue`). Them tuy shop: `custom_quote`, `wholesale`, `missing_info`, `bot_loop`.
 
 ## 8. `bot_profile` mac dinh (heuristic, chua do)
 
