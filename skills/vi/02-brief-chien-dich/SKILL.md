@@ -3,8 +3,9 @@ name: 02-brief-chien-dich
 description: "Dung khi can brief mot chien dich cu the cho ca team thuc thi — muc tieu, thong diep, deliverable, timeline phan cong theo tuan, gate duyet va ma tran rui ro. Kich hoat khi user nhac 'brief chien dich', 'ke hoach campaign', 'len brief cho team', 'chien dich thang toi', 'phan cong campaign', 'timeline chien dich'. Khong dung cho — ke hoach marketing ca ky thi dung skill 00-ke-hoach-mkt; danh sach asset can thiet ke thi dung skill 41-campaign-asset-list; giao viec cho tung nguoi thi dung skill 64-team-brief."
 argument-hint: "<brand + campaign objective + timeline>"
 metadata:
-  version: 2.1.1
+  version: 2.1.2
   category: strategy
+license: MIT
 triggers:
   - "brief chien dich"
   - "brief sang tao"
@@ -310,13 +311,13 @@ Kiem tra xem insight co that su la insight hay chi la observation:
 
 | Rui ro | Xac suat | Anh huong | Severity | Ke hoach giam thieu | Trigger canh bao |
 |--------|----------|-----------|----------|---------------------|------------------|
-| CPMess tang >50% vs target | Cao | Cao | **CRITICAL** | Chuan bi 5 creative du phong, giam spend + chuyen organic | CPMess > target + 30% sau 3 ngay |
+| CPMess tang >50% vs target | Cao | Cao | **CRITICAL** | Chuan bi 5 creative du phong, de xuat pause qua quy tac 7 (draft block, nguoi duyet) chi khi cham nguong, chuyen organic | Sau Buoc 0 (spend >= 3x CPMess muc tieu): CPMess > 1.5x target lien tuc 7 ngay = doi creative/audience; > 3.0x = de xuat pause (Gate 1, `skills/vi/references/quality-gates-vn.md`) |
 | Creative khong hieu qua | Cao | Cao | **CRITICAL** | A/B test tu ngay 1, 3–5 creative moi/tuan | CTR < 1% sau 2 ngay |
 | Landing page conv rate thap | Trung binh | Cao | **HIGH** | Test A/B headline + CTA, heatmap | Conv rate < 10% sau 1 tuan |
 | UGC giao tre | Trung binh | Trung binh | **MEDIUM** | Brief som, co noi dung backup | Chua nhan UGC D-3 |
 | Doi thu chay deal cung luc | Thap | Cao | **HIGH** | Tang USP messaging, khong canh tranh gia | Phat hien doi thu ads cung thoi diem |
 | Phan hoi tieu cuc | Thap | Rat cao | **CRITICAL** | Crisis protocol: phan hoi <2h, transparent, co template | Comment/review tieu cuc vuot 5 trong 1 ngay |
-| Audience fatigue | Trung binh | Trung binh | **MEDIUM** | Rotate creative moi 5–7 ngay, expand audience | Frequency > 3, CTR giam 30% |
+| Audience fatigue | Trung binh | Trung binh | **MEDIUM** | Rotate creative moi 5–7 ngay, expand audience | Frequency > 2.5 (heuristic, 7 ngay) va CTR giam 30% — doi creative, khong pause chi vi frequency |
 | Budget vuot ke hoach | Thap | Trung binh | **MEDIUM** | Cap daily budget, review chi phi hang ngay | Spend > 110% ke hoach |
 
 ### 9.2 Ke hoach B (Fallback)
@@ -417,7 +418,7 @@ Brief xong chua trien khai duoc. Phai chuyen thanh **bang task co owner va depen
 |-----------|----------|
 | Tracking khong fire | Bao ngay — **khong bat ads** |
 | Ads bi tu choi | Bao ngay |
-| CPL ngay dau > 2x target | Bao, cho quyet dinh — khong tu tang ngan sach |
+| CPL ngay dau > 2x target | Bao, cho quyet dinh — khong tu tang ngan sach. Chua du data (Gate 1 Buoc 0: spend < 3x CPA muc tieu) — chua phai tin hieu pause |
 | Comment tieu cuc lan rong | Bao ngay → `66-crisis-playbook` |
 | Landing page loi / form hong | Bao ngay, tam dung ads lien quan |
 

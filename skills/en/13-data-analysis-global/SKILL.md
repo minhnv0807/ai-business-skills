@@ -2,8 +2,9 @@
 name: 13-data-analysis-global
 description: "Use when raw data exists — Meta, Google, TikTok, GA4, Shopify, a CRM export, or a spreadsheet — and has to become insight and decisions: descriptive, diagnostic, predictive, and prescriptive layers, cuts by channel, campaign, creative, audience, and time, cohorts, and a decision log. Trigger on 'analyze this data', 'read these numbers for me', 'what does this export say', 'pull insight from GA4', 'cohort analysis', 'here is the spreadsheet'. Also use when the user pastes a table and asks what it means. Not for — diagnosing ad root cause, see `03-performance-eval-global`; writing the report a stakeholder reads, see `07-marketing-report-global`; auditing account setup, see `21-ads-audit-global`."
 metadata:
-  version: 2.5.1
+  version: 2.5.2
   category: performance
+license: MIT
   language: en
 triggers:
   - "data analysis"
@@ -200,7 +201,7 @@ ROAS down
 │   ├── Sales team slow? → Check response time
 │   └── Pricing changed? → Audit pricing
 ├── Revenue flat + spend up? → Over-spending
-│   ├── Scaled too fast? → Reduce, max 20%/day increase
+│   ├── Scaled too fast? → Reduce; scale again in +20-30% steps, >= 72h apart (`55-scaling-ads-global`)
 │   └── New channel not optimized? → Stop scaling, optimize first
 └── Both down? → Systemic issue
     ├── Competitor running big promo? → Competitor scan
@@ -405,11 +406,11 @@ When analyzing, automatically check these conditions:
 
 | Condition | Check | Action |
 |-----------|-------|--------|
-| CPL up > 30% WoW | Creative running > 14 days? Frequency > 3? | Refresh creative, rotate audience |
+| CPL up > 30% WoW | Creative running > 14 days? Frequency > 2.5 with CTR falling (heuristic, cold traffic, 7 days)? Spend >= 3x target CPA yet (else not enough data)? | Refresh creative, rotate audience; judge CPA by the house heuristic ladder in `03-performance-eval-global` |
 | CTR < 0.8% | Strong 3s hook? Eye-catching imagery? | A/B test hooks, change opening frame |
 | ROAS < 2x for 7 days | Right audience? LP conv rate? | Narrow audience, audit LP |
 | LP conv rate < 3% | Load time? Form length? CTA clarity? | Trigger skill 12-landing-page-brief-global |
-| Frequency > 4 | Audience saturated | Expand audience or switch channel |
+| Frequency > 4 (urgent tier; heuristic) | Audience saturated | Expand audience or switch channel; frequency alone never pauses an ad set |
 | Spend < 70% of budget | Audience too narrow or bid too low | Expand audience, raise bid |
 | One channel > 60% spend | Single-channel dependency risk | Reallocate, test new channel |
 

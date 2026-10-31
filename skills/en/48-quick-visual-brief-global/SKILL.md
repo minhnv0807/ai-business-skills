@@ -2,7 +2,7 @@
 name: 48-quick-visual-brief-global
 description: "Use when a LIVE campaign needs a new asset the same day — creative fatigue, CTR decay, climbing frequency, or a new angle to test: stripped-down input, duplicate the winning creative and change only what is listed, a one-page template, and a hard SLA so the designer ships in 2-4 hours. Trigger on 'quick brief', 'need an asset fast', 'creative fatigue', 'swap the creative today', 'frequency is too high', 'the ad is dying and we need a new one'. Not for — planning assets before launch, see `41-campaign-asset-list-global`; a full concept brief with time to spare, see `42-image-brief-global`; resizing an existing master, see `50-asset-resize-global`; raising budget on a winner, see `55-scaling-ads-global`."
 metadata:
-  version: 1.0.1
+  version: 1.0.2
   category: operations
 license: MIT
 triggers:
@@ -132,7 +132,7 @@ Base: [link to source file — the highest-CTR creative]
 | Signal | Typical threshold | Action |
 |--------|-------------------|--------|
 | CTR decay | Down 25-30% or more from the creative's own first-week baseline | New variant on the same offer, new hook |
-| Frequency climbing | Above roughly 2.5-3.0 in a 7-day window on a prospecting set | Refresh the creative, not the audience |
+| Frequency climbing | Above 2.5 with CTR falling (heuristic, 7-day window, prospecting set) | Refresh the creative, not the audience |
 | CPA drifting up | Materially above the campaign's own target, with stable CVR | Test a new angle before touching bids |
 | A new angle worth testing | Any time a hypothesis emerges from comments or support tickets | One variable changed, per `19-ab-test-setup-global` |
 

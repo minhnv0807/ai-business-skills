@@ -4,6 +4,7 @@ description: "Use when the user wants to monitor what is being said about the br
 metadata:
   version: 2.5.1
   category: operations
+license: MIT
   language: en
 triggers:
   - "social listening"

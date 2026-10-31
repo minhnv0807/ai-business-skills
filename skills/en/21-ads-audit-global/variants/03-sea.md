@@ -24,7 +24,7 @@
 | **CPA (DTC e-com, AOV $20-40)** | >$15 | $8-15 | $4-8 | <$4 |
 | **ROAS (DTC, prospecting)** | <1.5x | 1.5-2.2x | 2.2-3.0x | >3.0x |
 | **ROAS (DTC, blended)** | <2.0x | 2.0-2.8x | 2.8-4.0x | >4.0x |
-| **Frequency (cold)** | >5 | 3.5-5 | 2-3.5 | <2 |
+| **Frequency (cold, 7-day, heuristic; compare with account history)** | >4 (urgent: expand audience) | 2.5-4 (with falling CTR: swap creative) | 2-2.5 | <2 |
 
 ### Meta Ads (Singapore, Malaysia — premium tier)
 
@@ -70,7 +70,7 @@ Singapore + Malaysia CPMs are 2-3x higher than VN/TH/ID/PH due to higher purchas
 
 | Model | Break-even ROAS | Healthy ROAS | Scale ROAS |
 |-------|-----------------|--------------|------------|
-| **DTC e-com (40-50% margin)** | 2.0-2.5x | 2.8-3.5x | 3.5x+ |
+| **DTC e-com (40-50% contribution margin before ads)** | 2.0-2.5x | 2.8-3.5x | 3.5x+ |
 | **Local service (spa, F&B, dental)** | 3-4x first-touch | 5-8x | 8x+ |
 | **Real estate (BĐS) lead → consult** | Cost-per-consult <$15 | <$10 | <$5 |
 | **Course / info-product** | 1.6-2x | 2.2-3x | 3x+ |

@@ -2,7 +2,7 @@
 name: 03-performance-eval-global
 description: "Use when marketing numbers look bad and the user needs to know WHY — layered root-cause diagnosis across tracking, delivery, creative, landing page, offer, and audience quality, 5-Whys, regional benchmarks for US, EU, SEA, and LATAM, and a 48-hour action plan. Covers dropshipping ROAS and BE-ROAS. Trigger on 'why is CPA so high', 'my ads are not converting', 'ROAS dropped', 'we are burning budget', 'performance is bad this month', 'diagnose the funnel'. Also use when the user pastes a screenshot of numbers with no question attached. Not for — full account configuration audit, see `21-ads-audit-global`; writing a report someone else reads, see `07-marketing-report-global`; turning a raw export into insight, see `13-data-analysis-global`."
 metadata:
-  version: 1.1.0
+  version: 1.1.1
   category: performance
 license: MIT
 triggers:
@@ -226,18 +226,19 @@ Dropshipping has different success criteria than typical service/B2B marketing. 
 | KPI | Formula | Healthy target |
 |-----|---------|----------------|
 | **ROAS** | Revenue / Ad spend | 2.5–3x minimum, 4x+ ideal |
-| **BE-ROAS** (Break-even ROAS) | 1 / Profit margin | If margin = 30%, BE-ROAS = 3.33x |
-| **Profit margin** | (Revenue − COGS − Shipping − Fees − Ad spend) / Revenue | 20%+ healthy, 25%+ ideal |
-| **CAC** (Customer Acquisition Cost) | Ad spend / Customers acquired | < AOV × Profit margin |
+| **BE-ROAS** (Break-even ROAS) | 1 / Contribution margin (before ads) | If contribution margin = 30%, BE-ROAS = 3.33x |
+| **Contribution margin (before ads)** | (Revenue − COGS − Shipping − Payment/platform fees − Returns) / Revenue | Base for BE-ROAS and the CAC target |
+| **Profit margin** (net, includes ad spend) | (Revenue − COGS − Shipping − Fees − Ad spend) / Revenue | 20%+ healthy, 25%+ ideal. Never use it as the BE-ROAS base |
+| **CAC** (Customer Acquisition Cost) | Ad spend / Customers acquired | < AOV × contribution margin before ads |
 | **CPA** (Cost Per Add-to-cart / Purchase) | Ad spend / Conversions | <30% of AOV |
 | **AOV** (Average Order Value) | Revenue / Orders | Higher AOV = lower BE-ROAS pressure |
 
 ### BE-ROAS formula
 
 ```
-BE-ROAS = 1 / Profit margin
+BE-ROAS = 1 / Contribution margin (before ads)
 
-Examples:
+Examples (Margin = contribution margin before ads):
   Margin 20% → BE-ROAS = 5.0x   (you need 5x ROAS just to break even)
   Margin 25% → BE-ROAS = 4.0x
   Margin 30% → BE-ROAS = 3.33x
@@ -254,7 +255,7 @@ Examples:
 
 | Flag | Threshold | Action |
 |------|-----------|--------|
-| ROAS < BE-ROAS for 7 days | Always losing | Pause, redo product/creative |
+| ROAS < BE-ROAS for 7 days | Always losing | Once spend >= 3x target CPA: propose a pause through rule 7 (draft block, named approver), then redo product/creative |
 | Profit margin < 20% | Too thin | Raise price OR find cheaper supplier |
 | Refund rate > 5% | Too high | Audit product quality + ad claims |
 | Chargeback rate > 1% | Critical | Review CB reasons, may risk Stripe ban |

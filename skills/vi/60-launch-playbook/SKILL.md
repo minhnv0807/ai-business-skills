@@ -2,7 +2,7 @@
 name: 60-launch-playbook
 description: "Dung khi da co huong launch va can QUY TRINH chay cho khong vo tran — timeline T-30 den D+7, checklist tung bo phan content, design, ads, sales, CSKH; war-room ngay launch, escalation matrix va tieu chi roll-back. Kich hoat khi user nhac 'launch playbook', 'quy trinh launch', 'checklist launch', 'war room', 'sap launch ma so sot', 'ai lam gi trong ngay launch', 'SOP ra mat', 'lan truoc launch bi loan'. Khong dung cho — chon phan khuc va thong diep de ra thi truong thi dung skill 59-go-to-market; tong ket bai hoc sau khi launch xong thi dung skill 63-campaign-retrospective; su co truyen thong bung phat thi dung skill 66-crisis-playbook."
 metadata:
-  version: 1.0.1
+  version: 1.0.2
   category: strategy
 license: MIT
 triggers:
@@ -149,7 +149,7 @@ Roll-back = tam dung 1 phan hoac toan bo launch de sua. Leader la nguoi quyet.
 | Tinh huong | Nguong | Hanh dong roll-back |
 |-----------|--------|---------------------|
 | Tracking sai / khong fire | Bat ky | Pause toan bo ads den khi fix xong — khong dot budget mu |
-| CPL / CPMess vuot nguong | > 3x target sau 24h dau | Pause ads BOFU, giu organic; review creative + audience truoc khi bat lai |
+| CPL / CPMess vuot nguong | > 3.0x target, sau khi du data (spend >= 3x CPA target, Gate 1 trong `skills/vi/references/quality-gates-vn.md`) | DE XUAT pause ads BOFU qua quy tac 7 (ten nguoi duyet), giu organic; review creative + audience truoc khi bat lai. Chua du data thi cho, chua pause |
 | LP CVR qua thap | < 1/3 muc ky vong sau 48h | Giu ads TOFU, tam dung push BOFU; fix LP (headline, form, toc do) roi bat lai |
 | Offer sai (gia/bonus hien thi sai) | Bat ky | Go post loi, sua, dang lai — uu tien sua nhanh hon xin loi tren post cu |
 | Su co uy tin / complaint lan rong | Dang lan | Chuyen sang `66-crisis-playbook`, dung moi post ban hang den khi xu ly xong |

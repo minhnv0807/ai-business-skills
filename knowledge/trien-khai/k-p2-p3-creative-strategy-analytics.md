@@ -59,7 +59,7 @@ Luon doc tu Layer 1 xuong. Neu Layer 3 dep nhung Layer 1 xau → van de nam o of
 |---|---|
 | CPM | 15K-50K VND |
 | CTR | > 1.5% (image), > 2% (video) |
-| Frequency | < 3 trong 7 ngay |
+| Frequency | <= 2.5 trong 7 ngay (heuristic, traffic lanh) |
 | CPMess | 15K-50K (tuy nganh) |
 
 Bang benchmark day du theo nganh va theo tang chat luong: xem `references/benchmarks-vietnam.md`.
@@ -78,27 +78,27 @@ Chan doan tu tren xuong: sua CPM truoc khi sua CTR, sua CTR truoc khi sua CPMess
 
 ## 4. Khi nao Tat / Scale / Test
 
-### TAT khi
+### DE XUAT TAT khi (qua quy tac 7, Gate 1 trong `skills/vi/references/quality-gates-vn.md`)
 
-- CTR < 0.5% sau 3-5 ngay
-- CPMess > 3x benchmark
-- Frequency > 5
-- ROAS < 1 sau 7 ngay
-- Zero conversion sau khi spend > 2x CPO target
+Chi xet sau Buoc 0: spend >= 3x CPA muc tieu. Truoc do chua du data, chua phan xu.
+
+- CPMess > 3.0x target sau Buoc 0
+- ROAS < break-even (BE-ROAS = 1 / bien dong gop truoc ads; bien dong gop truoc ads = (gia - gia von - ship - phi thanh toan/san - hoan hang) / gia) lien tuc 7 ngay sau khi du data
+- Zero conversion sau khi spend >= 3x CPO target → bo concept, quay lai insight (Gate 1, `skills/vi/references/quality-gates-vn.md`; de xuat pause qua quy tac 7)
 
 ### SCALE khi
 
 - ROAS on dinh > target trong 5-7 ngay lien tiep
 - CPO trending xuong
-- Frequency < 3
+- Frequency <= 2.5
 - Audience chua saturate
 
-**Cach scale:** tang 20-30% budget moi 3-4 ngay — khong tang dot ngot (tranh reset learning phase).
+**Cach scale:** tang 20-30% budget moi lan, cach nhau >= 72h (Gate 8) — khong tang dot ngot (tranh reset learning phase).
 
 ### TEST khi
 
 - Creative da chay > 2 tuan
-- Frequency > 3
+- Frequency > 2.5 kem CTR giam (heuristic, traffic lanh 7 ngay): thay creative / mo rong audience, frequency khong tu pause
 - Performance plateau 5+ ngay
 
 ## 5. A/B Test Framework

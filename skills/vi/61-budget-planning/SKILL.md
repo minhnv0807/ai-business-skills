@@ -2,7 +2,7 @@
 name: 61-budget-planning
 description: "Dung khi can chia TIEN marketing di dau bao nhieu — phan bo theo kenh, theo tang pheu va theo thang; ti le test vs scale; nguong tang va nguong cat lo; quy du phong; bang tracker chi tieu va nhip review. Kich hoat khi user nhac 'phan bo ngan sach', 'budget marketing', 'chi bao nhieu cho ads', 'ngan sach quy toi', 'budget allocation', 'nguong cat lo', 'tien it nen do vao dau', 'tieu het budget ma khong biet di dau'. Khong dung cho — tinh nguoc ngan sach can tu muc tieu doanh thu thi dung skill 10-tinh-kpi-nguoc; chia ngan sach chi tiet mot ky ads theo funnel thi dung skill 54-media-plan; ke hoach marketing tong the thi dung skill 00-ke-hoach-mkt."
 metadata:
-  version: 1.0.1
+  version: 1.0.2
   category: strategy
 license: MIT
 triggers:
@@ -121,19 +121,19 @@ Theo funnel: TOFU (reach/awareness) — MOFU (lead/nurture) — BOFU (conversion
 **Tang budget khi (du CA 2 dieu kien):**
 
 - ROAS > target x 1.5 trong >= 7 ngay lien tiep, HOAC CPL < target x 0.7 va volume du
-- Audience chua bao hoa (frequency < 2.5)
+- Audience chua bao hoa (frequency < 2.5; heuristic, traffic lanh 7 ngay; retargeting so voi lich su)
 - Muc tang: +20-30% moi lan, khong gap doi dot ngot
 
 **Cat / pause budget khi (nguong cat lo):**
 
 | Dieu kien | Hanh dong |
 |-----------|-----------|
-| ROAS < break-even sau 14 ngay | Cat kenh/campaign, chuyen budget sang kenh work |
-| CPL > target x 2 sau 7 ngay test | Pause, thay creative/audience truoc khi bat lai |
-| Frequency > 4 | Audience saturation — dung scale, refresh creative |
+| ROAS < break-even lien tuc 14 ngay sau khi du data (break-even tinh tren bien dong gop truoc ads = (gia - gia von - phi bien doi: ship, cong thanh toan, hoan tra, phi san) / gia, khong phai gross margin) | De xuat cat kenh/campaign qua quy tac 7 (ten nguoi duyet), chuyen budget sang kenh work |
+| CPL > 3.0x target, sau khi du data (spend >= 3x CPA target) — Gate 1, `skills/vi/references/quality-gates-vn.md` | De xuat pause qua quy tac 7 (ten nguoi duyet); thay creative/audience truoc khi bat lai. > 1.5x keo dai 7 ngay → chi doi creative/audience |
+| Frequency > 4 (tang canh bao khan cap, heuristic) | Audience saturation — dung scale, thay creative / mo rong tep; frequency khong tu pause ad set |
 | Spend > 110% ke hoach thang | Cap daily budget, review lai phan bo |
 
-Vi du CPL rule hang tuan (nganh dich vu local — can chinh theo AOV cua ban): CPL < 12K & freq < 2.0 → WIN, scale +20-30% · 12-15K → acceptable, theo doi · 15-18K & freq 2.0-2.5 → optimize, thay creative · > 18K & freq > 2.5 → PAUSE, replace.
+Vi du CPL rule hang tuan (chi la vi du, gia dinh CPL target 12K, nganh dich vu local — can chinh theo AOV cua ban; boi so theo Gate 1): CPL <= 12K (<= 1.0x) & freq < 2.0 → WIN, scale +20-30% · 12-15K (1.0-1.25x) → acceptable, theo doi · 15-18K (1.25-1.5x) & freq 2.0-2.5 → optimize, thay creative · > 18K (> 1.5x) keo dai 7 ngay → thay creative/audience · > 36K (> 3.0x, chi xet khi da spend >= 3x CPA target) → de xuat pause qua quy tac 7.
 
 **Khong bao gio tang budget khi CPL dang xau** — fix creative/tracking truoc.
 

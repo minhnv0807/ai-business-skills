@@ -2,7 +2,7 @@
 name: 60-launch-playbook-global
 description: "Use when a launch needs a repeatable EXECUTION playbook — a T-30 to D+7 timeline, per-function checklists for content, design, ads, sales, and engineering, a launch-day war room, an escalation matrix, and roll-back criteria. Trigger on 'launch playbook', 'launch checklist', 'launch day plan', 'launch SOP', 'war room', 'we launch in two weeks and nothing is organized'. Also use when a GTM strategy exists and nobody knows who does what on the day. Not for — the strategy and beachhead choice, see `59-go-to-market-global`; the campaign brief, see `02-campaign-brief-global`; the post-launch review, see `63-campaign-retrospective-global`; a live crisis, see `66-crisis-playbook-global`."
 metadata:
-  version: 1.0.1
+  version: 1.0.2
   category: strategy
 license: MIT
 triggers:
@@ -141,7 +141,7 @@ The war room is one shared channel plus a clear on-duty roster. The leader coord
 | Landing page down | Urgent | Redirect or fix within 30 minutes | Engineering |
 | Payment failing | Urgent | Notify engineering and leader immediately | Engineering |
 | Ads rejected by platform policy | High | Activate backup creative, file appeal | Media buyer |
-| CPA above 3x target | High | Notify leader immediately, wait for decision | Media buyer |
+| CPA above 3x target (only once spend >= 3x target CPA) | High | Notify leader immediately, wait for decision | Media buyer |
 | Negative comments spreading | High | Notify leader, do NOT self-handle — follow `66-crisis-playbook-global` | Writer + leader |
 | Claim challenged or complaint alleging deceptive advertising | High | Pause the asset, escalate to leader and legal | Leader |
 
@@ -152,7 +152,7 @@ Roll-back means pausing part or all of the launch to fix it. The leader decides.
 | Situation | Threshold | Roll-back action |
 |-----------|-----------|------------------|
 | Tracking wrong or not firing | Any | Pause all ads until fixed — do not burn budget blind |
-| CPA above threshold | > 3x target after the first 24h | Pause BOFU ads, keep organic; review creative and audience before restarting |
+| CPA above threshold | > 3.0x target, only once spend >= 3x target CPA (below that, not enough data; house heuristic ladder in `03-performance-eval-global`) | Propose pausing BOFU ads through rule 7 (draft block, named approver), keep organic; review creative and audience before restarting |
 | Landing page CVR far below expectation | < 1/3 of expected after 48h | Keep TOFU, pause BOFU push; fix headline, form, and speed, then restart |
 | Offer displayed wrong (price or bonus) | Any | Remove the post, fix, repost — faster than apologizing on the broken post |
 | Reputation issue or complaints spreading | Spreading | Switch to `66-crisis-playbook-global`, stop all sales posts until resolved |

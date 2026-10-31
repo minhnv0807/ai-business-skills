@@ -2,7 +2,7 @@
 name: 54-media-plan-global
 description: "Use when a PAID MEDIA plan is needed — work backward from revenue to max CPA and required budget, split spend across channels, funnel stages, and campaign types, build a ramp-up timeline, set KPI targets per channel, and prepare a contingency plan. Trigger on 'media plan', 'paid media budget', 'how much should I spend on ads', 'channel mix for the campaign', 'plan the ad budget', 'we have 10k a month and no plan'. Also use when a budget number exists and nobody has decided where it goes. Not for — the pure revenue-to-budget math, see `10-reverse-kpi-global`; the whole marketing budget including non-paid, see `61-budget-planning-global`; the next period plan built from results, see `57-next-ads-plan-global`."
 metadata:
-  version: 1.0.1
+  version: 1.0.2
   category: performance
 license: MIT
 triggers:
@@ -33,7 +33,7 @@ A plan without hard numbers cannot tell you whether you are winning. Every figur
 
 Read `.agents/product-marketing-context-global.md` plus any output from `51-audience-research-global` and `10-reverse-kpi-global`. If information is missing, ask up to 4 questions:
 
-1. **Which offer, and what is the revenue target?** Target revenue for the period, AOV, and gross margin percentage.
+1. **Which offer, and what is the revenue target?** Target revenue for the period, AOV, and contribution margin before ads as a percentage (price minus cost of goods and variable costs such as shipping, payment fees, returns, marketplace fees, divided by price).
 2. **What is the budget?** A hard cap, or a number derived backwards from the revenue target?
 3. **Which channels and markets?** Meta / Google Search / TikTok / YouTube / Pinterest / LinkedIn — and which countries. Primary objective?
 4. **What is the timeline?** Number of weeks, plus any launch date or seasonal moment that cannot move.
@@ -55,15 +55,15 @@ Read `.agents/product-marketing-context-global.md` plus any output from `51-audi
 ```
 Target revenue / AOV        = Orders needed
 Orders / close rate         = Leads needed
-Max CPA                     = (Revenue x gross margin %) / Leads needed
-Break-even ROAS             = 1 / gross margin %
+Max CPA                     = (Revenue x contribution margin %) / Leads needed
+Break-even ROAS             = 1 / contribution margin % (before ads)
 Target ROAS                 = Break-even ROAS x 1.5
 Required ad budget          = Leads needed x target CPA
 ```
 
 These must exist before step 2: leads needed, max CPA, target CPA, required budget, target ROAS. Build three scenarios (pessimistic / base / optimistic) and plan against base.
 
-Sanity-check the result against `references/benchmarks-global.md`: global Meta medians are CPA $18-38 and ROAS 1.93-2.79. Healthy ROAS rule of thumb is 3x at roughly 30% gross margin, 5x+ for commodity margins, and 1.5x can work for high-margin digital products. If your required CPA sits far below the bottom quartile for your industry and market tier, the plan is not achievable as written.
+Sanity-check the result against `references/benchmarks-global.md`: global Meta medians are CPA $18-38 and ROAS 1.93-2.79. The common 3x ROAS rule of thumb only breaks even at about 33% contribution margin before ads (break-even ROAS = 1 / contribution margin), so it is healthy only when that margin is well above 33%; commodity margins near 20% need 5x+, and 1.5x can work for high-margin digital products (margin above ~67%). If your required CPA sits far below the bottom quartile for your industry and market tier, the plan is not achievable as written.
 
 ### 2. Regional cost baseline
 
@@ -143,7 +143,7 @@ Express ramp in percentage of the period budget and in multiples of the learning
 
 | Week | Stage | % of period budget | Focus | Checkpoint |
 |------|-------|-------------------:|-------|------------|
-| 1-2 | Testing | ~30% | 3-5 ad sets, 2-3 creatives each | Pause any ad set above 2x target CPA after 3 days |
+| 1-2 | Testing | ~30% | 3-5 ad sets, 2-3 creatives each | Not enough data until spend reaches 3x target CPA; then apply the house heuristic ladder in `03-performance-eval-global` (propose a pause only above 3.0x, via rule 7) |
 | 3-4 | Scaling | ~50% | Scale winners +20-30% per step, never double | CPA stable, volume rising |
 | 5+ | Maintaining | ~70% steady state | Refresh creative, continuous small tests | Frequency below 2.5, ROAS at or above target |
 
@@ -164,18 +164,20 @@ Weekly decision rules, expressed relative to the target CPA so they hold in any 
 
 | Actual CPA | Frequency | Action |
 |-----------|-----------|--------|
-| Below target | < 2.0 | WIN — scale +20-30% |
-| 100-125% of target | < 2.0 | Acceptable — monitor |
-| 125-150% of target | 2.0-2.5 | Optimize — change creative |
-| Above 150% of target | > 2.5 | PAUSE — replace or stop |
+| <= 1.0x target | <= 2.5 | WIN — scale +20-30% |
+| 1.0-1.5x target | <= 2.5 | Watch — monitor |
+| > 1.5x target for 7 days | any | Change creative or audience |
+| > 3.0x target (spend >= 3x target CPA) | any | Propose a pause through rule 7 (draft block, named approver) |
+
+Step 0: spend below 3x target CPA = not enough data, no verdict. 0 conversions at spend >= 3x target = the concept is wrong, go back to insight. Source: house heuristic ladder in `03-performance-eval-global` (heuristic, verify against your own account data). Frequency alone never pauses an ad set; it triggers a creative swap or audience expansion.
 
 ### 9. Contingency plan
 
 | Situation | Signal | Action |
 |-----------|--------|--------|
-| CPA above 2x target | After 3 days | Pause the ad set, launch new creative |
+| CPA above 3.0x target | Only after spend >= 3x target CPA | Propose a pause (rule 7 draft block), launch new creative |
 | CTR far below the median band | Day 1-2 | Change creative or hook immediately |
-| Frequency above 3 | Week 2+ | Refresh creative, widen the audience |
+| Frequency above 2.5 with CTR falling (heuristic, cold traffic, 7 days) | Week 2+ | Refresh creative, widen the audience |
 | Underspending | Pace below 80% of plan | Widen audience, raise bid cap, check for rejected ads |
 | CPM spikes | Seasonal peak or auction pressure | Reduce budget temporarily, shift to a cheaper market or channel |
 | Q4 or election-period cost jump | CPM up 25%+ vs Q1 | Trigger the pessimistic scenario budget from step 1 |

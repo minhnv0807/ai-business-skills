@@ -5,6 +5,7 @@ argument-hint: "<period + channels + metrics>"
 metadata:
   version: 2.1.2
   category: operations
+license: MIT
 triggers:
   - "bao cao marketing"
   - "tong ket thang"

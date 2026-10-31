@@ -110,7 +110,7 @@ _Heuristic — no public source; prefer the account's own history._
 | 5 | No new partnerships? | No SOP for monthly KOL refresh |
 
 **Action plan (48h):**
-1. Pause main ad set (frequency too high)
+1. Swap in fresh creative on the main ad set and expand audience (frequency too high; frequency alone never pauses an ad set)
 2. Reactivate 3 micro-KOLs immediately ($50-150 each)
 3. Quick UGC: shoot 5 testimonial videos with current customers
 4. Hire content lead (full-time) for monthly KOL refresh

@@ -4,7 +4,7 @@
 > **Region:** US (primary), expand to EU/AU
 > **Cost (AliExpress):** $8 + $5 shipping
 > **Sell price:** $39.99 + free shipping
-> **Margin:** 67% gross (target 33% net after ad costs)
+> **Margin:** 67% after product + shipping cost, before fees and ads (target 33% net after ad costs)
 > **Output:** Sample running skills 29, 12, 05, 17, 21 + workflow dropshipping-launch-global
 
 ---
@@ -126,8 +126,8 @@
 - **Sell price:** $39.99
 - **Profit per unit (before ad cost):** $26.99
 - **Markup:** 3.07x (within 3-5x sweet spot for dropshipping)
-- **Break-even ROAS:** $39.99 / $26.99 = 1.48 (need ROAS > 1.48 to be profitable)
-- **Target ROAS:** 2.5-3x for healthy 30-40% net margin
+- **Break-even ROAS:** $39.99 / $25.53 = 1.57 (contribution before ads, after the payment fee below; need ROAS > 1.57 to be profitable)
+- **Target ROAS:** 2.5-3x, which leaves about 24-31% of revenue after ads and variable costs (before fixed costs)
 - **Payment processing fee:** 2.9% + $0.30 = $1.46 per order → adjust profit to $25.53
 
 ### Price ladder (encourage upsell — increases AOV)
@@ -185,7 +185,7 @@
 - Fix: Move bundle selector ABOVE add-to-cart button + add "save $9.99" sticker
 
 ### Quick Wins (do this week)
-1. Pause 3 lowest-performing ad sets (saving ~$200/week wasted spend)
+1. Proposed pausing the 3 ad sets above 3x target CPA after 3x spend (rule 7; saving ~$200/week wasted spend)
 2. Launch new UGC creative (creator already booked, $300 cost)
 3. A/B test bundle position on LP (Convert.com test)
 4. Retarget cart abandoners with 10% off code (Klaviyo flow)
@@ -216,9 +216,9 @@ ROAS 1.6x → 2.4x within 7-10 days (estimated $480 incremental revenue/week)
 - Total Week 3 spend: $300 ads + $50 products = $350. Revenue: $480. Net: -$80 (expected — testing phase).
 
 **Week 4 (May 22-28): Iterate & scale**
-- Day 22: Quick Wins from skill 21 audit applied (3 ad sets paused, new UGC creative live, bundle upsell repositioned).
+- Day 22: Quick Wins from skill 21 audit applied (pause of 3 ad sets proposed via rule 7, new UGC creative live, bundle upsell repositioned).
 - Day 25: New angle ad ("I made this because my dog almost died") → ROAS jumped to 2.4x.
-- Day 28: SCALING decision — increased winning ad set budget from $30 → $80/day.
+- Day 28: SCALING decision — started stepping the winning ad set budget up from $30/day (+20-30% per step, steps >= 72h apart; $80/day is the target level, reached in Month 2).
 - Total Month 1: $2,500 ad spend + $400 product/ops = $2,900. Revenue: $7,800 (195 orders). Net: $1,800.
 
 ### Month 1 summary
@@ -233,7 +233,7 @@ ROAS 1.6x → 2.4x within 7-10 days (estimated $480 incremental revenue/week)
 | Decision | SCALE — Month 2 target $15K revenue |
 
 ### Month 2 plan
-- Scale winning ad to $200/day
+- Scale winning ad toward $200/day stepwise (+20-30% per step, steps >= 72h apart, per `55-scaling-ads-global`), not in one jump
 - Launch 5 new UGC variations
 - Open EU markets (Klarna installed for AT/DE)
 - Hire VA for customer service ($400/month)
@@ -246,7 +246,7 @@ ROAS 1.6x → 2.4x within 7-10 days (estimated $480 incremental revenue/week)
 - Numbers are realistic for 2025-2026 dropshipping (US Meta ads CPM/CPC)
 - Skill 21 audit cadence: weekly during testing, bi-weekly once stable
 - Workflow includes built-in scaling decision points (after each week, evaluate ROAS + iterate or scale)
-- Failed scenarios: if ROAS still <1.5x by end of Week 4, KILL product and restart with new SKU
+- Failed scenarios: if ROAS stays below break-even (contribution margin before ads) for 14 days after enough data, propose cutting the product via rule 7 and restart with a new SKU
 
 ---
 

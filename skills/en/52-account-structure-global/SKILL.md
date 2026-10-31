@@ -2,7 +2,7 @@
 name: 52-account-structure-global
 description: "Use when an ad account HIERARCHY needs designing or cleaning up — campaign, ad set, and ad structure by objective, a naming convention that keeps data readable, CBO versus ABO by stage, how many ad sets and creatives to run, and the minimum daily budget an ad set needs to exit learning. Trigger on 'account structure', 'campaign structure', 'naming convention', 'how many ad sets should I run', 'CBO or ABO', 'our account is a mess of duplicated campaigns'. Not for — scoring an existing account against 84 checkpoints, see `21-ads-audit-global`; pixel and conversion setup, see `53-tracking-setup-global`; budget across channels, see `54-media-plan-global`; scaling a winner, see `55-scaling-ads-global`."
 metadata:
-  version: 1.0.1
+  version: 1.0.2
   category: performance
 license: MIT
 triggers:
@@ -96,7 +96,7 @@ On Meta, the default modern answer is one broad or Advantage+ ad set with severa
 
 ### 5. Structure by stage
 
-**TESTING (weeks 1-2):** one campaign per objective; 3-5 ad sets (broad/Advantage+, interest theme A, interest theme B, lookalike, small retargeting); 2-3 ads per ad set to test creative and hook. ABO with even budgets. Goal: find the winning audience and creative. Pause any ad set above 2x target CPA after 3 days.
+**TESTING (weeks 1-2):** one campaign per objective; 3-5 ad sets (broad/Advantage+, interest theme A, interest theme B, lookalike, small retargeting); 2-3 ads per ad set to test creative and hook. ABO with even budgets. Goal: find the winning audience and creative. Judge ad sets by the house heuristic ladder in `03-performance-eval-global`: spend below 3x target CPA = not enough data, no verdict; at or below 1.0x = winner; 1.0-1.5x = watch; above 1.5x for 7 days = change creative or audience; above 3.0x = propose a pause (rule 7 draft block, named approver); 0 conversions at 3x spend or more = kill the concept and go back to insight.
 
 **SCALING:** split the winner into its own CBO campaign. Increase +20-30% per step, never double overnight (see `55-scaling-ads-global`). Do not edit the winning ad set while scaling. Keep testing new creative in parallel inside the testing campaign.
 

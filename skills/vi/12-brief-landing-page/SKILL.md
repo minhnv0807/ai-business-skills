@@ -4,6 +4,7 @@ description: "Dung khi can viet brief de XAY landing page moi hoac trang ban han
 metadata:
   version: 2.1.2
   category: content
+license: MIT
 triggers:
   - "brief landing page"
   - "trang ban hang"

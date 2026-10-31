@@ -2,7 +2,7 @@
 name: 54-media-plan
 description: "Dung khi can lap ke hoach chi tieu quang cao cho mot ky — tinh nguoc tu doanh thu, phan bo theo kenh va tang pheu, ty le testing 30 scale 50 retarget 15 lookalike 5, va timeline ramp-up. Kich hoat khi user nhac 'media plan', 'plan ads thang toi', 'phan bo ngan sach quang cao', 'chay bao nhieu tien', 'chia budget cho kenh nao', 'ke hoach chay ads'. Khong dung cho — phan bo ngan sach marketing tong the ngoai ads thi dung skill 61-budget-planning; tinh CPL toi da thi dung skill 10-tinh-kpi-nguoc."
 metadata:
-  version: 1.0.1
+  version: 1.0.2
   category: performance
 license: MIT
 triggers:
@@ -32,7 +32,7 @@ related:
 
 Doc `.agents/product-marketing-context.md`, output `51-audience-research` va `10-tinh-kpi-nguoc` neu co. Neu thieu, hoi toi da 4 cau:
 
-1. **San pham / offer can chay va revenue target?** (doanh thu muc tieu thang hoac campaign + AOV + gross margin %)
+1. **San pham / offer can chay va revenue target?** (doanh thu muc tieu thang hoac campaign + AOV + bien dong gop truoc ads % = (gia ban - gia von - phi van chuyen/thanh toan/hoan hang/phi san) / gia ban)
 2. **Budget tong bao nhieu / thang?** Co gioi han cung khong hay tinh nguoc tu revenue?
 3. **Kenh muon chay va objective chinh?** Meta / TikTok / Google / Zalo / YouTube — Lead gen / Conversion / Traffic?
 4. **Timeline campaign bao nhieu tuan?** Co moc mua vu / launch nao phai bam khong?
@@ -52,8 +52,8 @@ Doc `.agents/product-marketing-context.md`, output `51-audience-research` va `10
 ```
 Doanh thu muc tieu / AOV = So don can
 So don / Close rate      = So lead can
-Max CPL                  = (Doanh thu x Gross margin %) / So lead
-Break-even ROAS          = 1 / Gross margin %
+Max CPL                  = (Doanh thu x Bien dong gop truoc ads %) / So lead
+Break-even ROAS          = 1 / Bien dong gop truoc ads %
 Target ROAS              = Break-even ROAS x 1.5
 Budget ads can           = So lead x CPL target
 ```
@@ -101,11 +101,11 @@ Hai goc nhin (funnel va loai campaign) phai khop nhau khi cong tong — dung ban
 
 | Tuan | Giai doan | % Budget thang | Focus | Checkpoint |
 |------|-----------|---------------|-------|------------|
-| 1-2 | Testing | ~30% | Test 3-5 ad set, 2-3 creative/ad set | Dung ad set CPL > 2x target sau 3 ngay |
+| 1-2 | Testing | ~30% | Test 3-5 ad set, 2-3 creative/ad set | Gate 1: chi phan xu khi spend >= 3x CPA target; > 3.0x thi de xuat pause qua quy tac 7 |
 | 3-4 | Scaling | ~50% | Scale winner +20-30%/lan, khong x2 ngay | CPL on dinh, volume tang |
 | 5+ | Maintaining | ~70% chay on dinh | Refresh creative, test nho lien tuc | Frequency < 2.5, ROAS >= target |
 
-Ramp-up budget/ngay vi du (thang dau): tuan 1: 300-500K/ngay → tuan 2: 500-800K → tuan 3: 800K-1.5M → tuan 4: 1.5M-3M (theo `55-scaling-ads`, chi tang khi CPL dat).
+Ramp-up budget/ngay vi du (thang dau): tuan 1: 300-500K/ngay → tuan 2: 430-720K → tuan 3: 620K-1M → tuan 4: 900K-1.5M (2 buoc +20%/tuan, cach nhau >= 72h, theo `55-scaling-ads` va Gate 8; chi tang khi CPL dat).
 
 ### Buoc 6 — KPI target theo kenh va decision rules
 
@@ -121,18 +121,18 @@ CPL decision rules hang tuan (vi du nganh dich vu local, CPL target 12K — chin
 |-------------|-----------|--------|
 | ≤ 1.0x CPA target | < 2.0 | WIN — ung vien scale, kiem tra dieu kien trong `55-scaling-ads` |
 | 1.0 - 1.5x | < 2.0 | Theo doi — toi uu, chua scale |
-| > 1.5x keo dai 7 ngay | 2.0-2.5 | Thay creative hoac audience |
-| > 3.0x | > 2.5 | TAT — ghi ly do vao log |
+| > 1.5x keo dai 7 ngay | bat ky | Thay creative hoac audience |
+| > 3.0x (da spend >= 3x CPA target) | bat ky | DE XUAT PAUSE qua quy tac 7 (ten nguoi duyet) — ghi ly do vao log |
 
-> Thang nay lay tu `skills/vi/references/quality-gates-vn.md` Gate 1 (nguon duy nhat). Truoc khi phan xu, kiem tra da spend >= 3x CPA muc tieu chua — chua du thi cho, dung tat som.
+> Thang nay lay tu `skills/vi/references/quality-gates-vn.md` Gate 1 (nguon duy nhat). Truoc khi phan xu, kiem tra da spend >= 3x CPA muc tieu chua — chua du thi cho, dung tat som. Frequency mot minh khong pause ad set — xem dong Frequency o contingency plan.
 
 ### Buoc 7 — Contingency plan
 
 | Tinh huong | Dau hieu | Action |
 |-----------|---------|--------|
-| CPA > 3x target | Da spend >= 3x CPA target | Tat ad set (Gate 1), test creative moi |
+| CPA > 3x target | Da spend >= 3x CPA target | De xuat pause ad set qua quy tac 7 (Gate 1), test creative moi |
 | CTR < 0.5% | Ngay 1-2 | Doi creative / hook ngay |
-| Frequency > 3 | Tuan 2+ | Refresh creative, mo rong tep |
+| Frequency > 2.5 kem CTR giam (heuristic, traffic lanh 7 ngay; retargeting so voi lich su tai khoan) | Tuan 2+ | Chuan bi / thay creative, mo rong tep. Frequency khong tu pause ad set |
 | Spend khong het (delivery thap) | Pace < 80% plan | Mo audience, tang bid, check reject |
 | CPM tang dot bien | Mua cao diem / canh tranh | Giam budget tam thoi, don sang kenh re hon |
 

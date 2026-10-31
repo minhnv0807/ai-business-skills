@@ -13,7 +13,7 @@ Outcome after 30 days:
   - 5+ orders by end of week 2
   - ROAS 2x+ by end of week 3 if winning
   - Email flows live (Klaviyo abandoned cart + welcome)
-  - Either scale to $500/day spend or move to next product candidate
+  - Either start a stepwise scale toward $500/day spend or move to next product candidate
 Time: 30 days × 2-4h/day (60-120h total)
 Skills used: 6 global skills (29, 12, 04, 05, 21, 13, 17)
 Output: Live store + tested ads + decision document
@@ -121,7 +121,7 @@ Complete these 10 items BEFORE Day 1:
 
 **Day 17-18: Monitor + Iterate**
 - Daily check (morning + evening): CTR, CPC, CPA, ROAS per ad set.
-- Kill ad sets with: CPC > 2x avg AND no purchases after $20-30 spend.
+- Kill an ad set only with: no purchase after spend >= 3x target CPA (house heuristic ladder in `03-performance-eval-global`; a pause is a proposal through rule 7). Below 3x spend there is not enough data for a verdict.
 - Scale ad sets with: CPA below target AND 2-3 purchases logged.
 - Avoid: scaling too fast (reset learning phase), changing too much per day.
 
@@ -134,9 +134,9 @@ Complete these 10 items BEFORE Day 1:
 **Day 21: Mid-Week Review**
 - ROAS check: where are we?
 - Run `/skill 21-ads-audit-global` — diagnose if performance is off.
-- ROAS > 2x: continue + plan scale.
-- ROAS 1.5-2x: borderline, optimize landing page + add upsell.
-- ROAS < 1.5x: warning — likely pivot decision next week.
+- ROAS above break-even (1 / contribution margin before ads) with enough data: continue + plan scale.
+- ROAS near break-even: borderline, optimize landing page + add upsell.
+- ROAS below break-even: warning — likely pivot decision next week (only judge once spend >= 3x target CPA).
 
 **Pass criteria for Week 3:** 5+ orders logged + ROAS data clear.
 
@@ -144,13 +144,13 @@ Complete these 10 items BEFORE Day 1:
 
 ### Week 4 (Days 22-30) — Scale or Pivot Decision
 
-**Day 22-23: Scale Decision (ROAS > 2x)**
+**Day 22-23: Scale Decision (ROAS above break-even, enough data)**
 - Move winning ad sets to CBO campaign with $50/day budget per set.
 - Test lookalike audiences (1-3% LLA from purchasers).
 - Begin retargeting campaign (cart abandoners, viewed product, added to cart).
-- Daily scale: max +25% budget per ad set per day to preserve learning phase.
+- Scale step (heuristic, `55-scaling-ads-global`): +20-30% budget per ad set per step, steps at least 72h apart (+20% safest) to preserve learning phase.
 
-**Day 24-25: Pivot Decision (ROAS < 1.5x)**
+**Day 24-25: Pivot Decision (ROAS below break-even for 14 days after enough data)**
 - Run `/skill 13-data-analysis-global` — diagnose where the funnel breaks.
 - Common causes:
   - Click → cart drop: landing page issue
@@ -158,7 +158,7 @@ Complete these 10 items BEFORE Day 1:
   - Ad fatigue: same creative for 7+ days
 - Two paths:
   - Pivot angle: same product, new creative concept (1 more week test, $100-150 budget)
-  - Kill product: move to candidate #2 from Week 1 backup list
+  - Cut product: propose it through rule 7 (draft block, named approver), then move to candidate #2 from Week 1 backup list
 
 **Day 26-27: Email Flow Setup**
 - Klaviyo flows (regardless of scale or pivot — keep this revenue stream alive):
@@ -171,7 +171,7 @@ Complete these 10 items BEFORE Day 1:
 - Run `/skill 13-data-analysis-global` for the 30-day window.
 - Document: total spend, total orders, total revenue, gross profit (revenue - product cost - shipping - ad spend - fees).
 - Decision document:
-  - Winner: scale to $500/day spend by Day 45. Add 2nd creative batch. Begin influencer outreach.
+  - Winner: scale toward $500/day spend in +20-30% steps at least 72h apart (`55-scaling-ads-global`), only while CPA holds; from about $100/day that is 6-9 steps, so roughly Day 50-60 at the earliest. Add 2nd creative batch. Begin influencer outreach.
   - Loser: archive product (save data for pattern recognition). Restart Week 1 with new product.
   - Marginal: 1 more iteration cycle (2 weeks, $200 budget) before deciding.
 
@@ -297,7 +297,7 @@ gantt
 ### 10. Scaling too fast on Day 5
 **Problem:** Bumping budget +200% on Day 5 with 3 purchases of data. Resets learning, performance crashes.
 **Cause:** FOMO scaling.
-**Fix:** 50+ purchases before considering aggressive scale. +25% per day max even when scaling.
+**Fix:** 50+ purchases before considering aggressive scale. +20-30% per step max, steps >= 72h apart (`55-scaling-ads-global`), even when scaling.
 
 ---
 
@@ -433,4 +433,4 @@ Tutorial: Dropshipping 30-Day Launch Walkthrough
 - [ ] Customer service ticket rate documented
 - [ ] Decision locked: scale, pivot, or kill — with rationale
 - [ ] Next product hunt date booked if killing
-- [ ] Scale plan drafted if winning (target $500/day spend by Day 45)
+- [ ] Scale plan drafted if winning (stepwise toward $500/day: +20-30% per step, >= 72h apart)

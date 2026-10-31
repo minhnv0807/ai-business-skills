@@ -2,7 +2,7 @@
 name: 61-budget-planning-global
 description: "Use when a marketing BUDGET has to be planned or managed in USD — allocation by bucket, channel, and month, test versus scale split, scale-up and stop-loss thresholds, reserve, a plan-versus-actual tracker, and a review cadence. Trigger on 'budget planning', 'marketing budget', 'split the budget across channels', 'stop loss threshold', 'quarterly budget', 'we keep overspending and nobody notices'. Also use when a number has been approved and nobody has divided it up. Not for — the revenue-backward math that produces the number, see `10-reverse-kpi-global`; paid media allocation only, see `54-media-plan-global`; paying an external vendor, see `67-agency-vendor-brief-global`."
 metadata:
-  version: 1.0.1
+  version: 1.0.2
   category: strategy
 license: MIT
 triggers:
@@ -142,19 +142,23 @@ In US election years, political spend displaces commercial inventory and adds ro
 
 | Condition | Action |
 |-----------|--------|
-| ROAS below break-even for 14 days | Cut the channel or campaign, move budget to what works |
-| CPA above 2x target after 7 days of testing | Pause, replace creative or audience before restarting |
-| Frequency above 4 | Audience saturation — stop scaling, refresh creative |
+| ROAS below break-even for 14 days after enough data (break-even on contribution margin before ads, not gross margin) | Cut the channel or campaign, move budget to what works |
+| CPA above 1.5x target for 7 days | Change creative or audience |
+| CPA above 3.0x target once spend >= 3x target CPA (below that, not enough data; house heuristic ladder in `03-performance-eval-global`) | Propose a pause (rule 7 draft block, named approver); replace creative or audience before restarting |
+| Frequency above 4 (urgent tier; heuristic) | Audience saturation — stop scaling, refresh creative or expand audience; frequency alone never pauses an ad set |
 | Spend above 110% of the monthly plan | Cap daily budgets, review the allocation |
 
 Weekly CPA review rule (expressed relative to your own target, since absolute CPA varies 3-5x between regions and industries):
 
 | CPA vs target | Frequency | Verdict |
 |---------------|-----------|---------|
-| <= 70% of target | < 2.0 | WIN — scale +20-30% |
-| 70-100% of target | < 2.5 | Acceptable — monitor |
-| 100-130% of target | 2.0-2.5 | Optimize — replace creative |
-| > 130% of target | > 2.5 | PAUSE and replace |
+| <= 1.0x target | <= 2.5 | WIN — scale +20-30% |
+| 1.0-1.5x target | <= 2.5 | Watch — monitor |
+| > 1.5x target, under 7 days | any | Watch — keep monitoring, no verdict yet |
+| > 1.5x target for 7 days | any | Optimize — change creative or audience |
+| > 3.0x target (spend >= 3x target CPA) | any | Propose a pause through rule 7 (draft block, named approver) |
+
+Step 0: spend below 3x target CPA = not enough data, no verdict. Source: house heuristic ladder in `03-performance-eval-global` (heuristic).
 
 Set the target itself using `references/benchmarks-global.md` for your region and industry, not a global average. **Never increase budget while CPA is deteriorating** — fix creative or tracking first.
 

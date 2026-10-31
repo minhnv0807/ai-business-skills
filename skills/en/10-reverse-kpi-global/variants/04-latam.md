@@ -210,7 +210,7 @@ WhatsApp + Mercado Libre dual channel
 Blended CAC: $8
 Monthly budget: $4,000
 ROAS: 3.75x
-Margin: 45% → BE-ROAS 2.22x → safe
+Contribution margin before ads: 45% → BE-ROAS 2.22x → safe
 ```
 
 ---
