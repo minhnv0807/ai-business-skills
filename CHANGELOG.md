@@ -9,6 +9,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added — `77-kich-ban-sale-chatbot` v1.0.0 (VN)
+
+- New skill that turns a shop's catalog, redacted old conversations, policies and existing scripts into a sales playbook for an AI sales chatbot, for two surfaces: inbox and public comments. It writes two files: a `.md` for people and a `.pack.json` for machines (`ai-business-skills/sales-playbook@1.0.0`, JSON Schema in `references/schema/`). Packs stay `draft` until a named approver signs off.
+- Includes `variants/00-chung.md` plus three industry packs (wood / decor, fashion, cosmetics), five references (`khai-thac-hoi-thoai`, `thu-vien-y-dinh`, `xu-ly-tu-choi-va-chot-don`, `luat-theo-be-mat`, `nap-vao-opa-agent`), an example pack for a fictional shop that validates against the schema, and `evals/evals.json` (9 evals).
+- Product rules baked in: public comments never ask for or repeat personal data; an unclear-product comment gets a short reply plus an invitation to message privately, without asking for a product name or code in public and without guessing; shared parts carry no industry examples; knowledge is per shop and nothing is learned across shops; everything learned is a draft for the owner to approve; the bot says it is an AI in the first message (legal hub links only).
+- Sibling routing: `71-sales-enablement` 1.0.1 and `11-thiet-lap-kenh` 2.1.1 now point to `77` in their descriptions (description-only patch bumps).
+- Registered in `README.md`, `README.vi.md`, `llms.txt`, `CLAUDE.md` (skill chain), `agents/channel-operator.md`, `ROADMAP.md`, `VERSIONS.md` and `.claude-plugin/marketplace.json`; skill counts 146 -> 147 (78 VN + 69 Global).
+- Kept with diacritics on purpose in `skills/vi/77-kich-ban-sale-chatbot/`: the sentences the bot sends to end customers and the customer-typed phrases (templates, `utterances`, FAQ, example conversations, eval prompts), including every `.json` file. The rest of the skill body is ASCII Vietnamese by house convention.
+- Deferred to v1.1: English pair, six remaining industry packs, `validate-pack` / `export-opa` scripts.
+
 ### Changed — ASCII Vietnamese cleanup in the VN cluster
 
 - `skills/vi/` is written as ASCII Vietnamese (no diacritics) by house convention; 772 lines in 56 files had drifted from it, almost all in `30-thiet-ke-master`. They are now converted, with no wording changes. EOL is preserved per file.
