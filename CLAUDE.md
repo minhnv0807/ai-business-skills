@@ -46,6 +46,7 @@ Mot so skill goi skill khac tu dong:
 - `10-tinh-kpi-nguoc` → `76-van-hanh-san-tmdt` khi ban qua san TMDT (P&L don hang sau phi san, ROAS hoa von)
 - `76-van-hanh-san-tmdt` → `75-hop-tac-koc-affiliate` (affiliate san / KOC livestream) + `21-audit-ads-performance` (ads san)
 - `75-hop-tac-koc-affiliate` ↔ `06-brief-ugc-egc` (75 = tim, tham dinh, hop dong, tra phi; 06 = brief + kich ban noi dung); phap ly → hub `skills/vi/references/phap-ly-marketing-vn.md`
+- `77-kich-ban-sale-chatbot` doc `product-marketing-context` + `35-brand-voice` (+ `09-insight-khach-hang` cho hoi thoai cu) → pack cho chatbot; uy quyen / kill switch theo `34-ai-marketing-os`, noi bot vao kenh qua `11-thiet-lap-kenh`; tai lieu cho nguoi ban that van la `71-sales-enablement`
 - `02-brief-chien-dich` → them `41-campaign-asset-list` (asset scope) + `62-marketing-review` (gate duyet output)
 - `63-campaign-retrospective` → bai hoc cap nhat Brand Hub qua `34-ai-marketing-os`
 
