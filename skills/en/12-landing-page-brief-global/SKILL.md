@@ -4,6 +4,7 @@ description: "Use when a NEW landing page, sales page, or single-product page ha
 metadata:
   version: 2.5.1
   category: content
+license: MIT
   language: en
 triggers:
   - "landing page brief"

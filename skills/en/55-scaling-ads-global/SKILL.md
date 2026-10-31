@@ -2,7 +2,7 @@
 name: 55-scaling-ads-global
 description: "Use when a WINNING ad has to be scaled without breaking it — readiness checks, vertical scaling at plus 20 to 30 percent per step, horizontal scaling into new audiences, creatives, and channels, learning-phase reset risk, how Advantage+ and Performance Max behave when scaled, creative refresh cadence, and the signals that mean stop. Trigger on 'scale ads', 'increase the ad budget', 'scale a winner', 'CPA went up after I scaled', 'how fast can I scale', 'it worked at 50 a day and broke at 200'. Not for — fixing an account that is not working yet, see `03-performance-eval-global`; warm audience plans, see `56-retargeting-plan-global`; proving the winner first, see `19-ab-test-setup-global`."
 metadata:
-  version: 1.0.1
+  version: 1.0.2
   category: performance
 license: MIT
 triggers:
@@ -67,8 +67,8 @@ If any item fails, do not scale. Go back to optimizing or preparing.
 | Mode | Increase | Cadence | Condition |
 |------|---------:|---------|-----------|
 | Conservative | +20% | Every 72h | CPA holding at target |
-| Moderate | +30% | Every 2-3 days | CPA clearly better than baseline |
-| Aggressive | +50% | Once only | Very stable campaign, risk accepted |
+| Moderate | +30% | Per step, >= 72h apart | CPA clearly better than baseline |
+| Aggressive | +50% | Once only; exception to the +20-30% step rule, needs a named approver through rule 7 | Very stable campaign, risk accepted |
 | Never | 2x overnight | — | Guarantees a learning reset and CPA spike |
 
 After each increase, monitor for 24-48 hours:
@@ -106,13 +106,13 @@ Advantage+ (Meta) and Performance Max (Google) do not respond to scaling the way
 
 ### 6. Scaling roadmap
 
-Expressed as multiples of the starting daily budget so it holds in any market or currency.
+Expressed as multiples of the starting daily budget so it holds in any market or currency. The budget column is cumulative; each individual step stays within +20-30% and at least 72h apart (heuristic).
 
 | Week | Daily budget | Action | KPI checkpoint |
 |------|-------------|--------|----------------|
 | 1 (testing) | 1.0x baseline | Test 3-5 ad sets | CPA at or below target |
-| 2 | 1.4-1.7x | +20% on the winner, pause losers | CPA stable 5 of 7 days |
-| 3 | 2.0-3.0x | +20-30% again, duplicate the winner into a new audience | Volume up, CPA held |
+| 2 | 1.4-1.7x | Two steps of +20-30% on the winner (>= 72h apart), propose pausing losers per the house ladder (rule 7) | CPA stable 5 of 7 days |
+| 3 | 2.0-3.0x | Two more +20-30% steps (>= 72h apart), duplicate the winner into a new audience | Volume up, CPA held |
 | 4 | 3.0-5.0x | Horizontal: lookalikes, broad, new channel | CPA within tolerance |
 | Month 2+ | 5x+ | Full scale plus continuous new creative | ROAS at or above target |
 
@@ -120,9 +120,9 @@ Every step must still clear the learning floor from `52-account-structure-global
 
 ### 7. Operating cadence
 
-**Daily, 15 minutes:** yesterday's CPA versus target — scale, hold, or pause; frequency above 2.5 means prepare new creative; check spend pace.
+**Daily, 15 minutes:** yesterday's CPA versus target — scale, hold; if CPA is above 3.0x target once spend >= 3x target CPA (below that, not enough data), only PROPOSE a pause through rule 7 (house ladder in `03-performance-eval-global`); frequency above 2.5 (heuristic, cold traffic, 7-day window; retargeting vs account history) means prepare new creative; check spend pace.
 
-**Weekly:** pull 7 days of data and apply the decision rules — scale winners +20%, pause losers with a written reason, brief new creative wherever frequency is climbing. Compare against `references/benchmarks-global.md` for the market and industry before concluding a campaign is broken.
+**Weekly:** pull 7 days of data and apply the decision rules — scale winners +20% (steps >= 72h apart), propose pausing losers through rule 7 with a written reason (house ladder), brief new creative wherever frequency is climbing. Compare against `references/benchmarks-global.md` for the market and industry before concluding a campaign is broken.
 
 ## Stop-scaling signals
 

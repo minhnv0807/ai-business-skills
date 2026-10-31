@@ -2,7 +2,7 @@
 name: 19-ab-test-setup
 description: "Dung khi can test co ky luat de biet phuong an nao thang that — chon dung mot bien de test, viet gia thuyet, tinh sample size, setup tracking, doc y nghia thong ke va ghi test log cho ads, landing page, email hoac gia. Kich hoat khi user nhac 'A/B test', 'split test', 'test creative', 'test copy', 'test landing', 'chay bao lau moi du ket luan', 'ban nao thang', 'test xong khong biet doc ket qua', 'ket qua co dang tin khong'. Khong dung cho — so dang xau va can chan doan nguyen nhan thi dung skill 03-danh-gia-hieu-suat; nhan ngan sach cho creative da thang thi dung skill 55-scaling-ads; ra soat toan bo trang khong ra don thi dung skill 68-cro-audit-trang."
 metadata:
-  version: 1.2.2
+  version: 1.2.3
   category: performance
 license: MIT
 related:
@@ -225,7 +225,7 @@ Khong test theo hung. Chon bien theo **tac dong** truoc, **do de** sau.
 | Thoi gian toi thieu | 7 ngay tron (khong 3 ngay, khong 10 ngay le tuan) |
 | Sample toi thieu — test ads tren nen tang | 50 conversion/bien the (hoac 1,000 click neu test CTR) |
 | Sample ly tuong — test landing page | 100 conversion/bien the, hoac tinh theo cong thuc o tren |
-| Dung som | Chi dung truoc han khi 1 bien the CPL > 2x target sau 3 ngay — dung bien the do, khong dung ca test |
+| Dung som | Chi dung truoc han 1 bien the khi da qua Buoc 0 (spend >= 3x CPA muc tieu) va CPL > 3.0x target, hoac 0 chuyen doi khi spend >= 3x — dung bien the do, khong dung ca test (Gate 1, `skills/vi/references/quality-gates-vn.md`; pause qua quy tac 7) |
 
 > Hai nguong sample khac nhau la co chu y: **50** la nguong thuc dung cho test ads (nen tang chay lien tuc, con nhieu vong test phia sau), **100** la nguong ly tuong khi test landing page (test 1 lan, sua xong kho lam lai).
 

@@ -69,7 +69,7 @@ CPMess cao?
 ├── Creative sai? → Test 3 hook moi, doi format
 ├── Nham muc tieu sai? → Thu hep/mo rong audience
 ├── Offer khong hap dan? → Test offer moi
-├── Tan suat cao (>3)? → Refresh creative, mo rong audience
+├── Tan suat > 2.5 (traffic lanh 7 ngay) kem CTR giam? → Refresh creative, mo rong audience
 └── Landing page load cham? → Toi uu toc do
 
 Lead nhieu nhung Booking it?

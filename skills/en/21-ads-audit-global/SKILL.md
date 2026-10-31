@@ -2,7 +2,7 @@
 name: 21-ads-audit-global
 description: "Use when an ad account needs a systematic CONFIGURATION audit — 84 checkpoints across account, campaign, ad set, ad, tracking, and optimization, scored into a coverage-aware Health Score (pass/fail/unknown, coverage printed beside it), a break-even CPA/CVR block, a HOLD/FIX/TEST/INVESTIGATE verdict per finding, draft-first change proposals, quick wins, and a dropshipping checklist, covering Meta, Google, and TikTok. Trigger on 'ads audit', 'audit my ad account', 'is my Meta setup correct', 'health score for the account', 'review my Google Ads', 'we inherited this account and it is a mess'. Not for — week-over-week drop diagnosis, see `03-performance-eval-global`; planning fresh budget, see `54-media-plan-global`; rebuilding the campaign hierarchy, see `52-account-structure-global`."
 metadata:
-  version: 1.1.0
+  version: 1.1.1
   category: performance
 license: MIT
 triggers:

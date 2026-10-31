@@ -4,6 +4,7 @@ description: "Dung khi can biet doi thu dang lam gi va minh dang dung o dau — 
 metadata:
   version: 2.3.3
   category: strategy
+license: MIT
 triggers:
   - "nghien cuu doi thu"
   - "phan tich canh tranh"

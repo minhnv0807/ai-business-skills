@@ -5,6 +5,7 @@ argument-hint: "<industry + scope + budget>"
 metadata:
   version: 1.1.1
   category: operations
+license: MIT
 triggers:
   - "brief khach hang"
   - "brief khach dien"

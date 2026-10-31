@@ -132,7 +132,7 @@ Complete these 10 items BEFORE Day 1:
 
 **Day 19-20: Iterate Primary Region**
 - Kill bottom 30% of creative by CTR.
-- Scale winning ad sets +25% budget per day max (avoid resetting learning phase).
+- Scale winning ad sets +20-30% budget per step, steps >= 72h apart (heuristic, `55-scaling-ads-global`; avoid resetting learning phase).
 - Document what's working — this informs secondary regions.
 
 **Day 21: Secondary Regions Launch**
@@ -229,7 +229,7 @@ gantt
 ### 4. No kill criteria defined
 **Problem:** Underperforming campaign keeps running for 4 weeks because nobody decided when to stop.
 **Cause:** Plan optimistic; no downside scenario.
-**Fix:** Document kill triggers in skill 00 (e.g., "Kill if CPA > 2x target by day 7").
+**Fix:** Document kill triggers in skill 00 (e.g., "Propose a pause if CPA > 3x target once spend >= 3x target CPA", per the house ladder in `03-performance-eval-global`, rule 7).
 
 ### 5. Pixel not tested before launch
 **Problem:** First 3 days of data are garbage; learning phase wasted.
@@ -249,7 +249,7 @@ gantt
 ### 8. Scaling winners too fast
 **Problem:** +200% budget overnight resets learning phase, performance crashes.
 **Cause:** Greedy scaling.
-**Fix:** Max +25% budget per ad set per day. Or use CBO for auto-distribution.
+**Fix:** Max +20-30% budget per ad set per step, steps >= 72h apart (`55-scaling-ads-global`). Or use CBO for auto-distribution.
 
 ### 9. Ignoring per-region timing
 **Problem:** Launching at US 9am ET hits EU at 3pm (post-lunch slump) and SEA at 9pm (winding down).

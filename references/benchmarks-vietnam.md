@@ -25,14 +25,16 @@
 | Video completion rate | <15% | 15–30% | 30–50% | >50% |
 | VTR (view-through rate) | <8% | 8–15% | >15% | — |
 
-### Frequency (Meta/TikTok, cua so 7 ngay)
+### Frequency (Meta/TikTok, heuristic: traffic lanh, cua so 7 ngay; retargeting so voi lich su tai khoan)
 
 | Muc | Y nghia | Hanh dong |
 |-----|---------|-----------|
-| <3.0 | An toan | Giu nguyen |
-| 3.0–3.5 | Bat dau bao hoa | Chuan bi creative moi |
-| >3.5 | Canh bao | Thay creative hoac mo rong audience |
-| >5.0 | Cham nguong | Tat adset, khong do them tien |
+| <=2.5 | An toan | Giu nguyen |
+| >2.5 kem CTR giam | Bat dau bao hoa | Chuan bi / thay creative moi |
+| >3.5 | Khan cap | Thay creative + mo rong audience |
+| >5.0 | Bao hoa nang | Mo rong audience hoac doi kenh, khong do them tien |
+
+Frequency mot minh khong bao gio tat adset; tat/pause theo Gate 1 (`skills/vi/references/quality-gates-vn.md`).
 
 Frequency cao kem CTR giam >30% la dau hieu creative fatigue ro rang — xem `48-quick-visual-brief` de brief asset thay the nhanh.
 
@@ -170,13 +172,15 @@ Khi page/kenh co quy mo khac nhau, so tuyet doi mat y nghia. Dung ti le:
 
 Bang 4 muc o tren dung de danh gia; bang nay dung de **ra quyet dinh dung/tiep**:
 
-| Chi so | Canh bao — soat lai | Phai tat / thay |
+| Chi so | Canh bao — soat lai | Phai thay / de xuat tat (quy tac 7) |
 |--------|---------------------|-----------------|
 | CPMess | >60K | >100K |
 | CTR | <0.8% | <0.5% |
-| ROAS | <1.5x | <1x |
+| ROAS | <1.5x hoac sat break-even | < break-even lien tuc 14 ngay sau khi du data (de xuat cat kenh) |
 | CPL (giao duc) | >250K | >400K |
-| Frequency | >3.5 | >5.0 |
+| Frequency | >2.5 kem CTR giam | >3.5 (thay creative, mo rong audience; khong tat chi vi frequency) |
+
+Cac nguong tuyet doi tren la fallback khi chua co target va chi xet khi da du data (Buoc 0); viec pause van theo Gate 1 (quy tac 7).
 
 ### Decision rules theo target (chinh xac hon nguong tuyet doi)
 
@@ -184,8 +188,8 @@ Nguong tuyet doi chi dung khi chua co target rieng. Khi da co target tu `10-tinh
 
 | Hanh dong | Dieu kien |
 |-----------|-----------|
-| **Scale** (+20-30%) | CPL thap hon target >=20% trong 3 ngay lien tiep, HOAC ROAS > target x1.3 trong 3 ngay |
-| **Pause** | CPL cao hon target >=50% trong 2 ngay, HOAC frequency >3.5 kem CTR giam >30%, HOAC ROAS <1x sau khi da chi >=5tr |
+| **Scale** (+20-30%, moi lan cach nhau >= 72h — Gate 8) | CPL thap hon target >=20% trong 3 ngay lien tiep, HOAC ROAS > target x1.3 trong 3 ngay |
+| **Pause** (Gate 1, `skills/vi/references/quality-gates-vn.md`) | Buoc 0: chi phan xu khi spend >= 3x CPA muc tieu. Sau do: CPL > 3.0x target → de xuat pause qua quy tac 7; 0 chuyen doi khi spend >= 3x → bo concept; > 1.5x lien tuc 7 ngay → doi creative/audience (khong pause); ROAS < break-even (bien dong gop truoc ads) lien tuc 14 ngay sau khi du data → de xuat cat kenh qua quy tac 7; frequency khong tu pause |
 | **Ket luan test** | Sau >=30 conversion hoac >=7 ngay — cai nao den truoc. Budget test 50–100K/ngay, chay toi thieu 3 ngay |
 
 Chi tiet van hanh: `55-scaling-ads` (scale), `21-audit-ads-performance` (chan doan), `19-ab-test-setup` (test).

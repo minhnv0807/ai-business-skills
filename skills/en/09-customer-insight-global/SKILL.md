@@ -4,6 +4,7 @@ description: "Use when the user needs to understand customers deeply enough to w
 metadata:
   version: 2.5.1
   category: strategy
+license: MIT
   language: en
 triggers:
   - "customer insight"

@@ -4,6 +4,7 @@ description: "Dung khi can hieu khach hang du sau de viet duoc content va chon d
 metadata:
   version: 2.1.2
   category: strategy
+license: MIT
 triggers:
   - "insight khach hang"
   - "chan dung khach hang"

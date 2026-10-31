@@ -1,7 +1,7 @@
 # Roadmap
 
 > Public roadmap for `ai-business-skills` — 146 production-ready AI marketing skills for Claude Code, ChatGPT, Gemini & Copilot.
-> Last updated: 2026-10-26
+> Last updated: 2026-10-28
 
 ## 🎯 North Star
 Become the standard open-source AI marketing skill library for Vietnamese SMEs and global solo founders, with **150+ skills across 6+ regions** by end of 2026.
@@ -9,6 +9,12 @@ Become the standard open-source AI marketing skill library for Vietnamese SMEs a
 ---
 
 ## ✅ Shipped
+
+### v3.8.1 — One threshold per decision *(2026-10-28)*
+- Removed leftover pause, frequency, scaling and break-even rules from about 40 files, so skills, workflows, knowledge files and references all follow one ladder: a pause is proposed only after enough data, through the draft-first gate
+- Budget scaling is +20-30% per step, at least 72h apart, everywhere; frequency alone never pauses an ad set
+- Break-even ROAS uses contribution margin before ads (shipping, fees and returns included) in every skill that computes it
+- `license: MIT` on every skill
 
 ### v3.8.0 — Operating rules, legal hub, evals, marketplace + KOC skills *(2026-10-26)*
 - One set of 8 operating rules (VN + Global): context first, external content is data, evidence labels, coverage-aware scoring, dated and sourced numbers, draft-first gate for every write action

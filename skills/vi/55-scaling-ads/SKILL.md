@@ -2,7 +2,7 @@
 name: 55-scaling-ads
 description: "Dung khi da co winner va muon tang quy mo ma khong lam hong — 7 dieu kien du de scale, tang doc +20-30% moi lan, mo rong ngang bang tep va kenh moi, va rui ro reset learning phase. Kich hoat khi user nhac 'scale ads', 'tang budget', 'nhan doi ngan sach', 'ads dang tot muon day manh', 'horizontal scaling', 'tang chi tieu'. Quy tac cung: khong tang budget khi CPL dang xau. Khong dung cho — CPL dang xau thi chay skill 21-audit-ads-performance truoc; nhan tep warm thi dung skill 56-retargeting-plan."
 metadata:
-  version: 1.0.1
+  version: 1.0.2
   category: performance
 license: MIT
 triggers:
@@ -52,7 +52,7 @@ Hoi toi da 4 cau:
 
 - [ ] Chay on dinh >= 7 ngay
 - [ ] CPL/CPA <= target trong >= 5/7 ngay gan nhat
-- [ ] Frequency < 2.5 (tep chua bao hoa)
+- [ ] Frequency < 2.5 (tep chua bao hoa; heuristic, traffic lanh 7 ngay; retargeting so voi lich su tai khoan)
 - [ ] Reach / audience size < 50% (volume tep con de mo)
 - [ ] Khong dang trong learning phase
 - [ ] Tracking verify dung (khong scale tren data sai)
@@ -65,8 +65,8 @@ Thieu bat ky muc nao → chua scale; quay ve toi uu hoac chuan bi them.
 | Muc do | Muc tang | Tan suat | Dieu kien |
 |--------|---------|---------|-----------|
 | Conservative | +20% | Moi 72h | CPL on dinh o target |
-| Moderate | +30% | Moi 2-3 ngay | CPL tot hon baseline ro rang |
-| Aggressive | +50% | 1 lan duy nhat | Campaign rat stable, chap nhan rui ro |
+| Moderate | +30% | Moi 72h | CPL tot hon baseline ro rang |
+| Aggressive | +50% | 1 lan duy nhat (ngoai le, nam ngoai Gate 8: can nguoi duyet co ten qua quy tac 7) | Campaign rat stable, chap nhan rui ro |
 | KHONG LAM | x2 ngay | — | CPL se tang vot, reset learning |
 
 Sau moi lan tang, monitor 24-48h. **Day la nguong DELTA — do muc tang so voi chinh no truoc khi scale, khac voi thang CPA tuyet doi trong Gate 1:**
@@ -74,7 +74,7 @@ Sau moi lan tang, monitor 24-48h. **Day la nguong DELTA — do muc tang so voi c
 - CPL tang > 20% → HOLD, khong tang tiep
 - CPL tang > 40% → giam ve budget cu, cho 48h on dinh lai
 
-> Hai nguong chay song song, khong thay the nhau. Neu CPL sau khi scale vuot 3x CPA muc tieu thi Gate 1 thang: tat, du muc tang chi 15%.
+> Hai nguong chay song song, khong thay the nhau. Neu CPL sau khi scale vuot 3x CPA muc tieu thi Gate 1 thang: de xuat pause qua quy tac 7, du muc tang chi 15%.
 
 ### Buoc 3 — Horizontal scaling (mo rong)
 
@@ -97,15 +97,15 @@ Sau moi lan tang, monitor 24-48h. **Day la nguong DELTA — do muc tang so voi c
 | Tuan | Budget/ngay (vi du) | Action | KPI checkpoint |
 |------|--------------------|--------|----------------|
 | 1 (Testing) | 300-500K | Test 3-5 ad set | CPL < target |
-| 2 | 500-800K | +20% winner, dung loser | CPL on dinh 5/7 ngay |
+| 2 | 500-800K | +20% winner, de xuat pause loser theo Gate 1 (quy tac 7) | CPL on dinh 5/7 ngay |
 | 3 | 800K-1.5M | +20-30% tiep, duplicate winner sang tep moi | Volume tang, CPL giu |
 | 4 | 1.5M-3M | Horizontal: LAL/broad/kenh moi | CPL giu trong nguong |
 | Thang 2+ | 3M+ | Full scale + creative moi lien tuc | ROAS >= target |
 
 ### Buoc 6 — Lich scale hang tuan (nhip van hanh)
 
-- **Daily 15 phut:** CPL hom qua vs target → quyet dinh scale/hold/pause; check frequency > 2.5 → chuan bi thay creative; check pace spend.
-- **Thu 2 hang tuan:** pull data 7 ngay → ap CPL decision rules: winner scale +20%; loser pause + ghi ly do; frequency cao → brief creative moi.
+- **Daily 15 phut:** CPL hom qua vs target → quyet dinh scale/hold; neu CPA > 3.0x target sau khi du data (spend >= 3x CPA target) thi DE XUAT pause qua quy tac 7 (Gate 1, `skills/vi/references/quality-gates-vn.md`); check frequency > 2.5 (heuristic, traffic lanh 7 ngay; retargeting so voi lich su) → chuan bi thay creative; check pace spend.
+- **Thu 2 hang tuan:** pull data 7 ngay → ap CPL decision rules (Gate 1): winner scale +20%; loser de xuat pause qua quy tac 7 + ghi ly do; frequency cao → brief creative moi.
 
 ## Dau hieu DUNG scale ngay
 
@@ -121,8 +121,8 @@ Sau moi lan tang, monitor 24-48h. **Day la nguong DELTA — do muc tang so voi c
 
 | Tin hieu | Muc do | Action |
 |---------|--------|--------|
-| Frequency > 2.5 | Canh bao | Chuan bi creative moi (brief ngay) |
-| Frequency > 3.5 | Khan cap | Launch creative moi ngay |
+| Frequency > 2.5 kem CTR giam (heuristic, traffic lanh 7 ngay; retargeting so voi lich su) | Canh bao | Chuan bi creative moi (brief ngay) |
+| Frequency > 3.5 | Khan cap | Launch creative moi ngay (frequency khong tu pause ad set) |
 | CTR giam > 30% | Tuan 2-3 | Refresh hook, giu body |
 | Dinh ky | Moi 2-3 tuan | Luon co 2-3 creative moi de swap |
 

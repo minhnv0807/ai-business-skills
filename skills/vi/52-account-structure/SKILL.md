@@ -2,7 +2,7 @@
 name: 52-account-structure
 description: "Dung khi can dung cau truc tai khoan quang cao truoc khi bat campaign — phan tang campaign/adset/ad, naming convention de doc data ve sau, CBO hay ABO, va so luong adset hop ly. Kich hoat khi user nhac 'cau truc campaign', 'naming convention ads', 'chia adset the nao', 'CBO hay ABO', 'setup tai khoan ads', 'to chuc campaign'. Khong dung cho — ra soat tai khoan dang chay thi dung skill 21-audit-ads-performance; phan bo ngan sach theo kenh thi dung skill 54-media-plan."
 metadata:
-  version: 1.0.1
+  version: 1.0.2
   category: performance
 license: MIT
 triggers:
@@ -85,7 +85,7 @@ Quy tac: viet HOA, phan cach `_`, khong dau, khong khoang trang. Ten ad khop voi
 **TESTING (tuan 1-2):**
 - 1 campaign / objective; 3-5 ad set (broad, interest A, interest B, LAL, retarget nho); 2-3 ad / ad set (test creative + hook).
 - ABO, budget deu nhau giua cac ad set. Muc tieu: tim winning audience + creative.
-- Dung ad set CPL > 2x target sau 3 ngay.
+- Ad set chi duoc xet pause sau Buoc 0 (spend >= 3x CPA muc tieu): CPL > 3.0x → de xuat pause qua quy tac 7; 0 chuyen doi → bo concept; 1.5-3.0x lien tuc 7 ngay → doi creative/audience (Gate 1, `skills/vi/references/quality-gates-vn.md`).
 
 **SCALING:**
 - Tach winner ra campaign rieng (CBO). Scale +20-30%/lan, khong x2 ngay (chi tiet: `55-scaling-ads`).

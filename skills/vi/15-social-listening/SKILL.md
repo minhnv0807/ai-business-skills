@@ -4,6 +4,7 @@ description: "Dung khi can theo doi lien tuc nguoi ta noi gi ve thuong hieu, doi
 metadata:
   version: 2.1.1
   category: operations
+license: MIT
 triggers:
   - "social listening"
   - "theo doi thuong hieu"

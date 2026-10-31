@@ -68,9 +68,9 @@
 | **<12K** | <2.0 | WIN — scale ngay 20-30% |
 | **12-15K** | <2.0 | Acceptable — theo doi |
 | **15-18K** | 2.0-2.5 | Optimize — thay creative |
-| **>18K** | >2.5 | PAUSE — replace hoac stop |
+| **>18K** | >2.5 | Thay creative / doi audience (khong pause chi vi CPL hay frequency) |
 
-Nguyen tac ap dung: lay CPL target cua nganh minh lam moc, chia tiers theo ti le tuong tu (duoi 80% target = win, 80-100% = theo doi, 100-120% = optimize, tren 120% = pause).
+Nguyen tac ap dung: lay CPL target cua nganh minh lam moc, chia tiers theo ti le tuong tu (heuristic: <= 1.0x target = winner, 1.0-1.5x = theo doi, > 1.5x lien tuc 7 ngay = doi creative / audience). Cac tier tren chi la vi du. Quy tac pause theo Gate 1 (`skills/vi/references/quality-gates-vn.md`): chi so sanh khi spend >= 3x target (Buoc 0); > 3.0x target thi DE XUAT pause qua quy tac 7 (draft block, nguoi duyet ghi ten); 0 conversion khi spend >= 3x = bo concept, quay lai insight.
 
 ## Phan 4: Creative fatigue & frequency management
 
@@ -81,7 +81,7 @@ Frequency = so lan trung binh 1 nguoi thay ad trong ky.
 | <1.5 | Fresh | Tang | Giu, co the scale |
 | 1.5-2.0 | Toi uu | Stable | Theo doi |
 | 2.0-2.5 | Fatigue bat dau | Giam | Test creative moi |
-| >2.5 | Fatigue nang | Xuong manh | Dung, replace creative |
+| >2.5 | Fatigue nang | Xuong manh | Chuan bi / thay creative (heuristic, traffic lanh 7 ngay) |
 
 Cach tranh fatigue:
 - Rotate 3-4 creative hang tuan.

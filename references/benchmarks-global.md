@@ -81,7 +81,7 @@
 
 *Source: Triple Whale 2025 DTC dataset*
 
-**Healthy ROAS guideline:** 3× is the rule of thumb for profitability at ~30% gross margin. For lower margins (commodity goods), aim for 5×+. For high-margin (digital/info products), 1.5× can be profitable.
+**Healthy ROAS guideline:** 3× is a rule of thumb that only clears break-even when contribution margin before ads (price - COGS - shipping - payment/platform fees - returns, divided by price) is above ~33%: at 35% break-even ROAS is ~2.9×, at 30% it is ~3.3×, so 3× loses money. For lower margins (commodity goods), aim for 5×+. For high-margin (digital/info products), 1.5× can be profitable.
 
 ---
 

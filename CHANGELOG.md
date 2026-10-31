@@ -12,8 +12,47 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed — ASCII Vietnamese cleanup in the VN cluster
 
 - `skills/vi/` is written as ASCII Vietnamese (no diacritics) by house convention; 772 lines in 56 files had drifted from it, almost all in `30-thiet-ke-master`. They are now converted, with no wording changes. EOL is preserved per file.
-- Patch bumps for the 12 skills whose `SKILL.md` changed: `00-ke-hoach-mkt` 2.0.2, `02-brief-chien-dich` 2.1.2, `04-script-video` 2.4.2, `08-nghien-cuu-doi-thu` 2.3.3, `09-insight-khach-hang` 2.1.2, `12-brief-landing-page` 2.1.3, `14-email-marketing` 2.2.1, `16-marketing-psychology` 1.0.2, `19-ab-test-setup` 1.2.2, `20-brief-client-intake` 1.1.1, `30-thiet-ke-master` 1.2.2, `74-copy-hai-lop` 1.0.1.
+- Patch bumps for the 12 skills whose `SKILL.md` changed: `00-ke-hoach-mkt` 2.0.3, `02-brief-chien-dich` 2.1.3, `04-script-video` 2.4.3, `08-nghien-cuu-doi-thu` 2.3.3, `09-insight-khach-hang` 2.1.2, `12-brief-landing-page` 2.1.3, `14-email-marketing` 2.2.1, `16-marketing-psychology` 1.0.2, `19-ab-test-setup` 1.2.3, `20-brief-client-intake` 1.1.1, `30-thiet-ke-master` 1.2.2, `74-copy-hai-lop` 1.0.1.
 - Kept with diacritics on purpose (17 lines): Vietnamese copy that is rendered to end customers or that only makes sense with the accent (quote texts, overlay slogan and HTML author line, brand names `Lumiere` / `BHOP Ca phe` in the logo rules, the "strip diacritics" examples) and the user-typed prompts in `evals/evals.json`, which `scripts/check-repo.mjs` requires to include diacritics.
+
+---
+
+## v3.8.1 — One threshold per decision, everywhere (2026-10-28)
+
+v3.8.0 made Gate 1 the only CPA ladder in `03`, `10` and the `21` pair, but older rules survived in about 40 other files: skills, knowledge, agents, workflows, references, the dropshipping module and an example. Three read-only sweeps found them. Fixes from the first two sweeps were checked by a second agent, the third round was fixed by hand, and every diff was reviewed line by line. No new skills, no new features.
+
+### Changed — pause rules point to Gate 1
+
+- Every remaining cost-based pause or stop rule now follows Gate 1 in `skills/vi/references/quality-gates-vn.md` (Global: the house heuristic ladder in `03-performance-eval-global`). Spend below 3x target CPA is not enough data; above 1.5x for 7 days, change creative or audience; above 3.0x, **propose** a pause through rule 7; no conversion at 3x spend, drop the concept. Replaced rules include "> 2x target after 3 days", "> 150% / 130% / 120% of target", "> 25% over target", "after 24h", "$20-30 spend with 0 ATC" and "CPMess > 3x benchmark".
+- Gate 1 labels in `quality-gates-vn.md`: "Tat ngay" is now "De xuat tat" and "Tat ca concept" is now "Bo concept", matching the rule 7 gate.
+- Rhythm and phase tables ("scale or pause", "pause losers") in `10`, `55`, `57` (both clusters), `29` and the workflows now say a pause is proposed under Gate 1 through rule 7.
+- `CLAUDE.md` decision rules: the old "CPL over target > 25% + high frequency → PAUSE" line is replaced by the Gate 1 ladder.
+- Channel and product cuts use one rule: ROAS below break-even (contribution margin before ads) for 14 days after enough data, proposed through rule 7. It replaces fixed "ROAS < 1x / 1.5x / 2x" cut rules in `10` (both clusters), `13`, `61`, `references/benchmarks-vietnam.md` (alert table included), `references/marketing-templates-library.md`, the dropshipping launch workflow and example, and `k-p2-p3`. The "Kill ✕" channel label in the templates library is now "De xuat cat ✕ (quy tac 7)".
+- Absolute fallback thresholds in `references/benchmarks-vietnam.md` apply only once there is enough data (Step 0). The "first 2 weeks" rule of thumb in `10-tinh-kpi-nguoc` now says not to judge before Step 0, instead of "never turn ads off".
+- `en/21` 01-us: wasted-spend search terms are flagged at spend >= 3x target CPA with 0 conversions, not at a fixed $200.
+
+### Changed — frequency, scaling, hook rate
+
+- Frequency (heuristic, cold traffic, 7 days): the first warning is 2.5 with falling CTR, retargeting is compared with the account's own history, and frequency alone never pauses an ad set; an urgent tier (> 3.5 or > 4) may stay. Applied to `02`, `03`, `13`, `55`, `57`, `61` (both clusters), the four `en/21` regional variants (including 01-us), `48`, `references/benchmarks-vietnam.md` (whose "> 5.0 tat adset" row is gone), knowledge files and `agents/performance-analyst.md`.
+- Gate 8 now reads: each budget increase at most 20-30%, at least 72h apart, +20% safest, labelled heuristic. Its example ladder is spaced 72h apart. "+25% per day", "20%/ngay", "max 20%/day", "max 20%/week" and "every 2-3 days" are gone from `10`, `13`, `55` (both clusters), workflows, the module and the example. The `55` "Aggressive +50%" row stays as an exception that needs a named approver.
+- Ramp-ups that broke the step rule now follow it: the `54-media-plan` first-month example is two +20% steps per week (300-500K/ngay to 900K-1.5M by week 4, was 1.5M-3M), and the dropshipping launch workflow scales "toward $500/day" stepwise (roughly Day 50-60) instead of "$500/day by Day 45".
+- Hook rate in `en/21` 01-us: pass 25%, good 30%.
+
+### Fixed — break-even math
+
+- `03-performance-eval-global`: BE-ROAS was `1 / profit margin`, a margin that already subtracts ad spend, so it double-counted ads. It is now `1 / contribution margin before ads`, with its own row; profit margin stays as a net KPI.
+- `17-pricing-strategy-global`: BE-ROAS ignored shipping, fees and returns (1.36x). The worked example now uses the full variable cost of the same product (1.51x), and the markup-tier column is recomputed from a stated formula.
+- `54` (both clusters), `61`, the `en/21` variants, `29`, `references/benchmarks-global.md` and `references/marketing-templates-library.md`: break-even uses contribution margin before ads, not gross margin. Break-even values in the `en/21` 01-us and 02-eu tables now match their margin ranges.
+- `references/benchmarks-global.md` and `54-media-plan-global`: "3x ROAS is healthy" now says 3x only breaks even at about 33% contribution margin before ads.
+- `examples/dropshipping-store-global.md`: break-even ROAS 1.48x became 1.57x once the payment fee is counted, and the target-ROAS margin claim (30-40%) is corrected to about 24-31%.
+- `10-tinh-kpi-nguoc`: the break-even template divides fixed costs (ad budget included) by contribution per order, with payment, return and marketplace fees in variable cost. The pessimistic scenario says ROAS ~1.02x is below break-even instead of "ROAS <1".
+
+### Housekeeping
+
+- Short paths `references/quality-gates-vn.md` expanded to `skills/vi/references/quality-gates-vn.md`; VN files say "quy tac 7", EN files cite `03-performance-eval-global` and `55-scaling-ads-global` instead of VN gate numbers.
+- `license: MIT` added to the 20 skills that lacked it. Those skills got no version bump when that was their only change.
+- `argument-hint` in `00-ke-hoach-mkt` and `04-script-video` written without diacritics, like the rest of the VN cluster.
+- Plugin and marketplace version 3.8.1. Patch bumps for every skill whose rules changed (see VERSIONS.md).
 
 ---
 

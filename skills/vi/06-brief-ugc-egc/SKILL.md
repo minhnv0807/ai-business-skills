@@ -4,6 +4,7 @@ description: "Dung khi can brief NGUOI KHAC quay video ho — khach hang lam UGC
 metadata:
   version: 2.2.0
   category: content
+license: MIT
 triggers:
   - "brief creator"
   - "brief UGC"

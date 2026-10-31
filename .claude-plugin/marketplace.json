@@ -6,7 +6,7 @@
   },
   "metadata": {
     "description": "Bo skill marketing toan dien cho AI agent — 146 skills (77 VN + 69 Global) — Role SOP Deep Integration bilingual: 4 role packs (Leader, Content, Designer, Performance) o CA HAI cluster + knowledge base nen tang + AI Marketing OS: Brand Hub, role-based agents/projects, skill chains, connectors/MCP, second brain, data loops, SOPs, review cadence. Chien luoc, noi dung, hieu suat, van hanh, personal brand, AI avatar, dropshipping, thiet ke, SaaS/growth, B2B sales pipeline. Thi truong Viet Nam 2025-2026 + Global (US/EU/SEA/LATAM). Anthropic-pattern aligned (.mcp.json + CONNECTORS.md)",
-    "version": "3.8.0",
+    "version": "3.8.1",
     "repository": "https://github.com/minhnv0807/ai-business-skills"
   },
   "plugins": [
