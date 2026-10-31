@@ -1,8 +1,8 @@
 ---
 name: 71-sales-enablement
-description: "Bo tai lieu ban hang cong voi ky luat giu pipeline cho SME VN, gop mot skill vi cung mot nguoi lam ca hai viec — the persona nguoi mua (co ca nguoi can duong), one-pager, outline bo slide tu van, thu vien xu ly phan doi kieu VN viet o hai dang (bang tra nhanh khi dang goi va ban day du de dao tao), kich ban demo co moc thoi gian, bao gia, giai doan pipeline co tieu chi RA cong nguoi chiu trach nhiem cong SLA, quy tac toc do phan hoi inbox Zalo, va phuong an khong co CRM bang Google Sheet cong nhan Zalo. Kich hoat khi user nhac 'tai lieu ban hang', 'sales deck', 'xu ly phan doi', 'kich ban tu van', 'pipeline ban hang', 'quan ly khach tiem nang', 'bao gia cho khach', 'khach noi de suy nghi them'. Khong dung cho — tim va tao lead moi thi dung skill 33-b2b-lead-gen; thiet ke goi ban va muc gia thi dung skill 31-offer-design va skill 17-pricing-strategy."
+description: "Bo tai lieu ban hang cong voi ky luat giu pipeline cho SME VN, gop mot skill vi cung mot nguoi lam ca hai viec — the persona nguoi mua (co ca nguoi can duong), one-pager, outline bo slide tu van, thu vien xu ly phan doi kieu VN viet o hai dang (bang tra nhanh khi dang goi va ban day du de dao tao), kich ban demo co moc thoi gian, bao gia, giai doan pipeline co tieu chi RA cong nguoi chiu trach nhiem cong SLA, quy tac toc do phan hoi inbox Zalo, va phuong an khong co CRM bang Google Sheet cong nhan Zalo. Kich hoat khi user nhac 'tai lieu ban hang', 'sales deck', 'xu ly phan doi', 'kich ban tu van', 'pipeline ban hang', 'quan ly khach tiem nang', 'bao gia cho khach', 'khach noi de suy nghi them'. Khong dung cho — tim va tao lead moi thi dung skill 33-b2b-lead-gen; thiet ke goi ban va muc gia thi dung skill 31-offer-design va skill 17-pricing-strategy; kich ban va tri thuc cho chatbot tu dong tra loi inbox / binh luan thi dung skill 77-kich-ban-sale-chatbot."
 metadata:
-  version: 1.0.0
+  version: 1.0.1
   category: operations
 license: MIT
 triggers:
