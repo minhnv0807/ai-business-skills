@@ -2,7 +2,7 @@
 
 > **Variant chuyen biet cho:** SaaS B2B, SaaS B2C, Mobile App, Platform, ERP/CRM, Phan mem quan ly, Fintech, EdTech, HealthTech, Tool/Extension.
 >
-> **Luu y:** Marketing SaaS = Marketing based on Demo + Trial + Onboarding. KPI khac hoàn toan so voi e-commerce.
+> **Luu y:** Marketing SaaS = Marketing based on Demo + Trial + Onboarding. KPI khac hoan toan so voi e-commerce.
 
 ---
 

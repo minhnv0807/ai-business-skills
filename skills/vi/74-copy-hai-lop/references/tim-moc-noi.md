@@ -71,7 +71,7 @@ Doc to: chu ngu la san pham hay la nguoi doc? San pham → viet lai.
 
 ## 3. Cua so dip
 
-Dip mang (ket qua bong, mua cuc, trend 1 ngay): khong ra cau trong vai gio thi **bo**. Cau gắng di sau 2 gio chi lam loang brand.
+Dip mang (ket qua bong, mua cuc, trend 1 ngay): khong ra cau trong vai gio thi **bo**. Cau gang di sau 2 gio chi lam loang brand.
 
 Dip lich (Tet, 8/3, Trung thu, 20/10, Black Friday): chuan bi truoc, van phai co moc that.
 

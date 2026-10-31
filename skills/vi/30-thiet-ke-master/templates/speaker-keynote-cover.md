@@ -7,7 +7,7 @@ personal-brand
 16:9 (slide standard cho keynote, pitch deck, webinar)
 
 ## Use case
-Pitch deck cover, keynote intro slide, webinar splash screen, course teaser cover — title overlay sẽ lo bằng HTML/slide tool, image cung cấp mood + concept background.
+Pitch deck cover, keynote intro slide, webinar splash screen, course teaser cover — title overlay se lo bang HTML/slide tool, image cung cap mood + concept background.
 
 ## Prompt structure
 
@@ -22,7 +22,7 @@ Pitch deck cover, keynote intro slide, webinar splash screen, course teaser cove
 ## Filled example
 
 ```
-Cinematic editorial keynote cover, abstract digital wave flowing diagonally across frame, concept of "AI Kiếm Tiền 2026" — momentum + opportunity + sophistication. Composition rule of thirds with subject anchored bottom-right, top-left 40% reserved as negative space for title overlay.
+Cinematic editorial keynote cover, abstract digital wave flowing diagonally across frame, concept of "AI Kiem Tien 2026" — momentum + opportunity + sophistication. Composition rule of thirds with subject anchored bottom-right, top-left 40% reserved as negative space for title overlay.
 
 Cinematic mood lighting, warm golden hour rim light from upper-right, subtle ambient warm fill, dramatic but not dark. Mood — aspirational, premium, momentum building.
 
@@ -41,4 +41,4 @@ Negatives — no text in frame, no faces, no detailed subjects competing for att
 - MJ: `--ar 16:9`
 
 ## Cross-reference
-Xem `references/personal-brand.md` cho talk archetype mapping. Title overlay nên xử lý qua HTML/Keynote/PPT — image chỉ là background.
+Xem `references/personal-brand.md` cho talk archetype mapping. Title overlay nen xu ly qua HTML/Keynote/PPT — image chi la background.

@@ -5,9 +5,9 @@
 
 ---
 
-## Muc luc nhanh (20 Ngành)
+## Muc luc nhanh (20 Nganh)
 
-### Nhóm 1 — Dich vu dia phuong (Local Service)
+### Nhom 1 — Dich vu dia phuong (Local Service)
 
 | # | File | Nganh | Thoi gian |
 |---|------|-------|-----------|
@@ -19,7 +19,7 @@
 | 06 | `06-wedding-photography.md` | Studio cuoi / Chup anh / To chuc su kien | 35–40 phut |
 | 07 | `07-pet-service.md` | Spa thu cung / Pet shop / Pet hotel | 30–35 phut |
 
-### Nhóm 2 — San pham & E-commerce
+### Nhom 2 — San pham & E-commerce
 
 | # | File | Nganh | Thoi gian |
 |---|------|-------|-----------|
@@ -30,7 +30,7 @@
 | 12 | `12-home-living.md` | Noi that / Gia dung / Trang tri nha | 30–35 phut |
 | 13 | `13-health-supplement.md` | Thuc pham chuc nang / Vitamin / Duoc my pham | 35–45 phut |
 
-### Nhóm 3 — B2B & Online
+### Nhom 3 — B2B & Online
 
 | # | File | Nganh | Thoi gian |
 |---|------|-------|-----------|
@@ -38,7 +38,7 @@
 | 15 | `15-agency-consulting.md` | Agency / Tu van / Dich vu chuyen mon | 35–40 phut |
 | 16 | `16-online-course.md` | Khoa hoc online / Coaching / Creator | 30–40 phut |
 
-### Nhóm 4 — High-ticket
+### Nhom 4 — High-ticket
 
 | # | File | Nganh | Thoi gian |
 |---|------|-------|-----------|

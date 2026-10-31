@@ -2,7 +2,7 @@
 name: 08-nghien-cuu-doi-thu
 description: "Dung khi can biet doi thu dang lam gi va minh dang dung o dau — phan tich 3 tang doi thu truc tiep, gian tiep, thay the; ban do dinh vi, SWOT, benchmark content va gia, khoang trong thi truong con bo trong. Kich hoat khi user nhac 'nghien cuu doi thu', 'phan tich canh tranh', 'doi thu dang chay gi', 'competitive analysis', 'sao doi thu ban re hon minh', 'doi thu moi noi', 'minh thua doi thu cho nao', 'benchmark thi truong'. Dung ca khi user chi gui link fanpage hoac website doi thu va hoi 'xem giup ho dang lam gi'. Khong dung cho — chot dinh vi cho chinh minh thi dung skill 58-positioning; theo doi lien tuc thao luan mang xa hoi thi dung skill 15-social-listening; nghien cuu tep de chay ads thi dung skill 51-audience-research."
 metadata:
-  version: 2.3.2
+  version: 2.3.3
   category: strategy
 triggers:
   - "nghien cuu doi thu"
@@ -110,7 +110,7 @@ Voi moi doi thu, phan tich 8 khia canh:
 | Phong cach hinh anh | [Tone mau, kieu anh, chat video] |
 | Phan khuc gia | [Thap / Trung / Cao / Cao cap] |
 | Doi tuong muc tieu | [Gioi tinh, tuoi, thu nhap, so thich] |
-| USP tuyên bo | [Ho noi ho khac biet gi?] |
+| USP tuyen bo | [Ho noi ho khac biet gi?] |
 
 ### 2. Diem manh va diem yeu
 

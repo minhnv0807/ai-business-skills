@@ -16,21 +16,21 @@ IG feed post, FB feed post, LinkedIn feed post. Daily content batch — template
 [Style + medium — graphic illustration OR minimalist photography, batch-friendly template]
 [Palette + textures — brand palette strict for series consistency]
 [Background — simple, clean, allows headline overlay if needed]
-[Negatives — no text in frame, no busy details, no clichéd icons]
+[Negatives — no text in frame, no busy details, no cliched icons]
 ```
 
-## Filled example (AI Kiếm Tiền course tip series, post #3)
+## Filled example (AI Kiem Tien course tip series, post #3)
 
 ```
 Social post visual for "AI tip #3 — CRISPE prompt framework", abstract puzzle pieces arrangement showing 6 interlocking shapes coming together, centered composition with rule of thirds, single focal point of puzzle assembly metaphor. 1:1 square format optimized for IG feed.
 
 Minimalist flat illustration style, geometric shapes with subtle dimension, clean modern aesthetic, batch-friendly template that can be re-skinned cho tip #4, #5, etc.
 
-Palette warm cream #F5EBE0 background, brand purple #6B4E9F primary pieces, gold accent #D4A574 highlight piece, soft shadow for depth. Brand-cohesive cho AI Kiếm Tiền series.
+Palette warm cream #F5EBE0 background, brand purple #6B4E9F primary pieces, gold accent #D4A574 highlight piece, soft shadow for depth. Brand-cohesive cho AI Kiem Tien series.
 
-Background soft cream gradient, ample negative space around puzzle subject để add headline overlay via Canva/HTML if needed.
+Background soft cream gradient, ample negative space around puzzle subject de add headline overlay via Canva/HTML if needed.
 
-Negatives — no text in frame, no busy decorative elements, no clichéd brain/lightbulb icons, no neon colors, no stock illustration aesthetic, no warped geometric shapes.
+Negatives — no text in frame, no busy decorative elements, no cliched brain/lightbulb icons, no neon colors, no stock illustration aesthetic, no warped geometric shapes.
 ```
 
 ## Output filename pattern

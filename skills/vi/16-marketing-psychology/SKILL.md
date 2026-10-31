@@ -2,7 +2,7 @@
 name: 16-marketing-psychology
 description: "Dung khi can hieu VI SAO nguoi ta mua va ap dung nguyen tac tam ly vao marketing — khan hiem, bang chung xa hoi, cam ket nhat quan, uy tin, co lai, neo gia, ac cam mat mat — kem cach dua vao copy, landing page, email, ads va dieu chinh theo van hoa Viet Nam. Kich hoat khi user nhac 'tam ly khach hang', 'marketing psychology', 'FOMO', 'social proof', 'khan hiem', 'Cialdini', 'lam sao thuyet phuc khach', 'trigger cam xuc', 'khach doc xong van khong hanh dong'. Khong dung cho — viet copy thanh pham thi dung skill 05-copy-quang-cao; dong goi goi ban va bonus thi dung skill 31-offer-design; chan doan mot trang cu the khong ra don thi dung skill 68-cro-audit-trang."
 metadata:
-  version: 1.0.1
+  version: 1.0.2
   category: strategy
 license: MIT
 related:
@@ -105,7 +105,7 @@ Doc `.agents/product-marketing-context.md` neu co.
 - **Countdown timer:** Tren landing page, popup exit intent
 - **Flash sale:** "Trong 2h toi"
 
-**Luu ý:** Khach VN da rat quen scarcity fake → chi dung khi that su khan hiem. Neu fake bi phat hien = mat trust manh.
+**Luu y:** Khach VN da rat quen scarcity fake → chi dung khi that su khan hiem. Neu fake bi phat hien = mat trust manh.
 
 **Cau trigger:** "Chi con [so cu the] — [deadline cu the]"
 

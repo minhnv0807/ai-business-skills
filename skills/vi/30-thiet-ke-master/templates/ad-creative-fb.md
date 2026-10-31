@@ -4,7 +4,7 @@
 marketing-day-to-day
 
 ## Aspect ratio
-1:1 (feed) HOẶC 4:5 (vertical feed, larger real estate)
+1:1 (feed) HOAC 4:5 (vertical feed, larger real estate)
 
 ## Use case
 Facebook ad creative, Instagram feed ad, paid promotion visual. Thumb-stopping hook for paid social.
@@ -37,8 +37,8 @@ Negatives — no text in frame (overlay sau via Canva), no BHOP logo in-frame, n
 `ad-fb-[campaign-slug]-[creative-variant].png`
 
 ## Aspect ratio API parameter
-- gpt-image-2: `"1024x1024"` (1:1) hoặc `"1024x1792"` (4:5 — manual crop)
-- MJ: `--ar 1:1` hoặc `--ar 4:5`
+- gpt-image-2: `"1024x1024"` (1:1) hoac `"1024x1792"` (4:5 — manual crop)
+- MJ: `--ar 1:1` hoac `--ar 4:5`
 
 ## Cross-reference
 Xem `references/marketing-day-to-day.md` cho FB ad creative best practices + thumb-stop patterns.

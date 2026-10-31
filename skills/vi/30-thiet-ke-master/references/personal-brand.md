@@ -1,34 +1,34 @@
 # Personal Brand Mode
 
-Thiết kế hình ảnh cá nhân — founder, creator, freelancer, coach. Stake thấp hơn business-logo nhưng vẫn cần character + position cues rõ ràng.
+Thiet ke hinh anh ca nhan — founder, creator, freelancer, coach. Stake thap hon business-logo nhung van can character + position cues ro rang.
 
-## Khi nào dùng personal-brand mode
+## Khi nao dung personal-brand mode
 
 **Right fit**:
-- Avatar profile (LinkedIn, Twitter, IG) — chuyên nghiệp, recognizable
-- Personal monogram — initials/symbol đơn giản
+- Avatar profile (LinkedIn, Twitter, IG) — chuyen nghiep, recognizable
+- Personal monogram — initials/symbol don gian
 - Speaker keynote slide cover
 - Personal website hero image
-- Quote graphic cho "guru post" cá nhân (visual layer — text qua quote-graphic mode)
-- AI avatar static (1 ảnh tĩnh — KHÔNG phải video; nếu cần video dùng `24-ai-avatar-production`)
+- Quote graphic cho "guru post" ca nhan (visual layer — text qua quote-graphic mode)
+- AI avatar static (1 anh tinh — KHONG phai video; neu can video dung `24-ai-avatar-production`)
 - Reference-to-avatar prompt — user dua anh style/mood va muon bien thanh avatar ca nhan co mat, mau, logo rieng
 
-**Wrong mode — chuyển ngay**:
-- Logo cho công ty → `business-logo`
+**Wrong mode — chuyen ngay**:
+- Logo cho cong ty → `business-logo`
 - Visual cho campaign brand → `business-campaign`
 - Video avatar / talking head → `24-ai-avatar-production`
-- Mockup website cá nhân full → `web-mockup`
+- Mockup website ca nhan full → `web-mockup`
 
-## Brand identity yêu cầu (lighter than business)
+## Brand identity yeu cau (lighter than business)
 
-Cần ít nhất 3 trong 4 inputs:
+Can it nhat 3 trong 4 inputs:
 
-- **Style adjectives** 3-5 từ (vd "warm professional", "creative casual", "tech minimalist")
-- **Color preference** 1-3 màu hoặc neutral palette (b/w + 1 accent)
-- **Personal photo path** (optional — chỉ cần nếu muốn resemblance cao, vd avatar match founder thật)
-- **Position keyword** ngành/vai trò (vd "AI marketing strategist", "fitness coach", "indie developer")
+- **Style adjectives** 3-5 tu (vd "warm professional", "creative casual", "tech minimalist")
+- **Color preference** 1-3 mau hoac neutral palette (b/w + 1 accent)
+- **Personal photo path** (optional — chi can neu muon resemblance cao, vd avatar match founder that)
+- **Position keyword** nganh/vai tro (vd "AI marketing strategist", "fitness coach", "indie developer")
 
-Nếu user không cung cấp style hint → grill 3 câu trước khi gen: ngành/vai trò, 3 adjectives, màu yêu thích.
+Neu user khong cung cap style hint → grill 3 cau truoc khi gen: nganh/vai tro, 3 adjectives, mau yeu thich.
 
 ## Reference image intake
 
@@ -68,21 +68,21 @@ Neu user upload nhieu anh:
 
 ## Section anti-patterns
 
-- Avatar generic stock-photo-looking — phải có character + position cues (vd coach phải có vibe coach, dev phải có vibe dev)
-- Monogram quá detail (>3 elements) — monogram simple = scalable từ favicon đến billboard
-- Quote graphic với text trong AI gen image — luôn dùng HTML overlay cho text accuracy (xem `quote-graphic` mode)
-- Skip "position keyword" — model không có cue để render ngành nào, ra avatar chung chung
-- Avatar quay lưng / che mặt — recognizable = nhìn rõ mặt 3/4 hoặc front
+- Avatar generic stock-photo-looking — phai co character + position cues (vd coach phai co vibe coach, dev phai co vibe dev)
+- Monogram qua detail (>3 elements) — monogram simple = scalable tu favicon den billboard
+- Quote graphic voi text trong AI gen image — luon dung HTML overlay cho text accuracy (xem `quote-graphic` mode)
+- Skip "position keyword" — model khong co cue de render nganh nao, ra avatar chung chung
+- Avatar quay lung / che mat — recognizable = nhin ro mat 3/4 hoac front
 
 ## Prompt composition specifics
 
 Cho personal avatar:
-- **Subject**: portrait close-up hoặc 3/4 angle, eye-level, character matches position keyword (vd "AI marketing strategist" → smart casual blazer, holding laptop, modern workspace background)
-- **Lighting**: natural daylight warm (approachable) hoặc studio key+rim (professional/authority)
-- **Palette**: muted sophisticated (avoid neon, garish) — trừ khi position là "creative bold"
-- **Style**: photographic realistic 85mm portrait shallow DOF — hoặc editorial illustration nếu personal brand creative/artistic
+- **Subject**: portrait close-up hoac 3/4 angle, eye-level, character matches position keyword (vd "AI marketing strategist" → smart casual blazer, holding laptop, modern workspace background)
+- **Lighting**: natural daylight warm (approachable) hoac studio key+rim (professional/authority)
+- **Palette**: muted sophisticated (avoid neon, garish) — tru khi position la "creative bold"
+- **Style**: photographic realistic 85mm portrait shallow DOF — hoac editorial illustration neu personal brand creative/artistic
 
-Negatives bắt buộc: "no extra fingers, no warped face, no logo placeholders, no text in frame, no AI-slop typography, no plastic skin"
+Negatives bat buoc: "no extra fingers, no warped face, no logo placeholders, no text in frame, no AI-slop typography, no plastic skin"
 
 ## Examples
 
@@ -91,8 +91,8 @@ Negatives bắt buộc: "no extra fingers, no warped face, no logo placeholders,
 
 ## Grill questions
 
-1. Vai trò + ngành 1-line (vd "AI marketing strategist", "fitness coach", "indie developer")?
-2. 3-5 adjectives mô tả personal brand voice (vd "warm + analytical + bold")?
-3. Color preference (neutral b/w + 1 accent? hoặc 2-3 brand colors hex)?
-4. Có ảnh reference nào không? Ghi rõ: style ref, face ref, logo, palette, hay background.
-5. Format cần: avatar profile (1:1), keynote cover (16:9), quote post (1:1), story (9:16)?
+1. Vai tro + nganh 1-line (vd "AI marketing strategist", "fitness coach", "indie developer")?
+2. 3-5 adjectives mo ta personal brand voice (vd "warm + analytical + bold")?
+3. Color preference (neutral b/w + 1 accent? hoac 2-3 brand colors hex)?
+4. Co anh reference nao khong? Ghi ro: style ref, face ref, logo, palette, hay background.
+5. Format can: avatar profile (1:1), keynote cover (16:9), quote post (1:1), story (9:16)?

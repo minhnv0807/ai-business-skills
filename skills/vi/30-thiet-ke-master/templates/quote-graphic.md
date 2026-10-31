@@ -4,15 +4,15 @@
 quote-graphic (hybrid — AI generates background, HTML overlays text)
 
 ## Aspect ratio
-1:1 HOẶC 4:5
+1:1 HOAC 4:5
 
 ## Use case
 Quote post IG/LinkedIn/FB, motivational social post, personal brand inspiration. Strategy hybrid — AI gen background, HTML/Canva overlay text.
 
 ## Strategy
 
-1. **AI gen background image** — abstract/textural, NO focal subject competing với text
-2. **HTML overlay text** — quote + author handle + brand logo via HTML/CSS hoặc Canva
+1. **AI gen background image** — abstract/textural, NO focal subject competing voi text
+2. **HTML overlay text** — quote + author handle + brand logo via HTML/CSS hoac Canva
 
 ## Prompt structure (BACKGROUND only)
 
@@ -65,8 +65,8 @@ Negatives — no text, no faces, no detailed subject, no illustrations, no logos
 `quote-bg-[quote-slug].png` (background) + `quote-final-[quote-slug].png` (HTML render)
 
 ## Aspect ratio API parameter
-- gpt-image-2: `"1024x1024"` (1:1) hoặc `"1024x1792"` (4:5 manual crop)
-- MJ: `--ar 1:1` hoặc `--ar 4:5`
+- gpt-image-2: `"1024x1024"` (1:1) hoac `"1024x1792"` (4:5 manual crop)
+- MJ: `--ar 1:1` hoac `--ar 4:5`
 
 ## Cross-reference
 Xem `references/quote-graphic.md` cho HTML overlay variants + typography pairing.

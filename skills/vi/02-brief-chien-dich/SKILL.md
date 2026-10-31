@@ -3,7 +3,7 @@ name: 02-brief-chien-dich
 description: "Dung khi can brief mot chien dich cu the cho ca team thuc thi — muc tieu, thong diep, deliverable, timeline phan cong theo tuan, gate duyet va ma tran rui ro. Kich hoat khi user nhac 'brief chien dich', 'ke hoach campaign', 'len brief cho team', 'chien dich thang toi', 'phan cong campaign', 'timeline chien dich'. Khong dung cho — ke hoach marketing ca ky thi dung skill 00-ke-hoach-mkt; danh sach asset can thiet ke thi dung skill 41-campaign-asset-list; giao viec cho tung nguoi thi dung skill 64-team-brief."
 argument-hint: "<brand + campaign objective + timeline>"
 metadata:
-  version: 2.1.1
+  version: 2.1.2
   category: strategy
 triggers:
   - "brief chien dich"
@@ -44,17 +44,17 @@ Hoi user toi da 4 cau truoc khi bat dau:
 
 ---
 
-### Khi dùng skill / repo khác
+### Khi dung skill / repo khac
 
-| Tình huống | Use |
+| Tinh huong | Use |
 |------------|-----|
 | Single TVC 1-page brief (1 clip, 1 channel mix) | **`opa-prd --mode=creative`** (OPA KIT) — 10-section lightweight |
-| Full campaign brief (multi-creative, multi-channel, 14-21 ngày) | **02-brief-chien-dich** (this skill) |
-| Content calendar dài hạn (3-6 tháng) | **`01-lich-noi-dung`** |
+| Full campaign brief (multi-creative, multi-channel, 14-21 ngay) | **02-brief-chien-dich** (this skill) |
+| Content calendar dai han (3-6 thang) | **`01-lich-noi-dung`** |
 | Ad copy actual text production | **`05-copy-quang-cao`** |
 | Workflow chain 7 skills launch campaign | **`campaign-launch`** workflow (workflows/vi/) |
 
-> Note: `opa-prd` ở OPA KIT focus 1-page brief lightweight cho fast handoff sang AI agents (Seedance, Kling, Claude). Skill này (`02-brief-chien-dich`) focus full campaign với multiple touch points.
+> Note: `opa-prd` o OPA KIT focus 1-page brief lightweight cho fast handoff sang AI agents (Seedance, Kling, Claude). Skill nay (`02-brief-chien-dich`) focus full campaign voi multiple touch points.
 
 ---
 

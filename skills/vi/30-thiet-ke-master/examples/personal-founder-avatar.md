@@ -24,18 +24,18 @@ last_updated: 2026-05-20
 
 ## Context
 
-Minh đang chuyển hướng từ Facebook/Twitter casual sang LinkedIn-first thought leadership cho positioning "AI marketing strategist + OPA founder" (xem `22-personal-brand-context`). Avatar hiện tại là ảnh chụp casual quán cafe — không phù hợp cho LinkedIn audience B2B (CMO, marketing director, business owner) đang đánh giá Minh qua avatar đầu tiên.
+Minh dang chuyen huong tu Facebook/Twitter casual sang LinkedIn-first thought leadership cho positioning "AI marketing strategist + OPA founder" (xem `22-personal-brand-context`). Avatar hien tai la anh chup casual quan cafe — khong phu hop cho LinkedIn audience B2B (CMO, marketing director, business owner) dang danh gia Minh qua avatar dau tien.
 
-Cần avatar mới: chỉn chu hơn nhưng vẫn giữ được hơi thở "ấm áp, đời thường" — không phải corporate stock photo. Style adjectives đã khai: warm professional + tech-savvy + creative. Sẽ dùng làm avatar đồng nhất LinkedIn / Twitter / website OPA + làm base reference cho AI avatar production (`24-ai-avatar-production`) ở các thought leadership videos về sau.
+Can avatar moi: chin chu hon nhung van giu duoc hoi tho "am ap, doi thuong" — khong phai corporate stock photo. Style adjectives da khai: warm professional + tech-savvy + creative. Se dung lam avatar dong nhat LinkedIn / Twitter / website OPA + lam base reference cho AI avatar production (`24-ai-avatar-production`) o cac thought leadership videos ve sau.
 
 ## Brand identity loaded
 
 | Asset | Path / Value |
 |-------|--------------|
-| Reference ảnh thật | `assets/personal/minh-reference-2026.jpg` |
+| Reference anh that | `assets/personal/minh-reference-2026.jpg` |
 | Logo monogram | `assets/personal/minh-monogram.png` |
-| Palette chính | nâu `#2B1810` + kem `#F5F1E8` + gold accent `#D4A574` |
-| Typography brand | DM Sans (headings) — không xuất hiện trong avatar, chỉ context |
+| Palette chinh | nau `#2B1810` + kem `#F5F1E8` + gold accent `#D4A574` |
+| Typography brand | DM Sans (headings) — khong xuat hien trong avatar, chi context |
 | Style adjectives | warm professional, tech-savvy, creative, approachable, confident |
 | Position statement | "AI marketing strategist + OPA founder" |
 
@@ -49,7 +49,7 @@ Portrait 3/4 angle of Vietnamese male early 30s, smart casual attire (linen shir
 Natural daylight from window camera-left, warm golden hour temperature, soft fill from camera-right, rim light separating hair from background, calm and focused mood, magazine editorial feel not corporate stiff.
 
 [Palette + textures]
-Warm brown linen shirt with cream cardigan undertone, golden ambient light, muted café-style background blur in soft brown and amber, natural skin texture, no plastic AI-skin.
+Warm brown linen shirt with cream cardigan undertone, golden ambient light, muted cafe-style background blur in soft brown and amber, natural skin texture, no plastic AI-skin.
 
 [Style + medium]
 Photographic realistic 85mm portrait lens, shallow depth of field with creamy bokeh, editorial professional photography, magazine-quality, balanced highlights and shadows, color graded warm cinematic.
@@ -63,11 +63,11 @@ no extra fingers, no warped face features, no logo on clothing, no text in frame
 - File: `docs/design/personal-minh-avatar-2026.png` (1024×1024, hd quality)
 - Tier 2 Pro (`OPENAI_API_KEY` available)
 - Model: gpt-image-2
-- Render notes: 1 generation pass, no variant cần thiết (personal brand không multi-variant như logo). Self-test 3-câu PASS (warm professional + tech vibe + nhận ra đúng người).
+- Render notes: 1 generation pass, no variant can thiet (personal brand khong multi-variant nhu logo). Self-test 3-cau PASS (warm professional + tech vibe + nhan ra dung nguoi).
 
 ## Next steps
 
-1. Update LinkedIn / Twitter / OPA website (`bhop.vn`, `opa.business`) — đồng nhất 1 avatar across channels
-2. Dùng làm base reference cho `24-ai-avatar-production` cho thought leadership videos (HeyGen / Synthesia avatar clone)
-3. Variant 16:9 cho banner LinkedIn — gen lại với format `banner-hero` + crop wider
-4. Sau 30 ngày track CTR profile LinkedIn — nếu drop, A/B test thêm 1 variant style adjective khác (vd thêm "playful")
+1. Update LinkedIn / Twitter / OPA website (`bhop.vn`, `opa.business`) — dong nhat 1 avatar across channels
+2. Dung lam base reference cho `24-ai-avatar-production` cho thought leadership videos (HeyGen / Synthesia avatar clone)
+3. Variant 16:9 cho banner LinkedIn — gen lai voi format `banner-hero` + crop wider
+4. Sau 30 ngay track CTR profile LinkedIn — neu drop, A/B test them 1 variant style adjective khac (vd them "playful")

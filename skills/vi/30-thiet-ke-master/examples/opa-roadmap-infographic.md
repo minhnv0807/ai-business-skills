@@ -2,7 +2,7 @@
 title: OPA Kit + ai-business-skills 2026 roadmap infographic
 type_artifact: image-generated
 mode: infographic
-subject: Vertical 9:16 infographic 2026 roadmap OPA Kit + ai-business-skills (4 phase Q1/Q2/Q3/Q4) cho launch announcement post LinkedIn + Twitter — text-minimal strategy (icons + 4 large numbers), chi tiết viết trong caption
+subject: Vertical 9:16 infographic 2026 roadmap OPA Kit + ai-business-skills (4 phase Q1/Q2/Q3/Q4) cho launch announcement post LinkedIn + Twitter — text-minimal strategy (icons + 4 large numbers), chi tiet viet trong caption
 source_brief: none
 brand_identity:
   logo_path: assets/brand/opa-logo.svg
@@ -24,22 +24,22 @@ last_updated: 2026-05-20
 
 ## Context
 
-OPA launching combined 2026 roadmap cho 2 sản phẩm chính: OPA Kit (Claude Code plugin) + ai-business-skills (skills marketplace). Cần 1 hero infographic vertical 9:16 cho launch announcement post LinkedIn + Twitter — visual hook đầu post, chi tiết roadmap text-heavy (15+ data points: deliverable, deadline, dependency) viết trong caption.
+OPA launching combined 2026 roadmap cho 2 san pham chinh: OPA Kit (Claude Code plugin) + ai-business-skills (skills marketplace). Can 1 hero infographic vertical 9:16 cho launch announcement post LinkedIn + Twitter — visual hook dau post, chi tiet roadmap text-heavy (15+ data points: deliverable, deadline, dependency) viet trong caption.
 
-**User decision (đã chốt)**: gen via gpt-image-2 với strategy text-minimal — chấp nhận AI gen text unreliable. Chỉ embed:
+**User decision (da chot)**: gen via gpt-image-2 voi strategy text-minimal — chap nhan AI gen text unreliable. Chi embed:
 - 4 large numbers (Q1, Q2, Q3, Q4)
-- 4 icons isometric mỗi phase
+- 4 icons isometric moi phase
 - Connected flow line subtle
 
-Mọi text chi tiết (phase name, deliverable list, dependencies, dates) → viết caption post, KHÔNG ép AI vẽ.
+Moi text chi tiet (phase name, deliverable list, dependencies, dates) → viet caption post, KHONG ep AI ve.
 
-**Anti-pattern tránh**: KHÔNG ép AI gen 15+ data point text → sẽ méo chữ, sai chính tả "Q1" thành "QI", "Q4" thành "Q4official". Chỉ chấp nhận 4 number text dễ kiểm soát.
+**Anti-pattern tranh**: KHONG ep AI gen 15+ data point text → se meo chu, sai chinh ta "Q1" thanh "QI", "Q4" thanh "Q4official". Chi chap nhan 4 number text de kiem soat.
 
 ## Brand identity loaded
 
 | Asset | Path / Value |
 |-------|--------------|
-| Logo OPA | `assets/brand/opa-logo.svg` (overlay manual sau qua Figma, KHÔNG đưa vào prompt) |
+| Logo OPA | `assets/brand/opa-logo.svg` (overlay manual sau qua Figma, KHONG dua vao prompt) |
 | Palette primary | violet `#6d28d9` (OPA brand color) |
 | Palette accent per phase | blue `#2563eb` (Q1) + emerald `#10b981` (Q2) + amber `#f59e0b` (Q3) + rose `#f43f5e` (Q4) |
 | Typography | Inter (HTML caption only — image text minimal) |
@@ -69,16 +69,16 @@ no small text, no detailed text labels, no spelling beyond Q1/Q2/Q3/Q4, no warpe
 - File: `docs/design/opa-roadmap-2026.png` — 1024×1792, 9:16 vertical, hd quality
 - Tier 2 Pro (`OPENAI_API_KEY` available)
 - Model: gpt-image-2
-- Render notes: 1 generation pass. Self-test 3-câu PASS — brand fit (OPA violet primary + 4 accent palette), voice fit (minimalist tech aligned thought leadership voice), text accuracy ACCEPTABLE (chỉ 4 quarter labels Q1-Q4 dễ gen đúng). Logo OPA sẽ overlay manual qua Figma góc top-center.
+- Render notes: 1 generation pass. Self-test 3-cau PASS — brand fit (OPA violet primary + 4 accent palette), voice fit (minimalist tech aligned thought leadership voice), text accuracy ACCEPTABLE (chi 4 quarter labels Q1-Q4 de gen dung). Logo OPA se overlay manual qua Figma goc top-center.
 
 ## Workaround note
 
-> ⚠️ Text trong AI gen image unreliable. Roadmap chi tiết (15+ data points: deliverable per phase, dependencies, dates, milestones) sẽ viết trong caption post — KHÔNG ép vào image. Nếu user thực sự cần version text-heavy có spelling chính xác → recommend dùng **Canva template "Roadmap"** (`https://canva.com/templates/roadmap`) — fill text qua Canva interface chính xác 100%. Image này CHỈ dùng làm hero visual cho launch post, không phải reference roadmap chi tiết.
+> ⚠️ Text trong AI gen image unreliable. Roadmap chi tiet (15+ data points: deliverable per phase, dependencies, dates, milestones) se viet trong caption post — KHONG ep vao image. Neu user thuc su can version text-heavy co spelling chinh xac → recommend dung **Canva template "Roadmap"** (`https://canva.com/templates/roadmap`) — fill text qua Canva interface chinh xac 100%. Image nay CHI dung lam hero visual cho launch post, khong phai reference roadmap chi tiet.
 
 ## Next steps
 
-1. **Figma overlay**: import PNG vào Figma, overlay logo OPA top-center + section title text Inter Bold mỗi phase (vd "Q1 — OPA Kit v3.0", "Q2 — Skills marketplace v3.0") — overlay Figma cho text accuracy
-2. **Post LinkedIn**: caption text-heavy detail roadmap 15+ data point (deliverable / dependency / date per phase) — hero image làm visual hook đầu post
-3. **Cross-post Twitter**: thread 4 tweet — mỗi tweet 1 phase với crop ảnh 9:16 section đó (Twitter card hỗ trợ vertical)
-4. **Cross-post `26-thought-leadership-content`**: gen narrative post commentary cho mỗi phase — "Why Q2 focus marketplace?" reflection content
-5. **Track**: impressions + saves rate launch post — nếu work, gen variant cho mid-year update (Q2 close → recap + Q3 preview)
+1. **Figma overlay**: import PNG vao Figma, overlay logo OPA top-center + section title text Inter Bold moi phase (vd "Q1 — OPA Kit v3.0", "Q2 — Skills marketplace v3.0") — overlay Figma cho text accuracy
+2. **Post LinkedIn**: caption text-heavy detail roadmap 15+ data point (deliverable / dependency / date per phase) — hero image lam visual hook dau post
+3. **Cross-post Twitter**: thread 4 tweet — moi tweet 1 phase voi crop anh 9:16 section do (Twitter card ho tro vertical)
+4. **Cross-post `26-thought-leadership-content`**: gen narrative post commentary cho moi phase — "Why Q2 focus marketplace?" reflection content
+5. **Track**: impressions + saves rate launch post — neu work, gen variant cho mid-year update (Q2 close → recap + Q3 preview)

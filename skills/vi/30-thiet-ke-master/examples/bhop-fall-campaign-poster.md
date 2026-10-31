@@ -27,22 +27,22 @@ last_updated: 2026-05-20
 
 BHOP cafe đang launch fall seasonal menu — 4 drink mới (Caramel Latte Mùa Thu, Cinnamon Matcha, Pumpkin Spice Vietnamese Coffee, Maple Cold Brew). Brief campaign từ `02-brief-chien-dich/bhop-fall.md` đã chốt key message "BHOP là góc thu Hà Nội của bạn" — gợi cảm giác cozy, slow, ambient — không phải product-pushy.
 
-Cần 2 deliverable hero image:
+Can 2 deliverable hero image:
 1. Landing page hero `bhop.vn/menu-thu` — format 16:9
-2. Variant OOH billboard — format 3:4 vertical (gen riêng pass thứ 2 cùng prompt logic, crop khác)
+2. Variant OOH billboard — format 3:4 vertical (gen rieng pass thu 2 cung prompt logic, crop khac)
 
-Logo BHOP sẽ overlay sau qua Figma — KHÔNG đưa logo vào prompt (AI gen logo dễ méo). Text key message cũng overlay sau, KHÔNG embed vào image.
+Logo BHOP se overlay sau qua Figma — KHONG dua logo vao prompt (AI gen logo de meo). Text key message cung overlay sau, KHONG embed vao image.
 
 ## Brand identity loaded
 
 | Asset | Path / Value |
 |-------|--------------|
 | Logo primary | `assets/brand/bhop-logo.svg` |
-| Palette | nâu `#2B1810` + kem `#F5F1E8` + warm autumn `#D4A574` |
+| Palette | nau `#2B1810` + kem `#F5F1E8` + warm autumn `#D4A574` |
 | Typography | DM Sans (headings) + Inter (body) |
 | Style adjectives | cinematic chill, warm tone, ambient sound, slow pacing, editorial cozy |
-| Brand source | `02-brief-chien-dich/bhop-fall.md` Section "Yêu cầu thương hiệu" + `brand-guideline.md` root project |
-| Mandatory | giữ DOF shallow, warm color grade, "ambient sound vibe", KHÔNG dùng stock photo aesthetic |
+| Brand source | `02-brief-chien-dich/bhop-fall.md` Section "Yeu cau thuong hieu" + `brand-guideline.md` root project |
+| Mandatory | giu DOF shallow, warm color grade, "ambient sound vibe", KHONG dung stock photo aesthetic |
 
 ## Prompt composed (5-section structure)
 
@@ -66,15 +66,15 @@ no logo in frame, no text overlay, no neon or saturated colors, no stock photo a
 ## Output
 
 - File 1: `docs/design/bhop-fall-hero.png` — 1792×1024, 16:9, hd quality
-- File 2: `docs/design/bhop-fall-hero-ooh.png` — 1024×1792, 9:16 vertical (gen riêng pass 2 với same prompt + composition flipped vertical, crop OOH)
+- File 2: `docs/design/bhop-fall-hero-ooh.png` — 1024×1792, 9:16 vertical (gen rieng pass 2 voi same prompt + composition flipped vertical, crop OOH)
 - Tier 2 Pro (`OPENAI_API_KEY` available)
 - Model: gpt-image-2
-- Render notes: 2 generation passes (1 landscape + 1 vertical OOH). Self-test 3-câu PASS — brand fit (warm earth palette match BHOP guideline), voice fit (cinematic chill match brief), no text in-image (logo + slogan overlay handoff sang Figma).
+- Render notes: 2 generation passes (1 landscape + 1 vertical OOH). Self-test 3-cau PASS — brand fit (warm earth palette match BHOP guideline), voice fit (cinematic chill match brief), no text in-image (logo + slogan overlay handoff sang Figma).
 
 ## Next steps
 
 1. **Figma overlay**: import 2 PNG vào Figma, overlay logo BHOP góc trái dưới + headline DM Sans Bold "BHOP là góc thu Hà Nội của bạn" + CTA "Khám phá menu thu →" link `bhop.vn/menu-thu`
-2. **A/B test 2 variant**: hero crop (16:9 landing) vs OOH crop (3:4 billboard) — track CTR landing 7 ngày, chọn winner cho variant social
+2. **A/B test 2 variant**: hero crop (16:9 landing) vs OOH crop (3:4 billboard) — track CTR landing 7 ngay, chon winner cho variant social
 3. **Handoff `05-copy-quang-cao`**: gen caption Facebook/Instagram cho post launch (3 variant tone — emotional / FOMO / educational)
-4. **Handoff `01-lich-noi-dung`**: schedule post launch trên FB + IG + TikTok Shop trong tuần 1 launch (xem content calendar fall 2026)
-5. **Track metric**: CTR landing page + add-to-cart rate menu thu — feed lại `03-danh-gia-hieu-suat` sau 14 ngày
+4. **Handoff `01-lich-noi-dung`**: schedule post launch tren FB + IG + TikTok Shop trong tuan 1 launch (xem content calendar fall 2026)
+5. **Track metric**: CTR landing page + add-to-cart rate menu thu — feed lai `03-danh-gia-hieu-suat` sau 14 ngay

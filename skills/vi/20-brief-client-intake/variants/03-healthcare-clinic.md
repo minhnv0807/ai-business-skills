@@ -342,7 +342,7 @@ Danh sach bao hiem lien ket: ............................
 - [ ] Trang giao duc y khoa (SEO blog)
 
 ### H3. Database benh nhan
-- So SĐT benh nhan: ............
+- So SDT benh nhan: ............
 - He thong CRM: ............ (ten phan mem)
 - Email database: ............
 
@@ -376,8 +376,8 @@ Danh sach bao hiem lien ket: ............................
 
 ### I4. Compliance phai check truoc khi dang
 - [ ] Tat ca content y khoa qua duyet boi truong khoa
-- [ ] Quang cao Meta phai trong Special Ad Category (Sức khỏe)
-- [ ] Khong Lookalike Audience cho Sức khỏe (Meta cấm)
+- [ ] Quang cao Meta phai trong Special Ad Category (Suc khoe)
+- [ ] Khong Lookalike Audience cho Suc khoe (Meta cam)
 - [ ] Tu van mien phi co ban quyen audio
 - [ ] Bao mat thong tin benh nhan (HIPAA-style)
 

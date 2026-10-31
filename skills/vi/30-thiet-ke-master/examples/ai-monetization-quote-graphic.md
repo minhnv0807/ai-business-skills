@@ -1,8 +1,8 @@
 ---
-title: AI Kiếm Tiền — quote graphic "Output > Input"
+title: AI Kiem Tien — quote graphic "Output > Input"
 type_artifact: image-generated
 mode: quote-graphic
-subject: Quote graphic LinkedIn 1:1 promoting prompt engineering lesson từ course "AI Kiếm Tiền" Buổi 3 — hybrid approach (gen background qua gpt-image-2 + HTML overlay text cho accuracy)
+subject: Quote graphic LinkedIn 1:1 promoting prompt engineering lesson tu course "AI Kiem Tien" Buoi 3 — hybrid approach (gen background qua gpt-image-2 + HTML overlay text cho accuracy)
 source_brief: none
 brand_identity:
   logo_path: assets/personal/minh-monogram.png
@@ -22,23 +22,23 @@ created: 2026-05-20
 last_updated: 2026-05-20
 ---
 
-# AI Kiếm Tiền — quote graphic "Output > Input"
+# AI Kiem Tien — quote graphic "Output > Input"
 
 ## Context
 
-Minh sharing quote từ Buổi 3 của course "AI Kiếm Tiền" về prompt engineering — message "Output > Input" (kết quả quan trọng hơn nguyên liệu đầu vào, ý là biết hỏi đúng quan trọng hơn là có công cụ xịn). Format LinkedIn quote post 1:1 — đăng lên LinkedIn cá nhân + repost OPA page.
+Minh sharing quote tu Buoi 3 cua course "AI Kiem Tien" ve prompt engineering — message "Output > Input" (ket qua quan trong hon nguyen lieu dau vao, y la biet hoi dung quan trong hon la co cong cu xin). Format LinkedIn quote post 1:1 — dang len LinkedIn ca nhan + repost OPA page.
 
-**Hybrid approach** (không gen text trong image):
-- Gen background image qua gpt-image-2 — minimalist warm paper texture, KHÔNG có text (AI gen text Việt dấu vỡ + AI gen text Anh cũng méo)
-- HTML overlay text qua DM Sans Bold — accuracy 100%, font đúng brand, dễ chỉnh sửa
-- Export PNG cuối qua Puppeteer screenshot HTML — output 1024×1024 đăng được luôn
+**Hybrid approach** (khong gen text trong image):
+- Gen background image qua gpt-image-2 — minimalist warm paper texture, KHONG co text (AI gen text Viet dau vo + AI gen text Anh cung meo)
+- HTML overlay text qua DM Sans Bold — accuracy 100%, font dung brand, de chinh sua
+- Export PNG cuoi qua Puppeteer screenshot HTML — output 1024×1024 dang duoc luon
 
 ## Brand identity loaded
 
 | Asset | Path / Value |
 |-------|--------------|
-| Logo monogram | `assets/personal/minh-monogram.png` (chèn góc bottom-right HTML overlay) |
-| Palette | cream `#F5F1E8` base + nâu `#2B1810` text + gold `#D4A574` accent |
+| Logo monogram | `assets/personal/minh-monogram.png` (chen goc bottom-right HTML overlay) |
+| Palette | cream `#F5F1E8` base + nau `#2B1810` text + gold `#D4A574` accent |
 | Typography | DM Sans Bold cho quote text, DM Sans Regular cho byline |
 | Author handle | `@minhnv_opa` |
 | Style adjectives | warm minimal, editorial, cream paper, thoughtful, founder voice |
@@ -120,17 +120,17 @@ no text, no letters, no typography, no faces, no detailed subjects, no logos, no
 
 ## Output
 
-- Background: `docs/design/quote-output-input-bg.png` — 1024×1024, standard quality (background không cần hd)
-- HTML overlay: `docs/design/quote-output-input.html` — editable cho variant text khác
-- Final PNG: `docs/design/quote-output-input.png` — 1024×1024 export qua `npx puppeteer-screenshot quote-output-input.html` hoặc Chrome DevTools "Capture full size screenshot"
+- Background: `docs/design/quote-output-input-bg.png` — 1024×1024, standard quality (background khong can hd)
+- HTML overlay: `docs/design/quote-output-input.html` — editable cho variant text khac
+- Final PNG: `docs/design/quote-output-input.png` — 1024×1024 export qua `npx puppeteer-screenshot quote-output-input.html` hoac Chrome DevTools "Capture full size screenshot"
 - Tier 2 Pro (background gen qua gpt-image-2)
 - Model: gpt-image-2 (background) + manual HTML (text)
-- Render notes: Self-test 3-câu PASS — brand fit (palette + DM Sans match), voice fit (founder thoughtful tone), usability fit (text accuracy 100% qua HTML, dấu tiếng Việt sai 0 lần)
+- Render notes: Self-test 3-cau PASS — brand fit (palette + DM Sans match), voice fit (founder thoughtful tone), usability fit (text accuracy 100% qua HTML, dau tieng Viet sai 0 lan)
 
 ## Next steps
 
-1. **Post LinkedIn**: dùng caption từ `26-thought-leadership-content` — expand quote thành thread 4 câu giải thích "output > input" trong prompt engineering
-2. **Cross-post OPA page**: cùng caption + tag course "AI Kiếm Tiền" Buổi 3 link đăng ký
-3. **Track engagement**: Like + comment + share rate sau 48h — nếu engagement >5x baseline → variant nhiều quote khác cùng format (mỗi tuần 1 quote)
-4. **Iterate format**: nếu format quote-graphic này work tốt, tạo template HTML reusable trong `templates/quote-graphic.md` để gen nhanh hơn lần sau (chỉ thay text + background)
-5. **Tránh anti-pattern**: KHÔNG embed text vào AI gen image — luôn hybrid HTML overlay
+1. **Post LinkedIn**: dung caption tu `26-thought-leadership-content` — expand quote thanh thread 4 cau giai thich "output > input" trong prompt engineering
+2. **Cross-post OPA page**: cung caption + tag course "AI Kiem Tien" Buoi 3 link dang ky
+3. **Track engagement**: Like + comment + share rate sau 48h — neu engagement >5x baseline → variant nhieu quote khac cung format (moi tuan 1 quote)
+4. **Iterate format**: neu format quote-graphic nay work tot, tao template HTML reusable trong `templates/quote-graphic.md` de gen nhanh hon lan sau (chi thay text + background)
+5. **Tranh anti-pattern**: KHONG embed text vao AI gen image — luon hybrid HTML overlay
