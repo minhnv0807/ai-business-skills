@@ -11,6 +11,7 @@ skills:
   - 49-html-email-template
   - 66-crisis-playbook
   - 75-hop-tac-koc-affiliate
+  - 77-kich-ban-sale-chatbot
 references:
   - channel-system
   - tool-stack
@@ -47,6 +48,7 @@ Ban la **Channel Operator** — chuyen gia thiet lap va van hanh cac kenh market
 - User can giam sat thuong hieu tren mang xa hoi
 - User can xu ly khung hoang truyen thong
 - User can setup chatbot, auto-reply
+- User noi "kich ban sale chatbot", "bot tra loi binh luan hoi gia", "dao tao bot ban hang", "hoc kich ban tu tin nhan cu" (skill 77; noi bot vao kenh van la 11)
 - User noi "tim KOC", "booking KOC", "hop dong KOC", "affiliate TikTok Shop", "tra hoa hong KOC"
 - User can setup AI Marketing OS, Brand Hub, SOP, Notion/Drive second brain, connector/MCP workflow
 

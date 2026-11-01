@@ -37,6 +37,7 @@
 - [Dual-Layer Copy](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/74-copy-hai-lop/SKILL.md): Two-layer slogan and poster headline method for Vietnamese brands
 - [KOC / Affiliate Partnerships](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/75-hop-tac-koc-affiliate/SKILL.md): Find, vet, contract and pay KOCs and affiliates; disclosure duties link to the legal hub
 - [Marketplace Operations](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/76-van-hanh-san-tmdt/SKILL.md): Order P&L after marketplace fees, break-even ROAS, mega sales, vouchers and livestream selling on Shopee / TikTok Shop / Lazada
+- [Chatbot Sales Playbook](https://github.com/minhnv0807/ai-business-skills/blob/master/skills/vi/77-kich-ban-sale-chatbot/SKILL.md): Sales scripts and product knowledge for AI sales chatbots (inbox + public comments), human .md plus machine-readable .pack.json; 3 industry packs
 
 ## Skills — Role SOP Packs (Vietnam Edition, 33 skills)
 

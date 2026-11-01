@@ -1,7 +1,7 @@
 # Roadmap
 
-> Public roadmap for `ai-business-skills` — 146 production-ready AI marketing skills for Claude Code, ChatGPT, Gemini & Copilot.
-> Last updated: 2026-10-28
+> Public roadmap for `ai-business-skills` — 147 production-ready AI marketing skills for Claude Code, ChatGPT, Gemini & Copilot.
+> Last updated: 2026-10-31
 
 ## 🎯 North Star
 Become the standard open-source AI marketing skill library for Vietnamese SMEs and global solo founders, with **150+ skills across 6+ regions** by end of 2026.
@@ -86,6 +86,13 @@ Become the standard open-source AI marketing skill library for Vietnamese SMEs a
 
 ## 🗺️ Planned
 
+### 77 v1.1 — Chatbot sales playbook, next steps *(follows the v1.0 PR)*
+- English pair `77-chatbot-sales-playbook-global` (adapted, not translated: channels, FTC/GDPR/CCPA, EU AI Act Art. 50)
+- Six remaining industry packs: mom & baby, packaged food & drink, spa & beauty, electronics & accessories, online courses, supplements
+- Zero-dependency scripts: `validate-pack.mjs` (schema check) and `export-opa.mjs` (projection to `opa.sales_playbook/v1`); optional schema check inside `scripts/check-repo.mjs`
+- Pack 1.1.0 (additive, optional): `objections[].category`, `follow_up[]`, `exports.opa_agent.playbook_v1`
+- Later (v1.2): workflow `chatbot-sales-loop`, sibling routing and docs sync
+
 ### v2.7.0 — India + MENA *(target: 2026-08)*
 - India cluster (INR, Hindi/English, WhatsApp Business, Flipkart, Meesho, GST)
 - MENA cluster (AED/SAR, Arabic-RTL support, Snapchat-heavy, Noon, Talabat)
@@ -129,7 +136,7 @@ Become the standard open-source AI marketing skill library for Vietnamese SMEs a
 | Q3 2026 | 78 (VN + Global) | v3.1 → v3.6 | Design master, growth, AI Marketing OS, role SOP packs bilingual |
 | Q4 2026 (planned) | 15+ | v3.7, v4.0 | APAC region variants, B2B vertical pack |
 
-**Current: 146 skills. Target: 150+ by end of 2026.**
+**Current: 147 skills. Target: 150+ by end of 2026.**
 
 ---
 

@@ -18,7 +18,7 @@
 | 08-nghien-cuu-doi-thu | 2.3.3 | 2026-10-31 | strategy |
 | 09-insight-khach-hang | 2.1.2 | 2026-10-31 | strategy |
 | 10-tinh-kpi-nguoc | 2.2.1 | 2026-10-28 | performance |
-| 11-thiet-lap-kenh | 2.1.0 | 2026-10-26 | operations |
+| 11-thiet-lap-kenh | 2.1.1 | 2026-10-31 | operations |
 | 12-brief-landing-page | 2.1.3 | 2026-10-31 | content |
 | 13-phan-tich-du-lieu | 2.1.3 | 2026-10-28 | performance |
 | 14-email-marketing | 2.2.1 | 2026-10-31 | operations |
@@ -78,7 +78,7 @@
 | 68-cro-audit-trang | 1.0.0 | 2026-08-10 | performance |
 | 69-giu-chan-khach-hang | 1.0.0 | 2026-08-10 | operations |
 | 70-lead-magnet | 1.0.0 | 2026-08-10 | content |
-| 71-sales-enablement | 1.0.0 | 2026-08-10 | operations |
+| 71-sales-enablement | 1.0.1 | 2026-10-31 | operations |
 | 72-hoi-dong-marketing | 1.0.0 | 2026-08-10 | strategy |
 | 74-copy-hai-lop | 1.0.1 | 2026-10-31 | content |
 | product-marketing-context-global | 1.1.0 | 2026-10-26 | foundation |
@@ -152,6 +152,7 @@
 | 67-agency-vendor-brief-global | 1.0.1 | 2026-08-10 | operations |
 | 75-hop-tac-koc-affiliate | 1.0.0 | 2026-10-26 | operations |
 | 76-van-hanh-san-tmdt | 1.0.0 | 2026-10-26 | performance |
+| 77-kich-ban-sale-chatbot | 1.0.0 | 2026-10-31 | operations |
 
 ## Changelog
 
