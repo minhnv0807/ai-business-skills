@@ -275,26 +275,47 @@ A workflow is a fixed chain of skills: either a job that takes several days, or 
 **Content engine: a monthly loop**
 
 ```mermaid
-flowchart LR
-    V["35 Brand voice"] --> I["09 Insight"] --> CAL["01 Calendar"] --> BR["36 Content brief"]
-    BR --> W["Write<br/>37 captions · 04 scripts · 05 ads<br/>14 email · 38 seeding · 06 UGC"]
-    W --> VIS["Visual briefs<br/>42 · 43 · 44"]
-    VIS --> AU["39 Content audit"] --> RP["07 Report"] --> NX["40 Next plan"]
-    NX -->|next month| CAL
+flowchart TB
+    subgraph PREP["1 · Plan the month"]
+        direction LR
+        V["35 Brand voice"] --> I["09 Insight"] --> CAL["01 Calendar"] --> BR["36 Content brief"]
+    end
+    subgraph MAKE["2 · Make the content"]
+        direction LR
+        W["Write<br/>37 captions · 04 scripts · 05 ads<br/>14 email · 38 seeding · 06 UGC"] --> VIS["Visual briefs<br/>42 · 43 · 44"]
+    end
+    subgraph LEARN["3 · Measure and plan again"]
+        direction LR
+        AU["39 Content audit"] --> RP["07 Report"] --> NX["40 Next plan"]
+    end
+    PREP --> MAKE --> LEARN
+    LEARN -.->|next month| PREP
 ```
 
 **Performance loop: no spend before tracking works**
 
 ```mermaid
-flowchart LR
-    A["51 Audience"] --> K["10 Reverse KPI"] --> M["54 Media plan"] --> T{"53 Tracking<br/>verified?"}
-    T -->|no| FIX["Fix tracking<br/>no spend yet"] --> T
-    T -->|yes| S["52 Account structure"] --> C["05 Ad copy"] --> AB["19 A/B test"] --> AU["21 Ads audit"]
-    AU -->|winner| SC["55 Scale +20-30%<br/>at least 72h apart"]
-    AU -->|warm audience| RT["56 Retargeting"]
-    SC --> R["07 Report"]
-    RT --> R
-    R --> N["57 Next ads plan"] -->|next cycle| M
+flowchart TB
+    subgraph PLAN["1 · Plan"]
+        direction LR
+        A["51 Audience"] --> K["10 Reverse KPI"] --> M["54 Media plan"]
+    end
+    subgraph GATE["2 · Tracking gate"]
+        direction LR
+        T{"53 Tracking<br/>verified?"} -->|no| FIX["Fix tracking<br/>no spend yet"] --> T
+    end
+    subgraph RUN["3 · Launch and test"]
+        direction LR
+        S["52 Account structure"] --> C["05 Ad copy"] --> AB["19 A/B test"] --> AU["21 Ads audit"]
+    end
+    subgraph GROW["4 · Scale and learn"]
+        direction LR
+        SC["55 Scale winners<br/>+20-30%, 72h apart"] --> R["07 Report"]
+        RT["56 Retarget<br/>warm audiences"] --> R
+        R --> N["57 Next ads plan"]
+    end
+    PLAN --> GATE -->|verified| RUN --> GROW
+    GROW -.->|next cycle| PLAN
 ```
 
 **Design pipeline: counted back from launch day**

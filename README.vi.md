@@ -275,26 +275,47 @@ Workflow là một chuỗi skill cố định: hoặc một việc kéo dài nhi
 **Content engine: vòng lặp hằng tháng**
 
 ```mermaid
-flowchart LR
-    V["35 Brand voice"] --> I["09 Insight"] --> CAL["01 Lịch nội dung"] --> BR["36 Content brief"]
-    BR --> W["Viết<br/>37 caption · 04 kịch bản · 05 quảng cáo<br/>14 email · 38 seeding · 06 UGC"]
-    W --> VIS["Brief hình ảnh<br/>42 · 43 · 44"]
-    VIS --> AU["39 Audit nội dung"] --> RP["07 Báo cáo"] --> NX["40 Kế hoạch kỳ sau"]
-    NX -->|tháng sau| CAL
+flowchart TB
+    subgraph PREP["1 · Lên kế hoạch tháng"]
+        direction LR
+        V["35 Brand voice"] --> I["09 Insight"] --> CAL["01 Lịch nội dung"] --> BR["36 Content brief"]
+    end
+    subgraph MAKE["2 · Sản xuất nội dung"]
+        direction LR
+        W["Viết<br/>37 caption · 04 kịch bản · 05 quảng cáo<br/>14 email · 38 seeding · 06 UGC"] --> VIS["Brief hình ảnh<br/>42 · 43 · 44"]
+    end
+    subgraph LEARN["3 · Đo lường và lên kế hoạch lại"]
+        direction LR
+        AU["39 Audit nội dung"] --> RP["07 Báo cáo"] --> NX["40 Kế hoạch kỳ sau"]
+    end
+    PREP --> MAKE --> LEARN
+    LEARN -.->|tháng sau| PREP
 ```
 
 **Performance loop: chưa verify tracking thì chưa tiêu tiền**
 
 ```mermaid
-flowchart LR
-    A["51 Tệp khách hàng"] --> K["10 KPI ngược"] --> M["54 Media plan"] --> T{"53 Tracking<br/>đã verify?"}
-    T -->|chưa| FIX["Sửa tracking<br/>chưa chạy ads"] --> T
-    T -->|rồi| S["52 Cấu trúc tài khoản"] --> C["05 Copy quảng cáo"] --> AB["19 A/B test"] --> AU["21 Audit ads"]
-    AU -->|nhóm thắng| SC["55 Scale +20-30%<br/>cách nhau ít nhất 72 giờ"]
-    AU -->|tệp ấm| RT["56 Retargeting"]
-    SC --> R["07 Báo cáo"]
-    RT --> R
-    R --> N["57 Kế hoạch ads kỳ sau"] -->|chu kỳ sau| M
+flowchart TB
+    subgraph PLAN["1 · Lập kế hoạch"]
+        direction LR
+        A["51 Tệp khách hàng"] --> K["10 KPI ngược"] --> M["54 Media plan"]
+    end
+    subgraph GATE["2 · Cổng tracking"]
+        direction LR
+        T{"53 Tracking<br/>đã verify?"} -->|chưa| FIX["Sửa tracking<br/>chưa chạy ads"] --> T
+    end
+    subgraph RUN["3 · Chạy và test"]
+        direction LR
+        S["52 Cấu trúc tài khoản"] --> C["05 Copy quảng cáo"] --> AB["19 A/B test"] --> AU["21 Audit ads"]
+    end
+    subgraph GROW["4 · Scale và rút kinh nghiệm"]
+        direction LR
+        SC["55 Scale nhóm thắng<br/>+20-30%, cách nhau 72 giờ"] --> R["07 Báo cáo"]
+        RT["56 Retargeting<br/>tệp ấm"] --> R
+        R --> N["57 Kế hoạch ads kỳ sau"]
+    end
+    PLAN --> GATE -->|đã verify| RUN --> GROW
+    GROW -.->|chu kỳ sau| PLAN
 ```
 
 **Design pipeline: đếm ngược từ ngày ra mắt**
