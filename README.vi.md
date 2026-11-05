@@ -80,8 +80,6 @@ bash install.sh --global      # macOS / Linux -> ~/.claude/skills/marketing/
 .\install.ps1 -Global          # Windows
 ```
 
-> Script chép `skills/`, `agents/`, `workflows/`, `knowledge/` và `references/`. Các skill thương hiệu cá nhân và dropshipping nằm trong `modules/`: có sẵn khi cài bằng plugin, hoặc bạn tự chép thư mục đó.
-
 **AI tool khác (ChatGPT, Gemini, Cursor…):** xem [Dùng với AI tool khác](#-dùng-với-ai-tool-khác).
 
 ### 2. Mô tả doanh nghiệp một lần
