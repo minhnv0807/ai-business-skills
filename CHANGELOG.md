@@ -9,6 +9,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed — installers now copy `modules/`
+
+- `install.sh` and `install.ps1` now install the contents of `modules/` (personal branding 22-28 and dropshipping 29), so script installs give the same 147 skills and 19 workflows as the plugin. Before, script users silently got 132 skills and 12 workflows.
+- Layout mirrors the plugin: module skills are merged next to the core ones in `vi/` and `en/` under the install target, module workflows go to `workflows/vi` and `workflows/en`, and each module `README.md` goes to `modules/<name>/README.md`. Flags, the Global/Project choice and output are unchanged.
+- `install.ps1`: replaced the em dash in the header comment and banner with `-`. The file has no BOM, so Windows PowerShell 5.1 read the dash as a stray quote and the script did not parse at all.
+- Checked by running each installer with the project target into an empty folder: 147 `SKILL.md` and 19 workflow files, including 22-28 (VN and Global) and 29.
+
 ### Added — `77-kich-ban-sale-chatbot` v1.0.0 (VN)
 
 - New skill that turns a shop's catalog, redacted old conversations, policies and existing scripts into a sales playbook for an AI sales chatbot, for two surfaces: inbox and public comments. It writes two files: a `.md` for people and a `.pack.json` for machines (`ai-business-skills/sales-playbook@1.0.0`, JSON Schema in `references/schema/`). Packs stay `draft` until a named approver signs off.
