@@ -80,8 +80,6 @@ bash install.sh --global      # macOS / Linux -> ~/.claude/skills/marketing/
 .\install.ps1 -Global          # Windows
 ```
 
-> The scripts copy `skills/`, `agents/`, `workflows/`, `knowledge/` and `references/`. The personal brand and dropshipping skills live in `modules/`: they come with the plugin, or copy that folder yourself.
-
 **Another AI tool (ChatGPT, Gemini, Cursor…):** see [Use it with any AI tool](#-use-it-with-any-ai-tool).
 
 ### 2. Describe your business once

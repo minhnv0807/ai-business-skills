@@ -45,6 +45,28 @@ mkdir -p "${TARGET}"
 echo "Copying skills..."
 cp -r "${SKILL_DIR}/skills/"* "${TARGET}/" 2>/dev/null || true
 
+# Copy modules (personal branding 22-28, dropshipping 29): same layout as the plugin,
+# skills are merged next to the core ones in vi/ and en/, module workflows into workflows/
+echo "Copying modules..."
+for module in "${SKILL_DIR}/modules/"*/; do
+  [ -d "${module}" ] || continue
+  name="$(basename "${module}")"
+  for lang in vi en; do
+    if [ -d "${module}${lang}" ]; then
+      mkdir -p "${TARGET}/${lang}"
+      cp -r "${module}${lang}/"* "${TARGET}/${lang}/" 2>/dev/null || true
+    fi
+    if [ -d "${module}workflows/${lang}" ]; then
+      mkdir -p "${TARGET}/workflows/${lang}"
+      cp -r "${module}workflows/${lang}/"* "${TARGET}/workflows/${lang}/" 2>/dev/null || true
+    fi
+  done
+  if [ -f "${module}README.md" ]; then
+    mkdir -p "${TARGET}/modules/${name}"
+    cp "${module}README.md" "${TARGET}/modules/${name}/README.md" 2>/dev/null || true
+  fi
+done
+
 # Copy references
 mkdir -p "${TARGET}/references"
 cp -r "${SKILL_DIR}/references/"* "${TARGET}/references/" 2>/dev/null || true

@@ -1,4 +1,4 @@
-# Fullstack Marketing Skills — Installer for Windows
+# Fullstack Marketing Skills - Installer for Windows
 # Usage: .\install.ps1 [-Global] [-Project]
 
 param(
@@ -14,7 +14,7 @@ if ($Global) {
 } elseif ($Project) {
     $Target = Join-Path (Get-Location) ".claude\skills\marketing"
 } else {
-    Write-Host "Fullstack Marketing Skills — Installer" -ForegroundColor Cyan
+    Write-Host "Fullstack Marketing Skills - Installer" -ForegroundColor Cyan
     Write-Host ""
     Write-Host "  1) Global  (all projects)"
     Write-Host "  2) Project (current project only)"
@@ -53,6 +53,34 @@ foreach ($s in $sources) {
     $dst = Join-Path $Target $s.To
     if (Test-Path $src) {
         Copy-Item -Path $src -Destination $dst -Force -Recurse
+    }
+}
+
+# Copy modules (personal branding 22-28, dropshipping 29): same layout as the plugin,
+# skills are merged next to the core ones in vi\ and en\, module workflows into workflows\
+$modulesRoot = Join-Path $SkillDir "modules"
+if (Test-Path $modulesRoot) {
+    foreach ($module in Get-ChildItem -Path $modulesRoot -Directory) {
+        foreach ($lang in @("vi", "en")) {
+            $skillSrc = Join-Path $module.FullName $lang
+            if (Test-Path $skillSrc) {
+                $dst = Join-Path $Target $lang
+                New-Item -ItemType Directory -Path $dst -Force | Out-Null
+                Copy-Item -Path (Join-Path $skillSrc "*") -Destination $dst -Force -Recurse
+            }
+            $wfSrc = Join-Path $module.FullName "workflows\$lang"
+            if (Test-Path $wfSrc) {
+                $dst = Join-Path $Target "workflows\$lang"
+                New-Item -ItemType Directory -Path $dst -Force | Out-Null
+                Copy-Item -Path (Join-Path $wfSrc "*") -Destination $dst -Force -Recurse
+            }
+        }
+        $readme = Join-Path $module.FullName "README.md"
+        if (Test-Path $readme) {
+            $dst = Join-Path $Target "modules\$($module.Name)"
+            New-Item -ItemType Directory -Path $dst -Force | Out-Null
+            Copy-Item -Path $readme -Destination $dst -Force
+        }
     }
 }
 
