@@ -139,18 +139,16 @@ flowchart LR
 
 ### Chọn skill theo nhu cầu
 
-```mermaid
-flowchart LR
-    Q(["Bạn cần gì?"])
-    Q --> A["📈 Kế hoạch hoặc ngân sách"] --> A1["00 kế hoạch · 10 KPI ngược · 61 ngân sách"]
-    Q --> B["✍️ Nội dung bán được hàng"] --> B1["01 lịch · 04 video · 05 quảng cáo · 37 caption"]
-    Q --> C["🎨 Hình ảnh"] --> C1["30 thiết kế master · 41 danh sách asset · 42 brief hình ảnh"]
-    Q --> D["🔍 Quảng cáo hết hiệu quả"] --> D1["21 audit ads · 03 đánh giá · 53 tracking"]
-    Q --> E["🛒 Bán trên sàn TMĐT"] --> E1["76 Shopee / TikTok Shop · 75 KOC · 77 chatbot"]
-    Q --> F["🧲 Thêm lead và khách quay lại"] --> F1["70 lead magnet · 68 CRO · 69 retention"]
-    Q --> G["🎙️ Thương hiệu cá nhân"] --> G1["22 context · 23 chiến lược · 24 AI avatar"]
-    Q --> H["🧠 Hệ thống marketing bằng AI"] --> H1["34 AI Marketing OS · knowledge/"]
-```
+| Bạn cần… | Bắt đầu với |
+|---|---|
+| 📈 Kế hoạch hoặc ngân sách | **00** kế hoạch · **10** KPI ngược · **61** ngân sách |
+| ✍️ Nội dung bán được hàng | **01** lịch · **04** video · **05** quảng cáo · **37** caption |
+| 🎨 Hình ảnh | **30** thiết kế master · **41** danh sách asset · **42** brief hình ảnh |
+| 🔍 Quảng cáo hết hiệu quả | **21** audit ads · **03** đánh giá · **53** tracking |
+| 🛒 Bán trên sàn TMĐT | **76** Shopee / TikTok Shop · **75** KOC · **77** chatbot |
+| 🧲 Thêm lead và khách quay lại | **70** lead magnet · **68** CRO · **69** retention |
+| 🎙️ Thương hiệu cá nhân | **22** context · **23** chiến lược · **24** AI avatar |
+| 🧠 Hệ thống marketing bằng AI | **34** AI Marketing OS · `knowledge/` |
 
 ---
 
@@ -286,10 +284,9 @@ flowchart TB
     end
     subgraph LEARN["3 · Đo lường và lên kế hoạch lại"]
         direction LR
-        AU["39 Audit nội dung"] --> RP["07 Báo cáo"] --> NX["40 Kế hoạch kỳ sau"]
+        AU["39 Audit nội dung"] --> RP["07 Báo cáo"] --> NX["40 Kế hoạch kỳ sau"] -.-> AGAIN(["↻ Tháng sau:<br/>quay lại bước 1"])
     end
     PREP --> MAKE --> LEARN
-    LEARN -.->|tháng sau| PREP
 ```
 
 **Performance loop: chưa verify tracking thì chưa tiêu tiền**
@@ -312,10 +309,9 @@ flowchart TB
         direction LR
         SC["55 Scale nhóm thắng<br/>+20-30%, cách nhau 72 giờ"] --> R["07 Báo cáo"]
         RT["56 Retargeting<br/>tệp ấm"] --> R
-        R --> N["57 Kế hoạch ads kỳ sau"]
+        R --> N["57 Kế hoạch ads kỳ sau"] -.-> AGAIN(["↻ Chu kỳ sau:<br/>quay lại bước 1"])
     end
     PLAN --> GATE -->|đã verify| RUN --> GROW
-    GROW -.->|chu kỳ sau| PLAN
 ```
 
 **Design pipeline: đếm ngược từ ngày ra mắt**

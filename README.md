@@ -139,18 +139,16 @@ flowchart LR
 
 ### Pick a skill by what you need
 
-```mermaid
-flowchart LR
-    Q(["What do you need?"])
-    Q --> A["📈 A plan or a budget"] --> A1["00 plan · 10 reverse KPI · 61 budget"]
-    Q --> B["✍️ Content that sells"] --> B1["01 calendar · 04 video · 05 ads · 37 captions"]
-    Q --> C["🎨 Visuals"] --> C1["30 design master · 41 asset list · 42 image brief"]
-    Q --> D["🔍 Ads that stopped working"] --> D1["21 ads audit · 03 diagnosis · 53 tracking"]
-    Q --> E["🛒 Selling on marketplaces (VN)"] --> E1["76 Shopee / TikTok Shop · 75 KOC · 77 chatbot"]
-    Q --> F["🧲 More leads and repeat buyers (VN)"] --> F1["70 lead magnet · 68 CRO · 69 retention"]
-    Q --> G["🎙️ A personal brand"] --> G1["22 context · 23 strategy · 24 AI avatar"]
-    Q --> H["🧠 An AI marketing system"] --> H1["34 AI Marketing OS · knowledge/"]
-```
+| If you need… | Start with |
+|---|---|
+| 📈 A plan or a budget | **00** plan · **10** reverse KPI · **61** budget |
+| ✍️ Content that sells | **01** calendar · **04** video · **05** ads · **37** captions |
+| 🎨 Visuals | **30** design master · **41** asset list · **42** image brief |
+| 🔍 Ads that stopped working | **21** ads audit · **03** diagnosis · **53** tracking |
+| 🛒 Selling on marketplaces (VN) | **76** Shopee / TikTok Shop · **75** KOC · **77** chatbot |
+| 🧲 More leads and repeat buyers (VN) | **70** lead magnet · **68** CRO · **69** retention |
+| 🎙️ A personal brand | **22** context · **23** strategy · **24** AI avatar |
+| 🧠 An AI marketing system | **34** AI Marketing OS · `knowledge/` |
 
 ---
 
@@ -286,10 +284,9 @@ flowchart TB
     end
     subgraph LEARN["3 · Measure and plan again"]
         direction LR
-        AU["39 Content audit"] --> RP["07 Report"] --> NX["40 Next plan"]
+        AU["39 Content audit"] --> RP["07 Report"] --> NX["40 Next plan"] -.-> AGAIN(["↻ Next month:<br/>back to step 1"])
     end
     PREP --> MAKE --> LEARN
-    LEARN -.->|next month| PREP
 ```
 
 **Performance loop: no spend before tracking works**
@@ -312,10 +309,9 @@ flowchart TB
         direction LR
         SC["55 Scale winners<br/>+20-30%, 72h apart"] --> R["07 Report"]
         RT["56 Retarget<br/>warm audiences"] --> R
-        R --> N["57 Next ads plan"]
+        R --> N["57 Next ads plan"] -.-> AGAIN(["↻ Next cycle:<br/>back to step 1"])
     end
     PLAN --> GATE -->|verified| RUN --> GROW
-    GROW -.->|next cycle| PLAN
 ```
 
 **Design pipeline: counted back from launch day**
