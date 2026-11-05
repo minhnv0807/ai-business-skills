@@ -1,990 +1,725 @@
 <p align="center">
+  <img src="docs/images/hero.jpg" width="100%" alt="Minh hoạ: một tờ yêu cầu rơi vào tủ skill, chạy trên băng chuyền qua một quầy hàng phố Việt và một quả địa cầu cạnh thùng hàng xuất khẩu, rồi thành tập báo cáo, lịch và biểu đồ"/>
+</p>
+
+<h1 align="center">ai-business-skills</h1>
+
+<p align="center">
+  <b>147 skill marketing biến trợ lý AI của bạn thành cả một đội marketing.</b><br/>
+  Làm cho thị trường Việt Nam trước, dùng được cho Mỹ, châu Âu, Đông Nam Á và Mỹ Latin.
+</p>
+
+<p align="center">
   <a href="README.md"><img src="https://img.shields.io/badge/Language-English-blue?style=for-the-badge" alt="English"/></a>
-  <a href="README.vi.md"><img src="https://img.shields.io/badge/Ng%C3%B4n%20ng%E1%BB%AF-Ti%E1%BA%BFng%20Vi%E1%BB%87t-red?style=for-the-badge" alt="Tieng Viet"/></a>
+  <a href="README.vi.md"><img src="https://img.shields.io/badge/Ng%C3%B4n%20ng%E1%BB%AF-Ti%E1%BA%BFng%20Vi%E1%BB%87t-red?style=for-the-badge" alt="Tiếng Việt"/></a>
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/v3.6-Bilingual%20Role%20SOP-6d28d9?style=for-the-badge&labelColor=1e1033" alt="v3.6"/>
-  <img src="https://img.shields.io/badge/Skills-147-6d28d9?style=for-the-badge&labelColor=1e1033" alt="147 Skills"/>
-  <img src="https://img.shields.io/badge/Agents-6-be185d?style=for-the-badge&labelColor=1e1033" alt="6 Agents"/>
-  <img src="https://img.shields.io/badge/Workflows-19-0f766e?style=for-the-badge&labelColor=1e1033" alt="19 Workflows"/>
-  <img src="https://img.shields.io/badge/Market-Vietnam%202025--2026-f97316?style=for-the-badge&labelColor=1e1033" alt="Vietnam Market"/>
-  <img src="https://img.shields.io/badge/License-MIT-22c55e?style=for-the-badge&labelColor=1e1033" alt="MIT License"/>
-  <a href="https://www.opa.business/donate"><img src="https://img.shields.io/badge/%E2%9D%A4%EF%B8%8F%20Ung%20ho-Donate-ff69b4?style=for-the-badge&labelColor=1e1033" alt="Donate"/></a>
+  <img src="https://img.shields.io/badge/version-3.8.1-6d28d9?style=flat-square" alt="phiên bản 3.8.1"/>
+  <img src="https://img.shields.io/badge/skills-147-6d28d9?style=flat-square" alt="147 skill"/>
+  <img src="https://img.shields.io/badge/agents-6-be185d?style=flat-square" alt="6 agent"/>
+  <img src="https://img.shields.io/badge/workflows-19-0f766e?style=flat-square" alt="19 workflow"/>
+  <img src="https://img.shields.io/badge/markets-VN%20%2B%20Global-f97316?style=flat-square" alt="VN + Global"/>
+  <img src="https://img.shields.io/badge/license-MIT-22c55e?style=flat-square" alt="MIT"/>
+  <a href="https://github.com/minhnv0807/ai-business-skills/stargazers"><img src="https://img.shields.io/github/stars/minhnv0807/ai-business-skills?style=flat-square&color=yellow" alt="Stars"/></a>
+  <a href="https://github.com/minhnv0807/ai-business-skills/commits/master"><img src="https://img.shields.io/github/last-commit/minhnv0807/ai-business-skills?style=flat-square&color=violet" alt="Commit gần nhất"/></a>
+  <a href="https://www.opa.business/donate"><img src="https://img.shields.io/badge/%E2%9D%A4%EF%B8%8F-%E1%BB%A6ng%20h%E1%BB%99-ff69b4?style=flat-square" alt="Ủng hộ"/></a>
 </p>
 
 <p align="center">
-  <a href="https://www.opa.business/donate">
-    <img src="https://img.shields.io/badge/%E2%98%95%20Moi%20Toi%20Mot%20Coffee-Ung%20ho%20Open%20Source-ff5e5b?style=for-the-badge" alt="Ung ho du an"/>
-  </a>
-  <br/>
-  <sub><b>💖 147 skills, 100% mien phi & MIT — neu giup ban tiet kiem thoi gian, hay ung ho tai <a href="https://www.opa.business/donate">opa.business/donate</a></b></sub>
-</p>
-
-> **🆕 v3.6.0 (2026-07-30)** — Role SOP Packs Go Global.
-> Them 33 skill Global (35-67 `*-global`) — hoan tat parity song ngu cho ca 4 role pack. USD benchmark, kenh toan cau, compliance FTC/GDPR/CCPA. Zero breaking changes.
-
-> **v3.5.0 (2026-07-30)** — Role SOP Deep Integration.
-> Them 33 skill VN (35-67) cho 4 vai tro: Content system, Design production, Performance ops, Leader ops. Them kho `knowledge/` nen tang, agent `design-producer`, va 4 workflow vong lap. Zero breaking changes.
-
-> **v3.4.0 (2026-07-08)** — AI Marketing OS Expansion.
-> Them 2 skill moi: AI Marketing OS VN + Global — Brand Hub, role-based agents/projects, skill chains, connectors/MCP, second brain, data loops, SOPs. Zero breaking changes.
-
-> **🌍 v2.5.0 (2026-05-08)** — Cum Marketing Toan Cau.
-> 30 skills global moi (US/EU/SEA/LATAM), Dropshipping flagship, 5 agents universal. Zero breaking changes.
-> [Xem release notes →](docs/release-notes/v2.5.0.md) ·
-> [Bat dau nhanh →](docs/getting-started-global.md)
-
-> **🆕 v2.4.0 (2026-05-08)** — Cum Personal Brand + AI Avatar.
-> 7 skills moi, 1 agent, 3 workflows. Khong breaking changes.
-> [Xem release notes →](docs/release-notes/v2.4.0.md) ·
-> [Bat dau nhanh →](docs/getting-started-personal-brand.md)
-
-<h1 align="center">AI Business Skills</h1>
-
-<p align="center">
-  <strong>Bien AI thanh tro ly marketing chuyen nghiep — thiet ke cho thi truong Viet Nam.</strong>
-  <br/>
-  <sub>Framework <b>Over Powers Agency</b> | Claude Code + ChatGPT + Gemini + Copilot + Cursor</sub>
-</p>
-
-<p align="center">
-  <sub>
-    Tuan thu <a href="https://agentskills.io">Agent Skills Spec</a> |
-    Claude Code Plugin Marketplace |
-    Universal AI agent compat
-  </sub>
+  <a href="#-bắt-đầu-nhanh">Bắt đầu nhanh</a> ·
+  <a href="#-cách-hoạt-động">Cách hoạt động</a> ·
+  <a href="#-việt-nam-hay-global">Việt Nam hay Global</a> ·
+  <a href="#-6-agent-trong-đội">Agent</a> ·
+  <a href="#-workflow">Workflow</a> ·
+  <a href="#-toàn-bộ-147-skill">Toàn bộ skill</a> ·
+  <a href="#-dùng-với-ai-tool-khác">AI tool khác</a>
 </p>
 
 ---
 
-## Ban do nhanh trong 60 giay
+## ✨ Bạn nhận được gì
 
-Repo nay co 3 tang de doc cho de: **context** giu thong tin san pham, **skills** lam tung viec marketing, va **agents/workflows** noi nhieu skill thanh mot quy trinh hoan chinh.
+Mỗi skill là một file Markdown (`SKILL.md`) dạy trợ lý AI làm trọn một việc marketing: cần hỏi bạn những gì, áp dụng quy tắc và benchmark nào, và tài liệu cuối cùng phải có những phần nào. Bạn hỏi bằng lời thường. Bạn nhận về một file `.md` hoàn chỉnh, không phải lời khuyên chung chung.
 
-```mermaid
-flowchart LR
-    UserRequest["Ban dua yeu cau marketing"] --> Context["Foundation context<br/>.agents/*.md"]
-    Context --> Router{"Du an VN hay Global?"}
-    Router --> VN["Cum VN<br/>74 skills"]
-    Router --> Global["Cum Global<br/>69 skills"]
-    VN --> Agents["6 agents universal"]
-    Global --> Agents
-    Agents --> Workflows["19 workflows"]
-    Workflows --> Output["Ke hoach, copy, brief,<br/>bao cao, SOP, dashboard"]
+<p align="center">
+  <img src="docs/images/before-after.jpg" width="720" alt="Bên trái: một tờ giấy nhàu trên bàn trống. Bên phải: một bìa hồ sơ có tab phân mục, thẻ biểu đồ, thẻ lịch và một checklist"/>
+</p>
 
-    classDef user fill:#3b82f6,stroke:#1e40af,color:#fff
-    classDef system fill:#64748b,stroke:#334155,color:#fff
-    classDef admin fill:#f59e0b,stroke:#b45309,color:#fff
-    classDef cmsdev fill:#6d28d9,stroke:#4c1d95,color:#fff
-    classDef db fill:#10b981,stroke:#047857,color:#fff
+| Bạn hỏi | AI thông thường trả lời | Với ai-business-skills |
+|---|---|---|
+| "Lập kế hoạch marketing cho spa của tôi" | 500 chữ lời khuyên chung | Kế hoạch đầy đủ: 7 phần, KPI theo 3 kịch bản, phân bổ ngân sách, timeline theo tuần, bảng rủi ro |
+| "Viết quảng cáo Facebook cho liệu trình facial mới" | Một đoạn văn chung chung | 6 phiên bản (2 cho tệp lạnh, 2 tệp ấm, 2 tệp nóng), mỗi bản có headline, primary text và CTA |
+| "Viết báo cáo tháng này" | Một danh sách số liệu | Insight trước, rồi nguyên nhân gốc, việc cần làm trong 48 giờ tới và kế hoạch tháng sau |
 
-    class UserRequest user
-    class Context,Router system
-    class VN,Global db
-    class Agents cmsdev
-    class Workflows,Output admin
-```
-
-### Chon dung skill theo nhu cau
-
-```mermaid
-flowchart TD
-    Start["Ban can lam gi?"] --> Strategy{"Chien luoc / offer?"}
-    Start --> Content{"Noi dung / creative?"}
-    Start --> Data{"Audit / du lieu?"}
-    Start --> Ops{"Kenh / van hanh?"}
-    Start --> PB{"Personal brand?"}
-    Start --> OS{"Xay he thong AI marketing?"}
-
-    Strategy --> S00["00 ke hoach MKT<br/>10 KPI nguoc<br/>31 offer design"]
-    Content --> S01["01 lich noi dung<br/>04 script video<br/>05 copy ads<br/>30 thiet ke master"]
-    Data --> S03["03 danh gia hieu suat<br/>13 phan tich du lieu<br/>21 audit ads<br/>32 SEO growth"]
-    Ops --> S11["11 thiet lap kenh<br/>12 brief landing page<br/>14 email<br/>33 B2B lead gen"]
-    PB --> S22["22 PB context<br/>23 PB strategy<br/>24 AI avatar<br/>27 monetize"]
-    OS --> S34["34 AI Marketing OS<br/>Brand Hub + agents + SOP"]
-
-    classDef user fill:#3b82f6,stroke:#1e40af,color:#fff
-    classDef system fill:#64748b,stroke:#334155,color:#fff
-    classDef cmsdev fill:#6d28d9,stroke:#4c1d95,color:#fff
-
-    class Start user
-    class Strategy,Content,Data,Ops,PB,OS system
-    class S00,S01,S03,S11,S22,S34 cmsdev
-```
-
-## The Problem
-
-```
-Ban:    "Lap ke hoach marketing cho spa di"
-AI:     *Tra loi 500 tu chung chung, khong so lieu, khong KPI, khong timeline*
-
-Ban:    "Viet copy quang cao Facebook"
-AI:     *1 doan generic, khong phan biet cold/warm/hot audience*
-
-Ban:    "Bao cao thang nay"
-AI:     *Liet ke so lieu, khong co nhan dinh, khong de xuat hanh dong*
-```
-
-## The Solution
-
-```
-Ban:    "Lap ke hoach marketing cho spa"
-AI:     *File .md 2000+ tu — 5 phan, bang bieu, KPI 3 kich ban,
-         ngan sach phan bo, timeline tuan, risk matrix*
-
-Ban:    "Viet copy quang cao"
-AI:     *6 bien the — 2 TOFU + 2 MOFU + 2 BOFU,
-         moi bien the co headline + primary text + CTA*
-
-Ban:    "Bao cao thang"
-AI:     *Nhan dinh truoc, so lieu minh hoa, nguyen nhan goc re,
-         de xuat xu ly 48h + tuan nay, ke hoach thang sau*
-```
+**Hợp với:** kế hoạch marketing, brief chiến dịch, copy quảng cáo và kịch bản video, lịch nội dung, audit ads, bán hàng trên Shopee / TikTok Shop / Lazada, thương hiệu cá nhân, và vận hành đội marketing bằng AI.
+**Không dành cho:** viết code sản phẩm, đặc tả kỹ thuật hay deploy server.
 
 ---
 
-## Foundation Skill — Khong phai hoi lai
+## ⚡ Bắt đầu nhanh
 
-Moi skill khac bat dau bang: **doc `.agents/product-marketing-context.md` truoc**.
+### 1. Cài đặt (chọn một cách)
 
-```
-Chay 1 lan dau du an:
-> Thiet lap product marketing context cho [san pham]
-  → AI tao file .agents/product-marketing-context.md
-    chua 12 section (product, audience, persona, 
-    doi thu, dinh vi, noi dau, differentiation, ...)
+**Plugin Claude Code (dễ nhất, cài đủ 147 skill)**
 
-Moi lan sau:
-> Viet copy quang cao Facebook
-  → AI doc context → viet luon, khong hoi lai
-> Lap ke hoach MKT tháng toi
-  → AI doc context → lap luon, khong hoi lai
-```
-
-Tiet kiem **70% thoi gian** moi cuoc hoi thoai.
-
----
-
-## Quick Start
-
-### Option 1: Claude Code Plugin (khuyen dung)
-
-```bash
-# Trong Claude Code
+```text
 /plugin marketplace add minhnv0807/ai-business-skills
 /plugin install ai-business-skills
 ```
 
-### Option 2: Clone + Install
+**Script cài đặt**
 
 ```bash
 git clone https://github.com/minhnv0807/ai-business-skills.git
 cd ai-business-skills
+bash install.sh --global      # macOS / Linux -> ~/.claude/skills/marketing/
 ```
-
-<table>
-<tr>
-<td><b>macOS / Linux</b></td>
-<td><b>Windows</b></td>
-</tr>
-<tr>
-<td>
-
-```bash
-chmod +x install.sh
-./install.sh --global
-```
-
-</td>
-<td>
 
 ```powershell
-.\install.ps1 -Global
+.\install.ps1 -Global          # Windows
 ```
 
+> Script chép `skills/`, `agents/`, `workflows/`, `knowledge/` và `references/`. Các skill thương hiệu cá nhân và dropshipping nằm trong `modules/`: có sẵn khi cài bằng plugin, hoặc bạn tự chép thư mục đó.
+
+**AI tool khác (ChatGPT, Gemini, Cursor…):** xem [Dùng với AI tool khác](#-dùng-với-ai-tool-khác).
+
+### 2. Mô tả doanh nghiệp một lần
+
+```text
+> Thiết lập product marketing context cho Luna Spa
+```
+
+AI phỏng vấn bạn rồi lưu `.agents/product-marketing-context.md`: sản phẩm, khách hàng, đối thủ, định vị, bằng chứng và các lời từ chối thường gặp. Skill nào cũng đọc file này trước, nên bạn không phải kể lại từ đầu. Nếu bán ra ngoài Việt Nam, AI lưu `product-marketing-context-global.md`.
+
+### 3. Giao việc thật
+
+```text
+> Lập kế hoạch marketing tháng sau cho Luna Spa
+> Viết kịch bản TikTok 30 giây cho liệu trình facial mới
+> CPMess đang 45K, ROAS 1.8x. Audit giúp tôi và chỉ ra cần sửa gì
+> Tính ngược: cần ngân sách bao nhiêu để đạt doanh thu 200 triệu/tháng?
+```
+
+Mỗi câu trả lời được lưu thành `[skill]-[sản-phẩm]-[YYYYMMDD].md`, ví dụ `ke-hoach-mkt-spa-luna-20260415.md`.
+
+---
+
+## 🧭 Cách hoạt động
+
+```mermaid
+flowchart LR
+    A["💬 Bạn hỏi<br/>bằng lời thường"] --> B["📇 Đọc context<br/>.agents/*.md"]
+    B --> C{"🌏 Thị trường nào?"}
+    C -->|Việt Nam| D["🇻🇳 Skill VN<br/>skills/vi"]
+    C -->|Global| E["🌍 Skill Global<br/>skills/en"]
+    D --> F["❓ Hỏi tối đa 4 câu<br/>chỉ hỏi phần còn thiếu"]
+    E --> F
+    F --> G["📏 Áp quy tắc,<br/>benchmark, kiểm tra pháp lý"]
+    G --> H["📄 File .md hoàn chỉnh"]
+```
+
+| Thành phần | Là gì | Nằm ở đâu |
+|---|---|---|
+| **Context** | Doanh nghiệp của bạn trên một trang, viết một lần | `.agents/` trong dự án của bạn |
+| **Skill** | Một việc marketing, làm từ đầu đến cuối | `skills/vi/`, `skills/en/`, `modules/` |
+| **Agent** | Một vai trò (chiến lược, nội dung, thiết kế…) tự chọn skill phù hợp | `agents/` |
+| **Workflow** | Chuỗi skill cố định cho việc kéo dài nhiều ngày hoặc vòng lặp hằng tháng | `workflows/`, `modules/*/workflows/` |
+| **Knowledge** | Tài liệu nền để nạp vào AI project theo từng vai trò | `knowledge/` |
+
+**Skill gọi lẫn nhau.** Một yêu cầu có thể kéo theo nhiều skill, theo đúng thứ tự:
+
+```mermaid
+flowchart LR
+    I20["20 Tiếp nhận khách hàng"] --> I09["09 Insight khách hàng"] & I08["08 Nghiên cứu đối thủ"] & I10["10 Tính KPI ngược"]
+    I09 & I08 & I10 --> P00["00 Kế hoạch marketing"]
+    P00 --> B02["02 Brief chiến dịch"]
+    B02 --> C05["05 Copy quảng cáo"] & C04["04 Kịch bản video"] & C01["01 Lịch nội dung"]
+```
+
+### Chọn skill theo nhu cầu
+
+| Bạn cần… | Bắt đầu với |
+|---|---|
+| 📈 Kế hoạch hoặc ngân sách | **00** kế hoạch · **10** KPI ngược · **61** ngân sách |
+| ✍️ Nội dung bán được hàng | **01** lịch · **04** video · **05** quảng cáo · **37** caption |
+| 🎨 Hình ảnh | **30** thiết kế master · **41** danh sách asset · **42** brief hình ảnh |
+| 🔍 Quảng cáo hết hiệu quả | **21** audit ads · **03** đánh giá · **53** tracking |
+| 🛒 Bán trên sàn TMĐT | **76** Shopee / TikTok Shop · **75** KOC · **77** chatbot |
+| 🧲 Thêm lead và khách quay lại | **70** lead magnet · **68** CRO · **69** retention |
+| 🎙️ Thương hiệu cá nhân | **22** context · **23** chiến lược · **24** AI avatar |
+| 🧠 Hệ thống marketing bằng AI | **34** AI Marketing OS · `knowledge/` |
+
+---
+
+## 🌏 Việt Nam hay Global
+
+<table>
+<tr>
+<td width="50%" valign="top">
+<img src="docs/images/market-vn.jpg" width="100%" alt="Góc phố bán hàng Việt Nam: nhà ống cửa cuốn, ghế nhựa, xe máy chở hàng, nón lá, điện thoại kèm đèn ring light để livestream, đèn lồng giấy"/>
+<h3>🇻🇳 Cụm VN · 78 skill</h3>
+<ul>
+<li>Ngân sách tính bằng VND, benchmark Việt Nam 2025-2026</li>
+<li>Facebook, Zalo OA, TikTok, Shopee, TikTok Shop, Lazada</li>
+<li>Chương trình KOC, livestream bán hàng, chatbot bán hàng</li>
+<li>Một hub pháp lý chung cho quy định quảng cáo và dữ liệu tại Việt Nam</li>
+</ul>
+</td>
+<td width="50%" valign="top">
+<img src="docs/images/market-global.jpg" width="100%" alt="Trung tâm thương mại toàn cầu thu nhỏ: laptop hiện giao diện cửa hàng trống, quả địa cầu, container, băng chuyền hàng, xe tải nhỏ và bốn đồng hồ treo tường"/>
+<h3>🌍 Cụm Global · 69 skill</h3>
+<ul>
+<li>Biến thể cho Mỹ, châu Âu, Đông Nam Á và Mỹ Latin</li>
+<li>Tiền tệ, luật dữ liệu và kênh chính theo từng khu vực</li>
+<li>Ghi chú tuân thủ FTC, GDPR và CCPA</li>
+<li>Skill chủ lực dropshipping (<code>29-dropshipping-mastery-global</code>)</li>
+</ul>
 </td>
 </tr>
 </table>
 
-### Option 3: Voi agent khac (ChatGPT, Gemini, Cursor)
-
-Copy file `.md` lam Custom Instructions hoac context. Moi file la 1 prompt doc lap.
-
-### Use
-
-```
-# Lan dau
-> Thiet lap product marketing context cho spa Luna
-
-# Cac lan sau — khong can nhac lai thong tin san pham
-> Lap ke hoach fullstack marketing thang 5
-> Viet script TikTok 30s cho facial moi
-> CPMess dang 45K, ROAS 1.8x — danh gia va de xuat toi uu
-> Tinh nguoc ngan sach de dat 200 trieu doanh thu/thang
-```
-
----
-
-## 147 Skills (78 VN + 69 Global)
-
-### Cum VN — Marketing core + Personal Brand (36 skills: ★, 00-34)
-
-> 33 skill Role SOP (35-67) nam o [muc rieng ben duoi](#role-sop-packs--33-skill-moi-35-67--v350).
-
-<table>
-<tr><th>#</th><th>Skill</th><th>Lam gi</th><th>Category</th></tr>
-<tr><td><b>★</b></td><td><a href="skills/vi/product-marketing-context/SKILL.md"><b>Product Marketing Context</b></a></td><td><b>Foundation</b> — doc truoc moi skill, tranh lap lai thong tin</td><td>
-
-![Foundation](https://img.shields.io/badge/-Foundation-be185d?style=flat-square)
-
-</td></tr>
-<tr><td><code>00</code></td><td><a href="skills/vi/00-ke-hoach-mkt/SKILL.md"><b>Ke Hoach MKT</b></a></td><td>Ke hoach toan dien 7 phan + SAVE framework + risk matrix</td><td>
-
-![Strategy](https://img.shields.io/badge/-Strategy-6d28d9?style=flat-square)
-
-</td></tr>
-<tr><td><code>01</code></td><td><a href="skills/vi/01-lich-noi-dung/SKILL.md"><b>Lich Noi Dung</b></a></td><td>Lich thang + repurposing matrix 1:9 + AI scoring</td><td>
-
-![Content](https://img.shields.io/badge/-Content-b45309?style=flat-square)
-
-</td></tr>
-<tr><td><code>02</code></td><td><a href="skills/vi/02-brief-chien-dich/SKILL.md"><b>Brief Chien Dich</b></a></td><td>Brief 9 phan + RACI matrix + risk mitigation</td><td>
-
-![Strategy](https://img.shields.io/badge/-Strategy-6d28d9?style=flat-square)
-
-</td></tr>
-<tr><td><code>03</code></td><td><a href="skills/vi/03-danh-gia-hieu-suat/SKILL.md"><b>Danh Gia Hieu Suat</b></a></td><td>Diagnostic tree + 5 Whys + 48h action plan</td><td>
-
-![Performance](https://img.shields.io/badge/-Performance-c2410c?style=flat-square)
-
-</td></tr>
-<tr><td><code>04</code></td><td><a href="skills/vi/04-script-video/SKILL.md"><b>Script Video</b></a></td><td>Script A/B + 5 hook types + viral score + filming guide</td><td>
-
-![Content](https://img.shields.io/badge/-Content-b45309?style=flat-square)
-
-</td></tr>
-<tr><td><code>05</code></td><td><a href="skills/vi/05-copy-quang-cao/SKILL.md"><b>Copy Quang Cao</b></a></td><td>6 variations 3 tang pheu + emotional triggers</td><td>
-
-![Content](https://img.shields.io/badge/-Content-b45309?style=flat-square)
-
-</td></tr>
-<tr><td><code>06</code></td><td><a href="skills/vi/06-brief-ugc-egc/SKILL.md"><b>Brief UGC/EGC</b></a></td><td>Brief creator + legal + payment + batch management</td><td>
-
-![Content](https://img.shields.io/badge/-Content-b45309?style=flat-square)
-
-</td></tr>
-<tr><td><code>07</code></td><td><a href="skills/vi/07-bao-cao-marketing/SKILL.md"><b>Bao Cao Marketing</b></a></td><td>Bao cao thang doc 5 phut — nhan dinh truoc, so lieu sau</td><td>
-
-![Performance](https://img.shields.io/badge/-Performance-c2410c?style=flat-square)
-
-</td></tr>
-<tr><td><code>08</code></td><td><a href="skills/vi/08-nghien-cuu-doi-thu/SKILL.md"><b>Nghien Cuu Doi Thu</b></a></td><td>3 tang doi thu + SWOT + positioning map + gaps</td><td>
-
-![Strategy](https://img.shields.io/badge/-Strategy-6d28d9?style=flat-square)
-
-</td></tr>
-<tr><td><code>09</code></td><td><a href="skills/vi/09-insight-khach-hang/SKILL.md"><b>Insight Khach Hang</b></a></td><td>Persona + customer journey + JTBD + validation</td><td>
-
-![Strategy](https://img.shields.io/badge/-Strategy-6d28d9?style=flat-square)
-
-</td></tr>
-<tr><td><code>10</code></td><td><a href="skills/vi/10-tinh-kpi-nguoc/SKILL.md"><b>Tinh KPI Nguoc</b></a></td><td>Doanh thu → ngan sach + 3 kich ban + sensitivity</td><td>
-
-![Performance](https://img.shields.io/badge/-Performance-c2410c?style=flat-square)
-
-</td></tr>
-<tr><td><code>11</code></td><td><a href="skills/vi/11-thiet-lap-kenh/SKILL.md"><b>Thiet Lap Kenh</b></a></td><td>Setup 7 kenh + checklist 4 phase + 30-day plan</td><td>
-
-![Operations](https://img.shields.io/badge/-Operations-1d4ed8?style=flat-square)
-
-</td></tr>
-<tr><td><code>12</code></td><td><a href="skills/vi/12-brief-landing-page/SKILL.md"><b>Brief Landing Page</b></a></td><td>Brief 7 section + conversion checklist + A/B plan</td><td>
-
-![Operations](https://img.shields.io/badge/-Operations-1d4ed8?style=flat-square)
-
-</td></tr>
-<tr><td><code>13</code></td><td><a href="skills/vi/13-phan-tich-du-lieu/SKILL.md"><b>Phan Tich Du Lieu</b></a></td><td>Meta/TikTok/GA4 → insight + trend + anomaly</td><td>
-
-![Operations](https://img.shields.io/badge/-Operations-1d4ed8?style=flat-square)
-
-</td></tr>
-<tr><td><code>14</code></td><td><a href="skills/vi/14-email-marketing/SKILL.md"><b>Email Marketing</b></a></td><td>Welcome/nurture/re-engage + automation + deliverability</td><td>
-
-![Operations](https://img.shields.io/badge/-Operations-1d4ed8?style=flat-square)
-
-</td></tr>
-<tr><td><code>15</code></td><td><a href="skills/vi/15-social-listening/SKILL.md"><b>Social Listening</b></a></td><td>Brand monitoring + sentiment + crisis protocol</td><td>
-
-![Content](https://img.shields.io/badge/-Content-b45309?style=flat-square)
-
-</td></tr>
-<tr><td><code>16</code></td><td><a href="skills/vi/16-marketing-psychology/SKILL.md"><b>Marketing Psychology</b></a> <sup>NEW</sup></td><td>7 Cialdini principles + VN cultural adaptation</td><td>
-
-![Strategy](https://img.shields.io/badge/-Strategy-6d28d9?style=flat-square)
-
-</td></tr>
-<tr><td><code>17</code></td><td><a href="skills/vi/17-pricing-strategy/SKILL.md"><b>Pricing Strategy</b></a> <sup>NEW</sup></td><td>Pricing tier + charm/anchor/bundle + break-even</td><td>
-
-![Strategy](https://img.shields.io/badge/-Strategy-6d28d9?style=flat-square)
-
-</td></tr>
-<tr><td><code>18</code></td><td><a href="skills/vi/18-referral-program/SKILL.md"><b>Referral Program</b></a> <sup>NEW</sup></td><td>1-way/2-way/affiliate + VN channels + anti-fraud</td><td>
-
-![Operations](https://img.shields.io/badge/-Operations-1d4ed8?style=flat-square)
-
-</td></tr>
-<tr><td><code>19</code></td><td><a href="skills/vi/19-ab-test-setup/SKILL.md"><b>A/B Test Setup</b></a></td><td>Sample size + 8 what-to-test + significance analysis</td><td>
-
-![Performance](https://img.shields.io/badge/-Performance-c2410c?style=flat-square)
-
-</td></tr>
-<tr><td><code>20</code></td><td><a href="skills/vi/20-brief-client-intake/SKILL.md"><b>Brief Client Intake</b></a> <sup>v2.3</sup></td><td>Form intake 20 nganh + brief 11 phan cho agency</td><td>
-
-![Operations](https://img.shields.io/badge/-Operations-1d4ed8?style=flat-square)
-
-</td></tr>
-<tr><td><code>21</code></td><td><a href="skills/vi/21-audit-ads-performance/SKILL.md"><b>Audit Ads Performance</b></a> <sup>v2.3</sup></td><td>84 checkpoint + Health Score (0-100) + Quality Gates</td><td>
-
-![Performance](https://img.shields.io/badge/-Performance-c2410c?style=flat-square)
-
-</td></tr>
-<tr><td><code>22</code></td><td><a href="modules/personal-branding/vi/22-personal-brand-context/SKILL.md"><b>Personal Brand Context</b></a> <sup>v2.4 ⭐</sup></td><td>Foundation skill cho personal brand (3 variants: founder/coach/creator)</td><td>
-
-![Foundation](https://img.shields.io/badge/-Foundation-be185d?style=flat-square)
-
-</td></tr>
-<tr><td><code>23</code></td><td><a href="modules/personal-branding/vi/23-personal-brand-strategy/SKILL.md"><b>Personal Brand Strategy</b></a> <sup>v2.4</sup></td><td>Chien luoc 12 thang: niche + positioning + content pillars + authority ladder</td><td>
-
-![Strategy](https://img.shields.io/badge/-Strategy-6d28d9?style=flat-square)
-
-</td></tr>
-<tr><td><code>24</code></td><td><a href="modules/personal-branding/vi/24-ai-avatar-production/SKILL.md"><b>AI Avatar Production</b></a> <sup>v2.4 🎬</sup></td><td>Deep-dive AI Avatar (3 tier tool, 4 workflow, QA Score 100)</td><td>
-
-![Content](https://img.shields.io/badge/-Content-b45309?style=flat-square)
-
-</td></tr>
-<tr><td><code>25</code></td><td><a href="modules/personal-branding/vi/25-voice-clone-podcast/SKILL.md"><b>Voice Clone & Podcast</b></a> <sup>v2.4 🎙️</sup></td><td>Audio AI: voice clone, podcast, audiobook, repurpose 1:10</td><td>
-
-![Content](https://img.shields.io/badge/-Content-b45309?style=flat-square)
-
-</td></tr>
-<tr><td><code>26</code></td><td><a href="modules/personal-branding/vi/26-thought-leadership-content/SKILL.md"><b>Thought Leadership Content</b></a> <sup>v2.4</sup></td><td>Long-form text: 3 cau truc, 6 hook, repurpose 1:5</td><td>
-
-![Content](https://img.shields.io/badge/-Content-b45309?style=flat-square)
-
-</td></tr>
-<tr><td><code>27</code></td><td><a href="modules/personal-branding/vi/27-personal-brand-monetize/SKILL.md"><b>Personal Brand Monetize</b></a> <sup>v2.4</sup></td><td>3 phien ban funnel + pricing psychology + thue VN 2026</td><td>
-
-![Strategy](https://img.shields.io/badge/-Strategy-6d28d9?style=flat-square)
-
-</td></tr>
-<tr><td><code>28</code></td><td><a href="modules/personal-branding/vi/28-community-building/SKILL.md"><b>Community Building</b></a> <sup>v2.4</sup></td><td>Blueprint Zalo/Telegram/Skool + cong dong 3 lop</td><td>
-
-![Operations](https://img.shields.io/badge/-Operations-1d4ed8?style=flat-square)
-
-</td></tr>
-<tr><td><code>29</code></td><td><a href="skills/vi/29-xuat-khau-b2b/SKILL.md"><b>Xuat Khau B2B</b></a></td><td>Export B2B playbook cho SME Viet</td><td>
-
-![Strategy](https://img.shields.io/badge/-Strategy-6d28d9?style=flat-square)
-
-</td></tr>
-<tr><td><code>30</code></td><td><a href="skills/vi/30-thiet-ke-master/SKILL.md"><b>Thiet Ke Master</b></a></td><td>Router thiet ke 8 loai: logo, key visual, social post, infographic...</td><td>
-
-![Design](https://img.shields.io/badge/-Design-9333ea?style=flat-square)
-
-</td></tr>
-<tr><td><code>31</code></td><td><a href="skills/vi/31-offer-design/SKILL.md"><b>Offer Design</b></a> <sup>v3.3 NEW</sup></td><td>Value stack + bonus + guarantee + scarcity + upsell/downsell</td><td>
-
-![Strategy](https://img.shields.io/badge/-Strategy-6d28d9?style=flat-square)
-
-</td></tr>
-<tr><td><code>32</code></td><td><a href="skills/vi/32-seo-growth/SKILL.md"><b>SEO Growth</b></a> <sup>v3.3 NEW</sup></td><td>SEO audit + AI SEO/GEO + schema + pSEO + directory submissions</td><td>
-
-![Performance](https://img.shields.io/badge/-Performance-c2410c?style=flat-square)
-
-</td></tr>
-<tr><td><code>33</code></td><td><a href="skills/vi/33-b2b-lead-gen/SKILL.md"><b>B2B Lead Gen</b></a> <sup>v3.3 NEW</sup></td><td>Prospecting + cold email + lead scoring + sales handoff</td><td>
-
-![Operations](https://img.shields.io/badge/-Operations-1d4ed8?style=flat-square)
-
-</td></tr>
-<tr><td><code>34</code></td><td><a href="skills/vi/34-ai-marketing-os/SKILL.md"><b>AI Marketing OS</b></a> <sup>v3.4 NEW</sup></td><td>Brand Hub + role-based agents/projects + skill chain + second brain + data loop + SOP</td><td>
-
-![Operations](https://img.shields.io/badge/-Operations-1d4ed8?style=flat-square)
-
-</td></tr>
-</table>
-
----
-
-## Cum Personal Brand + AI Avatar (NEW v2.4.0)
-
-7 skill moi cho founder/coach/creator xay dung personal brand voi AI Avatar.
-
-### Cluster Diagram
-
-```mermaid
-graph TD
-    A[22 personal-brand-context ⭐] --> B[23 personal-brand-strategy]
-    B --> C[24 ai-avatar-production 🎬]
-    B --> D[26 thought-leadership-content]
-    C --> E[25 voice-clone-podcast]
-    B --> F[27 personal-brand-monetize]
-    F --> G[28 community-building]
-```
-
-### Timeline 30 ngay launch
-
-```mermaid
-gantt
-    title Personal Brand 30-Day Launch
-    dateFormat YYYY-MM-DD
-    section Week 1
-    Foundation (skill 22-23-24) :a1, 2026-01-01, 7d
-    section Week 2
-    First Content (skill 26-04) :a2, after a1, 7d
-    section Week 3
-    Amplify (engage + iterate)  :a3, after a2, 7d
-    section Week 4
-    Monetize (skill 27-28)      :a4, after a3, 7d
-```
-
-### Ma tran tool 3 tang (rut gon)
-
-| Tier | Chi phi/thang | Tool | Phu hop |
-|------|---------------|------|---------|
-| Free | $0 | Captions free, HeyGen trial | 1-5 video/thang |
-| Pro | $30-100 | HeyGen Creator, ElevenLabs Pro | 10-30 video/thang |
-| Enterprise | $200+ | Synthesia Enterprise, custom API | 30+ video/thang |
-
-Xem them: [examples/personal-brand-coach.md](examples/personal-brand-coach.md) ·
-[docs/getting-started-personal-brand.md](docs/getting-started-personal-brand.md)
-
----
-
-### Role SOP packs — 33 skill (35-67) ⭐ v3.5.0, ban Global tu v3.6.0
-
-Bon bo SOP theo vai tro. Moi skill la quy trinh van hanh day du: cac khau, input bat buoc, decision rules, tieu chuan chat luong, timeline — khong phai prompt le.
-
-> **Song ngu day du:** moi skill duoi day co ban Global tuong ung trong `skills/en/` (hau to `-global`) — cung framework va quy trinh, nhung benchmark USD, kenh toan cau (Klaviyo/Shopify/Meta US thay Zalo/Shopee), va compliance FTC/GDPR/CCPA. Rieng seeding duoc viet lai theo chuan Reddit/Discord/Slack thay vi Facebook Group.
-
-**Content system (35-40)** — vong lap content thang:
-
-| # | Skill | Lam gi |
-|---|-------|--------|
-| 35 | [Brand Voice](skills/vi/35-brand-voice/SKILL.md) | Brand personality, tone, vocabulary, banned words, 5 vi du before/after — nen tang cho moi output content |
-| 36 | [Content Brief](skills/vi/36-content-brief/SKILL.md) | Brief tung bai: angle, insight goc, key message, CTA, format |
-| 37 | [Caption Social](skills/vi/37-caption-social/SKILL.md) | Caption organic Facebook/Instagram/TikTok (khac 05 la ads copy) |
-| 38 | [Seeding Plan](skills/vi/38-seeding-plan/SKILL.md) | Ke hoach seeding group/cong dong: chon group, kich ban, lich, do luong |
-| 39 | [Content Audit](skills/vi/39-content-audit/SKILL.md) | Audit dinh ky: winner/loser theo pillar, format, hook |
-| 40 | [Next Content Plan](skills/vi/40-next-content-plan/SKILL.md) | Plan ky sau tu data ky truoc — khong doan mo |
-
-**Design production (41-50)** — pipeline T-14 den D+1:
-
-| # | Skill | Lam gi |
-|---|-------|--------|
-| 41 | [Campaign Asset List](skills/vi/41-campaign-asset-list/SKILL.md) | Danh sach asset: loai, kich thuoc, kenh, deadline, owner, uu tien |
-| 42 | [Brief Hinh Anh](skills/vi/42-brief-hinh-anh/SKILL.md) | Brief anh static, banner, thumbnail theo kenh |
-| 43 | [Brief Carousel](skills/vi/43-brief-carousel/SKILL.md) | Logic chuoi slide: hook → value → CTA |
-| 44 | [Brief Video Editor](skills/vi/44-brief-video-editor/SKILL.md) | Storyboard, footage, text overlay, pacing (khac 04 la script loi thoai) |
-| 45 | [Brief Canva](skills/vi/45-brief-canva/SKILL.md) | Direction cho designer dung Canva: template, grid, do/don't |
-| 46 | [Brand Guideline](skills/vi/46-brand-guideline/SKILL.md) | Logo, palette, typography, spacing, tone visual — file Brand Hub |
-| 47 | [Design Review](skills/vi/47-design-review/SKILL.md) | Cham diem: dung brand, hierarchy, readability, CTA, hop kenh |
-| 48 | [Quick Visual Brief](skills/vi/48-quick-visual-brief/SKILL.md) | Brief gap khi campaign dang chay (creative fatigue) |
-| 49 | [HTML Email Template](skills/vi/49-html-email-template/SKILL.md) | Email HTML responsive: table-based, inline CSS, dark mode |
-| 50 | [Asset Resize](skills/vi/50-asset-resize/SKILL.md) | SOP resize da kich thuoc, safe zone, dat ten file |
-
-**Performance ops (51-57)** — vong lap ads:
-
-| # | Skill | Lam gi |
-|---|-------|--------|
-| 51 | [Audience Research](skills/vi/51-audience-research/SKILL.md) | Tep target, interest mapping, phan tang cold/warm/hot |
-| 52 | [Account Structure](skills/vi/52-account-structure/SKILL.md) | Campaign/adset/ad hierarchy, naming convention, CBO/ABO |
-| 53 | [Tracking Setup](skills/vi/53-tracking-setup/SKILL.md) | Pixel/CAPI, GA4, UTM, checklist verify — khong chay ads khi chua xanh |
-| 54 | [Media Plan](skills/vi/54-media-plan/SKILL.md) | Tinh nguoc doanh thu → CPL max → budget; split 30/50/15/5 |
-| 55 | [Scaling Ads](skills/vi/55-scaling-ads/SKILL.md) | Dieu kien scale, vertical +20-30%, horizontal — khong scale khi CPL xau |
-| 56 | [Retargeting Plan](skills/vi/56-retargeting-plan/SKILL.md) | Phan tang warm audience, message theo tang, frequency cap, LAL |
-| 57 | [Next Ads Plan](skills/vi/57-next-ads-plan/SKILL.md) | Plan ads ky sau tu report + audit + test log |
-
-**Leader ops (58-67)** — nhip quan ly:
-
-| # | Skill | Lam gi |
-|---|-------|--------|
-| 58 | [Positioning](skills/vi/58-positioning/SKILL.md) | Promise + Proof + Path, differentiation matrix, tagline direction |
-| 59 | [Go-To-Market](skills/vi/59-go-to-market/SKILL.md) | GTM plan: beachhead, message, kenh theo giai doan, go/no-go |
-| 60 | [Launch Playbook](skills/vi/60-launch-playbook/SKILL.md) | Timeline T-30 → D+7, checklist tung bo phan, war-room |
-| 61 | [Budget Planning](skills/vi/61-budget-planning/SKILL.md) | Phan bo theo kenh/funnel/thang, nguong cat lo, quy du phong |
-| 62 | [Marketing Review](skills/vi/62-marketing-review/SKILL.md) | Gate duyet content brief + ads copy, verdict approve/revise |
-| 63 | [Campaign Retrospective](skills/vi/63-campaign-retrospective/SKILL.md) | What worked/didn't/why co evidence, bai hoc → playbook |
-| 64 | [Team Brief](skills/vi/64-team-brief/SKILL.md) | Giao task: deliverable, deadline theo gio, definition of done + template hop |
-| 65 | [Team Performance Review](skills/vi/65-team-performance-review/SKILL.md) | KPI scorecard theo role, development plan 30/90 ngay |
-| 66 | [Crisis Playbook](skills/vi/66-crisis-playbook/SKILL.md) | Phan loai L1-L5, quy trinh 4 gio dau, template phan hoi, escalation |
-| 67 | [Agency Vendor Brief](skills/vi/67-agency-vendor-brief/SKILL.md) | Scope of work, revision rounds, payment milestone, IP, danh gia vendor |
-
-**Chuyen doi, giu chan va ban hang (68-72)** ⭐ v3.7.0 — lap 5 khoang trong lon nhat sau khi doi chieu voi repo skill marketing khac:
-
-| # | Skill | Lam gi |
-|---|-------|--------|
-| 68 | [CRO Audit Trang](skills/vi/68-cro-audit-trang/SKILL.md) | Chan doan trang DANG CHAY ma khong ra don, theo 7 chieu xep theo thu tu tac dong. Coi luong inbox Zalo/Messenger va listing Shopee/TikTok Shop la be mat chuyen doi hang nhat, khong phai truong hop phu. Co che do hoi quy khi "sua xong lai kem hon truoc" |
-| 69 | [Giu Chan Khach Hang](skills/vi/69-giu-chan-khach-hang/SKILL.md) | Retention va win-back, re nhanh theo mo hinh kinh doanh (mua 1 lan / goi lieu trinh / the thanh vien / thue bao). Tin hieu sap mat khach viet theo du lieu SME VN that co: so ngay so voi chu ky rieng cua khach, no-show, ngung mo tin Zalo OA |
-| 70 | [Lead Magnet](skills/vi/70-lead-magnet/SKILL.md) | Thiet ke cai mien phi doi lay thong tin lien he — truoc day khong skill nao so huu. Giao qua Zalo/Messenger truoc, xin so dien thoai thay vi email |
-| 71 | [Sales Enablement](skills/vi/71-sales-enablement/SKILL.md) | Tai lieu ban hang + pipeline gop 1 skill vi o SME VN cung mot nguoi lam ca hai. Co thu vien xu ly phan doi kieu VN va phuong an khong co CRM |
-| 72 | [Hoi Dong Marketing](skills/vi/72-hoi-dong-marketing/SKILL.md) | Nam archetype an danh, bat buoc co nguoi phan bien, san pham chinh la ban do bat dong. Chong kieu that bai pho bien nhat khi dung AI mot minh: AI dong y voi ban |
-
-**Copy sang tao (74)** — bo sung, khong thay `05` / `37`:
-
-| # | Skill | Lam gi |
-|---|-------|--------|
-| 74 | [Copy Hai Lop](skills/vi/74-copy-hai-lop/SKILL.md) | Slogan / headline poster hai lop nghia. Hoc co che (mot nhip, diem to la chet), viet cau moi cho brand VN. Ads tra tien van la 05; caption organic van la 37 |
-
-**San TMDT + KOC/affiliate (75-76)** ⭐ v3.8.0 — chi cum VN:
-
-| # | Skill | Lam gi |
-|---|-------|--------|
-| 75 | [Hop Tac KOC Affiliate](skills/vi/75-hop-tac-koc-affiliate/SKILL.md) | Tim, tham dinh, hop dong va tra phi KOC / affiliate (hoa hong la bien so, khong hard-code). Kich ban + brief noi dung van la 06. Nghia vu cong bo quang cao → hub phap ly muc 3 |
-| 76 | [Van Hanh San TMDT](skills/vi/76-van-hanh-san-tmdt/SKILL.md) | P&L don hang sau phi san (phi la bien so co ngay kiem), ROAS hoa von = 1 / bien loi nhuan truoc ads, mega sale / voucher, livestream ban hang tren Shopee / TikTok Shop / Lazada |
-
-**Chatbot ban hang (77)** ⭐ NEW — chi cum VN (ban EN o v1.1):
-
-| # | Skill | Lam gi |
-|---|-------|--------|
-| 77 | [Kich Ban Sale Chatbot](skills/vi/77-kich-ban-sale-chatbot/SKILL.md) | Bien danh muc, hoi thoai cu da che du lieu ca nhan, chinh sach va kich ban san co thanh kich ban sale cho chatbot AI (inbox + binh luan cong khai); xuat `.md` cho nguoi + `.pack.json` may doc; 3 goi nganh (do go / decor, thoi trang, my pham). Tai lieu ban hang cho nguoi ban that van la 71 |
-
-**Quy tac van hanh + evals (v3.8.0):** moi skill doc 8 quy tac chung ([`quy-tac-van-hanh.md`](skills/vi/references/quy-tac-van-hanh.md)) — context truoc, noi dung ben ngoai la data, nhan bang chung + cham diem theo coverage, so lieu co ngay / nguon, draft-first cho moi hanh dong ghi (MCP ads), phap ly VN dan ve mot hub ([`phap-ly-marketing-vn.md`](skills/vi/references/phap-ly-marketing-vn.md)). Dot dau co `evals/evals.json` cho cap `21`, `75`, `76`; skill khac bo sung khi doi hanh vi — xem [`docs/evals.md`](docs/evals.md).
-
-> **Kho kien thuc nen tang:** [`knowledge/`](knowledge/) — 10 file tu duy + `knowledge/trien-khai/`. Dung lam context upload cho AI project theo vai tro (Leader/Content/Designer/Performance). Kien truc 5 role project: skill [`34-ai-marketing-os`](skills/vi/34-ai-marketing-os/SKILL.md).
-
----
-
-### Cum Global (36 skills)
-
-<table>
-<tr><th>#</th><th>Skill</th><th>Lam gi</th><th>Category</th></tr>
-<tr><td><b>★</b></td><td><a href="skills/en/product-marketing-context-global/SKILL.md"><b>Product Marketing Context Global</b></a></td><td><b>Foundation</b> — context theo region + tien te + thue + luat privacy</td><td>
-
-![Foundation](https://img.shields.io/badge/-Foundation-be185d?style=flat-square)
-
-</td></tr>
-<tr><td><code>00–21</code></td><td><a href="skills/en/"><b>Marketing 22 skills (global)</b></a></td><td>Mirror VN 00–21 voi suffix <code>-global</code> — plan, lich, brief, audit, copy, KPI, kenh, A/B, intake, audit ads</td><td>
-
-![Strategy](https://img.shields.io/badge/-Strategy-6d28d9?style=flat-square) ![Content](https://img.shields.io/badge/-Content-b45309?style=flat-square) ![Performance](https://img.shields.io/badge/-Performance-c2410c?style=flat-square) ![Operations](https://img.shields.io/badge/-Operations-1d4ed8?style=flat-square)
-
-</td></tr>
-<tr><td><code>22–28</code></td><td><a href="modules/personal-branding/en/"><b>Personal Brand 7 skills (global)</b></a></td><td>Mirror VN 22–28 voi suffix <code>-global</code> — context, strategy, AI Avatar, voice clone, thought leadership, monetize, community</td><td>
-
-![Foundation](https://img.shields.io/badge/-Foundation-be185d?style=flat-square) ![Strategy](https://img.shields.io/badge/-Strategy-6d28d9?style=flat-square) ![Content](https://img.shields.io/badge/-Content-b45309?style=flat-square) ![Operations](https://img.shields.io/badge/-Operations-1d4ed8?style=flat-square)
-
-</td></tr>
-<tr><td><code>29</code></td><td><a href="modules/dropshipping/en/29-dropshipping-mastery-global/SKILL.md"><b>Dropshipping Mastery</b></a> <sup>v2.5 🚀</sup></td><td><b>Flagship</b> — Shopify + supplier sourcing + winning products + global ads</td><td>
-
-![Strategy](https://img.shields.io/badge/-Strategy-6d28d9?style=flat-square)
-
-</td></tr>
-<tr><td><code>30</code></td><td><a href="skills/en/30-design-master-global/SKILL.md"><b>Design Master Global</b></a></td><td>Global mirror cho 8 loai thiet ke marketing</td><td>
-
-![Design](https://img.shields.io/badge/-Design-9333ea?style=flat-square)
-
-</td></tr>
-<tr><td><code>31-34</code></td><td><a href="skills/en/"><b>Growth + AI Marketing OS Global</b></a> <sup>v3.4 NEW</sup></td><td>Offer Design + SEO/GEO Growth + B2B Lead Gen + AI Marketing OS global mirrors</td><td>
-
-![Strategy](https://img.shields.io/badge/-Strategy-6d28d9?style=flat-square) ![Performance](https://img.shields.io/badge/-Performance-c2410c?style=flat-square) ![Operations](https://img.shields.io/badge/-Operations-1d4ed8?style=flat-square)
-
-</td></tr>
-</table>
-
----
-
-## Cum Global (NEW v2.5.0)
-
-36 skill Global cho marketer, founder, dropshipper, SaaS/growth team hoat dong tren **US / EU / SEA / LATAM** — tien te, thue, luat privacy (GDPR/CCPA/PDPA/LGPD), va tool stack theo region.
-
-### Cluster Diagram
-
-```mermaid
-graph TD
-    G[★ product-marketing-context-global] --> M[Marketing 00–21 global]
-    G --> P[Personal Brand 22–28 global]
-    G --> D[29 dropshipping-mastery-global 🚀]
-    M --> US[US region]
-    M --> EU[EU region]
-    M --> SEA[SEA region]
-    M --> LATAM[LATAM region]
-    P --> US
-    P --> EU
-    P --> SEA
-    P --> LATAM
-    D --> US
-    D --> EU
-    D --> SEA
-    D --> LATAM
-```
-
-### Tong quan 4 region
-
-| Region | Tien te | Privacy | Kenh chinh | Ghi chu |
-|--------|---------|---------|------------|---------|
-| **US** | USD | CCPA / luat tung bang | Meta, Google, TikTok, YouTube | Klaviyo + Shopify la stack mac dinh |
-| **EU** | EUR / GBP | GDPR | Meta, Google, TikTok, LinkedIn | VAT/OSS, cookie consent bat buoc |
-| **SEA** | IDR / THB / SGD / PHP | PDPA (theo nuoc) | TikTok Shop, Shopee, Lazada, Meta | Mobile-first, COD pho bien |
-| **LATAM** | BRL / MXN / ARS | LGPD (BR) | Meta, TikTok, MercadoLibre, WhatsApp | Lam phat cao - can hedge FX |
-
-### Dropshipping flagship (skill 29)
-
-Playbook dropshipping end-to-end: chon niche → validate winning product → sourcing supplier (CJ/Spocket/Zendrop) → setup Shopify → chay quang cao Meta/TikTok global → SOP fulfillment → scale len $10K/thang+. Co 4 model scaling theo region.
-
-### Ma tran tool 3 tang (Global)
-
-| Tier | Chi phi/thang | Stack | Phu hop |
-|------|---------------|-------|---------|
-| Free | $0 | Shopify trial, Meta free, Canva free | Giai doan validate |
-| Pro | $200-500 | Shopify Basic, Klaviyo, Meta + TikTok ads | Store $1K-10K/thang |
-| Enterprise | $1000+ | Shopify Plus, Klaviyo, Triple Whale, agency creatives | Store $10K+/thang |
-
-Xem them: [examples/personal-brand-coach-global.md](examples/personal-brand-coach-global.md) ·
-[examples/dropshipping-store-global.md](examples/dropshipping-store-global.md) ·
-[docs/getting-started-global.md](docs/getting-started-global.md) ·
-[docs/dropshipping-guide.md](docs/dropshipping-guide.md)
-
----
-
-## 6 Agents (Universal mode — VN + Global)
-
-> **Cap nhat v2.5:** Tat ca agent chay o **universal mode** — tu dong nhan dien project la VN hay Global va route den skill tuong ung (`00-...` hoac `00-...-global`).
-> **v3.5:** them agent `design-producer` cho mang visual & production (skills 41-50).
+Bạn không cần tự chuyển chế độ. Skill và agent nhìn xem file context nào đang có:
 
 ```mermaid
 flowchart TD
-    Context[".agents context<br/>VN or Global"] --> Strategist["MKT Strategist<br/>Ke hoach + chien luoc"]
-    Context --> Content["Content Producer<br/>Noi dung + script"]
-    Context --> Performance["Performance Analyst<br/>Du lieu + bao cao"]
-    Context --> Channel["Channel Operator<br/>Kenh + landing + email"]
-    Context --> Design["Design Producer<br/>Visual + production"]
-    Context --> Personal["Personal Brand Builder<br/>PB + AI Avatar"]
-
-    Strategist --> Growth["31 offer · 32 SEO · 33 B2B<br/>34 AI OS · 58-61 leader strategy"]
-    Content --> Creative["35 brand voice · 36 brief<br/>01 calendar · 04 video · 05 ads<br/>37-40 content system"]
-    Performance --> Metrics["03 audit · 07 report · 10 KPI<br/>13 data · 51-57 perf ops"]
-    Channel --> OpsLoop["11 channel · 12 landing<br/>14 email · 49 HTML · 66 crisis"]
-    Design --> DesignLoop["41 asset list · 42-45 brief<br/>46 guideline · 47 review · 50 resize"]
-    Personal --> PBLoop["22-28 PB system"]
-
-    classDef system fill:#64748b,stroke:#334155,color:#fff
-    classDef cmsdev fill:#6d28d9,stroke:#4c1d95,color:#fff
-    classDef admin fill:#f59e0b,stroke:#b45309,color:#fff
-
-    class Context system
-    class Strategist,Content,Performance,Channel,Design,Personal cmsdev
-    class Growth,Creative,Metrics,OpsLoop,DesignLoop,PBLoop admin
+    S{"Trong .agents/<br/>có file context nào?"}
+    S -->|"product-marketing-context.md"| VN["🇻🇳 Chế độ VN<br/>skills/vi"]
+    S -->|"product-marketing-context-global.md"| GL["🌍 Chế độ Global<br/>skills/en"]
+    S -->|cả hai| ASK["Hỏi bạn một câu"]
+    S -->|không có| NEW["Gợi ý tạo context trước"]
 ```
 
-| Agent | Mode | Skills chinh (VN / Global) |
-|-------|------|----------------------------|
-| [MKT Strategist](agents/mkt-strategist.md) | Universal <sup>v3.5</sup> | 00, 02, 08, 09, 16, 17, 31-34, 58-61 (+ mirror `-global`) |
-| [Content Producer](agents/content-producer.md) | Universal <sup>v3.5</sup> | 01, 04, 05, 06, 35-40, 42-44 (+ mirror `-global`) |
-| [Performance Analyst](agents/performance-analyst.md) | Universal <sup>v3.5</sup> | 03, 07, 10, 13, 19, 21, 32, 34, 51-57 (+ mirror `-global`), 76 (VN) |
-| [Channel Operator](agents/channel-operator.md) | Universal <sup>v3.5</sup> | 11, 12, 14, 15, 18, 34, 49, 66 (+ mirror `-global`), 75 (VN) |
-| [Design Producer](agents/design-producer.md) <sup>NEW v3.5</sup> | Universal | 12, 30, 41-50 |
-| [Personal Brand Builder](agents/personal-brand-builder.md) | Universal <sup>v2.5</sup> | 22, 23, 24, 25, 26, 27, 28 (+ mirror `-global`) |
+Thương hiệu cá nhân dùng cùng quy tắc (`personal-brand-context.md` / `-global.md`). Khi có cả context sản phẩm lẫn context thương hiệu cá nhân, skill `04` (kịch bản video) và `05` (copy quảng cáo) sẽ hỏi bạn muốn viết để bán hàng hay để xây uy tín.
+
+| Khu vực | Tiền tệ | Luật dữ liệu | Kênh chính |
+|---|---|---|---|
+| **Mỹ** | USD | CCPA / luật từng bang | Meta, Google, TikTok, YouTube |
+| **Châu Âu** | EUR / GBP | GDPR | Meta, Google, LinkedIn, TikTok |
+| **Đông Nam Á** | IDR / THB / SGD / PHP | PDPA (khác nhau theo nước) | TikTok Shop, Shopee, Lazada, Meta |
+| **Mỹ Latin** | BRL / MXN / ARS | LGPD (Brazil) | Meta, TikTok, MercadoLibre, WhatsApp |
+
+Các skill có file riêng cho từng khu vực (`variants/01-us.md` … `04-latam.md`): foundation context, 03, 10, 11, 14, 17, 18 và 21. Xem thêm [docs/global-region-guide.md](docs/global-region-guide.md).
 
 ---
 
-## 19 Workflows (11 VN + 8 Global)
+## 👥 6 agent trong đội
 
-### Workflow VN (11)
-
-#### Client Onboard — Agency (5-7 ngay) <sup>v2.3</sup>
-```
-20 Brief Intake → 09 Insight → 08 Doi thu → 10 KPI → 00 Ke hoach → 02 Brief → 01 Lich
-```
-
-#### Campaign Launch (14-21 ngay)
-```
-08 Doi thu → 09 Insight → 00 Ke hoach → 02 Brief → 01+04+05 Content → 06 UGC → 11+12 Kenh
-```
-
-#### Monthly Cycle (3-5 ngay)
-```
-13 Data → 03 Danh gia → 07 Bao cao → 10 KPI moi → 01 Lich moi
-```
-
-#### Content Production (hang tuan)
-```
-Review lich → 04 Script → Quay/Dung → 05 Copy ads → Len lich dang
-```
-
-#### Content Engine — vong lap content thang <sup>v3.5 NEW</sup>
-```
-35 Brand voice → 09 Insight → 01 Calendar → 36 Brief tung bai
-  → [37 Caption | 04 Script | 05 Ads copy | 38 Seeding | 06 UGC | 14 Email]
-  → [42 Brief anh | 43 Carousel | 44 Video editor]
-  → 39 Content audit → 07 Bao cao → 40 Next content plan → (quay lai 01)
-```
-
-#### Performance Loop — vong lap ads <sup>v3.5 NEW</sup>
-```
-51 Audience → 10 KPI nguoc → 54 Media plan → 53 Tracking (verify xanh)
-  → 52 Account structure → 05 Ads copy → 19 A/B test → 21 Audit
-  → 55 Scaling / 56 Retargeting → 07 Bao cao → 57 Next ads plan
-```
-
-#### Design Pipeline — T-14 den D+1 <sup>v3.5 NEW</sup>
-```
-T-14: 41 Asset list → T-7: concept MVP (45/12) → duyet
-T-5: asset phuc tap (12 landing, 49 email) → T-3: carousel/banner (43, 42)
-T-1: asset nhanh → Launch: 48 Quick visual standby → D+1: 50 Resize winner
-```
-
-#### Leader Cadence — nhip quan ly <sup>v3.5 NEW</sup>
-```
-Quy:      00 Ke hoach → 61 Budget → (58 Positioning / 59 GTM / 60 Launch)
-Campaign: 02 Brief → 64 Team brief → 62 Review copy / 47 Review design
-Tuan:     07 Bao cao weekly → 13 Decision log
-Ket thuc: 63 Retrospective → cap nhat Brand Hub
-```
-
-#### Personal Brand Launch (30 ngay) <sup>v2.4</sup>
-```
-22 Context → 23 Strategy → 24 AI Avatar → 26 Long-form → 27 Monetize → 28 Community
-```
-
-#### AI Avatar Batch (5 ngay × 5 gio) <sup>v2.4 NEW</sup>
-```
-30 video AI Avatar trong 5 ngay, <$2/video — workflow san xuat day chuyen
-```
-
-#### Personal Brand Monthly (3-5 ngay) <sup>v2.4 NEW</sup>
-```
-13 Data → 03 Audit → 07 Report → review pillars → dieu chinh personal brand
-```
-
-### Workflow Global (8) <sup>v2.5 NEW</sup>
-
-| Workflow | Thoi gian | Pipeline |
-|----------|-----------|----------|
-| [client-onboard-global](workflows/en/client-onboard-global.md) | 5-7 ngay | 20 Intake → 09 Insight → 08 Doi thu → 10 KPI → 00 Plan → 02 Brief → 01 Lich (global) |
-| [campaign-launch-global](workflows/en/campaign-launch-global.md) | 14-21 ngay | 08 → 09 → 00 → 02 → 01+04+05 Content → 06 UGC → 11+12 Kenh (global) |
-| [monthly-cycle-global](workflows/en/monthly-cycle-global.md) | 3-5 ngay | 13 Data → 03 Audit → 07 Report → 10 KPI moi → 01 Lich moi (global) |
-| [content-production-global](workflows/en/content-production-global.md) | hang tuan | Review lich → 04 → 05 → schedule (global, 4 region) |
-| [dropshipping-launch-global](modules/dropshipping/workflows/en/dropshipping-launch-global.md) <sup>🚀</sup> | 14-30 ngay | Niche → validate product → store → ads → fulfillment → scale |
-| [personal-brand-launch-global](modules/personal-branding/workflows/en/personal-brand-launch-global.md) | 30 ngay | 22 Context → 23 Strategy → 24 AI Avatar → 26 Long-form → 27 Monetize → 28 Community (global) |
-| [ai-avatar-batch-global](modules/personal-branding/workflows/en/ai-avatar-batch-global.md) | 5 ngay × 5h | 30 video batch trong 5 ngay, da ngon ngu (EN/ES/PT/ID/TH) |
-| [personal-brand-monthly-global](modules/personal-branding/workflows/en/personal-brand-monthly-global.md) | 3-5 ngay | 13 Data → 03 Audit → 07 Report → review pillars → dieu chinh (global) |
-
----
-
-## Benchmark Vietnam 2025-2026
+Agent là một vai trò. Bạn nói mục tiêu, agent tự chọn skill phù hợp, ở chế độ VN hoặc Global.
 
 <table>
-<tr><th>Chi so</th><th>Kem</th><th>Trung binh</th><th>Tot</th><th>Xuat sac</th></tr>
-<tr><td><b>CPMess Meta</b></td><td>>40K</td><td>25-40K</td><td>18-25K</td><td>&lt;18K</td></tr>
-<tr><td><b>CPMess TikTok</b></td><td>>45K</td><td>28-45K</td><td>20-28K</td><td>&lt;20K</td></tr>
-<tr><td><b>Lead->Booking</b></td><td>&lt;40%</td><td>40-60%</td><td>60-75%</td><td>>75%</td></tr>
-<tr><td><b>Booking->Customer</b></td><td>&lt;25%</td><td>25-40%</td><td>40-55%</td><td>>55%</td></tr>
-<tr><td><b>ROAS</b></td><td>&lt;2x</td><td>2-4x</td><td>4-7x</td><td>>7x</td></tr>
-<tr><td><b>Email Open Rate</b></td><td>&lt;15%</td><td>15-25%</td><td>25-35%</td><td>>35%</td></tr>
+<tr>
+<td width="33%" valign="top">
+<img src="docs/images/agent-strategist.jpg" width="100%" alt="Bản đồ trống cắm ghim, hai la bàn, xấp thẻ ghi chú và cân đĩa"/>
+<b><a href="agents/mkt-strategist.md">mkt-strategist</a></b><br/>
+Kế hoạch, offer, định vị, ra mắt sản phẩm, ngân sách.<br/>
+<sub>00 · 02 · 08 · 09 · 10 · 31-34 · 58-61</sub>
+</td>
+<td width="33%" valign="top">
+<img src="docs/images/agent-content.jpg" width="100%" alt="Góc quay nội dung: điện thoại trên tripod, đèn ring light, bảng clapper và thẻ storyboard"/>
+<b><a href="agents/content-producer.md">content-producer</a></b><br/>
+Lịch nội dung, kịch bản video, copy quảng cáo, caption, seeding.<br/>
+<sub>01 · 04-06 · 35-40 · 42-44 · 74</sub>
+</td>
+<td width="33%" valign="top">
+<img src="docs/images/agent-design.jpg" width="100%" alt="Bàn vẽ với poster trống, thẻ màu, bảng màu và thước kẻ"/>
+<b><a href="agents/design-producer.md">design-producer</a></b><br/>
+Brief hình ảnh, brand guideline, duyệt thiết kế, resize asset.<br/>
+<sub>12 · 30 · 41-50</sub>
+</td>
+</tr>
+<tr>
+<td width="33%" valign="top">
+<img src="docs/images/agent-channel.jpg" width="100%" alt="Hộp chia kênh nối dây tới phong bì, điện thoại có bong bóng chat, các bong bóng hội thoại và loa cầm tay"/>
+<b><a href="agents/channel-operator.md">channel-operator</a></b><br/>
+Kênh, landing page, email, KOC, chatbot bán hàng, xử lý khủng hoảng.<br/>
+<sub>11 · 12 · 14 · 15 · 34 · 49 · 66 · 75 · 77</sub>
+</td>
+<td width="33%" valign="top">
+<img src="docs/images/agent-performance.jpg" width="100%" alt="Màn hình biểu đồ cột, phễu thuỷ tinh rót hạt vào lọ, kính lúp và đồng hồ đo"/>
+<b><a href="agents/performance-analyst.md">performance-analyst</a></b><br/>
+Tracking, audit ads, KPI, scale ngân sách, ads trên sàn TMĐT.<br/>
+<sub>03 · 07 · 10 · 13 · 19 · 21 · 32 · 34 · 51-57 · 76</sub>
+</td>
+<td width="33%" valign="top">
+<img src="docs/images/agent-personal-brand.jpg" width="100%" alt="Studio tại nhà với ghế trống, máy ảnh, micro podcast, đèn softbox và một cuốn sách"/>
+<b><a href="agents/personal-brand-builder.md">personal-brand-builder</a></b><br/>
+Thương hiệu founder và creator, video AI avatar, podcast.<br/>
+<sub>22-28</sub>
+</td>
+</tr>
 </table>
 
-> Full benchmark theo nganh tai [`references/benchmarks-vietnam.md`](references/benchmarks-vietnam.md) — bo sung v3.5.0: frequency, VTR, organic group/IG, nguong canh bao-tat, decision rules theo target, CPO/ROAS theo nganh, benchmark B2B.
+Cách các agent chuyền việc cho nhau trong một chiến dịch điển hình:
 
----
-
-## Reference — du lieu dung chung
-
-| File | Noi dung |
-|------|----------|
-| [`benchmarks-vietnam.md`](references/benchmarks-vietnam.md) | Benchmark VN 2025-2026: paid ads, organic, email, pheu, theo nganh, nguong quyet dinh |
-| [`benchmarks-global.md`](references/benchmarks-global.md) | Benchmark US/EU/SEA/LATAM |
-| [`kpi-formulas.md`](references/kpi-formulas.md) | Cong thuc KPI marketing |
-| [`channel-system.md`](references/channel-system.md) | He sinh thai kenh |
-| [`content-angles.md`](references/content-angles.md) | Goc noi dung theo tang pheu |
-| [`tool-stack.md`](references/tool-stack.md) | Bo cong cu theo nhom |
-| [`marketing-templates-library.md`](references/marketing-templates-library.md) ⭐ | Cau truc 28 template van hanh (planning, tracking dashboard, audit, report, campaign, content calendar) — kem bo cot chuan de skill xuat output dong nhat |
-| [`ai-tool-orchestration.md`](references/ai-tool-orchestration.md) ⭐ | Phoi hop nhieu AI tool: vai tro tung tool, quy trinh 9 buoc lap ke hoach, setup project theo vai tro, checklist cau hoi khai thac |
-
----
-
-## Tuong thich
-
-| Platform | Ho tro | Cach dung |
-|----------|--------|----------|
-| **Claude Code** | Full | `/plugin install` hoac `install.sh --global` |
-| **Claude Pro** | Full | Upload vao Project Knowledge |
-| **ChatGPT** | Partial | Upload `.md` lam Custom GPT config |
-| **Gemini** | Partial | System prompt / context |
-| **Copilot** | Partial | `.github/copilot-instructions.md` |
-| **Cursor / Windsurf** | Partial | `.cursorrules` |
-| **Bat ky AI agent** | Partial | Moi file `.md` la 1 prompt doc lap |
-
----
-
-## Project Structure
-
+```mermaid
+flowchart LR
+    You(["Bạn"]) --> ST["mkt-strategist<br/>kế hoạch · ngân sách · brief"]
+    ST --> CP["content-producer<br/>kịch bản · copy · caption"]
+    ST --> DP["design-producer<br/>brief hình ảnh · duyệt"]
+    CP --> CO["channel-operator<br/>kênh · email · chat · sàn"]
+    DP --> CO
+    CO --> PA["performance-analyst<br/>tracking · audit · scale"]
+    PA -->|"báo cáo + kế hoạch kỳ sau"| ST
+    PB["personal-brand-builder<br/>thương hiệu founder & creator"] -.-> CP
 ```
+
+---
+
+## 🔁 Workflow
+
+Workflow là một chuỗi skill cố định: hoặc một việc kéo dài nhiều ngày, hoặc một vòng lặp bạn chạy mỗi tháng.
+
+**Content engine: vòng lặp hằng tháng**
+
+```mermaid
+flowchart TB
+    subgraph PREP["1 · Lên kế hoạch tháng"]
+        direction LR
+        V["35 Brand voice"] --> I["09 Insight"] --> CAL["01 Lịch nội dung"] --> BR["36 Content brief"]
+    end
+    subgraph MAKE["2 · Sản xuất nội dung"]
+        direction LR
+        W["Viết<br/>37 caption · 04 kịch bản · 05 quảng cáo<br/>14 email · 38 seeding · 06 UGC"] --> VIS["Brief hình ảnh<br/>42 · 43 · 44"]
+    end
+    subgraph LEARN["3 · Đo lường và lên kế hoạch lại"]
+        direction LR
+        AU["39 Audit nội dung"] --> RP["07 Báo cáo"] --> NX["40 Kế hoạch kỳ sau"] -.-> AGAIN(["↻ Tháng sau:<br/>quay lại bước 1"])
+    end
+    PREP --> MAKE --> LEARN
+```
+
+**Performance loop: chưa verify tracking thì chưa tiêu tiền**
+
+```mermaid
+flowchart TB
+    subgraph PLAN["1 · Lập kế hoạch"]
+        direction LR
+        A["51 Tệp khách hàng"] --> K["10 KPI ngược"] --> M["54 Media plan"]
+    end
+    subgraph GATE["2 · Cổng tracking"]
+        direction LR
+        T{"53 Tracking<br/>đã verify?"} -->|chưa| FIX["Sửa tracking<br/>chưa chạy ads"] --> T
+    end
+    subgraph RUN["3 · Chạy và test"]
+        direction LR
+        S["52 Cấu trúc tài khoản"] --> C["05 Copy quảng cáo"] --> AB["19 A/B test"] --> AU["21 Audit ads"]
+    end
+    subgraph GROW["4 · Scale và rút kinh nghiệm"]
+        direction LR
+        SC["55 Scale nhóm thắng<br/>+20-30%, cách nhau 72 giờ"] --> R["07 Báo cáo"]
+        RT["56 Retargeting<br/>tệp ấm"] --> R
+        R --> N["57 Kế hoạch ads kỳ sau"] -.-> AGAIN(["↻ Chu kỳ sau:<br/>quay lại bước 1"])
+    end
+    PLAN --> GATE -->|đã verify| RUN --> GROW
+```
+
+**Design pipeline: đếm ngược từ ngày ra mắt**
+
+```mermaid
+flowchart LR
+    T14["T-14<br/>41 Danh sách asset"] --> T7["T-7<br/>Concept MVP<br/>brief 42 · 43 · 45"] --> T5["T-5 / T-3 / T-1<br/>Làm asset, khó trước"] --> RV["47 Duyệt thiết kế"] --> D1["D+1<br/>Đánh dấu winner · 50 Resize"]
+```
+
+<details>
+<summary><b>Toàn bộ 19 workflow</b> (11 VN + 8 Global)</summary>
+
+| Workflow | Khi nào | Chuỗi skill |
+|---|---|---|
+| [`client-onboard`](workflows/vi/client-onboard.md) | Agency nhận khách mới, 5-7 ngày | 20 → 09 → 08 → 10 → 00 → 02 → 01 |
+| [`campaign-launch`](workflows/vi/campaign-launch.md) | Từ ý tưởng đến chiến dịch chạy, 14-21 ngày | 08 → 09 → 00 → 02 → 01 + 04 + 05 → 06 → 11 + 12 |
+| [`monthly-cycle`](workflows/vi/monthly-cycle.md) | Cuối tháng, 3-5 ngày | 13 → 03 → 07 → 10 → 01 |
+| [`content-production`](workflows/vi/content-production.md) | Hằng tuần | 01 → 04 → quay và dựng → 05 → lên lịch |
+| [`content-engine`](workflows/vi/content-engine.md) | Vòng lặp nội dung hằng tháng | 35 → 09 → 01 → 36 → [37, 04, 05, 14, 38, 06] → [42, 43, 44] → 39 → 07 → 40 |
+| [`performance-loop`](workflows/vi/performance-loop.md) | Vòng lặp chạy ads | 51 → 10 → 54 → 53 → 52 → 05 → 19 → 21 → 55 / 56 → 07 → 57 |
+| [`design-pipeline`](workflows/vi/design-pipeline.md) | Từ T-14 đến D+1 | 41 → [42, 43, 45] → 47 → 50 |
+| [`leader-cadence`](workflows/vi/leader-cadence.md) | Theo quý, chiến dịch, tuần | 00 → 61 → 02 → 64 → 62 / 47 → 07 → 63 |
+| [`personal-brand-launch`](modules/personal-branding/workflows/vi/personal-brand-launch.md) | 30 ngày đầu | 22 → 23 → 24 → 25 → 26 → 04 → 27 → 28 → 14 |
+| [`ai-avatar-batch`](modules/personal-branding/workflows/vi/ai-avatar-batch.md) | 30 video trong 5 ngày | 22 → 26 → 04 → 24 → 25 → 01 |
+| [`personal-brand-monthly`](modules/personal-branding/workflows/vi/personal-brand-monthly.md) | Cuối tháng, 3-5 ngày | 13 → 03 → 23 → 27 → 26 → 04 → 07 → 28 → 14 |
+| [`client-onboard-global`](workflows/en/client-onboard-global.md) | Khách mới, 5-7 ngày | 20 → 09 → 08 → 10 → 00 → 02 → 01 |
+| [`campaign-launch-global`](workflows/en/campaign-launch-global.md) | 14-21 ngày, nhiều khu vực | 08 → 09 → 00 → 02 → 01 + 04 + 05 → 06 → 11 + 12 |
+| [`monthly-cycle-global`](workflows/en/monthly-cycle-global.md) | Cuối tháng, 3-5 ngày | 13 → 03 → 07 → 10 → 01 |
+| [`content-production-global`](workflows/en/content-production-global.md) | Hằng tuần | 01 → 04 → 05 → 06 |
+| [`personal-brand-launch-global`](modules/personal-branding/workflows/en/personal-brand-launch-global.md) | 30 ngày đầu | 22 → 23 → 24 → 26 → 04 → 25 → 27 → 05 → 28 → 14 |
+| [`ai-avatar-batch-global`](modules/personal-branding/workflows/en/ai-avatar-batch-global.md) | 30 video trong 5 ngày | 22 → 26 → 04 → 24 → 25 → 01 |
+| [`personal-brand-monthly-global`](modules/personal-branding/workflows/en/personal-brand-monthly-global.md) | Cuối tháng, 3-5 ngày | 13 → 03 → 23 → 27 → 26 → 04 → 07 → 28 → 14 |
+| [`dropshipping-launch-global`](modules/dropshipping/workflows/en/dropshipping-launch-global.md) | Sản phẩm mới, 30 ngày | 29 → 12 → 04 → 05 → 21 → 13 → 17 |
+
+Hướng dẫn từng bước: [docs/workflow-guide.md](docs/workflow-guide.md).
+
+</details>
+
+---
+
+## 📦 Toàn bộ 147 skill
+
+| Nhóm | Số | 🇻🇳 VN | 🌍 Global |
+|---|---|:-:|:-:|
+| Foundation context | ★ | 1 | 1 |
+| Marketing cốt lõi | 00-21 | 22 | 22 |
+| Thương hiệu cá nhân + AI avatar | 22-28 | 7 | 7 |
+| Skill chủ lực theo khu vực | 29 | Xuất khẩu B2B | Dropshipping |
+| Thiết kế master, growth, AI Marketing OS | 30-34 | 5 | 5 |
+| Hệ thống nội dung | 35-40 | 6 | 6 |
+| Sản xuất thiết kế | 41-50 | 10 | 10 |
+| Vận hành performance | 51-57 | 7 | 7 |
+| Vận hành cho leader | 58-67 | 10 | 10 |
+| Chuyển đổi, giữ chân, bán hàng, thương mại | 68-77 | 9 | · |
+| **Tổng** | | **78** | **69** |
+
+Bấm vào từng nhóm để xem đủ skill:
+
+<!-- CATALOG:START -->
+<details>
+<summary><b>Nền tảng · ★</b> &nbsp;·&nbsp; 1 VN + 1 Global</summary>
+
+| # | 🇻🇳 Skill VN | 🌍 Skill Global | Làm gì |
+|---|---|---|---|
+| ★ | [`product-marketing-context`](skills/vi/product-marketing-context/) | [`product-marketing-context-global`](skills/en/product-marketing-context-global/) | Hồ sơ sản phẩm, khách hàng, đối thủ, định vị: lưu một lần, mọi skill đọc trước |
+
+</details>
+
+<details>
+<summary><b>Marketing cốt lõi · 00-21</b> &nbsp;·&nbsp; 22 VN + 22 Global</summary>
+
+| # | 🇻🇳 Skill VN | 🌍 Skill Global | Làm gì |
+|---|---|---|---|
+| 00 | [`00-ke-hoach-mkt`](skills/vi/00-ke-hoach-mkt/) | [`00-marketing-plan-global`](skills/en/00-marketing-plan-global/) | Kế hoạch marketing tổng: 7 phần, KPI 3 kịch bản, ngân sách, timeline |
+| 01 | [`01-lich-noi-dung`](skills/vi/01-lich-noi-dung/) | [`01-content-calendar-global`](skills/en/01-content-calendar-global/) | Lịch nội dung tháng, kèm ma trận tái sử dụng 1:9 |
+| 02 | [`02-brief-chien-dich`](skills/vi/02-brief-chien-dich/) | [`02-campaign-brief-global`](skills/en/02-campaign-brief-global/) | Brief chiến dịch 9 phần, RACI, rủi ro |
+| 03 | [`03-danh-gia-hieu-suat`](skills/vi/03-danh-gia-hieu-suat/) | [`03-performance-eval-global`](skills/en/03-performance-eval-global/) | Chẩn đoán hiệu suất: cây quyết định, 5 Whys, việc cần làm trong 48 giờ |
+| 04 | [`04-script-video`](skills/vi/04-script-video/) | [`04-script-video-global`](skills/en/04-script-video-global/) | Script video: bản A/B, 5 hook, điểm viral |
+| 05 | [`05-copy-quang-cao`](skills/vi/05-copy-quang-cao/) | [`05-ad-copy-global`](skills/en/05-ad-copy-global/) | Copy quảng cáo: 6 biến thể cho tệp lạnh, ấm, nóng |
+| 06 | [`06-brief-ugc-egc`](skills/vi/06-brief-ugc-egc/) | [`06-ugc-egc-brief-global`](skills/en/06-ugc-egc-brief-global/) | Brief UGC / EGC cho creator, kèm pháp lý và thanh toán |
+| 07 | [`07-bao-cao-marketing`](skills/vi/07-bao-cao-marketing/) | [`07-marketing-report-global`](skills/en/07-marketing-report-global/) | Báo cáo tháng đọc xong trong 5 phút |
+| 08 | [`08-nghien-cuu-doi-thu`](skills/vi/08-nghien-cuu-doi-thu/) | [`08-competitor-research-global`](skills/en/08-competitor-research-global/) | Nghiên cứu đối thủ 3 tầng, SWOT, bản đồ định vị |
+| 09 | [`09-insight-khach-hang`](skills/vi/09-insight-khach-hang/) | [`09-customer-insight-global`](skills/en/09-customer-insight-global/) | Insight khách hàng: persona, JTBD, hành trình |
+| 10 | [`10-tinh-kpi-nguoc`](skills/vi/10-tinh-kpi-nguoc/) | [`10-reverse-kpi-global`](skills/en/10-reverse-kpi-global/) | Tính ngược từ doanh thu mục tiêu ra ngân sách và KPI |
+| 11 | [`11-thiet-lap-kenh`](skills/vi/11-thiet-lap-kenh/) | [`11-channel-setup-global`](skills/en/11-channel-setup-global/) | Thiết lập 7 kênh, kèm kế hoạch 30 ngày |
+| 12 | [`12-brief-landing-page`](skills/vi/12-brief-landing-page/) | [`12-landing-page-brief-global`](skills/en/12-landing-page-brief-global/) | Brief landing page 7 phần, kèm kế hoạch A/B |
+| 13 | [`13-phan-tich-du-lieu`](skills/vi/13-phan-tich-du-lieu/) | [`13-data-analysis-global`](skills/en/13-data-analysis-global/) | Đọc dữ liệu Meta, TikTok, GA4 ra insight và điểm bất thường |
+| 14 | [`14-email-marketing`](skills/vi/14-email-marketing/) | [`14-email-marketing-global`](skills/en/14-email-marketing-global/) | Email: chào mừng, nuôi dưỡng, kéo khách quay lại, tự động hoá |
+| 15 | [`15-social-listening`](skills/vi/15-social-listening/) | [`15-social-listening-global`](skills/en/15-social-listening-global/) | Lắng nghe mạng xã hội, kèm quy trình khủng hoảng |
+| 16 | [`16-marketing-psychology`](skills/vi/16-marketing-psychology/) | [`16-marketing-psychology-global`](skills/en/16-marketing-psychology-global/) | Tâm lý học marketing, điều chỉnh theo văn hoá |
+| 17 | [`17-pricing-strategy`](skills/vi/17-pricing-strategy/) | [`17-pricing-strategy-global`](skills/en/17-pricing-strategy-global/) | Định giá: gói, neo giá, combo, điểm hoà vốn |
+| 18 | [`18-referral-program`](skills/vi/18-referral-program/) | [`18-referral-program-global`](skills/en/18-referral-program-global/) | Chương trình giới thiệu và affiliate, có luật chống gian lận |
+| 19 | [`19-ab-test-setup`](skills/vi/19-ab-test-setup/) | [`19-ab-test-setup-global`](skills/en/19-ab-test-setup-global/) | Thiết lập A/B test: cỡ mẫu, ý nghĩa thống kê |
+| 20 | [`20-brief-client-intake`](skills/vi/20-brief-client-intake/) | [`20-client-intake-brief-global`](skills/en/20-client-intake-brief-global/) | Brief tiếp nhận khách hàng cho agency, 20 ngành |
+| 21 | [`21-audit-ads-performance`](skills/vi/21-audit-ads-performance/) | [`21-ads-audit-global`](skills/en/21-ads-audit-global/) | Audit tài khoản ads: điểm sức khoẻ và danh sách việc cần sửa |
+
+</details>
+
+<details>
+<summary><b>Thương hiệu cá nhân + AI avatar · 22-28</b> &nbsp;·&nbsp; 7 VN + 7 Global</summary>
+
+| # | 🇻🇳 Skill VN | 🌍 Skill Global | Làm gì |
+|---|---|---|---|
+| 22 | [`22-personal-brand-context`](modules/personal-branding/vi/22-personal-brand-context/) | [`22-personal-brand-context-global`](modules/personal-branding/en/22-personal-brand-context-global/) | Hồ sơ nền thương hiệu cá nhân cho founder, coach, creator |
+| 23 | [`23-personal-brand-strategy`](modules/personal-branding/vi/23-personal-brand-strategy/) | [`23-personal-brand-strategy-global`](modules/personal-branding/en/23-personal-brand-strategy-global/) | Chiến lược thương hiệu cá nhân 12 tháng, thang uy tín |
+| 24 | [`24-ai-avatar-production`](modules/personal-branding/vi/24-ai-avatar-production/) | [`24-ai-avatar-production-global`](modules/personal-branding/en/24-ai-avatar-production-global/) | Sản xuất video AI avatar, có chấm điểm QA |
+| 25 | [`25-voice-clone-podcast`](modules/personal-branding/vi/25-voice-clone-podcast/) | [`25-voice-clone-podcast-global`](modules/personal-branding/en/25-voice-clone-podcast-global/) | Clone giọng, podcast, audiobook |
+| 26 | [`26-thought-leadership-content`](modules/personal-branding/vi/26-thought-leadership-content/) | [`26-thought-leadership-content-global`](modules/personal-branding/en/26-thought-leadership-content-global/) | Nội dung chuyên gia dạng dài |
+| 27 | [`27-personal-brand-monetize`](modules/personal-branding/vi/27-personal-brand-monetize/) | [`27-personal-brand-monetize-global`](modules/personal-branding/en/27-personal-brand-monetize-global/) | Kiếm tiền từ thương hiệu cá nhân: phễu, định giá |
+| 28 | [`28-community-building`](modules/personal-branding/vi/28-community-building/) | [`28-community-building-global`](modules/personal-branding/en/28-community-building-global/) | Xây cộng đồng trên Zalo, Telegram, Skool |
+
+</details>
+
+<details>
+<summary><b>Flagship theo thị trường · 29 (VN và Global khác nhau)</b> &nbsp;·&nbsp; 1 VN + 1 Global</summary>
+
+| # | 🇻🇳 Skill VN | 🌍 Skill Global | Làm gì |
+|---|---|---|---|
+| 29 | [`29-xuat-khau-b2b`](skills/vi/29-xuat-khau-b2b/) | [`29-dropshipping-mastery-global`](modules/dropshipping/en/29-dropshipping-mastery-global/) | 🇻🇳 Playbook xuất khẩu B2B cho SME Việt · 🌍 Dropshipping từ chọn ngách đến scale |
+
+</details>
+
+<details>
+<summary><b>Thiết kế master, tăng trưởng, AI Marketing OS · 30-34</b> &nbsp;·&nbsp; 5 VN + 5 Global</summary>
+
+| # | 🇻🇳 Skill VN | 🌍 Skill Global | Làm gì |
+|---|---|---|---|
+| 30 | [`30-thiet-ke-master`](skills/vi/30-thiet-ke-master/) | [`30-design-master-global`](skills/en/30-design-master-global/) | Thiết kế master: 8 loại thiết kế, prompt ảnh cho công cụ của bạn |
+| 31 | [`31-offer-design`](skills/vi/31-offer-design/) | [`31-offer-design-global`](skills/en/31-offer-design-global/) | Thiết kế offer: value stack, cam kết, quà tặng, thang offer |
+| 32 | [`32-seo-growth`](skills/vi/32-seo-growth/) | [`32-seo-growth-global`](skills/en/32-seo-growth-global/) | SEO và hiển thị trên AI search (GEO), schema, backlink |
+| 33 | [`33-b2b-lead-gen`](skills/vi/33-b2b-lead-gen/) | [`33-b2b-lead-gen-global`](skills/en/33-b2b-lead-gen-global/) | Tìm khách B2B, outreach, bàn giao CRM |
+| 34 | [`34-ai-marketing-os`](skills/vi/34-ai-marketing-os/) | [`34-ai-marketing-os-global`](skills/en/34-ai-marketing-os-global/) | AI Marketing OS: Brand Hub, agent theo vai trò, SOP, vòng dữ liệu |
+
+</details>
+
+<details>
+<summary><b>Hệ thống nội dung · 35-40</b> &nbsp;·&nbsp; 6 VN + 6 Global</summary>
+
+| # | 🇻🇳 Skill VN | 🌍 Skill Global | Làm gì |
+|---|---|---|---|
+| 35 | [`35-brand-voice`](skills/vi/35-brand-voice/) | [`35-brand-voice-global`](skills/en/35-brand-voice-global/) | Tài liệu giọng thương hiệu, nền cho mọi skill nội dung |
+| 36 | [`36-content-brief`](skills/vi/36-content-brief/) | [`36-content-brief-global`](skills/en/36-content-brief-global/) | Brief cho từng bài |
+| 37 | [`37-caption-social`](skills/vi/37-caption-social/) | [`37-social-caption-global`](skills/en/37-social-caption-global/) | Caption mạng xã hội (organic) |
+| 38 | [`38-seeding-plan`](skills/vi/38-seeding-plan/) | [`38-community-seeding-global`](skills/en/38-community-seeding-global/) | Kế hoạch seeding cộng đồng |
+| 39 | [`39-content-audit`](skills/vi/39-content-audit/) | [`39-content-audit-global`](skills/en/39-content-audit-global/) | Audit nội dung cuối tháng |
+| 40 | [`40-next-content-plan`](skills/vi/40-next-content-plan/) | [`40-next-content-plan-global`](skills/en/40-next-content-plan-global/) | Kế hoạch nội dung kỳ sau, dựng từ dữ liệu |
+
+</details>
+
+<details>
+<summary><b>Sản xuất thiết kế · 41-50</b> &nbsp;·&nbsp; 10 VN + 10 Global</summary>
+
+| # | 🇻🇳 Skill VN | 🌍 Skill Global | Làm gì |
+|---|---|---|---|
+| 41 | [`41-campaign-asset-list`](skills/vi/41-campaign-asset-list/) | [`41-campaign-asset-list-global`](skills/en/41-campaign-asset-list-global/) | Danh sách asset cho một chiến dịch |
+| 42 | [`42-brief-hinh-anh`](skills/vi/42-brief-hinh-anh/) | [`42-image-brief-global`](skills/en/42-image-brief-global/) | Brief hình ảnh |
+| 43 | [`43-brief-carousel`](skills/vi/43-brief-carousel/) | [`43-carousel-brief-global`](skills/en/43-carousel-brief-global/) | Brief carousel |
+| 44 | [`44-brief-video-editor`](skills/vi/44-brief-video-editor/) | [`44-video-editor-brief-global`](skills/en/44-video-editor-brief-global/) | Brief cho video editor |
+| 45 | [`45-brief-canva`](skills/vi/45-brief-canva/) | [`45-design-tool-brief-global`](skills/en/45-design-tool-brief-global/) | Brief làm trên Canva hoặc công cụ thiết kế khác |
+| 46 | [`46-brand-guideline`](skills/vi/46-brand-guideline/) | [`46-brand-guideline-global`](skills/en/46-brand-guideline-global/) | Brand guideline |
+| 47 | [`47-design-review`](skills/vi/47-design-review/) | [`47-design-review-global`](skills/en/47-design-review-global/) | Duyệt thiết kế có chấm điểm |
+| 48 | [`48-quick-visual-brief`](skills/vi/48-quick-visual-brief/) | [`48-quick-visual-brief-global`](skills/en/48-quick-visual-brief-global/) | Brief visual gấp khi chiến dịch đang chạy |
+| 49 | [`49-html-email-template`](skills/vi/49-html-email-template/) | [`49-html-email-template-global`](skills/en/49-html-email-template-global/) | Template email HTML |
+| 50 | [`50-asset-resize`](skills/vi/50-asset-resize/) | [`50-asset-resize-global`](skills/en/50-asset-resize-global/) | Resize asset thắng cho mọi vị trí hiển thị |
+
+</details>
+
+<details>
+<summary><b>Vận hành performance · 51-57</b> &nbsp;·&nbsp; 7 VN + 7 Global</summary>
+
+| # | 🇻🇳 Skill VN | 🌍 Skill Global | Làm gì |
+|---|---|---|---|
+| 51 | [`51-audience-research`](skills/vi/51-audience-research/) | [`51-audience-research-global`](skills/en/51-audience-research-global/) | Nghiên cứu tệp khách hàng |
+| 52 | [`52-account-structure`](skills/vi/52-account-structure/) | [`52-account-structure-global`](skills/en/52-account-structure-global/) | Cấu trúc tài khoản quảng cáo, quy tắc đặt tên |
+| 53 | [`53-tracking-setup`](skills/vi/53-tracking-setup/) | [`53-tracking-setup-global`](skills/en/53-tracking-setup-global/) | Thiết lập tracking, xác minh trước khi tiêu tiền |
+| 54 | [`54-media-plan`](skills/vi/54-media-plan/) | [`54-media-plan-global`](skills/en/54-media-plan-global/) | Media plan tính ngược từ doanh thu |
+| 55 | [`55-scaling-ads`](skills/vi/55-scaling-ads/) | [`55-scaling-ads-global`](skills/en/55-scaling-ads-global/) | Scale winner +20-30% mỗi bước, cách nhau ít nhất 72 giờ |
+| 56 | [`56-retargeting-plan`](skills/vi/56-retargeting-plan/) | [`56-retargeting-plan-global`](skills/en/56-retargeting-plan-global/) | Kế hoạch retargeting theo từng tầng khách |
+| 57 | [`57-next-ads-plan`](skills/vi/57-next-ads-plan/) | [`57-next-ads-plan-global`](skills/en/57-next-ads-plan-global/) | Kế hoạch ads kỳ sau |
+
+</details>
+
+<details>
+<summary><b>Vận hành cho leader · 58-67</b> &nbsp;·&nbsp; 10 VN + 10 Global</summary>
+
+| # | 🇻🇳 Skill VN | 🌍 Skill Global | Làm gì |
+|---|---|---|---|
+| 58 | [`58-positioning`](skills/vi/58-positioning/) | [`58-positioning-global`](skills/en/58-positioning-global/) | Định vị |
+| 59 | [`59-go-to-market`](skills/vi/59-go-to-market/) | [`59-go-to-market-global`](skills/en/59-go-to-market-global/) | Kế hoạch go-to-market |
+| 60 | [`60-launch-playbook`](skills/vi/60-launch-playbook/) | [`60-launch-playbook-global`](skills/en/60-launch-playbook-global/) | Playbook ra mắt sản phẩm |
+| 61 | [`61-budget-planning`](skills/vi/61-budget-planning/) | [`61-budget-planning-global`](skills/en/61-budget-planning-global/) | Lập ngân sách marketing |
+| 62 | [`62-marketing-review`](skills/vi/62-marketing-review/) | [`62-marketing-review-global`](skills/en/62-marketing-review-global/) | Cổng duyệt output marketing |
+| 63 | [`63-campaign-retrospective`](skills/vi/63-campaign-retrospective/) | [`63-campaign-retrospective-global`](skills/en/63-campaign-retrospective-global/) | Rút kinh nghiệm sau chiến dịch |
+| 64 | [`64-team-brief`](skills/vi/64-team-brief/) | [`64-team-brief-global`](skills/en/64-team-brief-global/) | Giao việc cho team |
+| 65 | [`65-team-performance-review`](skills/vi/65-team-performance-review/) | [`65-team-performance-review-global`](skills/en/65-team-performance-review-global/) | Đánh giá hiệu suất team |
+| 66 | [`66-crisis-playbook`](skills/vi/66-crisis-playbook/) | [`66-crisis-playbook-global`](skills/en/66-crisis-playbook-global/) | Playbook xử lý khủng hoảng |
+| 67 | [`67-agency-vendor-brief`](skills/vi/67-agency-vendor-brief/) | [`67-agency-vendor-brief-global`](skills/en/67-agency-vendor-brief-global/) | Brief cho agency và nhà cung cấp |
+
+</details>
+
+<details>
+<summary><b>Chuyển đổi, giữ chân, bán hàng, TMĐT · 68-77</b> &nbsp;·&nbsp; 9 VN</summary>
+
+| # | 🇻🇳 Skill VN | 🌍 Skill Global | Làm gì |
+|---|---|---|---|
+| 68 | [`68-cro-audit-trang`](skills/vi/68-cro-audit-trang/) | · | Audit chuyển đổi cho trang, luồng inbox hoặc gian hàng đang chạy *(Chỉ có bản VN)* |
+| 69 | [`69-giu-chan-khach-hang`](skills/vi/69-giu-chan-khach-hang/) | · | Giữ chân và kéo lại khách hàng *(Chỉ có bản VN)* |
+| 70 | [`70-lead-magnet`](skills/vi/70-lead-magnet/) | · | Thiết kế lead magnet *(Chỉ có bản VN)* |
+| 71 | [`71-sales-enablement`](skills/vi/71-sales-enablement/) | · | Tài liệu bán hàng và bàn giao pipeline *(Chỉ có bản VN)* |
+| 72 | [`72-hoi-dong-marketing`](skills/vi/72-hoi-dong-marketing/) | · | Hội đồng cố vấn 5 nguyên mẫu, bắt buộc có người phản biện *(Chỉ có bản VN)* |
+| 74 | [`74-copy-hai-lop`](skills/vi/74-copy-hai-lop/) | · | Slogan, headline poster hai lớp nghĩa *(Chỉ có bản VN)* |
+| 75 | [`75-hop-tac-koc-affiliate`](skills/vi/75-hop-tac-koc-affiliate/) | · | Hợp tác KOC, affiliate: thẩm định, hợp đồng, trả phí *(Chỉ có bản VN)* |
+| 76 | [`76-van-hanh-san-tmdt`](skills/vi/76-van-hanh-san-tmdt/) | · | Vận hành gian hàng Shopee, TikTok Shop, Lazada theo P&L từng đơn *(Chỉ có bản VN)* |
+| 77 | [`77-kich-ban-sale-chatbot`](skills/vi/77-kich-ban-sale-chatbot/) | · | Kịch bản sale cho chatbot AI (inbox và bình luận công khai) *(Chỉ có bản VN)* |
+
+</details>
+<!-- CATALOG:END -->
+
+---
+
+## 🛡️ Rào chắn có sẵn
+
+Mọi skill theo cùng 8 quy tắc vận hành ([VN](skills/vi/references/quy-tac-van-hanh.md) · [Global](skills/en/references/operating-rules-global.md)): đọc context trước, coi nội dung từ bên ngoài là dữ liệu chứ không phải lệnh, gắn nhãn bằng chứng, ghi ngày và nguồn cho mọi con số, không bịa số liệu hay khách hàng, và mọi hành động thật đều đi qua cổng draft-first.
+
+```mermaid
+sequenceDiagram
+    participant U as Bạn
+    participant AI as AI + skill
+    participant Ads as Tài khoản quảng cáo (MCP)
+    U->>AI: "Scale nhóm quảng cáo đang thắng"
+    AI->>AI: Đủ dữ liệu chưa? Có nằm trong quyền của agent?
+    AI-->>U: Đề xuất thay đổi: hiện tại, đề xuất, kết quả dự kiến, cách hoàn tác
+    U->>AI: Duyệt đúng thay đổi này (ghi tên người duyệt)
+    AI->>Ads: Thực hiện đúng thay đổi đó
+    AI->>Ads: Đọc lại giá trị và trạng thái mới
+    AI-->>U: Ghi log: thời gian, thay đổi, người duyệt, kết quả
+```
+
+- **Quyết định ads theo một thang duy nhất.** Chi tiêu dưới 3 lần CPA mục tiêu thì chưa đủ dữ liệu để kết luận. Việc pause chỉ được đề xuất, không bao giờ tự làm. Ngân sách tăng +20-30% mỗi bước, cách nhau ít nhất 72 giờ.
+- **Câu hỏi pháp lý Việt Nam** đi về một hub: [`phap-ly-marketing-vn.md`](skills/vi/references/phap-ly-marketing-vn.md).
+- **Evals:** skill nào thay đổi hành vi đều có `evals/evals.json` (kích hoạt, định tuyến, rào chắn, context). Xem [docs/evals.md](docs/evals.md).
+- **Kết nối nền tảng quảng cáo (MCP):** skill 03, 07, 08, 10, 13, 21, 39 và 51-57 đọc được dữ liệu ads trực tiếp. Cách cài: [docs/mcp-setup-guide.md](docs/mcp-setup-guide.md).
+
+---
+
+## 🔌 Dùng với AI tool khác
+
+Skill là Markdown thuần với phần header ngắn, nên trợ lý nào đọc được file là dùng được.
+
+| Tool | Cách dùng |
+|---|---|
+| **Claude Code** | Plugin, hoặc `install.sh --global` / `--project` |
+| **Claude.ai Projects** | Tải các skill cần dùng và thư mục `knowledge/` lên làm project knowledge |
+| **ChatGPT** | Đưa skill vào phần instructions hoặc knowledge file của một Custom GPT |
+| **Gemini** | Dán skill vào một Gem hoặc system prompt |
+| **Cursor, Windsurf** | Thêm các skill hay dùng vào project rules |
+| **GitHub Copilot** | Trỏ tới skill từ `.github/copilot-instructions.md` |
+| **Cline** | Liệt kê đường dẫn skill và từ khoá kích hoạt trong `.clinerules` |
+| **Aider** | `aider --read path/to/SKILL.md` |
+| **Codex CLI, OpenCode và agent khác** | Trỏ agent tới các thư mục `SKILL.md` đã cài, hoặc nhắc tới chúng trong `AGENTS.md` |
+| **Bất kỳ khung chat nào** | Dán một `SKILL.md`, rồi viết: "Làm theo workflow này. Input của tôi: …" |
+
+<details>
+<summary><b>Ví dụ: <code>.clinerules</code> cho Cline</b></summary>
+
+```markdown
+# Load ai-business-skills for marketing tasks
+Skills live in:
+- ~/.claude/skills/marketing/vi/   (Vietnam)
+- ~/.claude/skills/marketing/en/   (Global)
+
+Trigger words:
+- "marketing plan" / "lập kế hoạch marketing" -> 00-marketing-plan-global / 00-ke-hoach-mkt
+- "ad copy" / "viết copy" -> 05-ad-copy-global / 05-copy-quang-cao
+- "design image" / "thiết kế ảnh" -> 30-design-master-global / 30-thiet-ke-master
+
+Always read product-marketing-context first.
+```
+
+</details>
+
+<details>
+<summary><b>Dùng thủ công trong khung chat bất kỳ, từng bước</b></summary>
+
+1. Dán `skills/vi/product-marketing-context/SKILL.md` (hoặc bản Global) và trả lời các câu hỏi. Giữ lại câu trả lời.
+2. Mở skill cần dùng, ví dụ `skills/vi/00-ke-hoach-mkt/SKILL.md`.
+3. Dán skill đó cùng context đã lưu, rồi viết: "Làm theo workflow này. Input của tôi: …"
+4. AI sẽ làm theo câu hỏi, quy tắc và mẫu kết quả của skill.
+
+</details>
+
+---
+
+## 🧱 Bên trong một skill
+
+<details>
+<summary><b>Một file <code>SKILL.md</code> gồm những gì</b></summary>
+
+```markdown
+---
+name: 00-ke-hoach-mkt
+description: Mô tả ngắn, AI dùng để quyết định khi nào chạy skill
+category: strategy
+triggers:
+  - "lập kế hoạch marketing"
+  - "marketing plan"
+output: file .md gồm 7 phần + KPI theo 3 kịch bản
+related: [08-nghien-cuu-doi-thu, 09-insight-khach-hang, 10-tinh-kpi-nguoc]
+---
+
+# Tên skill
+
+## Thu thập thông tin   -> tối đa 4 câu hỏi, bỏ qua câu nào context đã trả lời
+## Nguyên tắc          -> insight trước số liệu, benchmark địa phương, không nói chung chung
+## Cấu trúc kết quả    -> đúng các phần, bảng và kịch bản phải giao
+## Checklist chất lượng -> kiểm tra trước khi giao file
+```
+
+</details>
+
+---
+
+## 📊 Benchmark Việt Nam 2025-2026 (tra nhanh)
+
+| Chỉ số | Kém | Trung bình | Tốt | Xuất sắc |
+|---|---|---|---|---|
+| **CPMess Meta** | >40K | 25-40K | 18-25K | <18K |
+| **CPMess TikTok** | >45K | 28-45K | 20-28K | <20K |
+| **Lead → Booking** | <40% | 40-60% | 60-75% | >75% |
+| **Booking → Khách hàng** | <25% | 25-40% | 40-55% | >55% |
+| **ROAS** | <2x | 2-4x | 4-7x | >7x |
+| **Email open rate** | <15% | 15-25% | 25-35% | >35% |
+| **Zalo OA read rate** | <40% | 40-60% | 60-80% | >80% |
+
+Chi phí tính bằng VND. Theo ngành: [`references/benchmarks-vietnam.md`](references/benchmarks-vietnam.md) · Global: [`references/benchmarks-global.md`](references/benchmarks-global.md)
+
+---
+
+## 📚 Hướng dẫn
+
+| Hướng dẫn | Dành cho |
+|---|---|
+| [Bắt đầu (VN)](docs/getting-started.md) · [Global](docs/getting-started-global.md) | Giờ đầu tiên |
+| [Thương hiệu cá nhân](docs/getting-started-personal-brand.md) | Founder, coach, creator |
+| [Role SOP pack](docs/getting-started-role-sop.md) | Đội content, thiết kế, performance và leader |
+| [Hướng dẫn workflow](docs/workflow-guide.md) · [Bản đồ skill](docs/skill-map.md) | Nối các skill với nhau |
+| [Khu vực Global](docs/global-region-guide.md) · [Dropshipping](docs/dropshipping-guide.md) | Bán ra ngoài Việt Nam |
+| [Cài MCP](docs/mcp-setup-guide.md) · [Connectors](CONNECTORS.md) | Dữ liệu trực tiếp từ nền tảng quảng cáo |
+| [Kho kiến thức](knowledge/README.md) | Tài liệu nền theo vai trò |
+| [FAQ](docs/faq.md) · [Best practices](docs/best-practices.md) · [Cập nhật](docs/update-guide.md) | Mọi thứ còn lại |
+
+<details>
+<summary><b>Cấu trúc thư mục</b></summary>
+
+```text
 ai-business-skills/
-│
-├── .claude-plugin/
-│   └── marketplace.json              # Claude Code plugin spec: 147 skills
-│
-├── .github/
-│   ├── ISSUE_TEMPLATE/                # Bug report + skill request
-│   └── PULL_REQUEST_TEMPLATE/         # New skill + skill update
-│
-├── knowledge/                           # Kho tu duy nen tang (upload vao AI project)
-│   ├── 01-10 *.md                       # Brandformance, blueprint, pheu, kenh, KPI, insight, offer, OS
-│   └── trien-khai/                      # Kien thuc trien khai theo vai tro
-│
-├── skills/                              # Dual-edition skill library
-│   ├── vi/                              # VN Edition — 69 skills
-│   │   ├── product-marketing-context/   # Foundation skill (★)
-│   │   ├── 00-21 marketing core/        # Plan, copy, KPI, ads, email, report
-│   │   ├── 29-xuat-khau-b2b/            # Regional flagship for Vietnam
-│   │   ├── 30-thiet-ke-master/          # Design master router
-│   │   ├── 31-34 growth + AI OS/        # Offer, SEO, B2B lead gen, AI Marketing OS
-│   │   ├── 35-40 content system/        # Brand voice, brief, caption, seeding, audit, next plan
-│   │   ├── 41-50 design production/     # Asset list, brief visual, guideline, review, resize
-│   │   ├── 51-57 performance ops/       # Audience, structure, tracking, media plan, scale, retarget
-│   │   ├── 58-67 leader ops/            # Positioning, GTM, launch, budget, review, retro, team, crisis
-│   │   └── references/                  # Benchmarks, hooks, tools, legal refs
-│   │
-│   └── en/                              # Global Edition — 36 skills
-│       ├── product-marketing-context-global/  # Foundation (4 region variants: US/EU/SEA/LATAM)
-│       ├── 00-21 marketing core global/        # Mirror VN 00-21 with -global suffix
-│       ├── 30-design-master-global/            # Design master global
-│       ├── 31-34 growth + AI OS global/        # Offer, SEO/GEO, B2B, AI Marketing OS
-│       └── references/                         # Legal, currency, channel, benchmark refs
-│
-├── modules/                             # Topic modules outside core marketing
-│   ├── personal-branding/               # Personal Brand module
-│   │   ├── vi/                          # 7 PB skills VN (22-28)
-│   │   ├── en/                          # 7 PB skills Global (22-28-global)
-│   │   └── workflows/{vi,en}/           # PB launch, avatar batch, monthly loop
-│   │
-│   └── dropshipping/                    # Dropshipping module
-│       ├── en/29-dropshipping-mastery-global/  # Flagship (12 sections)
-│       └── workflows/en/dropshipping-launch-global.md
-│
-├── workflows/                           # Multi-skill workflow chains
-│   ├── vi/                              # Marketing VN workflows
-│   │   ├── campaign-launch.md
-│   │   ├── client-onboard.md
-│   │   ├── content-production.md
-│   │   └── monthly-cycle.md
-│   │
-│   └── en/                              # Marketing Global workflows
-│       ├── campaign-launch-global.md
-│       ├── client-onboard-global.md
-│       ├── content-production-global.md
-│       └── monthly-cycle-global.md
-│
-├── agents/                              # 5 universal agents
-│   ├── mkt-strategist.md
-│   ├── content-producer.md
-│   ├── performance-analyst.md
-│   ├── channel-operator.md
-│   └── personal-brand-builder.md
-│
-├── examples/                            # Sample outputs
-├── docs/                                # Guides + release notes
-├── references/                          # Shared references across skills
-├── CONNECTORS.md                        # Tool connector abstraction
-├── llms.txt                             # AI-readable repo index
-│
-├── AGENTS.md                            # Universal agent spec
-├── CLAUDE.md                            # Claude-specific config
-├── CONTRIBUTING.md                      # How to contribute
-├── VERSIONS.md                          # Version tracking
-├── validate-skills.sh                   # Bash validator
-├── validate-skills.ps1                  # PowerShell validator
-├── install.sh                           # macOS/Linux installer
-├── install.ps1                          # Windows installer
-└── LICENSE                              # MIT
+├── skills/
+│   ├── vi/            Skill VN: foundation, 00-21, 29-72, 74-77, references/
+│   └── en/            Skill Global: foundation, 00-21, 30-67, references/
+├── modules/
+│   ├── personal-branding/   22-28 trong vi/ và en/, kèm 6 workflow
+│   └── dropshipping/        29-dropshipping-mastery-global, kèm 1 workflow
+├── agents/            6 agent theo vai trò
+├── workflows/         vi/ (8) và en/ (4)
+├── knowledge/         10 file nền + trien-khai/ (14 playbook theo vai trò)
+├── references/        benchmark, công thức KPI, template dùng chung
+├── examples/          kết quả mẫu: spa, thời trang, coach, cửa hàng dropshipping
+├── docs/              hướng dẫn, FAQ, evals, hình ảnh
+├── scripts/           check-repo.mjs (kiểm tra tính nhất quán của repo)
+├── install.sh · install.ps1
+└── validate-skills.sh · validate-skills.ps1
 ```
+
+</details>
 
 ---
 
-## Contributing
+## 🤝 Đóng góp
 
-Doc [`CONTRIBUTING.md`](CONTRIBUTING.md) truoc khi bat dau.
+Đọc [`CONTRIBUTING.md`](CONTRIBUTING.md) trước.
 
 ```bash
-# 1. Fork repo
-# 2. Tao branch
-git checkout -b feature/ten-skill-moi
-
-# 3. Chay validator truoc khi commit
-./validate-skills.sh
-
-# 4. Conventional Commits
-git commit -m "feat(skill): add ten-skill-moi"
-
-# 5. Tao PR voi template
+git checkout -b feature/new-skill
+./validate-skills.sh             # frontmatter và cấu trúc
+node scripts/check-repo.mjs      # evals, denylist, llms.txt, manifest, phiên bản, số đếm
+git commit -m "feat(skill): add new-skill"
 ```
 
----
+Ưu tiên song ngữ VN + EN, một ngôn ngữ vẫn được nhận. Skill mới cần đăng ký trong `.claude-plugin/marketplace.json`.
 
-## Thanks & Credits
+## 💖 Ủng hộ
 
-- **Inspired by:** [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) — foundation skill concept + plugin spec
-- **Spec:** [Agent Skills Spec](https://agentskills.io)
-- **Framework:** Over Powers Agency — thi truong VN 2025-2026
-
----
-
-## Star History
+Dự án miễn phí, giấy phép MIT. Nếu nó giúp bạn tiết kiệm nhiều giờ làm việc, bạn có thể ủng hộ để có thêm biến thể khu vực, skill theo ngành và video hướng dẫn song ngữ tại [**opa.business/donate**](https://www.opa.business/donate). Bấm sao cho repo, [báo lỗi](https://github.com/minhnv0807/ai-business-skills/issues) và gửi PR cũng là ủng hộ.
 
 <a href="https://star-history.com/#minhnv0807/ai-business-skills&Date">
  <picture>
    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=minhnv0807/ai-business-skills&type=Date&theme=dark" />
    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=minhnv0807/ai-business-skills&type=Date" />
-   <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=minhnv0807/ai-business-skills&type=Date" />
+   <img alt="Biểu đồ số sao theo thời gian" src="https://api.star-history.com/svg?repos=minhnv0807/ai-business-skills&type=Date" width="600" />
  </picture>
 </a>
 
-Neu thay project huu ich, cho 1 sao de theo doi — giup repo xuat hien trong GitHub Trending.
+## 📜 Giấy phép và ghi nguồn
 
----
-
-## 💖 Ung Ho Du An
-
-Du an nay **100% mien phi va MIT-licensed**. Neu `ai-business-skills` giup ban tiet kiem hang gio cong viec marketing hoac giup doanh nghiep ban phat trien, hay can nhac ung ho:
+MIT, xem [LICENSE](LICENSE). Nguồn ý tưởng bên thứ ba và giấy phép của chúng: [NOTICE.md](NOTICE.md).
+Lấy cảm hứng từ [coreyhaines31/marketingskills](https://github.com/coreyhaines31/marketingskills) (ý tưởng foundation skill và cấu trúc plugin). Tuân theo [Agent Skills spec](https://agentskills.io).
+Hình minh hoạ do AI tạo (mô hình ảnh của Google qua Antigravity); prompt và ghi chú nằm trong [docs/images/README.md](docs/images/README.md).
 
 <p align="center">
-  <a href="https://www.opa.business/donate">
-    <img src="https://img.shields.io/badge/%E2%9D%A4%EF%B8%8F%20Donate-Ung%20ho%20Over%20Powers%20Agency-ff69b4?style=for-the-badge&logo=heart&logoColor=white" alt="Donate"/>
-  </a>
-</p>
-
-**Khoan ung ho cua ban se duoc dung de:**
-- 🌍 Phat trien region variants moi (APAC v2.6.0, India, MENA o v2.7.0+)
-- 🎯 Them skills nganh cu the (B2B export, SaaS, e-commerce vertical)
-- 📚 Docs song ngu & video tutorial
-- 🛠️ Bao tri & ho tro cong dong
-
-**Cac cach khac de ung ho:**
-- ⭐ Star repo nay
-- 🐛 Bao loi hoac de xuat tinh nang o [Issues](https://github.com/minhnv0807/ai-business-skills/issues)
-- 🤝 Submit PR them skills moi hoac cai tien
-- 📣 Chia se voi network cua ban — tag [@OverPowersAgency](https://opa.business)
-
-→ [**opa.business/donate**](https://www.opa.business/donate)
-
----
-
-## License
-
-MIT — tu do su dung, chinh sua, phan phoi. Nguon y tuong ben thu ba va giay phep: [NOTICE.md](NOTICE.md).
-
----
-
-<p align="center">
-  <strong>Framework:</strong> Over Powers Agency
-  <br/>
-  <strong>Benchmark:</strong> Thi truong Viet Nam 2025-2026
-  <br/>
-  <strong>Tuong thich:</strong> Claude Code &middot; ChatGPT &middot; Gemini &middot; Copilot &middot; Cursor &middot; bat ky AI nao doc Markdown
-</p>
-
-<p align="center">
-  <sub>Built with AI, for marketers who use AI.</sub>
+  <sub>Framework của <a href="https://opa.business">Over Powers Agency</a> · Làm bằng AI, cho người làm marketing dùng AI.</sub>
 </p>
